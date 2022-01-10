@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
 
+    <title>DCAT 2 Toepassingsprofiel voor data.overheid.nl</title>
+
     <!-- https://raw.githack.com/dataoverheid/dcat-ap-donl/main/respec/index.html -->
 
     <script async="async" class="remove"
@@ -54,18 +56,243 @@
     /*]]>*/</script>
   </head>
 
-  <body><h1 id="title">DCAT 2 Toepassingsprofiel voor data.overheid.nl </h1>
-  <section id="abstract"> <h2>Samenvatting</h2><p> Dit document beschrijft de
-  specificatie van het toepassingsprofiel van DCAT 2 voor data.overheid.nl.
-  Het is een doorontwikkeling van <a
-  href="https://dcat-ap-donl.readthedocs.io/en/latest/">versie 1.1 van het
-  toepassingsprofiel</a>.</p></section><section id="sotd"><p> This is
-  required. </p> </section> <section data-format="markdown"
-  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Dataset.md"></section>
+  <body>
+    <section id="abstract"> 
+      <p>
+        Dit document beschrijft de specificatie van het toepassingsprofiel van DCAT 2 voor data.overheid.nl. Het is een doorontwikkeling van <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">versie 1.1 van het toepassingsprofiel</a>.
+      </p>
+    </section>
+    
+    <section id="sotd">
+      <p>Hier de tekst in section sotd</p>
+    </section>
+    
+    <section class="informative">
+      <h2>Introductie</h2>
+      <p>Hier komt de introductie</p>
+    </section>
+    
+    <section class="normative">
+      <h2>Specificatie van het toepassingsprofiel</h2>
+      <p>
+        Dit hoofdstuk beschrijft de klassen en eigenschappen die aanbieders van data kunnen gebruiken om hun data te beschrijven. In de basis kunnen alle klassen en eigenschappen worden gebruikt die voorkomen in de specificatie van DCAT volgens W3C. Het toepassingsprofiel voor DONL hanteerd voor sommige eigenschappen een afwijkend waardenbereik, bijvoorbeeld omdat DONL hiervoor een eigen waardelijst heeft opgenomen. Deze waardelijsten worden beschreven in hoofdstuk <a href="#waardelijsten-controlled-vocabularies">Waardelijsten</a>. 
+      </p>
+      
+      <section>
+        <h3>Eigenschappen</h3>
+        
+        <section>
+          <h4>Definitie van eigenschappen</h4>
+          
+          <p>
+            Van elke eigenschap dat onderdeel is van een klasse beschrijft de specificatie enkele vaste gegevens, zoals de definitie, het bereik en een evt. een algemene opmerking en/of een specifieke opmerking over het gebruik van de eigenschap op data.overheid.nl. 
+          </p>
+        </section>
+      </section>
+      
+      <section>
+        <h3>Klasse Catalogus, dcat:Catalog</h3>
+        
+        <p>
+          Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets, dataservices en/of catalogi. Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen van resources. De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen vanuit de distributie.</p>
+
+      </section>
+      
+      <section>
+        <h3>Klasse Resource, dcat:Resource</h3>
+        
+        <p class="note">
+          De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse voor <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>. Het maakt het eenvoudiger om het informatiemodel - in de toekomst - uit te breiden met nieuwe resources. De eigenschappen in <code>dcat:Resource</code> worden nader gedefinieerd en beschreven bij de uitwerking van de subklassen <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
+        </p>
+      </section>
+      
+      <section>
+        <h3>Klasse Catalogusrecord, dcat:CatalogRecord</h3>
+        
+        <p>
+          Een Catalogusrecord geeft informatie over de registratie van een DCAT resource in een catalogus. Het bevat de zgn. administratieve metadata van het dataportaal.
+        </p>
+        
+        <p class="note" title="">
+          Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen dataportalen kan het voorkomen die metadata voldoen aan een specifieke toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere, bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data specificeren aan wel toepassingsprofiel de metadata voldoet.
+        </p>
+        
+      </section>
+      
+      <section>
+        <h3>Klasse Dataset, dcat:dataset</h3>
+        
+        <p>
+          Een dataset is een gegevensverzameling, samengesteld of gepubliceerd door een (overheids-)organisatie, die digitaal beschikbaar is in een of meer representaties.
+        </p>
+        
+        <p class="note">
+          De dataset klasse is een subklasse van de Catalogus-resource. Dit betekent dat het alle eigenschappen van Catalogus-resource bevat, aangevuld met enkele specifieke eigenschappen.
+          <br/>
+          De onderstaande paragrafen beschrijven zowel de eigenschappen van dataset, als de eigenschappen van de subklasse catalogus-record. 
+        </p>
+      </section>
+      
+      <section>
+        <h3>Klasse Distributie, dcat:Distribution</h3>
+        
+        <p>
+          Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset kunnen verkregen. Meestal betreft het hier een download-bestand.
+        </p>
+        
+        <p class="advisement">
+          In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data op te vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe mogelijkheid om webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft echter mogelijk en toegestaan om webservices te beschrijven als distributie.
+        </p>
+        
+        <p>
+          De aanbieder van een dataset kan de gegevens aanbieden in meerdere verschillende formaten en/of samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze worden elk als afzonderlijke distributies beschreven en gerelateerd aan de dataset. Als een dataset (ook) wordt aangeboden in de vorm van een dataservice, dan worden hierover aanvullende gegevens opgenomen in een voorkomen van de klasse DataService en gerelateerd aan de bijbehorende distributie.
+        </p>
+      </section>
+      
+      <section>
+        <h3>Klasse Dataservice, dcat:DataService</h3>
+        
+        <p class="note">
+          De klasse Dataservice is nieuw in DCAT-AP-DONL versie 2.
+        </p>
+        
+        
+        <table class="def">
+          <tr>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="http://www.w3.org/ns/dcat#DataService"><code>dcat:DataService</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definitie</th>
+            <td>Een dataservice is een collectie van functies om toegang te krijgen tot (een selectie of bewerking van) gegevens van een of meer datasets, speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen. De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt meer uitgebreide mogelijkheden om geautomatiseerde toegang tot gegevens via een API te beschrijven dan mogelijk is in de klasse Distributie. In het toepassingsprofiel blijft het overigens mogelijk om services te beschrijven met de klasse Distributie.</td>
+          </tr>
+          <tr>
+            <th class="prop">Subklasse&#160;van</th>
+            <td><a href="#klasse-resource-dcat-resource"><code>dcat:Resource</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Subklasse&#160;van</th>
+            <td><a href="http://purl.org/dc/dcmitype/Service"><code>dctype:Service</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Opmerking</th>
+            <td>Als een  <a href="#klasse-dataservice-dcat-dataservice"><code>dcat:DataService</code></a> gegevens ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze relatie met eigenschap <a href="#Property:data_service_serves_dataset"><code>dcat:servesDataset</code></a> worden beschreven.</td>
+          </tr>
+          <tr>
+            <th class="prop">Opmerking</th>
+            <td>
+              Met behulp van eigenschap <a href="http://purl.org/dc/terms/type"><code>dcterms:type</code></a> kan onderscheid worden gemaakt tussen verschillende typen van services. Om deze typering te standaardiseren, worden de mogelijke waarden opgenomen in een waardelijst.</td>
+          </tr>
+        </table>
+        
+        <p>De volgende eigenschappen zijn specifiek voor deze klasse: <a href="#Property:data_service_endpoint_description">endpoint description</a>, <a href="#Property:data_service_endpoint_url">endpoint URL</a> en <a href="#Property:data_service_serves_dataset">serves dataset</a>.</p>
+
+        <p class="note">
+          Dataservices worden ook gedocumenteerd op https://developer.overheid.nl. Het kan interessant zijn om over en weer relaties te leggen tussen de dataservice op data.overheid.nl en die op developer.overheid.nl. Op die manier kunnen bezoekers gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben.
+        </p>
+        
+        
+        
+      </section>
+      
+    </section>
+          
+    <section class="normative">
+      <h2>Waardelijsten (Controlled vocabularies)</h2>
+      <p>
+        Dit hoofdstuk geeft een overzicht van de waardelijsten die in DCAT-AP-DONL moeten worden gebruikt voor DCAT eigenschappen. De mogelijke waarden, dus de codes (identifiers) en de bijbehorende waarden, zijn zoveel als mogelijk overgenomen uit de specificatie van de Europese DCAT-AP. Deze waardelijsten zijn beschikbaar op <a href="https://waardelijsten.dcat-ap-donl.nl/">DCAT-AP-DONL ‐ Waardelijsten</a>.
+      </p>
+      
+      <p class="advisement" title="Aanpassingen in de waardelijsten">
+        In de loop van de tijd kan DONL wijzigingen aanbrengen in de gebruikte waardelijsten, bijvoorbeeld om nieuwe waarden toe te voegen, of oude waarden te verwijderen. DONL zal deze wijzigingen kenbaar maken op de website, zodat ieder hiervan op de hoogte is. Ook komt het voor dat waardelijsten worden vervangen door geheel nieuwe waardelijsten. Dat is bijvoorbeeld het geval voor de lijst Taxonomie beleidsagenda. Deze lijst wordt vervangen door de Toplijst, waardoor alle waarden een ander code (identifier krijgen). Desondanks is het mogelijk om hier nog oude waarden volgens de Taxonomie beleidsagenda aan te leveren. Deze worden automatisch vertaald naar de corresponderende warde volgens de Toplijst.
+      </p>
+      
+      <table class="simple">
+        <thead>
+          <tr>
+            <th>Waardelijst</th>
+            <th>Eigenschap</th>
+            <th>Klasse</th>
+            <th>DCAT-AP</th>
+            <th>Opmerking</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json">donl:Openbaarheidsniveau</a></td>
+            <td>dct:accessRights</td>
+            <td>dcat:Resource</td>
+            <td>Ja</td>
+            <td>&#160;</td>
+          </tr>
+          <tr>
+            <td>donl:ContactPoint</td>
+            <td>dcat:contactPoint</td>
+            <td>dcat:Resource</td>
+            <td>Nee</td>
+            <td>Deze waardelijst bestaat nog niet.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">donl:Organization</a></td>
+            <td>dct:creator, dct:publisher</td>
+            <td>dcat:Resource</td>
+            <td>Nee</td>
+            <td>&#160;</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json">donl:Language</a></td>
+            <td>dct:language</td>
+            <td>dcat:Resource</td>
+            <td>Ja</td>
+            <td>Betreft een subselectie uit de Europese lijst.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json">Taxonomie beleidsagenda</a></td>
+            <td>dcat:theme</td>
+            <td>dcat:Resource</td>
+            <td>Nee</td>
+            <td>Deze waardelijst wordt vervangen door de Toplijst met thema's.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json">donl:License</a></td>
+            <td>dct:license</td>
+            <td>dcat:Resource</td>
+            <td>Nee</td>
+            <td>&#160;</td>
+          </tr>
+          <tr>
+            <td>donl:Taxonomies</td>
+            <td>dcat:themeTaxonomy</td>
+            <td>dcat:Catalog</td>
+            <td>Nee</td>
+            <td>Deze waardelijst bestaat nog niet.</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>dcat:Resource</td>
+            <td></td>
+            <td>&#160;</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </section>
+    
+    <!--
+    <section data-format="markdown" data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Dataset.md">
+      
+    </section>
+    <section data-format="markdown"
+  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Cataloged-Resource.md">
+      
+    </section>
   <section data-format="markdown"
-  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Cataloged-Resource.md"></section>
-  <section data-format="markdown"
-  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Referenties.md"></section>
+  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Referenties.md">
+    
+  </section>
+  -->
   <section id="conformance"> <!-- This section is filled automatically by ReSpec. -->
-  </section></body>
+  </section>
+  </body>
 </html>

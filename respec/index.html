@@ -2,211 +2,1386 @@
 <html lang="nl" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-
     <title>DCAT 2 Toepassingsprofiel voor data.overheid.nl</title>
-
     <!-- https://raw.githack.com/dataoverheid/dcat-ap-donl/main/respec/index.html -->
-
-    <script async="async" class="remove"
-            src="https://www.w3.org/Tools/respec/respec-w3c"></script>
-
-    <script class="remove">/*<![CDATA[*/
+    <script async="async" class="remove" src="https://www.w3.org/Tools/respec/respec-w3c"></script>
+    <script class="remove">
+      /*<![CDATA[*/
       // All config options at https://respec.org/docs/
       var respecConfig = {
         // Working Groups ids at https://respec.org/w3c/groups/
-        group: "webapps", 
+        group: "webapps",
         specStatus: "unofficial",
-        editors: [
-          { name: "Jan Meijer", company: "KOOP" },
-          { name: "Kees Trautwein", company: "Logius" },
-          { name: "Willem ter Berg", company: "TextInfo" },
-        ],
-        authors: [
-          { name: "Jan Meijer", company: "KOOP" },
-          { name: "Kees Trautwein", company: "Logius" },
-          { name: "Willem ter Berg", company: "TextInfo" },
-          { name: "Cor Melse", company: "RIVM" },
-          { name: "Bob Korte", company: "CBS" },
-          { name: "Erwin van Mierlo", company: "CBS" },
-          { name: "Finn Tiebout", company: "Kadaster" },
-          { name: "Michal Kleinhans", company: "Gemeente Utrecht" },
-          { name: "Robin Segers", company: "Gemeente Utrecht" },
-          { name: "Martijn Brünger", company: "Provincie Zuid-Holland" },
-          { name: "Janet Feenstra", company: "Gemeente Groningen" },
-          { name: "Geraldine Nolf", company: "Vlaamse overheid" },
-          { name: "Hayo Schreijer", company: "Dexes" },
-          { name: "Civity", company: "Civity" },
-          { name: "M. Holtslag", company: "Esri" },
-          { name: "Eva Hagendoorn", company: "DNB" },
-          { name: "Celine Jansen", company: "Gemeente Eindhoven" },
-          { name: "Friso Snijder", company: "DUO" },
-          { name: "F. Penninga", company: "Geonovum" },
-          { name: "J. Murre", company: "Gemeente Amsterdam" },
-          { name: "Ina de Visser", company: "Geonovum" },
-          { name: "Hans Overbeek", company: "KOOP" },
-          { name: "Andre van Brussel", company: "ICTU" },
-       ],
+        editors:[ {
+          name: "Jan Meijer", company: "KOOP"
+        }, {
+          name: "Kees Trautwein", company: "Logius"
+        }, {
+          name: "Willem ter Berg", company: "TextInfo"
+        },],
+        authors:[ {
+          name: "Jan Meijer", company: "KOOP"
+        }, {
+          name: "Kees Trautwein", company: "Logius"
+        }, {
+          name: "Willem ter Berg", company: "TextInfo"
+        }, {
+          name: "Cor Melse", company: "RIVM"
+        }, {
+          name: "Bob Korte", company: "CBS"
+        }, {
+          name: "Erwin van Mierlo", company: "CBS"
+        }, {
+          name: "Finn Tiebout", company: "Kadaster"
+        }, {
+          name: "Michal Kleinhans", company: "Gemeente Utrecht"
+        }, {
+          name: "Robin Segers", company: "Gemeente Utrecht"
+        }, {
+          name: "Martijn Brünger", company: "Provincie Zuid-Holland"
+        }, {
+          name: "Janet Feenstra", company: "Gemeente Groningen"
+        }, {
+          name: "Geraldine Nolf", company: "Vlaamse overheid"
+        }, {
+          name: "Hayo Schreijer", company: "Dexes"
+        }, {
+          name: "Civity", company: "Civity"
+        }, {
+          name: "M. Holtslag", company: "Esri"
+        }, {
+          name: "Eva Hagendoorn", company: "DNB"
+        }, {
+          name: "Celine Jansen", company: "Gemeente Eindhoven"
+        }, {
+          name: "Friso Snijder", company: "DUO"
+        }, {
+          name: "F. Penninga", company: "Geonovum"
+        }, {
+          name: "J. Murre", company: "Gemeente Amsterdam"
+        }, {
+          name: "Ina de Visser", company: "Geonovum"
+        }, {
+          name: "Hans Overbeek", company: "KOOP"
+        }, {
+          name: "Andre van Brussel", company: "ICTU"
+        },],
         github: {
           branch: "main",
-          repoURL: "dataoverheid/dcat-ap-donl", 
+          repoURL: "dataoverheid/dcat-ap-donl",
         },
         // See https://respec.org/docs/#xref for usage.
         xref: true,
       };
-    /*]]>*/</script>
+      /*]]>*/</script>
+    <style>
+      th,
+      td {
+        vertical-align: text-top;
+      }</style>
   </head>
-
   <body>
-    <section id="abstract"> 
-      <p>
-        Dit document beschrijft de specificatie van het toepassingsprofiel van DCAT 2 voor data.overheid.nl. Het is een doorontwikkeling van <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">versie 1.1 van het toepassingsprofiel</a>.
-      </p>
+    <section id="abstract">
+      <p> Dit document beschrijft de specificatie van het toepassingsprofiel van DCAT 2 voor
+        data.overheid.nl. Het is een doorontwikkeling van <a
+          href="https://dcat-ap-donl.readthedocs.io/en/latest/">versie 1.1 van het
+          toepassingsprofiel</a>. </p>
     </section>
-    
     <section id="sotd">
       <p>Hier de tekst in section sotd</p>
     </section>
-    
     <section class="informative">
       <h2>Introductie</h2>
       <p>Hier komt de introductie</p>
     </section>
-    
     <section class="normative">
       <h2>Specificatie van het toepassingsprofiel</h2>
-      <p>
-        Dit hoofdstuk beschrijft de klassen en eigenschappen die aanbieders van data kunnen gebruiken om hun data te beschrijven. In de basis kunnen alle klassen en eigenschappen worden gebruikt die voorkomen in de specificatie van DCAT volgens W3C. Het toepassingsprofiel voor DONL hanteerd voor sommige eigenschappen een afwijkend waardenbereik, bijvoorbeeld omdat DONL hiervoor een eigen waardelijst heeft opgenomen. Deze waardelijsten worden beschreven in hoofdstuk <a href="#waardelijsten-controlled-vocabularies">Waardelijsten</a>. 
-      </p>
-      
-      <section>
+      <p> Dit hoofdstuk beschrijft de klassen en eigenschappen die aanbieders van data kunnen
+        gebruiken om hun data te beschrijven. In de basis kunnen alle klassen en eigenschappen
+        worden gebruikt die voorkomen in de specificatie van DCAT volgens W3C. Het
+        toepassingsprofiel voor DONL hanteerd voor sommige eigenschappen een afwijkend
+        waardenbereik, bijvoorbeeld omdat DONL hiervoor een eigen waardelijst heeft opgenomen. Deze
+        waardelijsten worden beschreven in hoofdstuk <a
+          href="#waardelijsten-controlled-vocabularies">Waardelijsten</a>. </p>
+      <section id="properties">
         <h3>Eigenschappen</h3>
-        
         <section>
           <h4>Definitie van eigenschappen</h4>
-          
-          <p>
-            Van elke eigenschap dat onderdeel is van een klasse beschrijft de specificatie enkele vaste gegevens, zoals de definitie, het bereik en een evt. een algemene opmerking en/of een specifieke opmerking over het gebruik van de eigenschap op data.overheid.nl. 
-          </p>
+          <p> Van elke eigenschap dat onderdeel is van een klasse beschrijft de specificatie enkele
+            vaste gegevens, zoals de definitie, het bereik en een evt. een algemene opmerking en/of
+            een specifieke opmerking over het gebruik van de eigenschap op data.overheid.nl. </p>
+        </section>
+        <section>
+          <h4>Talen</h4>
+          <p>De tekstuele waarden kunnen in maximaal één natuurlijke taal worden aangeleverd. Bij
+            voorkeur is dat Nederlands. Als de beschrijvingen worden aangerleverd in een andere
+            taal, dan moet de taal kan worden aangegeven in eigenschap <code>dct:language</code>. Op
+            data.overheid.nl wordt deze tekst geïndexeerd, zodat eindgebruikers de desbetreffende
+            dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in
+            de tekst.</p>
         </section>
       </section>
-      
-      <section>
-        <h3>Klasse Catalogus, dcat:Catalog</h3>
-        
-        <p>
-          Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets, dataservices en/of catalogi. Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen van resources. De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen vanuit de distributie.</p>
-
+      <section id="Class:Catalog">
+        <h3>Klasse Catalogus</h3>
+        <table class="def">
+          <tr>
+            <th>RDF Class:</th>
+            <td><a href="http://www.w3.org/ns/dcat#Catalog"><code>dcat:Catalog</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definition:</th>
+            <td>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande
+              uit datasets, dataservices en/of catalogi. Een catalogus zelf is dus ook een resource
+              die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen
+              van resources. De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de
+              catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset.</td>
+          </tr>
+          <tr>
+            <th class="prop">Sub-class of:</th>
+            <td><a href="#Class:Dataset"><code>dcat:Dataset</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Usage note:</th>
+            <td>A Web-based data catalog is typically represented as a single instance of this
+              class.</td>
+          </tr>
+          <tr>
+            <th class="prop">Usage note:</th>
+            <td>Datasets and data services are examples of resources in the context of a data
+              catalog.</td>
+          </tr>
+          <tr>
+            <th class="prop">See also:</th>
+            <td>
+              <a href="#Class:Catalog_Record"></a>, <a href="#Class:Dataset"></a></td>
+          </tr>
+        </table>
+        <section id="Property:homepage">
+          <h4 id="property-homepage">Property: homepage</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_homepage"
+                    >foaf:homepage</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de homepage van de catalogus.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:anyURI</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Een catalogus kan op meerdere dataportals worden gepubliceerd. Deze eigenschap
+                  verwijst naar de originele homepage. Dat is in de regel de homepage van de maker
+                  van de catalogus.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:themes">
+          <h4>Property: themes</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_themes"
+                    >dcat:themeTaxonomy</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de waardelijst (controlled vocabularie) met
+                  thema&#39;s die (in eigenschap <code>dcat:theme</code>) gekoppeld kunnen worden
+                  aan de resources die zijn opgenomen in de catalogus.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:anyURI van een waardelijst, zoals gepubliceerd op <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/"
+                    >https://waardelijsten.dcat-ap-donl.nl/</a></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, optioneel</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>De datasets op data.overheid.nl gebruiken in eigenschap <code>dcat:theme</code>
+              alleen de waarden uit de taxonomie beleidsagenda en is het dus niet nodig om
+              afzonderlijke vocabulaires te registreren in <code>dcat:themeTaxonomy</code>. Ook
+              staat DONL niet toe dat toeleverancier hun eigen thema-lijsten gebruiken, omdat de
+              DONL website de taxonomie beleidsagenda gebruikt om de beschikbare datasets en
+              dataservices naar onderwerp in te delen. Dit gegeven hoeft daarom niet te worden
+              uitgewisseld en wordt daarom niet opgenomen in het toepassingsprofiel.</p>
+          </aside>
+        </section>
+        <section id="Property:catalog_has_part">
+          <h4>Property: has part</h4>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel. In plaats hiervan
+              maken we gebruik van de meer specifieke eigenschappen <code>dcat:dataset</code>,
+                <code>dcat:service</code> en <code>dcat:catalog</code>. Overigens zijn deze
+              eigenschappen sub-properties van <code>dct:hasPart</code>.</p>
+          </aside>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_has_part"
+                    >dct:hasPart</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de resources die in de catalogus zijn
+                  opgenomen.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:catalog_dataset">
+          <h4>Eigenschap: dataset</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_dataset"
+                    >dcat:dataset</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de (metadata van de) dataset(s) die is/zijn
+                  opgenomen in de catalogus.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>dcat:Dataset</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th>DCAT-AP</th>
+                <td>Zie de discussie op <a href="https://github.com/SEMICeu/DCAT-AP/issues/180"
+                    >https://github.com/SEMICeu/DCAT-AP/issues/180</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Het lijkt logisch dat een catalogus tenminste één dataset bevat, omdat een catalogus
+              op zich niet zo interessant is. Desondanks geven we hier de cardinaliteit 0..*, omdat
+              een catalogus ook als resource in een andere catalogus kan voorkomen zonder verdere
+              inhoud. In dat geval verwijst de catalogus door naar de homepage op een ander
+              dataportaal die de inhoud wel toont.</p>
+          </aside>
+        </section>
+        <section id="Property:catalog_service">
+          <h4>Eigenschap: service</h4>
+          <p class="note">Zie: <a href="https://github.com/w3c/dxwg/issues/1431"
+              >https://github.com/w3c/dxwg/issues/1431</a></p>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_service"
+                    >dcat:service</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de (metadata van de) dataservice die voorkomt in
+                  de catalogus.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>dcat:DataService</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, aanbevolen</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Dataservice is een nieuwe resource in DCAT2. Om de metadata van dataservices te
+              kunnen uitwisselen krijgt data.overheid.nl een nieuwe API voorziening.</p>
+          </aside>
+        </section>
+        <section id="Property:catalog_catalog">
+          <h4>Eigenschap: catalog</h4>
+          <aside class="note">
+            <p> Property added in DCAT 2. </p>
+          </aside>
+          <p class="note"><strong>Vraag</strong>: Op dit moment is het op data.overheid.nl al
+            mogelijk om catalogi op te nemen in een catalogus, maar worden deze catalogi
+            geregistreerd als dataset. In DCAT2 is een catalogus, net als een dataset en
+            dataservice, gemodelleerd als aparte resource. Hoe willen we hiermee omgaan?</p>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog"
+                  >dcat:catalog</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de (metadata van de) catalogus die voorkomt in de
+                  catalogus. Deze eigenschap maakt dus mogelijk om een catalogus te beschouwen ale
+                  een dataset en deze op te nemen in een catalogus.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>dcat:Catalog</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, aanbevolen</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De mogelijkheid om een catalogus op te nemen in een catalogus is nieuw ten
+                  opzichte van de huidige versie van data.overheid.nl.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:catalog_catalog_record">
+          <h4>Eigenschap: catalog record</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_catalog_record"
+                    >dcat:record</a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de administratieve metadata van de registratie van
+                  een resource in een catalogus. HIerbij kan worden gedacht aan de datum/tijd waarop
+                  een bepaalde resource is geregistreerd.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>dcat:CatalogRecord</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze property en de klasse dcat:CatalogRecord worden niet opgenomen in het
+                  toepassingsprofiel, omdat eerder is gebleken dat deze informatie weinig toevoegt
+                  en de uitwisseling van data nodeloos compliceert.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
-      
-      <section>
-        <h3>Klasse Resource, dcat:Resource</h3>
-        
-        <p class="note">
-          De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse voor <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>. Het maakt het eenvoudiger om het informatiemodel - in de toekomst - uit te breiden met nieuwe resources. De eigenschappen in <code>dcat:Resource</code> worden nader gedefinieerd en beschreven bij de uitwerking van de subklassen <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
-        </p>
+      <section id="Class:Resource">
+        <h3>Klasse Resource</h3>
+        <aside class="note">
+          <p>De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse. Het bevat
+            enkele algemene eigenschappen die onderdeel zijn van de resources in DCAT 2, namelijk
+              <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
+            De superklasse maakt het voor de toekomst eenvoudiger om het informatiemodel uit te
+            breiden met nieuwe resources.</p>
+        </aside>
+        <section id="Property:resource_access_rights">
+          <h4>Eigenschap: access rights</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_access_rights"
+                    >dct:accessRights</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap geeft informatie over het openbaarheidsniveau van de
+                  resource.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:Openbaarheidsniveau</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Toelichting</th>
+                <td>Met deze eigenschap kan worden aangegeven of de dataset <code>Publiek</code>,
+                    <code>Niet publiek</code> of <code>Beperkt</code> is. Als een dataset
+                    <code>Beperkt</code> is betekent dit dat de dataset alleen toegankelijk is onder
+                  bepaalde voorwaarden die zijn beschreven in eigenschappen license en rights. Deze
+                  drie mogelijke waarden zijn afkomstig van het Publicatiebureau van de EU en
+                  voldoen daarmee aan DCAT-AP-EU. Zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:resource_conforms_to">
+          <h4>Eigenschap: conforms to</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_conforms_to"
+                    >dct:conformsTo</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de vastgestelde standaard waaraan de data van de
+                  beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema,
+                  ontology, view of profiel.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, optineel</td>
+              </tr>
+              <tr>
+                <th>Toelichting</th>
+                <td>Gebruik deze eigenschap om aan te geven dat een dataset of dataservice voldoet
+                  aan een bepaalde standaard, schema of ontologie. Als dat niet het geval is wordt
+                  het gegeven niet ingevuld. </td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Het is zeer gewenst dat DONL hiervoor uiteindelijk een waardelijst met mogelijke
+              standaarden, schema&#39;s of ontologieën samenstelt. Tot die tijd kan deze eigenschap
+              worden ingevuld met een string. Zie <a href="../issues/14">Issue #14</a>.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_contact_point">
+          <h4>Eigenschap: contact point</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_contact_point"
+                    >dcat:contactPoint</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de contact-informatie van de beschreven
+                  resource.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:ContactPoint (nog op te stellen) &lt;- <strong>Geadviseerd
+                    wordt hiervoor card te gebruiken? Welke waardenlijst is compleet genoeg om alle
+                    leveranciers te dekken?</strong></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Aan de hand van deze informatie kunnen eindgebruikers op data.overheid.nl contact
+              opnemen met de eigenaar van de dataset of dataservice. Dat betekent dat de
+              waardelijst, afgezien van de naam van de desbetreffende organisatie, ook een
+              telefoonnummer of e-mailadres moet bevatten. Eigenschap contact point is alleen
+              relevant (en hoeft dus alleen te worden ingevuld) als deze afwijkt van eigenschap <a
+                href="#Property:resource_creator"><code>resource creator</code></a>.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_creator">
+          <h4>Eigenschap: creator</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_creator"
+                    >dct:creator</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de organisatie die verantwoordelijk is voor de
+                  beschreven resource.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:Organization</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, verplicht</td>
+              </tr>
+              <tr>
+                <th>Toelichting 1</th>
+                <td>De waardelijst geeft een overzicht van alle bekende organisaties. Als de
+                  benodigde waarde hierin ontbreekt, kan de contentbeheerder van DONL een nieuwe
+                  waarde toevoegen. Het streven is erop gericht om de organisaties op een eenduidige
+                  manier te identificeren. Dat betekent dat bijvoorbeeld de <code>gemeente
+                    Eindhoven</code> op data.overheid.nl op dezelfde manier wordt geïdentificeerd
+                  als op andere websites van KOOP, bijvoorbeeld die van
+                  officielebekendmakingen.nl.</td>
+              </tr>
+              <tr>
+                <th>Toelichting 2</th>
+                <td>De thans gebruikte waardelijst bevat waarden van organisaties die afkomstig zijn
+                  uit OWMS. De OWMS-waardelijsten zullen op korte termijn worden vervangen door
+                  TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties
+                  zullen veranderen. De nu gebruikte OWMS waardelijst is beschikbaar op <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/donl_organization.json</a>. Organisaties
+                  kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software
+                  van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:resource_description">
+          <h4>Eigenschap: description</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_description"
+                    >dct:description</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap geeft een beschrijving de resource.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, verplicht</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:resource_title">
+          <h4>Eigenschap: title</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_title"
+                    >dct:title</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>De naam van de beschreven resource. Op data.overheid.nl wordt deze naam
+                  geïndexeerd, zodat eindgebruikers de desbetreffende dataset, dataservice of
+                  catalogus kunnen terugvinden op basis van een of meer woorden in de naam.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, verplicht</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:resource_release_date">
+          <h4>Eigenschap: release date</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_release_date"
+                    >dct:issued</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de datum waarop de beschreven resource is
+                  gepubliceerd.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:dateTime</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, aanbevolen</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Data.overheid.nl wil hier graag de eerste (vroegste) publicatiedatum registreren
+              waarop de data-leveancier deze dataset, dataservice of catalogus heeft gepubliceerd.
+              Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de
+              wijzigingsdatum van de dataset, dataservice of catalogus, omdat hiervoor de
+                <code>update/modification date</code> bestaat.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_update_date">
+          <h4>Eigenschap: update/modification date</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_update_date"
+                    >dct:modified</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de datum waarop de beschreven resource is
+                  gewijzigd.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:dateTime</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, aanbevolen</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of
+              catalogus is gewijzigd. Wanneer deze datum wijzigt, wordt automatisch de vorige
+              wijzigingsdatum overschreven. Dat geldt even zo goed voor de data zelf. Nieuwe versies
+              overschrijven de oude versies. Mogelijk in de toekomst (DCAT3) wordt een voorziening
+              ingericht om meerdere (temporele) versies van de data te kunnen bewaren in het
+              portaal.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_language">
+          <h4>Eigenschap: language</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_language"
+                    >dct:language</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de natuurlijk taal van de tekstuele metadata die
+                  de resource beschrijft.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:Language, zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/donl_language.json</a></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Er is een verschil in definitie van dct:language (voor dataset en dataservice)
+                  tussen de specificaties volgens W3C en DCAT-AP-EU. <code>Volgens W3C</code> A
+                  language of the item. This refers to the natural language used for textual
+                  metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or
+                  service) or the textual values of a dataset distribution. <code>Volgens
+                    DCAT-AP-EU</code> This property refers to a language of the Dataset. </td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Deze eigenschap beschrijft de natuurlijke taal van de tekstuele metadata van de
+              dataset, dataservice en catalogus, dus de taal van o.a. de titel en beschrijving.
+              Hierbij kan altijd maar een taal worden vastgelegd. Zie <a href="../issues/11">Issue
+                #11</a>.</p>
+            <p>Om aan te geven wat de natuurlijke taal van de data zelf, kunt u gebruikmaken van
+                <code>dct:language</code> in <a href="#Class:Distribution"
+                ><code>Distributie</code></a>.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_publisher">
+          <h4>Eigenschap: publisher</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_publisher"
+                    >dct:publisher</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de organisatie die verantwoordelijk is voor de
+                  uitgifte/publicatie van de resource.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:Organization, zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/donl_organization.json</a></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Zie ook eigenschap <code>resource creator</code> en <code>contact
+                  point</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:resource_identifier">
+          <h4>Eigenschap: identifier</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_identifier"
+                    >dct:identifier</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap identificeert de resource volgens de eigenaar van de data. Dit
+                  is bij voorkeur een URI.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, Verplicht</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="">
+            <p>Data.overheid.nl neemt hier de oorspronkelijke identificatie van de resource
+              (dataset, dataservice of catalogus) over van de data-eigenaar. Afgezien van deze
+              identifier kan de betreffende dataset, dataservice of catalogus - in de loop van de
+              tijd - ook andere identifiers hebben gekregen. Deze worden overgenomen in een andere
+              eigenschap, namelijk <code>adms:identifier</code>. Een resource kan ook meerdere
+              voorkomens van adms:identifier hebben.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_theme">
+          <h4>Eigenschap: theme/category</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_theme"
+                    >dcat:theme</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar een thema uit de taxonomie beleidsagenda. </td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst Taxonomie beleidsagenda, zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json</a></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..*, Verplicht</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Data.overheid.nl gebruikt <code>theme/category</code> om de datasets, dataservices en
+              catalogi naar onderwerp in te delen. Door de eigenschap verplicht te stellen, kunnen
+              eindgebruikers de betreffende resource altijd terugvinden wanneer zij via het thema
+              zoeken of navigeren. De homepage toont standaard alle beschikbare thema&#39;s. De
+              thema indeling is hiërarchisch georganiseerd, zodat datasets ook aan meer specifieke
+              subthema&#39;s kunnen worden gekoppeld, bijvoorbeeld subthema
+                <code>Waterschappen</code> onder het thema <code>Bestuur</code>.</p>
+            <p>Er is voor thema geen relatie met eigenschap <code>dcat:themeTaxonomy</code> in de
+              bijbehorende catalogus (dus waarin de dataset of dataservice is opgenomen), omdat voor
+              de thema&#39;s één vaste waardelijst wordt gebruikt.</p>
+            <p>Het is gewenst om de resources ook te kunnen verrijken met andere begrippenkaders. We
+              onderzoeken of hiervoor een nieuwe eigenschap moet worden geïntroduceerd, of dat kan
+              worden volstaan met deze eigenschap. Wel is het nodig om aan te geven welke
+              begrippenkaders zijn toegestaan. Mogelijk kan dit worden opgelost door ze aan te geven
+              in <code>dcat:themeTaxonomy</code> in de catalogus.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_type">
+          <h4>Eigenschap: type/genre</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type">dct:type</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft het type van de resource.</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De DCAT standaard en DCAT-AP verschaffen geen duidelijkheid over de toepassing
+                  van eigenschap type/genre. DCAT-AP werkt aan een controlled vocabulary met
+                  mogelijke typen (de status hiervan is onbekend). W3C heeft hiervoor wel een issue
+                  aangemaakt. Zie <a href="https://github.com/w3c/dxwg/issues/64"
+                    >https://github.com/w3c/dxwg/issues/64</a>.</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Het gaat hierbij niet om het formaat, omdat hiervoor eigenschap
+                    <code>dct:format</code> beschikbaar is. </td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="note">
+            <p>Deze property wordt niet overgenomen in het toepassingsprofiel van data.overheid.nl,
+              omdat er (nog) geen functie voor is.</p>
+          </aside>
+<p>####</p>
+          <h3 id="property-resource-relation">Property: resource relation</h3>
+          <p>Deze eigenschap maakt het mogelijk om een niet-gespecificeerde relatie te leggen met
+            een andere resource in een catalogus.</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_relation"
+                    >dct:relation</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze eigenschap kan worden gebruikt om relaties te leggen tussen resources,
+                  waarbij de aard van de relatie niet bekend is.</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                  data.overheid.nl, omdat deze vooralsnog niet nodig is.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-qualified-relation">Property: qualified relation</h3>
+          <p>Deze eigenschap maakt het mogelijk om gespecificeerde relaties te leggen met andere
+            resources</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_qualified_relation"
+                    >dcat:qualifiedRelation</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>In tegenstelling tot eigenschap <code>resource relation</code> kunnen met deze
+                  eigenschap relaties worden gelegd waarbij ook de aard of betekenis van de relatie
+                  kan worden vastgelegd. Hierbij gaat het uiteraard om andere relaties dan die als
+                  standaard in DCAT zijn opgenomen (zoals dcat:distribution, om de relatie te leggen
+                  tussen een dataset en de bijbehorende distributie).</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                  data.overheid.nl, omdat deze vooralsnog niet nodig is.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-keyword-tag">Property: keyword/tag</h3>
+          <p>Deze eigenschap bevat vrije keywords of termen die de resource beschrijven.</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_keyword"
+                    >dcat:keyword</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Het gaat hier om vrije tekst, niet te verwarren met dcat:theme. Bij deze laatste
+                  eigenschap komen de termen uit een controled vacabulary (of vastgesteld
+                  begrippenkader of waardelijst), en hebben een meer formele status. Overigens geldt
+                  voor beide vormen dat deze de vindbaarheid van de desbetreffende resource kunnen
+                  verbeteren.</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Het is dus mogelijk om meerdere keywords toe te kennen aan een resource. De
+                  verschillende waarden moeten in verschillende voorkomens van deze eigenschap
+                  worden aangeleverd.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-landing-page">Property: landing page</h3>
+          <p>Deze eigenschap verwijst naar de webpagina die toegang geeft tot de resource (dataset,
+            dataservice of catalogus) en aanvullende informatie verschaft over de resource. Het gaat
+            hierbij om de originele webpagina van de data-eigenaar.</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page"
+                    >dcat:landingPage</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:anyURI</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Optioneel</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-qualified-attribution">Property: qualified attribution</h3>
+          <p>Deze eigenschap verwijst naar een persoon of organisatie, anders dan <code>contact
+              point</code>, <code>resource creator</code> of <code>publisher</code> die ook een
+            verantwoordelijkheid heeft voor de resource. </p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a
+                    href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_qualified_attribution"
+                    >prov:qualifiedAttribution</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>
+                  <a href="https://www.w3.org/TR/prov-o/#Attribution">prov:Attribution</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De klasse prov:Attribution biedt de mogelijkheid om bij de organisatie ook de
+                  rol te beschrijven.</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Deze eigenschap nemen we niet over in het toepassingsprofiel omdat er vooralsnog
+                  geen behoefte is om deze informatie uit te wisselen.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-license">Property: license</h3>
+          <p>Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van de
+            resource beschrijft.</p>
+          <blockquote>
+            <p><strong>Vraag</strong>: De DCAT standaard voorziet in <code>dct:rights</code>,
+                <code>dct:license</code> en <code>dct:accessRights</code> om de rechten en plichten
+              te beschrijven die rusten op de gegevens die ten grondslag liggen aan de resource.
+              Ondertussen zijn er diverse initiatieven die ertoe moeten leiden dat deze rechten
+              machine leesbaar worden. Welke van deze drie eigenschappen willen we opnemen in
+              toepassingsprofiel?</p>
+          </blockquote>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_license"
+                    >dct:license</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:License, zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/donl_license.json</a>. De lijst is
+                  samengesteld uit waarden die zijn overgenomen van creativecommons.org en
+                  OWMS.</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, Verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze eigenschap is geen onderdeel van DCAT-AP-EU.</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Omdat de OWMS-waardelijsten op korte termijn worden vervangen door TOOI, zal ook
+                  de waardelijst met licenties gaan wijzigen. We streven ernaar op de nieuwe lijst
+                  backwards compatible te houden met de oude lijst. Dat betekent dat een
+                  aangeleverde oude waarde automatisch wordt omgezet naar de nieuwe waarde.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-rights">Property: rights</h3>
+          <p>Een verklaring over de rechten die niet onder dct:license of dct:accessRights vallen,
+            zoals copyrightverklaringen.</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_rights"
+                    >dct:rights</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze eigenschap is geen onderdeel van DCAT-AP-EU.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-has-policy">Property: has policy</h3>
+          <p>Deze eigenschap verwijst naar een ODRL-object dat uitdrukking geeft aan de
+            gebruiksrechten van de desbetreffende resource. </p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <td>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_has_policy"
+                    >odrl:hasPolicy</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>odrl:Policy</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, aanbevolen</td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Data.overheid.nl doet onderzoek naar mogelijkheden om gebruiksrechten te
+                  specificeren in een machine leesbare vorm. Hierbij wordt nadrukkelijk gekeken naar
+                  de mogelijkheden van ODRL. Zie ook <a href="https://www.w3.org/TR/odrl-model/"
+                    >https://www.w3.org/TR/odrl-model/</a>. </td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Voorlopig wordt deze eigenschap niet overgenomen, omdat het onderzoek naar de
+                  toepassing van ODRL nog niet is afgerond.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="property-is-referenced-by">Property: is referenced by</h3>
+          <p>Deze eigenschap verwijst naar een gerelateerde resource, bijvoorbeeld een publicatie
+            die verwijst naar een resource in een catalogus.</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_is_referenced_by"
+                    >dct:isReferencedBy</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>rdfs:Resource</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze eigenschap kan worden geïnterpreteerd als de terugverwijzing (inverse
+                  relatie) naar de resource (buiten het dataplatform) dat naar de dataset,
+                  dataservice of catalogus verwijst. </td>
+              </tr>
+              <tr>
+                <th>DONL</th>
+                <td>Deze eigenschap nemen we niet over in het toepassingsprofiel omdat er geen
+                  behoefte is om deze informatie uit te wisselen.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
-      
-      <section>
-        <h3>Klasse Catalogusrecord, dcat:CatalogRecord</h3>
-        
-        <p>
-          Een Catalogusrecord geeft informatie over de registratie van een DCAT resource in een catalogus. Het bevat de zgn. administratieve metadata van het dataportaal.
-        </p>
-        
-        <p class="note" title="">
-          Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen dataportalen kan het voorkomen die metadata voldoen aan een specifieke toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere, bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data specificeren aan wel toepassingsprofiel de metadata voldoet.
-        </p>
-        
+      <section id="Class:CatalogRecord">
+        <h3>Klasse Catalogusrecord</h3>
+        <p> Een Catalogusrecord geeft informatie over de registratie van een DCAT resource in een
+          catalogus. Het bevat de zgn. administratieve metadata van het dataportaal. </p>
+        <p class="note" title=""> Bij de uitwisseling van de metadata van datasets (of andere DCAT
+          resources) tussen dataportalen kan het voorkomen die metadata voldoen aan een specifieke
+          toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te
+          standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen
+          voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere,
+          bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data
+          specificeren aan wel toepassingsprofiel de metadata voldoet. </p>
       </section>
-      
-      <section>
-        <h3>Klasse Dataset, dcat:dataset</h3>
-        
-        <p>
-          Een dataset is een gegevensverzameling, samengesteld of gepubliceerd door een (overheids-)organisatie, die digitaal beschikbaar is in een of meer representaties.
-        </p>
-        
-        <p class="note">
-          De dataset klasse is een subklasse van de Catalogus-resource. Dit betekent dat het alle eigenschappen van Catalogus-resource bevat, aangevuld met enkele specifieke eigenschappen.
-          <br/>
-          De onderstaande paragrafen beschrijven zowel de eigenschappen van dataset, als de eigenschappen van de subklasse catalogus-record. 
-        </p>
+      <section id="Class:Dataset">
+        <h3>Klasse Dataset</h3>
+        <p> Een dataset is een gegevensverzameling, samengesteld of gepubliceerd door een
+          (overheids-)organisatie, die digitaal beschikbaar is in een of meer representaties. </p>
+        <p class="note"> De dataset klasse is een subklasse van de Catalogus-resource. Dit betekent
+          dat het alle eigenschappen van Catalogus-resource bevat, aangevuld met enkele specifieke
+          eigenschappen. <br /> De onderstaande paragrafen beschrijven zowel de eigenschappen van
+          dataset, als de eigenschappen van de subklasse catalogus-record. </p>
       </section>
-      
-      <section>
-        <h3>Klasse Distributie, dcat:Distribution</h3>
-        
-        <p>
-          Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset kunnen verkregen. Meestal betreft het hier een download-bestand.
-        </p>
-        
-        <p class="advisement">
-          In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data op te vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe mogelijkheid om webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft echter mogelijk en toegestaan om webservices te beschrijven als distributie.
-        </p>
-        
-        <p>
-          De aanbieder van een dataset kan de gegevens aanbieden in meerdere verschillende formaten en/of samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze worden elk als afzonderlijke distributies beschreven en gerelateerd aan de dataset. Als een dataset (ook) wordt aangeboden in de vorm van een dataservice, dan worden hierover aanvullende gegevens opgenomen in een voorkomen van de klasse DataService en gerelateerd aan de bijbehorende distributie.
-        </p>
+      <section id="Distribution">
+        <h3>Klasse Distributie</h3>
+        <p> Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset
+          kunnen verkregen. Meestal betreft het hier een download-bestand. </p>
+        <p class="advisement"> In het vorige toepassingsprofiel (dus v1.1) werden zowel de
+          download-bestanden als de webservices om de data op te vragen, in de vorm van een
+          distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe mogelijkheid om
+          webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft
+          echter mogelijk en toegestaan om webservices te beschrijven als distributie. </p>
+        <p> De aanbieder van een dataset kan de gegevens aanbieden in meerdere verschillende
+          formaten en/of samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze
+          worden elk als afzonderlijke distributies beschreven en gerelateerd aan de dataset. Als
+          een dataset (ook) wordt aangeboden in de vorm van een dataservice, dan worden hierover
+          aanvullende gegevens opgenomen in een voorkomen van de klasse DataService en gerelateerd
+          aan de bijbehorende distributie. </p>
       </section>
-      
-      <section>
-        <h3>Klasse Dataservice, dcat:DataService</h3>
-        
-        <p class="note">
-          De klasse Dataservice is nieuw in DCAT-AP-DONL versie 2.
-        </p>
-        
-        
+      <section id="Class:DataService">
+        <h3>Klasse Dataservice</h3>
+        <aside class="note">
+          <p>De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt uitgebreidere
+            mogelijkheden om de geautomatiseerde toegang tot de gegevens in een dataset via een API
+            te beschrijven dan mogelijk is in de klasse <a href="#Distribution"
+                ><code>Distributie</code></a>. In deze nieuwe versie van het toepassingsprofiel is
+            de Dataservice klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te
+            beschrijven met de klasse Distributie.</p>
+        </aside>
         <table class="def">
           <tr>
             <th>RDF&#160;Klasse</th>
-            <td><a href="http://www.w3.org/ns/dcat#DataService"><code>dcat:DataService</code></a></td>
+            <td><a href="http://www.w3.org/ns/dcat#DataService"
+              ><code>dcat:DataService</code></a></td>
           </tr>
           <tr>
             <th class="prop">Definitie</th>
-            <td>Een dataservice is een collectie van functies om toegang te krijgen tot (een selectie of bewerking van) gegevens van een of meer datasets, speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen. De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt meer uitgebreide mogelijkheden om geautomatiseerde toegang tot gegevens via een API te beschrijven dan mogelijk is in de klasse Distributie. In het toepassingsprofiel blijft het overigens mogelijk om services te beschrijven met de klasse Distributie.</td>
+            <td>Een dataservice is een collectie van functies om toegang te krijgen tot (een
+              selectie of bewerking van) gegevens van een of meer datasets, speciaal bedoeld voor
+              geautomatiseerde koppelingen tussen systemen. </td>
           </tr>
           <tr>
             <th class="prop">Subklasse&#160;van</th>
-            <td><a href="#klasse-resource-dcat-resource"><code>dcat:Resource</code></a></td>
+            <td><a href="#klasse-resource"><code>dcat:Resource</code></a></td>
           </tr>
           <tr>
             <th class="prop">Subklasse&#160;van</th>
             <td><a href="http://purl.org/dc/dcmitype/Service"><code>dctype:Service</code></a></td>
           </tr>
           <tr>
-            <th class="prop">Opmerking</th>
-            <td>Als een  <a href="#klasse-dataservice-dcat-dataservice"><code>dcat:DataService</code></a> gegevens ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze relatie met eigenschap <a href="#Property:data_service_serves_dataset"><code>dcat:servesDataset</code></a> worden beschreven.</td>
+            <th class="prop">Herkomst</th>
+            <td>DCAT2, DCAT-AP-EU-2.01</td>
           </tr>
           <tr>
             <th class="prop">Opmerking</th>
-            <td>
-              Met behulp van eigenschap <a href="http://purl.org/dc/terms/type"><code>dcterms:type</code></a> kan onderscheid worden gemaakt tussen verschillende typen van services. Om deze typering te standaardiseren, worden de mogelijke waarden opgenomen in een waardelijst.</td>
+            <td>Als een <a href="#DataService"><code>dcat:DataService</code></a> gegevens ontsluit
+              die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze relatie met
+              eigenschap <a href="#Property:data_service_serves_dataset"
+                  ><code>dcat:servesDataset</code></a> worden beschreven.</td>
+          </tr>
+          <tr>
+            <th class="prop">Opmerking</th>
+            <td> Met behulp van eigenschap <a href="http://purl.org/dc/terms/type"
+                  ><code>dcterms:type</code></a> kan onderscheid worden gemaakt tussen verschillende
+              typen van services. Om deze typering te standaardiseren, worden de mogelijke waarden
+              opgenomen in een waardelijst.</td>
           </tr>
         </table>
-        
-        <p>De volgende eigenschappen zijn specifiek voor deze klasse: <a href="#Property:data_service_endpoint_description">endpoint description</a>, <a href="#Property:data_service_endpoint_url">endpoint URL</a> en <a href="#Property:data_service_serves_dataset">serves dataset</a>.</p>
-
-        <p class="note">
-          Dataservices worden ook gedocumenteerd op https://developer.overheid.nl. Het kan interessant zijn om over en weer relaties te leggen tussen de dataservice op data.overheid.nl en die op developer.overheid.nl. Op die manier kunnen bezoekers gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben.
-        </p>
-        
-        
-        
+        <p>De volgende eigenschappen zijn specifiek voor deze klasse: <a
+            href="#Property:data_service_endpoint_description">endpoint description</a>, <a
+            href="#Property:data_service_endpoint_url">endpoint URL</a> en <a
+            href="#Property:data_service_serves_dataset">serves dataset</a>.</p>
+        <p class="note"> Dataservices worden ook gedocumenteerd op https://developer.overheid.nl.
+          Het kan interessant zijn om over en weer relaties te leggen tussen de dataservice op
+          data.overheid.nl en die op developer.overheid.nl. Op die manier kunnen bezoekers
+          gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben. </p>
+        <section id="Property:data_service_endpoint_url">
+          <h4>Eigenschap: endpoint URL</h4>
+          <table class="def">
+            <tbody>
+              <tr>
+                <th class="prop">RDF&#160;Property</th>
+                <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:data_service_endpoint_url"
+                    rel="nofollow">dcat:endpointURL</a></td>
+              </tr>
+              <tr>
+                <th class="prop">Definitie</th>
+                <td>Deze eigenschap verwijst naar de locatie of het endpoint van de webservice (a
+                  Web-resolvable IRI)</td>
+              </tr>
+              <tr>
+                <th class="prop">Bereik</th>
+                <td>rdfs:Resource</td>
+              </tr>
+              <tr>
+                <th class="prop">Cardinaliteit</th>
+                <td>1..*, Verplicht</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:data_service_endpoint_description">
+          <h4>Eigenschap: endpoint description</h4>
+          <table class="def">
+            <tbody>
+              <tr>
+                <th class="prop">RDF&#160;Property</th>
+                <td><a
+                    href="https://www.w3.org/TR/vocab-dcat-2/#Property:data_service_endpoint_description"
+                    rel="nofollow">dcat:endpointDescription</a></td>
+              </tr>
+              <tr>
+                <th class="prop">Definitie</th>
+                <td>Deze eigenschap beschrijft de services die via het endpoint beschikbaar zijn,
+                  incl. parameters en functies.</td>
+              </tr>
+              <tr>
+                <th class="prop">Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th class="prop">Cardinaliteit</th>
+                <td>0..1, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th class="prop">DONL</th>
+                <td>Op dit punt zouden data.overheid.nl en developer.overheid.nl kunnen samenwerken.
+                  Eindgebruikers zijn hier gebaat bij een duidelijke uitleg en voorbeelden. Het
+                  heeft niet zoveel zin om deze 2x te bedenken.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:data_service_serves_dataset">
+          <h4>Eigenschap: serves dataset</h4>
+          <table class="def">
+            <tbody>
+              <tr>
+                <th class="prop">RDF&#160;Property</th>
+                <td><a
+                    href="https://www.w3.org/TR/vocab-dcat-2/#Property:data_service_serves_dataset"
+                    rel="nofollow">dcat:servesDataset</a></td>
+              </tr>
+              <tr>
+                <th class="prop">Definitie</th>
+                <td>Deze eigenschap verwijst naar de dataset die dit endpoint beschikbaar
+                  stelt.</td>
+              </tr>
+              <tr>
+                <th class="prop">Bereik</th>
+                <td>dcat:Dataset</td>
+              </tr>
+              <tr>
+                <th class="prop">Cardinaliteit</th>
+                <td>0..*, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th class="prop">Opmerking</th>
+                <td>Volgens DCAT-AP kan een dataservice voorkomen <em>zonder</em> bijbehorende
+                  dataset, maar kan een dataservice ook gerelateerd zijn met <em>meerdere</em>
+                  datasets. Verder overlappen de gegevens van dataset en dataservice elkaar
+                  grotendeels, omdat het beide "resources" zijn en dus de eigenschappen overerven
+                  van dcat:CatalogResource.</td>
+              </tr>
+              <tr>
+                <th class="prop">DONL</th>
+                <td>Als een dataset alleen gedistribueerd wordt via een dataservice (endpoint) dan
+                  wordt deze geregistreerd als dcat:DataService. Als de dataset daarnaast ook andere
+                  distributies heeft, dan wordt ook een instantie dcat:Dataset aangemaakt. In dat
+                  geval worden de eigenschappen van de superklasse van catalog resource dubbel
+                  vastgelegd, dus zowel in de dataset als in de bijbehorende dataservice.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
-      
     </section>
-          
     <section class="normative">
       <h2>Waardelijsten (Controlled vocabularies)</h2>
-      <p>
-        Dit hoofdstuk geeft een overzicht van de waardelijsten die in DCAT-AP-DONL moeten worden gebruikt voor DCAT eigenschappen. De mogelijke waarden, dus de codes (identifiers) en de bijbehorende waarden, zijn zoveel als mogelijk overgenomen uit de specificatie van de Europese DCAT-AP. Deze waardelijsten zijn beschikbaar op <a href="https://waardelijsten.dcat-ap-donl.nl/">DCAT-AP-DONL ‐ Waardelijsten</a>.
-      </p>
-      
-      <p class="advisement" title="Aanpassingen in de waardelijsten">
-        In de loop van de tijd kan DONL wijzigingen aanbrengen in de gebruikte waardelijsten, bijvoorbeeld om nieuwe waarden toe te voegen, of oude waarden te verwijderen. DONL zal deze wijzigingen kenbaar maken op de website, zodat ieder hiervan op de hoogte is. Ook komt het voor dat waardelijsten worden vervangen door geheel nieuwe waardelijsten. Dat is bijvoorbeeld het geval voor de lijst Taxonomie beleidsagenda. Deze lijst wordt vervangen door de Toplijst, waardoor alle waarden een ander code (identifier krijgen). Desondanks is het mogelijk om hier nog oude waarden volgens de Taxonomie beleidsagenda aan te leveren. Deze worden automatisch vertaald naar de corresponderende warde volgens de Toplijst.
-      </p>
-      
+      <p> Dit hoofdstuk geeft een overzicht van de waardelijsten die in DCAT-AP-DONL moeten worden
+        gebruikt voor DCAT eigenschappen. De mogelijke waarden, dus de codes (identifiers) en de
+        bijbehorende waarden, zijn zoveel als mogelijk overgenomen uit de specificatie van de
+        Europese DCAT-AP. Deze waardelijsten zijn beschikbaar op <a
+          href="https://waardelijsten.dcat-ap-donl.nl/">DCAT-AP-DONL ‐ Waardelijsten</a>. </p>
+      <p class="advisement" title="Aanpassingen in de waardelijsten"> In de loop van de tijd kan
+        DONL wijzigingen aanbrengen in de gebruikte waardelijsten, bijvoorbeeld om nieuwe waarden
+        toe te voegen, of oude waarden te verwijderen. DONL zal deze wijzigingen kenbaar maken op de
+        website, zodat ieder hiervan op de hoogte is. Ook komt het voor dat waardelijsten worden
+        vervangen door geheel nieuwe waardelijsten. Dat is bijvoorbeeld het geval voor de lijst
+        Taxonomie beleidsagenda. Deze lijst wordt vervangen door de Toplijst, waardoor alle waarden
+        een ander code (identifier krijgen). Desondanks is het mogelijk om hier nog oude waarden
+        volgens de Taxonomie beleidsagenda aan te leveren. Deze worden automatisch vertaald naar de
+        corresponderende warde volgens de Toplijst. </p>
       <table class="simple">
         <thead>
           <tr>
@@ -219,7 +1394,8 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json">donl:Openbaarheidsniveau</a></td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json"
+                >donl:Openbaarheidsniveau</a></td>
             <td>dct:accessRights</td>
             <td>dcat:Resource</td>
             <td>Ja</td>
@@ -233,28 +1409,32 @@
             <td>Deze waardelijst bestaat nog niet.</td>
           </tr>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">donl:Organization</a></td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json"
+                >donl:Organization</a></td>
             <td>dct:creator, dct:publisher</td>
             <td>dcat:Resource</td>
             <td>Nee</td>
             <td>&#160;</td>
           </tr>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json">donl:Language</a></td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json"
+              >donl:Language</a></td>
             <td>dct:language</td>
             <td>dcat:Resource</td>
             <td>Ja</td>
             <td>Betreft een subselectie uit de Europese lijst.</td>
           </tr>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json">Taxonomie beleidsagenda</a></td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json"
+                >Taxonomie beleidsagenda</a></td>
             <td>dcat:theme</td>
             <td>dcat:Resource</td>
             <td>Nee</td>
             <td>Deze waardelijst wordt vervangen door de Toplijst met thema's.</td>
           </tr>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json">donl:License</a></td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json"
+              >donl:License</a></td>
             <td>dct:license</td>
             <td>dcat:Resource</td>
             <td>Nee</td>
@@ -276,9 +1456,7 @@
           </tr>
         </tbody>
       </table>
-      
     </section>
-    
     <!--
     <section data-format="markdown" data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Dataset.md">
       
@@ -292,7 +1470,8 @@
     
   </section>
   -->
-  <section id="conformance"> <!-- This section is filled automatically by ReSpec. -->
-  </section>
+    <section id="conformance">
+      <!-- This section is filled automatically by ReSpec. -->
+    </section>
   </body>
 </html>

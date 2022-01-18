@@ -1150,9 +1150,9 @@
               </tr>
             </tbody>
           </table>
-          <h3 id="property-has-policy">Property: has policy</h3>
-          <p>Deze eigenschap verwijst naar een ODRL-object dat uitdrukking geeft aan de
-            gebruiksrechten van de desbetreffende resource. </p>
+        </section>
+        <section id="Property:resource_has_policy">
+          <h4>Eigenschap: has policy</h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1163,6 +1163,11 @@
                 </td>
               </tr>
               <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar een ODRL-object dat uitdrukking geeft aan de
+                  gebruiksrechten van de onderhavige resource.</td>
+              </tr>
+              <tr>
                 <th>Bereik</th>
                 <td>odrl:Policy</td>
               </tr>
@@ -1170,23 +1175,19 @@
                 <th>Cardinaliteit</th>
                 <td>0..*, aanbevolen</td>
               </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Data.overheid.nl doet onderzoek naar mogelijkheden om gebruiksrechten te
-                  specificeren in een machine leesbare vorm. Hierbij wordt nadrukkelijk gekeken naar
-                  de mogelijkheden van ODRL. Zie ook <a href="https://www.w3.org/TR/odrl-model/"
-                    >https://www.w3.org/TR/odrl-model/</a>. </td>
-              </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Voorlopig wordt deze eigenschap niet overgenomen, omdat het onderzoek naar de
-                  toepassing van ODRL nog niet is afgerond.</td>
-              </tr>
             </tbody>
           </table>
-          <h3 id="property-is-referenced-by">Property: is referenced by</h3>
-          <p>Deze eigenschap verwijst naar een gerelateerde resource, bijvoorbeeld een publicatie
-            die verwijst naar een resource in een catalogus.</p>
+          <aside class="note">
+            <p>Data.overheid.nl doet onderzoek naar mogelijkheden om gebruiksrechten te specificeren
+              in een machine leesbare vorm. Hierbij wordt nadrukkelijk gekeken naar de mogelijkheden
+              van ODRL. Zie ook <a href="https://www.w3.org/TR/odrl-model/"
+                >https://www.w3.org/TR/odrl-model/</a>.</p>
+            <p>Voorlopig wordt deze eigenschap niet overgenomen, omdat het onderzoek naar de
+              toepassing van ODRL nog niet is afgerond.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_is_referenced_by">
+          <h4>Eigenschap: is referenced by</h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1195,6 +1196,11 @@
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_is_referenced_by"
                     >dct:isReferencedBy</a>
                 </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar externe publicaties, bijvoorbeeld een artikel dat
+                  verwijst naar onderhavige resource (dataset).</td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -1210,13 +1216,12 @@
                   relatie) naar de resource (buiten het dataplatform) dat naar de dataset,
                   dataservice of catalogus verwijst. </td>
               </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Deze eigenschap nemen we niet over in het toepassingsprofiel omdat er geen
-                  behoefte is om deze informatie uit te wisselen.</td>
-              </tr>
             </tbody>
           </table>
+          <aside class="note">
+            <p>Deze eigenschap nemen we niet over in het toepassingsprofiel omdat er geen behoefte
+              is om deze informatie uit te wisselen.</p>
+          </aside>
         </section>
       </section>
       <section id="Class:CatalogRecord">

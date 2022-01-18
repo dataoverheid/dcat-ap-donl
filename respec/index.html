@@ -2,7 +2,7 @@
 <html lang="nl" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>DCAT 2 Toepassingsprofiel voor data.overheid.nl</title>
+    <title>DCAT-AP-DONL 2 Toepassingsprofiel van DCAT 2 voor data.overheid.nl</title>
     <!-- https://raw.githack.com/dataoverheid/dcat-ap-donl/main/respec/index.html -->
     <script async="async" class="remove" src="https://www.w3.org/Tools/respec/respec-w3c"></script>
     <script class="remove">
@@ -102,7 +102,26 @@
         toepassingsprofiel voor DONL hanteerd voor sommige eigenschappen een afwijkend
         waardenbereik, bijvoorbeeld omdat DONL hiervoor een eigen waardelijst heeft opgenomen. Deze
         waardelijsten worden beschreven in hoofdstuk <a
-          href="#waardelijsten-controlled-vocabularies">Waardelijsten</a>. </p>
+          href="#waardelijsten-controlled-vocabularies">Waardelijsten</a>.</p>
+      <section>
+        <h3>Verschillen ten opzichte van de vorige versie (DCAT-AP-DONL 1.1)</h3>
+        <section>
+          <h4>Introductie van klasse Dataservice</h4>
+          <p></p>
+        </section>
+        <section>
+          <h4>Introductie van klasse Resource</h4>
+          <p>In DCAT 1 konden alleen Datasets worden opgenomen in een Catalogus; in DCAT 2 is dat
+            uitgebreid. Nu kunnen naast Datasets ook Dataservices en Catalogi worden opgenomen in
+            een Catalogus. Deze drie resources hebben kenmerken die elkaar deels overlappen. Het
+            informatiemodel van DCAT 2 heeft dat opgelost door een aparte superklasse <code><a
+                href="#Class:Resource">dcat:Resource</a></code> te introduceren waarin deze
+            overlappende eigenschappen zijn opgenomen. Een voorbeeld hiervan is eigenschap <code><a
+                href="#Property:resource_title">dcterms:title</a></code>. Elke resource heeft een
+            titel, maar door deze op te nemen in Resource, hoeft deze in het informatiemodel niet
+            bij elke resource apart te worden opgenomen.</p>
+        </section>
+      </section>
       <section id="properties">
         <h3>Eigenschappen</h3>
         <section>
@@ -510,7 +529,7 @@
         </section>
         <section id="Property:resource_creator">
           <h4>Eigenschap: creator</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -558,7 +577,7 @@
         </section>
         <section id="Property:resource_description">
           <h4>Eigenschap: description</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -584,7 +603,7 @@
         </section>
         <section id="Property:resource_title">
           <h4>Eigenschap: title</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -612,7 +631,7 @@
         </section>
         <section id="Property:resource_release_date">
           <h4>Eigenschap: release date</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -646,7 +665,7 @@
         </section>
         <section id="Property:resource_update_date">
           <h4>Eigenschap: update/modification date</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -681,7 +700,7 @@
         </section>
         <section id="Property:resource_language">
           <h4>Eigenschap: language</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -728,7 +747,7 @@
         </section>
         <section id="Property:resource_publisher">
           <h4>Eigenschap: publisher</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -762,7 +781,7 @@
         </section>
         <section id="Property:resource_identifier">
           <h4>Eigenschap: identifier</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -797,7 +816,7 @@
         </section>
         <section id="Property:resource_theme">
           <h4>Eigenschap: theme/category</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -842,7 +861,7 @@
         </section>
         <section id="Property:resource_type">
           <h4>Eigenschap: type/genre</h4>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -864,7 +883,9 @@
                   van eigenschap type/genre. DCAT-AP werkt aan een controlled vocabulary met
                   mogelijke typen (de status hiervan is onbekend). W3C heeft hiervoor wel een issue
                   aangemaakt. Zie <a href="https://github.com/w3c/dxwg/issues/64"
-                    >https://github.com/w3c/dxwg/issues/64</a>.</td>
+                    >https://github.com/w3c/dxwg/issues/64</a>. Zie ook de use case <a
+                    href="https://www.w3.org/TR/dcat-ucr/#ID20">Modelling resources different from
+                    datasets</a>.</td>
               </tr>
               <tr>
                 <th>Opmerking</th>
@@ -877,11 +898,13 @@
             <p>Deze property wordt niet overgenomen in het toepassingsprofiel van data.overheid.nl,
               omdat er (nog) geen functie voor is.</p>
           </aside>
-<p>####</p>
-          <h3 id="property-resource-relation">Property: resource relation</h3>
-          <p>Deze eigenschap maakt het mogelijk om een niet-gespecificeerde relatie te leggen met
-            een andere resource in een catalogus.</p>
-          <table>
+        </section>
+        <section id="Property:resource_relation">
+          <h4>Eigenschap: relation</h4>
+          <aside class="note">
+            <p> Property added in DCAT 2. </p>
+          </aside>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -891,25 +914,27 @@
                 </th>
               </tr>
               <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap maakt het mogelijk om een niet-gespecificeerde relatie te leggen
+                  met een andere resource in een catalogus.</td>
+              </tr>
+              <tr>
                 <th>Cardinaliteit</th>
                 <td>0..*, Optioneel</td>
               </tr>
-              <tr>
-                <th>Opmerking</th>
-                <td>Deze eigenschap kan worden gebruikt om relaties te leggen tussen resources,
-                  waarbij de aard van de relatie niet bekend is.</td>
-              </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
-                  data.overheid.nl, omdat deze vooralsnog niet nodig is.</td>
-              </tr>
             </tbody>
           </table>
-          <h3 id="property-qualified-relation">Property: qualified relation</h3>
-          <p>Deze eigenschap maakt het mogelijk om gespecificeerde relaties te leggen met andere
-            resources</p>
-          <table>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl, omdat deze vooralsnog niet nodig is.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_qualified_relation">
+          <h4>Eigenschap: qualified relation</h4>
+          <aside class="note">
+            <p> Property added in DCAT 2. </p>
+          </aside>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -919,6 +944,11 @@
                 </th>
               </tr>
               <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap maakt het mogelijk om gespecificeerde relaties te leggen met
+                  andere resources.</td>
+              </tr>
+              <tr>
                 <th>Cardinaliteit</th>
                 <td>0..*, Optioneel</td>
               </tr>
@@ -926,20 +956,20 @@
                 <th>Opmerking</th>
                 <td>In tegenstelling tot eigenschap <code>resource relation</code> kunnen met deze
                   eigenschap relaties worden gelegd waarbij ook de aard of betekenis van de relatie
-                  kan worden vastgelegd. Hierbij gaat het uiteraard om andere relaties dan die als
+                  kan worden vastgelegd. Hierbij gaat het uiteraard om andere relaties dan die al
                   standaard in DCAT zijn opgenomen (zoals dcat:distribution, om de relatie te leggen
                   tussen een dataset en de bijbehorende distributie).</td>
               </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
-                  data.overheid.nl, omdat deze vooralsnog niet nodig is.</td>
-              </tr>
             </tbody>
           </table>
-          <h3 id="property-keyword-tag">Property: keyword/tag</h3>
-          <p>Deze eigenschap bevat vrije keywords of termen die de resource beschrijven.</p>
-          <table>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl, omdat deze vooralsnog niet nodig is.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_keyword">
+          <h4>Eigenschap: keyword/tag</h4>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -947,6 +977,10 @@
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_keyword"
                     >dcat:keyword</a>
                 </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap bevat vrije keywords of termen die de resource beschrijven.</td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -964,19 +998,19 @@
                   voor beide vormen dat deze de vindbaarheid van de desbetreffende resource kunnen
                   verbeteren.</td>
               </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Het is dus mogelijk om meerdere keywords toe te kennen aan een resource. De
-                  verschillende waarden moeten in verschillende voorkomens van deze eigenschap
-                  worden aangeleverd.</td>
-              </tr>
             </tbody>
           </table>
-          <h3 id="property-landing-page">Property: landing page</h3>
+          <aside class="note">
+            <p>Het is dus mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden
+              moeten in afzonderlijke voorkomens van deze eigenschap worden aangeleverd.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_landing_page">
+          <h4>Eigenschap: landing page</h4>
           <p>Deze eigenschap verwijst naar de webpagina die toegang geeft tot de resource (dataset,
             dataservice of catalogus) en aanvullende informatie verschaft over de resource. Het gaat
             hierbij om de originele webpagina van de data-eigenaar.</p>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -995,11 +1029,10 @@
               </tr>
             </tbody>
           </table>
-          <h3 id="property-qualified-attribution">Property: qualified attribution</h3>
-          <p>Deze eigenschap verwijst naar een persoon of organisatie, anders dan <code>contact
-              point</code>, <code>resource creator</code> of <code>publisher</code> die ook een
-            verantwoordelijkheid heeft voor de resource. </p>
-          <table>
+        </section>
+        <section id="Property:resource_qualified_attribution">
+          <h4>Eigenschap: qualified attribution</h4>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -1008,6 +1041,13 @@
                     href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_qualified_attribution"
                     >prov:qualifiedAttribution</a>
                 </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar een persoon of organisatie, anders dan
+                    <code>contact point</code>, <code>resource creator</code> of
+                    <code>publisher</code> die ook een verantwoordelijkheid draagt voor de resource.
+                </td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -1031,18 +1071,17 @@
               </tr>
             </tbody>
           </table>
-          <h3 id="property-license">Property: license</h3>
-          <p>Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van de
-            resource beschrijft.</p>
-          <blockquote>
-            <p><strong>Vraag</strong>: De DCAT standaard voorziet in <code>dct:rights</code>,
-                <code>dct:license</code> en <code>dct:accessRights</code> om de rechten en plichten
-              te beschrijven die rusten op de gegevens die ten grondslag liggen aan de resource.
-              Ondertussen zijn er diverse initiatieven die ertoe moeten leiden dat deze rechten
-              machine leesbaar worden. Welke van deze drie eigenschappen willen we opnemen in
-              toepassingsprofiel?</p>
-          </blockquote>
-          <table>
+        </section>
+        <section id="Property:resource_license">
+          <h4>Eigenschap: license</h4>
+          <aside class="note">
+            <p>De DCAT standaard voorziet in <code>dct:rights</code>, <code>dct:license</code> en
+                <code>dct:accessRights</code> om de rechten en plichten te beschrijven die rusten op
+              de gegevens die ten grondslag liggen aan de resource. Ondertussen zijn er diverse
+              initiatieven die ertoe moeten leiden dat deze rechten machine leesbaar worden,
+              waaronder ODRL.</p>
+          </aside>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -1050,6 +1089,11 @@
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_license"
                     >dct:license</a>
                 </td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van
+                  de resource beschrijft.</td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -1067,19 +1111,18 @@
                 <th>Opmerking</th>
                 <td>Deze eigenschap is geen onderdeel van DCAT-AP-EU.</td>
               </tr>
-              <tr>
-                <th>DONL</th>
-                <td>Omdat de OWMS-waardelijsten op korte termijn worden vervangen door TOOI, zal ook
-                  de waardelijst met licenties gaan wijzigen. We streven ernaar op de nieuwe lijst
-                  backwards compatible te houden met de oude lijst. Dat betekent dat een
-                  aangeleverde oude waarde automatisch wordt omgezet naar de nieuwe waarde.</td>
-              </tr>
             </tbody>
           </table>
-          <h3 id="property-rights">Property: rights</h3>
-          <p>Een verklaring over de rechten die niet onder dct:license of dct:accessRights vallen,
-            zoals copyrightverklaringen.</p>
-          <table>
+          <aside class="note">
+            <p>Omdat de OWMS-waardelijsten op korte termijn worden vervangen door TOOI, zal ook de
+              waardelijst met licenties gaan wijzigen. We streven ernaar op de nieuwe lijst
+              backwards compatible te houden met de oude lijst. Dat betekent dat een aangeleverde
+              oude waarde automatisch wordt omgezet naar de nieuwe waarde.</p>
+          </aside>
+        </section>
+        <section id="Property:resource_rights">
+          <h4>Eigenschap: rights</h4>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -1087,6 +1130,11 @@
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_rights"
                     >dct:rights</a>
                 </td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Een verklaring over de rechten die niet onder dct:license of dct:accessRights
+                  vallen, zoals copyrightverklaringen.</td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -1105,7 +1153,7 @@
           <h3 id="property-has-policy">Property: has policy</h3>
           <p>Deze eigenschap verwijst naar een ODRL-object dat uitdrukking geeft aan de
             gebruiksrechten van de desbetreffende resource. </p>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -1139,7 +1187,7 @@
           <h3 id="property-is-referenced-by">Property: is referenced by</h3>
           <p>Deze eigenschap verwijst naar een gerelateerde resource, bijvoorbeeld een publicatie
             die verwijst naar een resource in een catalogus.</p>
-          <table>
+          <table class="data">
             <tbody>
               <tr>
                 <th>RDF&#160;Klasse</th>
@@ -1218,6 +1266,12 @@
             de Dataservice klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te
             beschrijven met de klasse Distributie.</p>
         </aside>
+        <aside class="note">
+          <p>Dataservices worden ook gedocumenteerd op https://developer.overheid.nl. Het kan
+            interessant zijn om over en weer relaties te leggen tussen de dataservice op
+            data.overheid.nl en die op developer.overheid.nl. Op die manier kunnen bezoekers
+            gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben.</p>
+        </aside>
         <table class="def">
           <tr>
             <th>RDF&#160;Klasse</th>
@@ -1232,7 +1286,7 @@
           </tr>
           <tr>
             <th class="prop">Subklasse&#160;van</th>
-            <td><a href="#klasse-resource"><code>dcat:Resource</code></a></td>
+            <td><a href="#Class:Resource"><code>dcat:Resource</code></a></td>
           </tr>
           <tr>
             <th class="prop">Subklasse&#160;van</th>
@@ -1244,9 +1298,9 @@
           </tr>
           <tr>
             <th class="prop">Opmerking</th>
-            <td>Als een <a href="#DataService"><code>dcat:DataService</code></a> gegevens ontsluit
-              die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze relatie met
-              eigenschap <a href="#Property:data_service_serves_dataset"
+            <td>Als een <a href="#Class:DataService"><code>dcat:DataService</code></a> gegevens
+              ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze
+              relatie met eigenschap <a href="#Property:data_service_serves_dataset"
                   ><code>dcat:servesDataset</code></a> worden beschreven.</td>
           </tr>
           <tr>
@@ -1257,14 +1311,44 @@
               opgenomen in een waardelijst.</td>
           </tr>
         </table>
-        <p>De volgende eigenschappen zijn specifiek voor deze klasse: <a
-            href="#Property:data_service_endpoint_description">endpoint description</a>, <a
-            href="#Property:data_service_endpoint_url">endpoint URL</a> en <a
-            href="#Property:data_service_serves_dataset">serves dataset</a>.</p>
-        <p class="note"> Dataservices worden ook gedocumenteerd op https://developer.overheid.nl.
-          Het kan interessant zijn om over en weer relaties te leggen tussen de dataservice op
-          data.overheid.nl en die op developer.overheid.nl. Op die manier kunnen bezoekers
-          gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben. </p>
+        <p>De onderstaande tabel geeft een overzicht van de eigenschappen in deze klasse.:</p>
+        <table class="data">
+          <tr>
+            <th>Eigenschap</th>
+            <th>Herkomst</th>
+            <th>Gebruik</th>
+          </tr>
+          <tr>
+            <th><a href="#Property:data_service_endpoint_url">endpoint URL</a></th>
+            <td><a href="#Class:DataService">Dataservice</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:data_service_endpoint_description">endpoint description</a></th>
+            <td><a href="#Class:DataService">Dataservice</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:data_service_serves_dataset">serves dataset</a></th>
+            <td><a href="#Class:DataService">Dataservice</a></td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_access_rights">access rights</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
         <section id="Property:data_service_endpoint_url">
           <h4>Eigenschap: endpoint URL</h4>
           <table class="def">
@@ -1311,7 +1395,7 @@
               </tr>
               <tr>
                 <th class="prop">Cardinaliteit</th>
-                <td>0..1, Aanbevolen</td>
+                <td>0..1, Verplicht</td>
               </tr>
               <tr>
                 <th class="prop">DONL</th>

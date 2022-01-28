@@ -94,6 +94,17 @@
       <h2>Introductie</h2>
       <p>Hier komt de introductie</p>
     </section>
+    <section class="informative">
+      <h2>Terminologie</h2>
+      <p>Een <em>toepassinsprofiel</em> is een...</p>
+      <p>Dit toepassingsprofiel beschrijft alle klassen en eigenschappen die onderdeel zijn van DCAT
+        2, DCAT-AP 2.01 en DCAT-AP-DONL 1.1. Per klasse en eigenschap beschrijft het
+        toepassingsprofiel of deze verplicht, aanbevolen of optioneel moet/mag worden aangeleverd.
+        Ook sluit het toepassingsprofiel de aanlevering van enkele klassen en eigenschappen uit. Dit
+        betekent dat ze niet aangeleverd kunnen worden en dus ook niet worden weergegeven op
+        data.overheid.nl. De reden hiervoor wordt bij de desbetreffende klasse of eigenschap
+        toegelicht.</p>
+    </section>
     <section class="normative">
       <h2>Specificatie van het toepassingsprofiel</h2>
       <p> Dit hoofdstuk beschrijft de klassen en eigenschappen die aanbieders van data kunnen
@@ -144,43 +155,45 @@
         <h3>Klasse Catalogus</h3>
         <table class="def">
           <tr>
-            <th>RDF Class:</th>
-            <td><a href="http://www.w3.org/ns/dcat#Catalog"><code>dcat:Catalog</code></a></td>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"
+                  ><code>dcat:Catalog</code></a></td>
           </tr>
           <tr>
-            <th class="prop">Definition:</th>
+            <th class="prop">Definitie</th>
             <td>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande
               uit datasets, dataservices en/of catalogi. Een catalogus zelf is dus ook een resource
               die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen
               van resources. De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de
-              catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset.</td>
+              catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset of kunnen
+              worden benaderd via een dataservice.</td>
           </tr>
           <tr>
-            <th class="prop">Sub-class of:</th>
+            <th class="prop">Subklasse&#160;van</th>
             <td><a href="#Class:Dataset"><code>dcat:Dataset</code></a></td>
           </tr>
           <tr>
-            <th class="prop">Usage note:</th>
+            <th class="prop">Opmerking</th>
             <td>A Web-based data catalog is typically represented as a single instance of this
               class.</td>
           </tr>
           <tr>
-            <th class="prop">Usage note:</th>
-            <td>Datasets and data services are examples of resources in the context of a data
-              catalog.</td>
+            <th class="prop">Opmerking</th>
+            <td>Datasets and dataservices zijn voorbeelden van resources in de context van een data
+              catalogus.</td>
           </tr>
           <tr>
-            <th class="prop">See also:</th>
+            <th class="prop">Zie ook</th>
             <td>
               <a href="#Class:Catalog_Record"></a>, <a href="#Class:Dataset"></a></td>
           </tr>
         </table>
         <section id="Property:homepage">
-          <h4 id="property-homepage">Property: homepage</h4>
+          <h4>Eigenschap: homepage</h4>
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_homepage"
                     >foaf:homepage</a></td>
               </tr>
@@ -206,11 +219,11 @@
           </table>
         </section>
         <section id="Property:themes">
-          <h4>Property: themes</h4>
+          <h4>Eigenschap: themes</h4>
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_themes"
                     >dcat:themeTaxonomy</a></td>
               </tr>
@@ -243,7 +256,7 @@
           </aside>
         </section>
         <section id="Property:catalog_has_part">
-          <h4>Property: has part</h4>
+          <h4>Eigenschap: has part</h4>
           <aside class="note">
             <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel. In plaats hiervan
               maken we gebruik van de meer specifieke eigenschappen <code>dcat:dataset</code>,
@@ -253,7 +266,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_has_part"
                     >dct:hasPart</a></td>
               </tr>
@@ -270,7 +283,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_dataset"
                     >dcat:dataset</a></td>
               </tr>
@@ -309,7 +322,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_service"
                     >dcat:service</a></td>
               </tr>
@@ -345,7 +358,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog"
                   >dcat:catalog</a></td>
               </tr>
@@ -376,7 +389,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:catalog_catalog_record"
                     >dcat:record</a></td>
               </tr>
@@ -402,19 +415,41 @@
       </section>
       <section id="Class:Resource">
         <h3>Klasse Resource</h3>
-        <aside class="note">
-          <p>De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse. Het bevat
-            enkele algemene eigenschappen die onderdeel zijn van de resources in DCAT 2, namelijk
-              <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
-            De superklasse maakt het voor de toekomst eenvoudiger om het informatiemodel uit te
-            breiden met nieuwe resources.</p>
-        </aside>
+        <table class="def">
+          <tr>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource"
+                  ><code>dcat:Resource</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definitie</th>
+            <td>Een gegevensobject dat wordt onderhouden en gepubliceerd door een enkele organisatie
+              en kan worden opgenomen in een gegevenscatalogus.</td>
+          </tr>
+          <tr>
+            <th class="prop">Gebruik</th>
+            <td>De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse. Het bevat
+              enkele algemene eigenschappen die onderdeel zijn van de resources in DCAT 2, namelijk
+                <a href="#Class:Catalog"><code>dcat:Catalog</code></a>, <a href="#Class:Dataset"
+                  ><code>dcat:Dataset</code></a> en <a href="#Class:Data_Service"
+                  ><code>dcat:DataService</code></a>. </td>
+          </tr>
+          <tr>
+            <th class="prop">Gebruik</th>
+            <td>De introductie van deze superklasse maakt het voor de toekomst eenvoudiger om het
+              informatiemodel van DCAT uit te breiden met nieuwe resources.</td>
+          </tr>
+          <tr>
+            <th class="prop">Zie ook</th>
+            <td><a href="#Class:Catalog_Record"></a></td>
+          </tr>
+        </table>
         <section id="Property:resource_access_rights">
           <h4>Eigenschap: access rights</h4>
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_access_rights"
                     >dct:accessRights</a>
@@ -452,7 +487,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_conforms_to"
                     >dct:conformsTo</a>
@@ -491,7 +526,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_contact_point"
                     >dcat:contactPoint</a>
@@ -532,7 +567,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_creator"
                     >dct:creator</a>
@@ -580,7 +615,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_description"
                     >dct:description</a>
@@ -606,7 +641,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_title"
                     >dct:title</a>
@@ -634,7 +669,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_release_date"
                     >dct:issued</a>
@@ -668,7 +703,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_update_date"
                     >dct:modified</a>
@@ -703,7 +738,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_language"
                     >dct:language</a>
@@ -750,7 +785,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_publisher"
                     >dct:publisher</a>
@@ -784,7 +819,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_identifier"
                     >dct:identifier</a>
@@ -819,7 +854,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_theme"
                     >dcat:theme</a>
@@ -864,7 +899,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type">dct:type</a>
                 </th>
@@ -907,7 +942,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_relation"
                     >dct:relation</a>
@@ -937,7 +972,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_qualified_relation"
                     >dcat:qualifiedRelation</a>
@@ -972,7 +1007,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_keyword"
                     >dcat:keyword</a>
@@ -1013,7 +1048,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page"
                     >dcat:landingPage</a>
@@ -1035,7 +1070,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a
                     href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_qualified_attribution"
@@ -1084,7 +1119,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_license"
                     >dct:license</a>
@@ -1125,7 +1160,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_rights"
                     >dct:rights</a>
@@ -1156,7 +1191,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <td>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_has_policy"
                     >odrl:hasPolicy</a>
@@ -1191,7 +1226,7 @@
           <table class="data">
             <tbody>
               <tr>
-                <th>RDF&#160;Klasse</th>
+                <th>RDF&#160;Eigenschap</th>
                 <th>
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_is_referenced_by"
                     >dct:isReferencedBy</a>
@@ -1224,49 +1259,470 @@
           </aside>
         </section>
       </section>
-      <section id="Class:CatalogRecord">
+      <section id="Class:Catalog_Record">
         <h3>Klasse Catalogusrecord</h3>
-        <p> Een Catalogusrecord geeft informatie over de registratie van een DCAT resource in een
-          catalogus. Het bevat de zgn. administratieve metadata van het dataportaal. </p>
-        <p class="note" title=""> Bij de uitwisseling van de metadata van datasets (of andere DCAT
-          resources) tussen dataportalen kan het voorkomen die metadata voldoen aan een specifieke
-          toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te
-          standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen
-          voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere,
-          bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data
-          specificeren aan wel toepassingsprofiel de metadata voldoet. </p>
+        <p></p>
+        <p class="note">Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is
+          vooral bedoeld voor catalogi die een onderscheid maken tussen de metadata over een
+            <em>dataset of dataservice</em> en metadata over een <em>voorkomen van een dataset of
+            dataservice in een catalogus</em>. Eigenschap <i>publicatiedatum</i> van een
+            <i>dataset</i> beschijft bijvoorbeeld de datum waarop de data-eigenaar de gegevens in
+          eerste instantie heeft gepubliceerd, terwijl de publicatiedatum van het <i>catalogus
+            record</i> de datum beschrijft waarop de dataset is opgenomen in de catalogus.</p>
+        <table class="def">
+          <tr>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"
+                  ><code>dcat:CatalogRecord</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definitie</th>
+            <td>Een Catalogusrecord geeft informatie over de registratie van een <a
+                href="#Class:Resource"><code>dcat:Resource</code></a> in een catalogus. Het bevat de
+              zgn. administratieve metadata van het dataportaal.</td>
+          </tr>
+          <tr>
+            <th class="prop">Gebruik</th>
+            <td>Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen
+              dataportalen kan het voorkomen die metadata voldoen aan een specifieke
+              toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te
+              standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen
+              voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere,
+              bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data
+              specificeren aan wel toepassingsprofiel de metadata voldoet.</td>
+          </tr>
+          <tr>
+            <th class="prop">See also</th>
+            <td><a href="#Class:Dataset"></a></td>
+          </tr>
+        </table>
       </section>
       <section id="Class:Dataset">
         <h3>Klasse Dataset</h3>
-        <p> Een dataset is een gegevensverzameling, samengesteld of gepubliceerd door een
-          (overheids-)organisatie, die digitaal beschikbaar is in een of meer representaties. </p>
-        <p class="note"> De dataset klasse is een subklasse van de Catalogus-resource. Dit betekent
-          dat het alle eigenschappen van Catalogus-resource bevat, aangevuld met enkele specifieke
-          eigenschappen. <br /> De onderstaande paragrafen beschrijven zowel de eigenschappen van
-          dataset, als de eigenschappen van de subklasse catalogus-record. </p>
+        <table class="def">
+          <tr>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset"
+                  ><code>dcat:Dataset</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definitie</th>
+            <td>Een dataset is een gegevensverzameling, die is samengesteld en gepubliceerd door een
+              (overheids-)organisatie en digitaal beschikbaar is in één of meer representaties.</td>
+          </tr>
+          <tr>
+            <th class="prop">Subklasse&#160;van</th>
+            <td><a href="#Class:Resource"><code>dcat:Resource</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Opmerking</th>
+            <td>Deze klasse beschrijft de dataset als concept. Het staat dus los van de
+              gegevensverzameling zelf, die mogelijk beschikbaar is in een of meerdere
+              representaties, formaten of serialisaties.</td>
+          </tr>
+          <tr>
+            <th class="prop">Usage note:</th>
+            <td> The notion of dataset in DCAT is broad and inclusive, with the intention of
+              accommodating resource types arising from all communities. Data comes in many forms
+              including numbers, text, pixels, imagery, sound and other multi-media, and potentially
+              other types, any of which might be collected into a dataset.</td>
+          </tr>
+        </table>
+        <aside class="note">
+          <p>De DCAT standaard heeft een ruime opvatting over de aard van de gegevens die een
+            dataset kunnen vormen. Voor data.overheid.nl gaat het vooral over Open Data die
+            afkomstig is van overheidsorganisatie, maar is hiertoe niet beperkt. De aard van de data
+            zijn o.a. numeriek, tekstueel, afbeeldingen, geluid en andere multimedia.</p>
+          <p>Naast data.overheid.nl zijn systemen zoals PLOOI vooral gericht op de publicatie van
+            open <em>documentaire</em> data in het kader van de Wet open overheid, zoals
+            Pdf-bestanden. Hierbij worden worden weer andere standaarden dan DCAT gebruikt om de
+            metadata van deze publicaties te beschrijven. Het is denkbaar dat collecties van
+            documenten (bijvoorbeeld van een bepaalde organisatie of over specifieke onderwerpen)
+            worden opgenomen in datasets, die vervolgens volgens de DCAT standaard worden
+            gedocumenteerd en gepubliceerd op data.overheid.nl.</p>
+        </aside>
       </section>
-      <section id="Distribution">
+      <section id="Class:Distribution">
         <h3>Klasse Distributie</h3>
-        <p> Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset
-          kunnen verkregen. Meestal betreft het hier een download-bestand. </p>
-        <p class="advisement"> In het vorige toepassingsprofiel (dus v1.1) werden zowel de
+        <p class="note"> In het vorige toepassingsprofiel (dus v1.1) werden zowel de
           download-bestanden als de webservices om de data op te vragen, in de vorm van een
           distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe mogelijkheid om
           webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft
           echter mogelijk en toegestaan om webservices te beschrijven als distributie. </p>
-        <p> De aanbieder van een dataset kan de gegevens aanbieden in meerdere verschillende
-          formaten en/of samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze
-          worden elk als afzonderlijke distributies beschreven en gerelateerd aan de dataset. Als
-          een dataset (ook) wordt aangeboden in de vorm van een dataservice, dan worden hierover
-          aanvullende gegevens opgenomen in een voorkomen van de klasse DataService en gerelateerd
-          aan de bijbehorende distributie. </p>
+        <table class="def">
+          <tr>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution"
+                  ><code>dcat:Distribution</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definitie</th>
+            <td>Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset
+              kunnen verkregen. Meestal betreft het hier een download-bestand. Een dataset kan
+              beschikbaar zijn in meerdere vormen die van elkaar verschillen in o.a. taal, formaat,
+              data-schema's en nauwkeurigheid (resolutie).</td>
+          </tr>
+          <tr>
+            <th class="prop">Gebruik</th>
+            <td>De aanbieder van een dataset kan distributies aanbieden in meerdere verschillende
+              formaten en/of samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze
+              worden elk als afzonderlijke distributie beschreven en gerelateerd aan de dataset. Als
+              een dataset (ook) wordt aangeboden in de vorm van een dataservice, dan kunnen hierover
+              aanvullende gegevens worden opgenomen in <a href="#Class:Data_Service">Dataservice</a>
+              die kan worden gerelateerd aan de bijbehorende distributie.</td>
+          </tr>
+          <tr>
+            <th class="prop">Gebruik</th>
+            <td>De distributie geeft aan er gegevens van een dataset beschikbaar zijn. Het zegt
+              niets nog niets over de manier waarop de data kunnen worden benaderd, zoals via een
+              directe download, een API of een webpagina. Een waarde in eigenschap <a
+                href="#Property:distribution_download_url"><code>dcat:downloadURL</code></a> geeft
+              aan dat de gegevens in de ditributie direct gedownload kunnen worden.</td>
+          </tr>
+          <tr>
+            <th class="prop">Zie ook</th>
+            <td><a href="#Class:Data_Service"></a></td>
+          </tr>
+        </table>
+        <section id="Property:distribution_title">
+          <h4>Eigenschap: title</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_title"
+                    >dct:title</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap bevat de titel van de distributie.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>rdfs:Literal</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, Verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze
+                  zorgvuldig. Voor iedere taal kan één aparte titel worden opgenomen per taal die
+                  wordt aangeduid door een "language tag" achter de literal. Merk op dat er in <a
+                    href="#Property:resource_language"><code>dct:language</code></a> een waarde moet
+                  voorkomen voor elke taal. </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:distribution_description">
+          <h4>Eigenschap: description</h4>
+          <p></p>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_description"
+                    >dct:description</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap bevat een beschrijving van de distributie in aanvulling op de
+                  titel, waarmee eindgebruikers een goed beeld krijgen welke gegevens in de
+                  Distributie aanwezig zijn.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>rdfs:Literal</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, Verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De beschrijving is met de titel het belangrijkste waarmee een gebruiker een
+                  distributie kan beoordelen, dus kies deze zorgvuldig. Voor iedere taal kan één
+                  beschrijving worden opgenomen per taal aangeduid een "language tag" achter de
+                  literal. </td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Voor overige informatie over de Distributie is de eigenschap
+                    <code>Documentation</code> beschikbaar, waarin naar aanvullende webpagina's
+                  verwezen wordt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:distribution_release_date">
+          <h4>Eigenschap: release date</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_release_date"
+                    >dct:issued</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap bevat de datum waarop de data-eigenaar de distributie voor de
+                  eerste keer heeft gepubliceerd.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:dateTime</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De datum en tijd waarop deze dataset voor de eerste keer in de huidige vorm werd
+                  aangeboden. Dit veld biedt geen informatie over de wijzigingen van de gegevens
+                  sindsdien.</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Als tijd niet bekend is, kan hier de tijd 0:00 worden ingevuld.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">Als er geen tijdzone wordt opgegeven, gaat DONL uit van de Nederlandse
+            tijd.</p>
+        </section>
+        <section id="Property:distribution_update_date">
+          <h4>Eigenschap: update/modification date</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Klasse</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_update_date"
+                    >dct:modified</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap bevat de datum waarop de data-eigenaar de distributie voor het
+                  laatst heeft gewijzigd. Dat geldt zowel voor een wijziging van de inhoud van de
+                  distributie als voor de metadata van de distributie.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:dateTime</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Bij de eerstvolgende wijziging wordt de oude wijzigingsdatum overschreven.</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Als de gegevens automatisch kort na elkaar worden aangepast hoeft deze waarde
+                  niet telkens gewijzigd te worden. Gebruikers kunnen dan uitgaan van de waarde van
+                    <a href="#Property:dataset_frequency"
+                    ><code>dcterms:accrualPeriodicity</code></a>.</td>
+              </tr>
+              <tr>
+                <th>Vraag</th>
+                <td>De wijzigingsdatum is een belangrijk gegeven om enig inzicht te krijgen in de
+                  actualiteit van de gegevens in de distributie. Is het beter om dit gegeven
+                  verplicht te maken? Zie <a href="../issues/4">Issue #4</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:distribution_license">
+          <h4>Eigenschap: license</h4>
+          <aside class="ednote">
+            <p>We moeten hier een algemene opmerking maken over gebruiksrechten in de distributie,
+              ten opzichte van die in de dataset.</p>
+          </aside>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license"
+                    >dct:license</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de formele of wettelijke toestemming waaronder de
+                  gegevens in de distributie gebruikt mogen worden.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst donl:License, zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/donl_license.json</a></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>1..1, Verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking 1</th>
+                <td>Licenties kunnen complex zijn, wat de uitwerking en invulling van dit veld kan
+                  bemoeilijken. De licenties die van toepassing zijn op gegevensuitwisseling binnen
+                  de overheid zijn meestal vrij eenvoudig. Om die reden is gekozen voor een
+                  waardelijst die een aantal eenvoudige licenties bevat die met name naar de
+                    <code>Creative Commons licenties</code> verwezen. Zie ook <a
+                    href="https://creativecommons.nl/uitleg/"
+                  >https://creativecommons.nl/uitleg/</a>.</td>
+              </tr>
+              <tr>
+                <th>Opmerking 2</th>
+                <td>Als de gegevens in de distribution niet <em>open</em> zijn, moet worden gekozen
+                  voor de waarde "Geen open licentie".</td>
+              </tr>
+              <tr>
+                <th>Opmerking 3</th>
+                <td>Er kunnen ook licentiegegevens op het niveau van de dataset worden vastgelegd.
+                  Die mogen niet in tegenspraak zijn met de licenties van de Distributies. </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:distribution_access_rights">
+          <h4>Eigenschap: access rights</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_rights"
+                    >dct:accessRights</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de toegangsrechten tot de distributie. </td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>Waardelijst Overheid:Openbaarheidsniveau, zie <a
+                    href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json"
+                    >https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json</a></td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Aanbevolen</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Omdat binnen de Nederlandse overheid en Europa de toegangsrechten slechts in
+                  beperkte variatie voorkomen, gebruiken we de eenvoudige waardelijst van DCAT-AP-EU
+                  voor <a
+                    href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right"
+                    >toegangsrechten</a>.</td>
+              </tr>
+              <tr>
+                <th>Vraag</th>
+                <td>Is het nodig om naast eigenschap <code>dct:accessRights</code> in de dataset ook
+                  een eigenschap op te nemen in de distribution? Zie <a href="../issues/6">Issue
+                    #6</a>.<br />Net als bij de properties <code>dct:license</code> en
+                    <code>dct:rights</code> kan ook de Dataset van de Distributie <code>access
+                    rights</code> vastleggen, die niet in tegenspraak mogen zijn met die van de
+                  Distributies.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:distribution_rights">
+          <h4>Eigenschap: rights</h4>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_rights"
+                    >dct:rights</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap beschrijft de overige gebruiksrechten die niet worden gedekt met
+                    <code>dct:license</code> of <code>dct:accessRights</code>, zoals de copyright
+                  statements.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:string</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Optioneel</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="Property:distribution_has_policy">
+          <h4>Eigenschap: has policy</h4>
+          <p></p>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <th>
+                  <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_has_policy"
+                    >odrl:hasPolicy</a>
+                </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap biedt de aanbieders van data de mogelijkheid om op een
+                  gestructureerde manier (complexe) voorwaarden toe te kennen waaronder afnemers de
+                  data in de distributie mogen gebruiken. Deze eigenschap verwijst naar een
+                  instantie van de ODRL klasse, waarin de gebruikscondities van de distributie zijn
+                  vastgelegd in een machineleesbare vorm. ODRL is een W3C standaard en staat voor <a
+                    href="https://www.w3.org/TR/odrl-model/">Open Digital Rights Language</a>.
+                </td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>odrl:Policy</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..1, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze eigenschap is onderwerp van een uitbreidingen voor data.overheid.nl die nog
+                  verder moet worden uitgewerkt. </td>
+              </tr>
+              <tr>
+                <th>Vraag</th>
+                <td>Zie <a href="../issues/7">Issue #7</a>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id=""> </section>
+        <section id=""> </section>
+        <section id=""> </section>
+        <section id=""> </section>
       </section>
-      <section id="Class:DataService">
+      <section id="Class:Data_Service">
         <h3>Klasse Dataservice</h3>
         <aside class="note">
           <p>De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt uitgebreidere
             mogelijkheden om de geautomatiseerde toegang tot de gegevens in een dataset via een API
-            te beschrijven dan mogelijk is in de klasse <a href="#Distribution"
+            te beschrijven dan mogelijk is in de klasse <a href="#Class:Distribution"
                 ><code>Distributie</code></a>. In deze nieuwe versie van het toepassingsprofiel is
             de Dataservice klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te
             beschrijven met de klasse Distributie.</p>
@@ -1279,7 +1735,7 @@
         </aside>
         <table class="def">
           <tr>
-            <th>RDF&#160;Klasse</th>
+            <th>RDF&#160;Eigenschap</th>
             <td><a href="http://www.w3.org/ns/dcat#DataService"
               ><code>dcat:DataService</code></a></td>
           </tr>
@@ -1303,7 +1759,7 @@
           </tr>
           <tr>
             <th class="prop">Opmerking</th>
-            <td>Als een <a href="#Class:DataService"><code>dcat:DataService</code></a> gegevens
+            <td>Als een <a href="#Class:Data_Service"><code>dcat:DataService</code></a> gegevens
               ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze
               relatie met eigenschap <a href="#Property:data_service_serves_dataset"
                   ><code>dcat:servesDataset</code></a> worden beschreven.</td>
@@ -1316,7 +1772,10 @@
               opgenomen in een waardelijst.</td>
           </tr>
         </table>
-        <p>De onderstaande tabel geeft een overzicht van de eigenschappen in deze klasse.:</p>
+        <p>De onderstaande tabel geeft een overzicht van de eigenschappen in deze klasse. De kolom
+          Gebruik geeft aan of de betreffende eigenschap verplicht, aanbevolen, optioneel moet/mag
+          worden aangeleverd, of dat de eigenschap niet wordt overgenomen in het
+          toepassingsprofiel.</p>
         <table class="data">
           <tr>
             <th>Eigenschap</th>
@@ -1325,17 +1784,17 @@
           </tr>
           <tr>
             <th><a href="#Property:data_service_endpoint_url">endpoint URL</a></th>
-            <td><a href="#Class:DataService">Dataservice</a></td>
+            <td><a href="#Class:Data_Service">Dataservice</a></td>
             <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:data_service_endpoint_description">endpoint description</a></th>
-            <td><a href="#Class:DataService">Dataservice</a></td>
+            <td><a href="#Class:Data_Service">Dataservice</a></td>
             <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:data_service_serves_dataset">serves dataset</a></th>
-            <td><a href="#Class:DataService">Dataservice</a></td>
+            <td><a href="#Class:Data_Service">Dataservice</a></td>
             <td>Aanbevolen</td>
           </tr>
           <tr>
@@ -1344,22 +1803,117 @@
             <td>Optioneel</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th><a href="#Property:resource_conforms_to">conforms to</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th><a href="#Property:resource_contact_point">contact point</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_creator">creator</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_description">description</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_title">title</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_language">language</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_identifier">identifier</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_theme">theme/category</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_license">license</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_release_date">release date</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_update_date">update/modification date</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_publisher">publisher</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_keyword">keyword/tag</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_relation">relation</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_landing_page">landing page</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_rights">rights</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_type">type/genre</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Niet</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_qualified_relation">qualified relation</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Niet</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_qualified_attribution">qualified attribution</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Niet</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_has_policy">has policy</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Niet</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_is_referenced_by">is referenced by</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Niet</td>
           </tr>
         </table>
         <section id="Property:data_service_endpoint_url">
           <h4>Eigenschap: endpoint URL</h4>
-          <table class="def">
+          <table class="data">
             <tbody>
               <tr>
-                <th class="prop">RDF&#160;Property</th>
+                <th class="prop">RDF&#160;Eigenschap</th>
                 <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:data_service_endpoint_url"
                     rel="nofollow">dcat:endpointURL</a></td>
               </tr>
@@ -1381,10 +1935,10 @@
         </section>
         <section id="Property:data_service_endpoint_description">
           <h4>Eigenschap: endpoint description</h4>
-          <table class="def">
+          <table class="data">
             <tbody>
               <tr>
-                <th class="prop">RDF&#160;Property</th>
+                <th class="prop">RDF&#160;Eigenschap</th>
                 <td><a
                     href="https://www.w3.org/TR/vocab-dcat-2/#Property:data_service_endpoint_description"
                     rel="nofollow">dcat:endpointDescription</a></td>
@@ -1413,10 +1967,10 @@
         </section>
         <section id="Property:data_service_serves_dataset">
           <h4>Eigenschap: serves dataset</h4>
-          <table class="def">
+          <table class="data">
             <tbody>
               <tr>
-                <th class="prop">RDF&#160;Property</th>
+                <th class="prop">RDF&#160;Eigenschap</th>
                 <td><a
                     href="https://www.w3.org/TR/vocab-dcat-2/#Property:data_service_serves_dataset"
                     rel="nofollow">dcat:servesDataset</a></td>
@@ -1440,7 +1994,7 @@
                   dataset, maar kan een dataservice ook gerelateerd zijn met <em>meerdere</em>
                   datasets. Verder overlappen de gegevens van dataset en dataservice elkaar
                   grotendeels, omdat het beide "resources" zijn en dus de eigenschappen overerven
-                  van dcat:CatalogResource.</td>
+                  van <a href="#Class:Resource"><code>dcat:CatalogResource</code></a>.</td>
               </tr>
               <tr>
                 <th class="prop">DONL</th>

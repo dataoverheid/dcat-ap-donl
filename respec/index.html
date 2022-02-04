@@ -1486,7 +1486,304 @@
           </aside>
         </section>
       </section>
-      <!-- hier record -->
+      <section id="Class:Catalog_Record">
+        <h3>Klasse Catalogusrecord</h3>
+        <p class="note">Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is
+          vooral bedoeld voor catalogi die een onderscheid maken tussen de metadata over een
+            <em>dataset of dataservice</em> en metadata over een <em>voorkomen van een dataset of
+            dataservice in een catalogus</em>. Eigenschap <i>publicatiedatum</i> van een
+            <i>dataset</i> beschijft bijvoorbeeld de datum waarop de data-eigenaar de gegevens in
+          eerste instantie heeft gepubliceerd, terwijl de publicatiedatum van het <i>catalogus
+            record</i> de datum beschrijft waarop de dataset is opgenomen in de catalogus.</p>
+        <table class="def">
+          <tr>
+            <th>RDF&#160;Klasse</th>
+            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"
+                  ><code>dcat:CatalogRecord</code></a></td>
+          </tr>
+          <tr>
+            <th class="prop">Definitie</th>
+            <td>Een Catalogusrecord geeft informatie over de registratie van een <a
+                href="#Class:Resource"><code>dcat:Resource</code></a> in een catalogus. Het bevat de
+              zgn. administratieve metadata van het dataportaal.</td>
+          </tr>
+          <tr>
+            <th class="prop">Gebruik</th>
+            <td>Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen
+              dataportalen kan het voorkomen die metadata voldoen aan een specifieke
+              toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te
+              standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen
+              voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere,
+              bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data
+              specificeren aan wel toepassingsprofiel de metadata voldoet.</td>
+          </tr>
+          <tr>
+            <th class="prop">Zie ook</th>
+            <td><a href="#Class:Dataset">dcat:Dataset</a></td>
+          </tr>
+        </table>
+        <section id="Property:record_title">
+          <h4>Eigenschap: title</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_title"
+                ><code>dct:title</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap beschrijft de naam van het record in de catalogus.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>rdfs:Literal</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..*, Optioneel</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl, omdat het geen waarde toevoegt. Deze titel zal in praktijk altijd
+                gelijk zijn aan de titel van de bijbehorende DCAT resource.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:record_description">
+          <h4>Eigenschap: description</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_description"
+                  ><code>dct:description</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap beschrijft het record.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>rdfs:Literal</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..*, Optioneel</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl, omdat de praktijk leert dat aanbieders van datasets dit gegeven
+                niet aanleveren.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:record_listing_date">
+          <h4>Eigenschap: listing date</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_listing_date"
+                  ><code>dct:issued</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap bevat de datum waarop het record is opgenomen in de
+                catalogus.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>xsd:date</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..1, Optioneel</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:record_update_date">
+          <h4>Eigenschap: update/modification date</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_update_date"
+                  ><code>dct:modified</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap bevat de datum waarop het record in de catalogus voor het laatst
+                is gewijzigd.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>xs:date</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>1..1, Verplicht</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Wanneer gegevens van CatalogRecord worden uitgewisseld (dat is optioneel) moet de
+                wijzigingsdatum worden aangeleverd. Dit is in lijn met DCAT-AP-EU.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:record_primary_topic">
+          <h4>Eigenschap: primary topic</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_primary_topic"
+                  ><code>foaf:primaryTopic</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Betreft de verwijzing naar de <code>dcat:Resource</code> (dataset or service) die
+                het record beschrijft.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>dcat:Resource (dataset or service)</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>1..1, Verplicht</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Wanneer gegevens van CatalogRecord worden uitgewisseld (dat is optioneel) moet
+                foaf:primaryTopic worden aangeleverd. Dit is in lijn met DCAT-AP-EU.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:record_conforms_to">
+          <h4>Eigenschap: conforms to/application profile</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_conforms_to"
+                  ><code>dct:conformsTo</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap verwijst naar het toepassingsprofiel waaraan de beschreven DCAT
+                resource voldoet.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>Waardelijst met toepassingsprofielen</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..*, Optioneel</td>
+            </tr>
+            <tr>
+              <th>Opmerking</th>
+              <td>In DCAT-AP heet deze eigenschap <code>application profile</code>, maar is de naam
+                van de property is <code>dct:conformsTo</code>. </td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl, omdat deze informatie geen waarde toevoegt.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:change-type">
+          <h4>Eigenschap: change type (alleen DCAT-AP-EU)</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-adms/#status"><code>adms:status</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap bevat een type-aanduiding van de laatste wijziging van de resource
+                in de catalogus.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>Waardelijst</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..1, Optioneel</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:language">
+          <h4>Eigenschap: language (alleen DCAT-AP-EU)</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://udfr.org/docs/onto/dct_language.html"><code>dct:language</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap bevat een aanduiding van de (natuurlijke) taal van de metadata die
+                de dataset, service en distributie beschrijven.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>Waardelijst</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..*, Optioneel</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl, omdat de taal van de metadata al wordt aangegeven in de metadata
+                van de DCAT resource. De taal van de data zelf wordt aangegeven in de
+                distributie.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:source">
+          <h4>Eigenschap: source metadata (alleen DCAT-AP-EU)</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://udfr.org/docs/onto/dct_source.html"><code>dct:source</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap verwijst naar de bron van de metadata die is gebruikt voor de
+                metadata van de DCAT resource.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>dcat:CatalogRecord</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..1, Optioneel</td>
+            </tr>
+            <tr>
+              <th>Opmerking</th>
+              <td>Het bereik van deze eigenschap is opnieuw een dcat:CatalogRecord. Het is niet
+                duidelijk wat DCAT-AP-EU hiermee precies bedoelt en beoogt.</td>
+            </tr>
+            <tr>
+              <th>DONL</th>
+              <td>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+                data.overheid.nl.</td>
+            </tr>
+          </table>
+        </section>
+      </section>
       <section id="Class:Dataset">
         <h3>Klasse Dataset</h3>
         <table class="def">

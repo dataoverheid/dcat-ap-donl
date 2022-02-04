@@ -85,7 +85,34 @@
       <p> Dit document beschrijft de specificatie van het toepassingsprofiel van DCAT 2 voor
         data.overheid.nl. Het is een doorontwikkeling van <a
           href="https://dcat-ap-donl.readthedocs.io/en/latest/">versie 1.1 van het
-          toepassingsprofiel</a>. </p>
+          toepassingsprofiel</a>.</p>
+      <aside class="ednote">
+        <p>De volgende punten moeten nog worden beschreven:</p>
+        <ul>
+          <li>De specifieke rol van de catalogus. Staan we toe dat instanties van
+              <code>dcat:Catalog</code> kunnen voorkomen als resource in een catalogus. Zo ja, mogen
+            die catalogi dan opnieuw bestaan uit resources waaronder catalogi, etc.?</li>
+          <li>Het DCAT model bevat een driehoeksrelatie tussen dataset, distributie en dataservice.
+            Het is vanuit DCAT 1 duidelijk dat een dataset bestaat uit een of meerdere distributies.
+            Vanaf DCAT 2 is het nu ook mogelijk om dataservices als afzonderlijke resources te
+            registreren. Deze dataservices werden in DCAT 1 als distributie gezien. Dat kan en mag
+            in DCAT 2 ook nog steeds zo. Hoe wil DONL dat partijen de DCAT-gegevens van hun
+            dataservices gaan aanleveren?</li>
+          <li>In DONL is (in test?) een uitwerking gemaakt voor de registratie van data schema's of
+            kolombeschrijvingen van datasets. Die nieuwe voorziening is geimplementeerd als aparte
+            distributie. Eigenlijk is dat conceptueel niet helemaal juist, aangezien het data schema
+            een <em>eigenschap</em> is van distributie. Hoe willen we dit oplossen?</li>
+          <li>DONL bevat een DONL-specifieke eigenschap donl:distributionType. Is die nog nodig? Er
+            is ook een type/genre eigenschap op dataset niveau.</li>
+          <li>Het blijkt dat sommige eigenschappen van distributie ook voorkomen in resource (en
+            daarmee ook eigenschappen zijn van catalogus, dataset en dataservice), bijvoorbeeld
+              <code>dct:license</code> en <code>dct:rights</code>. Wanneer moet je nu welke
+            eigenschap invullen?</li>
+          <li>Dataset, dataservice en catalog erven eigenschappen van Superklasse resource. De
+            cardinaliteit is niet bij alle resources gelijk. Zet daarom verplicht, aanbevolen en
+            optioneel in de tabel van de desbetreffende resource.</li>
+        </ul>
+      </aside>
     </section>
     <section id="sotd">
       <p>Hier de tekst in section sotd</p>
@@ -188,6 +215,187 @@
               <a href="#Class:Catalog_Record"></a>, <a href="#Class:Dataset"></a></td>
           </tr>
         </table>
+        <p>De onderstaande tabel geeft een overzicht van de eigenschappen in deze klasse. De kolom
+          Gebruik geeft aan of de betreffende eigenschap verplicht, aanbevolen, optioneel moet/mag
+          worden aangeleverd, of dat de eigenschap niet (-) wordt overgenomen in het
+          toepassingsprofiel van DONL. Kolom "Gebruik DCAT-AP-EU" toont de specificatie van het
+          Europese toepassingsprofiel.</p>
+        <table class="data">
+          <tr>
+            <th>Eigenschap</th>
+            <th>Herkomst</th>
+            <th>Gebruik DCAT-AP-EU</th>
+            <th>Gebruik DCAT-AP-DONL</th>
+          </tr>
+          <tr>
+            <th><a href="#Property:homepage">homepage</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Verplicht</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_creator">creator</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_description">description</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_title">title</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_language">language</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_identifier">identifier</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_theme">theme/category</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_license">license</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Aanbevolen</td>
+            <td>Verplicht</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:catalog_dataset">dataset</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Verplicht</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:catalog_service">service</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Optioneel</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:catalog_service">catalog</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Optioneel</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_release_date">release date</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_update_date">update/modification date</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Aanbevolen</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_publisher">publisher</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Verplicht</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_keyword">keyword/tag</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Aanbevolen</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_access_rights">access rights</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_conforms_to">conforms to</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_relation">relation</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_landing_page">landing page</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_rights">rights</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>Optioneel</td>
+            <td>Optioneel</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:themes">themes</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Verplicht</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:catalog_has_part">has part</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Optioneel</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:catalog_catalog_record">catalog record</a></th>
+            <td><a href="#Class:Catalog">Catalog</a></td>
+            <td>Optioneel</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_type">type/genre</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_qualified_relation">qualified relation</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_qualified_attribution">qualified attribution</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_has_policy">has policy</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th><a href="#Property:resource_is_referenced_by">is referenced by</a></th>
+            <td><a href="#Class:Resource">Resource</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
         <section id="Property:homepage">
           <h4>Eigenschap: homepage</h4>
           <table class="data">
@@ -207,7 +415,7 @@
               </tr>
               <tr>
                 <th>Cardinaliteit</th>
-                <td>1..1</td>
+                <td>1..1, Verplicht</td>
               </tr>
               <tr>
                 <th>Opmerking</th>
@@ -241,7 +449,7 @@
               </tr>
               <tr>
                 <th>Cardinaliteit</th>
-                <td>0..*, optioneel</td>
+                <td>0..*, Verplicht</td>
               </tr>
             </tbody>
           </table>
@@ -337,7 +545,7 @@
               </tr>
               <tr>
                 <th>Cardinaliteit</th>
-                <td>0..*, aanbevolen</td>
+                <td>0..*, Aanbevolen</td>
               </tr>
             </tbody>
           </table>
@@ -365,16 +573,16 @@
               <tr>
                 <th>Definitie</th>
                 <td>Deze eigenschap verwijst naar de (metadata van de) catalogus die voorkomt in de
-                  catalogus. Deze eigenschap maakt dus mogelijk om een catalogus te beschouwen ale
-                  een dataset en deze op te nemen in een catalogus.</td>
+                  catalogus. Deze eigenschap maakt dus mogelijk om een catalogus te beschouwen als
+                  een resource en deze op te nemen in een catalogus.</td>
               </tr>
               <tr>
                 <th>Bereik</th>
-                <td>dcat:Catalog</td>
+                <td><a href="#Class:Catalog"><code>dcat:Catalog</code></a></td>
               </tr>
               <tr>
                 <th>Cardinaliteit</th>
-                <td>0..*, aanbevolen</td>
+                <td>0..*, Aanbevolen</td>
               </tr>
               <tr>
                 <th>Opmerking</th>
@@ -401,7 +609,7 @@
               </tr>
               <tr>
                 <th>Bereik</th>
-                <td>dcat:CatalogRecord</td>
+                <td><a href="#Class:Catalog_Record"><code>dcat:CatalogRecord</code></a></td>
               </tr>
               <tr>
                 <th>Opmerking</th>
@@ -444,6 +652,11 @@
             <td><a href="#Class:Catalog_Record"></a></td>
           </tr>
         </table>
+        <p>De eigenschappen van klasse resources worden dus gebruikt in de subklassen <a
+            href="#Class:Catalog"><code>dcat:Catalog</code></a>, <a href="#Class:Dataset"
+              ><code>dcat:Dataset</code></a> en <a href="#Class:Data_Service"
+              ><code>dcat:DataService</code></a>. Of ze hierin verpicht, aanbevolen of optioneel
+          zijn, wordt gespecificeerd in de desbetreffende secties.</p>
         <section id="Property:resource_access_rights">
           <h4>Eigenschap: access rights</h4>
           <table class="data">
@@ -540,7 +753,7 @@
               <tr>
                 <th>Bereik</th>
                 <td>Waardelijst donl:ContactPoint (nog op te stellen) &lt;- <strong>Geadviseerd
-                    wordt hiervoor card te gebruiken? Welke waardenlijst is compleet genoeg om alle
+                    wordt hiervoor vcard te gebruiken? Welke waardenlijst is compleet genoeg om alle
                     leveranciers te dekken?</strong></td>
               </tr>
               <tr>
@@ -623,7 +836,7 @@
               </tr>
               <tr>
                 <th>Definitie</th>
-                <td>Deze eigenschap geeft een beschrijving de resource.</td>
+                <td>Deze eigenschap geeft een beschrijving de resource. </td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -631,7 +844,15 @@
               </tr>
               <tr>
                 <th>Cardinaliteit</th>
-                <td>1..1, verplicht</td>
+                <td>1..1, Verplicht</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>De website van data.overheid.nl toont de beschrijvende tekst bij de
+                  desbetreffende resource en gebruikt deze voor het opbouwen van de zoekindex. Dit
+                  betekent dus dat de vindbaarheid van de resource wordt bepaald door de kwaliteit
+                  van de tekst. <br />Tip: Zorg er dus voor dat in de tekst woorden voorkomen die
+                  potentiele eindgebruikers zullen gebruiken om de dataset te vinden.</td>
               </tr>
             </tbody>
           </table>
@@ -1265,43 +1486,7 @@
           </aside>
         </section>
       </section>
-      <section id="Class:Catalog_Record">
-        <h3>Klasse Catalogusrecord</h3>
-        <p class="note">Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is
-          vooral bedoeld voor catalogi die een onderscheid maken tussen de metadata over een
-            <em>dataset of dataservice</em> en metadata over een <em>voorkomen van een dataset of
-            dataservice in een catalogus</em>. Eigenschap <i>publicatiedatum</i> van een
-            <i>dataset</i> beschijft bijvoorbeeld de datum waarop de data-eigenaar de gegevens in
-          eerste instantie heeft gepubliceerd, terwijl de publicatiedatum van het <i>catalogus
-            record</i> de datum beschrijft waarop de dataset is opgenomen in de catalogus.</p>
-        <table class="def">
-          <tr>
-            <th>RDF&#160;Klasse</th>
-            <td><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"
-                  ><code>dcat:CatalogRecord</code></a></td>
-          </tr>
-          <tr>
-            <th class="prop">Definitie</th>
-            <td>Een Catalogusrecord geeft informatie over de registratie van een <a
-                href="#Class:Resource"><code>dcat:Resource</code></a> in een catalogus. Het bevat de
-              zgn. administratieve metadata van het dataportaal.</td>
-          </tr>
-          <tr>
-            <th class="prop">Gebruik</th>
-            <td>Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen
-              dataportalen kan het voorkomen die metadata voldoen aan een specifieke
-              toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te
-              standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen
-              voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere,
-              bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data
-              specificeren aan wel toepassingsprofiel de metadata voldoet.</td>
-          </tr>
-          <tr>
-            <th class="prop">Zie ook</th>
-            <td><a href="#Class:Dataset">dcat:Dataset</a></td>
-          </tr>
-        </table>
-      </section>
+      <!-- hier record -->
       <section id="Class:Dataset">
         <h3>Klasse Dataset</h3>
         <table class="def">
@@ -1398,7 +1583,7 @@
           <tr>
             <th>Eigenschap</th>
             <th>Herkomst</th>
-            <th>Gebruik DONL-AP-EU</th>
+            <th>Gebruik DCAT-AP-EU</th>
             <th>Gebruik DCAT-AP-DONL</th>
           </tr>
           <tr>
@@ -2596,7 +2781,7 @@
           <tr>
             <th>Eigenschap</th>
             <th>Herkomst</th>
-            <th>Gebruik DONL-AP-EU</th>
+            <th>Gebruik DCAT-AP-EU</th>
             <th>Gebruik DCAT-AP-DONL</th>
           </tr>
           <tr>
@@ -2942,19 +3127,6 @@
         </tbody>
       </table>
     </section>
-    <!--
-    <section data-format="markdown" data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Dataset.md">
-      
-    </section>
-    <section data-format="markdown"
-  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Cataloged-Resource.md">
-      
-    </section>
-  <section data-format="markdown"
-  data-include="https://raw.githubusercontent.com/wiki/dataoverheid/dcat-ap-donl/Referenties.md">
-    
-  </section>
-  -->
     <section id="conformance">
       <!-- This section is filled automatically by ReSpec. -->
     </section>

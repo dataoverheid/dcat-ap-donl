@@ -1269,9 +1269,6 @@
         </section>
         <section id="Property:resource_landing_page">
           <h4>Eigenschap: landing page</h4>
-          <p>Deze eigenschap verwijst naar de webpagina die toegang geeft tot de resource (dataset,
-            dataservice of catalogus) en aanvullende informatie verschaft over de resource. Het gaat
-            hierbij om de originele webpagina van de data-eigenaar.</p>
           <table class="data">
             <tbody>
               <tr>
@@ -1280,6 +1277,12 @@
                   <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page"
                       ><code>dcat:landingPage</code></a>
                 </th>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar de webpagina die toegang geeft tot de resource (dataset,
+                  dataservice of catalogus) en aanvullende informatie verschaft over de resource. Het gaat
+                  hierbij om de originele webpagina van de data-eigenaar.</td>
               </tr>
               <tr>
                 <th>Bereik</th>
@@ -1528,7 +1531,7 @@
             <tr>
               <th>RDF&#160;Eigenschap</th>
               <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_title"
-                ><code>dct:title</code></a></th>
+                    ><code>dct:title</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1556,7 +1559,7 @@
             <tr>
               <th>RDF&#160;Eigenschap</th>
               <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_description"
-                  ><code>dct:description</code></a></th>
+                    ><code>dct:description</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1584,7 +1587,7 @@
             <tr>
               <th>RDF&#160;Eigenschap</th>
               <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_listing_date"
-                  ><code>dct:issued</code></a></th>
+                    ><code>dct:issued</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1612,7 +1615,7 @@
             <tr>
               <th>RDF&#160;Eigenschap</th>
               <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_update_date"
-                  ><code>dct:modified</code></a></th>
+                    ><code>dct:modified</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1640,7 +1643,7 @@
             <tr>
               <th>RDF&#160;Eigenschap</th>
               <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_primary_topic"
-                  ><code>foaf:primaryTopic</code></a></th>
+                    ><code>foaf:primaryTopic</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1668,7 +1671,7 @@
             <tr>
               <th>RDF&#160;Eigenschap</th>
               <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:record_conforms_to"
-                  ><code>dct:conformsTo</code></a></th>
+                    ><code>dct:conformsTo</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1700,7 +1703,8 @@
           <table class="data">
             <tr>
               <th>RDF&#160;Eigenschap</th>
-              <th><a href="https://www.w3.org/TR/vocab-adms/#status"><code>adms:status</code></a></th>
+              <th><a href="https://www.w3.org/TR/vocab-adms/#status"
+                ><code>adms:status</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1727,7 +1731,8 @@
           <table class="data">
             <tr>
               <th>RDF&#160;Eigenschap</th>
-              <th><a href="https://udfr.org/docs/onto/dct_language.html"><code>dct:language</code></a></th>
+              <th><a href="https://udfr.org/docs/onto/dct_language.html"
+                  ><code>dct:language</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1756,7 +1761,8 @@
           <table class="data">
             <tr>
               <th>RDF&#160;Eigenschap</th>
-              <th><a href="https://udfr.org/docs/onto/dct_source.html"><code>dct:source</code></a></th>
+              <th><a href="https://udfr.org/docs/onto/dct_source.html"
+                ><code>dct:source</code></a></th>
             </tr>
             <tr>
               <th>Definitie</th>
@@ -1828,6 +1834,235 @@
             worden opgenomen in datasets, die vervolgens volgens de DCAT standaard worden
             gedocumenteerd en gepubliceerd op data.overheid.nl.</p>
         </aside>
+        <section id="Property:dataset_distribution">
+          <h4>Eigenschap: dataset distribution</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_distribution"
+                    ><code>dcat:distribution</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap verwijst naar de distributie van de dataset, waarin de
+                data-eigenaar beschrijft hoe de data in de dataset toegankelijk wordt gemaakt.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td><a href="#Class:Distribution"><code>dcat:Distribution</code></a></td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>1..*, Verplicht</td>
+            </tr>
+            <tr>
+              <th>Opmerking</th>
+              <td>Een dataset heeft tenminste één distributie.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_frequency">
+          <h4 id="property-frequency">Eigenschap: frequency</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_frequency"
+                    ><code>dct:accrualPeriodicity</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap geeft een indicatie van de frequentie waarmee de dataset wordt
+                ververst.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>Waardelijst donl:Frequentie, zie <a
+                  href="https://waardelijsten.dcat-ap-donl.nl/overheid_frequency.json"
+                  >https://waardelijsten.dcat-ap-donl.nl/overheid_frequency.json</a></td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..1, Optioneel</td>
+            </tr>
+            <tr>
+              <th>Opmerking</th>
+              <td>De waardelijst voor frequentie is overgenomen van het Publicatiebureau van de
+                EU.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_spatial">
+          <h4>Eigenschap: spatial/geographical coverage</h4>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_spatial"
+                  >dct:spatial</a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap beschrijft het geografische gebied waarop de gegevens in de
+                dataset betrekking hebben.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>De naam of de coördinaten van een gebied.</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..*, Optioneel</td>
+            </tr>
+            <tr>
+              <th>Vraag</th>
+              <td>dct:Location is een vrij ruim bereik. We moeten uitzoeken hoe we deze behapbaar
+                kunnen maken. Zie <a href="../issues/3">Issue #3</a></td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_spatial_resolution">
+          <h4>Eigenschap: spatial resolution</h4>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl.</p>
+          </aside>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_spatial_resolution"
+                    ><code>dcat:spatialResolutionInMeters</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap geeft een indicatie van het geografische detailniveau (in meters)
+                van de gegevens in de dataset.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>xsd:decimal</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_temporal">
+          <h4 id="property-temporal-coverage">Eigenschap: temporal coverage</h4>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl.</p>
+          </aside>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_temporal"
+                    ><code>dct:temporal</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap beschrijft de kleinste periode tussen twee data-items in de
+                dataset.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>dct:PeriodOfTime</td>
+            </tr>
+            <tr>
+              <th>Cardinaliteit</th>
+              <td>0..1, Optioneel</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_temporal_resolution">
+          <h4>Eigenschap: temporal resolution</h4>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl.</p>
+          </aside>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_temporal_resolution"
+                  >dcat:temporalResolution</a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap is van toepassing op datasets die gegevens bevatten die een
+                afhankelijkheid hebben met tijd. Deze eigenschap beschrijft de kleinste periode
+                waarover gegevens in de dataset informatie verschaffen.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td>xsd:duration</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_was_generated_by">
+          <h4>Eigenschap: was generated by</h4>
+          <aside class="note">
+            <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl.</p>
+          </aside>
+          <table class="data">
+            <tr>
+              <th>RDF&#160;Eigenschap</th>
+              <th><a href="https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_was_generated_by"
+                    ><code>prov:wasGeneratedBy</code></a></th>
+            </tr>
+            <tr>
+              <th>Definitie</th>
+              <td>Deze eigenschap beschrijft de activiteit of business context waaruit de dataset is
+                voortgekomen.</td>
+            </tr>
+            <tr>
+              <th>Bereik</th>
+              <td><a href="https://www.w3.org/TR/prov-o/#Activity"
+                ><code>prov:Activity</code></a></td>
+            </tr>
+          </table>
+        </section>
+        <section id="Property:dataset_documentation">
+          <h4>Eigenschap: documentation</h4>
+          <aside class="note">
+            <p>Deze eigenschap lijkt sterk op eigenschap <a href="#Property:resource_landing_page"
+                >landing page</a> en wordt daarom niet overgenomen in het toepassingsprofiel van
+              data.overheid.nl.</p>
+          </aside>
+          <table class="data">
+            <tbody>
+              <tr>
+                <th>RDF&#160;Eigenschap</th>
+                <td><a href="https://udfr.org/docs/onto/foaf_page.html"
+                  ><code>foaf:page</code></a></td>
+              </tr>
+              <tr>
+                <th>Definitie</th>
+                <td>Deze eigenschap verwijst naar een informatiepagina waar aanvullende informatie
+                  over deze dataset te vinden is.</td>
+              </tr>
+              <tr>
+                <th>Bereik</th>
+                <td>xsd:anyURI</td>
+              </tr>
+              <tr>
+                <th>Cardinaliteit</th>
+                <td>0..*, Optioneel</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Deze property is afkomstig van DCAT-AP-EU en komt niet voor in de W3C
+                  specificatie.</td>
+              </tr>
+              <tr>
+                <th>Opmerking</th>
+                <td>Merk op dat ook eigenschap <a href="#Property:resource_description"
+                      ><code>dct:description</code></a> gebruikt kan worden om de betreffende
+                  dataset te beschrijven. Deze tekst wordt afgebeeld bij de dataset op
+                  data.overheid.nl. De eigenschap documentation verwijst met een hyperlink naar de
+                  webpagina die ook een beschrijving geeft van de distributie, mogelijk aangevuld
+                  met extra informatie die niet wordt opgenomen in <code>dct:description</code>.
+                  Denk aan hoe de gegevens geïnterpreteerd moeten worden, een beschrijving van het
+                  formaat van de gegevens of hoe de gegevens verkregen kunnen worden.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
       <section id="Class:Distribution">
         <h3>Klasse Distributie</h3>

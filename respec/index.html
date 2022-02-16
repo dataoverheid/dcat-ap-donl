@@ -18,12 +18,16 @@
         }, {
           name: "Kees Trautwein", company: "Logius"
         }, {
+          name: "Casper le Gras", company: "KOOP"
+        }, {
           name: "Willem ter Berg", company: "TextInfo"
         },],
         authors:[ {
           name: "Jan Meijer", company: "KOOP"
         }, {
           name: "Kees Trautwein", company: "Logius"
+        }, {
+          name: "Casper le Gras", company: "KOOP"
         }, {
           name: "Willem ter Berg", company: "TextInfo"
         }, {
@@ -119,6 +123,16 @@
             cardinaliteit per eigenschap is niet bij alle resources gelijk. Verwijder de
             cardinaliteit bij de beschrijving in hoofdstuk Resource, en voeg deze toe bij de
             opsomming van eigenschappen bij Catalogus, Dataset en Dataservice.</li>
+          <li>Eigenschap <a href="#Property:resource_classification"><code>resource
+                classification</code></a> is een mogelijke oplossing om datasets (en andere
+            resources) te typeren als "high value dataset" of als "referentiedata". Data.overheid.nl
+            heeft hier nu ook een oplossing voor. Deze functionaliteit zou ook kunnen worden
+            opgelost met behulp van eigenschap <a href="#Property:resource_conforms_to">conforms
+              to</a> of <a href="#Property:resource_theme">theme/category</a>. Wat is hier
+            gewenst?</li>
+          <li>DCAT 2 heeft enkele nieuwe eigenschappen waarmee relaties kunnen vastgelegd naar
+            andere objecten binnen of buiten een catalogus. Zijn deze relaties nuttig voor het
+            toepassingsprofiel van data.overheid.nl?</li>
         </ul>
       </aside>
     </section>
@@ -248,7 +262,7 @@
             <td>-</td>
           </tr>
           <tr>
-            <th><a href="#Property:catalog_has_part">has part</a></th>
+            <th><a href="#Property:catalog_has_part">has part</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Optioneel</td>
             <td>-</td>
@@ -266,7 +280,7 @@
             <td>Aanbevolen</td>
           </tr>
           <tr>
-            <th><a href="#Property:catalog_service">catalog</a></th>
+            <th><a href="#Property:catalog_service">catalog</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Optioneel</td>
             <td>Aanbevolen</td>
@@ -278,13 +292,13 @@
             <td>-</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_access_rights">access rights</a></th>
+            <th><a href="#Property:resource_access_rights">access rights</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>Optioneel</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_conforms_to">conforms to</a></th>
+            <th><a href="#Property:resource_conforms_to">conforms to</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>Optioneel</td>
@@ -296,7 +310,7 @@
             <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_creator">creator</a></th>
+            <th><a href="#Property:resource_creator">creator</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
             <td>Verplicht</td>
@@ -350,19 +364,19 @@
             <td>Verplicht</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_type">type/genre</a></th>
+            <th><a href="#Property:resource_type">type/genre</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_relation">relation</a></th>
+            <th><a href="#Property:resource_relation">relation</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>Optioneel</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_qualified_relation">qualified relation</a></th>
+            <th><a href="#Property:resource_qualified_relation">qualified relation</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>-</td>
@@ -380,7 +394,7 @@
             <td>Optioneel</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_qualified_attribution">qualified attribution</a></th>
+            <th><a href="#Property:resource_qualified_attribution">qualified attribution</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>-</td>
@@ -398,13 +412,13 @@
             <td>Optioneel</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_has_policy">has policy</a></th>
+            <th><a href="#Property:resource_has_policy">has policy</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_is_referenced_by">is referenced by</a></th>
+            <th><a href="#Property:resource_is_referenced_by">is referenced by</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>-</td>
             <td>-</td>
@@ -538,7 +552,7 @@
           </aside>
         </section>
         <section id="Property:catalog_has_part">
-          <h4>Eigenschap: has part</h4>
+          <h4>Eigenschap: has part<em class="new">nieuw</em></h4>
           <aside class="note">
             <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel. In plaats hiervan
               maken we gebruik van de meer specifieke eigenschappen <code>dcat:dataset</code>,
@@ -598,7 +612,7 @@
           </aside>
         </section>
         <section id="Property:catalog_service">
-          <h4>Eigenschap: service</h4>
+          <h4>Eigenschap: service<em class="new">nieuw</em></h4>
           <p class="note">Zie: <a href="https://github.com/w3c/dxwg/issues/1431"
               >https://github.com/w3c/dxwg/issues/1431</a></p>
           <table class="data">
@@ -629,10 +643,7 @@
           </aside>
         </section>
         <section id="Property:catalog_catalog">
-          <h4>Eigenschap: catalog</h4>
-          <aside class="note">
-            <p> Property added in DCAT 2. </p>
-          </aside>
+          <h4>Eigenschap: catalog<em class="new">nieuw</em></h4>
           <p class="note"><strong>Vraag</strong>: Op dit moment is het op data.overheid.nl al
             mogelijk om catalogi op te nemen in een catalogus, maar worden deze catalogi
             geregistreerd als dataset. In DCAT2 is een catalogus, net als een dataset en
@@ -770,7 +781,7 @@
           </table>
         </section>
         <section id="Property:resource_conforms_to">
-          <h4>Eigenschap: conforms to</h4>
+          <h4>Eigenschap: conforms to<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -805,7 +816,8 @@
           <aside class="note">
             <p>Het is zeer gewenst dat DONL hiervoor uiteindelijk een waardelijst met mogelijke
               standaarden, schema&#39;s of ontologieën samenstelt. Tot die tijd kan deze eigenschap
-              worden ingevuld met een string. Zie <a href="../issues/14">Issue #14</a>.</p>
+              worden ingevuld met een string. Zie <a
+                href="https://github.com/dataoverheid/dcat-ap-donl/issues/14">Issue #14</a>.</p>
           </aside>
         </section>
         <section id="Property:resource_contact_point">
@@ -850,7 +862,7 @@
           </aside>
         </section>
         <section id="Property:resource_creator">
-          <h4>Eigenschap: creator</h4>
+          <h4>Eigenschap: creator<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1068,8 +1080,8 @@
           <aside class="note">
             <p>Deze eigenschap beschrijft de natuurlijke taal van de tekstuele metadata van de
               dataset, dataservice en catalogus, dus de taal van o.a. de titel en beschrijving.
-              Hierbij kan altijd maar een taal worden vastgelegd. Zie <a href="../issues/11">Issue
-                #11</a>.</p>
+              Hierbij kan altijd maar een taal worden vastgelegd. Zie <a
+                href="https://github.com/dataoverheid/dcat-ap-donl/issues/11">Issue #11</a>.</p>
             <p>Om aan te geven wat de natuurlijke taal van de data zelf, kunt u gebruikmaken van
                 <code>dct:language</code> in <a href="#Class:Distribution"
                 ><code>Distributie</code></a>.</p>
@@ -1190,7 +1202,7 @@
           </aside>
         </section>
         <section id="Property:resource_type">
-          <h4>Eigenschap: type/genre</h4>
+          <h4>Eigenschap: type/genre<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1236,10 +1248,7 @@
           </aside>
         </section>
         <section id="Property:resource_relation">
-          <h4>Eigenschap: relation</h4>
-          <aside class="note">
-            <p> Property added in DCAT 2. </p>
-          </aside>
+          <h4>Eigenschap: relation<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1266,10 +1275,7 @@
           </aside>
         </section>
         <section id="Property:resource_qualified_relation">
-          <h4>Eigenschap: qualified relation</h4>
-          <aside class="note">
-            <p> Property added in DCAT 2. </p>
-          </aside>
+          <h4>Eigenschap: qualified relation<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1370,7 +1376,7 @@
           </table>
         </section>
         <section id="Property:resource_qualified_attribution">
-          <h4>Eigenschap: qualified attribution</h4>
+          <h4>Eigenschap: qualified attribution<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1491,7 +1497,7 @@
           </table>
         </section>
         <section id="Property:resource_has_policy">
-          <h4>Eigenschap: has policy</h4>
+          <h4>Eigenschap: has policy<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -1526,7 +1532,7 @@
           </aside>
         </section>
         <section id="Property:resource_is_referenced_by">
-          <h4>Eigenschap: is referenced by</h4>
+          <h4>Eigenschap: is referenced by<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -2148,7 +2154,7 @@
           </table>
         </section>
         <section id="Property:record_conforms_to">
-          <h4>Eigenschap: conforms to/application profile</h4>
+          <h4>Eigenschap: conforms to/application profile<em class="new">nieuw</em></h4>
           <table class="data">
             <tr>
               <th>RDF&#160;Eigenschap</th>
@@ -2690,12 +2696,13 @@
             <tr>
               <th>Vraag</th>
               <td>dct:Location is een vrij ruim bereik. We moeten uitzoeken hoe we deze behapbaar
-                kunnen maken. Zie <a href="../issues/3">Issue #3</a></td>
+                kunnen maken. Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/3"
+                  >Issue #3</a></td>
             </tr>
           </table>
         </section>
         <section id="Property:dataset_spatial_resolution">
-          <h4>Eigenschap: spatial resolution</h4>
+          <h4>Eigenschap: spatial resolution<em class="new">nieuw</em></h4>
           <aside class="note">
             <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
               data.overheid.nl.</p>
@@ -2745,7 +2752,7 @@
           </table>
         </section>
         <section id="Property:dataset_temporal_resolution">
-          <h4>Eigenschap: temporal resolution</h4>
+          <h4>Eigenschap: temporal resolution<em class="new">nieuw</em></h4>
           <aside class="note">
             <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
               data.overheid.nl.</p>
@@ -2769,7 +2776,7 @@
           </table>
         </section>
         <section id="Property:dataset_was_generated_by">
-          <h4>Eigenschap: was generated by</h4>
+          <h4>Eigenschap: was generated by<em class="new">nieuw</em></h4>
           <aside class="note">
             <p>Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
               data.overheid.nl.</p>
@@ -3389,7 +3396,8 @@
                 <th>Vraag</th>
                 <td>De wijzigingsdatum is een belangrijk gegeven om enig inzicht te krijgen in de
                   actualiteit van de gegevens in de distributie. Is het beter om dit gegeven
-                  verplicht te maken? Zie <a href="../issues/4">Issue #4</a></td>
+                  verplicht te maken? Zie <a
+                    href="https://github.com/dataoverheid/dcat-ap-donl/issues/4">Issue #4</a></td>
               </tr>
             </tbody>
           </table>
@@ -3483,8 +3491,9 @@
               <tr>
                 <th>Vraag</th>
                 <td>Is het nodig om naast eigenschap <code>dct:accessRights</code> in de dataset ook
-                  een eigenschap op te nemen in de distribution? Zie <a href="../issues/6">Issue
-                    #6</a>.<br />Net als bij de properties <code>dct:license</code> en
+                  een eigenschap op te nemen in de distribution? Zie <a
+                    href="https://github.com/dataoverheid/dcat-ap-donl/issues/6">Issue
+                  #6</a>.<br />Net als bij de properties <code>dct:license</code> en
                     <code>dct:rights</code> kan ook de Dataset van de Distributie <code>access
                     rights</code> vastleggen, die niet in tegenspraak mogen zijn met die van de
                   Distributies.</td>
@@ -3521,7 +3530,7 @@
           </table>
         </section>
         <section id="Property:distribution_has_policy">
-          <h4>Eigenschap: has policy</h4>
+          <h4>Eigenschap: has policy<em class="new">nieuw</em></h4>
           <p class="note">Deze eigenschap neemt DONL niet over.</p>
           <table class="data">
             <tbody>
@@ -3556,7 +3565,8 @@
               </tr>
               <tr>
                 <th>Vraag</th>
-                <td>Zie <a href="../issues/7">Issue #7</a>.</td>
+                <td>Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/7">Issue
+                  #7</a>.</td>
               </tr>
             </tbody>
           </table>
@@ -3609,7 +3619,7 @@
           </table>
         </section>
         <section id="Property:distribution_access_service">
-          <h4>Eigenschap: access service</h4>
+          <h4>Eigenschap: access service<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -3703,7 +3713,7 @@
           </table>
         </section>
         <section id="Property:distribution_spatial_resolution">
-          <h4>Eigenschap: spatial resolution</h4>
+          <h4>Eigenschap: spatial resolution<em class="new">nieuw</em></h4>
           <p class="note">Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
             data.overheid.nl.</p>
           <table class="data">
@@ -3736,7 +3746,7 @@
           </table>
         </section>
         <section id="Property:distribution_temporal_resolution">
-          <h4>Eigenschap: temporal resolution</h4>
+          <h4>Eigenschap: temporal resolution<em class="new">nieuw</em></h4>
           <p class="note">Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
             data.overheid.nl.</p>
           <table class="data">
@@ -3771,7 +3781,7 @@
           </table>
         </section>
         <section id="Property:distribution_conforms_to">
-          <h4>Eigenschap: conforms to, linked schemas</h4>
+          <h4>Eigenschap: conforms to, linked schemas<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -3850,7 +3860,8 @@
               </tr>
               <tr>
                 <th>Vraag</th>
-                <td>Zie <a href="../issues/8">Issue #8</a>.</td>
+                <td>Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/8">Issue
+                  #8</a>.</td>
               </tr>
             </tbody>
           </table>
@@ -3889,13 +3900,14 @@
               </tr>
               <tr>
                 <th>Vraag</th>
-                <td>Zie <a href="../issues/8">Issue #8</a>.</td>
+                <td>Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/8">Issue
+                  #8</a>.</td>
               </tr>
             </tbody>
           </table>
         </section>
         <section id="Property:distribution_compression_format">
-          <h4>Eigenschap: compression format</h4>
+          <h4>Eigenschap: compression format<em class="new">nieuw</em></h4>
           <p class="note">Deze eigenschap wordt niet overgenomen in het toepassingsprofiel van
             data.overheid.nl.</p>
           <table class="data">
@@ -3916,13 +3928,14 @@
               </tr>
               <tr>
                 <td>Vraag</td>
-                <td>Zie <a href="../issues/9">Issue #9</a>.</td>
+                <td>Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/9">Issue
+                  #9</a>.</td>
               </tr>
             </tbody>
           </table>
         </section>
         <section id="Property:distribution_packaging_format">
-          <h4>Eigenschap: packaging format</h4>
+          <h4>Eigenschap: packaging format<em class="new">nieuw</em></h4>
           <p class="note">Deze eigenschap wordt niet opgenomen in het toepassingsprofiel van
             data.overheid.nl, omdat het in praktijk niet voorkomt.</p>
           <table class="data">
@@ -3950,7 +3963,8 @@
               </tr>
               <tr>
                 <th>Vraag</th>
-                <td>Zie <a href="../issues/9">Issue #9</a>.</td>
+                <td>Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/9">Issue
+                  #9</a>.</td>
               </tr>
             </tbody>
           </table>
@@ -4037,7 +4051,8 @@
               </tr>
               <tr>
                 <th>Vraag</th>
-                <td>Zie <a href="../issues/10">Issue #10</a>.</td>
+                <td>Zie <a href="https://github.com/dataoverheid/dcat-ap-donl/issues/10">Issue
+                    #10</a>.</td>
               </tr>
             </tbody>
           </table>
@@ -4112,8 +4127,9 @@
               <tr>
                 <th>Opmerking</th>
                 <td>Deze property is specifiek voor DCAT-AP-EU en komt niet voor bij Distribution in
-                  de W3C specificatie. Zie <a href="../issues/11">Issue #11</a>. Toegestane waardes
-                  zijn URI's met een tweeletterige code afkomstig uit <a
+                  de W3C specificatie. Zie <a
+                    href="https://github.com/dataoverheid/dcat-ap-donl/issues/11">Issue #11</a>.
+                  Toegestane waardes zijn URI's met een tweeletterige code afkomstig uit <a
                     href="http://id.loc.gov/vocabulary/iso639-1/"
                     >http://id.loc.gov/vocabulary/iso639-1/</a> of indien de code daarin niet
                   bestaat, een drie-letterige code uit <a
@@ -4213,7 +4229,8 @@
               <tr>
                 <th>Vraag</th>
                 <td>Is dit een eigenschap die partijen willen uitwisselen? M.a.w. moet deze worden
-                  opgenomen in het toepassingsprofiel? Zie <a href="../issues/12">Issue #12</a></td>
+                  opgenomen in het toepassingsprofiel? Zie <a
+                    href="https://github.com/dataoverheid/dcat-ap-donl/issues/12">Issue #12</a></td>
               </tr>
             </tbody>
           </table>
@@ -4494,7 +4511,7 @@
           </tr>
         </table>
         <section id="Property:data_service_endpoint_url">
-          <h4>Eigenschap: endpoint URL</h4>
+          <h4>Eigenschap: endpoint URL<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -4519,7 +4536,7 @@
           </table>
         </section>
         <section id="Property:data_service_endpoint_description">
-          <h4>Eigenschap: endpoint description</h4>
+          <h4>Eigenschap: endpoint description<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>
@@ -4551,7 +4568,7 @@
           </table>
         </section>
         <section id="Property:data_service_serves_dataset">
-          <h4>Eigenschap: serves dataset</h4>
+          <h4>Eigenschap: serves dataset<em class="new">nieuw</em></h4>
           <table class="data">
             <tbody>
               <tr>

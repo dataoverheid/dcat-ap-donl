@@ -154,6 +154,12 @@
         data.overheid.nl. De reden hiervoor wordt bij de desbetreffende klasse of eigenschap
         toegelicht.</p>
     </section>
+    <section>
+      <h2>Overzicht van het toepassingsprofiel</h2>
+      <p>De onderstaande afbeelding toont alleen de verplichte klassen en eigenschappen uit het
+        toepassingsprofiel.</p>
+      <img src="dcat-ap-donl-model.svg" />
+    </section>
     <section class="normative">
       <h2>Specificatie van het toepassingsprofiel</h2>
       <p> Dit hoofdstuk beschrijft de klassen en eigenschappen die aanbieders van data kunnen
@@ -186,9 +192,29 @@
         <h3>Eigenschappen</h3>
         <section>
           <h4>Definitie van eigenschappen</h4>
-          <p> Van elke eigenschap dat onderdeel is van een klasse beschrijft de specificatie enkele
-            vaste gegevens, zoals de definitie, het bereik en een evt. een algemene opmerking en/of
-            een specifieke opmerking over het gebruik van de eigenschap op data.overheid.nl. </p>
+          <p>Van elke eigenschap in het toepassingsprofiel worden de volgende gegevens
+            beschreven:</p>
+          <ul>
+            <li>Naam van de eigenschap. Hierbij hebben we de originele (Engelstalige) naam
+              overgenomen, zoals gebruikt in de W3C specificatie van DCAT 2, DCAT-AP-EU 2.0.1 en
+              DCAT-AP-DONL 1.1.</li>
+            <li>RDF-eigenschap. Dit is de (technische) naam van de eigenschap die van toepassing is
+              voor de uitwisseling van de DCAT data. Het bevat een hyperlink naar de originele
+              webpagina die de eigenschap beschrijft.</li>
+            <li>Definitie. Dit is de Nederlanstalige definitie van de eigenschap.</li>
+            <li>Bereik, beschrijft de mogelijke waarden van de eigenschap.</li>
+            <li>Cardinaliteit, geeft aan of de eigenschap verplicht, aanbevolen of optioneel is.
+              Direct daarachter staat of de eigenschap 0, 1 of meerdere keren mag voorkomen. Hierbij
+              wordt gebruik gemaakt van de schrijfwijze <code>x..y</code>, waarbij x het minimaal
+              aantal voorkomens aangeft en y het maximaal aantal. Bijvoorbeeld <code>1..*</code>
+              geeft aan dat de eigenschap 1 of meer keer mag voorkomen.</li>
+          </ul>
+          <p>De W3C specificatie van DCAT 2 stelt geen eisen aan de cardinaliteit van de
+            eigenschappen; DCAT-AP-EU wel. Om hierin inzicht te verschaffen bevat deze tekst per
+            DCAT klasse ook een overzicht van de toepassing van eigenschappen volgens de DCAT-AP-EU
+            specificatie.</p>
+          <p>Ten opzichte van DCAT-AP-DONL 1.1 heeft dit nieuwe toepassingsprofiel enkele nieuwe
+            eigenschappen. Deze worden in de tekst aangeduid met <em class="new">nieuw</em>.</p>
         </section>
         <section>
           <h4>Talen</h4>
@@ -252,56 +278,58 @@
           <tr>
             <th><a href="#Property:homepage">homepage</a></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
-            <td>Verplicht</td>
-            <td>Verplicht</td>
+            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:themes">themes</a></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
-            <td>Verplicht</td>
-            <td>-</td>
+            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:catalog_has_part">has part</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Optioneel</td>
-            <td>-</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:catalog_dataset">dataset</a></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Verplicht</td>
-            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:catalog_service">service</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Optioneel</td>
-            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:catalog_service">catalog</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Optioneel</td>
-            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:catalog_catalog_record">catalog record</a></th>
             <td><a href="#Class:Catalog">Catalog</a></td>
             <td>Optioneel</td>
-            <td>-</td>
+            <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_access_rights">access rights</a><em class="new">nieuw</em></th>
+            <th><a href="#Property:resource_access_rights">access rights</a><em class="new"
+                >nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Optioneel</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_conforms_to">conforms to</a><em class="new">nieuw</em></th>
+            <th><a href="#Property:resource_conforms_to">conforms to</a><em class="new"
+              >nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Optioneel</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_contact_point">contact point</a></th>
@@ -313,115 +341,119 @@
             <th><a href="#Property:resource_creator">creator</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td>Verplicht</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_description">description</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Verplicht</td>
-            <td>Verplicht</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_title">title</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Verplicht</td>
-            <td>Verplicht</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_release_date">release date</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
             <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_update_date">update/modification date</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Aanbevolen</td>
-            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_language">language</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>Optioneel</td>
-            <td>Verplicht</td>
+            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_publisher">publisher</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Verplicht</td>
-            <td>Aanbevolen</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_identifier">identifier</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Verplicht</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_theme">theme/category</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Verplicht</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_type">type/genre</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_relation">relation</a><em class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Optioneel</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_qualified_relation">qualified relation</a><em class="new">nieuw</em></th>
+            <th><a href="#Property:resource_qualified_relation">qualified relation</a><em
+                class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_keyword">keyword/tag</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Aanbevolen</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_landing_page">landing page</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>Optioneel</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_qualified_attribution">qualified attribution</a><em class="new">nieuw</em></th>
+            <th><a href="#Property:resource_qualified_attribution">qualified attribution</a><em
+                class="new">nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_license">license</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Aanbevolen</td>
-            <td>Verplicht</td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_rights">rights</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td>Optioneel</td>
+            <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_has_policy">has policy</a><em class="new">nieuw</em></th>
+            <th><a href="#Property:resource_has_policy">has policy</a><em class="new"
+              >nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:resource_is_referenced_by">is referenced by</a><em class="new">nieuw</em></th>
+            <th><a href="#Property:resource_is_referenced_by">is referenced by</a><em class="new"
+                >nieuw</em></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_other_identifier">other identifier</a></th>
@@ -481,6 +513,12 @@
             <th><a href="#Property:resource_source_catalog">source catalog</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><a href="#Property:dataset_spatial">spatial/geographical coverage</a></th>
+            <td><a href="#Class:Dataset">Dataset</a></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
         </table>
@@ -1948,9 +1986,8 @@
         </table>
         <p>De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van alle
           eigenschappen in deze klasse. Hierbij wordt ook aangegeven hoe het Europese
-          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Met een "-"-teken geeft
-          de tabel aan dat de desbetreffende eigenschap niet is/wordt overgenomen in het
-          toepassingsprofiel van data.overheid.nl.</p>
+          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Eigenschappen zonder
+          waarde zijn/worden niet overgenomen in het toepassingsprofiel.</p>
         <table class="data">
           <tr>
             <th>Eigenschap</th>
@@ -1962,55 +1999,55 @@
             <th><a href="#Property:record_title">title</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Optioneel</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_description">description</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Optioneel</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_listing_date">listing date</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Aanbevolen</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_update_date">update/modification date</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Verplicht</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_primary_topic">primary topic</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Verplicht</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_conforms_to">conforms to, application profile</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Aanbevolen</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_change_type">change type</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Aanbevolen</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_language">language</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Optioneel</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:record_source_metadata">source metadata</a></th>
             <td><a href="#Class:Catalog_Record">Catalogusrecord</a></td>
             <td>Optioneel</td>
-            <td>-</td>
+            <td>&#160;</td>
           </tr>
         </table>
         <section id="Property:record_title">
@@ -2205,7 +2242,7 @@
             </tr>
             <tr>
               <th>Bereik</th>
-              <td>Waardelijst</td>
+              <td><a href="#Valuelist:Changetype">Waardelijst adms:Changetype</a></td>
             </tr>
             <tr>
               <th>Cardinaliteit</th>
@@ -2328,9 +2365,8 @@
         </aside>
         <p>De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van alle
           eigenschappen in deze klasse. Hierbij wordt ook aangegeven hoe het Europese
-          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Met een "-"-teken geeft
-          de tabel aan dat de desbetreffende eigenschap niet is/wordt overgenomen in het
-          toepassingsprofiel van data.overheid.nl.</p>
+          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Eigenschappen zonder
+          waarde zijn/worden niet overgenomen in het toepassingsprofiel.</p>
         <table class="data">
           <tr>
             <th>Eigenschap</th>
@@ -2341,19 +2377,19 @@
           <tr>
             <th><a href="#Property:dataset_distribution">dataset distribution</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:dataset_frequency">frequency</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:dataset_spatial">spatial/geographical coverage</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
@@ -2365,7 +2401,7 @@
           <tr>
             <th><a href="#Property:dataset_temporal">temporal coverage</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
@@ -2383,19 +2419,19 @@
           <tr>
             <th><a href="#Property:dataset_documentation">documentation</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:dataset_has_version">has version</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:dataset_is_version_of">is_version_of</a></th>
+            <th><a href="#Property:dataset_is_version_of">is version of</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
@@ -2417,7 +2453,7 @@
             <td></td>
           </tr>
           <tr>
-            <th><a href="#Property:dataset_version_notes">version_notes</a></th>
+            <th><a href="#Property:dataset_version_notes">version notes</a></th>
             <td><a href="#Class:Dataset">Dataset</a></td>
             <td></td>
             <td></td>
@@ -2425,37 +2461,37 @@
           <tr>
             <th><a href="#Property:resource_access_rights">access rights</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_conforms_to">conforms to</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_contact_point">contact point</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_creator">creator</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_description">description</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Verplicht</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_title">title</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Verplicht</td>
             <td></td>
           </tr>
           <tr>
@@ -2473,25 +2509,25 @@
           <tr>
             <th><a href="#Property:resource_language">language</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_publisher">publisher</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_identifier">identifier</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_theme">theme/category</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
@@ -2515,13 +2551,13 @@
           <tr>
             <th><a href="#Property:resource_keyword">keyword/tag</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Aanbevolen</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_landing_page">landing page</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
@@ -2551,13 +2587,13 @@
           <tr>
             <th><a href="#Property:resource_is_referenced_by">is referenced by</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
             <th><a href="#Property:resource_other_identifier">other identifier</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td></td>
+            <td>Optioneel</td>
             <td></td>
           </tr>
           <tr>
@@ -3080,9 +3116,8 @@
         </table>
         <p>De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van alle
           eigenschappen in deze klasse. Hierbij wordt ook aangegeven hoe het Europese
-          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Met een "-"-teken geeft
-          de tabel aan dat de desbetreffende eigenschap niet is/wordt overgenomen in het
-          toepassingsprofiel van data.overheid.nl.</p>
+          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Eigenschappen zonder
+          waarde zijn/worden niet overgenomen in het toepassingsprofiel.</p>
         <table class="data">
           <tr>
             <th>Eigenschap</th>
@@ -3147,13 +3182,13 @@
           <tr>
             <th><a href="#Property:distribution_release_date">release date</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:distribution_access_rights">access rights</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
@@ -3183,7 +3218,7 @@
           <tr>
             <th><a href="#Property:distribution_format">format</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>Aanbevolen **</td>
+            <td>Aanbevolen</td>
             <td>Optioneel</td>
           </tr>
           <tr>
@@ -3213,32 +3248,32 @@
           <tr>
             <th><a href="#Property:distribution_type">distribution type</a></th>
             <td>DONL Distribution</td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:distribution_has_policy">has policy</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td>&#160;</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:distribution_compression_format">compression format</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>Optioneel **</td>
-            <td>-</td>
+            <td>Optioneel</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:distribution_packaging_format">packaging format</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>Optioneel **</td>
-            <td>-</td>
+            <td>Optioneel</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:distribution_availability">availability</a></th>
             <td><a href="#Class:Distribution">Distribution</a></td>
-            <td>Aanbevolen **</td>
-            <td>-</td>
+            <td>Aanbevolen</td>
+            <td>&#160;</td>
           </tr>
         </table>
         <section id="Property:distribution_title">
@@ -4289,9 +4324,8 @@
         </table>
         <p>De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van alle
           eigenschappen in deze klasse. Hierbij wordt ook aangegeven hoe het Europese
-          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Met een "-"-teken geeft
-          de tabel aan dat de desbetreffende eigenschap niet is/wordt overgenomen in het
-          toepassingsprofiel van data.overheid.nl.</p>
+          toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Eigenschappen zonder
+          waarde zijn/worden niet overgenomen in het toepassingsprofiel.</p>
         <table class="data">
           <tr>
             <th>Eigenschap</th>
@@ -4320,13 +4354,13 @@
           <tr>
             <th><a href="#Property:resource_access_rights">access rights</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_conforms_to">conforms to</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
@@ -4356,7 +4390,7 @@
           <tr>
             <th><a href="#Property:resource_release_date">release date</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Aanbevolen</td>
           </tr>
           <tr>
@@ -4380,50 +4414,50 @@
           <tr>
             <th><a href="#Property:resource_identifier">identifier</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_theme">theme/category</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_type">type/genre</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td>&#160;</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_relation">relation</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_qualified_relation">qualified relation</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td>&#160;</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_keyword">keyword/tag</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Aanbevolen</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_landing_page">landing page</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
+            <td>&#160;</td>
             <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_qualified_attribution">qualified attribution</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td>&#160;</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_license">license</a></th>
@@ -4440,14 +4474,14 @@
           <tr>
             <th><a href="#Property:resource_has_policy">has policy</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td>&#160;</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_is_referenced_by">is referenced by</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
-            <td>-</td>
-            <td>-</td>
+            <td>&#160;</td>
+            <td>&#160;</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_other_identifier">other identifier</a></th>
@@ -4613,11 +4647,14 @@
     </section>
     <section class="normative">
       <h2>Waardelijsten (Controlled vocabularies)</h2>
-      <p> Dit hoofdstuk geeft een overzicht van de waardelijsten die in DCAT-AP-DONL moeten worden
-        gebruikt voor DCAT eigenschappen. De mogelijke waarden, dus de codes (identifiers) en de
-        bijbehorende waarden, zijn zoveel als mogelijk overgenomen uit de specificatie van de
-        Europese DCAT-AP. Deze waardelijsten zijn beschikbaar op <a
-          href="https://waardelijsten.dcat-ap-donl.nl/">DCAT-AP-DONL ‐ Waardelijsten</a>. </p>
+      <p>Dit hoofdstuk geeft een overzicht van waardelijsten die gebruikt worden in het
+        toepassingsprofiel van data.overheid.nl. Deze waarden beperken het bereik van de
+        eigenschappen die in de tweede kolom van de onderstaande tabel zijn opgenomen.</p>
+      <p>DONL beheert lijsten zelf</p>
+      <p> in het toin DCAT-AP-DONL moeten worden gebruikt voor DCAT eigenschappen. De mogelijke
+        waarden, dus de codes (identifiers) en de bijbehorende waarden, zijn zoveel als mogelijk
+        overgenomen uit de specificatie van de Europese DCAT-AP. Deze waardelijsten zijn beschikbaar
+        op <a href="https://waardelijsten.dcat-ap-donl.nl/">DCAT-AP-DONL ‐ Waardelijsten</a>. </p>
       <p class="advisement" title="Aanpassingen in de waardelijsten"> In de loop van de tijd kan
         DONL wijzigingen aanbrengen in de gebruikte waardelijsten, bijvoorbeeld om nieuwe waarden
         toe te voegen, of oude waarden te verwijderen. DONL zal deze wijzigingen kenbaar maken op de
@@ -4632,72 +4669,162 @@
           <tr>
             <th>Waardelijst</th>
             <th>Eigenschap</th>
-            <th>Klasse</th>
-            <th>DCAT-AP</th>
+            <th>DCAT-AP-EU</th>
             <th>Opmerking</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json"
-                >donl:Openbaarheidsniveau</a></td>
-            <td>dct:accessRights</td>
-            <td>dcat:Resource</td>
-            <td>Ja</td>
+          <tr id="Valuelist:Changetype">
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/adms_changetype.json"
+                  ><code>ADMS:Changetype</code></a></td>
+            <td><a href="#Property:record_change_type"><code>adms:status</code> in Catalogusrecord</a></td>
+            <td>Nee</td>
             <td>&#160;</td>
           </tr>
           <tr>
-            <td>donl:ContactPoint</td>
-            <td>dcat:contactPoint</td>
-            <td>dcat:Resource</td>
-            <td>Nee</td>
-            <td>Deze waardelijst bestaat nog niet.</td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/adms_distributiestatus.json"
+                  ><code>ADMS:DistributieStatus</code></a></td>
+            <td><a href="#Property:distribution_status"><code>adms:status</code> in Distributie</a></td>
+            <td></td>
+            <td>&#160;</td>
           </tr>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json"
-                >donl:Organization</a></td>
-            <td>dct:creator, dct:publisher</td>
-            <td>dcat:Resource</td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_catalogs.json"
+                  ><code>DONL:Catalogs</code></a></td>
+            <td></td>
+            <td></td>
+            <td>Lijkt niet meer actueel, omdat catalogus in DCTAT2 een aparte resource is geworden.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_distributiontype.json"
+                  ><code>DONL:DistributionType</code></a></td>
+            <td><a href="#Property:distribution_type"><code>donl:distributionType</code> in Distributie</a></td>
             <td>Nee</td>
             <td>&#160;</td>
           </tr>
           <tr>
             <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json"
-              >donl:Language</a></td>
-            <td>dct:language</td>
-            <td>dcat:Resource</td>
+                  ><code>donl:Language</code></a></td>
+            <td><a href="#Property:resource_language"><code>dct:language</code> in Resource</a>, <a href="#Property:distribution_language"><code>dct:language</code> in Distributie</a> en <a href="#Property:resource_language"><code>dct:language</code> in Catalogusrecord</a></td>
             <td>Ja</td>
             <td>Betreft een subselectie uit de Europese lijst.</td>
           </tr>
           <tr>
-            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json"
-                >Taxonomie beleidsagenda</a></td>
-            <td>dcat:theme</td>
-            <td>dcat:Resource</td>
-            <td>Nee</td>
-            <td>Deze waardelijst wordt vervangen door de Toplijst met thema's.</td>
-          </tr>
-          <tr>
             <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json"
-              >donl:License</a></td>
-            <td>dct:license</td>
-            <td>dcat:Resource</td>
+                  ><code>donl:License</code></a></td>
+            <td><a href="#Property:resource_license"><code>dct:license</code> in Resource</a> en <a href="#Property:distribution_license"><code>dct:license</code> in Distributie</a></td>
             <td>Nee</td>
             <td>&#160;</td>
           </tr>
           <tr>
-            <td>donl:Taxonomies</td>
-            <td>dcat:themeTaxonomy</td>
-            <td>dcat:Catalog</td>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json"
+                  ><code>donl:Organization</code></a></td>
+            <td><a href="#Property:resource_creator"><code>dct:creator</code></a> en <a href="#Property:resource_publisher"><code>dct:publisher</code></a></td>
+            <td>Nee</td>
+            <td>&#160;</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/donl_wobuitzondering.json"
+                  ><code>DONL:WOBUitzondering</code></a></td>
+            <td></td>
+            <td>Nee</td>
+            <td>Nog niet operationeel.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json"
+                  ><code>IANA:MediaTypes</code></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/mdr_filetype_nal.json"
+                  ><code>MDR:Filetype</code></a></td>
+            <td></td>
+            <td>Ja</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_dataset_status.json"
+                  ><code>Overheid:DatasetStatus</code></a></td>
+            <td></td>
+            <td>Nee</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_frequency.json"
+                  ><code>Overheid:Frequency</code></a></td>
+            <td></td>
+            <td>Ja</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json"
+                  ><code>donl:Openbaarheidsniveau</code></a></td>
+            <td><a href="#Property:resource_access_rights"><code>dct:accessRights</code> in Resource</a> en <a href="#Property:distribution_access_rights"><code>dct:accessRights</code> in Distributie</a></td>
+            <td>Ja</td>
+            <td>&#160;</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_spatial_gemeente.json"
+                  ><code>Overheid:Gemeente</code></a></td>
+            <td></td>
+            <td></td>
+            <td>Wordt vervangen door een <a
+                href="https://tardis.overheid.nl/waardelijst?work_uri=https%3A%2F%2Fidentifier.overheid.nl%2Ftooi%2Fset%2Frwc_gemeenten_compleet"
+                >TOOI-waardelijst</a>.</td>
+          </tr>
+          <tr>
+            <td><a
+                href="https://waardelijsten.dcat-ap-donl.nl/overheid_spatial_koninkrijksdeel.json"
+                  ><code>Overheid:Koninkrijksdeel</code></a></td>
+            <td></td>
+            <td></td>
+            <td>&#160;</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_spatial_provincie.json"
+                  ><code>Overheid:Provincie</code></a></td>
+            <td></td>
+            <td></td>
+            <td>Wordt vervangen door een <a
+                href="https://tardis.overheid.nl/waardelijst?work_uri=https%3A%2F%2Fidentifier.overheid.nl%2Ftooi%2Fset%2Frwc_provincies_compleet"
+                >TOOI-waardelijst</a>.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_spatial_scheme.json"
+                  ><code>Overheid:SpatialScheme</code></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_spatial_waterschap.json"
+                  ><code>Overheid:Waterschap</code></a></td>
+            <td></td>
+            <td></td>
+            <td>Wordt vervangen door een <a
+                href="https://tardis.overheid.nl/waardelijst?work_uri=https%3A%2F%2Fidentifier.overheid.nl%2Ftooi%2Fset%2Frwc_waterschappen_compleet"
+                >TOOI-waardelijst</a>.</td>
+          </tr>
+          <tr>
+            <td><a href="https://waardelijsten.dcat-ap-donl.nl/overheid_taxonomiebeleidsagenda.json"
+                ><code>Taxonomie beleidsagenda</code></a></td>
+            <td><a href="#Property:resource_theme"><code>dcat:theme</code></a></td>
+            <td>Nee</td>
+            <td>Deze waardelijst wordt vervangen door de <a href="https://tardis.overheid.nl/waardelijst?work_uri=https%3A%2F%2Fidentifier.overheid.nl%2Ftooi%2Fset%2Fscw_toplijst">Toplijst met thema's</a> in TOOI.</td>
+          </tr>
+          <tr>
+            <td><code>donl:ContactPoint</code></td>
+            <td>dcat:contactPoint in Resource</td>
             <td>Nee</td>
             <td>Deze waardelijst bestaat nog niet.</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td>dcat:Resource</td>
-            <td></td>
-            <td>&#160;</td>
+            <td><code>donl:Taxonomies</code></td>
+            <td>dcat:themeTaxonomy in Catalogus</td>
+            <td>Nee</td>
+            <td>Deze waardelijst bestaat nog niet.</td>
           </tr>
         </tbody>
       </table>

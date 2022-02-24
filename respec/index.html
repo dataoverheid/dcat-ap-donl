@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>DCAT-AP-DONL 2 Toepassingsprofiel van DCAT 2 voor data.overheid.nl</title>
-    <!-- https://raw.githack.com/dataoverheid/dcat-ap-donl/main/respec/index.html -->
     <script async="async" class="remove" src="https://www.w3.org/Tools/respec/respec-w3c"></script>
     <script class="remove">
       /*<![CDATA[*/
@@ -12,7 +11,7 @@
         // Working Groups ids at https://respec.org/w3c/groups/
         group: "webapps",
         specStatus: "unofficial",
-        latestVersion: "https://raw.githack.com/dataoverheid/dcat-ap-donl/main/respec/index.html",
+        latestVersion: "https://gitcdn.link/cdn/dataoverheid/dcat-ap-donl/main/respec/index.html",
         editors:[ {
           name: "Jan Meijer", company: "KOOP"
         }, {
@@ -1609,10 +1608,6 @@
               </tr>
             </tbody>
           </table>
-          <aside class="note">
-            <p>Deze eigenschap nemen we niet over in het toepassingsprofiel omdat er geen behoefte
-              is om deze informatie uit te wisselen.</p>
-          </aside>
         </section>
         <section id="Property:resource_other_identifier">
           <h4>Eigenschap: other identifier</h4>
@@ -2470,73 +2465,73 @@
             <th><a href="#Property:resource_access_rights">access rights</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_conforms_to">conforms to</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_contact_point">contact point</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Aanbevolen</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_creator">creator</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_description">description</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Verplicht</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_title">title</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Verplicht</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_release_date">release date</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Aanbevolen</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_update_date">update/modification date</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Aanbevolen</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_language">language</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_publisher">publisher</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Aanbevolen</td>
-            <td></td>
+            <td>Aanbevolen</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_identifier">identifier</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_theme">theme/category</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Aanbevolen</td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_type">type/genre</a></th>
@@ -2560,31 +2555,31 @@
             <th><a href="#Property:resource_keyword">keyword/tag</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Aanbevolen</td>
-            <td></td>
+            <td>Aanbevolen</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_landing_page">landing page</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_qualified_attribution">qualified attribution</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_license">license</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_rights">rights</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_has_policy">has policy</a></th>
@@ -2596,13 +2591,13 @@
             <th><a href="#Property:resource_is_referenced_by">is referenced by</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_other_identifier">other identifier</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td>Optioneel</td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_provenance">provenance</a></th>
@@ -2626,37 +2621,37 @@
             <th><a href="#Property:resource_status">resource status</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Verplicht</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_legal_foundation">legal foundation</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_date_planned">date planned</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_classification">resource classification</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_wob_exclusion_reason">wob exclusion reason</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
           <tr>
             <th><a href="#Property:resource_source_catalog">source catalog</a></th>
             <td><a href="#Class:Resource">Resource</a></td>
             <td></td>
-            <td></td>
+            <td>Optioneel</td>
           </tr>
         </table>
         <section id="Property:dataset_distribution">

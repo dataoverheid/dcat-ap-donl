@@ -174,7 +174,7 @@
       <p> Dit hoofdstuk beschrijft de klassen en eigenschappen die aanbieders van data kunnen
         gebruiken om hun data te beschrijven. In de basis kunnen alle klassen en eigenschappen
         worden gebruikt die voorkomen in de specificatie van DCAT volgens W3C. Het
-        toepassingsprofiel voor DONL hanteerd voor sommige eigenschappen een afwijkend
+        toepassingsprofiel voor DONL hanteert voor sommige eigenschappen een afwijkend
         waardenbereik, bijvoorbeeld omdat DONL hiervoor een eigen waardelijst heeft opgenomen. Deze
         waardelijsten worden beschreven in hoofdstuk <a
           href="#waardelijsten-controlled-vocabularies">Waardelijsten</a>.</p>
@@ -210,12 +210,12 @@
             <li>RDF-eigenschap. Dit is de (technische) naam van de eigenschap die van toepassing is
               voor de uitwisseling van de DCAT data. Het bevat een hyperlink naar de originele
               webpagina die de eigenschap beschrijft.</li>
-            <li>Definitie. Dit is de Nederlanstalige definitie van de eigenschap.</li>
+            <li>Definitie. Dit is de Nederlandstalige definitie van de eigenschap.</li>
             <li>Bereik, beschrijft de mogelijke waarden van de eigenschap.</li>
             <li>Cardinaliteit, geeft aan of de eigenschap verplicht, aanbevolen of optioneel is.
               Direct daarachter staat of de eigenschap 0, 1 of meerdere keren mag voorkomen. Hierbij
               wordt gebruik gemaakt van de schrijfwijze <code>x..y</code>, waarbij x het minimaal
-              aantal voorkomens aangeft en y het maximaal aantal. Bijvoorbeeld <code>1..*</code>
+              aantal voorkomens aangeeft en y het maximaal aantal. Bijvoorbeeld <code>1..*</code>
               geeft aan dat de eigenschap 1 of meer keer mag voorkomen.</li>
           </ul>
           <p>De W3C specificatie van DCAT 2 stelt geen eisen aan de cardinaliteit van de
@@ -228,7 +228,7 @@
         <section>
           <h4>Talen</h4>
           <p>De tekstuele waarden kunnen in maximaal één natuurlijke taal worden aangeleverd. Bij
-            voorkeur is dat Nederlands. Als de beschrijvingen worden aangerleverd in een andere
+            voorkeur is dat Nederlands. Als de beschrijvingen worden aangeleverd in een andere
             taal, dan moet de taal kan worden aangegeven in eigenschap <code>dct:language</code>. Op
             data.overheid.nl wordt deze tekst geïndexeerd, zodat eindgebruikers de desbetreffende
             dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in
@@ -1156,7 +1156,7 @@
               </tr>
               <tr>
                 <th>Cardinaliteit</th>
-                <td>0..1, Aanbevolen</td>
+                <td>1..1, Verplicht</td>
               </tr>
               <tr>
                 <th>DONL</th>

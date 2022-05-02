@@ -20,6 +20,8 @@
           name: "Casper le Gras", company: "KOOP"
         }, {
           name: "Willem ter Berg", company: "TextInfo"
+		}, {
+          name: "Huub van Oers", company: "DUO"
         },],
         authors:[ {
           name: "Jan Meijer", company: "KOOP"
@@ -555,7 +557,8 @@
                 <th>Opmerking</th>
                 <td>Een catalogus kan op meerdere dataportals worden gepubliceerd. Deze eigenschap
                   verwijst naar de originele homepage. Dat is in de regel de homepage van de maker
-                  van de catalogus.</td>
+                  van de catalogus.
+				  Let op, dit is dus iets anders dan <a href="#Property:resource_landing_page">landing page</a></td>
               </tr>
             </tbody>
           </table>
@@ -1647,7 +1650,7 @@
           <h4>Eigenschap: provenance</h4>
           <aside class="note">
             <p>Deze eigenschap uit DCAT-AP-EU nemen we niet over in het toepassingsprofiel van DONL,
-              omdat het Europese toepassingsprofiel deze eingenschap onvoldoende heeft uitgewerkt.
+              omdat het Europese toepassingsprofiel deze eigenschap onvoldoende heeft uitgewerkt.
               Wanneer partijen deze gegevens gaan uitwisselen, ontstaat wildgroei die naar
               verwachting verwarring zal oproepen.</p>
           </aside>
@@ -1809,7 +1812,7 @@
             </tr>
             <tr>
               <th>Cardinaliteit</th>
-              <td>0..1, Optioneel</td>
+              <td>0..*, Optioneel</td>
             </tr>
             <tr>
               <th>Herkomst</th>

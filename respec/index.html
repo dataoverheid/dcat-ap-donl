@@ -32,6 +32,8 @@
         }, {
           name: "Willem ter Berg", company: "TextInfo"
         }, {
+          name: "Huub van Oers", company: "DUO"
+        }, {
           name: "Cor Melse", company: "RIVM"
         }, {
           name: "Bob Korte", company: "CBS"
@@ -1869,10 +1871,13 @@
                   eigenschappen, met een waardebereik gelijk aan "ja" of "nee". Deze eigenschappen
                   zijn:</p>
                 <ol>
-                  <li>De dataset een <em>high value</em> dataset (resource) is.</li>
+                  <li>De dataset een <em><a
+          href="https://data.overheid.nl/community/maatschappij/high-value">high value</a></em> dataset (resource) is.</li>
                   <li>De gegevens in de dataset (resource) zijn voortgekomen uit een
-                      <em>basisregistratie</em>.</li>
-                  <li>De dataset (resource) <em>referentiedata</em> betreft.</li>
+                      <em><a
+          href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/ ">basisregistratie</a></em>.</li>
+                  <li>De dataset (resource) <em><a
+          href="https://data.overheid.nl/community/maatschappij/referentie-datasets ">referentiedata</a></em> betreft.</li>
                   <li>De gegevens in de dataset (resource) een <em>landelijke dekking</em>
                     hebben.</li>
                 </ol>
@@ -1961,7 +1966,7 @@
           vooral bedoeld voor catalogi die een onderscheid maken tussen de metadata over een
             <em>dataset of dataservice</em> en metadata over een <em>voorkomen van een dataset of
             dataservice in een catalogus</em>. Eigenschap <i>publicatiedatum</i> van een
-            <i>dataset</i> beschijft bijvoorbeeld de datum waarop de data-eigenaar de gegevens in
+            <i>dataset</i> beschrijft bijvoorbeeld de datum waarop de data-eigenaar de gegevens in
           eerste instantie heeft gepubliceerd, terwijl de publicatiedatum van het <i>catalogus
             record</i> de datum beschrijft waarop de dataset is opgenomen in de catalogus.</p>
         <table class="def">
@@ -2156,7 +2161,7 @@
             </tr>
             <tr>
               <th>Bereik</th>
-              <td>xs:date</td>
+              <td>xsd:dateTime</td>
             </tr>
             <tr>
               <th>Cardinaliteit</th>
@@ -2364,7 +2369,7 @@
             data zijn o.a. numeriek, tekstueel, afbeeldingen, geluid en andere multimedia.</p>
           <p>Naast data.overheid.nl zijn systemen zoals PLOOI vooral gericht op de publicatie van
             open <em>documentaire</em> data in het kader van de Wet open overheid, zoals
-            Pdf-bestanden. Hierbij worden worden weer andere standaarden dan DCAT gebruikt om de
+            Pdf-bestanden. Hierbij worden weer andere standaarden dan DCAT gebruikt om de
             metadata van deze publicaties te beschrijven. Het is denkbaar dat collecties van
             documenten (bijvoorbeeld van een bepaalde organisatie of over specifieke onderwerpen)
             worden opgenomen in datasets, die vervolgens volgens de DCAT standaard worden
@@ -3108,7 +3113,7 @@
               niets nog niets over de manier waarop de data kunnen worden benaderd, zoals via een
               directe download, een API of een webpagina. Een waarde in eigenschap <a
                 href="#Property:distribution_download_url"><code>dcat:downloadURL</code></a> geeft
-              aan dat de gegevens in de ditributie direct gedownload kunnen worden.</td>
+              aan dat de gegevens in de distributie direct gedownload kunnen worden.</td>
           </tr>
           <tr>
             <th class="prop">Zie ook</th>
@@ -4696,7 +4701,7 @@
                   ><code>donl:Catalogs</code></a></td>
             <td></td>
             <td></td>
-            <td>Lijkt niet meer actueel, omdat catalogus in DCTAT2 een aparte resource is
+            <td>Is niet meer actueel, omdat catalogus in DCTAT2 een aparte resource is
               geworden.</td>
           </tr>
           <tr>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+        xmlns:dct="http://purl.org/dc/terms/">
+
+	<!-- Verplicht 1..1 maken -->
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</dct:identifier>
+        <dct:title xml:lang="nl">Openbaarheidsniveau</dct:title>
+        <skos:prefLabel xml:lang="nl">Openbaarheidsniveau</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Deze taxonomie bevat concepten die beschrijven in welke mate een resource (niet te verwarren met een
+            dcat:Resource!) publiek benaderbaar is.
+        </skos:definition>
+
+        <skos:editorialNote xml:lang="nl">
+            Elk concept in dit skos:ConceptScheme bevat een skos:broader attribuut die de mapping naar de Europese
+            http://publications.europa.eu/resource/authority/access-right taxonomie bevat.
+
+            In DCAT-AP-DONL 1.1 viel deze taxonomie onder de noemer overheid:Openbaarheidsniveau. In DCAT-AP-DONL 2.0 is
+            deze over gezet naar de donl namespace.
+        </skos:editorialNote>
+
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PUBLIEK</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/ONDER_VOORWAARDEN</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/NIET_PUBLIEK</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/GEVAAR_EENHEID_KROON</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/STAATSVEILIGHEID</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/VERTROUWELIJK</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PRIVACY</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/BELANG_BETREKKINGEN</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/ECONOMISCHE_BELANGEN</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/STRAFRECHT</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/INSPECTIE_CONTROLE_TOEZICHT</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PERSOONLIJKE_BELEIDSOPVATTINGEN</skos:hasTopConcept>
+        <skos:hasTopConcept>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/RECHTEN_VAN_DERDEN</skos:hasTopConcept>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PUBLIEK">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+		
+		<!-- Mogelijk exactere relatie mogelijk? -->
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PUBLIEK</dct:identifier>
+        <dct:title xml:lang="nl">Publiek</dct:title>
+        <skos:prefLabel xml:lang="nl">Publiek</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) publiek beschikbaar en
+            benaderbaar is.
+        </skos:definition>
+
+        <skos:editorialNote xml:lang="nl">
+            Enkele, laagdrempelige, beperkingen kunnen nog steeds van toepassing zijn, zoals het vereisen van
+            registratie en het aanvragen van API sleutels, zolang elke invididu (al dan niet namens een organisatie)
+            redelijkerwijs aan deze eisen kan voldoen.
+        </skos:editorialNote>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/NIET_PUBLIEK">
+		<!-- Als laatste in de lijst! -->
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/NIET_PUBLIEK</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is.
+        </skos:definition>
+
+        <skos:editorialNote xml:lang="nl">
+            Gebruik dit concept alleen wanneer het niet duidelijk is om welke beweegredenen de resource niet publiek is.
+            Wanneer dit wel duidelijk is, is het de bedoeling om een van de andere concepten uit deze ontology te
+            gebruiken die een skos:broader van http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC
+            hebben.
+
+            Daarnaast kan dit concept gebruikt worden wanneer de andere NON_PUBLIC varianten niet toereikend genoeg zijn
+            om de beweegredenen te omschrijven van het niet openbaar maken van deze resource.
+        </skos:editorialNote>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/GEVAAR_EENHEID_KROON">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/GEVAAR_EENHEID_KROON</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (gevaar eenheid kroon)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (gevaar eenheid kroon)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat het publiceren ervan een gevaar kan opleveren voor de eenheid van de Kroon.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/STAATSVEILIGHEID">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/STAATSVEILIGHEID</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (staatsveiligheid)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (staatsveiligheid)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat het publiceren ervan de veiligheid van de Nederlandse staat kan schaden.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/VERTROUWELIJK">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/VERTROUWELIJK</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (vertrouwelijk)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (vertrouwelijk)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat het gegevens bevat die vertrouwelijk met de overheid zijn gedeeld.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PRIVACY">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PRIVACY</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (privacygevoelig)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (privacygevoelig)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat deze persoonsgegevens of gegevens die herleidbaar zijn naar persoonsgegevens bevat.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/BELANG_BETREKKINGEN">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/BELANG_BETREKKINGEN</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (belang betrekkingen)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (belang betrekkingen)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat deze de relatie tussen de Nederlandse staat en andere staten en/of internationale
+            organisaties kan schaden.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/ECONOMISCHE_BELANGEN">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/ECONOMISCHE_BELANGEN</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (economische belangen)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (economische belangen)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat de economische of financiële belangen van de overheidsorganisatie zwaarder opwegen van
+            het openbaren van de resource.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/STRAFRECHT">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/STRAFRECHT</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (strafrecht)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (strafrecht)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat de resource betrekking heeft op de opsporing en/of vervolging van strafbare feiten. Dit
+            weegt zwaarder dan het openbaren van de resource.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/INSPECTIE_CONTROLE_TOEZICHT">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/INSPECTIE_CONTROLE_TOEZICHT</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (inspectie, controle en toezicht)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (inspectie, controle en toezicht)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat deze betrekking heeft op de inspectie, controle en toezicht van bestuursorganen. Dit
+            belang weegt zwaarder dan het openbaren van de resource.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PERSOONLIJKE_BELEIDSOPVATTINGEN">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/PERSOONLIJKE_BELEIDSOPVATTINGEN</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (persoonlijke beleidsopvattingen)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (persoonlijke beleidsopvattingen)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat deze persoonlijke beleidsopvattingen bevat waarvan de betrokkene geen uitdrukkelijke
+            toestemming heeft gegeven om deze te openbaren.
+        </skos:definition>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/RECHTEN_VAN_DERDEN">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/RECHTEN_VAN_DERDEN</dct:identifier>
+        <dct:title xml:lang="nl">Niet publiek (rechten van derden)</dct:title>
+        <skos:prefLabel xml:lang="nl">Niet publiek (rechten van derden)</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) niet publiek beschikbaar en
+            benaderbaar is omdat de overheidsorganisatie niet vrij beschikt over de resource en geen uitdrukkelijke
+            toestemming heeft om de resource te openbaren.
+        </skos:definition>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://dcat.overheid.nl/application-profile/donl/terms/access-rights/ONDER_VOORWAARDEN">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#AccessRight"/>
+
+        <skos:inScheme>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:inScheme>
+        <skos:topConceptOf>https://dcat.overheid.nl/application-profile/donl/terms/access-rights</skos:topConceptOf>
+        <skos:broader>http://publications.europa.eu/resource/authority/access-right/RESTRICTED</skos:broader>
+
+        <dct:identifier>https://dcat.overheid.nl/application-profile/donl/terms/access-rights/ONDER_VOORWAARDEN</dct:identifier>
+        <dct:title xml:lang="nl">Onder voorwaarden</dct:title>
+        <skos:prefLabel xml:lang="nl">Onder voorwaarden</skos:prefLabel>
+
+        <skos:definition xml:lang="nl">
+            Beschrijft het feit dat een resource (niet te verwarren met een dcat:Resource!) beschikbaar wordt gesteld wanneer de 
+			afnemer aan bepaalde voorwaarden voldoet. Voorbeelden kunnen zijn het tekenen van een non-disclosure-agreement of het 
+			doen van een betaling.
+        </skos:definition>
+    </rdf:Description>
+	
+</rdf:RDF>

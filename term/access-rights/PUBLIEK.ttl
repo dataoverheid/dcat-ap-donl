@@ -1,0 +1,22 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/term/PUBLIEK
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dcat.overheid.nl/application-profile/donl/term/PUBLIEK>
+  rdf:type euvoc:AccessRight ;
+  rdf:type skos:Concept ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/term/PUBLIEK" ;
+  dcterms:title "Public"@en ;
+  dcterms:title "Publiek"@nl ;
+  skos:definition "Beschrijft het feit dat een bron publiek beschikbaar en benaderbaar is."@nl ;
+  skos:editorialNote "Enkele, laagdrempelige, beperkingen kunnen nog steeds van toepassing zijn, zoals het vereisen van registratie en het aanvragen van API sleutels, zolang elke invididu (al dan niet namens een organisatie) redelijkerwijs aan deze eisen kan voldoen."@nl ;
+  skos:exactMatch <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+  skos:inScheme <https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights> ;
+  skos:topConceptOf <https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights> ;
+.

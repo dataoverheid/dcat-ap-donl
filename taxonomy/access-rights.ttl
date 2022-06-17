@@ -1,0 +1,31 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights" ;
+  dcterms:title "Access rights"@en ;
+  dcterms:title "Openbaarheidsniveau"@nl ;
+  skos:definition "Deze taxonomie bevat concepten die beschrijven in welke mate een bron publiek benaderbaar is."@nl ;
+  skos:editorialNote "Elk concept in dit skos:ConceptScheme bevat een skos:broader attribuut die de mapping naar de Europese http://publications.europa.eu/resource/authority/access-right taxonomie bevat."@nl ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/ONDER_VOORWAARDEN> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/PUBLIEK> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/RECHTEN_VAN_DERDEN> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/PERSOONLIJKE_BELEIDSOPVATTINGEN> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/INSPECTIE_CONTROLE_TOEZICHT> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/STRAFRECHT> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/ECONOMISCHE_BELANGEN> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/BELANG_BETREKKINGEN> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/PRIVACY> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/CONFIDENTIAL> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/STAATSVEILIGHEID> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/GEVAAR_EENHEID_KROON> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/NIET_PUBLIEK> ;
+  skos:historyNote "In DCAT-AP-DONL 1.1 viel deze taxonomie onder de noemer overheid:Openbaarheidsniveau. In DCAT-AP-DONL 2.0 is deze over gezet naar de donl namespace."@nl ;
+.

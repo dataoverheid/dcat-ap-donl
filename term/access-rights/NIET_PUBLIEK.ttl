@@ -1,0 +1,22 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/term/NIET_PUBLIEK
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dcat.overheid.nl/application-profile/donl/term/NIET_PUBLIEK>
+  rdf:type euvoc:AccessRight ;
+  rdf:type skos:Concept ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/term/NIET_PUBLIEK" ;
+  dcterms:title "Niet publiek"@nl ;
+  dcterms:title "Not public"@en ;
+  skos:broader <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
+  skos:definition "Beschrijft het feit dat een bron niet publiek beschikbaar en benaderbaar is."@nl ;
+  skos:editorialNote "Gebruik dit concept alleen wanneer het niet duidelijk is om welke beweegredenen de bron niet publiek is. Wanneer dit wel duidelijk is, is het de bedoeling om een van de andere concepten uit deze ontology te gebruiken die een skos:broader van http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC hebben. Daarnaast kan dit concept gebruikt worden wanneer de andere NON_PUBLIC varianten niet toereikend genoeg zijn om de beweegredenen te omschrijven van het niet openbaar maken van deze bron."@nl ;
+  skos:inScheme <https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights> ;
+  skos:topConceptOf <https://dcat.overheid.nl/application-profile/donl/taxonomy/access-rights> ;
+.

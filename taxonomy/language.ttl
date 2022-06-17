@@ -1,0 +1,21 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/language
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/language>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/language" ;
+  dcterms:title "Language"@en ;
+  dcterms:title "Taal"@nl ;
+  skos:definition "Deze taxonomie bevat concepten die beschrijven in welke taal een bron is opgezet."@nl ;
+  skos:editorialNote "Deze taxonomie bevat uitsluitend concepten uit de http://publications.europa.eu/resource/authority/language taxonomie."@nl ;
+  skos:hasTopConcept <https://publications.europa.eu/resource/authority/language/DEU> ;
+  skos:hasTopConcept <https://publications.europa.eu/resource/authority/language/ENG> ;
+  skos:hasTopConcept <https://publications.europa.eu/resource/authority/language/FRY> ;
+  skos:hasTopConcept <https://publications.europa.eu/resource/authority/language/NLD> ;
+.

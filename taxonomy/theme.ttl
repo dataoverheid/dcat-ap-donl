@@ -1,0 +1,36 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/theme
+# prefix: theme
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix theme: <https://dcat.overheid.nl/application-profile/donl/taxonomy/theme#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/theme>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/theme" ;
+  dcterms:title "Thema"@nl ;
+  dcterms:title "Theme"@en ;
+  skos:definition "Deze taxonomie bevat concepten die een bron indelen volgens de OWMS 4.0 overheid:TaxonomieBeleidsagenda rubricering."@nl ;
+  skos:editorialNote "Deze taxonomie bevat zowel de hoofd- en subthema concepten die onderdeel zijn van de OWMS 4.0 overheid:TaxonomieBeleidsagenda taxonomie. Dit zijn bewust HTTP URI's (en niet HTTPS) omdat OWMS 4.0 de URI's met HTTP aanbiedt."@nl ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Bestuur> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Cultuur_en_recreatie> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Economie> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Financien> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Huisvesting_(thema)> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Internationaal> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Landbouw_(thema)> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Migratie_en_integratie> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Natuur_en_milieu> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Onderwijs_en_wetenschap> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Openbare_orde_en_veiligheid> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Recht_(thema)> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Sociale_zekerheid> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Verkeer_(thema)> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Werk_(thema)> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Zorg_en_gezondheid> ;
+.

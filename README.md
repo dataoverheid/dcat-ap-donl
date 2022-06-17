@@ -1,4 +1,5 @@
-# dcat-ap-donl
+# Data.Overheid.nl / DCAT-AP-DONL
+
 Deze repository is onderdeel van data.overheid.nl. Het ondersteunt de activiteiten van de werkgroep bij de upgrade van het toepassingsprofiel van de uitwisselingsstandaard DCAT, van versie 1 naar versie 2.
 
 Zie voor de laatste conceptversie: https://gitcdn.link/cdn/dataoverheid/dcat-ap-donl/main/respec/index.html

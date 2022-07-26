@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script src='https://www.w3.org/Tools/respec/respec-w3c' async class='remove'></script>
+    <script class='remove'>
+      // All config options at https://respec.org/docs/
+      var respecConfig = {
+        // Working Groups ids at https://respec.org/w3c/groups/
+        group: "webapps", 
+        specStatus: "unofficial",
+		format: "markdown",
+        editors: [{
+          name: "Your Name",
+          url: "http://your-site.com",
+        }],
+        github: {
+          branch: "main",
+          repoURL: "user/my-awesome-api", 
+        },
+        // See https://respec.org/docs/#xref for usage.
+        xref: "web-platform",
+      };
+    </script>
+  </head>
+  <body>
+
+<section id="abstract">
+
+Showing how to use Markdown.
+
+</section>
+
+<section id="sotd">
+
+Custom paragraph.
+
+</section>
+<section id="catalog">
+| EigenschapNr | Klasse  | Eigenschap          | URI                | Bereik                                                                                       | Cardinaliteit | Gebruik      | Definitie                                                                                                                                                                                                |
+|--------------|---------|---------------------|--------------------|----------------------------------------------------------------------------------------------|---------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 4.3.01       | Catalog | Homepage            | foaf:homepage      | xsd:anyURI                                                                                   | 1..1          | Verplicht    | de homepage van de catalogus.                                                                                                                                                                            |
+| 4.3.02       | Catalog | thema's             | dcat:themeTaxonomy | xsd:anyURI van een waardelijst, zoals gepubliceerd op https://waardelijsten.dcat-ap-donl.nl/ | 0..*          | Verplicht    | de waardelijst (controlled vocabularie) met thema's die (in eigenschap dcat:theme) gekoppeld kunnen worden aan de resources die zijn opgenomen in de catalogus.                                          |
+| 4.3.03       | Catalog | has part            | dct:hasPart        | dcat:Resource                                                                                | 0..0          | Niet opnemen | Deze eigenschap beschrijft de administratieve metadata van de registratie van een resource in een catalogus. HIerbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd  |
+| 4.3.04       | Catalog | gegevensverzameling | dcat:dataset       | dcat:Dataset                                                                                 | 0..*          | Aanbevolen   | de (metadata van de) dataset(s) die is/zijn opgenomen in de catalogus.                                                                                                                                   |
+| 4.3.05       | Catalog | dienst              | dcat:service       | dcat:DataService                                                                             | 0..*          | Aanbevolen   | de (metadata van de) dataservice die voorkomt in de catalogus.                                                                                                                                           |
+| 4.3.06       | Catalog | catalogus           | dcat:catalog       | dcat:Catalog                                                                                 | 0..*          | Aanbevolen   | de (metadata van de) catalogus die voorkomt in de catalogus. Deze eigenschap maakt dus mogelijk om een catalogus te beschouwen als een resource en deze op te nemen in een catalogus.                    |
+| 4.3.07       | Catalog | catalogus record    | dcat:record        | dcat:CatalogRecord                                                                           | 0..*          | Optioneel    | de administratieve metadata van de registratie van een resource in een catalogus. HIerbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.                            |
+|              |         |                     |                    |                                                                                              |               |              |                                                                                                                                                                                                          |
+|              |         |                     |                    |                                                                                              |               |              |                                                                                                                                                                                                          |
+</section>
+
+  <section id='abstract' data-format="markdown" data-include="catalog.md"></section>
+  
+</body>
+</html>

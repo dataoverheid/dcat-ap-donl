@@ -1,3 +1,4 @@
+<h2>Terminologie</h2>
 <p>Een <em>toepassinsprofiel</em> is een...</p>
 <p>Dit toepassingsprofiel beschrijft alle klassen en eigenschappen die onderdeel zijn van DCAT
         2, DCAT-AP 2.01 en DCAT-AP-DONL 1.1. Per klasse en eigenschap beschrijft het

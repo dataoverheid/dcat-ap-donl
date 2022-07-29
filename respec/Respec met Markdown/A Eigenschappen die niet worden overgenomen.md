@@ -17,3 +17,7 @@
 | Kardinaliteit	 | 0..0                                                                                                                                                                                                      |
 | Gebruik        |                                                                                                                                                                                                           |
 | Noot           | Deze eigenschap beschrijft de administratieve metadata van de registratie van een resource in een catalogus. Hierbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.  |		
+
+<p class="note" title="Note">
+Wat wordt hier nog toegevoegd
+</p>

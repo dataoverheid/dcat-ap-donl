@@ -1,7 +1,7 @@
 ## A Eigenschappen die niet worden overgenomen
 
-### thema's
-| Definitie      | Catalogus - thema's                                                                                                                                                          |
+### Catalogus - thema's
+| Definitie      | thema's                                                                                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RDF Eigenschap | dcat:themeTaxonomy                                                                                                                                               |
 | Bereik         | xsd:anyURI van een waardelijst, zoals gepubliceerd op https://waardelijsten.dcat-ap-donl.nl/                                                                     |
@@ -9,8 +9,8 @@
 | Gebruik        | Verplicht                                                                                                                                                        |
 | Noot           | de waardelijst (controlled vocabularie) met thema's die (in eigenschap dcat:theme) gekoppeld kunnen worden aan de resources die zijn opgenomen in de catalogus.  |																						   |
 
-### has part
-| Definitie      | Catalogus - has part                                                                                                                                                                                      |
+### Catalogus - has part
+| Definitie      | has part                                                                                                                                                                                      |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RDF Eigenschap | dct:hasPart                                                                                                                                                                                               |
 | Bereik         | dcat:Resource                                                                                                                                                                                             |

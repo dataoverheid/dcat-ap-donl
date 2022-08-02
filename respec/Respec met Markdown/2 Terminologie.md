@@ -7,3 +7,6 @@
         betekent dat ze niet aangeleverd kunnen worden en dus ook niet worden weergegeven op
         data.overheid.nl. De reden hiervoor wordt bij de desbetreffende klasse of eigenschap
         toegelicht.</p>
+
+
+TODO: Namespaces

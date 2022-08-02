@@ -12,34 +12,34 @@ De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van a
 
 ### Overzichttabel
 
-| Eigenschap               | Herkomst | Gebruik     |
-|--------------------------|----------|-------------|
-| Access rights            | Resource |             |
-| Conforms to              | Resource |             |
-| Contact point            | Resource | Verplicht   |
-| Creator                  | Resource | Verplicht   |
-| Description              | Resource | Verplicht   |
-| Title                    | Resource | Verplicht   |
-| Release date             | Resource | Aanbevolen  |
-| Update/modification date | Resource | Aanbevolen  |
-| Language                 | Resource | Aanbevolen  |
-| Publisher                | Resource | Verplicht   |
-| Identifier               | Resource | Aanbevolen  |
-| Theme/category           | Resource |             |
-| Keyword/tag              | Resource | Optioneel   |
-| Landing page             | Resource | Optioneel   |
-| Qualified attribution    | Resource |             |
-| License                  | Resource |             |
-| Rights                   | Resource |             |
-| Is referenced by         | Resource |             |
-| Other identifier         | Resource | Optioneel   |
-| Resource status          | Resource |             |
-| Legal foundation         | Resource |             |
-| Resource classification  | Resource |             |
-| Wob exclusion reason     | Resource |             |
-| Source catalog           | Resource |             |
-| Homepage                 | Catalogus| Verplicht   |
-| Dataset                  | Catalogus| Aanbevolen  |
-| Service                  | Catalogus| Aanbevolen  |
-| Catalognieuw             | Catalogus| Aanbevolen  |
-| Catalog record           | Catalogus|             |
+| **Eigenschap**               | Herkomst | Gebruik     |
+|------------------------------|----------|-------------|
+| **Access rights**            | Resource |             |
+| **Conforms to**              | Resource |             |
+| **Contact point**            | Resource | Verplicht   |
+| **Creator**                  | Resource | Verplicht   |
+| **Description**              | Resource | Verplicht   |
+| **Title**                    | Resource | Verplicht   |
+| **Release date**             | Resource | Aanbevolen  |
+| **Update/modification date** | Resource | Aanbevolen  |
+| **Language**                 | Resource | Aanbevolen  |
+| **Publisher**                | Resource | Verplicht   |
+| **Identifier**               | Resource | Aanbevolen  |
+| **Theme/category**           | Resource |             |
+| **Keyword/tag**              | Resource | Optioneel   |
+| **Landing page**             | Resource | Optioneel   |
+| **Qualified attribution**    | Resource |             |
+| **License**                  | Resource |             |
+| **Rights**                   | Resource |             |
+| **Is referenced by**         | Resource |             |
+| **Other identifier**         | Resource | Optioneel   |
+| **Resource status**          | Resource |             |
+| **Legal foundation**         | Resource |             |
+| **Resource classification**  | Resource |             |
+| **Wob exclusion reason**     | Resource |             |
+| **Source catalog**           | Resource |             |
+| **Homepage**                 | Catalogus| Verplicht   |
+| **Dataset**                  | Catalogus| Aanbevolen  |
+| **Service**                  | Catalogus| Aanbevolen  |
+| **Catalognieuw**             | Catalogus| Aanbevolen  |
+| **Catalog record**           | Catalogus|             |

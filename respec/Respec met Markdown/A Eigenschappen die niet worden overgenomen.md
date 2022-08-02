@@ -1,4 +1,4 @@
-## A Eigenschappen die niet worden overgenomen
+## Eigenschappen die niet worden overgenomen
 
 ### Catalogus - Thema's
 

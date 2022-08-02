@@ -47,6 +47,8 @@ Een indicatie van het geografische detailniveau (in meters) van de gegevens in d
 | Kardinaliteit   | `0..0`                          |
 | Gebruik         | niet opgenomen                  |
 
+<div class="issue" data-number="13"></div>
+
 ### Dekking in tijd: Van
 
 De kleinste periode tussen twee data-items in de dataset.
@@ -69,6 +71,8 @@ Van toepassing op datasets die gegevens bevatten die een afhankelijkheid hebben 
 | Bereik          | `xsd:duration`           |
 | Kardinaliteit   | `0..0`                   |
 | Gebruik         | niet opgenomen           |
+
+<div class="issue" data-number="13"></div>
 
 ### Aangemaakt door  
 

@@ -99,6 +99,9 @@ De natuurlijk taal van de tekstuele metadata die de resource beschrijft.
 | Kardinaliteit   | `1..1`                                                                                     |
 | Gebruik         | Verplicht                                                                                |
 
+<div class="issue" data-number="11"></div>
+
+
 ### Verstrekker
 
 De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource.

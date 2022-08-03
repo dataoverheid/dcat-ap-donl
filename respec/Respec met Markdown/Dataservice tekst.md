@@ -1,3 +1,0 @@
-## Dataservice
-
-Uitleg Dataservice

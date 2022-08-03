@@ -1,4 +1,4 @@
-## Distributie
+## Attributen
 
 ### Titel
 

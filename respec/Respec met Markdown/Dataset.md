@@ -1,5 +1,5 @@
 
-## Dataset
+## Attributen
 
 ### Distributie
 

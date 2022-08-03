@@ -1,3 +1,0 @@
-## Distributie
-
-Uitleg Distributie

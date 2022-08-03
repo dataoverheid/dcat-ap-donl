@@ -1,30 +1,5 @@
 ## Eigenschappen die niet worden overgenomen
 
-## Catalogus
-
-### Thema's
-
-De waardelijst (controlled vocabularie) met thema's die (in eigenschap dcat:theme) gekoppeld kunnen worden aan de resources die zijn opgenomen in de catalogus.
-
-| Definitie      | Thema's                                                                                        |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| RDF Eigenschap | `dcat:themeTaxonomy`                                                                           |
-| Bereik         | `xsd:anyURI` van een waardelijst, zoals gepubliceerd op https://waardelijsten.dcat-ap-donl.nl/ |
-| Kardinaliteit  | `0..*`                                                                                         |
-| Gebruik        | Verplicht                                                                                      |
-
-
-### Has part
-
-Deze eigenschap beschrijft de administratieve metadata van de registratie van een resource in een catalogus. Hierbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.
-
-| Definitie      | Has part        |
-| -------------- | --------------- |
-| RDF Eigenschap | ` dct:hasPart`  |
-| Bereik         | `dcat:Resource` |
-| Kardinaliteit  | `0..0`          |
-| Gebruik        |
-
 ## Resource
 
 ### Type
@@ -114,6 +89,31 @@ De datum waarop een dataset met status gelijk aan Gepland, beschikbaar komt.
 | Bereik         | `xsd:date`                        |
 | Kardinaliteit  | `0..1`                            |
 | Gebruik        | Optioneel                         |
+
+## Catalogus
+
+### Thema's
+
+De waardelijst (controlled vocabularie) met thema's die (in eigenschap dcat:theme) gekoppeld kunnen worden aan de resources die zijn opgenomen in de catalogus.
+
+| Definitie      | Thema's                                                                                        |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dcat:themeTaxonomy`                                                                           |
+| Bereik         | `xsd:anyURI` van een waardelijst, zoals gepubliceerd op https://waardelijsten.dcat-ap-donl.nl/ |
+| Kardinaliteit  | `0..*`                                                                                         |
+| Gebruik        | Verplicht                                                                                      |
+
+
+### Has part
+
+Deze eigenschap beschrijft de administratieve metadata van de registratie van een resource in een catalogus. Hierbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.
+
+| Definitie      | Has part        |
+| -------------- | --------------- |
+| RDF Eigenschap | ` dct:hasPart`  |
+| Bereik         | `dcat:Resource` |
+| Kardinaliteit  | `0..0`          |
+| Gebruik        |
 
 ## CatalogusRecord
 
@@ -272,45 +272,45 @@ Een versienummer of andere aanduiding van de versie van de dataset. Dit gegeven 
 
 Een indicatie van het geografische detailniveau in meters van de gegevens in de distributie.
 
-| Definitie      | Geografisch detailniveau        |
-|----------------|---------------------------------|
-| RDF Eigenschap | `dcat:spatialResolutionInMeters`  |
-| Bereik         | `xsd:decimal`                     |
-| Kardinaliteit  | `0..1`                            |
-| Gebruik        | Optioneel                       |
+| Definitie      | Geografisch detailniveau         |
+| -------------- | -------------------------------- |
+| RDF Eigenschap | `dcat:spatialResolutionInMeters` |
+| Bereik         | `xsd:decimal`                    |
+| Kardinaliteit  | `0..1`                           |
+| Gebruik        | Optioneel                        |
 
 ### Periode
 
 De kleinste periode tussen twee data-items in de distributie.
 
-| Definitie      | Periode                  |
-|----------------|--------------------------|
-| RDF Eigenschap | `dcat:temporalResolution`  |
-| Bereik         | `xsd:duration`             |
-| Kardinaliteit  | `0..1`                     |
-| Gebruik        | Optioneel                |
+| Definitie      | Periode                   |
+| -------------- | ------------------------- |
+| RDF Eigenschap | `dcat:temporalResolution` |
+| Bereik         | `xsd:duration`            |
+| Kardinaliteit  | `0..1`                    |
+| Gebruik        | Optioneel                 |
 
 ### Compressieformaat
 
 De Distributie kan zijn gecomprimeerd om de omvang van het bestand te verminderen. In dat geval specificeert edze eigenschap het compressie-formaat dat is toegepast.
 
-| Definitie      | Compressieformaat    |
-|----------------|----------------------|
-| RDF Eigenschap | `dcat:compressFormat`|
-| Bereik         |                      |
-| Kardinaliteit  |                      |
-| Gebruik        |                      |
+| Definitie      | Compressieformaat     |
+| -------------- | --------------------- |
+| RDF Eigenschap | `dcat:compressFormat` |
+| Bereik         |                       |
+| Kardinaliteit  |                       |
+| Gebruik        |                       |
 
 ### Ingepakt formaat  
 
 Van toepassing op distributies van datasets die zijn samengesteld uit meerdere bestanden en vervolgens worden gebundeld in bijvoorbeeld een zip-bestand. Als dit het geval is, geeft deze eigenschap het media type van het pakket.
 
-| Definitie      | Ingepakt formaat                                                                 |
-|----------------|----------------------------------------------------------------------------------|
-| RDF Eigenschap | `dcat:packageFormat`                                                               |
-| Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json  |
-| Kardinaliteit  |                                                                                  |
-| Gebruik        |                                                                                  |
+| Definitie      | Ingepakt formaat                                                                  |
+| -------------- | --------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dcat:packageFormat`                                                              |
+| Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json |
+| Kardinaliteit  |                                                                                   |
+| Gebruik        |                                                                                   |
 
 <div class="issue" data-number="9"></div>
 
@@ -318,12 +318,12 @@ Van toepassing op distributies van datasets die zijn samengesteld uit meerdere b
 
 Hoe lang de distributie beschikbaar zal blijven.
 
-| Definitie      | Beschikbaarheid      |
-|----------------|----------------------|
-| RDF Eigenschap | `dcatap:availability`|
-| Bereik         | Waardelijst          |
-| Kardinaliteit  |                      |
-| Gebruik        |                      |
+| Definitie      | Beschikbaarheid       |
+| -------------- | --------------------- |
+| RDF Eigenschap | `dcatap:availability` |
+| Bereik         | Waardelijst           |
+| Kardinaliteit  |                       |
+| Gebruik        |                       |
 
 ## Dataservice
 

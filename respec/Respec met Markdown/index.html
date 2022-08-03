@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>DCAT-AP-DONL 2</title>
+    <h2 id="subtitle">Toepassingsprofiel van DCAT-AP 2 voor data.overheid.nl</h2>
     <script src='https://www.w3.org/Tools/respec/respec-w3c' async class='remove'></script>
     <script class='remove'>
         // All config options at https://respec.org/docs/
@@ -41,8 +42,29 @@
 <section id="sotd"></section>
 
 <section id='abstract' data-format="markdown" data-include="begeleidende_teksten\samenvatting.md"></section>
-<section class="informative" data-format="markdown" data-include="begeleidende_teksten\introductie.md"></section>
+<section class="introductie" data-format="markdown" data-include="begeleidende_teksten\introductie.md"></section>
 <section class="informative" data-format="markdown" data-include="begeleidende_teksten\terminologie.md"></section>
+
+<section id="Resource">
+    <h2>Resource (<code>dcat:Resource</code>)</h2>
+
+    <p>Een resource is een gegevensobject dat wordt onderhouden en gepubliceerd door een enkele organisatie en kan worden opgenomen in een gegevenscatalogus.
+        De eigenschappen van klasse resources worden dus gebruikt in de subklassen <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
+        Of ze hierin verpicht, aanbevolen of optioneel zijn, wordt gespecificeerd in de desbetreffende secties.</p>
+
+    <h3>Notities</h3>
+    <p class="note" title="Usage note">
+        De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse. Het bevat enkele algemene eigenschappen die onderdeel zijn van de resources in DCAT 2, namelijk <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
+    </p>
+
+    <p class="note" title="Toelichting">
+        De introductie van deze superklasse maakt het voor de toekomst eenvoudiger om het informatiemodel van DCAT uit te breiden met nieuwe resources.
+    </p>
+
+    <h3>Referenties</h3>
+
+    <section data-format="markdown" data-include="resource.md"></section>
+</section>
 
 <section id="Catalogus">
     <h2>Catalogus (<code>dcat:Catalog</code>)</h2>
@@ -67,25 +89,6 @@
         <li>4.7 Klasse Dataservice</li>
     </ul>
     <section data-format="markdown" data-include="catalog.md"></section>
-</section>
-
-<section id="Resource">
-    <h2>Resource (<code>dcat:Resource</code>)</h2>
-
-    <p>Een gegevensobject dat wordt onderhouden en gepubliceerd door een enkele organisatie en kan worden opgenomen in een gegevenscatalogus. De eigenschappen van klasse resources worden dus gebruikt in de subklassen <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>. Of ze hierin verpicht, aanbevolen of optioneel zijn, wordt gespecificeerd in de desbetreffende secties.</p>
-
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse. Het bevat enkele algemene eigenschappen die onderdeel zijn van de resources in DCAT 2, namelijk <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
-    </p>
-
-    <p class="note" title="Toelichting">
-        De introductie van deze superklasse maakt het voor de toekomst eenvoudiger om het informatiemodel van DCAT uit te breiden met nieuwe resources.
-    </p>
-
-    <h3>Referenties</h3>
-
-    <section data-format="markdown" data-include="resource.md"></section>
 </section>
 
 <section id="Catalogusrecord">
@@ -186,7 +189,6 @@
 
     <section data-format="markdown" data-include="dataservice.md"></section>
 </section>
-
 
 <section class="appendix" data-format="markdown"
          data-include="afgevallen.md"></section>

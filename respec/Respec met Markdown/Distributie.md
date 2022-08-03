@@ -44,6 +44,17 @@ De datum waarop de data-eigenaar de distributie voor het laatst heeft gewijzigd.
 | Kardinaliteit  | `0..1`             |
 | Gebruik        | Aanbevolen       |
 
+### Taal
+
+De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze eigenschap herhaald zodat alle talen genoemd worden.
+
+| Definitie      | Taal          |
+|----------------|---------------|
+| RDF Eigenschap | `dct:language`  |
+| Bereik         | Waardelijst   |
+| Kardinaliteit  | `0..*`          |
+| Gebruik        | Optioneel     |
+
 ### Licentie
 
 De formele of wettelijke toestemming waaronder de gegevens in de distributie gebruikt mogen worden.
@@ -77,6 +88,7 @@ De overige gebruiksrechten die niet worden gedekt met dct:license of dct:acce
 | Kardinaliteit  | `0..1`        |
 | Gebruik        | Optioneel   |
 
+
 ### Toegangsbeleid
 
 Deze eigenschap biedt de aanbieders van data de mogelijkheid om op een gestructureerde manier (complexe) voorwaarden toe te kennen waaronder afnemers de data in de distributie mogen gebruiken. een instantie van de ODRL klasse.
@@ -87,6 +99,10 @@ Deze eigenschap biedt de aanbieders van data de mogelijkheid om op een gestructu
 | Bereik         | `odrl:Policy`     |
 | Kardinaliteit  | `0..1`            |
 | Gebruik        | Optioneel       |
+
+<p class="note" title="Editor's note">
+    Tot hier komen de velden uit Resource
+</p>
 
 ### Toegangslinks
 
@@ -132,27 +148,8 @@ De omvang van de distributie (het feitelijke bestand) in bytes.
 | Kardinaliteit  | `0..1`             |
 | Gebruik        | Optioneel        |
 
-### Geografisch detailniveau
 
-Een indicatie van het geografische detailniveau in meters van de gegevens in de distributie.
 
-| Definitie      | Geografisch detailniveau        |
-|----------------|---------------------------------|
-| RDF Eigenschap | `dcat:spatialResolutionInMeters`  |
-| Bereik         | `xsd:decimal`                     |
-| Kardinaliteit  | `0..1`                            |
-| Gebruik        | Optioneel                       |
-
-### Periode
-
-De kleinste periode tussen twee data-items in de distributie.
-
-| Definitie      | Periode                  |
-|----------------|--------------------------|
-| RDF Eigenschap | `dcat:temporalResolution`  |
-| Bereik         | `xsd:duration`             |
-| Kardinaliteit  | `0..1`                     |
-| Gebruik        | Optioneel                |
 
 ### Standaard
 
@@ -187,40 +184,11 @@ Informatie over het bestandsformaat van de distributie volgens de indeling van h
 | Kardinaliteit  | `0..1`                                                                           |
 | Gebruik        | Optioneel                                                                      |
 
-### Compressieformaat
 
-De Distributie kan zijn gecomprimeerd om de omvang van het bestand te verminderen. In dat geval specificeert edze eigenschap het compressie-formaat dat is toegepast.
 
-| Definitie      | Compressieformaat    |
-|----------------|----------------------|
-| RDF Eigenschap | `dcat:compressFormat`|
-| Bereik         |                      |
-| Kardinaliteit  |                      |
-| Gebruik        |                      |
 
-### Ingepakt formaat  
 
-Van toepassing op distributies van datasets die zijn samengesteld uit meerdere bestanden en vervolgens worden gebundeld in bijvoorbeeld een zip-bestand. Als dit het geval is, geeft deze eigenschap het media type van het pakket.
 
-| Definitie      | Ingepakt formaat                                                                 |
-|----------------|----------------------------------------------------------------------------------|
-| RDF Eigenschap | `dcat:packageFormat`                                                               |
-| Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json  |
-| Kardinaliteit  |                                                                                  |
-| Gebruik        |                                                                                  |
-
-Zie Issue #9.
-
-### Beschikbaarheid
-
-Hoe lang de distributie beschikbaar zal blijven.
-
-| Definitie      | Beschikbaarheid      |
-|----------------|----------------------|
-| RDF Eigenschap | `dcatap:availability`|
-| Bereik         | Waardelijst          |
-| Kardinaliteit  |                      |
-| Gebruik        |                      |
 
 ### Controlegetal
 
@@ -241,17 +209,6 @@ Een informatiepagina waar aanvullende informatie over deze distributie te vinden
 |----------------|---------------|
 | RDF Eigenschap | `foaf:page`     |
 | Bereik         | `xsd:anyURI`    |
-| Kardinaliteit  | `0..*`          |
-| Gebruik        | Optioneel     |
-
-### Taal
-
-De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze eigenschap herhaald zodat alle talen genoemd worden.
-
-| Definitie      | Taal          |
-|----------------|---------------|
-| RDF Eigenschap | `dct:language`  |
-| Bereik         | Waardelijst   |
 | Kardinaliteit  | `0..*`          |
 | Gebruik        | Optioneel     |
 

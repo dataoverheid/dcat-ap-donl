@@ -6,9 +6,9 @@ De titel van de distributie.
 
 | Definitie      | Titel         |
 |----------------|---------------|
-| RDF Eigenschap | dct:title     |
-| Bereik         | rdfs:Literal  |
-| Kardinaliteit  | 1..1          |
+| RDF Eigenschap | `dct:title`   |
+| Bereik         | `rdfs:Literal`|
+| Kardinaliteit  | `1..1`        |
 | Gebruik        | Verplicht     |
 
 ### Omschrijving
@@ -17,9 +17,9 @@ Een beschrijving van de distributie in aanvulling op de titel, waarmee eindgebru
 
 | Definitie      | Omschrijving     |
 |----------------|------------------|
-| RDF Eigenschap | dct:description  |
-| Bereik         | rdfs:Literal     |
-| Kardinaliteit  | 1..1             |
+| RDF Eigenschap | `dct:description`|
+| Bereik         | `rdfs:Literal`   |
+| Kardinaliteit  | `1..1`           |
 | Gebruik        | Verplicht        |
 
 ### Uitgiftedatum
@@ -28,9 +28,9 @@ De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubl
 
 | Definitie      | Uitgiftedatum  |
 |----------------|----------------|
-| RDF Eigenschap | dct:issued     |
-| Bereik         | xsd:dateTime   |
-| Kardinaliteit  | 0..1           |
+| RDF Eigenschap | `dct:issued`   |
+| Bereik         | `xsd:dateTime` |
+| Kardinaliteit  |`0..1`          |
 | Gebruik        | Optioneel      |
 
 ### Wijzigingsdatum
@@ -39,9 +39,9 @@ De datum waarop de data-eigenaar de distributie voor het laatst heeft gewijzigd.
 
 | Definitie      | Wijzigingsdatum  |
 |----------------|------------------|
-| RDF Eigenschap | dct:modified     |
-| Bereik         | xsd:dateTime     |
-| Kardinaliteit  | 0..1             |
+| RDF Eigenschap | `dct:modified`     |
+| Bereik         | `xsd:dateTime`     |
+| Kardinaliteit  | `0..1`             |
 | Gebruik        | Aanbevolen       |
 
 ### Licentie
@@ -50,9 +50,9 @@ De formele of wettelijke toestemming waaronder de gegevens in de distributie geb
 
 | Definitie      | Licentie                                                                   |
 |----------------|----------------------------------------------------------------------------|
-| RDF Eigenschap | dct:license                                                                |
-| Bereik         | donl:License, zie https://waardelijsten.dcat-ap-donl.nl/donl_license.json  |
-| Kardinaliteit  | 1..1                                                                       |
+| RDF Eigenschap | `dct:license`                                                                |
+| Bereik         | `donl:License`, zie https://waardelijsten.dcat-ap-donl.nl/donl_license.json  |
+| Kardinaliteit  | `1..1`                                                                       |
 | Gebruik        | Verplicht                                                                  |
 
 ### Toegang
@@ -61,9 +61,9 @@ De toegangsrechten tot de distributie.
 
 | Definitie      | Toegang                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------|
-| RDF Eigenschap | dct:accessRights                                                                                           |
-| Bereik         | Overheid:Openbaarheidsniveau, zie https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json  |
-| Kardinaliteit  | 0..1                                                                                                       |
+| RDF Eigenschap | `dct:accessRights`                                                                                           |
+| Bereik         | `Overheid:Openbaarheidsniveau`, zie https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json  |
+| Kardinaliteit  | `0..1`                                                                                                       |
 | Gebruik        | Aanbevolen                                                                                                 |
 
 ### Rechten
@@ -72,9 +72,9 @@ De overige gebruiksrechten die niet worden gedekt met dct:license of dct:acce
 
 | Definitie      | Rechten     |
 |----------------|-------------|
-| RDF Eigenschap | dct:rights  |
-| Bereik         | xsd:string  |
-| Kardinaliteit  | 0..1        |
+| RDF Eigenschap | `dct:rights`  |
+| Bereik         | `xsd:string`  |
+| Kardinaliteit  | `0..1`        |
 | Gebruik        | Optioneel   |
 
 ### Toegangsbeleid
@@ -83,9 +83,9 @@ Deze eigenschap biedt de aanbieders van data de mogelijkheid om op een gestructu
 
 | Definitie      | Toegangsbeleid  |
 |----------------|-----------------|
-| RDF Eigenschap | odrl:hasPolicy  |
-| Bereik         | odrl:Policy     |
-| Kardinaliteit  | 0..1            |
+| RDF Eigenschap | `odrl:hasPolicy`  |
+| Bereik         | `odrl:Policy`     |
+| Kardinaliteit  | `0..1`            |
 | Gebruik        | Optioneel       |
 
 ### Toegangslinks
@@ -94,9 +94,9 @@ Het web-adres (URL) van de site die toegang verschaft tot de data, aan de hand v
 
 | Definitie      | Toegangslinks   |
 |----------------|-----------------|
-| RDF Eigenschap | dcat:accessURL  |
-| Bereik         | xsd:anyURI      |
-| Kardinaliteit  | 1..1            |
+| RDF Eigenschap | `dcat:accessURL`  |
+| Bereik         | `xsd:anyURI`      |
+| Kardinaliteit  | `1..1`            |
 | Gebruik        | Verplicht       |
 
 ### URL van de dataservice 
@@ -105,9 +105,9 @@ Alleen van toepassing wanneer de distributie via een dataservice bereikbaar is. 
 
 | Definitie      | URL van de dataservice  |
 |----------------|-------------------------|
-| RDF Eigenschap | dcat:accessService      |
-| Bereik         | dcat:DataService        |
-| Kardinaliteit  | 0..1                    |
+| RDF Eigenschap | `dcat:accessService`      |
+| Bereik         | `dcat:DataService`        |
+| Kardinaliteit  | `0..1`                    |
 | Gebruik        | Aanbevolen              |
 
 ### Download verwijzing
@@ -116,9 +116,9 @@ De URL waarmee eindgebruikers het bestand kunnen downloaden in een van de beschi
 
 | Definitie      | Download verwijzing  |
 |----------------|----------------------|
-| RDF Eigenschap | dcat:downloadURL     |
-| Bereik         | xsd:anyURI           |
-| Kardinaliteit  | 0..1                 |
+| RDF Eigenschap | `dcat:downloadURL`     |
+| Bereik         | `xsd:anyURI`           |
+| Kardinaliteit  | `0..1`                 |
 | Gebruik        | Aanbevolen           |
 
 ### Grootte bestand
@@ -127,9 +127,9 @@ De omvang van de distributie (het feitelijke bestand) in bytes.
 
 | Definitie      | Grootte bestand  |
 |----------------|------------------|
-| RDF Eigenschap | dcat:byteSize    |
-| Bereik         | xsd:decimal      |
-| Kardinaliteit  | 0..1             |
+| RDF Eigenschap | `dcat:byteSize`    |
+| Bereik         | `xsd:decimal`      |
+| Kardinaliteit  | `0..1`             |
 | Gebruik        | Optioneel        |
 
 ### Geografisch detailniveau
@@ -138,9 +138,9 @@ Een indicatie van het geografische detailniveau in meters van de gegevens in de 
 
 | Definitie      | Geografisch detailniveau        |
 |----------------|---------------------------------|
-| RDF Eigenschap | dcat:spatialResolutionInMeters  |
-| Bereik         | xsd:decimal                     |
-| Kardinaliteit  | 0..1                            |
+| RDF Eigenschap | `dcat:spatialResolutionInMeters`  |
+| Bereik         | `xsd:decimal`                     |
+| Kardinaliteit  | `0..1`                            |
 | Gebruik        | Optioneel                       |
 
 ### Periode
@@ -149,9 +149,9 @@ De kleinste periode tussen twee data-items in de distributie.
 
 | Definitie      | Periode                  |
 |----------------|--------------------------|
-| RDF Eigenschap | dcat:temporalResolution  |
-| Bereik         | xsd:duration             |
-| Kardinaliteit  | 0..1                     |
+| RDF Eigenschap | `dcat:temporalResolution`  |
+| Bereik         | `xsd:duration`             |
+| Kardinaliteit  | `0..1`                     |
 | Gebruik        | Optioneel                |
 
 ### Standaard
@@ -160,9 +160,9 @@ Een vastgestelde standaard waaraan de data in de distributie voldoet. Deze prope
 
 | Definitie      | Standaard       |
 |----------------|-----------------|
-| RDF Eigenschap | dct:conformsTo  |
+| RDF Eigenschap | `dct:conformsTo`  |
 | Bereik         | Waardelijst     |
-| Kardinaliteit  | 0..1            |
+| Kardinaliteit  | `0..1`            |
 | Gebruik        | Aanbevolen      |
 
 ### Applicatie type  
@@ -171,9 +171,9 @@ Informatie over de bestandsindeling (of MIME type) van de distributie, volgens d
 
 | Definitie      | Applicatie type                                                                  |
 |----------------|----------------------------------------------------------------------------------|
-| RDF Eigenschap | dcat:mediaType                                                                   |
-| Bereik         | iana:Mediatypes, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json  |
-| Kardinaliteit  | 0..1                                                                             |
+| RDF Eigenschap | `dcat:mediaType`                                                                   |
+| Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json  |
+| Kardinaliteit  | `0..1`                                                                             |
 | Gebruik        | Aanbevolen                                                                       |
 
 ### Dataformaat
@@ -182,9 +182,9 @@ Informatie over het bestandsformaat van de distributie volgens de indeling van h
 
 | Definitie      | Dataformaat                                                                    |
 |----------------|--------------------------------------------------------------------------------|
-| RDF Eigenschap | dct:format                                                                     |
-| Bereik         | mdr:Filetype, zie https://waardelijsten.dcat-ap-donl.nl/mdr_filetype_nal.json  |
-| Kardinaliteit  | 0..1                                                                           |
+| RDF Eigenschap | `dct:format`                                                                     |
+| Bereik         | `mdr:Filetype`, zie https://waardelijsten.dcat-ap-donl.nl/mdr_filetype_nal.json  |
+| Kardinaliteit  | `0..1`                                                                           |
 | Gebruik        | Optioneel                                                                      |
 
 ### Compressieformaat
@@ -193,7 +193,7 @@ De Distributie kan zijn gecomprimeerd om de omvang van het bestand te vermindere
 
 | Definitie      | Compressieformaat    |
 |----------------|----------------------|
-| RDF Eigenschap | dcat:compressFormat  |
+| RDF Eigenschap | `dcat:compressFormat`|
 | Bereik         |                      |
 | Kardinaliteit  |                      |
 | Gebruik        |                      |
@@ -204,8 +204,8 @@ Van toepassing op distributies van datasets die zijn samengesteld uit meerdere b
 
 | Definitie      | Ingepakt formaat                                                                 |
 |----------------|----------------------------------------------------------------------------------|
-| RDF Eigenschap | dcat:packageFormat                                                               |
-| Bereik         | iana:Mediatypes, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json  |
+| RDF Eigenschap | `dcat:packageFormat`                                                               |
+| Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json  |
 | Kardinaliteit  |                                                                                  |
 | Gebruik        |                                                                                  |
 
@@ -217,7 +217,7 @@ Hoe lang de distributie beschikbaar zal blijven.
 
 | Definitie      | Beschikbaarheid      |
 |----------------|----------------------|
-| RDF Eigenschap | dcatap:availability  |
+| RDF Eigenschap | `dcatap:availability`|
 | Bereik         | Waardelijst          |
 | Kardinaliteit  |                      |
 | Gebruik        |                      |
@@ -228,9 +228,9 @@ Met een checksum of controlegetal kan een afnemer eenvoudig vaststellen of een g
 
 | Definitie      | Controlegetal  |
 |----------------|----------------|
-| RDF Eigenschap | spdx:checksum  |
-| Bereik         | spdx:Checksum  |
-| Kardinaliteit  | 0..1           |
+| RDF Eigenschap | `spdx:checksum`  |
+| Bereik         | `spdx:Checksum`  |
+| Kardinaliteit  | `0..1`           |
 | Gebruik        | Optioneel      |
 
 ### Documentatie
@@ -239,9 +239,9 @@ Een informatiepagina waar aanvullende informatie over deze distributie te vinden
 
 | Definitie      | Documentatie  |
 |----------------|---------------|
-| RDF Eigenschap | foaf:page     |
-| Bereik         | xsd:anyURI    |
-| Kardinaliteit  | 0..*          |
+| RDF Eigenschap | `foaf:page`     |
+| Bereik         | `xsd:anyURI`    |
+| Kardinaliteit  | `0..*`          |
 | Gebruik        | Optioneel     |
 
 ### Taal
@@ -250,9 +250,9 @@ De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voo
 
 | Definitie      | Taal          |
 |----------------|---------------|
-| RDF Eigenschap | dct:language  |
+| RDF Eigenschap | `dct:language`  |
 | Bereik         | Waardelijst   |
-| Kardinaliteit  | 0..*          |
+| Kardinaliteit  | `0..*`          |
 | Gebruik        | Optioneel     |
 
 ### Status
@@ -261,7 +261,7 @@ De toestand van de gegevens in de distributie. Deze moet een van de volgende waa
 
 | Definitie      | Status       |
 |----------------|--------------|
-| RDF Eigenschap | adms:status  |
+| RDF Eigenschap | `adms:status`  |
 | Bereik         |              |
 | Kardinaliteit  |              |
 | Gebruik        |              |
@@ -272,7 +272,7 @@ Specifiek voor data.overheid.nl. Het is bedoeld om verschillende soorten distrib
 
 | Definitie      | Distributietype                                                                              |
 |----------------|----------------------------------------------------------------------------------------------|
-| RDF Eigenschap | donl:distributionType                                                                        |
-| Bereik         | donl:DistributionType, zie https://waardelijsten.dcat-ap-donl.nl/donl_distributiontype.json  |
-| Kardinaliteit  | 0..1                                                                                         |
+| RDF Eigenschap | `donl:distributionType`                                                                        |
+| Bereik         | `donl:DistributionType`, zie https://waardelijsten.dcat-ap-donl.nl/donl_distributiontype.json  |
+| Kardinaliteit  | `0..1`                                                                                         |
 | Gebruik        | Optioneel, default waarde is 'Download' wanneer deze niet wordt aangeleverd.                 |

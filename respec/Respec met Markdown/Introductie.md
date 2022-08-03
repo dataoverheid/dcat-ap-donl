@@ -1,2 +1,3 @@
-<h2>Introductie</h2>
+### Introductie
+
 Hier komt de introductie

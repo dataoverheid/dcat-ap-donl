@@ -1,58 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <script src='https://www.w3.org/Tools/respec/respec-w3c' async class='remove'></script>
     <script class='remove'>
-      // All config options at https://respec.org/docs/
-      var respecConfig = {
-        // Working Groups ids at https://respec.org/w3c/groups/
-        group: "webapps", 
-        specStatus: "unofficial",
-		format: "markdown",
-        editors: [{
-          name: "Your Name",
-          url: "http://your-site.com",
-        }],
-        github: {
-          branch: "main",
-          repoURL: "dataoverheid/dcat-ap-donl", 
-        },
-        // See https://respec.org/docs/#xref for usage.
-        xref: "web-platform",
-      };
+        // All config options at https://respec.org/docs/
+        var respecConfig = {
+            // Working Groups ids at https://respec.org/w3c/groups/
+            group: "webapps",
+            specStatus: "unofficial",
+            format: "markdown",
+            editors: [{
+                name: "Your Name",
+                url: "http://your-site.com",
+            }],
+            github: {
+                branch: "main",
+                repoURL: "dataoverheid/dcat-ap-donl",
+            },
+            // See https://respec.org/docs/#xref for usage.
+            xref: "web-platform",
+        };
     </script>
-  </head>
-  <body>
-
-<section id="abstract">
-DCAT-AP-DONL 2
-</section>
+    <style>
+        .issue > p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
 
 <section id="sotd"></section>
 
-<section id='abstract' data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Samenvatting.md"/></section>
-<section class="informative" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Introductie.md"/></section>
-<section class="informative" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Terminologie.md"/></section>
+<section id='abstract' data-format="markdown"
+         data-include="Samenvatting.md"/>
+</section>
+<section class="informative" data-format="markdown"
+         data-include="Introductie.md"/>
+</section>
+<section class="informative" data-format="markdown"
+         data-include="Terminologie.md"/>
+</section>
 
-<div id="Catalog" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Catalog%20tekst.md"/></div> 
-<section id="Catalog" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Catalog.md"/></section>
+<div id="Catalog" data-format="markdown"
+     data-include="Catalog%20tekst.md"/>
+</div>
+<section id="Catalog" data-format="markdown"
+         data-include="Catalog.md"/>
+</section>
 
-<div id="Resource" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Resource%20tekst.md"/></div> 
-<section id="Resource" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Resource.md"/></section>
+<div id="Resource" data-format="markdown"
+     data-include="Resource%20tekst.md"/>
+</div>
+<section id="Resource" data-format="markdown"
+         data-include="Resource.md"/>
+</section>
 
-<div id="Catalogusrecord" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Catalogusrecord%20tekst.md"/></div> 
-<section id="Catalogusrecord" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Catalogusrecord.md"/></section>
+<div id="Catalogusrecord" data-format="markdown"
+     data-include="Catalogusrecord%20tekst.md"/>
+</div>
+<section id="Catalogusrecord" data-format="markdown"
+         data-include="Catalogusrecord.md"/>
+</section>
 
-<div id="Dataset" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Dataset%20tekst.md"/></div> 
-<section id="Dataset" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Dataset.md"/></section>
+<div id="Dataset" data-format="markdown"
+     data-include="Dataset%20tekst.md"/>
+</div>
+<section id="Dataset" data-format="markdown"
+         data-include="Dataset.md"/>
+</section>
 
-<div id="Distributie" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Distributie%20tekst.md"/></div> 
-<section id="Distributie" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Distributie.md"/></section>
+<div id="Distributie" data-format="markdown"
+     data-include="Distributie%20tekst.md"/>
+</div>
+<section id="Distributie" data-format="markdown"
+         data-include="Distributie.md"/>
+</section>
 
-<div id="Dataservice" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Dataservice%20tekst.md"/></div> 
-<section id="Dataservice" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Dataservice.md"/></section>
+<div id="Dataservice" data-format="markdown"
+     data-include="Dataservice%20tekst.md"/>
+</div>
+<section id="Dataservice" data-format="markdown"
+         data-include="Dataservice.md"/>
+</section>
 
-<section class="appendix" data-format="markdown" data-include="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/respec/Respec%20met%20Markdown/Eigenschappen%20die%20niet%20worden%20overgenomen.md"/></section>
+<section class="appendix" data-format="markdown"
+         data-include="Eigenschappen%20die%20niet%20worden%20overgenomen.md"/>
+</section>
 </body>
 </html>

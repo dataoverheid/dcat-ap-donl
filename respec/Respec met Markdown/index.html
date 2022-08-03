@@ -9,7 +9,6 @@
             // Working Groups ids at https://respec.org/w3c/groups/
             group: "webapps",
             specStatus: "unofficial",
-            format: "markdown",
             editors: [{
                 name: "Your Name",
                 url: "http://your-site.com",
@@ -32,21 +31,33 @@
 
 <section id="sotd"></section>
 
-<section id='abstract' data-format="markdown"
-         data-include="Samenvatting.md"/>
-</section>
-<section class="informative" data-format="markdown"
-         data-include="Introductie.md"/>
-</section>
-<section class="informative" data-format="markdown"
-         data-include="Terminologie.md"/>
-</section>
+<section id='abstract' data-format="markdown" data-include="Samenvatting.md"/></section>
+<section class="informative" data-format="markdown" data-include="Introductie.md"/></section>
+<section class="informative" data-format="markdown" data-include="Terminologie.md"/></section>
 
-<div id="Catalog" data-format="markdown"
-     data-include="Catalog%20tekst.md"/>
-</div>
-<section id="Catalog" data-format="markdown"
-         data-include="Catalog.md"/>
+<section id="Catalogus">
+    <h2>Catalogus (<code>dcat:Catalog</code>)</h2>
+
+    <blockquote>Subklasse van `dcat:Dataset`</blockquote>
+
+    Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets, dataservices en/of catalogi. Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen van resources. De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset of kunnen worden benaderd via een dataservice.
+
+    <h3>Notities</h3>
+    <p class="note" title="Usage note">
+        A Web-based data catalog is typically represented as a single instance of this class.
+    </p>
+
+    <p class="note" title="Toelichting">
+        Datasets and dataservices zijn voorbeelden van resources in de context van een data catalogus.
+    </p>
+
+    <h3>Referenties</h3>
+    <ul>
+        <li>4.5 Klasse Catalogusrecord</li>
+        <li>4.6 Klasse Dataset</li>
+        <li>4.7 Klasse Dataservice</li>
+    </ul>
+    <section data-format="markdown" data-include="catalog.md"></section>
 </section>
 
 <div id="Resource" data-format="markdown"

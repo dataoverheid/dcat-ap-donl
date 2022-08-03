@@ -124,7 +124,7 @@ De resource volgens de eigenaar van de data. Dit is bij voorkeur een URI.
 | Kardinaliteit   | `1..1`            |
 | Gebruik         | Verplicht       |
 
-### Thema
+### Thema (`dcat:theme`)
 
 Een thema uit de taxonomie beleidsagenda.
 

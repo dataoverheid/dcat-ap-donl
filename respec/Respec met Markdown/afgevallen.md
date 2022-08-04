@@ -115,6 +115,21 @@ Deze eigenschap beschrijft de administratieve metadata van de registratie van ee
 | Kardinaliteit  | `0..0`          |
 | Gebruik        |
 
+### Catalog Record
+
+De administratieve metadata van de registratie van een resource in een catalogus. HIerbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.
+
+| Definitie      | Catalogus Record     |
+| -------------- | -------------------- |
+| RDF Eigenschap | `dcat:record`        |
+| Bereik         | `dcat:CatalogRecord` |
+| Kardinaliteit  | `0..*`               |
+| Gebruik        | Optioneel            |
+
+<p class="note" title="Note">
+Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toepassingsprofiel van data.overheid.nl, omdat eerder is gebleken dat partijen deze informatie niet aanleveren.
+</p>
+
 ## CatalogusRecord
 
 ### Titel

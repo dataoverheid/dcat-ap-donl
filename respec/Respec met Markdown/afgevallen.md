@@ -327,13 +327,6 @@ Hoe lang de distributie beschikbaar zal blijven.
 
 ## Dataservice
 
-
-
-
-
-
-
-
-<p class="note" title="Note">
-Wat wordt hier nog toegevoegd
+<p class="note" title="Leeg">
+Van Dataservice valt niets af
 </p>

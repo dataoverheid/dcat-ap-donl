@@ -2,38 +2,37 @@
 
 De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van alle eigenschappen in deze klasse. Hierbij wordt ook aangegeven hoe het Europese toepassingsprofiel (DCAT-AP-EU) gebruik maakt van de eigenschap. Eigenschappen zonder waarde zijn/worden niet overgenomen in het toepassingsprofiel.
 
-| **Eigenschap**               | Herkomst  | Gebruik    |
-| ---------------------------- | --------- | ---------- |
-| **access rights**            | Resource  |            |
-| **conforms to**              | Resource  |            |
-| **contact point**            | Resource  | Verplicht  |
-| **creator**                  | Resource  | Verplicht  |
-| **description**              | Resource  | Verplicht  |
-| **title**                    | Resource  | Verplicht  |
-| **release date**             | Resource  | Aanbevolen |
-| **update/modification date** | Resource  | Aanbevolen |
-| **language**                 | Resource  | Aanbevolen |
-| **publisher**                | Resource  | Verplicht  |
-| **identifier**               | Resource  | Aanbevolen |
-| **theme/category**           | Resource  |            |
-| **keyword/tag**              | Resource  | Optioneel  |
-| **landing page**             | Resource  | Optioneel  |
-| **qualified attribution**    | Resource  |            |
-| **license**                  | Resource  |            |
-| **rights**                   | Resource  |            |
-| **is referenced by**         | Resource  |            |
-| **other identifier**         | Resource  | Optioneel  |
-| **resource status**          | Resource  |            |
-| **legal foundation**         | Resource  |            |
-| **resource classification**  | Resource  |            |
-| **wob exclusion reason**     | Resource  |            |
-| **source catalog**           | Resource  |            |
-| **homepage**                 | Catalogus | Verplicht  |
-| **dataset**                  | Catalogus | Aanbevolen |
-| **service**                  | Catalogus | Aanbevolen |
-| **catalognieuw**             | Catalogus | Aanbevolen |
+| **Eigenschap**                                                   | Herkomst  | Gebruik    |
+| ---------------------------------------------------------------- | --------- | ---------- |
+| <a href="#access-rights">**access-rights**</a>                   | Resource  |            |
+| <a href="#conforms-to">**conforms to**</a>                       | Resource  |            |
+| <a href="#contact-point">**contact point**                       | Resource  | Verplicht  |
+| <a href="#creator">**creator**</a>                               | Resource  | Verplicht  |
+| <a href="#description">**description**                           | Resource  | Verplicht  |
+| <a href="#title">**title**                                       | Resource  | Verplicht  |
+| <a href="#release-date">**release date**                         | Resource  | Aanbevolen |
+| <a href="#update-modification-date">**update/modification date** | Resource  | Aanbevolen |
+| <a href="#language">**language**                                 | Resource  | Aanbevolen |
+| <a href="#publisher">**publisher**                               | Resource  | Verplicht  |
+| <a href="#identifier">**identifier**                             | Resource  | Aanbevolen |
+| <a href="#theme-category">**theme/category**                     | Resource  |            |
+| <a href="#keyword-tag">**keyword/tag**                           | Resource  | Optioneel  |
+| <a href="#landing-page">**landing page**                         | Resource  | Optioneel  |
+| <a href="#qualified-attribution">**qualified attribution**       | Resource  |            |
+| <a href="#license">**license**                                   | Resource  |            |
+| <a href="#rights">**rights**                                     | Resource  |            |
+| <a href="#is-referenced-by">**is referenced by**                 | Resource  |            |
+| <a href="#other-identifier">**other identifier**                 | Resource  | Optioneel  |
+| <a href="#resource-status">**resource status**                   | Resource  |            |
+| <a href="#legal-foundation">**legal foundation**                 | Resource  |            |
+| <a href="#resource-classification">**resource classification**   | Resource  |            |
+| <a href="#source-catalog">**source catalog**                     | Resource  |            |
+| <a href="#homepage">**homepage**                                 | Catalogus | Verplicht  |
+| <a href="#dataset">**dataset**                                   | Catalogus | Aanbevolen |
+| <a href="#service">**service**                                   | Catalogus | Aanbevolen |
+| <a href="#catalog">**catalog**                         | Catalogus | Aanbevolen |
 
-### Homepage
+### homepage
 
 De homepage van de catalogus.  
 
@@ -49,7 +48,7 @@ Een catalogus kan op meerdere dataportals worden gepubliceerd. Deze eigenschap v
 </p>
 
 
-### Dataset
+### dataset
 
 De (metadata van de) dataset(s) die is/zijn opgenomen in de catalogus.
 
@@ -67,7 +66,7 @@ Zie de discussie op https://github.com/SEMICeu/DCAT-AP/issues/180
 </p>
 
 
-### Service  
+### service  
 
 De (metadata van de) dataservice die voorkomt in de catalogus.
 
@@ -84,7 +83,7 @@ Zie: https://github.com/w3c/dxwg/issues/1431
 </p>
 
 
-### Catalog
+### catalog
 
 De (metadata van de) catalogus die voorkomt in de catalogus. Deze eigenschap maakt dus mogelijk om een catalogus te beschouwen als een resource en deze op te nemen in een catalogus.
 

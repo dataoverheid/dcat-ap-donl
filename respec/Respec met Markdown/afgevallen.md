@@ -2,7 +2,7 @@
 
 ## Resource
 
-### Type
+### type/genre
 
 Het type van de resource.
 
@@ -13,7 +13,9 @@ Het type van de resource.
 | Kardinaliteit  | `0..1`     |
 | Gebruik        | Optioneel  |
 
-### Relatie
+<div class="issue" data-number="35"></div>
+
+### relationnieuw
 
 Een niet-gespecificeerde relatie te leggen met een andere resource in een catalogus.
 
@@ -24,7 +26,7 @@ Een niet-gespecificeerde relatie te leggen met een andere resource in een catalo
 | Kardinaliteit  | `0..*`         |
 | Gebruik        | Optioneel      |
 
-### Specifiek relatie 
+### qualified relation
 
 Gespecificeerde relaties te leggen met andere resources.
 
@@ -35,7 +37,7 @@ Gespecificeerde relaties te leggen met andere resources.
 | Kardinaliteit  | `0..*`                   |
 | Gebruik        | Optioneel                |
 
-### Toegangsbeleid
+### has policy
 
 Een ODRL-object dat uitdrukking geeft aan de gebruiksrechten van de onderhavige resource.
 
@@ -46,7 +48,7 @@ Een ODRL-object dat uitdrukking geeft aan de gebruiksrechten van de onderhavige 
 | Kardinaliteit  | `0..*`           |
 | Gebruik        | Aanbevolen       |
 
-### Provenance
+### other identifier
 
 De verplichte eigenschap dct:identifier bevat de unieke identificatie van de dataset die de data-eigenaar heeft uitgegeven. evt. andere unieke identifiers van de dataset.
 
@@ -57,7 +59,7 @@ De verplichte eigenschap dct:identifier bevat de unieke identificatie van de d
 | Kardinaliteit  | `0..*`            |
 | Gebruik        | Optioneel         |
 
-### Metadata taal
+### metadata language
 
 De natuurlijke taal waarin de metadata van de dataset is beschreven.
 
@@ -68,7 +70,7 @@ De natuurlijke taal waarin de metadata van de dataset is beschreven.
 | Kardinaliteit  | `1..1`                  |
 | Gebruik        | Verplicht               |
 
-### Organisatie
+### authority
 
 De organisatie die verantwoordelijk is voor de dataset.
 
@@ -79,7 +81,7 @@ De organisatie die verantwoordelijk is voor de dataset.
 | Kardinaliteit  | `0..0`               |
 | Gebruik        | niet opgenomen       |
 
-### Geplande datum    
+### date planned   
 
 De datum waarop een dataset met status gelijk aan Gepland, beschikbaar komt.
 
@@ -92,7 +94,7 @@ De datum waarop een dataset met status gelijk aan Gepland, beschikbaar komt.
 
 ## Catalogus
 
-### Thema's
+### themes
 
 De waardelijst (controlled vocabularie) met thema's die (in eigenschap dcat:theme) gekoppeld kunnen worden aan de resources die zijn opgenomen in de catalogus.
 
@@ -104,18 +106,18 @@ De waardelijst (controlled vocabularie) met thema's die (in eigenschap dcat:them
 | Gebruik        | Verplicht                                                                                      |
 
 
-### Has part
+### has part
 
 Deze eigenschap beschrijft de administratieve metadata van de registratie van een resource in een catalogus. Hierbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.
 
 | Definitie      | Has part        |
 | -------------- | --------------- |
-| RDF Eigenschap | ` dct:hasPart`  |
+| RDF Eigenschap | `dct:hasPart`  |
 | Bereik         | `dcat:Resource` |
 | Kardinaliteit  | `0..0`          |
 | Gebruik        |
 
-### Catalog Record
+### catalog record
 
 De administratieve metadata van de registratie van een resource in een catalogus. HIerbij kan worden gedacht aan de datum/tijd waarop een bepaalde resource is geregistreerd.
 
@@ -132,7 +134,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 
 ## CatalogusRecord
 
-### Titel
+### title
 
 | Definitie      | Titel          |
 | -------------- | -------------- |
@@ -142,7 +144,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 | Gebruik        | Niet opnemen   |
 
 
-### Omschrijving
+### description
 
 | Definitie      | Omschrijving      |
 | -------------- | ----------------- |
@@ -152,7 +154,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 | Gebruik        | Niet opnemen      |
 
 
-### Uitgavedatum
+### issued
 
 | Definitie      | Uitgavedatum |
 | -------------- | ------------ |
@@ -161,7 +163,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 | Kardinaliteit  | `0..1`       |
 | Gebruik        | Niet opnemen |
 
-### Voldoet aan  
+### conforms to
 
 | Definitie      | Voldoet aan                          |
 | -------------- | ------------------------------------ |
@@ -171,7 +173,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 | Gebruik        | Niet opnemen                         |
 
 
-### Status
+### change type
 
 | Definitie      | Status            |
 | -------------- | ----------------- |
@@ -180,7 +182,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 | Kardinaliteit  | `0..1`            |
 | Gebruik        | Niet opnemen      |
 
-### Taal
+### language
 
 | Definitie      | Taal           |
 | -------------- | -------------- |
@@ -189,7 +191,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 | Kardinaliteit  | `0..*`         |
 | Gebruik        | Niet opnemen   |
 
-### Bronmetadata
+### source metadata
 
 | Definitie      | Bronmetadata         |
 | -------------- | -------------------- |
@@ -200,7 +202,7 @@ Deze eigenschap en de klasse dcat:CatalogRecord worden niet opgenomen in het toe
 
 ## Dataset
 
-### Geografisch detailniveau  
+### spatial resolution
 
 Een indicatie van het geografische detailniveau (in meters) van de gegevens in de dataset.
 
@@ -213,7 +215,7 @@ Een indicatie van het geografische detailniveau (in meters) van de gegevens in d
 
 <div class="issue" data-number="13"></div>
 
-### Resolutie in tijd
+### temporal resolution
 
 Van toepassing op datasets die gegevens bevatten die een afhankelijkheid hebben met tijd. de kleinste periode waarover gegevens in de dataset informatie verschaffen.
 
@@ -226,7 +228,7 @@ Van toepassing op datasets die gegevens bevatten die een afhankelijkheid hebben 
 
 <div class="issue" data-number="13"></div>
 
-### Aangemaakt door  
+### was generated by
 
 De activiteit of business context waaruit de dataset is voortgekomen.
 
@@ -237,7 +239,7 @@ De activiteit of business context waaruit de dataset is voortgekomen.
 | Kardinaliteit  | `0..0`                |
 | Gebruik        | niet opgenomen        |
 
-### Documentatie
+### documentation
 
 Een informatiepagina waar aanvullende informatie over deze dataset te vinden is.
 
@@ -248,7 +250,7 @@ Een informatiepagina waar aanvullende informatie over deze dataset te vinden is.
 | Kardinaliteit  | `0..*`       |
 | Gebruik        | Optioneel    |
 
-### Brondataset
+### source
 
 Een gerelateerde dataset waaruit de onderhavige dataset is afgeleid.
 
@@ -259,7 +261,7 @@ Een gerelateerde dataset waaruit de onderhavige dataset is afgeleid.
 | Kardinaliteit  | `0..*`         |
 | Gebruik        | Optioneel      |
 
-### Versienummer
+### version
 
 Een versienummer of andere aanduiding van de versie van de dataset. Dit gegeven onderscheidt de verschillende versies die met de relatie-eigenschappen dct:hasVersion en dct:isVersionOf aan elkaar zijn gelinkt.
 
@@ -270,7 +272,7 @@ Een versienummer of andere aanduiding van de versie van de dataset. Dit gegeven 
 | Kardinaliteit  | `0..1`            |
 | Gebruik        | Optioneel         |
 
-### Toelichting bij versie
+### version notes
 
 Een versienummer of andere aanduiding van de versie van de dataset. Dit gegeven onderscheidt de verschillende versies die met de relatie-eigenschappen dct:hasVersion en dct:isVersionOf aan elkaar zijn gelinkt.
 
@@ -283,7 +285,7 @@ Een versienummer of andere aanduiding van de versie van de dataset. Dit gegeven 
 
 ## Distributie
 
-### Geografisch detailniveau
+### spatial resolution
 
 Een indicatie van het geografische detailniveau in meters van de gegevens in de distributie.
 
@@ -294,7 +296,7 @@ Een indicatie van het geografische detailniveau in meters van de gegevens in de 
 | Kardinaliteit  | `0..1`                           |
 | Gebruik        | Optioneel                        |
 
-### Periode
+### temporal resolution
 
 De kleinste periode tussen twee data-items in de distributie.
 
@@ -305,7 +307,7 @@ De kleinste periode tussen twee data-items in de distributie.
 | Kardinaliteit  | `0..1`                    |
 | Gebruik        | Optioneel                 |
 
-### Compressieformaat
+### compression format
 
 De Distributie kan zijn gecomprimeerd om de omvang van het bestand te verminderen. In dat geval specificeert edze eigenschap het compressie-formaat dat is toegepast.
 
@@ -316,7 +318,9 @@ De Distributie kan zijn gecomprimeerd om de omvang van het bestand te vermindere
 | Kardinaliteit  |                       |
 | Gebruik        |                       |
 
-### Ingepakt formaat  
+<div class="issue" data-number="9"></div>
+
+### packaging format  
 
 Van toepassing op distributies van datasets die zijn samengesteld uit meerdere bestanden en vervolgens worden gebundeld in bijvoorbeeld een zip-bestand. Als dit het geval is, geeft deze eigenschap het media type van het pakket.
 
@@ -329,7 +333,7 @@ Van toepassing op distributies van datasets die zijn samengesteld uit meerdere b
 
 <div class="issue" data-number="9"></div>
 
-### Beschikbaarheid
+### availability
 
 Hoe lang de distributie beschikbaar zal blijven.
 

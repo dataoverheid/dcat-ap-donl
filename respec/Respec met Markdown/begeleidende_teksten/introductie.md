@@ -17,3 +17,8 @@ De belangrijkste wijzigingen zijn:</p>
 
 <p>Dit toepassingsprofiel blijft in ontwikkeling. Commentaren, problemen, wensen etc. kunnen als issue worden gemeld op de <a href="https://github.com/dataoverheid/dcat-ap-donl">Github pagina</a>.
 DCAT v3 is bij het  <a href="https://www.w3.org/TR/vocab-dcat-3/">W3C in ontwikkeling</a>, deze gaat meer in op het gebruik van versiebeheer bij datasets en distributies.</p>
+
+<p>Aanvragen voor voorbeelden en best practices kunnen worden gedaan in:
+
+<div class="issue" data-number="33"></div>
+<div class="issue" data-number="34"></div>

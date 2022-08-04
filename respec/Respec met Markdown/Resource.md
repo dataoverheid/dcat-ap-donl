@@ -22,6 +22,9 @@ De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hi
 | Kardinaliteit  | `0..*`           |
 | Gebruik        | Optioneel        |
 
+<div class="issue" data-number="35"></div>
+<div class="issue" data-number="14"></div>
+
 ### contact point
 
 Contact-informatie van de beschreven resource.
@@ -135,6 +138,8 @@ Een thema uit de taxonomie beleidsagenda.
 | Kardinaliteit  | `1..*`                                                                                                  |
 | Gebruik        | Verplicht                                                                                               |
 
+<div class="issue" data-number="35"></div>
+
 ### keyword/tag
 
 Vrije keywords of termen die de resource beschrijven.
@@ -205,6 +210,17 @@ Externe publicaties, bijvoorbeeld een artikel dat verwijst naar onderhavige reso
 | Kardinaliteit  | `0..*`               |
 | Gebruik        | Optioneel            |
 
+## other identifier
+
+De verplichte eigenschap `dct:identifier` bevat de unieke identificatie van de dataset die de data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset.
+
+| Definitie      | Andere identificatie |
+| -------------- | -------------------- |
+| RDF Eigenschap | `adms:identifier`    |
+| Bereik         | `rdfs:Literal`       |
+| Kardinaliteit  | `0..*`               |
+| Gebruik        | Optioneel            |
+
 ### resource status
 
 Informatie over de beschikbaarheid van de dataset.
@@ -216,6 +232,16 @@ Informatie over de beschikbaarheid van de dataset.
 | Kardinaliteit  | `1..1`                                            |
 | Gebruik        | Verplicht                                         |
 
+### rights
+
+De overige gebruiksrechten die niet worden gedekt met dct:license of dct:accessRights, zoals de copyright statements.
+
+| Definitie      | Rechten      |
+| -------------- | ------------ |
+| RDF Eigenschap | `dct:rights` |
+| Bereik         | `xsd:string` |
+| Kardinaliteit  | `0..1`       |
+| Gebruik        | Optioneel    |
 
 ### legal foundation
 

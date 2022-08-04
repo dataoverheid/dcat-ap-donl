@@ -1,7 +1,7 @@
 
 ## Attributen
 
-### Distributie
+### distribution
 
 De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in de dataset toegankelijk wordt gemaakt.
 
@@ -12,7 +12,7 @@ De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in
 | Kardinaliteit  | `1..*`              |
 | Gebruik        | Verplicht           |
 
-### Wijzigingsfrequentie
+### frequency
 
 Een indicatie van de frequentie waarmee de dataset wordt ververst.
 
@@ -24,7 +24,7 @@ Een indicatie van de frequentie waarmee de dataset wordt ververst.
 | Gebruik        | Optioneel                                                                            |
 
 
-### Locatie
+### spatial/geographical coverage
 
 Het geografische gebied waarop de gegevens in de dataset betrekking hebben.
 
@@ -36,7 +36,7 @@ Het geografische gebied waarop de gegevens in de dataset betrekking hebben.
 | Gebruik        | Optioneel                                 |
 
 
-### Dekking in tijd: Van
+### temporal coverage
 
 De kleinste periode tussen twee data-items in de dataset.
 
@@ -47,7 +47,7 @@ De kleinste periode tussen twee data-items in de dataset.
 | Kardinaliteit  | `0..1`             |
 | Gebruik        | Aanbevolen         |
 
-### Heeft versie
+### has version
 
 Een gerelateerde dataset waarin een andere versie van de gegevens zijn opgenomen.
 
@@ -58,7 +58,7 @@ Een gerelateerde dataset waarin een andere versie van de gegevens zijn opgenomen
 | Kardinaliteit  | `0..*`           |
 | Gebruik        | Optioneel        |
 
-### Is versie van
+### is version of
 
 De inverse van has version en verwijst naar de vorige versie van de dataset.
 
@@ -69,7 +69,7 @@ De inverse van has version en verwijst naar de vorige versie van de dataset.
 | Kardinaliteit  | `0..*`            |
 | Gebruik        | Optioneel         |
 
-### Voorbeeld
+### sample
 
 Een distributie waarin een (kleine) selectie van de data is opgenomen. Die kan bijvoorbeeld worden weergegeven op het dataportaal bij de dataset, zodat eindgebruikers niet zelf eerst de dataset hoeven downloaden om te zien wa
 

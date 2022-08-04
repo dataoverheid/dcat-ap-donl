@@ -1,6 +1,6 @@
 ## Dataservice
 
-### Eindpunt URL
+### endpoint URL
 
 De locatie of het endpoint van de webservice (a Web-resolvable IRI)
 
@@ -11,7 +11,7 @@ De locatie of het endpoint van de webservice (a Web-resolvable IRI)
 | Kardinaliteit  | `1..*`             |
 | Gebruik        | Verplicht          |
 
-### Eindpunt beschrijving
+### endpoint description
 
 De services die via het endpoint beschikbaar zijn, incl. parameters en functies.
 
@@ -22,7 +22,7 @@ De services die via het endpoint beschikbaar zijn, incl. parameters en functies.
 | Kardinaliteit  | `0..1`                     |
 | Gebruik        | Verplicht                  |
 
-### Bediende dataset
+### serves dataset
 
 De dataset die dit endpoint beschikbaar stelt.
 

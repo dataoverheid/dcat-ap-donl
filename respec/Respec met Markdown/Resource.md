@@ -1,6 +1,6 @@
 ## Attributen
 
-### Toegang
+### access rights
 
 Informatie over het openbaarheidsniveau van de resource.  
 
@@ -11,7 +11,7 @@ Informatie over het openbaarheidsniveau van de resource.
 | Kardinaliteit  | `0..1`                     |
 | Gebruik        | Optioneel                  |
 
-### Standaard
+### conforms to
 
 De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel.
 
@@ -22,7 +22,7 @@ De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hi
 | Kardinaliteit  | `0..*`           |
 | Gebruik        | Optioneel        |
 
-### Contactpunt
+### contact point
 
 Contact-informatie van de beschreven resource.
 
@@ -33,7 +33,7 @@ Contact-informatie van de beschreven resource.
 | Kardinaliteit  | `1..1`                                                                                                                                                          |
 | Gebruik        | Verplicht                                                                                                                                                       |
 
-### Verantwoordelijke organisatie
+### creator
 
 De organisatie die verantwoordelijk is voor de beschreven resource.
 
@@ -44,7 +44,7 @@ De organisatie die verantwoordelijk is voor de beschreven resource.
 | Kardinaliteit  | `1..1`                        |
 | Gebruik        | Verplicht                     |
 
-### Omschrijving
+### description
 
 Een beschrijving de resource.
 
@@ -55,7 +55,7 @@ Een beschrijving de resource.
 | Kardinaliteit  | `1..1`            |
 | Gebruik        | Verplicht         |
 
-### Titel
+### title
 
 De naam van de beschreven resource. Op data.overheid.nl wordt deze naam geïndexeerd, zodat eindgebruikers de desbetreffende dataset, dataservice of catalogus kunnen terugvinden op basis van een of meer woorden in de naam.
 
@@ -66,7 +66,7 @@ De naam van de beschreven resource. Op data.overheid.nl wordt deze naam geïndex
 | Kardinaliteit  | `1..1`       |
 | Gebruik        | Verplicht    |
 
-### Uitgiftedatum
+### release date
 
 De datum waarop de beschreven resource is gepubliceerd.
 
@@ -77,7 +77,7 @@ De datum waarop de beschreven resource is gepubliceerd.
 | Kardinaliteit  | `0..1`         |
 | Gebruik        | aanbevolen     |
 
-### Wijzigingsdatum
+### update/modification date
 
 De datum waarop de beschreven resource is gewijzigd.
 
@@ -88,7 +88,7 @@ De datum waarop de beschreven resource is gewijzigd.
 | Kardinaliteit  | `0..1`          |
 | Gebruik        | aanbevolen      |
 
-### Taal
+### language
 
 De natuurlijk taal van de tekstuele metadata die de resource beschrijft.
 
@@ -102,7 +102,7 @@ De natuurlijk taal van de tekstuele metadata die de resource beschrijft.
 <div class="issue" data-number="11"></div>
 
 
-### Verstrekker
+### publisher
 
 De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource.
 
@@ -113,7 +113,7 @@ De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resour
 | Kardinaliteit  | `1..1`                                                                                |
 | Gebruik        | Verplicht                                                                             |
 
-### Permalink
+### identifier
 
 De resource volgens de eigenaar van de data. Dit is bij voorkeur een URI.
 
@@ -124,7 +124,7 @@ De resource volgens de eigenaar van de data. Dit is bij voorkeur een URI.
 | Kardinaliteit  | `1..1`           |
 | Gebruik        | Verplicht        |
 
-### Thema (`dcat:theme`)
+### theme/category
 
 Een thema uit de taxonomie beleidsagenda.
 
@@ -135,7 +135,7 @@ Een thema uit de taxonomie beleidsagenda.
 | Kardinaliteit  | `1..*`                                                                                                  |
 | Gebruik        | Verplicht                                                                                               |
 
-### Trefwoord
+### keyword/tag
 
 Vrije keywords of termen die de resource beschrijven.
 
@@ -147,7 +147,7 @@ Vrije keywords of termen die de resource beschrijven.
 | Gebruik        | Aanbevolen     |
 
 
-### Webpagina
+### landing page
 
 De webpagina die toegang geeft tot de resource (dataset, dataservice of catalogus) en aanvullende informatie verschaft over de resource. Het gaat hierbij om de originele webpagina van de data-eigenaar.
 
@@ -159,7 +159,7 @@ De webpagina die toegang geeft tot de resource (dataset, dataservice of catalogu
 | Gebruik        | Optioneel          |
 
 
-### Overige verantwoordelijken 
+### qualified attribution 
 
 Een persoon of organisatie, anders dan contact point, resource creator of publisher die ook een verantwoordelijkheid draagt voor de resource.
 
@@ -170,8 +170,20 @@ Een persoon of organisatie, anders dan contact point, resource creator of pu
 | Kardinaliteit  | `0..*`                      |
 | Gebruik        | Optioneel                   |
 
+<aside class="example" title="Voorbeeld">
+  <p>
+    Zie <a href="https://www.w3.org/TR/vocab-dcat-2/#qualified-attribution">Voorbeeld van W3C</a>
+  <p>
+  </pre>
+</aside>
 
-### Licentie
+<div class="issue" data-number="31"></div>
+<div class="issue" data-number="23"></div>
+<div class="issue" data-number="25"></div>
+
+
+
+### license
 
 Het juridische document dat de gebruiksrechten van de resource beschrijft.
 
@@ -182,7 +194,7 @@ Het juridische document dat de gebruiksrechten van de resource beschrijft.
 | Kardinaliteit  | `1..1`                                                                                                                                                                  |
 | Gebruik        | Verplicht                                                                                                                                                               |
 
-### Verwezen door
+### is referenced by
 
 Externe publicaties, bijvoorbeeld een artikel dat verwijst naar onderhavige resource (dataset).
 
@@ -193,7 +205,7 @@ Externe publicaties, bijvoorbeeld een artikel dat verwijst naar onderhavige reso
 | Kardinaliteit  | `0..*`               |
 | Gebruik        | Optioneel            |
 
-### Status
+### resource status
 
 Informatie over de beschikbaarheid van de dataset.
 
@@ -205,7 +217,7 @@ Informatie over de beschikbaarheid van de dataset.
 | Gebruik        | Verplicht                                         |
 
 
-### Grondslag
+### legal foundation
 
 Het regelingelement dat de wettelijke grondslag vormt voor de dataset.
 
@@ -216,7 +228,9 @@ Het regelingelement dat de wettelijke grondslag vormt voor de dataset.
 | Kardinaliteit  | `0..*`                 |
 | Gebruik        | Optioneel              |
 
-### Vocabulaire
+<div class="issue" data-number="19"></div>
+
+###  resource classification
 
 Een resource op basis van een controled vocabulary, zodat de desbetreffende resource beter vindbaar en herkenbaar wordt op de site van data.overheid.nl.
 
@@ -228,7 +242,7 @@ Een resource op basis van een controled vocabulary, zodat de desbetreffende reso
 | Gebruik        | Optioneel                         |
 
 
-### Broncatalogus
+### source catalog
 
 In welke catalogus de dataset (resource) als eerste is gepubliceerd.
 

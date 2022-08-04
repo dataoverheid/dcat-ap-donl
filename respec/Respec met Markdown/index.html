@@ -74,7 +74,17 @@
 
     <blockquote>Subklasse van `dcat:Dataset`</blockquote>
 
-    <p>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets, dataservices en/of catalogi. Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen van resources. De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset of kunnen worden benaderd via een dataservice.</p>
+    <p>Het doel van DCAT is om het uitwisselen van datasets tussen verschillende datacatalogi beter te laten verlopen. Een  <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>
+         beschrijft een dergelijke catalogus.</p>
+
+    <p>Let op! Het algemene begrip catalogus is dus breder dan een <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>.
+         Waar een catalogus een verzameling van verwijzingen is, gaat de <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a> 
+         alleen over een verzameling van verwijzingen naar dcat:datasets (of de andere dcat klasses dcat:catalogusrecord, dcat:distributie, dcat: dataservice of zelfs een andere dcat:catalog.)
+         Het algemene type catalogus kan worden omschreven in DCAT als dcat:dataset.</p>
+
+    <p>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets, dataservices en/of catalogi.
+        Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen van resources.
+        De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset of kunnen worden benaderd via een dataservice.</p>
 
     <h3>Notities</h3>
     <p class="note" title="Usage note">

@@ -1,6 +1,6 @@
 ## Attributen
 
-### Wijzigingsdatum
+### modified
 
 De datum waarop het record in de catalogus voor het laatst is gewijzigd.
 
@@ -11,7 +11,7 @@ De datum waarop het record in de catalogus voor het laatst is gewijzigd.
 | Kardinaliteit  | `1..1`          |
 | Gebruik        | Verplicht       |
 
-### Verwijzing
+### primaryTopic
 
 Betreft de verwijzing naar de dcat:Resource (dataset or service) die het record beschrijft.
 

@@ -344,6 +344,10 @@ Hoe lang de distributie beschikbaar zal blijven.
 | Kardinaliteit  |                       |
 | Gebruik        |                       |
 
+<p class="note" title="Note">
+Zie <a href="http://publications.europa.eu/resource/authority/planned-availability">http://publications.europa.eu/resource/authority/planned-availability</a>
+</p>
+
 ## Dataservice
 
 <p class="note" title="Leeg">

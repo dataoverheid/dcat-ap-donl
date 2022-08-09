@@ -1,9 +1,5 @@
 ## Attributen
 
-<p class="note" title="Note">
-Note
-</p>
-
 ### access rights
 
 Informatie over het openbaarheidsniveau van de resource.  
@@ -14,6 +10,8 @@ Informatie over het openbaarheidsniveau van de resource.
 | Bereik         | `donl:Openbaarheidsniveau` |
 | Kardinaliteit  | `0..1`                     |
 | Gebruik        | Optioneel                  |
+
+<div class="issue" data-number="28"></div>
 
 <p class="note" title="Note">
 Met deze eigenschap kan worden aangegeven of de dataset `Publiek`, `Niet publiek` of `Beperkt` is. Als een dataset `Beperkt` is betekent dit dat de dataset alleen toegankelijk is onder bepaalde voorwaarden die zijn beschreven in eigenschappen license en rights. Deze drie mogelijke waarden zijn afkomstig van het Publicatiebureau van de EU en voldoen daarmee aan DCAT-AP-EU. Zie https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json

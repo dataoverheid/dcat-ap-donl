@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>DCAT-AP-DONL_2.0</title>
@@ -12,15 +13,15 @@
             group: "webapps",
             specStatus: "unofficial",
             latestVersion: "https://gitcdn.link/cdn/dataoverheid/dcat-ap-donl/main/respec/index.html",
-            editors:[ {
-            name: "Jan Meijer", company: "KOOP"
+            editors: [{
+                name: "Jan Meijer", company: "KOOP"
             }, {
                 name: "Kees Trautwein", company: "Logius"
             }, {
                 name: "Casper le Gras", company: "KOOP"
             }, {
                 name: "Willem ter Berg", company: "TextInfo"
-		    }, {
+            }, {
                 name: "Huub van Oers", company: "DUO"
             },],
             github: {
@@ -32,189 +33,251 @@
         };
     </script>
     <style>
-        .issue > p {
+        .issue>p {
             display: none;
         }
+
         .issue {
-            background-color:LightGray;
+            background-color: LightGray;
         }
     </style>
 </head>
+
 <body>
 
-<section id="sotd"></section>
+    <section id="sotd"></section>
 
-<section id='abstract' data-format="markdown" data-include="begeleidende_teksten\samenvatting.md"></section>
-<section class="introductie" data-format="markdown" data-include="begeleidende_teksten\introductie.md"></section>
-<section class="terminologie" data-format="markdown" data-include="begeleidende_teksten\terminologie.md"></section>
-<section class="overzicht" data-format="markdown" data-include="begeleidende_teksten\overzicht.md"></section>
-<section class="verschillen" data-format="markdown" data-include="begeleidende_teksten\verschillen.md"></section>
-<section class="eigenschappen" data-format="markdown" data-include="begeleidende_teksten\eigenschappen.md"></section>
+    <section id='abstract' data-format="markdown" data-include="begeleidende_teksten\samenvatting.md"></section>
+    <section class="introductie" data-format="markdown" data-include="begeleidende_teksten\introductie.md"></section>
+    <section class="terminologie" data-format="markdown" data-include="begeleidende_teksten\terminologie.md"></section>
+    <section class="overzicht" data-format="markdown" data-include="begeleidende_teksten\overzicht.md"></section>
+    <section class="verschillen" data-format="markdown" data-include="begeleidende_teksten\verschillen.md"></section>
+    <section class="eigenschappen" data-format="markdown" data-include="begeleidende_teksten\eigenschappen.md">
+    </section>
 
-<section id="Resource">
-    <h2>Resource (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource"><code>dcat:Resource</code></a>)</h2>
+    <section id="Resource">
+        <h2>Resource (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource"><code>dcat:Resource</code></a>)</h2>
 
-    <p>Een resource is een gegevensobject dat wordt onderhouden en gepubliceerd door een enkele organisatie en kan worden opgenomen in een gegevenscatalogus.
-        De eigenschappen van klasse resources worden dus gebruikt in de subklassen <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
-        Of ze hierin verpicht, aanbevolen of optioneel zijn, wordt gespecificeerd in de desbetreffende secties.</p>
+        <p> In de klasses <a href="#Catalogus">`catalogus`</a>, <a href="#dataset">`dataset`</a> en <a
+                href="#dataservice">`dataservice `</a> worden veel dezelfde eigenschappen gebruikt.
+            Om niet al deze eigenschappen voor elke klasse opnieuw te hoeven definieren is de superklasse <a
+                href="#resource">`resource`</a> geintroduceerd.
+            Dat betekend dat men niet een alleenstaand object van het type `dcat:resource` kan maken, maar dat deze
+            altijd een onderdeel is van de
+            boven genoemde dcat klasses.
 
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        De klasse Resource is nieuw in DCAT 2 en wordt gebruikt als superklasse. Het bevat enkele algemene eigenschappen die onderdeel zijn van de resources in DCAT 2, namelijk <code>dcat:Catalog</code>, <code>dcat:Dataset</code> en <code>dcat:DataService</code>.
-    </p>
+            Deze superklasse maakt het in de toekomst makkeljker om het informatiemodel van DCAT uit te breiden met
+            nieuwe resources.
 
-    <p class="note" title="Toelichting">
-        De introductie van deze superklasse maakt het voor de toekomst eenvoudiger om het informatiemodel van DCAT uit te breiden met nieuwe resources.
-    </p>
+        <h3>Referenties</h3>
+        <ul>
+            <li><a href="#catalogus">`catalogus`</a></li>
+            <li><a href="#dataset">`dataset`</a></li>
+            <li><a href="#dataservice">`dataservice `</a></li>
+        </ul>
+        <section data-format="markdown" data-include="eigenschappen\resource.md"></section>
+    </section>
 
-    <h3>Referenties</h3>
+    <section id="Catalogus">
+        <h2>Catalogus (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>)</h2>
 
-    <section data-format="markdown" data-include="eigenschappen\resource.md"></section>
-</section>
+        <blockquote>Subklasse van `dcat:Dataset`</blockquote>
 
-<section id="Catalogus">
-    <h2>Catalogus (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>)</h2>
+        <p>Het doel van DCAT is om het uitwisselen van datasets tussen verschillende datacatalogi beter te laten
+            verlopen. Een <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>
+            beschrijft een dergelijke catalogus.</p>
 
-    <blockquote>Subklasse van `dcat:Dataset`</blockquote>
+        <p>Let op! Het algemene begrip catalogus is dus breder dan een <a
+                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>.
+            Waar een catalogus een verzameling van verwijzingen is, gaat de <a
+                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>
+            alleen over een verzameling van verwijzingen naar dcat:datasets (of de andere dcat klasses
+            dcat:catalogusrecord, dcat:distributie, dcat: dataservice of zelfs een andere dcat:catalog.)
+            Het algemene type catalogus kan worden omschreven in DCAT als dcat:dataset.</p>
 
-    <p>Het doel van DCAT is om het uitwisselen van datasets tussen verschillende datacatalogi beter te laten verlopen. Een  <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>
-         beschrijft een dergelijke catalogus.</p>
+        <p>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets,
+            dataservices en/of catalogi.
+            Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat
+            dus uit beschrijvingen van resources.
+            De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen
+            vanuit de distributie van de dataset of kunnen worden benaderd via een dataservice.</p>
 
-    <p>Let op! Het algemene begrip catalogus is dus breder dan een <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>.
-         Waar een catalogus een verzameling van verwijzingen is, gaat de <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a> 
-         alleen over een verzameling van verwijzingen naar dcat:datasets (of de andere dcat klasses dcat:catalogusrecord, dcat:distributie, dcat: dataservice of zelfs een andere dcat:catalog.)
-         Het algemene type catalogus kan worden omschreven in DCAT als dcat:dataset.</p>
+        <h3>Notities</h3>
+        <p class="note" title="Usage note">
+            A Web-based data catalog is typically represented as a single instance of this class.
+        </p>
 
-    <p>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets, dataservices en/of catalogi.
-        Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat dus uit beschrijvingen van resources.
-        De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen vanuit de distributie van de dataset of kunnen worden benaderd via een dataservice.</p>
+        <p class="note" title="Toelichting">
+            Datasets and dataservices zijn voorbeelden van resources in de context van een data catalogus.
+        </p>
 
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        A Web-based data catalog is typically represented as a single instance of this class.
-    </p>
+        <h3>Referenties</h3>
+        <ul>
+            <li>4.5 Klasse Catalogusrecord</li>
+            <li>4.6 Klasse Dataset</li>
+            <li>4.7 Klasse Dataservice</li>
+        </ul>
+        <section data-format="markdown" data-include="eigenschappen\catalog.md"></section>
+    </section>
 
-    <p class="note" title="Toelichting">
-        Datasets and dataservices zijn voorbeelden van resources in de context van een data catalogus.
-    </p>
-
-    <h3>Referenties</h3>
-    <ul>
-        <li>4.5 Klasse Catalogusrecord</li>
-        <li>4.6 Klasse Dataset</li>
-        <li>4.7 Klasse Dataservice</li>
-    </ul>
-    <section data-format="markdown" data-include="eigenschappen\catalog.md"></section>
-</section>
-
-<section id="Catalogusrecord">
-    <h2>Catalogusrecord (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"><code>dcat:Catalogusrecord</code></a>)</h2>
-
-
-    <p>	Een Catalogusrecord geeft informatie over de registratie van een dcat:Resource in een catalogus. Het bevat de administratieve metadata van het dataportaal.</p>
-
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen dataportalen kan het voorkomen die metadata voldoen aan een specifieke toepassingsprofielen van DCAT. Op data.overheid.nl is het streven erop gericht om te standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook kunnen voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere, bijvoorbeeld het Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data specificeren aan wel toepassingsprofiel de metadata voldoet.
-    </p>
-
-    <p class="note" title="Toelichting">
-        Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is vooral bedoeld voor catalogi die een onderscheid maken tussen de metadata over een dataset of dataservice en metadata over een voorkomen van een dataset of dataservice in een catalogus. Eigenschap publicatiedatum van een dataset beschrijft bijvoorbeeld de datum waarop de data-eigenaar de gegevens in eerste instantie heeft gepubliceerd, terwijl de publicatiedatum van het catalogus record de datum beschrijft waarop de dataset is opgenomen in de catalogus.
-    </p>
-
-    <h3>Referenties</h3>
-
-    <section data-format="markdown" data-include="eigenschappen\catalogusrecord.md"></section>
-</section>
-
-<section id="Dataset">
-    <h2>Dataset (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset"><code>dcat:Dataset</code></a>)</h2>
-
-    <blockquote>Subklasse van `dcat:Dataset`</blockquote>
-
-    <p>	Een dataset is een gegevensverzameling, die is samengesteld en gepubliceerd door een (overheids-)organisatie en digitaal beschikbaar is in één of meer representaties.</p>
-
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and other multi-media, and potentially other types, any of which might be collected into a dataset.
-    </p>
-
-    <p class="note" title="Toelichting">
-        Deze klasse beschrijft de dataset als concept. Het staat dus los van de gegevensverzameling zelf, die mogelijk beschikbaar is in een of meerdere representaties, formaten of serialisaties.
-    </p>
-
-    <p class="note" title="Opvatting">
-        De DCAT standaard heeft een ruime opvatting over de aard van de gegevens die een dataset kunnen vormen. Voor data.overheid.nl gaat het vooral over Open Data die afkomstig zijn van overheidsorganisaties, maar is hiertoe niet beperkt. De aard van de data zijn o.a. numeriek, tekstueel, afbeeldingen, geluid en andere multimedia.
-        Naast data.overheid.nl zijn systemen zoals PLOOI vooral gericht op de publicatie van open documentaire data in het kader van de Wet open overheid, zoals Pdf-bestanden. Hierbij worden weer andere standaarden dan DCAT gebruikt om de metadata van deze publicaties te beschrijven. Het is denkbaar dat collecties van documenten (bijvoorbeeld van een bepaalde organisatie of over specifieke onderwerpen) worden opgenomen in datasets, die vervolgens volgens de DCAT standaard worden gedocumenteerd en gepubliceerd op data.overheid.nl.
-    </p>
-
-    <h3>Referenties</h3>
-    <ul>
-        <li> Klasse Resource</li>
-    </ul>
-
-    <section data-format="markdown" data-include="eigenschappen\dataset.md"></section>
-</section>
-
-<section id="Distributie">
-    <h2>Distributie (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution"><code>dcat:Distribution</code></a>)</h2>
-
-    <p>	Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset kunnen verkregen. Meestal betreft het hier een download-bestand. Een dataset kan beschikbaar zijn in meerdere vormen die van elkaar verschillen in o.a. taal, formaat, data-schema's en nauwkeurigheid (resolutie).</p>
-
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        De aanbieder van een dataset kan distributies aanbieden in meerdere verschillende formaten en/of samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze worden elk als afzonderlijke distributie beschreven en gerelateerd aan de dataset. Als een dataset (ook) wordt aangeboden in de vorm van een dataservice, dan kunnen hierover aanvullende gegevens worden opgenomen in Dataservice die kan worden gerelateerd aan de bijbehorende distributie.
-    
-        De distributie geeft aan er gegevens van een dataset beschikbaar zijn. Het zegt niets nog niets over de manier waarop de data kunnen worden benaderd, zoals via een directe download, een API of een webpagina. Een waarde in eigenschap dcat:downloadURL geeft aan dat de gegevens in de distributie direct gedownload kunnen worden.
-    </p>
-
-    <p class="note" title="Toelichting">
-        In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data op te vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe mogelijkheid om webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft echter mogelijk en toegestaan om webservices te beschrijven als distributie.
-    </p>
-
-    <h3>Referenties</h3>
-    <ul>
-        <li> Klasse Dataservice</li>
-    </ul>
-
-    <section data-format="markdown" data-include="eigenschappen\distributie.md"></section>
-</section>
-
-<section id="Dataservice">
-    <h2>Dataservice (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service"><code>dcat:Dataservice</code></a>)</h2>
-
-    <blockquote>Subklasse van `dcat:Resource`</blockquote>
-
-    <p>Een dataservice is een collectie van functies om toegang te krijgen tot (een selectie of bewerking van) gegevens van een of meer datasets, speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen.</p>
-
-    <h3>Notities</h3>
-    <p class="note" title="Usage note">
-        Als een dcat:DataService gegevens ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan kan deze relatie met eigenschap dcat:servesDataset worden beschreven.
-        Met behulp van eigenschap dcterms:type kan onderscheid worden gemaakt tussen verschillende typen van services. Om deze typering te standaardiseren, worden de mogelijke waarden opgenomen in een waardelijst.
-    </p>
-
-    <p class="note" title="Toelichting">
-        De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt uitgebreidere mogelijkheden om de geautomatiseerde toegang tot de gegevens in een dataset via een API te beschrijven dan mogelijk is in de klasse Distributie. In deze nieuwe versie van het toepassingsprofiel is de Dataservice klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te beschrijven met de klasse Distributie.
-        Dataservices worden ook gedocumenteerd op https://developer.overheid.nl. Het kan interessant zijn om over en weer relaties te leggen tussen de dataservice op data.overheid.nl en die op developer.overheid.nl. Op die manier kunnen bezoekers gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben.
-    </p>
-
-    <aside class="example" title="Gebruik">
-    Voorbeelden kunnen worden gevonden bij het W3C: <a href="https://www.w3.org/TR/vocab-dcat-2/#examples-data-service">W3C</a>
-    </aside>
-
-    <h3>Referenties</h3>
-    <ul>
-        <li> Klasse Resource</li>
-    </ul>
-
-    <section data-format="markdown" data-include="eigenschappen\dataservice.md"></section>
-</section>
-
-<section class="Waardelijsten " data-format="markdown" data-include="begeleidende_teksten\waardelijsten.md"></section>
-<section id="conformance"><!-- This section is filled automatically by ReSpec. --></section>
+    <section id="Catalogusrecord">
+        <h2>Catalogusrecord (<a
+                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"><code>dcat:Catalogusrecord</code></a>)
+        </h2>
 
 
-<section class="appendix" data-format="markdown" data-include="eigenschappen\afgevallen.md"></section>
-<section class="appendix " data-format="markdown" data-include="begeleidende_teksten\referenties.md"></section>
+        <p> Een Catalogusrecord geeft informatie over de registratie van een dcat:Resource in een catalogus. Het bevat
+            de administratieve metadata van het dataportaal.</p>
+
+        <h3>Notities</h3>
+        <p class="note" title="Usage note">
+            Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen dataportalen kan het
+            voorkomen die metadata voldoen aan een specifieke toepassingsprofielen van DCAT. Op data.overheid.nl is het
+            streven erop gericht om te standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook
+            kunnen voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere, bijvoorbeeld het
+            Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data specificeren aan wel
+            toepassingsprofiel de metadata voldoet.
+        </p>
+
+        <p class="note" title="Toelichting">
+            Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is vooral bedoeld voor catalogi
+            die een onderscheid maken tussen de metadata over een dataset of dataservice en metadata over een voorkomen
+            van een dataset of dataservice in een catalogus. Eigenschap publicatiedatum van een dataset beschrijft
+            bijvoorbeeld de datum waarop de data-eigenaar de gegevens in eerste instantie heeft gepubliceerd, terwijl de
+            publicatiedatum van het catalogus record de datum beschrijft waarop de dataset is opgenomen in de catalogus.
+        </p>
+
+        <h3>Referenties</h3>
+
+        <section data-format="markdown" data-include="eigenschappen\catalogusrecord.md"></section>
+    </section>
+
+    <section id="Dataset">
+        <h2>Dataset (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset"><code>dcat:Dataset</code></a>)</h2>
+
+        <blockquote>Subklasse van `dcat:Dataset`</blockquote>
+
+        <p> Een dataset is een gegevensverzameling, die is samengesteld en gepubliceerd door een (overheids-)organisatie
+            en digitaal beschikbaar is in één of meer representaties.</p>
+
+        <h3>Notities</h3>
+        <p class="note" title="Usage note">
+            The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types
+            arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and
+            other multi-media, and potentially other types, any of which might be collected into a dataset.
+        </p>
+
+        <p class="note" title="Toelichting">
+            Deze klasse beschrijft de dataset als concept. Het staat dus los van de gegevensverzameling zelf, die
+            mogelijk beschikbaar is in een of meerdere representaties, formaten of serialisaties.
+        </p>
+
+        <p class="note" title="Opvatting">
+            De DCAT standaard heeft een ruime opvatting over de aard van de gegevens die een dataset kunnen vormen. Voor
+            data.overheid.nl gaat het vooral over Open Data die afkomstig zijn van overheidsorganisaties, maar is
+            hiertoe niet beperkt. De aard van de data zijn o.a. numeriek, tekstueel, afbeeldingen, geluid en andere
+            multimedia.
+            Naast data.overheid.nl zijn systemen zoals PLOOI vooral gericht op de publicatie van open documentaire data
+            in het kader van de Wet open overheid, zoals Pdf-bestanden. Hierbij worden weer andere standaarden dan DCAT
+            gebruikt om de metadata van deze publicaties te beschrijven. Het is denkbaar dat collecties van documenten
+            (bijvoorbeeld van een bepaalde organisatie of over specifieke onderwerpen) worden opgenomen in datasets, die
+            vervolgens volgens de DCAT standaard worden gedocumenteerd en gepubliceerd op data.overheid.nl.
+        </p>
+
+        <h3>Referenties</h3>
+        <ul>
+            <li> Klasse Resource</li>
+        </ul>
+
+        <section data-format="markdown" data-include="eigenschappen\dataset.md"></section>
+    </section>
+
+    <section id="Distributie">
+        <h2>Distributie (<a
+                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution"><code>dcat:Distribution</code></a>)</h2>
+
+        <p> Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset kunnen verkregen.
+            Meestal betreft het hier een download-bestand. Een dataset kan beschikbaar zijn in meerdere vormen die van
+            elkaar verschillen in o.a. taal, formaat, data-schema's en nauwkeurigheid (resolutie).</p>
+
+        <h3>Notities</h3>
+        <p class="note" title="Usage note">
+            De aanbieder van een dataset kan distributies aanbieden in meerdere verschillende formaten en/of
+            samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze worden elk als afzonderlijke
+            distributie beschreven en gerelateerd aan de dataset. Als een dataset (ook) wordt aangeboden in de vorm van
+            een dataservice, dan kunnen hierover aanvullende gegevens worden opgenomen in Dataservice die kan worden
+            gerelateerd aan de bijbehorende distributie.
+
+            De distributie geeft aan er gegevens van een dataset beschikbaar zijn. Het zegt niets nog niets over de
+            manier waarop de data kunnen worden benaderd, zoals via een directe download, een API of een webpagina. Een
+            waarde in eigenschap dcat:downloadURL geeft aan dat de gegevens in de distributie direct gedownload kunnen
+            worden.
+        </p>
+
+        <p class="note" title="Toelichting">
+            In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data
+            op te vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe
+            mogelijkheid om webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft
+            echter mogelijk en toegestaan om webservices te beschrijven als distributie.
+        </p>
+
+        <h3>Referenties</h3>
+        <ul>
+            <li> Klasse Dataservice</li>
+        </ul>
+
+        <section data-format="markdown" data-include="eigenschappen\distributie.md"></section>
+    </section>
+
+    <section id="Dataservice">
+        <h2>Dataservice (<a
+                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service"><code>dcat:Dataservice</code></a>)</h2>
+
+        <blockquote>Subklasse van `dcat:Resource`</blockquote>
+
+        <p>Een dataservice is een collectie van functies om toegang te krijgen tot (een selectie of bewerking van)
+            gegevens van een of meer datasets, speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen.</p>
+
+        <h3>Notities</h3>
+        <p class="note" title="Usage note">
+            Als een dcat:DataService gegevens ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan
+            kan deze relatie met eigenschap dcat:servesDataset worden beschreven.
+            Met behulp van eigenschap dcterms:type kan onderscheid worden gemaakt tussen verschillende typen van
+            services. Om deze typering te standaardiseren, worden de mogelijke waarden opgenomen in een waardelijst.
+        </p>
+
+        <p class="note" title="Toelichting">
+            De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt uitgebreidere mogelijkheden om de
+            geautomatiseerde toegang tot de gegevens in een dataset via een API te beschrijven dan mogelijk is in de
+            klasse Distributie. In deze nieuwe versie van het toepassingsprofiel is de Dataservice klasse optioneel. Dat
+            betekent dat het mogelijk blijft om dataservices te beschrijven met de klasse Distributie.
+            Dataservices worden ook gedocumenteerd op https://developer.overheid.nl. Het kan interessant zijn om over en
+            weer relaties te leggen tussen de dataservice op data.overheid.nl en die op developer.overheid.nl. Op die
+            manier kunnen bezoekers gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben.
+        </p>
+
+        <aside class="example" title="Gebruik">
+            Voorbeelden kunnen worden gevonden bij het W3C: <a
+                href="https://www.w3.org/TR/vocab-dcat-2/#examples-data-service">W3C</a>
+        </aside>
+
+        <h3>Referenties</h3>
+        <ul>
+            <li> <a href="#resource">`resource`</a></li>
+        </ul>
+
+        <section data-format="markdown" data-include="eigenschappen\dataservice.md"></section>
+    </section>
+
+    <section class="Waardelijsten " data-format="markdown" data-include="begeleidende_teksten\waardelijsten.md">
+    </section>
+    <section id="conformance">
+        <!-- This section is filled automatically by ReSpec. -->
+    </section>
+
+
+    <section class="appendix" data-format="markdown" data-include="eigenschappen\afgevallen.md"></section>
+    <section class="appendix " data-format="markdown" data-include="begeleidende_teksten\referenties.md"></section>
 </body>
+
 </html>

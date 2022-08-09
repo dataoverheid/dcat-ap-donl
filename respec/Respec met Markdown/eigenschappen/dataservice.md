@@ -1,4 +1,4 @@
-## Dataservice
+## Eigenschappen
 
 ### endpoint URL
 

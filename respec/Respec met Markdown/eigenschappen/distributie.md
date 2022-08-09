@@ -1,4 +1,4 @@
-## Attributen
+## Eigenschappen
 
 ### title
 
@@ -73,15 +73,17 @@ Als de gegevens automatisch kort na elkaar worden aangepast hoeft deze waarde ni
 
 De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze eigenschap herhaald zodat alle talen genoemd worden.
 
-| Definitie      | Taal           |
-| -------------- | -------------- |
-| RDF Eigenschap | `dct:language` |
-| Bereik         | Waardelijst    |
-| Kardinaliteit  | `0..*`         |
-| Gebruik        | Optioneel      |
+| Definitie      | Taal                                                                          |
+| -------------- | ----------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:language`                                                                |
+| Bereik         | `donl:Language`, zie https://waardelijsten.dcat-ap-donl.nl/donl_language.json |
+| Kardinaliteit  | `0..*`                                                                        |
+| Gebruik        | Optioneel                                                                     |
+
+<div class="issue" data-number="11"></div>
 
 <p class="note" title="Note">
-Deze property is specifiek voor DCAT-AP-EU en komt niet voor bij Distribution in de W3C specificatie. Zie Issue #11. Toegestane waardes zijn URI's met een tweeletterige code afkomstig uit http://id.loc.gov/vocabulary/iso639-1/ of indien de code daarin niet bestaat, een drie-letterige code uit http://id.loc.gov/vocabulary/iso639-2/
+Er is een verschil in definitie van dct:language (voor dataset en dataservice) tussen de specificaties volgens W3C en DCAT-AP-EU. Volgens W3C: A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution. Volgens DCAT-AP-EU This property refers to a language of the Dataset.
 </p>
 
 <p class="note" title="Note">
@@ -232,7 +234,7 @@ Een vastgestelde standaard waaraan de data in de distributie voldoet. Deze prope
 | Definitie      | Standaard        |
 | -------------- | ---------------- |
 | RDF Eigenschap | `dct:conformsTo` |
-| Bereik         | Waardelijst      |
+| Bereik         | `dct:Standard`   |
 | Kardinaliteit  | `0..1`           |
 | Gebruik        | Aanbevolen       |
 

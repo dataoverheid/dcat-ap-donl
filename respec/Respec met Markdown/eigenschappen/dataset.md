@@ -1,5 +1,4 @@
-
-## Attributen
+## Eigenschappen
 
 ### distribution
 

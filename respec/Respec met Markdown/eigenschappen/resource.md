@@ -1,21 +1,19 @@
-## Attributen
+## Eigenschappen
 
 ### access rights
 
-Informatie over het openbaarheidsniveau van de resource.  
+Met deze eigenschap wordt het openbaarheidsniveau van de resource aangegeven. In <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a> werd de waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json">openbaarheidsniveau</a> gebruikt en <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a> schrijft de volgende <a href="http://publications.europa.eu/resource/authority/access-right">waardelijst</a> voor.
 
-| Definitie      | Toegang                    |
-| -------------- | -------------------------- |
-| RDF Eigenschap | `dct:accessRights`         |
-| Bereik         | `donl:Openbaarheidsniveau` |
-| Kardinaliteit  | `0..1`                     |
-| Gebruik        | Optioneel                  |
+In de EU waardelijst blijven `Publiek` en `Niet Publiek` dezelfde functie houden, maar om iets dieper op de reden voor `Beperkt` op te gaan zijn daar speciale waarden voor geintroduceerd. Bij data.overheid.nl is er met ditzelfde idee de volgende waardelijst gecreëerd: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/access-rights.ttl">`donl:Openbaarheidsniveau`</a>. In de omschrijvingen van de waardes zijn mappings te vinden naar de EU waardelijst zodat deze goed overgenomen worden.
+
+| Definitie      | Toegang                                                                                                                    |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:accessRights`                                                                                                         |
+| Bereik         | <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/access-rights.ttl">`donl:Openbaarheidsniveau`</a> |
+| Kardinaliteit  | `0..1`                                                                                                                     |
+| Gebruik        | Optioneel                                                                                                                  |
 
 <div class="issue" data-number="28"></div>
-
-<p class="note" title="Note">
-Met deze eigenschap kan worden aangegeven of de dataset `Publiek`, `Niet publiek` of `Beperkt` is. Als een dataset `Beperkt` is betekent dit dat de dataset alleen toegankelijk is onder bepaalde voorwaarden die zijn beschreven in eigenschappen license en rights. Deze drie mogelijke waarden zijn afkomstig van het Publicatiebureau van de EU en voldoen daarmee aan DCAT-AP-EU. Zie https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json
-</p>
 
 ### conforms to
 
@@ -24,53 +22,47 @@ De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hi
 | Definitie      | Standaard        |
 | -------------- | ---------------- |
 | RDF Eigenschap | `dct:conformsTo` |
-| Bereik         | `xsd:string`     |
+| Bereik         | ``dct:Standard`` |
 | Kardinaliteit  | `0..*`           |
 | Gebruik        | Optioneel        |
 
 <div class="issue" data-number="35"></div>
 <div class="issue" data-number="14"></div>
 
-<p class="note" title="Note">
-Het is zeer gewenst dat DONL hiervoor uiteindelijk een waardelijst met mogelijke standaarden, schema's of ontologieën samenstelt. Tot die tijd kan deze eigenschap worden ingevuld met een string.
-</p>
-
 ### contact point
 
-Contact-informatie van de beschreven resource.
+Aan de hand van deze informatie kunnen eindgebruikers op data.overheid.nl contact opnemen met de eigenaar van de dataset of dataservice. Bij het invullen van deze eigenschap is het belangrijk om een algemaan mailadres te gebruiken.
 
-| Definitie      | Contactpunt                                                                                                                                                     |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RDF Eigenschap | dcat:contactPoint                                                                                                                                               |
-| Bereik         | `donl:ContactPoint` (nog op te stellen) <- Geadviseerd wordt hiervoor vcard te gebruiken? Welke waardenlijst is compleet genoeg om alle leveranciers te dekken? |
-| Kardinaliteit  | `1..1`                                                                                                                                                          |
-| Gebruik        | Verplicht                                                                                                                                                       |
+| Definitie      | Contactpunt       |
+| -------------- | ----------------- |
+| RDF Eigenschap | dcat:contactPoint |
+| Bereik         | `vcard:Kind`      |
+| Kardinaliteit  | `1..1`            |
+| Gebruik        | Verplicht         |
 
-<p class="note" title="Note">
-Aan de hand van deze informatie kunnen eindgebruikers op data.overheid.nl contact opnemen met de eigenaar van de dataset of dataservice. Dat betekent dat de waardelijst, afgezien van de naam van de desbetreffende organisatie, ook een telefoonnummer of e-mailadres moet bevatten. Eigenschap contact point is alleen relevant (en hoeft dus alleen te worden ingevuld) als deze afwijkt van de eigenschap resource creator 
-</p>
+<div class="issue" data-number="38"></div>
 
 ### creator
 
 De organisatie die verantwoordelijk is voor de beschreven resource.
 
-| Definitie      | Verantwoordelijke organisatie |
-| -------------- | ----------------------------- |
-| RDF Eigenschap | `dct:creator`                 |
-| Bereik         | `donl:Organization`           |
-| Kardinaliteit  | `1..1`                        |
-| Gebruik        | Verplicht                     |
+Als waarde kan hier worden geselecteerd uit de waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">donl_organization</a>. Deze bevat waarden van organisaties die afkomstig zijn uit <a href=" https://standaarden.overheid.nl/owms/terms/Overheidsorganisatie.html">OWMS</a>. De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
 
-<p class="note" title="Note">
-De waardelijst geeft een overzicht van alle bekende organisaties. Als de benodigde waarde hierin ontbreekt, kan de contentbeheerder van DONL een nieuwe waarde toevoegen. Het streven is erop gericht om de organisaties op een eenduidige manier te identificeren. Dat betekent dat bijvoorbeeld de `gemeente Eindhoven` op data.overheid.nl op dezelfde manier wordt geïdentificeerd als op andere websites van KOOP, bijvoorbeeld die van officielebekendmakingen.nl.
-</p>
-<p class="note" title="Note">
-De thans gebruikte waardelijst bevat waarden van organisaties die afkomstig zijn uit OWMS. De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. De nu gebruikte OWMS waardelijst is beschikbaar op https://waardelijsten.dcat-ap-donl.nl/donl_organization.json. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
-</p>
+| Definitie      | Verantwoordelijke organisatie                                                                  |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:creator`                                                                                  |
+| Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">`donl_organization`</a> |
+| Kardinaliteit  | `1..1`                                                                                         |
+| Gebruik        | Verplicht                                                                                      |
+
+<div class="issue" data-number="23"></div>
 
 ### description
 
 Een beschrijving de resource.
+
+Data.overheid.nl toont de beschrijvende tekst bij de desbetreffende resource en gebruikt deze voor het opbouwen van de zoekindex. Dit betekent dus dat de vindbaarheid van de resource wordt bepaald door de kwaliteit van de tekst.
+Om ervoor te zorgen dat potentiele eindgebruikers de datasets goed kunnen vinden is het belangrijk dat de tekst goede treftwoorden bevat.
 
 | Definitie      | Omschrijving      |
 | -------------- | ----------------- |
@@ -78,11 +70,6 @@ Een beschrijving de resource.
 | Bereik         | `xsd:string`      |
 | Kardinaliteit  | `1..1`            |
 | Gebruik        | Verplicht         |
-
-<p class="note" title="Note">
-De website van data.overheid.nl toont de beschrijvende tekst bij de desbetreffende resource en gebruikt deze voor het opbouwen van de zoekindex. Dit betekent dus dat de vindbaarheid van de resource wordt bepaald door de kwaliteit van de tekst.
-Tip: Zorg er dus voor dat in de tekst woorden voorkomen die potentiele eindgebruikers zullen gebruiken om de dataset te vinden.
-</p>
 
 ### title
 

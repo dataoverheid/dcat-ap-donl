@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <title>DCAT-AP-DONL_2.0</title>
@@ -42,6 +41,7 @@
         }
     </style>
 </head>
+
 
 <body>
 
@@ -118,38 +118,6 @@
             <li>4.7 Klasse Dataservice</li>
         </ul>
         <section data-format="markdown" data-include="eigenschappen\catalog.md"></section>
-    </section>
-
-    <section id="Catalogusrecord">
-        <h2>Catalogusrecord (<a
-                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"><code>dcat:Catalogusrecord</code></a>)
-        </h2>
-
-
-        <p> Een Catalogusrecord geeft informatie over de registratie van een dcat:Resource in een catalogus. Het bevat
-            de administratieve metadata van het dataportaal.</p>
-
-        <h3>Notities</h3>
-        <p class="note" title="Usage note">
-            Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen dataportalen kan het
-            voorkomen die metadata voldoen aan een specifieke toepassingsprofielen van DCAT. Op data.overheid.nl is het
-            streven erop gericht om te standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook
-            kunnen voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere, bijvoorbeeld het
-            Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data specificeren aan wel
-            toepassingsprofiel de metadata voldoet.
-        </p>
-
-        <p class="note" title="Toelichting">
-            Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is vooral bedoeld voor catalogi
-            die een onderscheid maken tussen de metadata over een dataset of dataservice en metadata over een voorkomen
-            van een dataset of dataservice in een catalogus. Eigenschap publicatiedatum van een dataset beschrijft
-            bijvoorbeeld de datum waarop de data-eigenaar de gegevens in eerste instantie heeft gepubliceerd, terwijl de
-            publicatiedatum van het catalogus record de datum beschrijft waarop de dataset is opgenomen in de catalogus.
-        </p>
-
-        <h3>Referenties</h3>
-
-        <section data-format="markdown" data-include="eigenschappen\catalogusrecord.md"></section>
     </section>
 
     <section id="Dataset">
@@ -276,8 +244,41 @@
     </section>
 
 
-    <section class="appendix" data-format="markdown" data-include="eigenschappen\afgevallen.md"></section>
-    <section class="appendix " data-format="markdown" data-include="begeleidende_teksten\referenties.md"></section>
+    <section class="appendix" id="Afgevallen">
+        <h2>Eigenschappen die niet worden overgenomen</h2>
+        <div data-format="markdown" data-include="eigenschappen\afgevallen.md"></div>
+    </section>
+
+    <section class="appendix" id="Catalogusrecord">
+        <h2>Catalogusrecord (<a
+                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog_Record"><code>dcat:Catalogusrecord</code></a>)
+        </h2>
+
+        <p> In DCAT-AP-DONL_2 wordt de klasse Catalogusrecord niet in gebruik genomen. Het onderstaande is een
+            omschrijving ervan en hoe deze eruit zou kunnen zien.
+
+            Een Catalogusrecord geeft informatie over de registratie van een dcat:Resource in een catalogus. Het bevat
+            de administratieve metadata van het dataportaal.</p>
+
+        <p class="note" title="Usage note">
+            Bij de uitwisseling van de metadata van datasets (of andere DCAT resources) tussen dataportalen kan het
+            voorkomen die metadata voldoen aan een specifieke toepassingsprofielen van DCAT. Op data.overheid.nl is het
+            streven erop gericht om te standaardiseren op DCAT-AP-DONL-2, maar dat neemt niet weg dat de metadata ook
+            kunnen voldoen aan de vorige versie van DCAT-AP-DONL (1.1), of aan een geheel andere, bijvoorbeeld het
+            Europese DCAT-AP. In het Catalogusrecord kan de aanbieder van de data specificeren aan wel
+            toepassingsprofiel de metadata voldoet.
+        </p>
+
+        <p class="note" title="Toelichting">
+            Deze klasse is optioneel en niet alle catalogi maken hiervan gebruik. Het is vooral bedoeld voor catalogi
+            die een onderscheid maken tussen de metadata over een dataset of dataservice en metadata over een voorkomen
+            van een dataset of dataservice in een catalogus. Eigenschap publicatiedatum van een dataset beschrijft
+            bijvoorbeeld de datum waarop de data-eigenaar de gegevens in eerste instantie heeft gepubliceerd, terwijl de
+            publicatiedatum van het catalogus record de datum beschrijft waarop de dataset is opgenomen in de catalogus.
+        </p>
+
+        <div data-format="markdown" data-include="eigenschappen\catalogusrecord.md"></div>
+    </section>
 </body>
 
 </html>

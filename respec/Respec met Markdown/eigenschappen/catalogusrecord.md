@@ -1,4 +1,4 @@
-## Attributen
+## Eigenschappen
 
 ### modified
 

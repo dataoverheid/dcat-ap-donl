@@ -1,7 +1,4 @@
-## Eigenschappen die niet worden overgenomen
-
 ## Resource
-
 ### type/genre
 
 Het type van de resource.

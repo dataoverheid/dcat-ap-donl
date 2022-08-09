@@ -46,7 +46,9 @@ Aan de hand van deze informatie kunnen eindgebruikers op data.overheid.nl contac
 
 De organisatie die verantwoordelijk is voor de beschreven resource.
 
-Als waarde kan hier worden geselecteerd uit de waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">donl_organization</a>. Deze bevat waarden van organisaties die afkomstig zijn uit <a href=" https://standaarden.overheid.nl/owms/terms/Overheidsorganisatie.html">OWMS</a>. De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
+Als waarde kan hier worden geselecteerd uit de waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">donl_organization</a>. Deze bevat waarden van organisaties die afkomstig zijn uit <a href=" https://standaarden.overheid.nl/owms/terms/Overheidsorganisatie.html">OWMS</a>.
+
+De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
 
 | Definitie      | Verantwoordelijke organisatie                                                                  |
 | -------------- | ---------------------------------------------------------------------------------------------- |
@@ -86,6 +88,8 @@ De naam van de beschreven resource. Op data.overheid.nl wordt deze naam geïndex
 
 De datum waarop de beschreven resource is gepubliceerd.
 
+Data.overheid.nl registreert hier de eerste (vroegste) publicatiedatum waarop de data-leveancier deze dataset, dataservice of catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de wijzigingsdatum van de dataset, dataservice of catalogus, omdat hiervoor de `update/modification` date bestaat.
+
 | Definitie      | Uitgiftedatum  |
 | -------------- | -------------- |
 | RDF Eigenschap | `dct:issued`   |
@@ -93,13 +97,11 @@ De datum waarop de beschreven resource is gepubliceerd.
 | Kardinaliteit  | `0..1`         |
 | Gebruik        | aanbevolen     |
 
-<p class="note" title="Note">
-Data.overheid.nl wil hier graag de eerste (vroegste) publicatiedatum registreren waarop de data-leveancier deze dataset, dataservice of catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de wijzigingsdatum van de dataset, dataservice of catalogus, omdat hiervoor de `update/modification` date bestaat.
-</p>
-
 ### update/modification date
 
 De datum waarop de beschreven resource is gewijzigd.
+
+Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of catalogus is gewijzigd. Nieuwe versies overschrijven de oude versies. Mogelijk in de toekomst (DCAT3) wordt een voorziening ingericht om meerdere (temporele) versies van de data te kunnen bewaren in het portaal.
 
 | Definitie      | Wijzigingsdatum |
 | -------------- | --------------- |
@@ -108,20 +110,19 @@ De datum waarop de beschreven resource is gewijzigd.
 | Kardinaliteit  | `0..1`          |
 | Gebruik        | aanbevolen      |
 
-<p class="note" title="Note">
-Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of catalogus is gewijzigd. Wanneer deze datum wijzigt, wordt automatisch de vorige wijzigingsdatum overschreven. Dat geldt even zo goed voor de data zelf. Nieuwe versies overschrijven de oude versies. Mogelijk in de toekomst (DCAT3) wordt een voorziening ingericht om meerdere (temporele) versies van de data te kunnen bewaren in het portaal.
-</p>
-
 ### language
 
-De natuurlijk taal van de tekstuele metadata die de resource beschrijft.
+De natuurlijk taal van de data in de resource.
 
-| Definitie      | Taal                                                                          |
-| -------------- | ----------------------------------------------------------------------------- |
-| RDF Eigenschap | `dct:language`                                                                |
-| Bereik         | `donl:Language`, zie https://waardelijsten.dcat-ap-donl.nl/donl_language.json |
-| Kardinaliteit  | `1..1`                                                                        |
-| Gebruik        | Verplicht                                                                     |
+
+| Definitie      | Taal                                                                                   |
+| -------------- | -------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:language`                                                                         |
+| Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json">`donl:Language`</a> |
+| Kardinaliteit  | `1..1`                                                                                 |
+| Gebruik        | Verplicht                                                                              |
+
+Zie ook <a href="#language-0">**language**</a> in distributie.    
 
 <div class="issue" data-number="11"></div>
 
@@ -132,22 +133,24 @@ Er is een verschil in definitie van dct:language (voor dataset en dataservice) t
 
 ### publisher
 
-De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource.
+De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource. Zie ook eigenschap `creator` en `contact point`.
 
-| Definitie      | Verstrekker                                                                           |
-| -------------- | ------------------------------------------------------------------------------------- |
-| RDF Eigenschap | `dct:publisher`                                                                       |
-| Bereik         | `donl:Organization`, zie https://waardelijsten.dcat-ap-donl.nl/donl_organization.json |
-| Kardinaliteit  | `1..1`                                                                                |
-| Gebruik        | Verplicht                                                                             |
+| Definitie      | Verstrekker                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:publisher`                                                                                |
+| Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">`donl_organization`</a> |
+| Kardinaliteit  | `1..1`                                                                                         |
+| Gebruik        | Verplicht                                                                                      |
 
-<p class="note" title="Note">
-Zie ook eigenschap `resource creator` en `contact point`.
-</p>
+<div class="issue" data-number="23"></div>
 
 ### identifier
 
 De resource volgens de eigenaar van de data. Dit is bij voorkeur een URI.
+Hier wordt de oorspronkelijke identificatie van de resource (dataset, dataservice of catalogus) genomen zoals de data-eigenaar deze gepubliceerd heeft.
+
+Afgezien van deze identifier kan de betreffende dataset, dataservice of catalogus - in de loop van de tijd - ook andere identifiers krijgen. Deze worden overgenomen in `adms:identifier`. Een resource kan meerdere voorkomens van `adms:identifier` hebben.
+De EU heeft een <a href="https://github.com/SEMICeu/DCAT-AP/blob/2.x.y-draft/releases/2.x.y/usageguide-identifiers.md"> gebruikshandleiding voor identifiers</a>.
 
 | Definitie      | Permalink        |
 | -------------- | ---------------- |
@@ -155,10 +158,6 @@ De resource volgens de eigenaar van de data. Dit is bij voorkeur een URI.
 | Bereik         | `xsd:string`     |
 | Kardinaliteit  | `1..1`           |
 | Gebruik        | Verplicht        |
-
-<p class="note" title="Note">
-Data.overheid.nl neemt hier de oorspronkelijke identificatie van de resource (dataset, dataservice of catalogus) over van de data-eigenaar. Afgezien van deze identifier kan de betreffende dataset, dataservice of catalogus - in de loop van de tijd - ook andere identifiers hebben gekregen. Deze worden overgenomen in een andere eigenschap, namelijk adms:identifier. Een resource kan ook meerdere voorkomens van adms:identifier hebben.
-</p>
 
 ### theme/category
 

@@ -71,24 +71,18 @@ Als de gegevens automatisch kort na elkaar worden aangepast hoeft deze waarde ni
 
 ### language
 
-De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze eigenschap herhaald zodat alle talen genoemd worden.
+De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze als nieuwe distributie aangeboden. Deze moeten overeenkomen met de benoemde talen in de bovenliggende dataset.
 
-| Definitie      | Taal                                                                          |
-| -------------- | ----------------------------------------------------------------------------- |
-| RDF Eigenschap | `dct:language`                                                                |
-| Bereik         | `donl:Language`, zie https://waardelijsten.dcat-ap-donl.nl/donl_language.json |
-| Kardinaliteit  | `0..*`                                                                        |
-| Gebruik        | Optioneel                                                                     |
+| Definitie      | Taal                                                                                   |
+| -------------- | -------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:language`                                                                         |
+| Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json">`donl:Language`</a> |
+| Kardinaliteit  | `0..*`                                                                                 |
+| Gebruik        | Optioneel                                                                              |
+
+Zie ook <a href="#language">**language**</a> in resource.   
 
 <div class="issue" data-number="11"></div>
-
-<p class="note" title="Note">
-Er is een verschil in definitie van dct:language (voor dataset en dataservice) tussen de specificaties volgens W3C en DCAT-AP-EU. Volgens W3C: A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution. Volgens DCAT-AP-EU This property refers to a language of the Dataset.
-</p>
-
-<p class="note" title="Note">
-Als in de Distributie meerdere talen zijn opgenomen, komt deze waarde meerdere keren voor totdat alle talen zijn opgesomd.
-</p>
 
 ### license
 

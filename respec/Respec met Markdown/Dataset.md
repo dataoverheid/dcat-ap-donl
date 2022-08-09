@@ -42,10 +42,6 @@ Het geografische gebied waarop de gegevens in de dataset betrekking hebben.
 | Kardinaliteit  | `0..*`                                    |
 | Gebruik        | Optioneel                                 |
 
-<p class="note" title="Note">
-dct:Location is een vrij ruim bereik. We moeten uitzoeken hoe we deze behapbaar kunnen maken. Zie Issue #3
-</p>
-
 <div class="issue" data-number="3"></div>
 
 ### temporal coverage

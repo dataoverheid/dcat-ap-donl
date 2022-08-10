@@ -33,6 +33,7 @@ De waardelijst voor frequentie is overgenomen van het Publicatiebureau van de EU
 ### spatial/geographical coverage
 
 Het geografische gebied waarop de gegevens in de dataset betrekking hebben.
+Het veld kan worden gevuld met coördinaten van een gebied of met de benaming ervan. Data.overheid raadt aan om deze eigenschap te vullen met benamingen d.m.v. <a href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten">OWMS waardelijsten</a> zoals <a href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.gemeente">gemeentes</a>, <a href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.provincie">provincies</a>, <a href="https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel.html">koninkrijksdeel</a> of <a href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap">waterschappen</a>. Om een specifieke locatie aan te geven kan <a href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer">postcode en huisnummer</a>  worden gebruikt. Waar dit allen niet toereikend is kan <a href="https://www.geonames.org/">Geonames</a> worden gebruikt. 
 
 | Definitie      | Locatie                                   |
 | -------------- | ----------------------------------------- |

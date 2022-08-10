@@ -4,7 +4,7 @@
 
 Met deze eigenschap wordt het openbaarheidsniveau van de resource aangegeven. In <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a> werd de waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json">openbaarheidsniveau</a> gebruikt en <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a> schrijft de volgende <a href="http://publications.europa.eu/resource/authority/access-right">waardelijst</a> voor.
 
-In de EU waardelijst blijven `Publiek` en `Niet Publiek` dezelfde functie houden, maar om iets dieper op de reden voor `Beperkt` op te gaan zijn daar speciale waarden voor geintroduceerd. Bij data.overheid.nl is er met ditzelfde idee de volgende waardelijst gecreëerd: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/access-rights.ttl">`donl:Openbaarheidsniveau`</a>. In de omschrijvingen van de waardes zijn mappings te vinden naar de EU waardelijst zodat deze goed overgenomen worden.
+In de EU waardelijst blijven `Publiek` en `Niet Publiek` dezelfde functie houden, maar om iets dieper op de reden voor `Beperkt` in te gaan zijn daar speciale waarden voor geintroduceerd. Bij data.overheid.nl is er met ditzelfde idee de volgende waardelijst gecreëerd: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/access-rights.ttl">`donl:Openbaarheidsniveau`</a>. In de omschrijvingen van de waardes zijn mappings te vinden naar de EU waardelijst zodat deze goed verder opgepakt kunnen worden.
 
 | Definitie      | Toegang                                                                                                                    |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -187,7 +187,7 @@ Vrije keywords of termen die de resource beschrijven.
 | Definitie      | Trefwoord      |
 | -------------- | -------------- |
 | RDF Eigenschap | `dcat:keyword` |
-| Bereik         | `xsd:string`   |
+| Bereik         | `rdfs:Literal`   |
 | Kardinaliteit  | `0..*`         |
 | Gebruik        | Aanbevolen     |
 

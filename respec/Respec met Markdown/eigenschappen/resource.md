@@ -44,11 +44,9 @@ Aan de hand van deze informatie kunnen eindgebruikers op data.overheid.nl contac
 
 ### creator
 
-De organisatie die verantwoordelijk is voor de beschreven resource.
+De organisatie die verantwoordelijk is voor het creëren van de beschreven resource. Zie eigenschappen <a href="#publisher">publisher</a> en <a href="#qualified-attribution">qualified attribution</a> voor andere rollen.
 
-Als waarde kan hier worden geselecteerd uit de waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">donl_organization</a>. Deze bevat waarden van organisaties die afkomstig zijn uit <a href=" https://standaarden.overheid.nl/owms/terms/Overheidsorganisatie.html">OWMS</a>.
-
-De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
+De waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">`donl_organization`</a> is een verrijkking van <a href="https://standaarden.overheid.nl/owms/terms/Organisatie">`overheid:Organisatie`</a>. De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
 
 | Definitie      | Verantwoordelijke organisatie                                                                  |
 | -------------- | ---------------------------------------------------------------------------------------------- |
@@ -133,7 +131,9 @@ Er is een verschil in definitie van dct:language (voor dataset en dataservice) t
 
 ### publisher
 
-De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource. Zie ook eigenschap `creator` en `contact point`.
+De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource. Zie eigenschappen <a href="#creator">creator</a> en <a href="#qualified-attribution">qualified attribution</a> voor andere rollen.
+
+De waardelijst <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">`donl_organization`</a> is een verrijkking van <a href="https://standaarden.overheid.nl/owms/terms/Organisatie">`overheid:Organisatie`</a>. De OWMS-waardelijsten zullen op korte termijn worden vervangen door TOOI-waardelijsten. Dit betekent o.a. dat de identificatie van de organisaties zullen veranderen. Organisaties kunnen voorlopig de oude OWMS waarden blijven gebruiken, omdat ze door de software van DONL zullen worden overgezet naar de waarden uit de TOOI-waardelijst.
 
 | Definitie      | Verstrekker                                                                                    |
 | -------------- | ---------------------------------------------------------------------------------------------- |
@@ -187,7 +187,7 @@ Vrije keywords of termen die de resource beschrijven.
 | Definitie      | Trefwoord      |
 | -------------- | -------------- |
 | RDF Eigenschap | `dcat:keyword` |
-| Bereik         | `rdfs:Literal`   |
+| Bereik         | `rdfs:Literal` |
 | Kardinaliteit  | `0..*`         |
 | Gebruik        | Aanbevolen     |
 
@@ -213,14 +213,18 @@ De webpagina die toegang geeft tot de resource (dataset, dataservice of catalogu
 
 ### qualified attribution 
 
-Een persoon of organisatie, anders dan contact point, resource creator of publisher die ook een verantwoordelijkheid draagt voor de resource.
+Een persoon of organisatie, anders dan de resource <a href="#creator">creator</a> of <a href="#publisher">publisher</a> die ook een verantwoordelijkheid draagt voor de resource.
 
-| Definitie      | Overige verantwoordelijken  |
-| -------------- | --------------------------- |
-| RDF Eigenschap | `prov:qualifiedAttribution` |
-| Bereik         | `prov:Attribution`          |
-| Kardinaliteit  | `0..*`                      |
-| Gebruik        | Optioneel                   |
+In het bereik <a href="https://www.w3.org/TR/prov-o/#Attribution">`prov:Attribution`</a> wordt in de eigenschap `prov:hadRole` de rol van de organisatie benoemd. Hier kan worden gekozen uit de ISO waardelijst <a href="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml">CI_RoleCode</a>.
+
+In `prov:agent` wordt de naam van de organisatie opgenomen. Omdat dit niet altijd overheidsorganisaties zullen zijn hoeft deze waarde niet uit <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">`donl_organization`</a> te komen. 
+
+| Definitie      | Overige verantwoordelijken                                                 |
+| -------------- | -------------------------------------------------------------------------- |
+| RDF Eigenschap | `prov:qualifiedAttribution`                                                |
+| Bereik         | <a href="https://www.w3.org/TR/prov-o/#Attribution">`prov:Attribution`</a> |
+| Kardinaliteit  | `0..*`                                                                     |
+| Gebruik        | Optioneel                                                                  |
 
 <aside class="example" title="Voorbeeld">
   <p>
@@ -237,21 +241,24 @@ Een persoon of organisatie, anders dan contact point, resource creator of pu
 
 Het juridische document dat de gebruiksrechten van de resource beschrijft.
 
-| Definitie      | Licentie                                                                                                                                                                |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RDF Eigenschap | `dct:license`                                                                                                                                                           |
-| Bereik         | `donl:License`, zie https://waardelijsten.dcat-ap-donl.nl/donl_license.json. De lijst is samengesteld uit waarden die zijn overgenomen van creativecommons.org en OWMS. |
-| Kardinaliteit  | `1..1`                                                                                                                                                                  |
-| Gebruik        | Verplicht                                                                                                                                                               |
-
-<p class="note" title="Note">
-Deze eigenschap is geen onderdeel van DCAT-AP-EU.
 Omdat de OWMS-waardelijsten op korte termijn worden vervangen door TOOI, zal ook de waardelijst met licenties gaan wijzigen. We streven ernaar op de nieuwe lijst backwards compatible te houden met de oude lijst. Dat betekent dat een aangeleverde oude waarde automatisch wordt omgezet naar de nieuwe waarde.
-</p>
+
+Omdat er beiden aan datasets en distributies licenties meegegeven kunnen worden is het mogelijk dat er conflicten ontstaan in 
+
+| Definitie      | Licentie                                                                                                                                        |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| RDF Eigenschap | `dct:license`                                                                                                                                   |
+| Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_license.json">`donl:License`</a>, samengesteld uit waarden van creativecommons.org en OWMS. |
+| Kardinaliteit  | `1..1`                                                                                                                                          |
+| Gebruik        | Verplicht                                                                                                                                       |
+
+<div class="issue" data-number="22"></div>
 
 ### is referenced by
 
 Externe publicaties, bijvoorbeeld een artikel dat verwijst naar onderhavige resource (dataset).
+
+Deze eigenschap kan worden geïnterpreteerd als de terugverwijzing (inverse relatie) naar de resource (buiten het dataplatform) dat naar de dataset, dataservice of catalogus verwijst.
 
 | Definitie      | Verwezen door        |
 | -------------- | -------------------- |
@@ -260,13 +267,11 @@ Externe publicaties, bijvoorbeeld een artikel dat verwijst naar onderhavige reso
 | Kardinaliteit  | `0..*`               |
 | Gebruik        | Optioneel            |
 
-<p class="note" title="Note">
-Deze eigenschap kan worden geïnterpreteerd als de terugverwijzing (inverse relatie) naar de resource (buiten het dataplatform) dat naar de dataset, dataservice of catalogus verwijst.
-</p>
-
 ### other identifier
 
-De verplichte eigenschap `dct:identifier` bevat de unieke identificatie van de dataset die de data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset.
+De verplichte eigenschap <a href="#identifier">identifier</a> bevat de unieke identificatie van de dataset die de data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset zoals gegeven door catalogi als data.overheid.nl.
+
+In de `adms:identifier` wordt de identifier benoemd in `skos:notation` en de uitgever van de identifier in `dct:creator`. De EU heeft een <a href="https://github.com/SEMICeu/DCAT-AP/blob/2.x.y-draft/releases/2.x.y/usageguide-identifiers.md"> gebruikshandleiding voor identifiers</a>.
 
 | Definitie      | Andere identificatie |
 | -------------- | -------------------- |
@@ -274,10 +279,6 @@ De verplichte eigenschap `dct:identifier` bevat de unieke identificatie van de d
 | Bereik         | `rdfs:Literal`       |
 | Kardinaliteit  | `0..*`               |
 | Gebruik        | Optioneel            |
-
-<p class="note" title="Note">
-Een voorbeeld van een alternatieve identificatie is de URI die de dataset krijgt zodra deze wordt opgenomen in de catalogus op data.overheid.nl.
-</p>
 
 ### resource status
 
@@ -300,6 +301,8 @@ De overige gebruiksrechten die niet worden gedekt met dct:license of dct:acce
 | Bereik         | `xsd:string` |
 | Kardinaliteit  | `0..1`       |
 | Gebruik        | Optioneel    |
+
+<div class="issue" data-number="22"></div>
 
 ### legal foundation
 

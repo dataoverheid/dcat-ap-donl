@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>DCAT-AP-DONL_2.0</title>
@@ -62,9 +63,8 @@
                 href="#dataservice">`dataservice `</a> worden veel dezelfde eigenschappen gebruikt.
             Om niet al deze eigenschappen voor elke klasse opnieuw te hoeven definieren is de superklasse <a
                 href="#resource">`resource`</a> geintroduceerd.
-            Dat betekend dat men niet een alleenstaand object van het type `dcat:resource` kan maken, maar dat deze
-            altijd een onderdeel is van de
-            boven genoemde dcat klasses.
+            Dat betekend dat men een alleenstaande `dcat:resource` niet mogelijk is, maar dat deze
+            altijd een onderdeel is van de boven genoemde dcat klasses.
 
             Deze superklasse maakt het in de toekomst makkeljker om het informatiemodel van DCAT uit te breiden met
             nieuwe resources.
@@ -91,31 +91,24 @@
                 href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>.
             Waar een catalogus een verzameling van verwijzingen is, gaat de <a
                 href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a>
-            alleen over een verzameling van verwijzingen naar dcat:datasets (of de andere dcat klasses
-            dcat:catalogusrecord, dcat:distributie, dcat: dataservice of zelfs een andere dcat:catalog.)
-            Het algemene type catalogus kan worden omschreven in DCAT als dcat:dataset.</p>
-
-        <p>Een catalogus beschrijft een collectie van (metadata van) DCAT resources, bestaande uit datasets,
-            dataservices en/of catalogi.
-            Een catalogus zelf is dus ook een resource die onderdeel kan zijn van een catalogus. Een catalogus bestaat
-            dus uit beschrijvingen van resources.
-            De feitelijke data - dus de datasets zelf - zijn niet opgenomen in de catalogus; hiernaar wordt verwezen
-            vanuit de distributie van de dataset of kunnen worden benaderd via een dataservice.</p>
+            alleen over een verzameling van verwijzingen naar <a href="#dataset">`dcat:datasets`</a> (of de andere dcat
+            klasses
+            <a href="#catalogusrecord">`dcat:catalogusrecord`</a>, <a href="#distributie">`dcat:distributie`</a>, <a
+                href="#dataservice">`dcat:dataservice`</a> of zelfs een andere  <a href="#catalog">`dcat:catalog`</a>.)
+            Het algemene type catalogus kan worden omschreven in DCAT als <a href="#dataset">`dcat:dataset`</a>.
+        </p>
 
         <h3>Notities</h3>
         <p class="note" title="Usage note">
             A Web-based data catalog is typically represented as a single instance of this class.
         </p>
 
-        <p class="note" title="Toelichting">
-            Datasets and dataservices zijn voorbeelden van resources in de context van een data catalogus.
-        </p>
-
         <h3>Referenties</h3>
         <ul>
-            <li>4.5 Klasse Catalogusrecord</li>
-            <li>4.6 Klasse Dataset</li>
-            <li>4.7 Klasse Dataservice</li>
+            <li><a href="#dataset">`dcat:dataset`</a></li>
+            <li><a href="#dataservice">`dcat:dataservice`</a></li>
+            <li><a href="#distributie">`dcat:distributie`</a></li>
+            <li><a href="#catalogusrecord">`dcat:catalogusrecord`</a></li>
         </ul>
         <section data-format="markdown" data-include="eigenschappen\catalog.md"></section>
     </section>

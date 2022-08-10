@@ -1,5 +1,32 @@
 ## Eigenschappen
 
+| **Eigenschap**                                                       | Herkomst | Gebruik   |
+| -------------------------------------------------------------------- | -------- | --------- |
+| <a href="#access-rights">**access-rights**</a>                       | Resource |           |
+| <a href="#conforms-to">**conforms to**</a>                           | Resource |           |
+| <a href="#contact-point">**contact point**</a>                       | Resource |           |
+| <a href="#creator">**creator**</a>                                   | Resource |           |
+| <a href="#description">**description**</a>                           | Resource | Verplicht |
+| <a href="#title">**title** </a>                                      | Resource | Verplicht |
+| <a href="#release-date">**release date**                             | Resource |           |
+| <a href="#update-modification-date">**update/modification date**</a> | Resource |           |
+| <a href="#language">**language**  </a>                               | Resource |           |
+| <a href="#publisher">**publisher**    </a>                           | Resource |           |
+| <a href="#identifier">**identifier** </a>                            | Resource |           |
+| <a href="#theme-category">**theme/category** </a>                    | Resource |           |
+| <a href="#keyword-tag">**keyword/tag**</a>                           | Resource |           |
+| <a href="#landing-page">**landing page**</a>                         | Resource |           |
+| <a href="#qualified-attribution">**qualified attribution**</a>       | Resource |           |
+| <a href="#license">**license** </a>                                  | Resource |           |
+| <a href="#is-referenced-by">**is referenced by**</a>                 | Resource |           |
+| <a href="#other-identifier">**other identifier**</a>                 | Resource |           |
+| <a href="#resource-status">**resource status**</a>                   | Resource |           |
+| <a href="#rights">**rights**</a>                                     | Resource |           |
+| <a href="#legal-foundation">**legal foundation**</a>                 | Resource |           |
+| <a href="#resource-classification">**resource classification**</a>   | Resource |           |
+| <a href="#source-catalog">**source catalog** </a>                    | Resource |           |
+
+
 ### distribution
 
 De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in de dataset toegankelijk wordt gemaakt.

@@ -1,5 +1,28 @@
 ## Eigenschappen
 
+| **Eigenschap**                                          | Herkomst    | Gebruik   |
+| ------------------------------------------------------- | ----------- | --------- |
+| <a href="#title">**title** </a>                         | Distributie | Verplicht |
+| <a href="#description-0">**description** </a>           | Distributie | Verplicht |
+| <a href="#issued">**issued** </a>                       | Distributie |           |
+| <a href="#modified">**modified** </a>                   | Distributie |           |
+| <a href="#language-0">**language** </a>                 | Distributie |           |
+| <a href="#license-0">**license** </a>                   | Distributie |           |
+| <a href="#accessrights">**accessRights** </a>           | Distributie |           |
+| <a href="#rights-0">**rights** </a>                     | Distributie |           |
+| <a href="#haspolicy">**hasPolicy** </a>                 | Distributie |           |
+| <a href="#accessurl">**accessURL** </a>                 | Distributie |           |
+| <a href="#accessservice">**accessService** </a>         | Distributie |           |
+| <a href="#downloadurl">**downloadURL** </a>             | Distributie |           |
+| <a href="#bytesize">**byteSize** </a>                   | Distributie |           |
+| <a href="#conformsto">**conformsTo** </a>               | Distributie |           |
+| <a href="#mediatype">**mediaType** </a>                 | Distributie |           |
+| <a href="#format">**format** </a>                       | Distributie |           |
+| <a href="#checksum">**checksum** </a>                   | Distributie |           |
+| <a href="#documentation">**documentation** </a>         | Distributie |           |
+| <a href="#status">**status** </a>                       | Distributie |           |
+| <a href="#distribution-type">**distribution type** </a> | Distributie |           |
+
 ### title
 
 De titel van de distributie.

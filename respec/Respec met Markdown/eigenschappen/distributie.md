@@ -15,6 +15,8 @@ De titel van de distributie.
 	De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze zorgvuldig. Voor iedere taal kan één aparte titel worden opgenomen per taal die wordt aangeduid door een "language tag" achter de literal. Merk op dat er in dct:language een waarde moet voorkomen voor elke taal.
 </p>
 
+Zie ook <a href="#title-0">title</a> in <a href="#resource">resource</a>.
+
 ### description
 
 Een beschrijving van de distributie in aanvulling op de titel, waarmee eindgebruikers een goed beeld krijgen welke gegevens in de Distributie aanwezig zijn.
@@ -34,6 +36,8 @@ Een beschrijving van de distributie in aanvulling op de titel, waarmee eindgebru
 Voor overige informatie over de Distributie is de eigenschap Documentation beschikbaar, waarin naar aanvullende webpagina's verwezen wordt.
 </p>
 
+Zie ook <a href="#description">description</a> in <a href="#resource">resource</a>.
+
 ### issued
 
 De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubliceerd.
@@ -49,6 +53,8 @@ De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubl
 Als tijd niet bekend is, kan hier de tijd 0:00 worden ingevuld.
 Als er geen tijdzone wordt opgegeven, gaat DONL uit van de Nederlandse tijd.
 </p>
+
+Zie ook <a href="#release-date">release-date</a> in <a href="#resource">resource</a>.
 
 ### modified
 
@@ -69,6 +75,8 @@ Bij de eerstvolgende wijziging wordt de oude wijzigingsdatum overschreven.
 Als de gegevens automatisch kort na elkaar worden aangepast hoeft deze waarde niet telkens gewijzigd te worden. Gebruikers kunnen dan uitgaan van de waarde van dcterms:accrualPeriodicity.
 </p>
 
+Zie ook <a href="#update-modification-date">update-modification-date</a> in <a href="#resource">resource</a>.
+
 ### language
 
 De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze als nieuwe distributie aangeboden. Deze moeten overeenkomen met de benoemde talen in de bovenliggende dataset.
@@ -80,7 +88,7 @@ De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voo
 | Kardinaliteit  | `0..*`                                                                                 |
 | Gebruik        | Optioneel                                                                              |
 
-Zie ook <a href="#language">**language**</a> in resource.   
+Zie ook <a href="#language">language</a> in <a href="#resource">resource</a>.   
 
 <div class="issue" data-number="11"></div>
 
@@ -107,6 +115,8 @@ Als de gegevens in de distribution niet open zijn, moet worden gekozen voor de w
 Er kunnen ook licentiegegevens op het niveau van de dataset worden vastgelegd. Die mogen niet in tegenspraak zijn met de licenties van de Distributies.
 </p>
 
+Zie ook <a href="#license">license</a> in <a href="#resource">resource</a>.   
+
 ### accessRights
 
 De toegangsrechten tot de distributie.
@@ -127,6 +137,8 @@ Omdat binnen de Nederlandse overheid en Europa de toegangsrechten slechts in bep
 Net als bij de properties dct:license en dct:rights kan ook de Dataset van de Distributie access rights vastleggen, die niet in tegenspraak mogen zijn met die van de Distributies.
 </p>
 
+Zie ook <a href="#access-rights">access-rights</a> in <a href="#resource">resource</a>.  
+
 <div class="issue" data-number="6"></div>
 
 ### rights
@@ -139,6 +151,8 @@ De overige gebruiksrechten die niet worden gedekt met dct:license of dct:acce
 | Bereik         | `xsd:string` |
 | Kardinaliteit  | `0..1`       |
 | Gebruik        | Optioneel    |
+
+Zie ook <a href="#rights">rights</a> in <a href="#resource">resource</a>.  
 
 ### hasPolicy
 
@@ -154,6 +168,8 @@ Deze eigenschap biedt de aanbieders van data de mogelijkheid om op een gestructu
 <p class="note" title="Editor's note">
     Tot hier komen de velden uit Resource
 </p>
+
+hasPolicy komt voor in <a href="#resource">resource</a>, maar wordt niet gebruikt in DCAT-AP-DONL_2.  
 
 <p class="note" title="Note">
 Deze eigenschap is onderwerp van een uitbreidingen voor data.overheid.nl die nog verder moet worden uitgewerkt.
@@ -239,6 +255,8 @@ Een vastgestelde standaard waaraan de data in de distributie voldoet. Deze prope
 <p class="note" title="Note">
 	Merk op dat het technisch formaat van de gegevens of het media type elders worden vastgelegd.
 </p>
+
+Zie ook <a href="#conforms-to">conforms-to</a> in <a href="#resource">resource</a>.
 
 ### mediaType
 

@@ -243,7 +243,7 @@ Het juridische document dat de gebruiksrechten van de resource beschrijft.
 
 Omdat de OWMS-waardelijsten op korte termijn worden vervangen door TOOI, zal ook de waardelijst met licenties gaan wijzigen. We streven ernaar op de nieuwe lijst backwards compatible te houden met de oude lijst. Dat betekent dat een aangeleverde oude waarde automatisch wordt omgezet naar de nieuwe waarde.
 
-Omdat er beiden aan datasets en distributies licenties meegegeven kunnen worden is het mogelijk dat er conflicten ontstaan in 
+Omdat er beiden aan datasets en distributies licenties meegegeven kunnen worden is het mogelijk dat er conflicten ontstaan.
 
 | Definitie      | Licentie                                                                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -293,7 +293,7 @@ Informatie over de beschikbaarheid van de dataset.
 
 ### rights
 
-De overige gebruiksrechten die niet worden gedekt met dct:license of dct:accessRights, zoals de copyright statements.
+De overige gebruiksrechten die niet worden gedekt met dct:license of dct:accessRights, zoals de copyright statements. Omdat er beiden aan datasets en distributies right meegegeven kunnen worden is het mogelijk dat er conflicten ontstaan.
 
 | Definitie      | Rechten      |
 | -------------- | ------------ |

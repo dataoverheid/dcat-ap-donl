@@ -88,7 +88,7 @@ De naam van de beschreven resource. Op data.overheid.nl wordt deze naam geïndex
 
 De datum waarop de beschreven resource is gepubliceerd.
 
-Data.overheid.nl registreert hier de eerste (vroegste) publicatiedatum waarop de data-leveancier deze dataset, dataservice of catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de wijzigingsdatum van de dataset, dataservice of catalogus, omdat hiervoor de `update/modification` date bestaat.
+Data.overheid.nl registreert hier de eerste (vroegste) publicatiedatum waarop de data-leveancier deze dataset, dataservice of catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de `update/modification date` eigenschap.
 
 | Definitie      | Uitgiftedatum  |
 | -------------- | -------------- |

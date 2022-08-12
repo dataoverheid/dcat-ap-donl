@@ -34,7 +34,11 @@ De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van a
 
 ### homepage
 
-De homepage van de catalogus.  
+De homepage van de catalogus.
+
+Een catalogus kan op meerdere dataportals worden gepubliceerd. Deze eigenschap verwijst naar de originele homepage. Dat is in de regel de homepage van de maker van de catalogus.
+
+Let op, dit is dus iets anders dan <a href="#landing-page">landing page</a>.
 
 | Definitie      | Homepage                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------- |
@@ -43,14 +47,13 @@ De homepage van de catalogus.
 | Kardinaliteit  | `1..1`                                                                                      |
 | Gebruik        | Verplicht                                                                                   |
 
-<p class="note" title="Note">
-Een catalogus kan op meerdere dataportals worden gepubliceerd. Deze eigenschap verwijst naar de originele homepage. Dat is in de regel de homepage van de maker van de catalogus. Let op, dit is dus iets anders dan resource - landing page. TODO: link naar resource - landing page
-</p>
-
-
 ### dataset
 
 De (metadata van de) dataset(s) die is/zijn opgenomen in de catalogus.
+
+Het lijkt logisch dat een catalogus tenminste één dataset bevat, omdat een catalogus op zich niet zo interessant is. Desondanks geven we hier de cardinaliteit 0..*, omdat een catalogus ook als resource in een andere catalogus kan voorkomen zonder verdere inhoud. In dat geval verwijst de catalogus door naar de homepage op een ander dataportaal die de inhoud wel toont.
+
+Zie ook de discussie op https://github.com/SEMICeu/DCAT-AP/issues/180  
 
 | Definitie      | Gegevensverzameling                                                                       |
 | -------------- | ----------------------------------------------------------------------------------------- |
@@ -59,16 +62,12 @@ De (metadata van de) dataset(s) die is/zijn opgenomen in de catalogus.
 | Kardinaliteit  | `0..*`                                                                                    |
 | Gebruik        | Aanbevolen                                                                                |
 
-<p class="note" title="Note">
-Het lijkt logisch dat een catalogus tenminste één dataset bevat, omdat een catalogus op zich niet zo interessant is. Desondanks geven we hier de cardinaliteit 0..*, omdat een catalogus ook als resource in een andere catalogus kan voorkomen zonder verdere inhoud. In dat geval verwijst de catalogus door naar de homepage op een ander dataportaal die de inhoud wel toont.
-    
-Zie de discussie op https://github.com/SEMICeu/DCAT-AP/issues/180    
-</p>
-
-
 ### service  
 
 De (metadata van de) dataservice die voorkomt in de catalogus.
+
+Dataservice is een nieuwe resource in DCAT2. Om de metadata van dataservices te kunnen uitwisselen krijgt data.overheid.nl een nieuwe API voorziening.
+Zie: https://github.com/w3c/dxwg/issues/1431
 
 | Definitie      | Dienst                                                                                    |
 | -------------- | ----------------------------------------------------------------------------------------- |
@@ -76,12 +75,6 @@ De (metadata van de) dataservice die voorkomt in de catalogus.
 | Bereik         | `dcat:DataService`                                                                        |
 | Kardinaliteit  | `0..*`                                                                                    |
 | Gebruik        | Aanbevolen                                                                                |
-
-<p class="note" title="Note">
-Dataservice is een nieuwe resource in DCAT2. Om de metadata van dataservices te kunnen uitwisselen krijgt data.overheid.nl een nieuwe API voorziening.
-Zie: https://github.com/w3c/dxwg/issues/1431
-</p>
-
 
 ### catalog
 
@@ -94,9 +87,6 @@ De (metadata van de) catalogus die voorkomt in de catalogus. Deze eigenschap maa
 | Kardinaliteit  | `0..*`                                                                            |
 | Gebruik        | Aanbevolen                                                                        |
 
-<p class="note" title="Note">
-Vraag: Op dit moment is het op data.overheid.nl al mogelijk om catalogi op te nemen in een catalogus, maar worden deze catalogi geregistreerd als dataset. In DCAT2 is een catalogus, net als een dataset en dataservice, gemodelleerd als aparte resource. Hoe willen we hiermee omgaan?
-</p>
 
 
 

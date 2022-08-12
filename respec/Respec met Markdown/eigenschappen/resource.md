@@ -273,12 +273,16 @@ De verplichte eigenschap <a href="#identifier">identifier</a> bevat de unieke id
 
 In de `adms:identifier` wordt de identifier benoemd in `skos:notation` en de uitgever van de identifier in `dct:creator`. De EU heeft een <a href="https://github.com/SEMICeu/DCAT-AP/blob/2.x.y-draft/releases/2.x.y/usageguide-identifiers.md"> gebruikshandleiding voor identifiers</a>.
 
+Let op, een resource wordt na het aanmaken niet aangepast door anderen met deze other identifier als utizondering. Een other identifier kan worden toegevoegd als verreiking van de dcat informatie.
+
 | Definitie      | Andere identificatie |
 | -------------- | -------------------- |
 | RDF Eigenschap | `adms:identifier`    |
 | Bereik         | `rdfs:Literal`       |
 | Kardinaliteit  | `0..*`               |
 | Gebruik        | Optioneel            |
+
+<div class="issue" data-number="24"></div>
 
 ### resource status
 

@@ -347,6 +347,19 @@ Zie <a href="http://publications.europa.eu/resource/authority/planned-availabili
 
 ## Dataservice
 
-<p class="note" title="Leeg">
-Van Dataservice valt niets af
-</p>
+### hasPolicy
+
+Deze eigenschap biedt de aanbieders van data de mogelijkheid om op een gestructureerde manier (complexe) voorwaarden toe te kennen waaronder afnemers de data in de distributie mogen gebruiken. een instantie van de ODRL klasse.
+
+Deze eigenschap is onderwerp van een uitbreidingen voor data.overheid.nl die nog verder moet worden uitgewerkt.
+
+| Definitie      | Toegangsbeleid   |
+| -------------- | ---------------- |
+| RDF Eigenschap | `odrl:hasPolicy` |
+| Bereik         | `odrl:Policy`    |
+| Kardinaliteit  | `0..1`           |
+| Gebruik        | Optioneel        |
+
+hasPolicy komt voor in <a href="#resource">resource</a>, maar wordt niet gebruikt in DCAT-AP-DONL_2.  
+
+<div class="issue" data-number="7"></div>

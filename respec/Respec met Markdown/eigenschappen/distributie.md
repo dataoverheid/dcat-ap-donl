@@ -225,14 +225,14 @@ Zie ook <a href="#conforms-to">conforms-to</a> in <a href="#resource">resource</
 
 Informatie over de bestandsindeling (of MIME type) van de distributie, volgens de indeling van IANA [IANA-MEDIA-TYPES].
 
-Het kiezen van een media-type uit de lijst heeft de voorkeur boven het kiezen van een eigen waarde met behulp van dct:format. De waardelijst is zeer lang en behoorlijk volledig.
+Let op: DCAT-AP van de EU beveelt aan <a href="#format">format</a> te gebruiken. De W3C beveelt aan <a href="#mediatype">mediaType</a> te gebruiken. Waar mogelijk raden wij aan beiden in te vullen.
 
 | Definitie      | Applicatie type                                                                   |
 | -------------- | --------------------------------------------------------------------------------- |
 | RDF Eigenschap | `dcat:mediaType`                                                                  |
 | Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json |
 | Kardinaliteit  | `0..1`                                                                            |
-| Gebruik        | Aanbevolen                                                                        |
+| Gebruik        | Optioneel                                                                         |
 
 <div class="issue" data-number="8"></div>
 
@@ -240,14 +240,14 @@ Het kiezen van een media-type uit de lijst heeft de voorkeur boven het kiezen va
 
 Informatie over het bestandsformaat van de distributie volgens de indeling van het publicatiebureau van de EU.
 
-Let op: Eigenschap `dct:mediaType`. Deze heeft de voorkeur boven dct:format.
+Let op: DCAT-AP van de EU beveelt aan <a href="#format">format</a> te gebruiken. De W3C beveelt aan <a href="#mediatype">mediaType</a> te gebruiken. Waar mogelijk raden wij aan beiden in te vullen.
 
 | Definitie      | Dataformaat                                                                     |
 | -------------- | ------------------------------------------------------------------------------- |
 | RDF Eigenschap | `dct:format`                                                                    |
 | Bereik         | `mdr:Filetype`, zie https://waardelijsten.dcat-ap-donl.nl/mdr_filetype_nal.json |
 | Kardinaliteit  | `0..1`                                                                          |
-| Gebruik        | Optioneel                                                                       |
+| Gebruik        | Aanbevolen                                                                      |
 
 <div class="issue" data-number="8"></div>
 
@@ -296,13 +296,15 @@ Deze property is specifiek voor DCAT-AP-EU.
 
 ### distribution type
 
-Specifiek voor data.overheid.nl. Het is bedoeld om verschillende soorten distributies te onderscheiden, aan de hand van mogelijke typen in een waardelijst. Zie de json: Data...
+Specifiek voor data.overheid.nl. Het is bedoeld om verschillende soorten distributies te onderscheiden, aan de hand van mogelijke typen in een waardelijst. Op het moment zijn er de types `Data schema` en `Visualisatie`, hier kunnen later nog types bijkomen.
+
+In donl 1.1 werd er in deze eigenschap ook aangegeven of het om een downloadbaar bestand of webservice ging, maar omdat deze informatie ook uit de rest van de DCAT omschrijving te halen is (wanneer <a href="#downloadurl">downloadURL</a> ingevuld is, is het een downloadbaar bestand en wanneer <a href="#accessurl">accessURL</a> ingevuld is, is het een webservice) hoeft dat niet meer.
 
 | Definitie      | Distributietype                                                                                        |
 | -------------- | ------------------------------------------------------------------------------------------------------ |
 | RDF Eigenschap | `donl:distributionType`                                                                                |
 | Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_distributiontype.json">`donl:DistributionType`</a> |
 | Kardinaliteit  | `0..1`                                                                                                 |
-| Gebruik        | Optioneel, default waarde is 'Download' wanneer deze niet wordt aangeleverd.                           |
+| Gebruik        | Optioneel                                                                                              |
 
 <div class="issue" data-number="12"></div>

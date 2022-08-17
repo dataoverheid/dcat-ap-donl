@@ -17,7 +17,7 @@ In de EU waardelijst blijven `Publiek` en `Niet Publiek` dezelfde functie houden
 
 ### conforms to
 
-De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel.
+De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel. Het opnemen van bestandsformaten is belangrijker in het veld <a href="#mediatype">**mediaType** </a> of <a href="#format">**format** </a> van de distributies, dan in `conforms to`.
 
 | Definitie      | Standaard        |
 | -------------- | ---------------- |

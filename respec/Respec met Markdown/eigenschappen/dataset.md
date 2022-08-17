@@ -30,6 +30,7 @@
 ### distribution
 
 De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in de dataset toegankelijk wordt gemaakt.
+Een dataset heeft tenminste één distributie.
 
 | Definitie      | Distributie         |
 | -------------- | ------------------- |
@@ -38,13 +39,11 @@ De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in
 | Kardinaliteit  | `1..*`              |
 | Gebruik        | Verplicht           |
 
-<p class="note" title="Note">
-Een dataset heeft tenminste één distributie.
-</p>
 
 ### frequency
 
 Een indicatie van de frequentie waarmee de dataset wordt ververst.
+De waardelijst voor frequentie is overgenomen van het Publicatiebureau van de EU.
 
 | Definitie      | Wijzigingsfrequentie                                                                 |
 | -------------- | ------------------------------------------------------------------------------------ |
@@ -52,10 +51,6 @@ Een indicatie van de frequentie waarmee de dataset wordt ververst.
 | Bereik         | `donl:Frequentie`, zie https://waardelijsten.dcat-ap-donl.nl/overheid_frequency.json |
 | Kardinaliteit  | `0..1`                                                                               |
 | Gebruik        | Optioneel                                                                            |
-
-<p class="note" title="Note">
-De waardelijst voor frequentie is overgenomen van het Publicatiebureau van de EU.
-</p>
 
 ### spatial/geographical coverage
 
@@ -87,7 +82,7 @@ De kleinste periode tussen twee data-items in de dataset.
 
 ### has version
 
-Een gerelateerde dataset waarin een andere versie van de gegevens zijn opgenomen.
+Een gerelateerde dataset waarin een andere versie van de gegevens zijn opgenomen. Deze eigenschap is specifiek voor DCAT-AP-EU. In DCAT 3 worden voorstellen uitgewerkt om versies van dataset op een nette manier te modelleren.
 
 | Definitie      | Heeft versie     |
 | -------------- | ---------------- |
@@ -96,19 +91,10 @@ Een gerelateerde dataset waarin een andere versie van de gegevens zijn opgenomen
 | Kardinaliteit  | `0..*`           |
 | Gebruik        | Optioneel        |
 
-<p class="note" title="Note">
-Deze eigenschap is specifiek voor DCAT-AP-EU.
-
-In DCAT 3 worden voorstellen uitgewerkt om versies van dataset op een nette manier te modelleren.
-</p>
-
-<p class="note" title="Herkomst">
-DCAT-AP-EU, DCAT-AP-DONL 1.1
-</p>
 
 ### is version of
 
-De inverse van has version en verwijst naar de vorige versie van de dataset.
+De inverse van has version en verwijst naar de vorige versie van de dataset. Deze eigenschap is specifiek voor DCAT-AP-EU.
 
 | Definitie      | Is versie van     |
 | -------------- | ----------------- |
@@ -123,7 +109,9 @@ DCAT-AP-EU, DCAT-AP-DONL 1.1
 
 ### sample
 
-Een distributie waarin een (kleine) selectie van de data is opgenomen. Die kan bijvoorbeeld worden weergegeven op het dataportaal bij de dataset, zodat eindgebruikers niet zelf eerst de dataset hoeven downloaden om te zien wa
+Een distributie waarin een (kleine) selectie van de data is opgenomen. Die kan bijvoorbeeld worden weergegeven op het dataportaal bij de dataset, zodat eindgebruikers niet zelf eerst de dataset hoeven downloaden om te zien hoe de inhoud bruikbaar is.
+
+Deze eigenschap is specifiek voor DCAT-AP-EU.
 
 | Definitie      | Voorbeeld           |
 | -------------- | ------------------- |
@@ -132,6 +120,3 @@ Een distributie waarin een (kleine) selectie van de data is opgenomen. Die kan b
 | Kardinaliteit  | `0..*`              |
 | Gebruik        | Optioneel           |
 
-<p class="note" title="Herkomst">
-DCAT-AP-EU, DCAT-AP-DONL 1.1
-</p>

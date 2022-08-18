@@ -1,0 +1,15 @@
+.issue {
+    background-color: LightGray;
+}
+
+.issue > p {
+    display: none;
+}
+
+table th {
+    border-bottom: 2px solid LightGray;
+}
+
+table th:first-child {
+    padding-right: 50px;
+}

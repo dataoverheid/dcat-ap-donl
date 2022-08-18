@@ -10,7 +10,6 @@
 | <a href="#license-0">**license** </a>                   | Distributie |           |
 | <a href="#accessrights">**accessRights** </a>           | Distributie |           |
 | <a href="#rights-0">**rights** </a>                     | Distributie |           |
-| <a href="#haspolicy">**hasPolicy** </a>                 | Distributie |           |
 | <a href="#accessurl">**accessURL** </a>                 | Distributie |           |
 | <a href="#accessservice">**accessService** </a>         | Distributie |           |
 | <a href="#downloadurl">**downloadURL** </a>             | Distributie |           |
@@ -34,7 +33,7 @@ De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze
 | Kardinaliteit  | `1..1`         |
 | Gebruik        | Verplicht      |
 
-Zie ook <a href="#title-0">title</a> in <a href="#resource">resource</a>.
+Zie ook <a href="#title-0">title</a> in <a href="#Resource">resource</a>.
 
 ### description
 
@@ -49,7 +48,7 @@ Voor overige informatie over de Distributie is de eigenschap Documentation besch
 | Kardinaliteit  | `1..1`            |
 | Gebruik        | Verplicht         |
 
-Zie ook <a href="#description">description</a> in <a href="#resource">resource</a>.
+Zie ook <a href="#description">description</a> in <a href="#Resource">resource</a>.
 
 ### issued
 
@@ -65,7 +64,7 @@ Als er geen tijdzone wordt opgegeven, gaat DONL uit van de Nederlandse tijd.
 | Kardinaliteit  | `0..1`         |
 | Gebruik        | Optioneel      |
 
-Zie ook <a href="#release-date">release-date</a> in <a href="#resource">resource</a>.
+Zie ook <a href="#release-date">release-date</a> in <a href="#Resource">resource</a>.
 
 ### modified
 
@@ -84,7 +83,7 @@ Als de gegevens automatisch periodiek worden aangepast hoeft deze waarde niet te
 
 <div class="issue" data-number="4"></div>
 
-Zie ook <a href="#update-modification-date">update-modification-date</a> in <a href="#resource">resource</a>.
+Zie ook <a href="#update-modification-date">update-modification-date</a> in <a href="#Resource">resource</a>.
 
 ### language
 
@@ -97,7 +96,7 @@ De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voo
 | Kardinaliteit  | `0..*`                                                                                 |
 | Gebruik        | Optioneel                                                                              |
 
-Zie ook <a href="#language">language</a> in <a href="#resource">resource</a>.   
+Zie ook <a href="#language">language</a> in <a href="#Resource">resource</a>.   
 
 <div class="issue" data-number="11"></div>
 
@@ -116,7 +115,7 @@ Er kunnen ook licentiegegevens op het niveau van de dataset (`dcat:resource`) wo
 | Kardinaliteit  | `1..1`                                                                      |
 | Gebruik        | Verplicht                                                                   |
 
-Zie ook <a href="#license">license</a> in <a href="#resource">resource</a>.   
+Zie ook <a href="#license">license</a> in <a href="#Resource">resource</a>.   
 
 ### accessRights
 
@@ -133,7 +132,7 @@ In de EU waardelijst blijven `Publiek` en `Niet Publiek` dezelfde functie houden
 | Kardinaliteit  | `0..1`                                                                                                      |
 | Gebruik        | Aanbevolen                                                                                                  |
 
-Zie ook <a href="#access-rights">access-rights</a> in <a href="#resource">resource</a>.  
+Zie ook <a href="#access-rights">access-rights</a> in <a href="#Resource">resource</a>.  
 
 <div class="issue" data-number="6"></div>
 
@@ -148,7 +147,7 @@ De overige gebruiksrechten die niet worden gedekt met dct:license of dct:acce
 | Kardinaliteit  | `0..1`       |
 | Gebruik        | Optioneel    |
 
-Zie ook <a href="#rights">rights</a> in <a href="#resource">resource</a>.  
+Zie ook <a href="#rights">rights</a> in <a href="#Resource">resource</a>.  
 
 ### accessURL
 
@@ -219,7 +218,7 @@ Een vastgestelde standaard waaraan de data in de distributie voldoet. Deze prope
 	Merk op dat het technisch formaat van de gegevens of het media type elders worden vastgelegd.
 </p>
 
-Zie ook <a href="#conforms-to">conforms-to</a> in <a href="#resource">resource</a>.
+Zie ook <a href="#conforms-to">conforms-to</a> in <a href="#Resource">resource</a>.
 
 ### mediaType
 
@@ -246,8 +245,8 @@ Let op: DCAT-AP van de EU beveelt aan <a href="#format">format</a> te gebruiken.
 | -------------- | ------------------------------------------------------------------------------- |
 | RDF Eigenschap | `dct:format`                                                                    |
 | Bereik         | `mdr:Filetype`, zie https://waardelijsten.dcat-ap-donl.nl/mdr_filetype_nal.json |
-| Kardinaliteit  | `0..1`                                                                          |
-| Gebruik        | Aanbevolen                                                                      |
+| Kardinaliteit  | `1..1`                                                                          |
+| Gebruik        | Verplicht                                                                      |
 
 <div class="issue" data-number="8"></div>
 

@@ -217,6 +217,8 @@ Een persoon of organisatie, anders dan de resource <a href="#creator">creator</
 
 In het bereik <a href="https://www.w3.org/TR/prov-o/#Attribution">`prov:Attribution`</a> wordt in de eigenschap `prov:hadRole` de rol van de organisatie benoemd. Hier kan worden gekozen uit de ISO waardelijst <a href="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml">CI_RoleCode</a>.
 
+
+
 In `prov:agent` wordt de naam van de organisatie opgenomen. Omdat dit niet altijd overheidsorganisaties zullen zijn hoeft deze waarde niet uit <a href="https://waardelijsten.dcat-ap-donl.nl/donl_organization.json">`donl_organization`</a> te komen. 
 
 | Definitie      | Overige verantwoordelijken                                                 |

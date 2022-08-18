@@ -360,6 +360,6 @@ Deze eigenschap is onderwerp van een uitbreidingen voor data.overheid.nl die nog
 | Kardinaliteit  | `0..1`           |
 | Gebruik        | Optioneel        |
 
-hasPolicy komt voor in <a href="#resource">resource</a>, maar wordt niet gebruikt in DCAT-AP-DONL_2.  
+hasPolicy komt voor in <a href="#Resource">resource</a>, maar wordt niet gebruikt in DCAT-AP-DONL_2.  
 
 <div class="issue" data-number="7"></div>

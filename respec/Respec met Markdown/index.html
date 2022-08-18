@@ -59,10 +59,10 @@
     <section id="Resource">
         <h2>Resource (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource"><code>dcat:Resource</code></a>)</h2>
 
-        <p> In de klasses <a href="#Catalogus">`catalogus`</a>, <a href="#dataset">`dataset`</a> en <a
-                href="#dataservice">`dataservice `</a> worden veel dezelfde eigenschappen gebruikt.
+        <p> In de klasses <a href="#Catalogus">`catalogus`</a>, <a href="#Dataset">`dataset`</a> en <a
+                href="#Dataservice">`dataservice `</a> worden veel dezelfde eigenschappen gebruikt.
             Om niet al deze eigenschappen voor elke klasse opnieuw te hoeven definieren is de superklasse <a
-                href="#resource">`resource`</a> geintroduceerd.
+                href="#Resource">`resource`</a> geintroduceerd.
             Dat betekend dat men een alleenstaande `dcat:resource` niet mogelijk is, maar dat deze
             altijd een onderdeel is van de boven genoemde dcat klasses.
 
@@ -71,9 +71,9 @@
 
         <h3>Referenties</h3>
         <ul>
-            <li><a href="#catalogus">`catalogus`</a></li>
-            <li><a href="#dataset">`dataset`</a></li>
-            <li><a href="#dataservice">`dataservice `</a></li>
+            <li><a href="#Catalogus">`catalogus`</a></li>
+            <li><a href="#Dataset">`dataset`</a></li>
+            <li><a href="#Dataservice">`dataservice `</a></li>
         </ul>
         <section data-format="markdown" data-include="eigenschappen\resource.md"></section>
     </section>
@@ -83,9 +83,9 @@
 
         <p>Met een <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"><code>dcat:Catalog</code></a> kan men
             groepen en verzamelingen maken van dcat informatie. Deze bevat instanties van de klasses <a
-                href="#dataset">`dcat:dataset`</a>, <a href="#catalogusrecord">`dcat:catalogusrecord`</a>, <a
-                href="#distributie">`dcat:distributie`</a>, <a href="#dataservice">`dcat:dataservice`</a> en/of <a
-                href="#catalog">`dcat:catalog`</a>.</p>
+                href="#Dataset">`dcat:dataset`</a>, <a href="#Catalogusrecord">`dcat:catalogusrecord`</a>, <a
+                href="#Distributie">`dcat:distributie`</a>, <a href="#Dataservice">`dcat:dataservice`</a> en/of <a
+                href="#Catalogus">`dcat:catalog`</a>.</p>
         <p>
             Het meest voor de
             hand liggende voorbeelden zijn datacatalogi als <a href="data.overheid.nl">data.overheid.nl</a> of <a href="https://data.europa.eu/en">data.europa.eu</a>. Hierin wordt dcat
@@ -115,7 +115,7 @@
             alleen over een verzameling van verwijzingen naar DCAT klasses.
         </p>
         <p>Een algemeen type catalogus zoals het telefoon boek wordt in DCAT omschreven als <a
-                href="#dataset">`dcat:dataset`</a>.
+                href="#Dataset">`Dcat:dataset`</a>.
         </p>
 
         <div class="issue" data-number="21"></div>
@@ -124,10 +124,10 @@
         <blockquote>Subklasse van `dcat:Dataset`</blockquote>
 
         <ul>
-            <li><a href="#dataset">`dataset`</a></li>
-            <li><a href="#dataservice">`dataservice`</a></li>
-            <li><a href="#distributie">`distributie`</a></li>
-            <li><a href="#catalogusrecord">`catalogusrecord`</a></li>
+            <li><a href="#Dataset">`dataset`</a></li>
+            <li><a href="#Dataservice">`dataservice`</a></li>
+            <li><a href="#Distributie">`distributie`</a></li>
+            <li><a href="#Catalogusrecord">`catalogusrecord`</a></li>
         </ul>
         <section data-format="markdown" data-include="eigenschappen\catalog.md"></section>
     </section>
@@ -243,7 +243,7 @@
 
         <h3>Referenties</h3>
         <ul>
-            <li> <a href="#resource">`resource`</a></li>
+            <li> <a href="#Resource">`resource`</a></li>
         </ul>
 
         <section data-format="markdown" data-include="eigenschappen\dataservice.md"></section>

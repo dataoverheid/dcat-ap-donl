@@ -6,6 +6,16 @@ sluit het toepassingsprofiel de aanlevering van enkele klassen en eigenschappen 
 aangeleverd kunnen worden en dus ook niet worden weergegeven op data.overheid.nl. De reden hiervoor wordt bij de 
 desbetreffende klasse of eigenschap toegelicht.
 
+### Aanwezigheid eigenschappen
+
+Of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de onderstaande termen.
+
+| Terminologie | Definitie                                                                   |
+|--------------|-----------------------------------------------------------------------------|
+| Mandatory    | Deze eigenschap moet aanwezig zijn om aan dit applicatieprofiel te voldoen. |
+| Recommended  | Deze eigenschap is waardevol, maar de aanwezigheid is niet verplicht.       |
+| Optional     |                                                                             |
+
 ### Namespaces
 
 Dit toepassingsprofiel maakt gebruik van de namespaces zoals weergegeven in de onderstaande tabel.

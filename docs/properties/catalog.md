@@ -9,7 +9,7 @@ De onderstaande tabel geeft een overzicht van de herkomst en de toepassing van a
 | <a href="#contact-point">**contact point**</a>                       | Resource  | Verplicht  |
 | <a href="#creator">**creator**</a>                                   | Resource  | Verplicht  |
 | <a href="#description">**description**</a>                           | Resource  | Verplicht  |
-| <a href="#title">**title** </a>                                      | Resource  | Verplicht  |
+| <a href="#title-0">**title** </a>                                      | Resource  | Verplicht  |
 | <a href="#release-date">**release date**                             | Resource  | Aanbevolen |
 | <a href="#update-modification-date">**update/modification date**</a> | Resource  | Aanbevolen |
 | <a href="#language">**language**  </a>                               | Resource  | Aanbevolen |

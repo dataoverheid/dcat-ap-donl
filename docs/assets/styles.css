@@ -13,3 +13,10 @@ table th {
 table th:first-child {
     padding-right: 50px;
 }
+
+em.new {
+    background-color: yellow;
+    vertical-align: super;
+    padding: 1px 5px;
+    font-size: 70%;
+  }

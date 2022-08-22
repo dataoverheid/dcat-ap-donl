@@ -7,7 +7,7 @@
 | <a href="#contact-point">**contact point**</a>                       | Resource        |           |
 | <a href="#creator">**creator**</a>                                   | Resource        |           |
 | <a href="#description">**description**</a>                           | Resource        | Verplicht |
-| <a href="#title">**title** </a>                                      | Resource        | Verplicht |
+| <a href="#title-0">**title** </a>                                      | Resource        | Verplicht |
 | <a href="#release-date">**release date**                             | Resource        |           |
 | <a href="#update-modification-date">**update/modification date**</a> | Resource        |           |
 | <a href="#language">**language**  </a>                               | Resource        |           |

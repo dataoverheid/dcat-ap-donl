@@ -1,26 +1,27 @@
 ## Eigenschappen
 
-| **Eigenschap**                                          | Herkomst    | Gebruik   |
-| ------------------------------------------------------- | ----------- | --------- |
-| <a href="#title">**title** </a>                         | Distributie | Verplicht |
-| <a href="#description-0">**description** </a>           | Distributie | Verplicht |
-| <a href="#issued">**issued** </a>                       | Distributie |           |
-| <a href="#modified">**modified** </a>                   | Distributie |           |
-| <a href="#language-0">**language** </a>                 | Distributie |           |
-| <a href="#license-0">**license** </a>                   | Distributie |           |
-| <a href="#accessrights">**accessRights** </a>           | Distributie |           |
-| <a href="#rights-0">**rights** </a>                     | Distributie |           |
-| <a href="#accessurl">**accessURL** </a>                 | Distributie |           |
-| <a href="#accessservice">**accessService** </a>         | Distributie |           |
-| <a href="#downloadurl">**downloadURL** </a>             | Distributie |           |
-| <a href="#bytesize">**byteSize** </a>                   | Distributie |           |
-| <a href="#conformsto">**conformsTo** </a>               | Distributie |           |
-| <a href="#mediatype">**mediaType** </a>                 | Distributie |           |
-| <a href="#format">**format** </a>                       | Distributie |           |
-| <a href="#checksum">**checksum** </a>                   | Distributie |           |
-| <a href="#documentation">**documentation** </a>         | Distributie |           |
-| <a href="#status">**status** </a>                       | Distributie |           |
-| <a href="#distribution-type">**distribution type** </a> | Distributie |           |
+| **Eigenschap**                                                            | Kardinaliteit | Aanwezigheid | Herkomst    |
+| ------------------------------------------------------------------------- | ------------- | ------------ | ----------- |
+| <a href="#title-1">**title** </a>                                         | `1..1`        | Mandatory    | Distributie |
+| <a href="#description-0">**description** </a>                             | `1..1`        | Mandatory    | Distributie |
+| <a href="#issued">**issued** </a>                                         | `0..1`        | Optional     | Distributie |
+| <a href="#modified">**modified** </a>                                     | `0..1`        | Recommended  | Distributie |
+| <a href="#language-0">**language** </a>                                   | `0..*`        | Optional     | Distributie |
+| <a href="#license-0">**license** </a>                                     | `1..1`        | Mandatory    | Distributie |
+| <a href="#accessrights">**accessRights** </a>                             | `0..1`        | Recommended  | Distributie |
+| <a href="#rights-0">**rights** </a>                                       | `0..1`        | Optional     | Distributie |
+| <a href="#accessurl">**accessURL** </a>                                   | `1..1`        | Mandatory    | Distributie |
+| <a href="#accessservice">**accessService** </a><em class="new">nieuw</em> | `0..1`        | Recommended  | Distributie |
+| <a href="#downloadurl">**downloadURL** </a>                               | `0..1`        | Recommended  | Distributie |
+| <a href="#bytesize">**byteSize** </a>                                     | `0..1`        | Optional     | Distributie |
+| <a href="#conformsto">**conformsTo** </a><em class="new">nieuw</em>       | `0..*`        | Optional     | Distributie |
+| <a href="#mediatype">**mediaType** </a>                                   | `0..1`        | Optional     | Distributie |
+| <a href="#format">**format** </a>                                         | `1..1`        | Mandatory    | Distributie |
+| <a href="#checksum">**checksum** </a>                                     | `0..1`        | Optional     | Distributie |
+| <a href="#documentation">**documentation** </a>                           | `0..*`        | Optional     | Distributie |
+| <a href="#status">**status** </a>                                         |               |              | Distributie |
+| <a href="#distribution-type">**distribution type** </a>                   | `0..1`        | Optional     | Distributie |
+
 
 ### title
 
@@ -31,7 +32,7 @@ De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze
 | RDF Eigenschap | `dct:title`    |
 | Bereik         | `rdfs:Literal` |
 | Kardinaliteit  | `1..1`         |
-| Gebruik        | Verplicht      |
+| Gebruik        | Mandatory      |
 
 Zie ook <a href="#title-0">title</a> in <a href="#Resource">resource</a>.
 
@@ -46,7 +47,7 @@ Voor overige informatie over de Distributie is de eigenschap Documentation besch
 | RDF Eigenschap | `dct:description` |
 | Bereik         | `rdfs:Literal`    |
 | Kardinaliteit  | `1..1`            |
-| Gebruik        | Verplicht         |
+| Gebruik        | Mandatory         |
 
 Zie ook <a href="#description">description</a> in <a href="#Resource">resource</a>.
 
@@ -62,7 +63,7 @@ Als er geen tijdzone wordt opgegeven, gaat DONL uit van de Nederlandse tijd.
 | RDF Eigenschap | `dct:issued`   |
 | Bereik         | `xsd:dateTime` |
 | Kardinaliteit  | `0..1`         |
-| Gebruik        | Optioneel      |
+| Gebruik        | Optional       |
 
 Zie ook <a href="#release-date">release-date</a> in <a href="#Resource">resource</a>.
 
@@ -79,7 +80,7 @@ Als de gegevens automatisch periodiek worden aangepast hoeft deze waarde niet te
 | RDF Eigenschap | `dct:modified`  |
 | Bereik         | `xsd:dateTime`  |
 | Kardinaliteit  | `0..1`          |
-| Gebruik        | Aanbevolen      |
+| Gebruik        | Recommended     |
 
 <div class="issue" data-number="4"></div>
 
@@ -94,7 +95,7 @@ De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voo
 | RDF Eigenschap | `dct:language`                                                                         |
 | Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_language.json">`donl:Language`</a> |
 | Kardinaliteit  | `0..*`                                                                                 |
-| Gebruik        | Optioneel                                                                              |
+| Gebruik        | Optional                                                                               |
 
 Zie ook <a href="#language">language</a> in <a href="#Resource">resource</a>.   
 
@@ -113,7 +114,7 @@ Er kunnen ook licentiegegevens op het niveau van de dataset (`dcat:resource`) wo
 | RDF Eigenschap | `dct:license`                                                               |
 | Bereik         | `donl:License`, zie https://waardelijsten.dcat-ap-donl.nl/donl_license.json |
 | Kardinaliteit  | `1..1`                                                                      |
-| Gebruik        | Verplicht                                                                   |
+| Gebruik        | Mandatory                                                                   |
 
 Zie ook <a href="#license">license</a> in <a href="#Resource">resource</a>.   
 
@@ -130,7 +131,7 @@ In de EU waardelijst blijven `Publiek` en `Niet Publiek` dezelfde functie houden
 | RDF Eigenschap | `dct:accessRights`                                                                                          |
 | Bereik         | `Overheid:Openbaarheidsniveau`, zie https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json |
 | Kardinaliteit  | `0..1`                                                                                                      |
-| Gebruik        | Aanbevolen                                                                                                  |
+| Gebruik        | Recommended                                                                                                 |
 
 Zie ook <a href="#access-rights">access-rights</a> in <a href="#Resource">resource</a>.  
 
@@ -145,7 +146,7 @@ De overige gebruiksrechten die niet worden gedekt met dct:license of dct:acce
 | RDF Eigenschap | `dct:rights` |
 | Bereik         | `xsd:string` |
 | Kardinaliteit  | `0..1`       |
-| Gebruik        | Optioneel    |
+| Gebruik        | Optional     |
 
 Zie ook <a href="#rights">rights</a> in <a href="#Resource">resource</a>.  
 
@@ -162,9 +163,9 @@ Wanneer de distributies alleen bereikbaar zijn via een landing page (en directe 
 | RDF Eigenschap | `dcat:accessURL` |
 | Bereik         | `xsd:anyURI`     |
 | Kardinaliteit  | `1..1`           |
-| Gebruik        | Verplicht        |
+| Gebruik        | Mandatory        |
 
-### accessService
+### accessService 
 
 Alleen van toepassing wanneer de distributie via een dataservice bereikbaar is. De dataservice biedt dan toegang tot het bestand of de bestanden van deze distributie. Access service wordt niet ingevuld als de toegang tot de distributie.
 
@@ -175,7 +176,7 @@ Deze eigenschap is nieuw in DCAT2 en biedt aanbieders van datasets de mogelijkhe
 | RDF Eigenschap | `dcat:accessService`   |
 | Bereik         | `dcat:DataService`     |
 | Kardinaliteit  | `0..1`                 |
-| Gebruik        | Aanbevolen             |
+| Gebruik        | Recommended            |
 
 ### downloadURL
 
@@ -186,7 +187,7 @@ De URL waarmee eindgebruikers het bestand kunnen downloaden in een van de beschi
 | RDF Eigenschap | `dcat:downloadURL`  |
 | Bereik         | `xsd:anyURI`        |
 | Kardinaliteit  | `0..1`              |
-| Gebruik        | Aanbevolen          |
+| Gebruik        | Recommended         |
 
 ### byteSize
 
@@ -197,7 +198,7 @@ De omvang van de distributie (het feitelijke bestand) in bytes.
 | RDF Eigenschap | `dcat:byteSize` |
 | Bereik         | `xsd:decimal`   |
 | Kardinaliteit  | `0..1`          |
-| Gebruik        | Optioneel       |
+| Gebruik        | Optional        |
 
 ### conformsTo
 
@@ -207,8 +208,8 @@ Een vastgestelde standaard waaraan de data in de distributie voldoet. Deze prope
 | -------------- | ---------------- |
 | RDF Eigenschap | `dct:conformsTo` |
 | Bereik         | `dct:Standard`   |
-| Kardinaliteit  | `0..1`           |
-| Gebruik        | Aanbevolen       |
+| Kardinaliteit  | `0..*`           |
+| Gebruik        | Recommended      |
 
 <p class="note" title="Note">
 	De gebruikte standaard kan heel divers zijn en verschillen per context. Denk bijvoorbeeld aan een standaard die beschrijft hoe de gegevens in de dataset zijn verzameld. Of aan een standaard hoe de gegevens zijn gecodeerd, of hoe de gegevens in een model passen, of welke representatie of view deze gegevens van het geheel bevatten, etcetera.
@@ -231,7 +232,7 @@ Let op: DCAT-AP van de EU beveelt aan <a href="#format">format</a> te gebruiken.
 | RDF Eigenschap | `dcat:mediaType`                                                                  |
 | Bereik         | `iana:Mediatypes`, zie https://waardelijsten.dcat-ap-donl.nl/iana_mediatypes.json |
 | Kardinaliteit  | `0..1`                                                                            |
-| Gebruik        | Optioneel                                                                         |
+| Gebruik        | Optional                                                                          |
 
 <div class="issue" data-number="8"></div>
 
@@ -246,7 +247,7 @@ Let op: DCAT-AP van de EU beveelt aan <a href="#format">format</a> te gebruiken.
 | RDF Eigenschap | `dct:format`                                                                    |
 | Bereik         | `mdr:Filetype`, zie https://waardelijsten.dcat-ap-donl.nl/mdr_filetype_nal.json |
 | Kardinaliteit  | `1..1`                                                                          |
-| Gebruik        | Verplicht                                                                      |
+| Gebruik        | Mandatory                                                                       |
 
 <div class="issue" data-number="8"></div>
 
@@ -263,7 +264,7 @@ De `spdx:Checksum` klasse bevat naast de berekende checksum-waarde ook een prope
 | RDF Eigenschap | `spdx:checksum` |
 | Bereik         | `spdx:Checksum` |
 | Kardinaliteit  | `0..1`          |
-| Gebruik        | Optioneel       |
+| Gebruik        | Optional        |
 
 <div class="issue" data-number="10"></div>
 
@@ -278,7 +279,7 @@ Merk op dat eigenschap `dct:description` gebruikt kan worden om de betreffende d
 | RDF Eigenschap | `foaf:page`  |
 | Bereik         | `xsd:anyURI` |
 | Kardinaliteit  | `0..*`       |
-| Gebruik        | Optioneel    |
+| Gebruik        | Optional     |
 
 ### status
 
@@ -304,6 +305,6 @@ In donl 1.1 werd er in deze eigenschap ook aangegeven of het om een downloadbaar
 | RDF Eigenschap | `donl:distributionType`                                                                                |
 | Bereik         | <a href="https://waardelijsten.dcat-ap-donl.nl/donl_distributiontype.json">`donl:DistributionType`</a> |
 | Kardinaliteit  | `0..1`                                                                                                 |
-| Gebruik        | Optioneel                                                                                              |
+| Gebruik        | Optional                                                                                               |
 
 <div class="issue" data-number="12"></div>

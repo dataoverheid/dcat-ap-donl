@@ -203,34 +203,38 @@
         <h2>Distributie (<a
                 href="https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution"><code>dcat:Distribution</code></a>)</h2>
 
-        <p> Een distributie beschrijft hoe afnemers een specifieke representatie van een dataset kunnen verkregen.
-            Meestal betreft het hier een download-bestand. Een dataset kan beschikbaar zijn in meerdere vormen die van
-            elkaar verschillen in o.a. taal, formaat, data-schema's en nauwkeurigheid (resolutie).</p>
+        <p> Een distributie beschrijft hoe een (deel van) een dataset te verkrijgen is. Meestal gaat het over een
+            download-bestand. Verschillende distrubuties van dezelfde dataset verschillen van
+            elkaar in o.a. taal, formaat, data-schema's en nauwkeurigheid (resolutie).</p>
 
-        <h3>Notities</h3>
-        <p class="note" title="Usage note">
+        <p>
             De aanbieder van een dataset kan distributies aanbieden in meerdere verschillende formaten en/of
             samenstellingen die zijn afgestemd op de behoeften van afnemers. Deze worden elk als afzonderlijke
-            distributie beschreven en gerelateerd aan de dataset. Als een dataset (ook) wordt aangeboden in de vorm van
-            een dataservice, dan kunnen hierover aanvullende gegevens worden opgenomen in Dataservice die kan worden
+            distributie beschreven en gerelateerd aan de dataset. </p>
+
+        <p>Als een dataset (ook) wordt aangeboden in de vorm van
+            een webservice kunnen hierover aanvullende gegevens worden opgenomen in een <a
+                href="#Dataservice">dataservice</a>. Deze kan worden
             gerelateerd aan de bijbehorende distributie.
 
-            De distributie geeft aan er gegevens van een dataset beschikbaar zijn. Het zegt niets nog niets over de
+            De distributie geeft aan dat er gegevens van een dataset beschikbaar zijn. Het zegt niets nog niets over de
             manier waarop de data kunnen worden benaderd, zoals via een directe download, een API of een webpagina. Een
-            waarde in eigenschap dcat:downloadURL geeft aan dat de gegevens in de distributie direct gedownload kunnen
+            waarde in eigenschap <a href="#downloadurl">downloadURL</a> geeft aan dat de gegevens in de distributie
+            direct gedownload kunnen
             worden.
         </p>
 
-        <p class="note" title="Toelichting">
+        <p>
             In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data
-            op te vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt een nieuwe
-            mogelijkheid om webservices te beschrijven in de klasse dataservice. Deze heeft nu de voorkeur. Het blijft
+            op te vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt
+            mogelijkheid om webservices te beschrijven in de klasse <a href="#Dataservice">dataservice</a>. Deze heeft
+            nu de voorkeur. Het blijft
             echter mogelijk en toegestaan om webservices te beschrijven als distributie.
         </p>
 
         <h3>Referenties</h3>
         <ul>
-            <li> Klasse Dataservice</li>
+            <li><a href="#Dataservice">dataservice</a></li>
         </ul>
 
         <section data-format="markdown" data-include="properties/distributie.md"></section>
@@ -278,6 +282,7 @@
 
     <section class="Waardelijsten " data-format="markdown" data-include="chapters/waardelijsten.md">
     </section>
+
     <section id="conformance">
         <!-- This section is filled automatically by ReSpec. -->
     </section>

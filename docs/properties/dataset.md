@@ -1,29 +1,29 @@
 ## Eigenschappen
 | **Eigenschap**                                                                           | Kardinaliteit | Aanwezigheid | Herkomst |
 | ---------------------------------------------------------------------------------------- | ------------- | ------------ | -------- |
-| <a href="#access-rights">**access-rights**</a>                                           |               |              | Resource |
-| <a href="#conforms-to">**conforms to**</a><em class="new">nieuw</em>                     |               |              | Resource |
-| <a href="#contact-point">**contact point**</a>                                           |               |              | Resource |
-| <a href="#creator">**creator**</a><em class="new">nieuw</em>                             |               |              | Resource |
-| <a href="#description">**description**</a>                                               |               | Verplicht    | Resource |
-| <a href="#title-0">**title** </a>                                                        |               | Verplicht    | Resource |
-| <a href="#release-date">**release date**                                                 |               |              | Resource |
-| <a href="#update-modification-date">**update/modification date**</a>                     |               |              | Resource |
-| <a href="#language">**language**  </a>                                                   |               |              | Resource |
-| <a href="#publisher">**publisher**    </a>                                               |               |              | Resource |
-| <a href="#identifier">**identifier** </a>                                                |               |              | Resource |
-| <a href="#theme-category">**theme/category** </a>                                        |               |              | Resource |
-| <a href="#keyword-tag">**keyword/tag**</a>                                               |               |              | Resource |
-| <a href="#landing-page">**landing page**</a>                                             |               |              | Resource |
-| <a href="#qualified-attribution">**qualified attribution**</a><em class="new">nieuw</em> |               |              | Resource |
-| <a href="#license">**license** </a>                                                      |               |              | Resource |
-| <a href="#is-referenced-by">**is referenced by**</a><em class="new">nieuw</em>           |               |              | Resource |
-| <a href="#other-identifier">**other identifier**</a>                                     |               |              | Resource |
-| <a href="#resource-status">**resource status**</a>                                       |               |              | Resource |
-| <a href="#rights">**rights**</a>                                                         |               |              | Resource |
-| <a href="#legal-foundation">**legal foundation**</a>                                     |               |              | Resource |
-| <a href="#resource-classification">**resource classification**</a>                       |               |              | Resource |
-| <a href="#source-catalog">**source catalog** </a>                                        |               |              | Resource |
+| <a href="#access-rights">**access-rights**</a>                                           | `0..1`        |              | Resource |
+| <a href="#conforms-to">**conforms to**</a><em class="new">nieuw</em>                     | `0..*`        |              | Resource |
+| <a href="#contact-point">**contact point**</a>                                           | `1..1`        |              | Resource |
+| <a href="#creator">**creator**</a><em class="new">nieuw</em>                             | `1..1`        |              | Resource |
+| <a href="#description">**description**</a>                                               | `1..1`        | Mandatory    | Resource |
+| <a href="#title-0">**title** </a>                                                        | `1..1`        | Mandatory    | Resource |
+| <a href="#release-date">**release date**                                                 | `0..1`        |              | Resource |
+| <a href="#update-modification-date">**update/modification date**</a>                     | `0..1`        |              | Resource |
+| <a href="#language">**language**  </a>                                                   | `1..1`        |              | Resource |
+| <a href="#publisher">**publisher**    </a>                                               | `1..1`        |              | Resource |
+| <a href="#identifier">**identifier** </a>                                                | `1..1`        |              | Resource |
+| <a href="#theme-category">**theme/category** </a>                                        | `1..*`        |              | Resource |
+| <a href="#keyword-tag">**keyword/tag**</a>                                               | `0..*`        |              | Resource |
+| <a href="#landing-page">**landing page**</a>                                             | `0..1`        |              | Resource |
+| <a href="#qualified-attribution">**qualified attribution**</a><em class="new">nieuw</em> | `0..*`        |              | Resource |
+| <a href="#license">**license** </a>                                                      | `1..1`        |              | Resource |
+| <a href="#is-referenced-by">**is referenced by**</a><em class="new">nieuw</em>           | `0..*`        |              | Resource |
+| <a href="#other-identifier">**other identifier**</a>                                     | `0..*`        |              | Resource |
+| <a href="#resource-status">**resource status**</a>                                       | `1..1`        |              | Resource |
+| <a href="#rights">**rights**</a>                                                         | `0..1`        |              | Resource |
+| <a href="#legal-foundation">**legal foundation**</a>                                     | `0..*`        |              | Resource |
+| <a href="#resource-classification">**resource classification**</a>                       | `0..*`        |              | Resource |
+| <a href="#source-catalog">**source catalog** </a>                                        | `0..1`        |              | Resource |
 | <a href="#distribution">**distribution**  </a>                                           | `1..1`        | Mandatory    | Dataset  |
 | <a href="#frequency">**frequency**  </a>                                                 | `0..1`        | Optional     | Dataset  |
 | <a href="#spatial-geographical-coverage">**spatial/geographical coverage**</a>           | `0..*`        | Optional     | Dataset  |

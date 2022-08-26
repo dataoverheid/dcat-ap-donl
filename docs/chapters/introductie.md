@@ -13,8 +13,9 @@ In deze nieuwe versie zijn de mogelijkheden van het het toepassingsprofiel van d
 De belangrijkste wijzigingen zijn:</p>
 
 <ul>
-        <li>Introductie van de klasse <a href="#Dataservice">dataservice</a>. TODO: voor het beschrijven van webservices.</a> <a href="#verschillen">verschillen</a> zegt introductie van dcat:resource ??? </li>
-        <li><a href="#Distributie">Distributies</a> worden nu gebruikt voor bestandsleveringen en niet meer voor dataservices.</a></li>
+        <li>Introductie van de klasse <a href="#Dataservice">dataservice</a>.</li>
+        <li><a href="#Distributie">Distributies</a> worden nu gebruikt voor bestandsleveringen en niet meer voor dataservices.</li>
+        <li>Introductie van de klasse <a href="#Resource">resource</a>.</li>
 </ul>
 
 <p>Dit toepassingsprofiel blijft in ontwikkeling. Commentaren, problemen, wensen e.d. kunnen als issue worden gemeld op de <a href="https://github.com/dataoverheid/dcat-ap-donl">Github pagina</a>.

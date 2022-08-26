@@ -33,10 +33,10 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` besch
 
 ### endpoint URL
 
-De locatie of het endpoint van de webservice (a Web-resolvable IRI)
+De locatie of het endpoint van de service (over het algemeen een via HTTP raadpleegbaar adres)
 
 | Definitie      | Waarde             |
-| -------------- |--------------------|
+|----------------|--------------------|
 | RDF Eigenschap | `dcat:endpointURL` |
 | Bereik         | `rdfs:Resource`    |
 | Kardinaliteit  | `1..1`             |
@@ -44,22 +44,29 @@ De locatie of het endpoint van de webservice (a Web-resolvable IRI)
 
 ### endpoint description
 
-De services die via het endpoint beschikbaar zijn, incl. parameters en functies. Eindgebruikers zijn gebaat bij 
-duidelijke uitleg en voorbeelden.
+Een verwijzing naar de documentatie die de DataService beschrijft. Denk hierbij aan een verwijzing naar een Open Api
+Specification (Swagger), een OGC:WFS of OGC:WMS getCapabilities aanroep, een SPARQL Service Description en dergelijke.
+
+Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeboden service.
 
 | Definitie      | Waarde                     |
-| -------------- |----------------------------|
+|----------------|----------------------------|
 | RDF Eigenschap | `dcat:endpointDescription` |
-| Bereik         | `xsd:string`               |
+| Bereik         | `rdfs:Resource`            |
 | Kardinaliteit  | `1..1`                     |
 | Gebruik        | Mandatory                  |
+
+<aside class="note">
+Hoewel deze eigenschap qua naamgeving veel lijkt op `dct:description`, heeft deze eigenschap een aanzienlijk andere
+definitie!
+</aside>
 
 ### serves dataset
 
 Een dataset die via deze `dcat:DataService` aangeboden wordt. Een dataservice kan nul, een of meer datasets aanbieden.
 
 | Definitie      | Waarde               |
-| -------------- |----------------------|
+|----------------|----------------------|
 | RDF Eigenschap | `dcat:servesDataset` |
 | Bereik         | `dcat:Dataset`       |
 | Kardinaliteit  | `0..n`               |

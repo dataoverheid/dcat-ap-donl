@@ -11,4 +11,4 @@ Daarnaast willen we nagaan of het mogelijk en gewenst is om enkele nieuwe extens
 * Het toekennen van een of meer **begrippen** aan datasets en dataservices die de vindbaarheid ervan kunnen verbeteren.
 * Het beschrijven van de inhoud van distributies aan de hand van **data-schema's**, zodat eindgebruikes hiervan een beter inzicht krijgen in de (betekenis van de) gegevens die op het dataportaal worden aangeboden.
 * Het beschrijven van de **kwaliteit** van een dataset
-* Het beschrijven van **condities** waaronder afnemers de gegevens in een dataset of dataservice mogen gebruiken.
+* Het beschrijven van **condities** waaronder afnemers de gegevens in een dataset of dataservice mogen gebruiken!

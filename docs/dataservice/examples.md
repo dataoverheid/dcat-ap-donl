@@ -5,8 +5,8 @@ Naast de onderstaande voorbeelden, biedt het W3C enkele voorbeelden aan van hoe 
 
 ### Minimale set van eigenschappen
 
-Onderstaand voorbeeld beschrijft een `dcat:DataService` met enkel de verplichte eigenschappen. Dit is de meest minimale representatie van een `dcat:DataService`.
-
+Onderstaand voorbeeld beschrijft een `dcat:DataService` met enkel de verplichte eigenschappen. Dit is de meest minimale 
+representatie van een `dcat:DataService`.
 
 <aside class="example" title="Minimale set van eigenschappen">
 

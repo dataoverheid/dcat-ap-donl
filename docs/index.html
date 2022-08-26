@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset='utf-8'>
     <title>DCAT-AP-DONL_2.0</title>
@@ -33,7 +32,6 @@
         };
     </script>
 </head>
-
 <body>
     <section id="sotd"></section>
     <section id='abstract' data-format="markdown" data-include="chapters/samenvatting.md"></section>
@@ -41,7 +39,6 @@
     <section class="leeswijzer" data-format="markdown" data-include="chapters/leeswijzer.md"></section>
     <section class="overzicht" data-format="markdown" data-include="chapters/overzicht.md"></section>
     <section class="verschillen" data-format="markdown" data-include="chapters/verschillen.md"></section>
-    </section>
 
     <section id="Resource">
         <h2>Resource (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource"><code>dcat:Resource</code></a>)</h2>
@@ -240,47 +237,13 @@
     </section>
 
     <section id="Dataservice">
-        <h2>Dataservice (<a
-                href="https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service"><code>dcat:Dataservice</code></a>)</h2>
-
-        <blockquote>Subklasse van `dcat:Resource`</blockquote>
-
-        <p>Een dataservice is een collectie van functies om toegang te krijgen tot (een selectie of bewerking van)
-            gegevens van een of meer datasets, speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen.</p>
-
-        <h3>Notities</h3>
-        <p class="note" title="Usage note">
-            Als een dcat:DataService gegevens ontsluit die onderdeel zijn van een of meer datasets in de catalogus, dan
-            kan deze relatie met eigenschap dcat:servesDataset worden beschreven.
-            Met behulp van eigenschap dcterms:type kan onderscheid worden gemaakt tussen verschillende typen van
-            services. Om deze typering te standaardiseren, worden de mogelijke waarden opgenomen in een waardelijst.
-        </p>
-
-        <p class="note" title="Toelichting">
-            De Dataservice klasse is geintroduceerd in versie 2 van DCAT. Het biedt uitgebreidere mogelijkheden om de
-            geautomatiseerde toegang tot de gegevens in een dataset via een API te beschrijven dan mogelijk is in de
-            klasse Distributie. In deze nieuwe versie van het toepassingsprofiel is de Dataservice klasse optioneel. Dat
-            betekent dat het mogelijk blijft om dataservices te beschrijven met de klasse Distributie.
-            Dataservices worden ook gedocumenteerd op https://developer.overheid.nl. Het kan interessant zijn om over en
-            weer relaties te leggen tussen de dataservice op data.overheid.nl en die op developer.overheid.nl. Op die
-            manier kunnen bezoekers gebruikmaken van de toegevoegde waarde die elk van deze platforms te bieden hebben.
-        </p>
-
-        <aside class="example" title="Gebruik">
-            Voorbeelden kunnen worden gevonden bij het <a
-                href="https://www.w3.org/TR/vocab-dcat-2/#examples-data-service">W3C</a>
-        </aside>
-
-        <h3>Referenties</h3>
-        <ul>
-            <li><a href="#Resource">`resource`</a></li>
-        </ul>
-
-        <section data-format="markdown" data-include="properties/dataservice.md"></section>
+        <h2>Dataservice (<a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service"><code>dcat:DataService</code></a>)</h2>
+        <div data-format="markdown" data-include="dataservice/description.md"></div>
+        <section data-format="markdown" data-include="dataservice/definition.md"></section>
+        <section data-format="markdown" data-include="dataservice/examples.md"></section>
     </section>
 
-    <section class="Waardelijsten " data-format="markdown" data-include="chapters/waardelijsten.md">
-    </section>
+    <section class="Waardelijsten " data-format="markdown" data-include="chapters/waardelijsten.md"></section>
 
     <section id="conformance">
         <!-- This section is filled automatically by ReSpec. -->

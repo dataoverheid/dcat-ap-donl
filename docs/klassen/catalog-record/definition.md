@@ -50,4 +50,3 @@ Betreft de verwijzing naar de dcat:Resource (dataset or service) die het recor
 | Bereik         | `dcat:Resource` (dataset or service) |
 | Kardinaliteit  | `1..1`                               |
 | Gebruik        | Verplicht                            |
-

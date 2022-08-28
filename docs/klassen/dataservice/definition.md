@@ -27,11 +27,11 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` besch
 | [**qualified-attribution**](#qualified-attribution)       | `0..n`        | Optional     | Resource    |
 | [**is referenced by**](#is-referenced-by)                 | `0..n`        | Optional     | Resource    |
 | [**resource classification**](#resource-classification)   | `0..n`        | Optional     | Resource    |
-| [**endpoint URL**](#endpoint-url)                         | `1..1`        | Mandatory    | Dataservice |
-| [**endpoint description**](#endpoint-description)         | `1..1`        | Mandatory    | Dataservice |
-| [**serves dataset**](#serves-dataset)                     | `0..n`        | Recommended  | Dataservice |
+| [**endpoint URL**](#dcat-endpointURL)                     | `1..1`        | Mandatory    | Dataservice |
+| [**endpoint description**](#dcat-endpointDescription)     | `1..1`        | Mandatory    | Dataservice |
+| [**serves dataset**](#dcat-servesDataset)                 | `0..n`        | Recommended  | Dataservice |
 
-### endpoint URL
+### endpoint URL {#dcat-endpointURL}
 
 De locatie of het endpoint van de service (over het algemeen een via HTTP raadpleegbaar adres)
 
@@ -42,10 +42,11 @@ De locatie of het endpoint van de service (over het algemeen een via HTTP raadpl
 | Kardinaliteit  | `1..1`             |
 | Gebruik        | Mandatory          |
 
-### endpoint description
+### endpoint description {#dcat-endpointDescription}
 
 Een verwijzing naar de documentatie die de DataService beschrijft. Denk hierbij aan een verwijzing naar een Open Api
-Specification (Swagger), een OGC:WFS of OGC:WMS getCapabilities aanroep, een SPARQL Service Description en dergelijke.
+Specification (Swagger), een `OGC:WFS` of `OGC:WMS` getCapabilities aanroep, een `SPARQL Service Description` en 
+dergelijke.
 
 Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeboden service.
 
@@ -57,11 +58,11 @@ Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeb
 | Gebruik        | Mandatory                  |
 
 <aside class="note">
-Hoewel deze eigenschap qua naamgeving veel lijkt op `dct:description`, heeft deze eigenschap een aanzienlijk andere
-definitie!
+Hoewel deze eigenschap qua naamgeving veel lijkt op <a href="#dct-description">`dct:description`</a>, heeft deze 
+eigenschap een aanzienlijk andere definitie!
 </aside>
 
-### serves dataset
+### serves dataset {#dcat-servesDataset}
 
 Een dataset die via deze `dcat:DataService` aangeboden wordt. Een dataservice kan nul, een of meer datasets aanbieden.
 

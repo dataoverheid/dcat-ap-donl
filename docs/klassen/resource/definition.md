@@ -232,7 +232,6 @@ In `prov:agent` wordt de naam van de organisatie opgenomen. Omdat dit niet altij
   <p>
     Zie <a href="https://www.w3.org/TR/vocab-dcat-2/#qualified-attribution">Voorbeeld van W3C</a>
   <p>
-  </pre>
 </aside>
 
 <div class="issue" data-number="31"></div>
@@ -359,3 +358,5 @@ In welke catalogus de dataset (resource) als eerste is gepubliceerd.
 | Bereik         | xsd:string                                                                  |
 | Kardinaliteit  | 0..1                                                                        |
 | Gebruik        | Optioneel                                                                   |
+
+### source

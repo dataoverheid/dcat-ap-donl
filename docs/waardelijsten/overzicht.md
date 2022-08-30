@@ -104,7 +104,7 @@ Bevat concepten die de mate van openbaarheid beschrijven van een bron.
 
 Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Alle concepten komen uit de 
 [[[OWMS_TAXONOMIEBELEIDSAGENDA]]]. In deze taxonomie is per `skos:concept` een extra eigenschap (`skos:broader`) 
-opgenomen die de mapping bevat naar de [Europese themalijst](https://publications.europa.eu/resource/authority/data-theme).
+opgenomen die de mapping bevat naar de Europese [[[MDR_DATATHEME]]] taxonomie.
 
 | Distributievorm | Locatie |
 |-----------------|---------|

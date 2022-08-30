@@ -55,7 +55,7 @@ Een indicatie van de frequentie waarmee de dataset wordt ververst.
 Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Het veld kan worden gevuld met de benaming 
 van een gebied in de vorm van een URI of de coördinaten ervan.
 
-Voor de invulling van deze eigenschap wordt vereist dat een van de onderstaande opties gekozen word:
+Voor de invulling van deze eigenschap wordt vereist dat een van de onderstaande opties gekozen wordt:
 
 | Naam                                                                            | Type               | Gebruik     |
 |---------------------------------------------------------------------------------|--------------------|-------------|

@@ -4,7 +4,12 @@ Binnen dit toepassingsprofiel worden de onderstaande waardelijsten toegepast.
 
 #### donl:AccessRights {#waardelijst-donl-AccessRights}
 
-Bevat concepten die de mate van openbaarheid beschrijven van een bron.
+Bevat concepten die de mate van openbaarheid beschrijven van een bron. Deze waardelijst bestaat uitsluitend uit
+concepten die afgeleid zijn van de concepten uit de [[[MDR_ACCESSRIGHTS]]] taxonomie die op Europees niveau toegepast
+wordt.
+
+Elk concept bevat een `skos:broader` eigenschap met daarin een verwijzing naar het bovenliggende [[[MDR_ACCESSRIGHTS]]]
+concept.
 
 | Distributievorm | Locatie |
 |-----------------|---------|

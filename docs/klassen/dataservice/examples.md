@@ -20,10 +20,10 @@ https://example.com/api
 
 ### Een DataService die Datasets ontsluit
 
-De gemeente Nijmegen heeft een publiek beschikbare OGC:WMS webservice waarmee de gemeente gemaakte luchtfoto's aanbiedt. 
-Een van de aangeboden luchtfoto's is de "Luchtfoto 2022" (De gemeente maakt jaarlijks luchtfoto's). Deze luchtfoto's 
-kunnen individueel (of als bundel) als dataset aangeboden worden. De behoefte bestaat om de relaties tussen de dataset 
-en de webservice duidelijk vast te leggen.
+De gemeente Nijmegen heeft een publiek beschikbare `OGC:WMS` webservice waarmee de gemeente gemaakte luchtfoto's 
+aanbiedt. Een van de aangeboden luchtfoto's is de "Luchtfoto 2022" (De gemeente maakt jaarlijks luchtfoto's). Deze 
+luchtfoto's kunnen individueel (of als bundel) als dataset aangeboden worden. De behoefte bestaat om de relaties tussen 
+de dataset en de webservice duidelijk vast te leggen.
 
 Dit voorbeeld uit zich in de volgende RDF (niet relevante eigenschappen zijn weggelaten):
 

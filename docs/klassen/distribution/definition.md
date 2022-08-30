@@ -91,7 +91,7 @@ webpagina's verwezen wordt.
 | Kardinaliteit  | `1..1`            |
 | Gebruik        | Mandatory         |
 
-> Zie ook [`dct:description`](#dct-description) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:description`](#dct-description) in [`dcat:Resource`](#dcat-Resource).
 
 ### license {#dct-license1}
 
@@ -112,7 +112,7 @@ mogen niet in tegenspraak zijn met de licentiegegevens van de onderliggende `dca
 | Kardinaliteit  | `1..1`                                                  |
 | Gebruik        | Mandatory                                               |
  
-> Zie ook [`dct:license`](#dct-license) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:license`](#dct-license) in [`dcat:Resource`](#dcat-Resource).
 
 ### accessService <em class="new">nieuw</em> {#dcat-accessService}
 
@@ -162,7 +162,7 @@ kunnen dan uitgaan van de waarde van [`dct:accrualPeriodicity`](#dct-accrualPeri
 | Kardinaliteit  | `0..1`         |
 | Gebruik        | Recommended    |
 
-> Zie ook [`dct:modified`](#dct-modified) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:modified`](#dct-modified) in [`dcat:Resource`](#dcat-Resource).
 
 <div class="issue" data-number="4"></div>
 
@@ -181,7 +181,7 @@ uitgegaan worden van de Nederlandse tijd.
 | Kardinaliteit  | `0..1`         |
 | Gebruik        | Optional       |
 
-> Zie ook [`dct:issued`](#dct-issued) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:issued`](#dct-issued) in [`dcat:Resource`](#dcat-Resource).
 
 ### language {#dct-language1}
 
@@ -198,7 +198,7 @@ eigenschap optioneel.
 | Kardinaliteit  | `0..n`                                                    |
 | Gebruik        | Optional                                                  |
 
-> Zie ook [`dct:language`](#dct-language) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:language`](#dct-language) in [`dcat:Resource`](#dcat-Resource).
 
 <div class="issue" data-number="11"></div>
 
@@ -218,7 +218,7 @@ literal te plaatsen.
 | Kardinaliteit  | `0..n`       |
 | Gebruik        | Optional     |
  
-> Zie ook [`dct:rights`](#dct-rights) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:rights`](#dct-rights) in [`dcat:Resource`](#dcat-Resource).
 
 ### byteSize {#dcat-byteSize}
 
@@ -261,7 +261,7 @@ Gebruik altijd het HTTPS-protocol voor webadressen! Zie ook [[[HTTPS_EN_HSTS]]].
 
 </aside>
 
-> Zie ook [`dct:conformsTo`](#dct-conformsTo) in [`dcat:Resource`](#dct-Resource).
+> Zie ook [`dct:conformsTo`](#dct-conformsTo) in [`dcat:Resource`](#dcat-Resource).
 
 ### mediaType {#dct-mediaType}
 

@@ -2,34 +2,30 @@
 
 In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` beschreven.
 
-| **Eigenschap**                                            | Kardinaliteit | Aanwezigheid | Herkomst    |
-|-----------------------------------------------------------|---------------|--------------|-------------|
-| [**identifier**](#identifier)                             | `1..1`        | Mandatory    | Resource    |
-| [**title**](#title)                                       | `1..1`        | Mandatory    | Resource    |
-| [**description**](#description)                           | `1..1`        | Mandatory    | Resource    |
-| [**license**](#license)                                   | `1..1`        | Mandatory    | Resource    |
-| [**creator**](#creator)                                   | `1..1`        | Mandatory    | Resource    |
-| [**publisher**](#publisher)                               | `1..1`        | Mandatory    | Resource    |
-| [**contact point**](#contact-point)                       | `1..1`        | Mandatory    | Resource    |
-| [**theme/category**](#theme-category)                     | `1..n`        | Mandatory    | Resource    |
-| [**landing page**](#landing-page)                         | `0..1`        | Recommended  | Resource    |
-| [**access-rights**](#access-rights)                       | `0..1`        | Recommended  | Resource    |
-| [**language**](#language)                                 | `0..1`        | Recommended  | Resource    |
-| [**other identifier**](#other-identifier)                 | `0..n`        | Recommended  | Resource    |
-| [**keyword/tag**](#keyword-tag)                           | `0..n`        | Recommended  | Resource    |
-| [**conforms to**](#conforms-to)                           | `0..n`        | Recommended  | Resource    |
-| [**legal foundation**](#legal-foundation)                 | `0..n`        | Recommended  | Resource    |
-| [**release date**](#release-date)                         | `0..1`        | Optional     | Resource    |
-| [**update/modification date**](#update-modification-date) | `0..1`        | Optional     | Resource    |
-| [**resource status**](#resource-status)                   | `0..1`        | Optional     | Resource    |
-| [**rights**](#rights)                                     | `0..1`        | Optional     | Resource    |
-| [**source-catalog**](#source-catalog)                     | `0..1`        | Optional     | Resource    |
-| [**qualified-attribution**](#qualified-attribution)       | `0..n`        | Optional     | Resource    |
-| [**is referenced by**](#is-referenced-by)                 | `0..n`        | Optional     | Resource    |
-| [**resource classification**](#resource-classification)   | `0..n`        | Optional     | Resource    |
-| [**endpoint URL**](#dcat-endpointURL)                     | `1..1`        | Mandatory    | Dataservice |
-| [**endpoint description**](#dcat-endpointDescription)     | `1..1`        | Mandatory    | Dataservice |
-| [**serves dataset**](#dcat-servesDataset)                 | `0..n`        | Recommended  | Dataservice |
+| **Eigenschap**                                          | Kardinaliteit | Aanwezigheid | Herkomst    |
+|---------------------------------------------------------|---------------|--------------|-------------|
+| [**identifier**](#dct-identifier)                       | `1..1`        | Mandatory    | Resource    |
+| [**title**](#dct-title)                                 | `1..1`        | Mandatory    | Resource    |
+| [**description**](#dct-description)                     | `1..1`        | Mandatory    | Resource    |
+| [**license**](#dct-license)                             | `1..1`        | Mandatory    | Resource    |
+| [**creator**](#dct-creator)                             | `1..1`        | Mandatory    | Resource    |
+| [**publisher**](#dct-publisher)                         | `1..1`        | Mandatory    | Resource    |
+| [**contact point**](#dcat-contactPoint)                 | `1..1`        | Mandatory    | Resource    |
+| [**theme/category**](#dcat-theme)                       | `1..n`        | Mandatory    | Resource    |
+| [**landing page**](#dcat-landingPage)                   | `0..1`        | Recommended  | Resource    |
+| [**access-rights**](#dct-accessRights)                  | `0..1`        | Recommended  | Resource    |
+| [**language**](#dct-language)                           | `0..1`        | Recommended  | Resource    |
+| [**other identifier**](#adms-identifier)                | `0..n`        | Recommended  | Resource    |
+| [**keyword/tag**](#dcat-keyword)                        | `0..n`        | Recommended  | Resource    |
+| [**conforms to**](#dct-conformsTo)                      | `0..n`        | Recommended  | Resource    |
+| [**legal foundation**](#donl-grondslag)                 | `0..n`        | Recommended  | Resource    |
+| [**release date**](#dct-issued)                         | `0..1`        | Optional     | Resource    |
+| [**update/modification date**](#dct-modified)           | `0..1`        | Optional     | Resource    |
+| [**rights**](#rights)                                   | `0..1`        | Optional     | Resource    |
+| [**qualified-attribution**](#prov-qualifiedAttribution) | `0..n`        | Optional     | Resource    |
+| [**endpoint URL**](#dcat-endpointURL)                   | `1..1`        | Mandatory    | Dataservice |
+| [**endpoint description**](#dcat-endpointDescription)   | `1..1`        | Mandatory    | Dataservice |
+| [**serves dataset**](#dcat-servesDataset)               | `0..n`        | Recommended  | Dataservice |
 
 ### endpoint URL {#dcat-endpointURL}
 

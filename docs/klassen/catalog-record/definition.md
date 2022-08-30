@@ -1,52 +1,90 @@
 ## Eigenschappen
 
-| **Eigenschap**                                                                           | Kardinaliteit | Aanwezigheid | Herkomst        |
-| ---------------------------------------------------------------------------------------- | ------------- | ------------ | --------------- |
-| <a href="#access-rights">**access-rights**</a>                                           | `0..1`        |              | Resource        |
-| <a href="#conforms-to">**conforms to**</a><em class="new">nieuw</em>                     | `0..*`        |              | Resource        |
-| <a href="#contact-point">**contact point**</a>                                           | `1..1`        |              | Resource        |
-| <a href="#creator">**creator**</a><em class="new">nieuw</em>                             | `1..1`        |              | Resource        |
-| <a href="#description">**description**</a>                                               | `1..1`        | Mandatory    | Resource        |
-| <a href="#title-0">**title** </a>                                                        | `1..1`        | Mandatory    | Resource        |
-| <a href="#release-date">**release date**                                                 | `0..1`        |              | Resource        |
-| <a href="#update-modification-date">**update/modification date**</a>                     | `0..1`        |              | Resource        |
-| <a href="#language">**language**  </a>                                                   | `1..1`        |              | Resource        |
-| <a href="#publisher">**publisher**    </a>                                               | `1..1`        |              | Resource        |
-| <a href="#identifier">**identifier** </a>                                                | `1..1`        |              | Resource        |
-| <a href="#theme-category">**theme/category** </a>                                        | `1..*`        |              | Resource        |
-| <a href="#keyword-tag">**keyword/tag**</a>                                               | `0..*`        |              | Resource        |
-| <a href="#landing-page">**landing page**</a>                                             | `0..1`        |              | Resource        |
-| <a href="#qualified-attribution">**qualified attribution**</a><em class="new">nieuw</em> | `0..*`        |              | Resource        |
-| <a href="#license">**license** </a>                                                      | `1..1`        |              | Resource        |
-| <a href="#is-referenced-by">**is referenced by**</a><em class="new">nieuw</em>           | `0..*`        |              | Resource        |
-| <a href="#other-identifier">**other identifier**</a>                                     | `0..*`        |              | Resource        |
-| <a href="#resource-status">**resource status**</a>                                       | `1..1`        |              | Resource        |
-| <a href="#rights">**rights**</a>                                                         | `0..1`        |              | Resource        |
-| <a href="#legal-foundation">**legal foundation**</a>                                     | `0..*`        |              | Resource        |
-| <a href="#resource-classification">**resource classification**</a>                       | `0..*`        |              | Resource        |
-| <a href="#source-catalog">**source catalog** </a>                                        | `0..1`        |              | Resource        |
-| <a href="#rights">**modified**</a>                                                       | `1..1`        | Mandatory    | Catalogusrecord |
-| <a href="#primarytopic">**primaryTopic**</a>                                             | `1..1`        | Mandatory    | Catalogusrecord |
+| **Eigenschap**                              | Kardinaliteit | Aanwezigheid | Herkomst        |
+|---------------------------------------------|---------------|--------------|-----------------|
+| [**primary topic**](#foaf-primaryTopic)     | `1..1`        | Mandatory    | Catalogusrecord |
+| [**modified**](#dct-modified2)              | `1..1`        | Mandatory    | Catalogusrecord |
+| [**listing date**](#dct-issued2)            | `0..1`        | Recommended  | Catalogusrecord |
+| [**application profile**](#dct-conformsTo2) | `0..1`        | Recommended  | Catalogusrecord |
+| [**source metadata**](#dct-source)          | `0..1`        | Optional     | Catalogusrecord |
 
+### primary topic {#foaf-primaryTopic}
 
-### modified
+Betreft de verwijzing naar de [`dcat:Dataset`](#dcat-Dataset), [`dcat:DataService`](#dcat-DataService) of 
+[`dcat:Catalog`](#dcat-Catalog) die met dit record beschreven wordt.
+
+| Definitie      | Waarde                                        |
+|----------------|-----------------------------------------------|
+| RDF Eigenschap | `foaf:primaryTopic`                           |
+| Bereik         | `dcat:Resource` (dataset, service or catalog) |
+| Kardinaliteit  | `1..1`                                        |
+| Gebruik        | Mandatory                                     |
+
+### modified {#dct-modified2}
 
 De datum waarop het record in de catalogus voor het laatst is gewijzigd.
 
-| Definitie      | Wijzigingsdatum |
-| -------------- | --------------- |
-| RDF Eigenschap | `dct:modified`  |
-| Bereik         | `xs:date`       |
-| Kardinaliteit  | `1..1`          |
-| Gebruik        | Verplicht       |
+| Definitie      | Waarde         |
+|----------------|----------------|
+| RDF Eigenschap | `dct:modified` |
+| Bereik         | `xsd:date`     |
+| Kardinaliteit  | `1..1`         |
+| Gebruik        | Mandatory      |
 
-### primaryTopic
+<aside class="note">
 
-Betreft de verwijzing naar de dcat:Resource (dataset or service) die het record beschrijft.
+Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] standaard.
 
-| Definitie      | Verwijzing                           |
-| -------------- | ------------------------------------ |
-| RDF Eigenschap | `foaf:primaryTopic`                  |
-| Bereik         | `dcat:Resource` (dataset or service) |
-| Kardinaliteit  | `1..1`                               |
-| Gebruik        | Verplicht                            |
+</aside>
+
+### listing date {#dct-issued2}
+
+De datum waarop het record in de catalogus voor het eerst is toegevoegd.
+
+| Definitie      | Waarde       |
+|----------------|--------------|
+| RDF Eigenschap | `dct:issued` |
+| Bereik         | `xsd:date`   |
+| Kardinaliteit  | `1..1`       |
+| Gebruik        | Recommended  |
+
+<aside class="note">
+
+Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] standaard.
+
+</aside>
+
+### conformsTo {#dct-conformsTo2}
+
+Een verwijzing naar het DCAT applicatieprofiel waar de metadata van de [`dcat:Resource`](#dcat-Resource) zich aan 
+voldoet.
+
+| Definitie      | Waarde           |
+|----------------|------------------|
+| RDF Eigenschap | `dct:conformsTo` |
+| Bereik         | `dct:Standard`   |
+| Kardinaliteit  | `0..1`           |
+| Gebruik        | Recommended      |
+
+<aside class="note">
+
+Gebruik altijd het HTTPS-protocol voor webadressen! Zie ook [[[HTTPS_EN_HSTS]]].
+
+</aside>
+
+### source metadata {#dct-source}
+
+Een verwijzing naar de bron waar de metadata van de [`dcat:Resource`](#dcat-Resource) vandaan komt.
+
+| Definitie      | Waarde       |
+|----------------|--------------|
+| RDF Eigenschap | `dct:source` |
+| Bereik         | `xsd:anyURI` |
+| Kardinaliteit  | `1..1`       |
+| Gebruik        | Optional     |
+
+<aside class="note">
+
+Gebruik altijd het HTTPS-protocol voor webadressen! Zie ook [[[HTTPS_EN_HSTS]]].
+
+</aside>

@@ -3,8 +3,9 @@
 De eigenschappen in de onderstaande tabel bestaan wel in de bovenliggende [[[DCAT_20]]], [[[DCATAP_21]]] en/of 
 [[[DCATAPDONL_11]]] standaarden, maar worden niet overgenomen in dit profiel.
 
-| Eigenschap            | Herkomst |
-|-----------------------|----------|
-| `dcat:packageFormat`  | DCAT     |
-| `dcat:compressFormat` | DCAT     |
-| `dcatap:availability` | DCAT-AP  |
+| Eigenschap        |
+|-------------------|
+| `dct:title`       |
+| `dct:description` |
+| `dct:language`    |
+| `adms:status`     |

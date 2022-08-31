@@ -1,16 +1,13 @@
 In dit hoofdstuk worden de klassen van het applicatieprofiel benoemd en beschreven.
 
-<figure id="dcatapdonl-classes">
-  <img src="assets/dcat-ap-donl_2.0.drawio.svg" alt="DCAT-AP-DONL 2.0 klassen" />
-  <figcaption>DCAT-AP-DONL 2.0 klassen</figcaption>
-</figure>
+![DCAT-AP-DONL 2.0 klassen](assets/dcat-ap-donl_2.0.drawio.svg "DCAT-AP-DONL 2.0 klassen")
 
 *Ga snel naar:*
 
-- [Dataset](#dcat-Dataset)
-- [Distribution](#dcat-Distribution)
-- [DataService](#dcat-DataService)
-- [LegalFoundation](#donl-LegalFoundation)
-- [Resource](#dcat-Resource)
-- [Catalog](#dcat-Catalog)
-- [CatalogRecord](#dcat-CatalogRecord)
+- [dcat:Dataset](#dcat-Dataset)
+- [dcat:Distribution](#dcat-Distribution)
+- [dcat:DataService](#dcat-DataService)
+- [donl:LegalFoundation](#donl-LegalFoundation)
+- [dcat:Resource](#dcat-Resource)
+- [dcat:Catalog](#dcat-Catalog)
+- [dcat:CatalogRecord](#dcat-CatalogRecord)

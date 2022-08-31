@@ -93,11 +93,18 @@ De gebruikte waardelijst [`waardelijst donl:Organization`](#waardelijst-donl-Org
 aan. De [`waardelijst donl:Organization`](#waardelijst-donl-Organization) beschrijft ook die organisaties.
 
 | Definitie      | Waarde                                                            |
-| -------------- |-------------------------------------------------------------------|
+|----------------|-------------------------------------------------------------------|
 | RDF Eigenschap | `dct:creator`                                                     |
 | Bereik         | [`waardelijst donl:Organization`](#waardelijst-donl-Organization) |
 | Kardinaliteit  | `1..1`                                                            |
 | Gebruik        | Mandatory                                                         |
+
+<aside class="note">
+
+In [[[DCATAPDONL_11]]] heette deze eigenschap `donl:authority`. Dit is in dit profiel recht getrokken zodat het weer
+overeenkomt met de bovenliggende DCAT profielen.
+
+</aside>
 
 <div class="issue" data-number="23"></div>
 
@@ -111,7 +118,7 @@ De gebruikte waardelijst [`waardelijst donl:Organization`](#waardelijst-donl-Org
 aan. De [`waardelijst donl:Organization`](#waardelijst-donl-Organization) beschrijft ook die organisaties.
 
 | Definitie      | Waarde                                                            |
-| -------------- |-------------------------------------------------------------------|
+|----------------|-------------------------------------------------------------------|
 | RDF Eigenschap | `dct:publisher`                                                   |
 | Bereik         | [`waardelijst donl:Organization`](#waardelijst-donl-Organization) |
 | Kardinaliteit  | `1..1`                                                            |

@@ -1,14 +1,17 @@
 ### Introductie
 
-<p>De Data Catalog vocabulaire (DCAT) is een standaard met als doel het uitwisselen van datasets makkelijker te maken. Wanneer een dataset in DCAT omschreven is kan deze gemakkelijk worden opgepakt door verschillende data-catalogi (e.a. systemen) en vervolgens worden gevonden door de gebruikers ervan. Naast het omschrijven van datasets laat het ook verschillende andere elementen omschrijven die nodig zijn bij de uitwisseling tussen verschillende data-catalogi (e.a. systemen).
+De Data Catalog vocabulaire (DCAT) is een standaard met als doel gepubliceerde gegevens en gegevensdiensten te bescrhijven. Daardoor kunnen potentiële gebruikers beoordelen of de aangeboden gegevens voor hen releveant zijn en geschikt zijn voor hun gebruik. Dit selectieproces kan ook (gedeeltelijk) automatisch uitgevoerd worden. 
 
-<blockquote><i>Verbanden kunnen worden gelegd zonder bijkomst van menselijke intelligentie.</i></blockquote>
+Daarnaast is het gebruikelijk om DCAT beschrijvingen op een centrale systemen te verzamelen (harvesting) om overzichten te maken van alle aangeboden informatie in een bepaald domein, een land of volgens andere criteria. Deze centrale DCAT registers maken het eenvoudig voor gebruikers door een groot aanbod te zoeken naar nuttige gegevens en web services.
 
-<a href="https://data.overheid.nl/">Data.overheid.nl</a> is het dataportaal van de Nederlandse overheid en kan in zijn geheel worden gezien als <code>dcat:catalog</code>. Een voorbeeld van een ander portaal (en dus <code>dcat:catalog</code>) is die van de EU, <a href="https://data.europa.eu/en">data.europa.eu</a>. De EU leest de DCAT data van <a href="https://data.overheid.nl/">data.overheid.nl</a> en daarmee zijn direct alle datasets van <a href="https://data.overheid.nl/">data.overheid.nl</a> ook op <a href="https://data.europa.eu/en">data.europa.eu</a> te vinden. Het gebruik van DCAT is dus erg waardevol.
+<a href="https://data.overheid.nl/">Data.overheid.nl</a> is zo'n DCAT dataportaal van de Nederlandse overheid.  Een voorbeeld van een ander portaal is die van de EU, <a href="https://data.europa.eu/en">data.europa.eu</a>. De EU leest de DCAT data van data.overheid.nl en daarmee zijn direct alle datasets van data.overheid.nl ook op data.europa.eu te vinden. Het gebruik van DCAT maakt dit soort cummulatieve verzamelingen mogelijk.
+
+Doel van dit DCAT-AP-DONL profiel is om betere beschrijvingen op te nemen in <a href="https://data.overheid.nl/">Data.overheid.nl</a>. Dit DCAT profiel  is gebaseerd op het [DCAT toepassingprofiel van de EU](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe) versie 2.1 dat op zijn beurt gebaseerd is op de [DCAT W3C standaard](https://www.w3.org/TR/vocab-dcat-2/). In deze nieuwe versie zijn de mogelijkheden van het het toepassingsprofiel van de EU (DCAT-AP 2.1) meegenomen, samen met de ervaring opgedaan sinds DCAT-AP-DONL 1.1.DCAT-AP-DONL 2.0 is backward compatible met bovenstaande standaarden.
+
+<a href="https://data.overheid.nl/">Data.overheid.nl</a> gaat daarnaast  informatie ook via DCAT inlezen en verspreiden. Dit profiel is specifieker dan de algemenere beschrijvingen waarvan het is afgeleid omm de informatie beter vindbaar te maken.
 
 Om zoveel mogelijk partijen aan te kunnen laten sluiten verplichten de originele <a href="https://www.w3.org/TR/vocab-dcat-2/">standaard van het W3C</a> en het toepassingsprofiel van de EU (<a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a>) weinig. Omdat  <a href="data.overheid.nl">data.overheid.nl</a> over alleen de Nederlandse overheid gaat kunnen we iets meer informatie van gebruikers vragen. Met deze extra informatie kunnen datasets nog beter vindbaar worden gemaakt. 
 
-In deze nieuwe versie zijn de mogelijkheden van het het toepassingsprofiel van de EU (<a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a>) meegenomen, samen met de ervaring opgedaan sinds <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a>. 
 
 De belangrijkste wijzigingen zijn:</p>
 

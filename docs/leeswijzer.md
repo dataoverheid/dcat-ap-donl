@@ -41,20 +41,21 @@ Beschrijft of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de
 
 ### Talen
 
-<p>De tekstuele waarden kunnen in maximaal één natuurlijke taal worden aangeleverd. Bij voorkeur is dat Nederlands. Als de beschrijvingen worden aangeleverd in een andere taal, dan moet de taal kan worden aangegeven in eigenschap dct:language. Op data.overheid.nl wordt deze tekst geïndexeerd, zodat eindgebruikers de desbetreffende dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in de tekst.</p>
+De tekstuele waarden kunnen in maximaal één natuurlijke taal worden aangeleverd op data.overheid.nl. Bij voorkeur is dat Nederlands. Als de beschrijvingen worden aangeleverd in een andere taal, dan moet de taal kan worden aangegeven in eigenschap dct:language. Op data.overheid.nl wordt deze tekst geïndexeerd, zodat eindgebruikers de desbetreffende dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in de tekst.
 
 ### Termenlijst
   
-<b> Gegevensdienst</b>
+<b>Dataservice</b>
 
 Een gegevensdienst of `dataservice` is in de eerste plaats een plek waar gegevens opgevraagd kunnen worden. Maar omdat dit via een interface gebeurdt kunnen gebruikers specificaties aan de aanvraag meegeven. Is bijvoorbeeld maar een klein gedeelte van de data nodig, dan zal ook niet de gehele dataset, maar een subset opgestuurd worden. Of wanneer er meerdere formaten van aanlevering mogelijk zijn zoals JSON en XML, dan kan dit ook direct worden gespecificeerd in de aanvraag. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit.
 
 De [`dcat:DataService`](#dcat-DataService) is meer gericht op het ontsluiten van gegevens via een API of user interface waar eigen parameters meegegeven kunnen worden. Zie [verschillen](#verschillen) voor een uitgebreidere uitleg over het verschil tussen beiden.
 
-<b> Dataset in `dcat`</b>
+<b>Resource </b>
 
+<b>Dataset in `dcat`</b>
 
-<b> Catalogus in `dcat` </b>
+<b>Catalogus in `dcat` </b>
 
 In het algemeen gebruik is een catalogus een verzameling van verwijzingen (naar dingen, concepten e.a.). Een [`dcat:Catalog`](#dcat-Catalog) is een verzameling verwijzingen naar andere dcat klasses. Dus een verzameling van datasets, van distributies of andere catalogi. 
 

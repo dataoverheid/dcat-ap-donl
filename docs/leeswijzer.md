@@ -31,11 +31,7 @@ De W3C specificatie van DCAT 2 stelt geen eisen aan de cardinaliteit van de eige
 
 <b>Gebruik</b>
 
-Zie <a href="#aanwezigheid-eigenschappen">**aanwezigheid eigenschappen**  </a>. Beschrijft of een eigenschap verplicht is, aanbevolen of optioneel.
-
-### Aanwezigheid eigenschappen
-
-Of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de onderstaande termen.
+Beschrijft of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de onderstaande termen.
 
 | Terminologie | Nederlands | Definitie                                                                   |
 | ------------ | ---------- | --------------------------------------------------------------------------- |
@@ -43,24 +39,22 @@ Of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de onderstaan
 | Recommended  | Aanbevolen | Deze eigenschap is erg waardevol, maar de aanwezigheid is niet verplicht.   |
 | Optional     | Optioneel  | Deze eigenschap wordt ondersteund en kan worden ingevuld naar wens          |
 
-
-
 ### Talen
 
 <p>De tekstuele waarden kunnen in maximaal één natuurlijke taal worden aangeleverd. Bij voorkeur is dat Nederlands. Als de beschrijvingen worden aangeleverd in een andere taal, dan moet de taal kan worden aangegeven in eigenschap dct:language. Op data.overheid.nl wordt deze tekst geïndexeerd, zodat eindgebruikers de desbetreffende dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in de tekst.</p>
 
 ### Termenlijst
   
-#### Gegevensdienst
+<b> Gegevensdienst</b>
 
 Een gegevensdienst of `dataservice` is in de eerste plaats een plek waar gegevens opgevraagd kunnen worden. Maar omdat dit via een interface gebeurdt kunnen gebruikers specificaties aan de aanvraag meegeven. Is bijvoorbeeld maar een klein gedeelte van de data nodig, dan zal ook niet de gehele dataset, maar een subset opgestuurd worden. Of wanneer er meerdere formaten van aanlevering mogelijk zijn zoals JSON en XML, dan kan dit ook direct worden gespecificeerd in de aanvraag. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit.
 
 De [`dcat:DataService`](#dcat-DataService) is meer gericht op het ontsluiten van gegevens via een API of user interface waar eigen parameters meegegeven kunnen worden. Zie [verschillen](#verschillen) voor een uitgebreidere uitleg over het verschil tussen beiden.
 
-#### Dataset in `dcat`
+<b> Dataset in `dcat`</b>
 
 
-#### Catalogus in `dcat` 
+<b> Catalogus in `dcat` </b>
 
 In het algemeen gebruik is een catalogus een verzameling van verwijzingen (naar dingen, concepten e.a.). Een [`dcat:Catalog`](#dcat-Catalog) is een verzameling verwijzingen naar andere dcat klasses. Dus een verzameling van datasets, van distributies of andere catalogi. 
 

@@ -1,10 +1,6 @@
 ## Leeswijzer
 
-Dit toepassingsprofiel beschrijft alle klassen en eigenschappen die onderdeel zijn van DCAT-AP-DONL 2.0. Per klasse en 
-eigenschap beschrijft het toepassingsprofiel of deze verplicht, aanbevolen of optioneel moet/mag worden aangeleverd. Ook 
-sluit het toepassingsprofiel de aanlevering van enkele klassen en eigenschappen uit. Dit betekent dat ze niet 
-aangeleverd kunnen worden en dus ook niet worden weergegeven op data.overheid.nl. De reden hiervoor wordt bij de 
-desbetreffende klasse of eigenschap toegelicht.
+DCAT 2 bestaat uit verschillende klasses zoals [`dcat:Dataset`](#dcat-Dataset) of [`dcat:Distributie`](#dcat-Distribution).Deze klasses omschrijven de verschillende concepten die nodig zijn bij data uitwisseling. Binnen de klasses vind men eigenschappen. Een eigenschap kan bijvoorbeeld een titel zijn, of hoe groot de dataset is, of wie het gemaakt heeft. Hoe u de omschrijvingen van klasses en eigenschappen kunt interpreteren, tezamen met een aantal kanttekeningen is te vinden in deze leeswijzer.
 
 ### Omschrijving eigenschappen
 
@@ -27,7 +23,7 @@ Beschrijft de mogelijke waarden van de eigenschap.
 <b>Kardinaliteit</b>
 
 Geeft aan of de eigenschap eigenschap 0, 1 of meerdere keren mag voorkomen. Hierbij wordt gebruik gemaakt van de schrijfwijze x..y, waarbij x het minimaal aantal voorkomens aangeeft en y het maximaal aantal. Bijvoorbeeld 1..* geeft aan dat de eigenschap 1 of meer keer mag voorkomen.
-De W3C specificatie van DCAT 2 stelt geen eisen aan de cardinaliteit van de eigenschappen; DCAT-AP-EU wel. Om hierin inzicht te verschaffen bevat deze tekst per DCAT klasse ook een overzicht van de toepassing.
+De W3C specificatie van DCAT 2 stelt geen eisen aan de cardinaliteit van de eigenschappen; DCAT-AP-EU wel.
 
 <b>Gebruik</b>
 

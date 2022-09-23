@@ -2,10 +2,11 @@
 
 #### Introductie van klasse [`dcat:DataService`](#dcat-DataService)
 
-In [[[DCATAPDONL_11]]] wordt gebruik gemaakt van de klasse [`dcat:Distributie`](#dcat-Distribution). Deze distributie kan worden gezien als specifieke representatie van een [`dcat:Dataset`](#dcat-Dataset). Zo kan een [`dcat:Dataset`](#dcat-Dataset) worden aangeboden in CSV formaat én in JSON, of zijn er subsets beschikbaar over verschillende kalenderjaren.
+Een DataService is een collectie van functies om toegang te krijgen tot (een selectie of bewerking van) gegevens van een 
+of meer datasets, speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen.
 
-Bij een [`dcat:Distributie`](#dcat-Distribution) zijn de kaders erg duidelijk. Het formaat en de inhoud zijn voor iedere gebruiker hetzelfde. Met deze gedachte is ook de DCAT omschrijving van een distributie ontwikkeld. Maar dat de kaders duidelijk zijn blijkt alleen niet altijd te kloppen. Vaak is het mogelijk om via een API subsets op te vragen, of het formaat te kunnen specificeren. Of het blijkt dat een API zelf meerdere [`dcat:Datasets`](#dcat-Dataset) gebruikt. Om dit alles goed te kunnen omschrijven bleek [[[DCATAPDONL_11]]] niet te voldoen.
+Het biedt uitgebreidere mogelijkheden om de geautomatiseerde toegang tot de gegevens in een dataset via een API te beschrijven dan mogelijk is in de klasse [`dcat:Distributie`](#dcat-Distribution). In deze nieuwe versie van het toepassingsprofiel is de DataService klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te beschrijven met de klasse Distributie.
 
-De klasse [`dcat:DataService`](#dcat-DataService) maakt het mogelijk om dergelijke situaties wel te beschrijven. Er is mogelijkheid gemaakt om meerdere [`dcat:Datasets`](#dcat-Dataset) als basis te hebben en het is verplicht om te verwijzen naar een handleiding. Daarnaast wordt er niet meer specifiek gevraagd naar een dataformaat of andere strakke kaders.
+#### Nieuwe eigenschappen
 
-In de praktijk is het handig om de [`dcat:Distributie`](#dcat-Distribution) te zien als direct downloadbaar bestand en een [`dcat:DataService`](#dcat-DataService) als API.
+Aangegeven als <em class="new">nieuw</em>.

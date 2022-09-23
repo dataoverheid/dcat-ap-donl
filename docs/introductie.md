@@ -6,19 +6,18 @@ Daarnaast is het gebruikelijk om DCAT beschrijvingen op centrale systemen te ver
 
 [[[DONL]]] is zo'n DCAT dataportaal van de Nederlandse overheid.  Een voorbeeld van een ander portaal is die van de EU, [[[DATA_EU]]]. De EU leest de DCAT data van data.overheid.nl en daarmee zijn direct alle datasets van data.overheid.nl ook op data.europa.eu te vinden. Het gebruik van DCAT maakt dit soort cummulatieve verzamelingen mogelijk.
 
-Doel van dit DCAT-AP-DONL profiel is om betere beschrijvingen te verzamelen in [[[DONL]]]. Dit DCAT profiel  is gebaseerd op het [[[DCATAP_21]]] versie 2.1 dat op zijn beurt gebaseerd is op de [[[DCAT_20]]] van het W3C. 
+Doel van dit DCAT-AP-DONL profiel is om betere beschrijvingen te verzamelen in [[[DONL]]]. Dit DCAT profiel  is gebaseerd op het [[[DCATAP_21]]] dat op zijn beurt gebaseerd is op de [[[DCAT_20]]] van het W3C. 
 
 In deze nieuwe versie zijn de nieuwe mogelijkheden van het het toepassingsprofiel van de EU ([[[DCATAP_21]]]) meegenomen, samen met de ervaring opgedaan sinds [[[DCATAPDONL_11]]]. Het profiel is specifieker dan de algemenere beschrijvingen waarvan het is afgeleid om de functionaliteit van data.overheid.nl te verbeteren. DCAT-AP-DONL 2.0 is compatible met bovenstaande standaarden, wat betekent dat een profiel dat voldoet aan DCAT-AP-DONL 2.0 ook verwerkt kan worden binnen [[[DCAT_20]]] en [[[DCATAP_21]]]. Het is ook backwards-compatible met [[[DCATAPDONL_11]]] waardoor beschrijvingen uitwisselbaar zijn tussen beide profielen. Eigenaren van bestaande DCAT omschrijvingen volgens het [[[DCATAPDONL_11]]] profiel kunnen overwegen hun omschrijving te optimaliseren om hun databronnen beter te beschrijven.
 
 Om zoveel mogelijk scenario's te ondersteunen, verplichten de originele [[[DCAT_20]]] van het W3C en het toepassingsprofiel van de EU ([[[DCATAP_21]]]) weinig. Omdat [[[DONL]]] alleen de Nederlandse overheid betreft kunnen we meer informatie van gebruikers vragen daarmee worden datasets beter vindbaar. 
 
 
-De belangrijkste wijzigingen tussen [[[DCATAPDONL_11]]] en deze DCAT-AP-DONL v2 zijn:</p>
+De belangrijkste wijzigingen tussen [[[DCATAPDONL_11]]] en deze DCAT-AP-DONL 2.0 zijn:</p>
 
 <ul>
-        <li><a href="#dcat-Distribution">Distributies</a> worden beschrijven alleen nog bestandsleveringen en geen dataservices.</li>
         <li>Introductie van de klasse <a href="#dcat-DataService">dataservice</a>.</li>
-
+        <li>Nieuwe eigenschappen, aangegeven als <em class="new">nieuw</em>. </li>
 </ul>
 
 <p>Dit toepassingsprofiel blijft in ontwikkeling. Commentaren, problemen, wensen e.d. kunnen als issue worden gemeld op de <a href="https://github.com/dataoverheid/dcat-ap-donl">Github pagina</a>.</>

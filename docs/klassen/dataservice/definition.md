@@ -29,7 +29,7 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` besch
 
 ### endpoint URL {#dcat-endpointURL}
 
-De locatie of het endpoint van de service (over het algemeen een via HTTP raadpleegbaar adres)
+De locatie of het endpoint van de service (over het algemeen een via HTTP raadpleegbaar adres).
 
 | Definitie      | Waarde             |
 |----------------|--------------------|

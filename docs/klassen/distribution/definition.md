@@ -116,10 +116,12 @@ mogen niet in tegenspraak zijn met de licentiegegevens van de onderliggende `dca
  
 > Zie ook [`dct:license`](#dct-license) in [`dcat:Resource`](#dcat-Resource).
 
+<div class="issue" data-number="22"></div>
+
 ### accessService <em class="new">nieuw</em> {#dcat-accessService}
 
 Alleen van toepassing wanneer de distributie via een dataservice bereikbaar is. De dataservice biedt dan toegang tot het 
-bestand of de bestanden van deze distributie. Access service wordt niet ingevuld als de toegang tot de distributie.
+bestand of de bestanden van deze distributie. Access service wordt niet ingevuld als de toegang tot de distributie. Dit kan in [`dcat:accessURL`](#dcat-accessURL) 
 
 Deze eigenschap is nieuw in DCAT2 en biedt aanbieders van datasets de mogelijkheid om extra informatie te verstrekken 
 over datasets die via een dataservice wordt aangeboden.
@@ -173,8 +175,7 @@ kunnen dan uitgaan van de waarde van [`dct:accrualPeriodicity`](#dct-accrualPeri
 De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubliceerd. Deze eigenschap moet een datum 
 *en* tijd bevatten conform de [[[ISO8601]]] standaard.
 
-Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Als er geen tijdzone wordt opgegeven, moet er 
-uitgegaan worden van de Nederlandse tijd.
+Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er geen tijdzone wordt opgegeven wordt uitgegaan van de Nederlandse tijd.
 
 | Definitie      | Waarde         |
 |----------------|----------------|

@@ -4,7 +4,7 @@ In de onderstaande hoofdstukken worden de eigenschappen van de `dcat:Resource` b
 
 ### identifier {#dct-identifier}
 
-De resource volgens de eigenaar van de data. Dit is bij voorkeur URI die via HTTP raadpleegbaar is. Hier wordt de 
+De identifier van de resource volgens de eigenaar van de data. Dit is bij voorkeur URI die via HTTP raadpleegbaar is. Hier wordt de 
 oorspronkelijke identificatie van de resource (dataset, dataservice of catalogus) genomen zoals de data-eigenaar deze 
 gepubliceerd heeft.
 

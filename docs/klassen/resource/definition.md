@@ -325,7 +325,7 @@ wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de [`dct:m
 
 <aside class="note">
 
-Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, YYYY-MM-DD.
+Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, `YYYY-MM-DDThh:mm:ss`.
 
 </aside>
 
@@ -348,7 +348,7 @@ kan beter [`dct:accrualPeriodicity`](#dct-accrualPeriodicity) gebruikt worden.
 
 <aside class="note">
 
-Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, YYYY-MM-DD.
+Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, `YYYY-MM-DDThh:mm:ss`.
 
 </aside>
 

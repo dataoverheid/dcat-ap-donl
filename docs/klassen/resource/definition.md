@@ -133,7 +133,7 @@ dataservice. Bij het invullen van deze eigenschap is het belangrijk om een algem
 de bedoeling om hier gegevens van individuele personen op te nemen.
 
 Een geldig `dcat:contactPoint` bevat op zijn minst de eigenschap `vcard:fn` en een van de `vcard:hasEmail`, 
-`vcard:hasTelephone` of `vcard:hasURL` eigenschappen.
+`vcard:hasTelephone` of `vcard:hasURL` eigenschappen. Voor een voorbeeld zie [#Contact Point](#example-contact-point)
 
 | Definitie      | Waarde              |
 |----------------|---------------------|

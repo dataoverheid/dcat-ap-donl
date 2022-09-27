@@ -9,9 +9,7 @@ aan de dataset.
 Als een dataset (ook) wordt aangeboden in de vorm van een webservice kunnen hierover aanvullende gegevens worden 
 opgenomen in een [`dcat:DataService`](#dcat-DataService). Deze kan worden gerelateerd aan de bijbehorende distributie.
 
-De distributie geeft aan dat er gegevens van een dataset beschikbaar zijn. Het zegt nog niets over de manier waarop de 
-data kunnen worden benaderd, zoals via een directe download, een API of een webpagina. Een waarde in 
-eigenschap [`dcat:downloadURL`](#dcat-downloadURL) geeft aan dat de gegevens in de distributie direct gedownload kunnen
+De distributie geeft aan dat er gegevens van een dataset beschikbaar zijn. Dat kan zijn via een directe download, een API of een webpagina. Een waarde in de eigenschap [`dcat:downloadURL`](#dcat-downloadURL) geeft aan dat de gegevens in de distributie direct gedownload kunnen
 worden.
 
 In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data op te 

@@ -1,9 +1,8 @@
 > Subklasse van [`dcat:Resource`](#dcat-Resource)
 
-Een dataset is een gegevensverzameling, die is samengesteld en gepubliceerd door een (overheids-)organisatie en digitaal 
-beschikbaar is in één of meer representaties.
+Een dataset is een gegevensverzameling. Op [[[DONL]]] is deze samengesteld en gepubliceerd door een (overheids-)organisatie.
 
-Deze klasse beschrijft de dataset als concept. Het staat dus los van de gegevensverzameling zelf, die mogelijk 
+De klasse beschrijft de dataset als concept. Het staat dus los van de gegevensverzameling zelf, die mogelijk 
 beschikbaar is in een of meerdere representaties, formaten of serialisaties.
 
 De DCAT standaard heeft een ruime opvatting over de aard van de gegevens die een dataset kunnen vormen. Voor

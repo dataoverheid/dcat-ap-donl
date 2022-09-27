@@ -24,6 +24,19 @@ representatie van een `dcat:Dataset`.
 ```
 </aside>
 
-
-
 ### Niet publieke datasets
+
+
+### Temporal coverage
+
+<aside class="example" title="Temporal coverage">
+Voorbeeld <a href="(https://www.w3.org/TR/vocab-dcat-2/#ex-temporal-coverage-closed-interval)">overgenomen van het W3C</a>:
+
+```turtle
+<ds257> a dcat:Dataset ;
+  dct:temporal [ a dct:PeriodOfTime ;
+    dcat:startDate "2016-03-04"^^xsd:date ;
+    dcat:endDate   "2018-08-05"^^xsd:date ;
+  ] .
+```
+</aside>

@@ -50,6 +50,8 @@ Gebruik altijd het HTTPS-protocol voor webadressen! Zie ook [[[HTTPS_EN_HSTS]]].
 
 Informatie over het bestandsformaat van de distributie volgens de indeling van het publicatiebureau van de EU.
 
+Het bestandsformaat kan ook worden opgegeven in [`dct:MediaType`](#dct-mediaType), maar voor [[[DONL]]] is `dct:format` lijdend. Het verschil tussen deze twee zit voornamelijk in gebruikte waardelijsten. De W3C raadt het gebruik van [`dct:MediaType`](#dct-mediaType) aan en de EU het gebruik van `dct:format` dus voor de beste vindbaarheid kan men het beste beide invullen.
+
 | Definitie      | Waarde                                                  |
 |----------------|---------------------------------------------------------|
 | RDF Eigenschap | `dct:format`                                            |

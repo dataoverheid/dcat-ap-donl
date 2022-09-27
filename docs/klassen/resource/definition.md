@@ -248,7 +248,7 @@ De natuurlijk taal van de data in de resource.
 <aside class="note">
 
 Er is een verschil in definitie van `dct:language` (voor dataset en dataservice) tussen de specificaties volgens 
-[[[DCAT_20]]] en [[[DCATAP_21]]]. 
+[[[DCAT_20]]] en [[[DCATAP_21]]]. Dit toepassingsprofiel volgt [[[DCATAP_21]]] 
 
 [[[DCAT_20]]]: A language of the item. This refers to the natural language used for textual metadata (i.e. titles, 
 descriptions, et cetera) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset 
@@ -268,7 +268,7 @@ In de `adms:identifier` wordt de identifier benoemd in `skos:notation` en de uit
 `dct:creator`.
 
 Let op, een resource wordt na het aanmaken niet aangepast door anderen met deze other identifier als uitzondering. Een 
-other identifier kan worden toegevoegd als verrijking van de dcat informatie.
+other identifier kan worden toegevoegd als verrijking van de dcat informatie. Voor een voorbeeld zie [#Other identifier](#example-other-identifier)
 
 | Definitie      | Waarde            |
 |----------------|-------------------|
@@ -325,7 +325,7 @@ wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de [`dct:m
 
 <aside class="note">
 
-Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie.
+Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, YYYY-MM-DD.
 
 </aside>
 
@@ -348,7 +348,7 @@ kan beter [`dct:accrualPeriodicity`](#dct-accrualPeriodicity) gebruikt worden.
 
 <aside class="note">
 
-Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie.
+Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, YYYY-MM-DD.
 
 </aside>
 

@@ -33,7 +33,7 @@ De datum waarop het record in de catalogus voor het laatst is gewijzigd.
 
 <aside class="note">
 
-Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] standaard.
+Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] standaard, YYYY-MM-DD.
 
 </aside>
 
@@ -50,7 +50,7 @@ De datum waarop het record in de catalogus voor het eerst is toegevoegd.
 
 <aside class="note">
 
-Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] standaard.
+Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] standaard, YYYY-MM-DD.
 
 </aside>
 

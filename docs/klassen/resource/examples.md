@@ -10,7 +10,9 @@
 	dcat:contactPoint [a vcard:Organization ;
 		vcard:fn "data.overheid.nl";
 		vcard:hasEmail "data@koop.overheid.nl";
-        vcard:hasTelephone "TODO: Klopt hasTelephone?";
+        vcard:hasTelephone [ a vcard:Work,
+            vcard:Voice;
+            vcard:hasValue <tel:31707000526> ];
         vcard:hasURL "data.overheid.nl";
 		];
 .

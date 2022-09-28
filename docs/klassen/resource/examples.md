@@ -19,6 +19,8 @@ https://data.overheid.nl/ondersteuning/algemeen/contact
 ```
 </aside>
 
+### Other identifier
+
 <aside class="example" title="Other identifier">
 
 ```
@@ -26,3 +28,27 @@ TODO
 .
 ```
 </aside>
+
+### Qualified attribution
+
+<aside class="example" title="Qualified attribution">
+
+Voorbeeld overgenomen van [W3C](https://www.w3.org/TR/vocab-dcat-2/#qualified-attribution)
+
+```turtle
+ex:DS987
+  a dcat:Dataset ;
+  prov:qualifiedAttribution [
+    a prov:Attribution ;
+    prov:agent <https://www.ala.org.au/> ;
+    dcat:hadRole <http://registry.it.csiro.au/def/isotc211/CI_RoleCode/distributor>
+  ] ;
+  prov:qualifiedAttribution [
+    a prov:Attribution ;
+    prov:agent <https://www.education.gov.au/> ;
+    dcat:hadRole <http://registry.it.csiro.au/def/isotc211/CI_RoleCode/funder>
+  ] ;
+.
+```
+</aside>
+

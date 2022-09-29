@@ -262,13 +262,12 @@ distribution.
 
 De verplichte eigenschap [`dct:identifier`](#dct-identifier) bevat de unieke identificatie van de dataset die de 
 data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset zoals gegeven door 
-catalogi als [[[DONL]]].
+catalogi als [[[DONL]]] of andere partijen. Wanneer men de dataset van een ander een nieuwe identifier geven wil wordt aangeraden dit te doen door middel van een `other identifier`.
 
 In de `adms:identifier` wordt de identifier benoemd in `skos:notation` en de uitgever van de identifier in
 `dct:creator`.
 
-Let op, een resource wordt na het aanmaken niet aangepast door anderen met deze other identifier als uitzondering. Een 
-other identifier kan worden toegevoegd als verrijking van de dcat informatie. Voor een voorbeeld zie [#Other identifier](#example-other-identifier)
+Voor een voorbeeld zie [#Other identifier](#example-other-identifier)
 
 | Definitie      | Waarde            |
 | -------------- | ----------------- |

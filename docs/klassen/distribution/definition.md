@@ -6,8 +6,8 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:Distribution` besc
 | -------------------------------------------------------------------- | ------------- | ------------ | ----------- |
 | [**accessURL**](#dcat-accessURL)                                     | `1..1`        | Mandatory    | Distributie |
 | [**format**](#dct-format)                                            | `1..1`        | Mandatory    | Distributie |
-| [**title**](#dct-title1)                                             | `1..1`        | Mandatory    | Distributie |
-| [**description**](#dct-description1)                                 | `1..1`        | Mandatory    | Distributie |
+| [**title**](#dct-title1)                                             | `1..n`        | Mandatory    | Distributie |
+| [**description**](#dct-description1)                                 | `1..n`        | Mandatory    | Distributie |
 | [**license**](#dct-license1)                                         | `1..1`        | Mandatory    | Distributie |
 | [**access service**](#dcat-accessService) <em class="new">nieuw</em> | `0..1`        | Recommended  | Distributie |
 | [**download URL**](#dcat-downloadURL)                                | `0..1`        | Recommended  | Distributie |

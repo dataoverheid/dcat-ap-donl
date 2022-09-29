@@ -3,7 +3,7 @@
 In de onderstaande tabel worden de eigenschappen van de `dcat:Distribution` beschreven.
 
 | **Eigenschap**                                                       | Kardinaliteit | Aanwezigheid | Herkomst    |
-|----------------------------------------------------------------------|---------------|--------------|-------------|
+| -------------------------------------------------------------------- | ------------- | ------------ | ----------- |
 | [**accessURL**](#dcat-accessURL)                                     | `1..1`        | Mandatory    | Distributie |
 | [**format**](#dct-format)                                            | `1..1`        | Mandatory    | Distributie |
 | [**title**](#dct-title1)                                             | `1..1`        | Mandatory    | Distributie |
@@ -34,7 +34,7 @@ volledige API-call waarmee de data uit de service gehaald kan worden. Met [`dcat
 wordt dan de link gemaakt met de [`dcat:DataService`](#dcat-DataService).
 
 | Definitie      | Waarde           |
-|----------------|------------------|
+| -------------- | ---------------- |
 | RDF Eigenschap | `dcat:accessURL` |
 | Bereik         | `xsd:anyURI`     |
 | Kardinaliteit  | `1..1`           |
@@ -53,7 +53,7 @@ Informatie over het bestandsformaat van de distributie volgens de indeling van h
 Het bestandsformaat kan ook worden opgegeven in [`dct:MediaType`](#dct-mediaType), maar voor [[[DONL]]] is `dct:format` lijdend. Het verschil tussen deze twee zit voornamelijk in gebruikte waardelijsten. De W3C raadt het gebruik van [`dct:MediaType`](#dct-mediaType) aan en de EU het gebruik van `dct:format` dus voor de beste vindbaarheid kan men het beste beide invullen.
 
 | Definitie      | Waarde                                                  |
-|----------------|---------------------------------------------------------|
+| -------------- | ------------------------------------------------------- |
 | RDF Eigenschap | `dct:format`                                            |
 | Bereik         | [`waardelijst mdr:Filetype`](#waardelijst-mdr-Filetype) |
 | Kardinaliteit  | `1..1`                                                  |
@@ -68,10 +68,10 @@ aparte titel worden opgenomen per taal die wordt aangeduid door een "language ta
 `dct:language` een waarde moet voorkomen voor elke taal.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:title`    |
 | Bereik         | `rdfs:Literal` |
-| Kardinaliteit  | `1..1`         |
+| Kardinaliteit  | `1..n`         |
 | Gebruik        | Mandatory      |
 
 > Zie ook [`dct:title`](#dct-title) van [`dcat:Resource`](#dcat-Resource).
@@ -87,10 +87,10 @@ Voor overige informatie over de Distributie is de eigenschap Documentation besch
 webpagina's verwezen wordt.
 
 | Definitie      | Waarde            |
-|----------------|-------------------|
+| -------------- | ----------------- |
 | RDF Eigenschap | `dct:description` |
 | Bereik         | `rdfs:Literal`    |
-| Kardinaliteit  | `1..1`            |
+| Kardinaliteit  | `1..n`            |
 | Gebruik        | Mandatory         |
 
 > Zie ook [`dct:description`](#dct-description) in [`dcat:Resource`](#dcat-Resource).
@@ -108,7 +108,7 @@ Er kunnen ook licentiegegevens op het niveau van de dataset ([`dcat:Resource`](#
 mogen niet in tegenspraak zijn met de licentiegegevens van de onderliggende `dcat:Distribution`s.
 
 | Definitie      | Waarde                                                  |
-|----------------|---------------------------------------------------------|
+| -------------- | ------------------------------------------------------- |
 | RDF Eigenschap | `dct:license`                                           |
 | Bereik         | [`waardelijst donl:License`](#waardelijst-donl-License) |
 | Kardinaliteit  | `1..1`                                                  |
@@ -127,7 +127,7 @@ Deze eigenschap is nieuw in DCAT2 en biedt aanbieders van datasets de mogelijkhe
 over datasets die via een dataservice wordt aangeboden.
 
 | Definitie      | Waarde               |
-|----------------|----------------------|
+| -------------- | -------------------- |
 | RDF Eigenschap | `dcat:accessService` |
 | Bereik         | `dcat:DataService`   |
 | Kardinaliteit  | `0..1`               |
@@ -141,7 +141,7 @@ aangegeven in de distributie in eigenschap `dct:format` en/of `dcat:mediaType`.
 Wanneer `dcat:accessURL` al de directe link naar de data aanbiedt, hoeft deze eigenschap niet ingevuld te worden.
 
 | Definitie      | Waarde             |
-|----------------|--------------------|
+| -------------- | ------------------ |
 | RDF Eigenschap | `dcat:downloadURL` |
 | Bereik         | `xsd:anyURI`       |
 | Kardinaliteit  | `0..1`             |
@@ -160,7 +160,7 @@ kunnen dan uitgaan van de waarde van [`dct:accrualPeriodicity`](#dct-accrualPeri
 `dcat:Dataset` is opgenomen.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:modified` |
 | Bereik         | `xsd:dateTime` |
 | Kardinaliteit  | `0..1`         |
@@ -178,7 +178,7 @@ De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubl
 Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er geen tijdzone wordt opgegeven wordt uitgegaan van de Nederlandse tijd.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:issued`   |
 | Bereik         | `xsd:dateTime` |
 | Kardinaliteit  | `0..1`         |
@@ -188,14 +188,13 @@ Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er g
 
 ### language {#dct-language1}
 
-De natuurlijke taal van de gegevens in de distributie. Als er meerdere talen voorkomen in de distributie wordt deze als
-nieuwe distributie aangeboden. Deze moeten overeenkomen met de benoemde talen in de bovenliggende dataset.
+De natuurlijke taal van de gegevens in de distributie.
 
 Niet alle data die aangeboden wordt is taalgebonden (denk aan cijfers, statistieken etc.), om deze reden is deze 
 eigenschap optioneel.
 
 | Definitie      | Waarde                                                    |
-|----------------|-----------------------------------------------------------|
+| -------------- | --------------------------------------------------------- |
 | RDF Eigenschap | `dct:language`                                            |
 | Bereik         | [`waardelijst donl:Language`](#waardelijst-donl-Language) |
 | Kardinaliteit  | `0..n`                                                    |
@@ -214,12 +213,12 @@ Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attribut
 Voor iedere taal kan één aparte rights-statement worden opgenomen die wordt aangeduid door een "language tag" achter de 
 literal te plaatsen.
 
-| Definitie      | Waarde       |
-|----------------|--------------|
-| RDF Eigenschap | `dct:rights` |
-| Bereik         | `xsd:string` |
-| Kardinaliteit  | `0..n`       |
-| Gebruik        | Optional     |
+| Definitie      | Waarde         |
+| -------------- | -------------- |
+| RDF Eigenschap | `dct:rights`   |
+| Bereik         | `rdfs:Literal` |
+| Kardinaliteit  | `0..n`         |
+| Gebruik        | Optional       |
  
 > Zie ook [`dct:rights`](#dct-rights) in [`dcat:Resource`](#dcat-Resource).
 
@@ -233,7 +232,7 @@ te vullen.
 Uiteraard is een negatieve omvang niet mogelijk. De waarde moet dus 0 of hoger zijn.
 
 | Definitie      | Waarde          |
-|----------------|-----------------|
+| -------------- | --------------- |
 | RDF Eigenschap | `dcat:byteSize` |
 | Bereik         | `xsd:decimal`   |
 | Kardinaliteit  | `0..1`          |
@@ -252,7 +251,7 @@ gegevens in een model passen, of welke representatie of view deze gegevens van h
 Verwijs naar standaarden door middel van een HTTPS adres.
 
 | Definitie      | Waarde           |
-|----------------|------------------|
+| -------------- | ---------------- |
 | RDF Eigenschap | `dct:conformsTo` |
 | Bereik         | `dct:Standard`   |
 | Kardinaliteit  | `0..n`           |
@@ -271,7 +270,7 @@ Gebruik altijd het HTTPS-protocol voor webadressen! Zie ook [[[HTTPS_EN_HSTS]]].
 Informatie over de bestandsindeling (of MIME-type) van de distributie, volgens de indeling van [[[IANA_MEDIATYPES]]].
 
 | Definitie      | Waarde                                                       |
-|----------------|--------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------ |
 | RDF Eigenschap | `dcat:mediaType`                                             |
 | Bereik         | [`waardelijst iana:Mediatypes`](#waardelijst-iana-Mediatype) |
 | Kardinaliteit  | `0..1`                                                       |
@@ -288,7 +287,7 @@ De `spdx:Checksum` klasse bevat naast de berekende checksum-waarde ook een prope
 aangeeft. Op dit moment ondersteunt DCAT-AP-EU alleen SHA1 (`spdx:checksumAlgorithm_sha1`).
 
 | Definitie      | Waarde          |
-|----------------|-----------------|
+| -------------- | --------------- |
 | RDF Eigenschap | `spdx:checksum` |
 | Bereik         | `spdx:Checksum` |
 | Kardinaliteit  | `0..1`          |
@@ -310,7 +309,7 @@ Een aantal data-eigenaren kiest ervoor om de documentatie als op zichzelf staand
 dataset. In die gevallen hoeft deze eigenschap niet ingevuld te worden.
 
 | Definitie      | Waarde       |
-|----------------|--------------|
+| -------------- | ------------ |
 | RDF Eigenschap | `foaf:page`  |
 | Bereik         | `xsd:anyURI` |
 | Kardinaliteit  | `0..n`       |
@@ -330,7 +329,7 @@ daadwerkelijke data aanbiedt. In dat geval kan de "documentatie" distributie een
 opnemen om deze verhouding te duiden.
 
 | Definitie      | Waarde                                                                |
-|----------------|-----------------------------------------------------------------------|
+| -------------- | --------------------------------------------------------------------- |
 | RDF Eigenschap | `donl:supportingRole`                                                 |
 | Bereik         | [`waardelijst donl:SupportingRole`](#waardelijst-donl-SupportingRole) |
 | Kardinaliteit  | `0..1`                                                                |

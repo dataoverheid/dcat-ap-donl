@@ -13,7 +13,7 @@ identifiers krijgen. Deze worden overgenomen in [`adms:identifier`](#adms-identi
 voorkomens van [`adms:identifier`](#adms-identifier) hebben.
 
 | Definitie      | Waarde           |
-|----------------|------------------|
+| -------------- | ---------------- |
 | RDF Eigenschap | `dct:identifier` |
 | Bereik         | `xsd:anyURI`     |
 | Kardinaliteit  | `1..1`           |
@@ -27,12 +27,12 @@ dataset, dataservice of catalogus kunnen terugvinden op basis van een of meer wo
 Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in 
 meer tekens de dataset te beschrijven, dan kan [`dct:description`](#dct-description) gebruikt worden.
 
-| Definitie      | Waarde       |
-|----------------|--------------|
-| RDF Eigenschap | `dct:title`  |
-| Bereik         | `xsd:string` |
-| Kardinaliteit  | `1..n`       |
-| Gebruik        | Mandatory    |
+| Definitie      | Waarde         |
+| -------------- | -------------- |
+| RDF Eigenschap | `dct:title`    |
+| Bereik         | `rdfs:literal` |
+| Kardinaliteit  | `1..n`         |
+| Gebruik        | Mandatory      |
 
 <aside class="note">
 
@@ -49,9 +49,9 @@ van de tekst. Om ervoor te zorgen dat eindgebruikers de datasets goed kunnen vin
 trefwoorden bevat.
 
 | Definitie      | Waarde            |
-|----------------|-------------------|
+| -------------- | ----------------- |
 | RDF Eigenschap | `dct:description` |
-| Bereik         | `xsd:string`      |
+| Bereik         | `rdfs:literal`    |
 | Kardinaliteit  | `1..n`            |
 | Gebruik        | Mandatory         |
 
@@ -75,7 +75,7 @@ Er kunnen ook licentiegegevens op het niveau van de [`dcat:Distribution`](#dcat-
 mogen niet in tegenspraak zijn met de licentiegegevens van de `dcat:Dataset`.
 
 | Definitie      | Waarde                                                  |
-|----------------|---------------------------------------------------------|
+| -------------- | ------------------------------------------------------- |
 | RDF Eigenschap | `dct:license`                                           |
 | Bereik         | [`waardelijst donl:License`](#waardelijst-donl-License) |
 | Kardinaliteit  | `1..1`                                                  |
@@ -93,7 +93,7 @@ De gebruikte waardelijst [`waardelijst donl:Organization`](#waardelijst-donl-Org
 aan. De [`waardelijst donl:Organization`](#waardelijst-donl-Organization) beschrijft ook die organisaties.
 
 | Definitie      | Waarde                                                            |
-|----------------|-------------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------------- |
 | RDF Eigenschap | `dct:creator`                                                     |
 | Bereik         | [`waardelijst donl:Organization`](#waardelijst-donl-Organization) |
 | Kardinaliteit  | `1..1`                                                            |
@@ -118,7 +118,7 @@ De gebruikte waardelijst [`waardelijst donl:Organization`](#waardelijst-donl-Org
 aan. De [`waardelijst donl:Organization`](#waardelijst-donl-Organization) beschrijft ook die organisaties.
 
 | Definitie      | Waarde                                                            |
-|----------------|-------------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------------- |
 | RDF Eigenschap | `dct:publisher`                                                   |
 | Bereik         | [`waardelijst donl:Organization`](#waardelijst-donl-Organization) |
 | Kardinaliteit  | `1..1`                                                            |
@@ -136,7 +136,7 @@ Een geldig `dcat:contactPoint` bevat op zijn minst de eigenschap `vcard:fn` en e
 `vcard:hasTelephone` of `vcard:hasURL` eigenschappen. Voor een voorbeeld zie [#Contact Point](#example-contact-point)
 
 | Definitie      | Waarde              |
-|----------------|---------------------|
+| -------------- | ------------------- |
 | RDF Eigenschap | `dcat:contactPoint` |
 | Bereik         | `vcard:Kind`        |
 | Kardinaliteit  | `1..1`              |
@@ -155,7 +155,7 @@ zodat datasets ook aan meer specifieke subthema's kunnen worden gekoppeld, bijvo
 het thema `Bestuur`.
 
 | Definitie      | Waarde                                                                                        |
-|----------------|-----------------------------------------------------------------------------------------------|
+| -------------- | --------------------------------------------------------------------------------------------- |
 | RDF Eigenschap | `dcat:theme`                                                                                  |
 | Bereik         | [`waardelijst overheid:TaxonomieBeleidsagenda`](#waardelijst-overheid-TaxonomieBeleidsagenda) |
 | Kardinaliteit  | `1..n`                                                                                        |
@@ -190,7 +190,7 @@ eigenschap worden aangeleverd.
 In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden.
 
 | Definitie      | Trefwoord      |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dcat:keyword` |
 | Bereik         | `rdfs:Literal` |
 | Kardinaliteit  | `0..n`         |
@@ -209,7 +209,7 @@ De webpagina die toegang geeft tot de resource (dataset, dataservice of catalogu
 over de resource. Het gaat hierbij om de originele webpagina van de data-eigenaar.
 
 | Definitie      | Waarde             |
-|----------------|--------------------|
+| -------------- | ------------------ |
 | RDF Eigenschap | `dcat:landingPage` |
 | Bereik         | `xsd:anyURI`       |
 | Kardinaliteit  | `0..1`             |
@@ -224,7 +224,7 @@ geïntroduceerd. Deze lijst bevat concepten die de openbaarheid van een bron bes
 openbaarheid niet publiek is.
 
 | Definitie      | Waarde                                                            |
-|----------------|-------------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------------- |
 | RDF Eigenschap | `dct:accessRights`                                                |
 | Bereik         | [`waardelijst donl:AccessRights`](#waardelijst-donl-AccessRights) |
 | Kardinaliteit  | `0..1`                                                            |
@@ -237,7 +237,7 @@ openbaarheid niet publiek is.
 De natuurlijk taal van de data in de resource.
 
 | Definitie      | Waarde                                                    |
-|----------------|-----------------------------------------------------------|
+| -------------- | --------------------------------------------------------- |
 | RDF Eigenschap | `dct:language`                                            |
 | Bereik         | [`waardelijst donl:Language`](#waardelijst-donl-Language) |
 | Kardinaliteit  | `0..n`                                                    |
@@ -271,7 +271,7 @@ Let op, een resource wordt na het aanmaken niet aangepast door anderen met deze 
 other identifier kan worden toegevoegd als verrijking van de dcat informatie. Voor een voorbeeld zie [#Other identifier](#example-other-identifier)
 
 | Definitie      | Waarde            |
-|----------------|-------------------|
+| -------------- | ----------------- |
 | RDF Eigenschap | `adms:identifier` |
 | Bereik         | `adms:Identifier` |
 | Kardinaliteit  | `0..n`            |
@@ -286,7 +286,7 @@ schema, ontology, view of profiel. Het opnemen van bestandsformaten is belangrij
 [`dct:format`](#dct-format) en [`dct:mediaType`](#dct-mediaType) van de distributies, dan in `dct:conformsTo`.
 
 | Definitie      | Waarde           |
-|----------------|------------------|
+| -------------- | ---------------- |
 | RDF Eigenschap | `dct:conformsTo` |
 | Bereik         | `dct:Standard`   |
 | Kardinaliteit  | `0..n`           |
@@ -300,7 +300,7 @@ schema, ontology, view of profiel. Het opnemen van bestandsformaten is belangrij
 Het regelingelement dat de wettelijke grondslag vormt voor de dataset.
 
 | Definitie      | Waarde                 |
-|----------------|------------------------|
+| -------------- | ---------------------- |
 | RDF Eigenschap | `donl:grondslag`       |
 | Bereik         | `donl:LegalFoundation` |
 | Kardinaliteit  | `0..n`                 |
@@ -317,7 +317,7 @@ catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van d
 wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de [`dct:modified`](#dct-modified) eigenschap.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:issued`   |
 | Bereik         | `xsd:dateTime` |
 | Kardinaliteit  | `0..1`         |
@@ -340,7 +340,7 @@ Deze eigenschap is niet/minder waardevol wanneer de data continue, of volgens ee
 kan beter [`dct:accrualPeriodicity`](#dct-accrualPeriodicity) gebruikt worden.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:modified` |
 | Bereik         | `xsd:dateTime` |
 | Kardinaliteit  | `0..1`         |
@@ -359,7 +359,7 @@ Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attribut
 [`dct:license`](#dct-license) een CC-BY licentie is gekozen.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:rights`   |
 | Bereik         | `rdfs:Literal` |
 | Kardinaliteit  | `0..n`         |
@@ -386,7 +386,7 @@ In `prov:agent` wordt de naam van de organisatie opgenomen. Omdat dit niet altij
 hoeft deze waarde niet uit [`waardelijst donl:Organization`](#waardelijst-donl-Organization) te komen. 
 
 | Definitie      | Waarde                      |
-|----------------|-----------------------------|
+| -------------- | --------------------------- |
 | RDF Eigenschap | `prov:qualifiedAttribution` |
 | Bereik         | `prov:Attribution`          |
 | Kardinaliteit  | `0..n`                      |

@@ -1,12 +1,12 @@
 ## Eigenschappen
 
-| **Eigenschap**                              | Kardinaliteit | Aanwezigheid | Herkomst        |
-|---------------------------------------------|---------------|--------------|-----------------|
-| [**primary topic**](#foaf-primaryTopic)     | `1..1`        | Mandatory    | Catalogusrecord |
-| [**modified**](#dct-modified2)              | `1..1`        | Mandatory    | Catalogusrecord |
-| [**listing date**](#dct-issued2)            | `0..1`        | Recommended  | Catalogusrecord |
-| [**application profile**](#dct-conformsTo2) | `0..1`        | Recommended  | Catalogusrecord |
-| [**source metadata**](#dct-source)          | `0..1`        | Optional     | Catalogusrecord |
+| **Eigenschap**                          | Kardinaliteit | Aanwezigheid | Herkomst        |
+| --------------------------------------- | ------------- | ------------ | --------------- |
+| [**primary topic**](#foaf-primaryTopic) | `1..1`        | Mandatory    | Catalogusrecord |
+| [**modified**](#dct-modified2)          | `1..1`        | Mandatory    | Catalogusrecord |
+| [**listing date**](#dct-issued2)        | `1..1`        | Recommended  | Catalogusrecord |
+| [**conformsTo**](#dct-conformsTo2)      | `0..1`        | Recommended  | Catalogusrecord |
+| [**source metadata**](#dct-source)      | `0..1`        | Optional     | Catalogusrecord |
 
 ### primary topic {#foaf-primaryTopic}
 
@@ -14,7 +14,7 @@ Betreft de verwijzing naar de [`dcat:Dataset`](#dcat-Dataset), [`dcat:DataServic
 [`dcat:Catalog`](#dcat-Catalog) die met dit record beschreven wordt.
 
 | Definitie      | Waarde                                        |
-|----------------|-----------------------------------------------|
+| -------------- | --------------------------------------------- |
 | RDF Eigenschap | `foaf:primaryTopic`                           |
 | Bereik         | `dcat:Resource` (dataset, service or catalog) |
 | Kardinaliteit  | `1..1`                                        |
@@ -25,7 +25,7 @@ Betreft de verwijzing naar de [`dcat:Dataset`](#dcat-Dataset), [`dcat:DataServic
 De datum waarop het record in de catalogus voor het laatst is gewijzigd.
 
 | Definitie      | Waarde         |
-|----------------|----------------|
+| -------------- | -------------- |
 | RDF Eigenschap | `dct:modified` |
 | Bereik         | `xsd:date`     |
 | Kardinaliteit  | `1..1`         |
@@ -42,7 +42,7 @@ Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] stand
 De datum waarop het record in de catalogus voor het eerst is toegevoegd.
 
 | Definitie      | Waarde       |
-|----------------|--------------|
+| -------------- | ------------ |
 | RDF Eigenschap | `dct:issued` |
 | Bereik         | `xsd:date`   |
 | Kardinaliteit  | `1..1`       |
@@ -60,7 +60,7 @@ Een verwijzing naar het DCAT applicatieprofiel waar de metadata van de [`dcat:Re
 voldoet.
 
 | Definitie      | Waarde           |
-|----------------|------------------|
+| -------------- | ---------------- |
 | RDF Eigenschap | `dct:conformsTo` |
 | Bereik         | `dct:Standard`   |
 | Kardinaliteit  | `0..1`           |
@@ -77,7 +77,7 @@ Gebruik altijd het HTTPS-protocol voor webadressen! Zie ook [[[HTTPS_EN_HSTS]]].
 Een verwijzing naar de bron waar de metadata van de [`dcat:Resource`](#dcat-Resource) vandaan komt.
 
 | Definitie      | Waarde       |
-|----------------|--------------|
+| -------------- | ------------ |
 | RDF Eigenschap | `dct:source` |
 | Bereik         | `xsd:anyURI` |
 | Kardinaliteit  | `1..1`       |

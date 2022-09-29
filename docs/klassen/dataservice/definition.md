@@ -3,25 +3,25 @@
 In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` beschreven.
 
 | **Eigenschap**                                          | Kardinaliteit | Aanwezigheid | Herkomst    |
-|---------------------------------------------------------|---------------|--------------|-------------|
+| ------------------------------------------------------- | ------------- | ------------ | ----------- |
 | [**identifier**](#dct-identifier)                       | `1..1`        | Mandatory    | Resource    |
-| [**title**](#dct-title)                                 | `1..1`        | Mandatory    | Resource    |
-| [**description**](#dct-description)                     | `1..1`        | Mandatory    | Resource    |
+| [**title**](#dct-title)                                 | `1..n`        | Mandatory    | Resource    |
+| [**description**](#dct-description)                     | `1..n`        | Mandatory    | Resource    |
 | [**license**](#dct-license)                             | `1..1`        | Mandatory    | Resource    |
 | [**creator**](#dct-creator)                             | `1..1`        | Mandatory    | Resource    |
 | [**publisher**](#dct-publisher)                         | `1..1`        | Mandatory    | Resource    |
 | [**contact point**](#dcat-contactPoint)                 | `1..1`        | Mandatory    | Resource    |
 | [**theme/category**](#dcat-theme)                       | `1..n`        | Mandatory    | Resource    |
-| [**landing page**](#dcat-landingPage)                   | `0..1`        | Recommended  | Resource    |
 | [**access-rights**](#dct-accessRights)                  | `0..1`        | Recommended  | Resource    |
-| [**language**](#dct-language)                           | `0..1`        | Recommended  | Resource    |
-| [**other identifier**](#adms-identifier)                | `0..n`        | Recommended  | Resource    |
 | [**keyword/tag**](#dcat-keyword)                        | `0..n`        | Recommended  | Resource    |
-| [**conforms to**](#dct-conformsTo)                      | `0..n`        | Recommended  | Resource    |
-| [**legal foundation**](#donl-grondslag)                 | `0..n`        | Recommended  | Resource    |
-| [**release date**](#dct-issued)                         | `0..1`        | Optional     | Resource    |
-| [**update/modification date**](#dct-modified)           | `0..1`        | Optional     | Resource    |
-| [**rights**](#rights)                                   | `0..1`        | Optional     | Resource    |
+| [**release date**](#dct-issued)                         | `0..1`        | Recommended  | Resource    |
+| [**update/modification date**](#dct-modified)           | `0..1`        | Recommended  | Resource    |
+| [**resource language**](#dct-language)                  | `0..n`        | Recommended  | Resource    |
+| [**landing page**](#dcat-landingPage)                   | `0..1`        | Optional     | Resource    |
+| [**other identifier**](#adms-identifier)                | `0..n`        | Optional     | Resource    |
+| [**conforms to**](#dct-conformsTo)                      | `0..n`        | Optional     | Resource    |
+| [**legal foundation**](#donl-grondslag)                 | `0..n`        | Optional     | Resource    |
+| [**rights**](#rights)                                   | `0..n`        | Optional     | Resource    |
 | [**qualified-attribution**](#prov-qualifiedAttribution) | `0..n`        | Optional     | Resource    |
 | [**endpoint URL**](#dcat-endpointURL)                   | `1..1`        | Mandatory    | Dataservice |
 | [**endpoint description**](#dcat-endpointDescription)   | `1..1`        | Mandatory    | Dataservice |
@@ -32,7 +32,7 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` besch
 De locatie of het endpoint van de service (over het algemeen een via HTTP raadpleegbaar adres).
 
 | Definitie      | Waarde             |
-|----------------|--------------------|
+| -------------- | ------------------ |
 | RDF Eigenschap | `dcat:endpointURL` |
 | Bereik         | `rdfs:Resource`    |
 | Kardinaliteit  | `1..1`             |
@@ -47,7 +47,7 @@ dergelijke.
 Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeboden service.
 
 | Definitie      | Waarde                     |
-|----------------|----------------------------|
+| -------------- | -------------------------- |
 | RDF Eigenschap | `dcat:endpointDescription` |
 | Bereik         | `rdfs:Resource`            |
 | Kardinaliteit  | `1..1`                     |
@@ -63,7 +63,7 @@ eigenschap een aanzienlijk andere definitie!
 Een dataset die via deze `dcat:DataService` aangeboden wordt. Een dataservice kan nul, een of meer datasets aanbieden.
 
 | Definitie      | Waarde               |
-|----------------|----------------------|
+| -------------- | -------------------- |
 | RDF Eigenschap | `dcat:servesDataset` |
 | Bereik         | `dcat:Dataset`       |
 | Kardinaliteit  | `0..n`               |

@@ -27,19 +27,14 @@ dataset, dataservice of catalogus kunnen terugvinden op basis van een of meer wo
 Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in 
 meer tekens de dataset te beschrijven, dan kan [`dct:description`](#dct-description) gebruikt worden.
 
+Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+
 | Definitie      | Waarde         |
 | -------------- | -------------- |
 | RDF Eigenschap | `dct:title`    |
 | Bereik         | `rdfs:literal` |
 | Kardinaliteit  | `1..n`         |
 | Gebruik        | Mandatory      |
-
-<aside class="note">
-
-Voor iedere taal kan één aparte titel worden opgenomen per taal die wordt aangeduid door een "language tag" achter de 
-literal. Merk op dat er in [`dct:language`](#dct-language) een waarde moet voorkomen voor elke taal.
-
-</aside>
 
 ### description {#dct-description}
 
@@ -48,19 +43,14 @@ voor het opbouwen van de zoekindex. Dit betekent dus dat de vindbaarheid van de 
 van de tekst. Om ervoor te zorgen dat eindgebruikers de datasets goed kunnen vinden is het belangrijk dat de tekst goede 
 trefwoorden bevat.
 
+Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+
 | Definitie      | Waarde            |
 | -------------- | ----------------- |
 | RDF Eigenschap | `dct:description` |
 | Bereik         | `rdfs:literal`    |
 | Kardinaliteit  | `1..n`            |
 | Gebruik        | Mandatory         |
-
-<aside class="note">
-
-Voor iedere taal kan één aparte omschrijving worden opgenomen per taal die wordt aangeduid door een "language tag" 
-achter de literal. Merk op dat er in [`dct:language`](#dct-language) een waarde moet voorkomen voor elke taal.
-
-</aside>
 
 ### license {#dct-license}
 
@@ -187,7 +177,7 @@ Voor beide vormen geldt dat deze de vindbaarheid van de desbetreffende resource 
 mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden moeten in afzonderlijke voorkomens van deze 
 eigenschap worden aangeleverd.
 
-In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden.
+In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
 
 | Definitie      | Trefwoord      |
 | -------------- | -------------- |
@@ -195,13 +185,6 @@ In principe bestaat een tag uit slechts een woord of een kleine combinatie van m
 | Bereik         | `rdfs:Literal` |
 | Kardinaliteit  | `0..n`         |
 | Gebruik        | Recommended    |
-
-<aside class="note">
-
-Voor iedere taal kunnen trefwoorden worden opgenomen per taal die worden aangeduid door een "language tag" 
-achter de literal. Merk op dat er in [`dct:language`](#dct-language) een waarde moet voorkomen voor elke taal.
-
-</aside>
 
 ### landing page {#dcat-landingPage}
 
@@ -234,7 +217,7 @@ openbaarheid niet publiek is.
 
 ### resource language {#dct-language}
 
-De natuurlijk taal van de data in de resource.
+De natuurlijk taal van de data in de resource. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde                                                    |
 | -------------- | --------------------------------------------------------- |
@@ -357,19 +340,14 @@ De overige gebruiksrechten die niet worden gedekt met [`dct:license`](#dct-licen
 Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attributie moet plaatsvinden wanneer bij 
 [`dct:license`](#dct-license) een CC-BY licentie is gekozen.
 
+Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+
 | Definitie      | Waarde         |
 | -------------- | -------------- |
 | RDF Eigenschap | `dct:rights`   |
 | Bereik         | `rdfs:Literal` |
 | Kardinaliteit  | `0..n`         |
 | Gebruik        | Optional       |
-
-<aside class="note">
-
-Voor iedere taal kan één apart rights-statement worden opgenomen per taal die wordt aangeduid door een "language tag" 
-achter de literal. Merk op dat er in [`dct:language`](#dct-language) een waarde moet voorkomen voor elke taal.
-
-</aside>
 
 <div class="issue" data-number="22"></div>
 

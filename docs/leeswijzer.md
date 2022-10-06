@@ -40,7 +40,7 @@ Beschrijft of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de
 In [language](#dct-language1) en [resource language](#dct-language) kunnen de talen worden beschreven die worden gebruikt in inhoud van de resource of distributie. Zo zal een dataset over straatmeubilair waarin de waardes 'lantarenpaal' of 'bankje' worden gebruikt als 
 [resource language](#dct-language) Nederlands krijgen. Dit is ongeacht de taal/talen gebruikt in de metadata. Wanneer er meerdere talen worden gebruikt kan de eigenschap worden herhaald. Wanneer de inhoud alleen nummeriek is, of geen text bevat kunnen de eigenschappen worden weg gelaten.
 
-Eigenschappen als `dct:title`, `dct:description` en `dct:rights` kunnen waardes in verschillende talen bevatten. Elke vertaling krijgt een eigen instantie met de toevoeging van een language tag om aan te geven in welke taal de waarde geschreven is. Elke taal mag maar één keer voorkomen. 
+Eigenschappen als `dct:title`, `dct:description` en `dct:rights` kunnen waardes in verschillende talen bevatten. Voor elke vertaling wordt de eigenschap herhaald met de toevoeging van een language tag om aan te geven in welke taal de waarde geschreven is. Elke taal mag maar één keer voorkomen. 
 
 De volgende talen worden onderteund:
 

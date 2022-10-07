@@ -4,7 +4,6 @@
 
 <ul>
         <li>Waardelijsten</li>
-        <li>Language</li>
         <li>Voorbeelden</li>
 </ul>
 

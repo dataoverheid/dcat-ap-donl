@@ -38,7 +38,7 @@ Beschrijft of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de
 ### Talen
 
 In [language](#dct-language1) en [resource language](#dct-language) kunnen de talen worden beschreven die worden gebruikt in inhoud van de resource of distributie. Zo zal een dataset over straatmeubilair waarin de waardes 'lantarenpaal' of 'bankje' worden gebruikt als 
-[resource language](#dct-language) Nederlands krijgen. Dit is ongeacht de taal/talen gebruikt in de metadata. Wanneer er meerdere talen worden gebruikt kan de eigenschap worden herhaald. Wanneer de inhoud alleen nummeriek is, of geen text bevat kunnen de eigenschappen worden weg gelaten.
+[resource language](#dct-language) 'Nederlands' krijgen. Dit is ongeacht de taal/talen gebruikt in de metadata. Wanneer er meerdere talen worden gebruikt kan de eigenschap worden herhaald. Wanneer de inhoud alleen nummeriek is, of geen text bevat kunnen de eigenschappen worden weg gelaten.
 
 Eigenschappen als `dct:title`, `dct:description` en `dct:rights` kunnen waardes in verschillende talen bevatten. Voor elke vertaling wordt de eigenschap herhaald met de toevoeging van een language tag om aan te geven in welke taal de waarde geschreven is. Elke taal mag maar één keer voorkomen. 
 
@@ -55,15 +55,29 @@ Op data.overheid.nl worden teksten geïndexeerd, zodat eindgebruikers de dataset
 
 ### Termenlijst
   
-<b>Dataservice</b>
+<b>Dataservice in `dcat`</b>
 
 Een gegevensdienst of `dataservice` is in de eerste plaats een plek waar gegevens opgevraagd kunnen worden. Maar omdat dit via een interface gebeurdt kunnen gebruikers specificaties aan de aanvraag meegeven. Is bijvoorbeeld maar een klein gedeelte van de data nodig, dan zal ook niet de gehele dataset, maar een subset opgestuurd worden. Of wanneer er meerdere formaten van aanlevering mogelijk zijn zoals JSON en XML, dan kan dit ook direct worden gespecificeerd in de aanvraag. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit.
 
 De [`dcat:DataService`](#dcat-DataService) is meer gericht op het ontsluiten van gegevens via een API of user interface waar eigen parameters meegegeven kunnen worden. Zie [verschillen](#verschillen) voor een uitgebreidere uitleg over het verschil tussen beiden.
 
-<b>Resource </b>
+<b>Resource in `dcat`</b>
+
+In de klasses [`dcat:Dataset`](#dcat-Dataset), [`dcat:DataService`](#dcat-DataService) en [`dcat:Catalog`](#dcat-Catalog) worden veel dezelfde 
+eigenschappen gebruikt. Om niet al deze eigenschappen voor elke klasse opnieuw te hoeven definiëren is de superklasse 
+[`dcat:Resource`](#dcat-Resource) geïntroduceerd. Dat betekent dat een alleenstaande [`dcat:Resource`](#dcat-Resource) 
+niet mogelijk is, maar dat deze altijd een onderdeel is van de boven genoemde DCAT klasses.
+
+Deze superklasse maakt het in de toekomst makkelijker om het informatiemodel van DCAT uit te breiden met nieuwe 
+resources.
 
 <b>Dataset in `dcat`</b>
+
+Een dataset is een gegevensverzameling. Op [[[DONL]]] is deze samengesteld en gepubliceerd door een (overheids-)organisatie. 
+
+De klasse beschrijft de dataset als concept. Het staat dus los van de gegevensverzameling zelf, die mogelijk 
+beschikbaar is in een of meerdere representaties, formaten of serialisaties. Deze beschikbare representaties kunnen worden omschreven in een
+[`dcat:DataService`](#dcat-DataService) of [`dcat:Distribution`](#dcat-Distribution)
 
 <b>Catalogus in `dcat` </b>
 

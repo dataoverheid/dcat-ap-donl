@@ -1,12 +1,12 @@
 ## Eigenschappen
 
-| **Eigenschap**                          | Kardinaliteit | Aanwezigheid | Herkomst        |
-| --------------------------------------- | ------------- | ------------ | --------------- |
-| [**primary topic**](#foaf-primaryTopic) | `1..1`        | Mandatory    | Catalogusrecord |
-| [**modified**](#dct-modified2)          | `1..1`        | Mandatory    | Catalogusrecord |
-| [**listing date**](#dct-issued2)        | `1..1`        | Recommended  | Catalogusrecord |
-| [**conformsTo**](#dct-conformsTo2)      | `0..1`        | Recommended  | Catalogusrecord |
-| [**source metadata**](#dct-source)      | `0..1`        | Optional     | Catalogusrecord |
+| **Eigenschap**                                                | Kardinaliteit | Aanwezigheid | Herkomst        |
+| ------------------------------------------------------------- | ------------- | ------------ | --------------- |
+| [**primary topic**](#foaf-primaryTopic)                       | `1..1`        | Mandatory    | Catalogusrecord |
+| [**modified**](#dct-modified2)                                | `1..1`        | Mandatory    | Catalogusrecord |
+| [**listing date**](#dct-issued2)                              | `1..1`        | Recommended  | Catalogusrecord |
+| [**conformsTo**](#dct-conformsTo2) <em class="new">nieuw</em> | `0..1`        | Recommended  | Catalogusrecord |
+| [**source metadata**](#dct-source)                            | `0..1`        | Optional     | Catalogusrecord |
 
 ### primary topic {#foaf-primaryTopic}
 
@@ -54,7 +54,7 @@ Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] stand
 
 </aside>
 
-### conformsTo {#dct-conformsTo2}
+### conformsTo <em class="new">nieuw</em>  {#dct-conformsTo2}
 
 Een verwijzing naar het DCAT applicatieprofiel waar de metadata van de [`dcat:Resource`](#dcat-Resource) zich aan 
 voldoet.

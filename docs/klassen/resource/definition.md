@@ -73,7 +73,7 @@ mogen niet in tegenspraak zijn met de licentiegegevens van de `dcat:Dataset`.
 
 <div class="issue" data-number="22"></div>
 
-### creator {#dct-creator}
+### creator <em class="new">nieuw</em> {#dct-creator}
 
 De organisatie die verantwoordelijk is voor het creëren van de beschreven resource. Zie eigenschappen 
 [`dct:publisher`](#dct-publisher) en [`prov:qualifiedAttribution`](#prov-qualifiedAttribution) voor andere rollen.
@@ -261,7 +261,7 @@ Voor een voorbeeld zie [#Other identifier](#example-other-identifier)
 
 <div class="issue" data-number="24"></div>
 
-### conforms to {#dct-conformsTo}
+### conforms to <em class="new">nieuw</em> {#dct-conformsTo}
 
 De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, 
 schema, ontology, view of profiel. Het opnemen van bestandsformaten is belangrijker in het veld 
@@ -351,7 +351,7 @@ Zie [**talen**](#talen) voor het omgaan met verschillende talen.
 
 <div class="issue" data-number="22"></div>
 
-### qualified attribution {#prov-qualifiedAttribution}
+### qualified attribution <em class="new">nieuw</em> {#prov-qualifiedAttribution}
 
 Een organisatie, anders dan de `dct:creator` of `dct:publisher` die ook een verantwoordelijkheid draagt voor de 
 resource.

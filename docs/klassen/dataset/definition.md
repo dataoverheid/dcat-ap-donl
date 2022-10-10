@@ -2,31 +2,31 @@
 
 In de onderstaande tabel worden de eigenschappen van de `dcat:Dataset` beschreven.
 
-| **Eigenschap**                                          | Kardinaliteit | Aanwezigheid | Herkomst |
-| ------------------------------------------------------- | ------------- | ------------ | -------- |
-| [**identifier**](#dct-identifier)                       | `1..1`        | Mandatory    | Resource |
-| [**title**](#dct-title)                                 | `1..n`        | Mandatory    | Resource |
-| [**description**](#dct-description)                     | `1..n`        | Mandatory    | Resource |
-| [**license**](#dct-license)                             | `1..1`        | Mandatory    | Resource |
-| [**creator**](#dct-creator)                             | `1..1`        | Mandatory    | Resource |
-| [**publisher**](#dct-publisher)                         | `1..1`        | Mandatory    | Resource |
-| [**contact point**](#dcat-contactPoint)                 | `1..1`        | Mandatory    | Resource |
-| [**theme/category**](#dcat-theme)                       | `1..n`        | Mandatory    | Resource |
-| [**access-rights**](#dct-accessRights)                  | `0..1`        | Recommended  | Resource |
-| [**keyword/tag**](#dcat-keyword)                        | `0..n`        | Recommended  | Resource |
-| [**release date**](#dct-issued)                         | `0..1`        | Recommended  | Resource |
-| [**update/modification date**](#dct-modified)           | `0..1`        | Recommended  | Resource |
-| [**resource language**](#dct-language)                  | `0..n`        | Recommended  | Resource |
-| [**landing page**](#dcat-landingPage)                   | `0..1`        | Optional     | Resource |
-| [**other identifier**](#adms-identifier)                | `0..n`        | Optional     | Resource |
-| [**conforms to**](#dct-conformsTo)                      | `0..n`        | Optional     | Resource |
-| [**legal foundation**](#donl-grondslag)                 | `0..n`        | Optional     | Resource |
-| [**rights**](#rights)                                   | `0..n`        | Optional     | Resource |
-| [**qualified-attribution**](#prov-qualifiedAttribution) | `0..n`        | Optional     | Resource |
-| [**distribution**](#dcat-distribution1)                 | `0..n`        | Recommended  | Dataset  |
-| [**frequency**](#dct-accrualPeriodicity)                | `0..1`        | Recommended  | Dataset  |
-| [**spatial/geographical coverage**](#dct-spatial)       | `0..n`        | Optional     | Dataset  |
-| [**temporal coverage**](#dct-temporal)                  | `0..1`        | Optional     | Dataset  |
+| **Eigenschap**                                                                     | Kardinaliteit | Aanwezigheid | Herkomst |
+| ---------------------------------------------------------------------------------- | ------------- | ------------ | -------- |
+| [**identifier**](#dct-identifier)                                                  | `1..1`        | Mandatory    | Resource |
+| [**title**](#dct-title)                                                            | `1..n`        | Mandatory    | Resource |
+| [**description**](#dct-description)                                                | `1..n`        | Mandatory    | Resource |
+| [**license**](#dct-license)                                                        | `1..1`        | Mandatory    | Resource |
+| [**creator**](#dct-creator) <em class="new">nieuw</em>                             | `1..1`        | Mandatory    | Resource |
+| [**publisher**](#dct-publisher)                                                    | `1..1`        | Mandatory    | Resource |
+| [**contact point**](#dcat-contactPoint)                                            | `1..1`        | Mandatory    | Resource |
+| [**theme/category**](#dcat-theme)                                                  | `1..n`        | Mandatory    | Resource |
+| [**access-rights**](#dct-accessRights)                                             | `0..1`        | Recommended  | Resource |
+| [**keyword/tag**](#dcat-keyword)                                                   | `0..n`        | Recommended  | Resource |
+| [**release date**](#dct-issued)                                                    | `0..1`        | Recommended  | Resource |
+| [**update/modification date**](#dct-modified)                                      | `0..1`        | Recommended  | Resource |
+| [**resource language**](#dct-language)                                             | `0..n`        | Recommended  | Resource |
+| [**landing page**](#dcat-landingPage)                                              | `0..1`        | Optional     | Resource |
+| [**other identifier**](#adms-identifier)                                           | `0..n`        | Optional     | Resource |
+| [**conforms to**](#dct-conformsTo) <em class="new">nieuw</em>                      | `0..n`        | Optional     | Resource |
+| [**legal foundation**](#donl-grondslag)                                            | `0..n`        | Optional     | Resource |
+| [**rights**](#rights)                                                              | `0..n`        | Optional     | Resource |
+| [**qualified-attribution**](#prov-qualifiedAttribution) <em class="new">nieuw</em> | `0..n`        | Optional     | Resource |
+| [**distribution**](#dcat-distribution1)                                            | `0..n`        | Recommended  | Dataset  |
+| [**frequency**](#dct-accrualPeriodicity)                                           | `0..1`        | Recommended  | Dataset  |
+| [**spatial/geographical coverage**](#dct-spatial)                                  | `0..n`        | Optional     | Dataset  |
+| [**temporal coverage**](#dct-temporal)                                             | `0..1`        | Optional     | Dataset  |
 
 ### distribution {#dcat-distribution1}
 

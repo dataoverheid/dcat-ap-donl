@@ -12,9 +12,21 @@ representatie van een `dcat:DataService`.
 
 <pre>
 	<code>
-  &lt;https:&#x2215;&#x2215;example.com&#x2215;api&gt;
-    rdf:type dcat:DataService ;
-    dct:title "TODO: Voorbeeld beschrijven"@nl ;
+    &lt;OData/v4/2.0&gt; a dcat:DataService;
+      dct:identifier &lt;OData/v4/2.0&gt;;
+      dct:title "OData API";
+      dct:description "Gebruik de OData API voor het opvragen van data met een zelfopgestelde zoekvraag in de vorm van een URL (query). De OData API levert de data in het machineleesbare bestandsformaat JSON.";
+      dct:license &lt;http://creativecommons.org/publicdomain/zero/1.0/deed.nl&gt;;
+      dct:creator &lt;http://standaarden.overheid.nl/owms/terms/Tweede_Kamer_der_Staten-Generaal&gt;;
+      dct:publisher &lt;http://standaarden.overheid.nl/owms/terms/Tweede_Kamer_der_Staten-Generaal&gt;;
+      dcat:contactPoint [a vcard:Organization ;
+        vcard:fn "Tweede Kamer der Staten-Generaal";
+        vcard:hasEmail "opendata@tweedekamer.nl";
+      ];
+      dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Parlement&gt;;
+      dcat:endpointURL &lt;https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0&gt;;
+      dcat:endpointDescription &lt;https://opendata.tweedekamer.nl/documentatie/odata-api&gt;;
+    .
   </code>
 </pre>  
 

@@ -28,6 +28,8 @@ representatie van een `dcat:Dataset`.
 
 ### Niet publieke datasets
 
+TODO: Access rights, licentie, vertaling, legal foundation.
+
 <aside class="example" title="Minimale set van eigenschappen">
 	<pre>
 		<code>

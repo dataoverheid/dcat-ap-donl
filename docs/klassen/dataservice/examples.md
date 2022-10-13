@@ -10,11 +10,13 @@ representatie van een `dcat:DataService`.
 
 <aside class="example" title="Minimale set van eigenschappen">
 
-```turtle
-https://example.com/api
-  rdf:type dcat:DataService ;
-  dct:title "TODO: Voorbeeld beschrijven"@nl ;
-```
+<pre>
+	<code>
+  &lt;https:&#x2215;&#x2215;example.com&#x2215;api&gt;
+    rdf:type dcat:DataService ;
+    dct:title "TODO: Voorbeeld beschrijven"@nl ;
+  </code>
+</pre>  
 
 </aside>
 
@@ -28,32 +30,29 @@ de dataset en de webservice duidelijk vast te leggen.
 Dit voorbeeld uit zich in de volgende RDF (niet relevante eigenschappen zijn weggelaten):
 
 <aside class="example" title="Een DataService die Datasets ontsluit">
-
-```turtle
-https://opendata.nijmegen.nl/dataset/luchtfoto-2022
-  rdf:type dcat:Dataset ;
-  dct:title "Luchtfoto 2022"@nl ;
-  dcat:distribution odn.luchtfoto-2022.distribution.1 ;
-  dcat:distribution odn.luchtfoto-2022.distribution.2 ;
-  
-odn.luchtfoto-2022.distribution.1
-  rdf:type dcat:Distribution ;
-  dct:title "Lage resolutie"@nl ;
-  dcat:accessURL https://services.nijmegen.nl/geoservices/wms/extern_Luchtfoto?&service=WMS&version=1.3.0&request=GetMap&layers=Luchtfoto2022.ecw&styles=default&transparent=true&CRS=EPSG:28992&bbox=176999.975,420000.025,191999.975,435500.025&width=750&height=775&format=image/png ;
-  dcat:accessService https://services.nijmegen.nl/geoservices/wms/extern_Luchtfoto ;
-
-odn.luchtfoto-2022.distribution.2
-  rdf:type dcat:Distribution ;
-  dct:title "Hoge resolutie"@nl ;
-  dcat:accessURL https://services.nijmegen.nl/geoservices/wms/extern_Luchtfoto?&service=WMS&version=1.3.0&request=GetMap&layers=Luchtfoto2022.ecw&styles=default&transparent=true&CRS=EPSG:28992&bbox=176999.975,420000.025,191999.975,435500.025&width=3000&height=3100&format=image/png ;
-  dcat:accessService https://services.nijmegen.nl/geoservices/wms/extern_Luchtfoto ;
-  
-https://services.nijmegen.nl/geoservices/wms/extern_Luchtfoto
-  rdf:type dcat:DataService ;
-  dcat:endpointURL https://services.nijmegen.nl/geoservices/wms/extern_Luchtfoto?&request=getCapabilities&service=WMS ;
-  rdf:servesDataset https://opendata.nijmegen.nl/dataset/luchtfoto-2022 ;
-```
-
+  <pre>
+    <code>
+    &lt;https:&#x2215;&#x2215;opendata.nijmegen.nl&#x2215;dataset&#x2215;luchtfoto-2022&gt; a dcat:Dataset;
+      dct:title "Luchtfoto 2022"@nl ;
+      dcat:distribution &lt;odn.luchtfoto-2022.distribution.1&gt; ;
+      dcat:distribution &lt;odn.luchtfoto-2022.distribution.2&gt; ;<br>
+    &lt;odn.luchtfoto-2022.distribution.1&gt; [ a dcat:Distribution ;
+      dct:title "Lage resolutie"@nl ;
+      dcat:accessURL &lt;https:&#x2215;&#x2215;services.nijmegen.nl&#x2215;geoservices&#x2215;wms&#x2215;extern_Luchtfoto?&service=WMS&version=1.3.0&request=GetMap&layers=Luchtfoto2022.ecw&styles=default&transparent=true&CRS=EPSG:28992&bbox=176999.975,420000.025,191999.975,435500.025&width=750&height=775&format=image&#x2215;png&gt;;
+      dcat:accessService &lt;https:&#x2215;&#x2215;services.nijmegen.nl&#x2215;geoservices&#x2215;wms&#x2215;extern_Luchtfoto&gt;;
+      ];<br>
+    &lt;odn.luchtfoto-2022.distribution.2&gt; [ a dcat:Distribution ;
+      dct:title "Hoge resolutie"@nl ;
+      dcat:accessURL &lt;https:&#x2215;&#x2215;services.nijmegen.nl&#x2215;geoservices&#x2215;wms&#x2215;extern_Luchtfoto?&service=WMS&version=1.3.0&request=GetMap&layers=Luchtfoto2022.ecw&styles=default&transparent=true&CRS=EPSG:28992&bbox=176999.975,420000.025,191999.975,435500.025&width=3000&height=3100&format=image&#x2215;png&gt; ;
+      dcat:accessService &lt;https:&#x2215;&#x2215;services.nijmegen.nl&#x2215;geoservices&#x2215;wms&#x2215;extern_Luchtfoto&gt; ;
+      ];<br>
+    &lt;https:&#x2215;&#x2215;services.nijmegen.nl&#x2215;geoservices&#x2215;wms&#x2215;extern_Luchtfoto&gt; [ a dcat:DataService ;
+      dcat:endpointURL &lt;https:&#x2215;&#x2215;services.nijmegen.nl&#x2215;geoservices&#x2215;wms&#x2215;extern_Luchtfoto?&request=getCapabilities&service=WMS&gt; ;
+      rdf:servesDataset &lt;https:&#x2215;&#x2215;opendata.nijmegen.nl&#x2215;dataset&#x2215;luchtfoto-2022&gt; ;
+      ];
+    .
+    </code>
+  </pre>  
 </aside>
 
 We zien hier de dataset `https://opendata.nijmegen.nl/dataset/luchtfoto-2022` met een tweetal distributies. In de 

@@ -89,7 +89,7 @@ alternatieven aangeboden.
 
 ### temporal coverage {#dct-temporal}
 
-De tijdsperiode waar de dataset betrekking op heeft. Zie [example-temporal-coverage](#example-temporal-coverage) voor een voorbeeld.
+De tijdsperiode waar de dataset betrekking op heeft. Zie [example-temporal-coverage](#temporal-coverage-0) voor een voorbeeld.
 
 | Definitie      | Waarde             |
 | -------------- | ------------------ |

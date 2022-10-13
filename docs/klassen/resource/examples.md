@@ -27,7 +27,13 @@
 <aside class="example" title="Other identifier">
 	<pre>
 		<code>
-      TODO
+      &lt;GBI.WELZ_CULTHIS_AMK_V&gt; a dcat:Dataset;
+        dct:identifier &lt;https:&#x2215;&#x2215;kaartportaal.drenthe.nl/portal/home/item.html?id=41b396ac19754bc4a414ababe0773e03&gt;;
+        adms:Identifier [a adms:Identifier ;
+          skos:notation "https:&#x2215;&#x2215;data.overheid.nl/dataset/2bd6eae9-3192-4e0f-a89b-c8d6b64d241f"^^xsd:anyURI;
+          dct:creator &lt;https:&#x2215;&#x2215;data.overheid.nl/organisatie/koop&gt;;
+        ];
+  .
 		</code>
 	</pre>
 </aside>

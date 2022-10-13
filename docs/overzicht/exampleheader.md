@@ -17,3 +17,4 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <http://example.org#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .

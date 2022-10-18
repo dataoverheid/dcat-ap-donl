@@ -13,7 +13,7 @@
   dcterms:title "Role"@en ;
   dcterms:title "Rol"@nl ;
   skos:definition "Deze taxonomie bevat concepten die beschrijven in welke capaciteit een persoon of organisatie betrokken is (of is geweest) bij een bron."@nl ;
-  skos:editorialNote "ISO 19115 (https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml) biedt een XML taxonomie aan met daarin de gebruikte concepten. Deze taxonomie wordt voorgeschreven vanuit DCAT-AP. De taxonomie en onderliggende concepten worden echter nog niet als Link Data omschrijvingen aangeboden."@nl ;
+  skos:editorialNote "ISO 19115 (https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml) biedt een XML taxonomie aan met daarin de gebruikte concepten. Deze taxonomie wordt voorgeschreven vanuit DCAT-AP. De taxonomie en onderliggende concepten worden echter nog niet als Linked Data omschrijvingen aangeboden."@nl ;
   skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#author> ;
   skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#coAuthor> ;
   skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#collaborator> ;

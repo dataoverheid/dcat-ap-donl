@@ -1,5 +1,4 @@
 # baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/theme
-# prefix: theme
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

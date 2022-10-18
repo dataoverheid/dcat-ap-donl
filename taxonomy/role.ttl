@@ -1,0 +1,37 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/role
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/role>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/role" ;
+  dcterms:title "Role"@en ;
+  dcterms:title "Rol"@nl ;
+  skos:definition "Deze taxonomie bevat concepten die beschrijven in welke capaciteit een persoon of organisatie betrokken is (of is geweest) bij een bron."@nl ;
+  skos:editorialNote "Zowel het Stelsel van Basisregistraties (https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/rollen-stelsel-basisregistraties/) als ISO 19115 (https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml) zijn gebruikt als basis voor het opzetten van deze taxonomie. Beide bronnen bieden nog geen Linked Data omschrijvingen aan van de rollen die daar beschreven zijn."@nl ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#author> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#coAuthor> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#collaborator> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#contributor> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#custodian> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#distributor> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#editor> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#funder> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#mediator> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#owner> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#originator> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#pointOfContact> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#principalInvestigator> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#processor> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#publisher> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#resourceProvider> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#rightsHolder> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#sponsor> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#stakeholder> ;
+  skos:hasTopConcept <http://standards.iso.org/iso/19115/-3/cit/1.0#user> ;
+.

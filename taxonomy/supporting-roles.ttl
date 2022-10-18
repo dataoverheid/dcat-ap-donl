@@ -1,0 +1,15 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/supporting-roles
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/supporting-roles>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/supporting-roles" ;
+  dcterms:title "Ondersteunende rollen"@en ;
+  dcterms:title "Supporting roles"@nl ;
+  skos:definition "Deze taxonomie bevat concepten die beschrijven hoe een bron een ondersteunende rol vervult voor een andere bron."@nl ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/DOCUMENTATIE> ;
+  skos:hasTopConcept <https://dcat.overheid.nl/application-profile/donl/term/VISUALISATIE> ;
+.

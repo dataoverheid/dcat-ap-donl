@@ -14,8 +14,8 @@ representatie van een `dcat:DataService`.
 	<code>
     &lt;OData/v4/2.0&gt; a dcat:DataService;
       dct:identifier &lt;OData/v4/2.0&gt;;
-      dct:title "OData API";
-      dct:description "Gebruik de OData API voor het opvragen van data met een zelfopgestelde zoekvraag in de vorm van een URL (query). De OData API levert de data in het machineleesbare bestandsformaat JSON.";
+      dct:title "OData API"@nl;
+      dct:description "Gebruik de OData API voor het opvragen van data met een zelfopgestelde zoekvraag in de vorm van een URL (query). De OData API levert de data in het machineleesbare bestandsformaat JSON."@nl;
       dct:license &lt;http://creativecommons.org/publicdomain/zero/1.0/deed.nl&gt;;
       dct:creator &lt;http://standaarden.overheid.nl/owms/terms/Tweede_Kamer_der_Staten-Generaal&gt;;
       dct:publisher &lt;http://standaarden.overheid.nl/owms/terms/Tweede_Kamer_der_Staten-Generaal&gt;;

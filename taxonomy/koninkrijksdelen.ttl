@@ -1,0 +1,19 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/koninkrijksdelen
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/koninkrijksdelen>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/koninkrijksdelen" ;
+  dcterms:title "Koninkrijksdelen"@nl ;
+  dcterms:title "Regional water authorities"@en ;
+  skos:definition "Deze taxonomie bevat concepten die de koninkrijksdelen van het Koninkrijk der Nederlanden beschrijft."@nl ;
+  skos:editorialNote "Deze taxonomie bevat uitsluitend concepten uit de OWMS 4.0 overheid:Koninkrijksdeel waardelijst. Deze lijst is raadpleegbaar via https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.koninkrijksdeel."@nl ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Aruba> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Curacao> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Nederland> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Nederlandse_Antillen> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Sint_Maarten_(Nederlandse_Antillen)> ;
+.

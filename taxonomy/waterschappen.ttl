@@ -1,0 +1,47 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/waterschappen
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/waterschappen>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/waterschappen" ;
+  dcterms:title "Waterschappen"@nl ;
+  dcterms:title "Regional water authorities"@en ;
+  skos:definition "Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven."@nl ;
+  skos:editorialNote "Deze taxonomie bevat uitsluitend concepten uit de OWMS 4.0 overheid:Waterschap waardelijst. Deze lijst is raadpleegbaar via https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap."@nl ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Hoogheemraadschap_Amstel,_Gooi_en_Vecht> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Hoogheemraadschap_De_Stichtse_Rijnlanden> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Hoogheemraadschap_Hollands_Noorderkwartier> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Hoogheemraadschap_van_Delfland> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Hoogheemraadschap_van_Rijnland> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Hoogheemraadschap_van_Schieland_en_de_Krimpenerwaard> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Aa_en_Maas> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Blija_Buitendijks> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Brabantse_Delta> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_De_Dommel> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Drents_Overijsselse_Delta> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Groot_Salland> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Hollandse_Delta> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Hunze_en_Aa's> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Limburg> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Noorderzijlvest> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Peel_en_Maasvallei> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Reest_en_Wieden> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Regge_en_Dinkel> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Rijn_en_IJssel> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Rivierenland> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Roer_en_Overmaas> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Scheldestromen> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Vallei_&_Eem> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Vallei_en_Veluwe> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Vechtstromen> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Velt_en_Vecht> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Veluwe> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Zeeuws-Vlaanderen> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Zeeuwse_Eilanden> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Waterschap_Zuiderzeeland> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/Wetterskip_Fryslan> ;
+  skos:hasTopConcept <http://standaarden.overheid.nl/owms/terms/wsagv> ;
+.

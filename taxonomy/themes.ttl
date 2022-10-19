@@ -1,16 +1,12 @@
-# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/theme
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/themes
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix theme: <https://dcat.overheid.nl/application-profile/donl/taxonomy/theme#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://dcat.overheid.nl/application-profile/donl/taxonomy/theme>
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/themes>
   rdf:type skos:ConceptScheme ;
-  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/theme" ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/themes" ;
   dcterms:title "Thema"@nl ;
   dcterms:title "Theme"@en ;
   skos:definition "Deze taxonomie bevat concepten die een bron indelen volgens de OWMS 4.0 overheid:TaxonomieBeleidsagenda rubricering."@nl ;

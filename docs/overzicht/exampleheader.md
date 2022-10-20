@@ -18,3 +18,4 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <http://example.org#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix spdx: <https://spdx.org/> .

@@ -278,10 +278,10 @@ Informatie over de bestandsindeling (of MIME-type) van de distributie, volgens d
 ### checksum {#spdx-checksum}
 
 Met een checksum of controlegetal kan een afnemer eenvoudig vaststellen of een gedownload bestand identiek is aan het 
-aangeboden bestand (en dus niet tussentijds is gewijzigd).
+aangeboden bestand (en er dus geen problemen zijn geweest met het downloaden of wijzigingen zijn geweest aan de data zelf).
 
 De `spdx:Checksum` klasse bevat naast de berekende checksum-waarde ook een property die het gebruikte algoritme 
-aangeeft. Op dit moment ondersteunt DCAT-AP-EU alleen SHA1 (`spdx:checksumAlgorithm_sha1`).
+aangeeft. Kijk [hier](https://spdx.org/rdf/terms/#ChecksumAlgorithm) voor ondersteunde algoritmes.
 
 | Definitie      | Waarde          |
 | -------------- | --------------- |
@@ -289,6 +289,13 @@ aangeeft. Op dit moment ondersteunt DCAT-AP-EU alleen SHA1 (`spdx:checksumAlgori
 | Bereik         | `spdx:Checksum` |
 | Kardinaliteit  | `0..1`          |
 | Gebruik        | Optional        |
+
+Het invullen van de klasse `spdx:checksum` kan op de volgende manier. Voor een voorbeeld zie [voorbeeld checksum](#checksum-0).
+
+| Property       | URI                  | Range                                       | Kardinaliteit |
+| -------------- | -------------------- | ------------------------------------------- | ------------- |
+| Algorithm      | `spdx:algorithm`     | http://spdx.org/rdf/terms#ChecksumAlgorithm | `1..1`        |
+| Checksum value | `spdx:checksumValue` | `Rdfs:Literal` typed as `xsd:hexBinary`     | `1..1`        |
 
 <div class="issue" data-number="10"></div>
 

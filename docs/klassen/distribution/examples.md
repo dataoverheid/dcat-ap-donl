@@ -51,3 +51,16 @@ TODO: Supportring Role
 		</code>
 	</pre>
 </aside>
+
+### Checksum
+<aside class="example" title="Checksum">
+	<pre>
+		<code>
+			spdx:checksum [ a spdx:checksum ;
+				spdx:algorithm &lt;http:&#x2215;&#x2215;spdx.org&#x2215;rdf&#x2215;terms#checksumAlgorithm_sha1&gt; ;
+				spdx:checksumValue "85ed0817af83a24ad8da68c2b5094de69833983c" ;
+				];
+			.
+		</code>
+	</pre>
+</aside>

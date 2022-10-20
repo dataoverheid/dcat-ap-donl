@@ -53,6 +53,10 @@ In dit [[[DONL]]] profiel worden de volgende talen onderteund:
 
 Op data.overheid.nl worden teksten geïndexeerd, zodat eindgebruikers de datasets, dataservices of catalogi kunnen terugvinden op basis van één of meer woorden in de tekst.
 
+### Overerving
+
+DCAT 2 bevat verschillende klasses waarin dezelfde informatie opgenomen kan worden. Bij overerving wordt informatie uit de ene klasse automatisch overgenomen naar de andere. DCAT-AP-DONL 2 ondersteund dit niet.  
+
 ### Termenlijst
   
 <b>Dataservice in `dcat`</b>

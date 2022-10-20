@@ -292,10 +292,10 @@ aangeeft. Kijk [hier](https://spdx.org/rdf/terms/#ChecksumAlgorithm) voor onders
 
 Het invullen van de klasse `spdx:checksum` kan op de volgende manier. Voor een voorbeeld zie [voorbeeld checksum](#checksum-0).
 
-| Property       | URI                  | Range                                       | Kardinaliteit |
-| -------------- | -------------------- | ------------------------------------------- | ------------- |
-| Algorithm      | `spdx:algorithm`     | http://spdx.org/rdf/terms#ChecksumAlgorithm | `1..1`        |
-| Checksum value | `spdx:checksumValue` | `Rdfs:Literal` typed as `xsd:hexBinary`     | `1..1`        |
+| Property       | URI                  | Range                                         | Kardinaliteit |
+| -------------- | -------------------- | --------------------------------------------- | ------------- |
+| Algorithm      | `spdx:algorithm`     | `http://spdx.org/rdf/terms#ChecksumAlgorithm` | `1..1`        |
+| Checksum value | `spdx:checksumValue` | `Rdfs:Literal` typed as `xsd:hexBinary`       | `1..1`        |
 
 <div class="issue" data-number="10"></div>
 

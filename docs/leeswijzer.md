@@ -85,17 +85,17 @@ Het gebruik van de term catalogus kan verwarring opleveren. In het Nederlands re
 
 In de informatietechnologie worden diverse soorten catalogi opgesteld, zoals termenlijsten of taxonomieën. Hoewel DCAT niet geschikt is deze catalogie inhoudelijk te beschrijven, kan DCAT wel gebruikt worden om een dergelijke catalogus (en het ontsluiten ervan) te beschrijven met [`dcat:Dataset`](#dcat-Dataset), [`dcat:Distribution`](#dcat-Distribution) en [`dcat:DataService`](#dcat-DataService).
 
-## DCAT beschrijving 
+<b>DCAT beschrijving </b>
 
 Met behulp van het DCAT-AP-DONL profiel kan iedere partij de aangeboden gegevens beschrijven, zowel aangeboden als data service en als aangeboden als distributies.
 
 
-## DONL
+<b>DONL</b>
 
 DONL is de afkorting voor http://data.overheid.nl. Deze voorziening biedt zowel met behulp van een website als via API’s een overzicht van het gegevens aanbod van de Nederlandse overheid.
 
 
-## Open data
+<b>Open data</b>
 
 Open data is data van alle soorten maten dat vrij gedeeld kan worden. Dat dit vrij gedeeld kan worden moet wel specifiek worden benoemd door het een open licentie te geven.
 

@@ -6,7 +6,7 @@ DCAT 2 bestaat uit verschillende klasses zoals [`dcat:Dataset`](#dcat-Dataset) o
 
 <b>Naam van de eigenschap</b>
 
-Dit is de originele engelstalige naam zoals gebruikt in de W3C specificatie van DCAT 2, DCAT-AP-EU 2.0.1 en DCAT-AP-DONL 1.1.
+Dit is de originele engelstalige naam zoals gebruikt in de W3C specificatie van [[[DCAT_20]]], [[[DCATAP_21]]] en [[[DCATAPDONL_11]]].
 
 <b>Definitie</b>
 
@@ -23,7 +23,7 @@ Beschrijft de mogelijke waarden van de eigenschap.
 <b>Kardinaliteit</b>
 
 Geeft aan of de eigenschap eigenschap 0, 1 of meerdere keren mag voorkomen. Hierbij wordt gebruik gemaakt van de schrijfwijze x..y, waarbij x het minimaal aantal voorkomens aangeeft en y het maximaal aantal. Bijvoorbeeld 1..n geeft aan dat de eigenschap 1 of meer keer mag voorkomen.
-Overigens stelt W3C specificatie van [[[DCAT_20]]] geen eisen aan de cardinaliteit van de eigenschappen, maar [[DCATAP_2]]] wel.
+Overigens stelt W3C specificatie van [[[DCAT_20]]] geen eisen aan de cardinaliteit van de eigenschappen, maar [[[DCATAP_21]]] wel.
 
 <b>Gebruik</b>
 
@@ -77,14 +77,13 @@ Een dataset is een gegevensverzameling. Op [[[DONL]]] is deze samengesteld en ge
 
 De klasse beschrijft de dataset als concept. Het staat dus los van de gegevensverzameling zelf, die mogelijk 
 beschikbaar is in een of meerdere representaties, formaten of serialisaties. Deze beschikbare representaties kunnen worden omschreven in een
-[`dcat:DataService`](#dcat-DataService) of [`dcat:Distribution`](#dcat-Distribution)
+ [`dcat:Distribution`](#dcat-Distribution) of [`dcat:DataService`](#dcat-DataService).
 
 <b>Catalogus in `dcat` </b>
 
-Het gebruik van de term catalogus kan verwarring opleveren. In het Nederlands resp. Engels is een catalogus resp. catalogue een register of lijst waarin een verzameling voorwerpen of termen is opgenomen, vaak met een korte omschrijving of definitie en een aantal bijzonderheden. Een [`dcat:Catalog`](#dcat-Catalog) is een verzameling dcat klasses, dus een verzameling van datasets, distributies of andere catalogi. Een dact:catalogus kais niet gescchikt om andersoortige catalogi mee te beschrijven.
+Het gebruik van de term catalogus kan verwarring opleveren. In het Nederlands resp. Engels is een catalogus resp. catalogue een register of lijst waarin een verzameling voorwerpen of termen is opgenomen, vaak met een korte omschrijving of definitie en een aantal bijzonderheden. Een [`dcat:Catalog`](#dcat-Catalog) is een verzameling dcat klasses, dus een verzameling van datasets, distributies of andere catalogi. Een dact:catalogus is niet geschikt om andersoortige catalogi mee te beschrijven.
 
-In de informatietechnologie worden diverse soorten catalogi opgesteld, zoals termenlijsten of taxonomieën. Hoewel DCAT niet geschikt is deze catalogie zelf te beschrijven, kan DCAT wel gebruikt worden om de ontsluiting van zo'n catalogus te beschrijven.Als de catalogus met een RESt/JSON API ontsloten wordt, zal de DCAT beschrijving een dcat:DataService bevatten. Als de catalogus beschikbaar is voor een download, zal er een dcat:Distribution gedefinieerd zijn met bijbehorende dcat:Dataset waarin het doel en de technische beschikbaarheid vastgelegd kunnen worden.
-
+In de informatietechnologie worden diverse soorten catalogi opgesteld, zoals termenlijsten of taxonomieën. Hoewel DCAT niet geschikt is deze catalogie inhoudelijk te beschrijven, kan DCAT wel gebruikt worden om een dergelijke catalogus (en het ontsluiten ervan) te beschrijven met [`dcat:Dataset`](#dcat-Dataset), [`dcat:Distribution`](#dcat-Distribution) en [`dcat:DataService`](#dcat-DataService).
 
 ## DCAT beschrijving 
 
@@ -98,10 +97,10 @@ DONL is de afkorting voor http://data.overheid.nl. Deze voorziening biedt zowel 
 
 ## Open data
 
-Bladiebla
+Open data is data van alle soorten maten dat vrij gedeeld kan worden. Dat dit vrij gedeeld kan worden moet wel specifiek worden benoemd door het een open licentie te geven.
 
 
 
 
 
- In de praktijk zijn er namelijk veel voorbeelden van verzamelingen van verwijzingen die in het algemeen gebruik bestelmpeld zouden worden als catalogus, maar binnen DCAT als [`dcat:Dataset`](#dcat-Dataset). 
+

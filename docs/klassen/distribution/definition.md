@@ -63,7 +63,7 @@ Het bestandsformaat kan ook worden opgegeven in [`dct:MediaType`](#dct-mediaType
 
 ### title {#dct-title1}
 
-De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze zorgvuldig. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze zorgvuldig. Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde         |
 | -------------- | -------------- |
@@ -78,7 +78,7 @@ De titel is belangrijk voor de herkenbaarheid van een distributie, dus kies deze
 
 Een beschrijving van de distributie in aanvulling op de titel, waarmee eindgebruikers een goed beeld krijgen welke 
 gegevens in de Distributie aanwezig zijn. Samen zijn deze het belangrijkste waarmee een gebruiker een distributie kan 
-beoordelen, dus kies deze zorgvuldig. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+beoordelen, dus kies deze zorgvuldig. Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 Voor overige informatie over de Distributie is de eigenschap Documentation beschikbaar, waarin naar aanvullende 
 webpagina's verwezen wordt.
@@ -188,7 +188,7 @@ Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er g
 De natuurlijke taal van de gegevens in de distributie.
 
 Niet alle data die aangeboden wordt is taalgebonden (denk aan cijfers, statistieken etc.), om deze reden is deze 
-eigenschap optioneel. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+eigenschap optioneel. Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde                                                    |
 | -------------- | --------------------------------------------------------- |
@@ -208,7 +208,7 @@ Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attribut
 [`dct:license`](#dct-license1) een CC-BY licentie is gekozen.
 
 Voor iedere taal kan één aparte rights-statement worden opgenomen die wordt aangeduid door een "language tag" achter de 
-literal te plaatsen. Zie [**talen**](#talen) voor het verder omgaan met verschillende talen.
+literal te plaatsen. Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het verder omgaan met verschillende talen.
 
 | Definitie      | Waarde         |
 | -------------- | -------------- |

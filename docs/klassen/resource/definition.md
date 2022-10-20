@@ -27,7 +27,7 @@ dataset, dataservice of catalogus kunnen terugvinden op basis van een of meer wo
 Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in 
 meer tekens de dataset te beschrijven, dan kan [`dct:description`](#dct-description) gebruikt worden.
 
-Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde         |
 | -------------- | -------------- |
@@ -43,7 +43,7 @@ voor het opbouwen van de zoekindex. Dit betekent dus dat de vindbaarheid van de 
 van de tekst. Om ervoor te zorgen dat eindgebruikers de datasets goed kunnen vinden is het belangrijk dat de tekst goede 
 trefwoorden bevat.
 
-Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde            |
 | -------------- | ----------------- |
@@ -177,7 +177,7 @@ Voor beide vormen geldt dat deze de vindbaarheid van de desbetreffende resource 
 mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden moeten in afzonderlijke voorkomens van deze 
 eigenschap worden aangeleverd.
 
-In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden. Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Trefwoord      |
 | -------------- | -------------- |
@@ -217,7 +217,7 @@ openbaarheid niet publiek is.
 
 ### resource language {#dct-language}
 
-De natuurlijk taal van de data in de resource. Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+De natuurlijk taal van de data in de resource. Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde                                                    |
 | -------------- | --------------------------------------------------------- |
@@ -340,7 +340,7 @@ De overige gebruiksrechten die niet worden gedekt met [`dct:license`](#dct-licen
 Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attributie moet plaatsvinden wanneer bij 
 [`dct:license`](#dct-license) een CC-BY licentie is gekozen.
 
-Zie [**talen**](#talen) voor het omgaan met verschillende talen.
+Zie [**meertaligheid**](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde         |
 | -------------- | -------------- |

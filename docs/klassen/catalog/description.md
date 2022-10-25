@@ -1,34 +1,25 @@
 <aside class="note">
 
-Hoewel [[[DONL]]] zelf wel `dcat:Catalog`s aanbiedt, zijn er voor nu geen plannen om data-eigenaren hun eigen 
-`dcat:Catalog`s te laten uitwisselen met [[[DONL]]].
+Hoewel [[[DONL]]] zelf wel `dcat:Catalog`s aanbiedt, kunnen data-eigenaren hun eigen 
+`dcat:Catalog`s niet uitwisselen met [[[DONL]]].
 
 </aside>
 
 > Subklasse van [`dcat:Dataset`](#dcat-Dataset).
 
-Met een `dcat:Catalog` kan men groepen en verzamelingen maken van dcat informatie. Deze bevat instanties van de klasses
+`dcat:Catalog` maakt het mogelijk om structuur aan te brengen in een DCAT beschrijving zonder de eigenschappen van de [`dcat:Resource`](#dcat-Resource) te veranderen. Instanties van de klasses
 [`dcat:Dataset`](#dcat-Dataset), [`dcat:DataService`](#dcat-DataService), [`dcat:CatalogRecord`](#dcat-CatalogRecord) 
-en/of [`dcat:Catalog`](#dcat-Catalog).
+en [`dcat:Catalog`](#dcat-Catalog) zelf kunnen volgens eigen criteria verzameld worden in een overkoepelende `dcat:Catalog`. 
+Naast het opdelen van complexe DCAT beschrijvingen in samenhangende delen, wordt ook het omgekeerde mogelijk: Verschillende beschrijvingen kunnen in één DCAT gecombineerd worden. 
 
-Het meest voor de hand liggende voorbeelden zijn datacatalogi als [[[DONL]]] of [[[DATA_EU]]] Hierin wordt dcat 
-informatie van een groot aantal datasets en aanbieders verzameld. Een catalogus kan ook worden gebruikt om de datasets 
-van één aanbieder te groeperen. Een voorbeeld hiervan kan zijn: 
-[alle data van de `gemeente Arnhem`](https://data.overheid.nl/datasets?facet_catalog[]=http://opendata.arnhem.nl/).
+Het gebruik van de term 'catalogus' kan verwarring opleveren. In het Nederlands (resp. Engels) is een catalogus (resp. catalogue) een register of lijst waarin een verzameling voorwerpen of termen is opgenomen, vaak met een korte omschrijving of definitie en een aantal bijzonderheden. In de informatietechnologie worden diverse soorten catalogi opgesteld, zoals termenlijsten of taxonomieën. Een dcat:Catalog is een verzameling dcat klasses, dus een verzameling van dcat:Datasets, dcat:Distributies of andere catalogi. Een dcat:catalogus is niet geschikt om de meer algemene rol van een catalogus te vervullen. DCAT kan wel gebruikt worden om een dergelijke catalogus (en het ontsluiten ervan) te beschrijven met dcat:Dataset, dcat:Distribution en dcat:DataService.
 
-Er kan ook worden gedacht aan andere groeperingen zoals bijvoorbeeld 
-[de meest populaire data van het jaar](https://data.overheid.nl/statistieken/meest-bekeken-datasets). Of een catalogus 
-over een bepaald thema.
+In grote datacatalogi als [[[DONL]]] of [[[DATA_EU]]] wordt DCAT  
+informatie van een groot aantal datasets en aanbieders verzameld. Een dcat:catalogus kan dan bijvoorbeeld worden gebruikt om de datasets 
+van één aanbieder te groeperen. Een voorbeeld hiervan is: 
+[alle data van de `gemeente Arnhem`](https://data.overheid.nl/datasets?facet_catalog[]=http://opendata.arnhem.nl/). dcat:Catalogue stelt geen eisen aan de indeling van een DCAT beschrijving, dus ook andere catalogs zijn mogelijk zoals
+[de meest populaire data van het jaar](https://data.overheid.nl/statistieken/meest-bekeken-datasets). 
 
-In een thematische catalogus kan men verwijzingen naar datasets verzamelen waarin bijvoorbeeld de impact van de corona 
-pandemie zichtbaar wordt gemaakt. Dit onderwerp doorkruist verschillende velden en zou niet alleen naar medische data en 
-sterftecijfers kunnen wijzen, maar ook naar economische of sociale data. Het verschil tussen een 
-[`dcat:theme`](#dcat-theme) en een thematische catalogus is dat de [`dcat:theme`](#dcat-theme) door de data-eigenaar 
-zelf wordt toegevoegd aan een [`dcat:dataset`](#dcat-Dataset) en niet door anderen aangepast kan worden. Maar iedereen 
-kan een eigen [`dcat:Catalog`](#dcat-Catalog) aanmaken en verwijzen naar de dataset van anderen.
-
-Let op! Er is dus een verschil tussen het algemene begrip van catalogus en een [`dcat:Catalog`](#dcat-Catalog). Waar een 
-algemene catalogus een verzameling van verwijzingen is, gaat de [`dcat:Catalog`](#dcat-Catalog) alleen over een 
-verzameling van verwijzingen naar DCAT klasses.
+Het laatste voorbeeld is de catalogus op basis van een gedeeld onderwerp. Hiermee kunnen gegevens waarvan door de aanbieders niet met behulp van een dcat:theme, dcat:keyword, dct:conformsTo of op een andere wijze is aangegeven dat ze een bepaald onderwerp betreffen, toch in een catalog over dat onderwerp worden opgenomen, zonder dat de oorspronkelijk aangeleverde gegevens gewijzigd hoeven te worden. Met de juiste attributen kan deze catalog zelf kan worden voorzien van dejuiste thema's, keywords etc. Een voorbeeld hiervan zou een catalog kunnen zijn waarmee de impact van de Corona pandemie zichtbaar wordt. Toen de pandemie nieuw was waren er vanzelfsprekend geen DCAT beschrijvingen waarin COVID was opgenomen. Een COVID catalogus zou gegevens kunnen bevatten met medische data en sterftecijfers, maar economische of sociale data. Eventueel kan met de hand of op basis van meerderefilters een Corona catalogus aangemaak.
 
 <div class="issue" data-number="21"></div>

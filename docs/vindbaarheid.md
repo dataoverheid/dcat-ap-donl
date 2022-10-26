@@ -1,5 +1,3 @@
-##Vindbaarheid
-
 DCAT beschrijvingen bestaan uit verschillende eigenschappen waarmee de gegevens worden beschreven. Veel gegevens zijn aanwezig om de gebruiker duidelijk te maken onder welke technische, juridische en andere voorwaarden de gegevens gebruikt kunnen worden. Maar er is ook een groep eigenschappen die bedoeld is om gegevens te kunnen vinden waaraan de gebruiker behoefte heeft. Deze maken meer dan de andere eigenschappen de betrokken gegevens vindbaar in het aanbod, dat heel groot kan zijn.
 Er zijn meerdere eigenschappen die hier voor gebruikt worden, waarvan de naam en de beschrijving van ieder DCAT klasse gegevens de bekendste zijn. Daarbovenop zijn er vier andere eigenschappen gedefinieerd voor die met name de vindbaarheid van de gegevens in een klasse vergroten: *keyword*, *theme*, *type* en *conformsTo*.
 

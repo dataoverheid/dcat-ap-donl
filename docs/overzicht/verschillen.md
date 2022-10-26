@@ -10,4 +10,14 @@ geautomatiseerde toegang tot gegevens te beschrijven dan mogelijk is in de klass
 
 #### Nieuwe eigenschappen
 
-Aangegeven als <em class="new">nieuw</em>.
+In het toepassingsprofiel worden nieuwe eigenschappen aangegeven met de tag <em class="new">nieuw</em>.
+
+- De eigenschappen behorend tot de klasse [`dcat:DataService`](#dcat-DataService) zijn nieuw.
+
+- Nieuw is [access service](#dcat-accessService) zodat een distributie naar `dcat:DataService`s kan verwijzen.
+
+- Nieuw is [conforms to](#dct-conformsTo) om de [vindbaarheid](#vindbaarheid) van datasets te verbeteren.
+
+- Nieuw zijn [creator](#dct-creator) en [qualified-attribution](#prov-qualifiedAttribution) om een beter onderscheid te kunnen maken tussen welke rollen verschillende partijen hebben rondom de dataset.
+
+- [Legal foundation](#donl-LegalFoundation) is een aangepaste versie van de `overheid:grondslag` uit [[[DCATAPDONL_11]]]

@@ -8,9 +8,6 @@ Bevat concepten die de mate van openbaarheid beschrijven van een bron. Deze waar
 concepten die afgeleid zijn van de concepten uit de [[[MDR_ACCESSRIGHTS]]] taxonomie die op Europees niveau toegepast
 wordt.
 
-Elk concept bevat een `skos:broader` eigenschap met daarin een verwijzing naar het bovenliggende [[[MDR_ACCESSRIGHTS]]]
-concept.
-
 <aside class="note">
 
 De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
@@ -42,6 +39,21 @@ De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [
 </aside>
 
 #### donl:License {#waardelijst-donl-License}
+
+Deze taxonomie bevat concepten die de licentie beschrijven die van toepassing is op een bron. Deze waardelijst bevat
+voornamelijk, maar _niet_ uitsluitend, CreativeCommons licenties. Deze taxonomie is gespitst op het aanbieden van data
+via een "open" licentie.
+
+In [[[DCATAPDONL_11]]] werden van een aantal CreativeCommons licenties alleen de `4.0` versies aangeboden. In dit
+profiel worden de `3.0` versies van deze licenties ook aangeboden. Dit omdat blijkt dat veel data nog via een van de
+`3.0` varianten beschikbaar wordt gesteld.
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[DONL_LICENSE_TAXONOMY]]]
+
+</aside>
 
 #### donl:Organization {#waardelijst-donl-Organization}
 

@@ -11,108 +11,94 @@ wordt.
 Elk concept bevat een `skos:broader` eigenschap met daarin een verwijzing naar het bovenliggende [[[MDR_ACCESSRIGHTS]]]
 concept.
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[DONL_ACCESSRIGHTS_TAXONOMY]]]
+
+De concepten zelf zullen in [[[TOOI]]] opgenomen worden (en dus een `identifier.overheid.nl` identifier krijgen. De
+werkversies van deze concepten zijn voorlopig raadpleegbaar op [[[DONL_ACCESSRIGHTS_CONCEPTS]]]
+
+</aside>
+
+##### Mapping naar mdr:AccessRights
+
+Elk concept bevat een `skos:broader` eigenschap met daarin een verwijzing naar het bovenliggende [[[MDR_ACCESSRIGHTS]]]
+concept.
 
 #### donl:Language {#waardelijst-donl-Language}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
+Deze taxonomie bevat concepten die de taal van een bron (data _of_ metadata) beschrijven. Alle concepten komen uit de
+[[[MDR_LANGUAGE]]].
+
+Er is geen ondersteuning voor _alle_ talen uit de [[[MDR_LANGUAGE]]]. Alleen de voor [[[DONL]]] relevante
+taalconcepten zijn overgenomen.
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[DONL_LANGUAGE_TAXONOMY]]]
+
+</aside>
 
 #### donl:License {#waardelijst-donl-License}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
-
 #### donl:Organization {#waardelijst-donl-Organization}
-
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
 
 #### donl:SupportingRole {#waardelijst-donl-SupportingRole}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
-
 #### iana:Mediatype {#waardelijst-iana-Mediatype}
-
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
 
 #### mdr:Filetype {#waardelijst-mdr-Filetype}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
-
 #### mdr:Frequency {#waardelijst-mdr-Frequency}
-
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
 
 #### overheid:Gemeente {#waardelijst-overheid-Gemeente}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
-
 #### overheid:Koninkrijksdeel {#waardelijst-overheid-Koninkrijksdeel}
-
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
 
 #### overheid:Provincie {#waardelijst-overheid-Provincie}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
-
 #### overheid:Waterschap {#waardelijst-overheid-Waterschap}
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
+Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+[[[OWMS_WATERSCHAP]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[OVERHEID_WATERSCHAP_TAXONOMY]]]
+
+</aside>
 
 #### overheid:TaxonomieBeleidsagenda {#waardelijst-overheid-TaxonomieBeleidsagenda}
 
 Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Alle concepten komen uit de 
-[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]. In deze taxonomie is per `skos:concept` een extra eigenschap (`skos:broader`) 
-opgenomen die de mapping bevat naar de Europese [[[MDR_DATATHEME]]] taxonomie.
+[[[OWMS_TAXONOMIEBELEIDSAGENDA]]].
 
-| Distributievorm | Locatie |
-|-----------------|---------|
-| `JSON`          | TODO    |
-| `XML/RDF`       | n/a     |
-| `TURTLE`        | n/a     |
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[OVERHEID_TAXONOMIEBELEIDSAGENDA_TAXONOMY]]]
+
+</aside>
+
+##### Mapping naar mdr:DataTheme
+
+Er wordt nog onderzocht hoe de mapping van de [[[OWMS_TAXONOMIEBELEIDSAGENDA]]] naar de [[[MDR_DATATHEME]]] aangeboden
+gaat worden.
+
+Een mogelijkheid is dat er per concept een extra `skos:broader` eigenschap wordt opgenomen met daarin de mapping naar
+het bovenliggende `mdr:DataTheme` concept.
+
+#### spdx:ChecksumAlgorithm {#waardelijst-spdx-ChecksumAlgorithm}
+
+Bevat concepten die beschrijven welk algorithme gebruikt is om tot een hash te komen die als checksum dient van een
+bron. Alle concepten komen uit de [[[SPDX_CHECKSUMALGORITHM]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[SPDX_CHECKSUMALGORITHM_TAXONOMY]]]
+
+</aside>

@@ -1,0 +1,31 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/algorithms
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/algorithms>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/algorithms" ;
+  dcterms:title "Hash algoritmes"@en ;
+  dcterms:title "Hash algorithms"@nl ;
+  skos:definition "Deze taxonomie bevat concepten die beschrijven welk algoritme gebruikt is om tot een bepaalde hash te komen."@nl ;
+  skos:editorialNote "Deze taxonomie bevat uitsluitend concepten uit de spdx:ChecksumAlgorithm (http://spdx.org/rdf/terms#ChecksumAlgorithm) waardelijst."@nl ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_adler32> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_blake2b256> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_blake2b384> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_blake2b512> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_blake3> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_md2> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_md4> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_md5> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_md6> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha1> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha224> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha3_256> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha3_384> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha3_512> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha384> ;
+  skos:hasTopConcept <http://spdx.org/rdf/terms#checksumAlgorithm_sha512> ;
+.

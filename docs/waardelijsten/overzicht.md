@@ -71,6 +71,16 @@ De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [
 
 #### overheid:Provincie {#waardelijst-overheid-Provincie}
 
+Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+[[[OWMS_PROVINCIE]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[OVERHEID_PROVINCIES_TAXONOMY]]]
+
+</aside>
+
 #### overheid:Waterschap {#waardelijst-overheid-Waterschap}
 
 Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Alle concepten komen uit de

@@ -33,7 +33,7 @@ Eigenschappen zonder waarde zijn/worden niet overgenomen in het toepassingsprofi
 | [**dataset**](#dcat-dataset1)                                                      | `0..n`        | Recommended  | Catalogus |
 | [**service**](#dcat-service) <em class="new">nieuw</em>                            | `0..n`        | Recommended  | Catalogus |
 | [**catalog**](#dcat-catalog1) <em class="new">nieuw</em>                           | `0..n`        | Recommended  | Catalogus |
-| [**themes**](#dcat-themeTaxonomy)                                                  | `1..1`        | Optional    | Catalogus |
+| [**themes**](#dcat-themeTaxonomy)                                                  | `0..1`        | Optional    | Catalogus |
 
 ### homepage {#foaf-homepage1}
 
@@ -99,5 +99,5 @@ verwijzen naar de [[[OWMS_TAXONOMIEBELEIDSAGENDA]]].
 | -------------- | -------------------- |
 | RDF Eigenschap | `dcat:themeTaxonomy` |
 | Bereik         | `rdfs:Resource`      |
-| Kardinaliteit  | `1..1`               |
+| Kardinaliteit  | `0..1`               |
 | Gebruik        | Optional            |

@@ -30,10 +30,10 @@ Eigenschappen zonder waarde zijn/worden niet overgenomen in het toepassingsprofi
 | [**spatial/geographical coverage**](#dct-spatial)                                  | `0..n`        | Optional     | Dataset   |
 | [**temporal coverage**](#dct-temporal)                                             | `0..1`        | Optional     | Dataset   |
 | [**homepage**](#foaf-homepage1)                                                    | `1..1`        | Mandatory    | Catalogus |
-| [**themes**](#dcat-themeTaxonomy)                                                  | `1..1`        | Mandatory    | Catalogus |
 | [**dataset**](#dcat-dataset1)                                                      | `0..n`        | Recommended  | Catalogus |
 | [**service**](#dcat-service) <em class="new">nieuw</em>                            | `0..n`        | Recommended  | Catalogus |
 | [**catalog**](#dcat-catalog1) <em class="new">nieuw</em>                           | `0..n`        | Recommended  | Catalogus |
+| [**themes**](#dcat-themeTaxonomy)                                                  | `1..1`        | Optional    | Catalogus |
 
 ### homepage {#foaf-homepage1}
 
@@ -48,18 +48,6 @@ Let op, dit is dus iets anders dan [`dcat:landingPage`](#dcat-landingPage).
 | Bereik         | `xsd:anyURI`    |
 | Kardinaliteit  | `1..1`          |
 | Gebruik        | Mandatory       |
-
-### themes {#dcat-themeTaxonomy}
-
-De themalijst die van toepassing is op alle resources in deze catalogus. Deze zal binnen dit toepassingsprofiel altijd 
-verwijzen naar de [[[OWMS_TAXONOMIEBELEIDSAGENDA]]].
-
-| Definitie      | Waarde               |
-| -------------- | -------------------- |
-| RDF Eigenschap | `dcat:themeTaxonomy` |
-| Bereik         | `rdfs:Resource`      |
-| Kardinaliteit  | `1..1`               |
-| Gebruik        | Mandatory            |
 
 ### dataset {#dcat-dataset1}
 
@@ -101,3 +89,15 @@ beschouwen als een resource en deze op te nemen in een catalogus.
 | Bereik         | `dcat:Catalog` |
 | Kardinaliteit  | `0..n`         |
 | Gebruik        | Recommended    |
+
+### themes {#dcat-themeTaxonomy}
+
+De themalijst die van toepassing is op alle resources in deze catalogus. Deze zal binnen dit toepassingsprofiel altijd 
+verwijzen naar de [[[OWMS_TAXONOMIEBELEIDSAGENDA]]].
+
+| Definitie      | Waarde               |
+| -------------- | -------------------- |
+| RDF Eigenschap | `dcat:themeTaxonomy` |
+| Bereik         | `rdfs:Resource`      |
+| Kardinaliteit  | `1..1`               |
+| Gebruik        | Optional            |

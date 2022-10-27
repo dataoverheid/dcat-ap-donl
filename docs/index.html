@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset='utf-8'>
     <title>DCAT-AP-DONL 2.0</title>
@@ -203,14 +204,15 @@
         };
     </script>
 </head>
+
 <body>
     <section id="sotd">
         <aside class="note" title="TODO">
             <ul>
-                    <li>Waardelijsten</li>
-                    <li>Voorbeelden</li>
+                <li>Waardelijsten</li>
+                <li>Voorbeelden</li>
             </ul>
-            </aside>
+        </aside>
     </section>
     <section id='abstract' data-format="markdown" data-include="samenvatting.md"></section>
     <section class="introductie" data-format="markdown" data-include="introductie.md"></section>
@@ -218,7 +220,11 @@
     <section id="overzicht">
         <h2>Overzicht van het toepassingsprofiel</h2>
         <div data-format="markdown" data-include="overzicht/intro.md"></div>
-        <section data-format="markdown" data-include="overzicht/verschillen.md"></section>
+        <section data-format="markdown" data-include="overzicht/relatie.md"></section>
+        <section>
+            <h2>Verschillen</h2>
+            <div data-format="markdown" data-include="overzicht/verschillen.md"></div>
+        </section>
         <section data-format="markdown" data-include="overzicht/namespaces.md"></section>
         <section data-format="markdown" data-include="overzicht/eigenschappen.md"></section>
         <section data-format="markdown" data-include="overzicht/overerving.md"></section>
@@ -296,21 +302,23 @@
 
     <section id="scenarios" class="appendix">
         <h2>Scenarios</h2>
-        <div class="appendix"  data-format="markdown" data-include="overzicht/scenarios.md"></div>
-    </section> 
-    
+        <div class="appendix" data-format="markdown" data-include="overzicht/scenarios.md"></div>
+    </section>
+
     <section id="termenlijst" class="appendix">
         <h2>Termenlijst</h2>
-        <div class="appendix"  data-format="markdown" data-include="overzicht/termenlijst.md"></div>
-    </section> 
+        <div class="appendix" data-format="markdown" data-include="overzicht/termenlijst.md"></div>
+    </section>
 
     <section class="appendix">
         <h2>Contributors</h2>
-        <p>Accounts die een bijdrage hebben geleverd via de <a href="https://github.com/dataoverheid/dcat-ap-donl">Github repository</a>.</p>
+        <p>Accounts die een bijdrage hebben geleverd via de <a
+                href="https://github.com/dataoverheid/dcat-ap-donl">Github repository</a>.</p>
         <ul id="gh-contributors"></ul>
     </section>
 
     <section id="issue-summary" class="appendix"></section>
     <section id="tof" class="appendix"></section>
 </body>
+
 </html>

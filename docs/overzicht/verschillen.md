@@ -1,5 +1,3 @@
-### Verschillen
-
 #### Introductie van klasse [`dcat:DataService`](#dcat-DataService)
 
 Met een Dataservice kan men toegang krijgen tot (een selectie of bewerking van) gegevens van een 
@@ -20,4 +18,4 @@ In het toepassingsprofiel worden nieuwe eigenschappen aangegeven met de tag <em 
 
 - Nieuw zijn [creator](#dct-creator) en [qualified-attribution](#prov-qualifiedAttribution) om een beter onderscheid te kunnen maken tussen welke rollen verschillende partijen hebben rondom de dataset.
 
-- [Legal foundation](#donl-LegalFoundation) is een aangepaste versie van de `overheid:grondslag` uit [[[DCATAPDONL_11]]]
+- [Legal foundation](#donl-LegalFoundation) is een aangepaste versie van de `overheid:grondslag` uit [[[DCATAPDONL_11]]].

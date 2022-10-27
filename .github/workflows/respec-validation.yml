@@ -4,7 +4,8 @@ name: Respec validation
 on:
   pull_request:
     paths:
-      "docs/**"
+      - ".github/workflows/**"
+      - "docs/**"
 
 jobs:
   build-respec:

@@ -76,6 +76,16 @@ const respecConfig = {
             href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/licenses.ttl",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
+        DONL_SUPPORTINGROLE_CONCEPTS: {
+            title: "donl:SupportingRole concepts (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles",
+            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
+        },
+        DONL_SUPPORTINGROLE_TAXONOMY: {
+            title: "donl:SupportingRole taxonomy (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl",
+            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
+        },
         GEONAMES: {
             title: "GeoNames.org",
             href: "https://www.geonames.org/"
@@ -88,6 +98,11 @@ const respecConfig = {
         IANA_MEDIATYPES: {
             title: "IANA Mediatypes",
             href: "https://www.iana.org/assignments/media-types/media-types.xhtml",
+            publisher: "Internet Assigned Numbers Authority"
+        },
+        IANA_MEDIATYPES_TAXONOMY: {
+            title: "IANA Mediatypes taxonomy (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl",
             publisher: "Internet Assigned Numbers Authority"
         },
         ISO8601: {
@@ -119,10 +134,40 @@ const respecConfig = {
             href: "https://publications.europa.eu/resource/authority/data-theme",
             publisher: "The Publications Office of the European Union"
         },
+        MDR_FILETYPE: {
+            title: "mdr:Filetype",
+            href: "https://publications.europa.eu/resource/authority/file-type",
+            publisher: "The Publications Office of the European Union"
+        },
+        MDR_FILETYPE_TAXONOMY: {
+            title: "mdr:Filetype taxonomy (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl",
+            publisher: "The Publications Office of the European Union"
+        },
+        MDR_FREQUENCY: {
+            title: "mdr:Frequency",
+            href: "https://publications.europa.eu/resource/authority/frequency",
+            publisher: "The Publications Office of the European Union"
+        },
+        MDR_FREQUENCY_TAXONOMY: {
+            title: "mdr:Frequency taxonomy (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl",
+            publisher: "The Publications Office of the European Union"
+        },
         MDR_LANGUAGE: {
             title: "mdr:Language",
             href: "https://publications.europa.eu/resource/authority/language",
             publisher: "The Publications Office of the European Union"
+        },
+        OVERHEID_GEMEENTES_TAXONOMY: {
+            title: "overheid:Gemeente taxonomy (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl",
+            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
+        },
+        OVERHEID_KONINKRIJKSDEEL_TAXONOMY: {
+            title: "overheid:Koninkrijksdeel taxonomy (Github.com/dataoverheid)",
+            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl",
+            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OVERHEID_PROVINCIES_TAXONOMY: {
             title: "overheid:Provincie taxonomy (Github.com/dataoverheid)",
@@ -142,6 +187,16 @@ const respecConfig = {
         OWMS_EPSG28992: {
             title: "overheid:EPSG28992",
             href: "https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992",
+            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
+        },
+        OWMS_GEMEENTE: {
+            title: "overheid:Gemeente",
+            href: "https://standaarden.overheid.nl/owms/terms/Gemeente",
+            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
+        },
+        OWMS_KONINKRIJKSDEEL: {
+            title: "overheid:Koninkrijksdeel",
+            href: "https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_ORGANISATIE: {

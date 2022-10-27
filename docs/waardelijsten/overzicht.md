@@ -59,15 +59,81 @@ De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [
 
 #### donl:SupportingRole {#waardelijst-donl-SupportingRole}
 
+Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron. Deze waardelijst heette
+in [[[DCATAPDONL_11]]] `donl:DistributionType`. 
+
+De lijst is aanzienlijk ingekort aangezien een aantal 'types' herleidbaar zijn uit andere metadata-eigenschappen. Zo
+zijn de concepten `DOWNLOAD` en `WEBSERVICE` niet meegenomen uit de oude lijst aangezien deze informatie al geduid wordt
+door middel van de eigenschappen `dcat:downloadURL` en/of `dcat:accessService` die op `dcat:Distribution` niveau 
+aanwezig zijn.
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[DONL_SUPPORTINGROLE_TAXONOMY]]]
+
+De concepten zelf zullen in [[[TOOI]]] opgenomen worden (en dus een `identifier.overheid.nl` identifier krijgen. De
+werkversies van deze concepten zijn voorlopig raadpleegbaar op [[[DONL_SUPPORTINGROLE_CONCEPTS]]]
+
+</aside>
+
 #### iana:Mediatype {#waardelijst-iana-Mediatype}
+
+Bevat concepten die de mimetype van een bron beschrijven. Alle concepten zijn afkomstig uit de [[[IANA_MEDIATYPES]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[IANA_MEDIATYPES_TAXONOMY]]]
+
+</aside>
 
 #### mdr:Filetype {#waardelijst-mdr-Filetype}
 
+Bevat concepten die het bestandsformaat van een bron beschrijven. Alle concepten komen uit [[[MDR_FILETYPE]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[MDR_FILETYPE_TAXONOMY]]]
+
+</aside>
+
 #### mdr:Frequency {#waardelijst-mdr-Frequency}
+
+Bevat concepten die beschrijven met welke frequentie een bron verwacht bijgewerkt te worden. Alle concepten komen uit 
+[[[MDR_FREQUENCY]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[MDR_FREQUENCY_TAXONOMY]]]
+
+</aside>
 
 #### overheid:Gemeente {#waardelijst-overheid-Gemeente}
 
+Deze taxonomie bevat concepten die de gemeentes van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+[[[OWMS_GEMEENTE]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[OVERHEID_GEMEENTES_TAXONOMY]]]
+
+</aside>
+
 #### overheid:Koninkrijksdeel {#waardelijst-overheid-Koninkrijksdeel}
+
+Deze taxonomie bevat concepten die de koninkrijksdelen van het Koninkrijk der Nederlanden beschrijven. Alle concepten 
+komen uit de [[[OWMS_KONINKRIJKSDEEL]]].
+
+<aside class="note">
+
+De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [[[OVERHEID_KONINKRIJKSDEEL_TAXONOMY]]]
+
+</aside>
 
 #### overheid:Provincie {#waardelijst-overheid-Provincie}
 

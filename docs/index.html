@@ -229,6 +229,18 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
       "id": "donl_license_taxonomy"
     },
+    "DONL_SUPPORTINGROLE_CONCEPTS": {
+      "title": "donl:SupportingRole concepts (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles",
+      "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
+      "id": "donl_supportingrole_concepts"
+    },
+    "DONL_SUPPORTINGROLE_TAXONOMY": {
+      "title": "donl:SupportingRole taxonomy (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl",
+      "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
+      "id": "donl_supportingrole_taxonomy"
+    },
     "GEONAMES": {
       "title": "GeoNames.org",
       "href": "https://www.geonames.org/",
@@ -245,6 +257,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "href": "https://www.iana.org/assignments/media-types/media-types.xhtml",
       "publisher": "Internet Assigned Numbers Authority",
       "id": "iana_mediatypes"
+    },
+    "IANA_MEDIATYPES_TAXONOMY": {
+      "title": "IANA Mediatypes taxonomy (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl",
+      "publisher": "Internet Assigned Numbers Authority",
+      "id": "iana_mediatypes_taxonomy"
     },
     "ISO8601": {
       "title": "ISO-8601",
@@ -281,11 +299,47 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "publisher": "The Publications Office of the European Union",
       "id": "mdr_datatheme"
     },
+    "MDR_FILETYPE": {
+      "title": "mdr:Filetype",
+      "href": "https://publications.europa.eu/resource/authority/file-type",
+      "publisher": "The Publications Office of the European Union",
+      "id": "mdr_filetype"
+    },
+    "MDR_FILETYPE_TAXONOMY": {
+      "title": "mdr:Filetype taxonomy (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl",
+      "publisher": "The Publications Office of the European Union",
+      "id": "mdr_filetype_taxonomy"
+    },
+    "MDR_FREQUENCY": {
+      "title": "mdr:Frequency",
+      "href": "https://publications.europa.eu/resource/authority/frequency",
+      "publisher": "The Publications Office of the European Union",
+      "id": "mdr_frequency"
+    },
+    "MDR_FREQUENCY_TAXONOMY": {
+      "title": "mdr:Frequency taxonomy (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl",
+      "publisher": "The Publications Office of the European Union",
+      "id": "mdr_frequency_taxonomy"
+    },
     "MDR_LANGUAGE": {
       "title": "mdr:Language",
       "href": "https://publications.europa.eu/resource/authority/language",
       "publisher": "The Publications Office of the European Union",
       "id": "mdr_language"
+    },
+    "OVERHEID_GEMEENTES_TAXONOMY": {
+      "title": "overheid:Gemeente taxonomy (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl",
+      "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
+      "id": "overheid_gemeentes_taxonomy"
+    },
+    "OVERHEID_KONINKRIJKSDEEL_TAXONOMY": {
+      "title": "overheid:Koninkrijksdeel taxonomy (Github.com/dataoverheid)",
+      "href": "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl",
+      "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
+      "id": "overheid_koninkrijksdeel_taxonomy"
     },
     "OVERHEID_PROVINCIES_TAXONOMY": {
       "title": "overheid:Provincie taxonomy (Github.com/dataoverheid)",
@@ -310,6 +364,18 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "href": "https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992",
       "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
       "id": "owms_epsg28992"
+    },
+    "OWMS_GEMEENTE": {
+      "title": "overheid:Gemeente",
+      "href": "https://standaarden.overheid.nl/owms/terms/Gemeente",
+      "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
+      "id": "owms_gemeente"
+    },
+    "OWMS_KONINKRIJKSDEEL": {
+      "title": "overheid:Koninkrijksdeel",
+      "href": "https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel",
+      "publisher": "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties",
+      "id": "owms_koninkrijksdeel"
     },
     "OWMS_ORGANISATIE": {
       "title": "overheid:Organisatie",
@@ -3704,19 +3770,16 @@ voldoet.</p>
 
     <section id="waardelijsten"><div class="header-wrapper"><h2 id="x4-waardelijsten"><bdi class="secno">4. </bdi>Waardelijsten</h2><a class="self-link" href="#waardelijsten" aria-label="Permalink for Section 4."></a></div>
         
-        <div data-format="markdown"><div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="3"><span>Noot</span></div><aside class="">
-
-<p>De waardelijsten van dit applicatieprofiel zijn ook als dataset beschikbaar gesteld op data.overheid.nl via 
-<a href="https://data.overheid.nl/dataset/dcat-ap-donl-waardelijsten">data.overheid.nl/dataset/dcat-ap-donl-waardelijsten</a>.</p>
-</aside></div></div>
+        <div data-format="markdown"></div>
         <section data-format="markdown" id="beheer"><div class="header-wrapper"><h3 id="x4-1-beheer"><bdi class="secno">4.1 </bdi>Beheer</h3><a class="self-link" href="#beheer" aria-label="Permalink for Section 4.1"></a></div>
+<p><em>TODO: Beheer van waardelijsten en beheer van de inhoud van de waardelijsten beschrijven.</em></p>
 </section>
         <section data-format="markdown" id="overzicht-0"><div class="header-wrapper"><h3 id="x4-2-overzicht"><bdi class="secno">4.2 </bdi>Overzicht</h3><a class="self-link" href="#overzicht-0" aria-label="Permalink for Section 4.2"></a></div>
 <p>Binnen dit toepassingsprofiel worden de onderstaande waardelijsten toegepast.</p>
 <section id="donl-accessrights"><div class="header-wrapper"><h4 id="waardelijst-donl-AccessRights"><bdi class="secno">4.2.1 </bdi>donl:AccessRights</h4><a class="self-link" href="#waardelijst-donl-AccessRights" aria-label="Permalink for Section 4.2.1"></a></div><p>Bevat concepten die de mate van openbaarheid beschrijven van een bron. Deze waardelijst bestaat uitsluitend uit
 concepten die afgeleid zijn van de concepten uit de <cite><a data-matched-text="[[[MDR_ACCESSRIGHTS]]]" href="https://publications.europa.eu/resource/authority/access-right">mdr:AccessRights</a></cite> taxonomie die op Europees niveau toegepast
 wordt.</p>
-<div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="4"><span>Noot</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[DONL_ACCESSRIGHTS_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/access-rights.ttl">donl:AccessRights taxonomy (Github.com/dataoverheid)</a></cite></p>
@@ -3731,7 +3794,7 @@ concept.</p>
 <cite><a data-matched-text="[[[MDR_LANGUAGE]]]" href="https://publications.europa.eu/resource/authority/language">mdr:Language</a></cite>.</p>
 <p>Er is geen ondersteuning voor <em>alle</em> talen uit de <cite><a data-matched-text="[[[MDR_LANGUAGE]]]" href="https://publications.europa.eu/resource/authority/language">mdr:Language</a></cite>. Alleen de voor <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> relevante
 taalconcepten zijn overgenomen.</p>
-<div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="4"><span>Noot</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[DONL_LANGUAGE_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/languages.ttl">donl:Language taxonomy (Github.com/dataoverheid)</a></cite></p>
@@ -3743,15 +3806,67 @@ via een "open" licentie.</p>
 <p>In <cite><a data-matched-text="[[[DCATAPDONL_11]]]" href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a></cite> werden van een aantal CreativeCommons licenties alleen de <code>4.0</code> versies aangeboden. In dit
 profiel worden de <code>3.0</code> versies van deze licenties ook aangeboden. Dit omdat blijkt dat veel data nog via een van de
 <code>3.0</code> varianten beschikbaar wordt gesteld.</p>
-<div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="4"><span>Noot</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[DONL_LICENSE_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/licenses.ttl">donl:License taxonomy (Github.com/dataoverheid)</a></cite></p>
 </aside></div>
 
-</section><section id="donl-organization"><div class="header-wrapper"><h4 id="waardelijst-donl-Organization"><bdi class="secno">4.2.4 </bdi>donl:Organization</h4><a class="self-link" href="#waardelijst-donl-Organization" aria-label="Permalink for Section 4.2.4"></a></div></section><section id="donl-supportingrole"><div class="header-wrapper"><h4 id="waardelijst-donl-SupportingRole"><bdi class="secno">4.2.5 </bdi>donl:SupportingRole</h4><a class="self-link" href="#waardelijst-donl-SupportingRole" aria-label="Permalink for Section 4.2.5"></a></div></section><section id="iana-mediatype"><div class="header-wrapper"><h4 id="waardelijst-iana-Mediatype"><bdi class="secno">4.2.6 </bdi>iana:Mediatype</h4><a class="self-link" href="#waardelijst-iana-Mediatype" aria-label="Permalink for Section 4.2.6"></a></div></section><section id="mdr-filetype"><div class="header-wrapper"><h4 id="waardelijst-mdr-Filetype"><bdi class="secno">4.2.7 </bdi>mdr:Filetype</h4><a class="self-link" href="#waardelijst-mdr-Filetype" aria-label="Permalink for Section 4.2.7"></a></div></section><section id="mdr-frequency"><div class="header-wrapper"><h4 id="waardelijst-mdr-Frequency"><bdi class="secno">4.2.8 </bdi>mdr:Frequency</h4><a class="self-link" href="#waardelijst-mdr-Frequency" aria-label="Permalink for Section 4.2.8"></a></div></section><section id="overheid-gemeente"><div class="header-wrapper"><h4 id="waardelijst-overheid-Gemeente"><bdi class="secno">4.2.9 </bdi>overheid:Gemeente</h4><a class="self-link" href="#waardelijst-overheid-Gemeente" aria-label="Permalink for Section 4.2.9"></a></div></section><section id="overheid-koninkrijksdeel"><div class="header-wrapper"><h4 id="waardelijst-overheid-Koninkrijksdeel"><bdi class="secno">4.2.10 </bdi>overheid:Koninkrijksdeel</h4><a class="self-link" href="#waardelijst-overheid-Koninkrijksdeel" aria-label="Permalink for Section 4.2.10"></a></div></section><section id="overheid-provincie"><div class="header-wrapper"><h4 id="waardelijst-overheid-Provincie"><bdi class="secno">4.2.11 </bdi>overheid:Provincie</h4><a class="self-link" href="#waardelijst-overheid-Provincie" aria-label="Permalink for Section 4.2.11"></a></div><p>Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Alle concepten komen uit de
-<cite><a data-matched-text="[[[OWMS_PROVINCIE]]]" href="https://standaarden.overheid.nl/owms/terms/Provincie">overheid:Provincie</a></cite>.</p>
+</section><section id="donl-organization"><div class="header-wrapper"><h4 id="waardelijst-donl-Organization"><bdi class="secno">4.2.4 </bdi>donl:Organization</h4><a class="self-link" href="#waardelijst-donl-Organization" aria-label="Permalink for Section 4.2.4"></a></div></section><section id="donl-supportingrole"><div class="header-wrapper"><h4 id="waardelijst-donl-SupportingRole"><bdi class="secno">4.2.5 </bdi>donl:SupportingRole</h4><a class="self-link" href="#waardelijst-donl-SupportingRole" aria-label="Permalink for Section 4.2.5"></a></div><p>Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron. Deze waardelijst heette
+in <cite><a data-matched-text="[[[DCATAPDONL_11]]]" href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a></cite> <code>donl:DistributionType</code>. </p>
+<p>De lijst is aanzienlijk ingekort aangezien een aantal 'types' herleidbaar zijn uit andere metadata-eigenschappen. Zo
+zijn de concepten <code>DOWNLOAD</code> en <code>WEBSERVICE</code> niet meegenomen uit de oude lijst aangezien deze informatie al geduid wordt
+door middel van de eigenschappen <code>dcat:downloadURL</code> en/of <code>dcat:accessService</code> die op <code>dcat:Distribution</code> niveau 
+aanwezig zijn.</p>
+<div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="4"><span>Noot</span></div><aside class="">
+
+<p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[DONL_SUPPORTINGROLE_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl">donl:SupportingRole taxonomy (Github.com/dataoverheid)</a></cite></p>
+<p>De concepten zelf zullen in <cite><a data-matched-text="[[[TOOI]]]" href="https://tardis.overheid.nl">TOOI - Thesaurus en Ontologie Overheidsinformatie</a></cite> opgenomen worden (en dus een <code>identifier.overheid.nl</code> identifier krijgen. De
+werkversies van deze concepten zijn voorlopig raadpleegbaar op <cite><a data-matched-text="[[[DONL_SUPPORTINGROLE_CONCEPTS]]]" href="https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles">donl:SupportingRole concepts (Github.com/dataoverheid)</a></cite></p>
+</aside></div>
+
+</section><section id="iana-mediatype"><div class="header-wrapper"><h4 id="waardelijst-iana-Mediatype"><bdi class="secno">4.2.6 </bdi>iana:Mediatype</h4><a class="self-link" href="#waardelijst-iana-Mediatype" aria-label="Permalink for Section 4.2.6"></a></div><p>Bevat concepten die de mimetype van een bron beschrijven. Alle concepten zijn afkomstig uit de <cite><a data-matched-text="[[[IANA_MEDIATYPES]]]" href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA Mediatypes</a></cite>.</p>
 <div class="note" role="note" id="issue-container-generatedID-20"><div role="heading" class="note-title marker" id="h-note-20" aria-level="4"><span>Noot</span></div><aside class="">
+
+<p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[IANA_MEDIATYPES_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl">IANA Mediatypes taxonomy (Github.com/dataoverheid)</a></cite></p>
+</aside></div>
+
+</section><section id="mdr-filetype"><div class="header-wrapper"><h4 id="waardelijst-mdr-Filetype"><bdi class="secno">4.2.7 </bdi>mdr:Filetype</h4><a class="self-link" href="#waardelijst-mdr-Filetype" aria-label="Permalink for Section 4.2.7"></a></div><p>Bevat concepten die het bestandsformaat van een bron beschrijven. Alle concepten komen uit <cite><a data-matched-text="[[[MDR_FILETYPE]]]" href="https://publications.europa.eu/resource/authority/file-type">mdr:Filetype</a></cite>.</p>
+<div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="4"><span>Noot</span></div><aside class="">
+
+<p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[MDR_FILETYPE_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl">mdr:Filetype taxonomy (Github.com/dataoverheid)</a></cite></p>
+</aside></div>
+
+</section><section id="mdr-frequency"><div class="header-wrapper"><h4 id="waardelijst-mdr-Frequency"><bdi class="secno">4.2.8 </bdi>mdr:Frequency</h4><a class="self-link" href="#waardelijst-mdr-Frequency" aria-label="Permalink for Section 4.2.8"></a></div><p>Bevat concepten die beschrijven met welke frequentie een bron verwacht bijgewerkt te worden. Alle concepten komen uit 
+<cite><a data-matched-text="[[[MDR_FREQUENCY]]]" href="https://publications.europa.eu/resource/authority/frequency">mdr:Frequency</a></cite>.</p>
+<div class="note" role="note" id="issue-container-generatedID-22"><div role="heading" class="note-title marker" id="h-note-22" aria-level="4"><span>Noot</span></div><aside class="">
+
+<p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[MDR_FREQUENCY_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl">mdr:Frequency taxonomy (Github.com/dataoverheid)</a></cite></p>
+</aside></div>
+
+</section><section id="overheid-gemeente"><div class="header-wrapper"><h4 id="waardelijst-overheid-Gemeente"><bdi class="secno">4.2.9 </bdi>overheid:Gemeente</h4><a class="self-link" href="#waardelijst-overheid-Gemeente" aria-label="Permalink for Section 4.2.9"></a></div><p>Deze taxonomie bevat concepten die de gemeentes van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+<cite><a data-matched-text="[[[OWMS_GEMEENTE]]]" href="https://standaarden.overheid.nl/owms/terms/Gemeente">overheid:Gemeente</a></cite>.</p>
+<div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="4"><span>Noot</span></div><aside class="">
+
+<p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[OVERHEID_GEMEENTES_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl">overheid:Gemeente taxonomy (Github.com/dataoverheid)</a></cite></p>
+</aside></div>
+
+</section><section id="overheid-koninkrijksdeel"><div class="header-wrapper"><h4 id="waardelijst-overheid-Koninkrijksdeel"><bdi class="secno">4.2.10 </bdi>overheid:Koninkrijksdeel</h4><a class="self-link" href="#waardelijst-overheid-Koninkrijksdeel" aria-label="Permalink for Section 4.2.10"></a></div><p>Deze taxonomie bevat concepten die de koninkrijksdelen van het Koninkrijk der Nederlanden beschrijven. Alle concepten 
+komen uit de <cite><a data-matched-text="[[[OWMS_KONINKRIJKSDEEL]]]" href="https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel">overheid:Koninkrijksdeel</a></cite>.</p>
+<div class="note" role="note" id="issue-container-generatedID-24"><div role="heading" class="note-title marker" id="h-note-24" aria-level="4"><span>Noot</span></div><aside class="">
+
+<p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
+De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[OVERHEID_KONINKRIJKSDEEL_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl">overheid:Koninkrijksdeel taxonomy (Github.com/dataoverheid)</a></cite></p>
+</aside></div>
+
+</section><section id="overheid-provincie"><div class="header-wrapper"><h4 id="waardelijst-overheid-Provincie"><bdi class="secno">4.2.11 </bdi>overheid:Provincie</h4><a class="self-link" href="#waardelijst-overheid-Provincie" aria-label="Permalink for Section 4.2.11"></a></div><p>Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+<cite><a data-matched-text="[[[OWMS_PROVINCIE]]]" href="https://standaarden.overheid.nl/owms/terms/Provincie">overheid:Provincie</a></cite>.</p>
+<div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-25" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[OVERHEID_PROVINCIES_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/provincies.ttl">overheid:Provincie taxonomy (Github.com/dataoverheid)</a></cite></p>
@@ -3759,7 +3874,7 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
 
 </section><section id="overheid-waterschap"><div class="header-wrapper"><h4 id="waardelijst-overheid-Waterschap"><bdi class="secno">4.2.12 </bdi>overheid:Waterschap</h4><a class="self-link" href="#waardelijst-overheid-Waterschap" aria-label="Permalink for Section 4.2.12"></a></div><p>Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Alle concepten komen uit de
 <cite><a data-matched-text="[[[OWMS_WATERSCHAP]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap">overheid:Waterschap</a></cite>.</p>
-<div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="4"><span>Noot</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-26"><div role="heading" class="note-title marker" id="h-note-26" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[OVERHEID_WATERSCHAP_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/waterschappen.ttl">overheid:Waterschap taxonomy (Github.com/dataoverheid)</a></cite></p>
@@ -3767,7 +3882,7 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
 
 </section><section id="overheid-taxonomiebeleidsagenda"><div class="header-wrapper"><h4 id="waardelijst-overheid-TaxonomieBeleidsagenda"><bdi class="secno">4.2.13 </bdi>overheid:TaxonomieBeleidsagenda</h4><a class="self-link" href="#waardelijst-overheid-TaxonomieBeleidsagenda" aria-label="Permalink for Section 4.2.13"></a></div><p>Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Alle concepten komen uit de 
 <cite><a data-matched-text="[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda">overheid:TaxonomieBeleidsagenda</a></cite>.</p>
-<div class="note" role="note" id="issue-container-generatedID-22"><div role="heading" class="note-title marker" id="h-note-22" aria-level="4"><span>Noot</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-27"><div role="heading" class="note-title marker" id="h-note-27" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[OVERHEID_TAXONOMIEBELEIDSAGENDA_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/themes.ttl">overheid:TaxonomieBeleidsagenda taxonomy (Github.com/dataoverheid)</a></cite></p>
@@ -3780,7 +3895,7 @@ gaat worden.</p>
 het bovenliggende <code>mdr:DataTheme</code> concept.</p>
 </section></section><section id="spdx-checksumalgorithm"><div class="header-wrapper"><h4 id="waardelijst-spdx-ChecksumAlgorithm"><bdi class="secno">4.2.14 </bdi>spdx:ChecksumAlgorithm</h4><a class="self-link" href="#waardelijst-spdx-ChecksumAlgorithm" aria-label="Permalink for Section 4.2.14"></a></div><p>Bevat concepten die beschrijven welk algorithme gebruikt is om tot een hash te komen die als checksum dient van een
 bron. Alle concepten komen uit de <cite><a data-matched-text="[[[SPDX_CHECKSUMALGORITHM]]]" href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a></cite>.</p>
-<div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="4"><span>Noot</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-28"><div role="heading" class="note-title marker" id="h-note-28" aria-level="4"><span>Noot</span></div><aside class="">
 
 <p>De definitieve locatie en aangeboden serialisaties van deze waardelijst is nog niet vastgesteld.
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[SPDX_CHECKSUMALGORITHM_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/algorithms.ttl">spdx:ChecksumAlgorithm taxonomy (Github.com/dataoverheid)</a></cite></p>
@@ -3846,6 +3961,10 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
       <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/languages.ttl"><cite>donl:Language taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/languages.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/languages.ttl</a>
     </dd><dt id="bib-donl_license_taxonomy">[DONL_LICENSE_TAXONOMY]</dt><dd>
       <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/licenses.ttl"><cite>donl:License taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/licenses.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/licenses.ttl</a>
+    </dd><dt id="bib-donl_supportingrole_concepts">[DONL_SUPPORTINGROLE_CONCEPTS]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles"><cite>donl:SupportingRole concepts (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles">https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles</a>
+    </dd><dt id="bib-donl_supportingrole_taxonomy">[DONL_SUPPORTINGROLE_TAXONOMY]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl"><cite>donl:SupportingRole taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl</a>
     </dd><dt id="bib-epsg28992">[EPSG28992]</dt><dd>
       <a href="https://epsg.io/28992"><cite>EPSG:28992</cite></a>.  NSGI. URL: <a href="https://epsg.io/28992">https://epsg.io/28992</a>
     </dd><dt id="bib-geonames">[GEONAMES]</dt><dd>
@@ -3854,6 +3973,8 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
       <a href="https://www.forumstandaardisatie.nl/open-standaarden/https-en-hsts"><cite>HTTPS en HSTS</cite></a>.  Forum Standaardisatie. URL: <a href="https://www.forumstandaardisatie.nl/open-standaarden/https-en-hsts">https://www.forumstandaardisatie.nl/open-standaarden/https-en-hsts</a>
     </dd><dt id="bib-iana_mediatypes">[IANA_MEDIATYPES]</dt><dd>
       <a href="https://www.iana.org/assignments/media-types/media-types.xhtml"><cite>IANA Mediatypes</cite></a>.  Internet Assigned Numbers Authority. URL: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a>
+    </dd><dt id="bib-iana_mediatypes_taxonomy">[IANA_MEDIATYPES_TAXONOMY]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl"><cite>IANA Mediatypes taxonomy (Github.com/dataoverheid)</cite></a>.  Internet Assigned Numbers Authority. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl</a>
     </dd><dt id="bib-iso19115_rolecode">[ISO19115_ROLECODE]</dt><dd>
       <a href="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml"><cite>ISO-19115 RoleCode</cite></a>.  International Organization for Standardization. URL: <a href="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml">https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml</a>
     </dd><dt id="bib-iso8601">[ISO8601]</dt><dd>
@@ -3866,8 +3987,20 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
       <a href="https://publications.europa.eu/resource/authority/access-right"><cite>mdr:AccessRights</cite></a>.  The Publications Office of the European Union. URL: <a href="https://publications.europa.eu/resource/authority/access-right">https://publications.europa.eu/resource/authority/access-right</a>
     </dd><dt id="bib-mdr_datatheme">[MDR_DATATHEME]</dt><dd>
       <a href="https://publications.europa.eu/resource/authority/data-theme"><cite>mdr:DataTheme</cite></a>.  The Publications Office of the European Union. URL: <a href="https://publications.europa.eu/resource/authority/data-theme">https://publications.europa.eu/resource/authority/data-theme</a>
+    </dd><dt id="bib-mdr_filetype">[MDR_FILETYPE]</dt><dd>
+      <a href="https://publications.europa.eu/resource/authority/file-type"><cite>mdr:Filetype</cite></a>.  The Publications Office of the European Union. URL: <a href="https://publications.europa.eu/resource/authority/file-type">https://publications.europa.eu/resource/authority/file-type</a>
+    </dd><dt id="bib-mdr_filetype_taxonomy">[MDR_FILETYPE_TAXONOMY]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl"><cite>mdr:Filetype taxonomy (Github.com/dataoverheid)</cite></a>.  The Publications Office of the European Union. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl</a>
+    </dd><dt id="bib-mdr_frequency">[MDR_FREQUENCY]</dt><dd>
+      <a href="https://publications.europa.eu/resource/authority/frequency"><cite>mdr:Frequency</cite></a>.  The Publications Office of the European Union. URL: <a href="https://publications.europa.eu/resource/authority/frequency">https://publications.europa.eu/resource/authority/frequency</a>
+    </dd><dt id="bib-mdr_frequency_taxonomy">[MDR_FREQUENCY_TAXONOMY]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl"><cite>mdr:Frequency taxonomy (Github.com/dataoverheid)</cite></a>.  The Publications Office of the European Union. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl</a>
     </dd><dt id="bib-mdr_language">[MDR_LANGUAGE]</dt><dd>
       <a href="https://publications.europa.eu/resource/authority/language"><cite>mdr:Language</cite></a>.  The Publications Office of the European Union. URL: <a href="https://publications.europa.eu/resource/authority/language">https://publications.europa.eu/resource/authority/language</a>
+    </dd><dt id="bib-overheid_gemeentes_taxonomy">[OVERHEID_GEMEENTES_TAXONOMY]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl"><cite>overheid:Gemeente taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl</a>
+    </dd><dt id="bib-overheid_koninkrijksdeel_taxonomy">[OVERHEID_KONINKRIJKSDEEL_TAXONOMY]</dt><dd>
+      <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl"><cite>overheid:Koninkrijksdeel taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl</a>
     </dd><dt id="bib-overheid_provincies_taxonomy">[OVERHEID_PROVINCIES_TAXONOMY]</dt><dd>
       <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/provincies.ttl"><cite>overheid:Provincie taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/provincies.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/provincies.ttl</a>
     </dd><dt id="bib-overheid_taxonomiebeleidsagenda_taxonomy">[OVERHEID_TAXONOMIEBELEIDSAGENDA_TAXONOMY]</dt><dd>
@@ -3876,6 +4009,10 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
       <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/waterschappen.ttl"><cite>overheid:Waterschap taxonomy (Github.com/dataoverheid)</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/waterschappen.ttl">https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/waterschappen.ttl</a>
     </dd><dt id="bib-owms_epsg28992">[OWMS_EPSG28992]</dt><dd>
       <a href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992"><cite>overheid:EPSG28992</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992">https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992</a>
+    </dd><dt id="bib-owms_gemeente">[OWMS_GEMEENTE]</dt><dd>
+      <a href="https://standaarden.overheid.nl/owms/terms/Gemeente"><cite>overheid:Gemeente</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://standaarden.overheid.nl/owms/terms/Gemeente">https://standaarden.overheid.nl/owms/terms/Gemeente</a>
+    </dd><dt id="bib-owms_koninkrijksdeel">[OWMS_KONINKRIJKSDEEL]</dt><dd>
+      <a href="https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel"><cite>overheid:Koninkrijksdeel</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel">https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel</a>
     </dd><dt id="bib-owms_organisatie">[OWMS_ORGANISATIE]</dt><dd>
       <a href="https://standaarden.overheid.nl/owms/terms/Organisatie"><cite>overheid:Organisatie</cite></a>.  Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties. URL: <a href="https://standaarden.overheid.nl/owms/terms/Organisatie">https://standaarden.overheid.nl/owms/terms/Organisatie</a>
     </dd><dt id="bib-owms_postcodehuisnummer">[OWMS_POSTCODEHUISNUMMER]</dt><dd>

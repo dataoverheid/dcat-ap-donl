@@ -1,7 +1,6 @@
 ---
 
 name: Public respec document
-
 on:
   push:
     branches:

@@ -6,7 +6,7 @@ De klasse beschrijft de dataset als concept. Het staat dus los van de gegevensve
 beschikbaar is in een of meerdere representaties, formaten of serialisaties.
 
 De DCAT standaard heeft een ruime opvatting over de aard van de gegevens die een dataset kunnen vormen. Voor
-data.overheid.nl gaat het vooral over Open Data die afkomstig zijn van overheidsorganisaties, maar is hiertoe niet 
+data.overheid.nl gaat het vooral over [=Open Data=] die afkomstig zijn van overheidsorganisaties, maar is hiertoe niet 
 beperkt. De aard van de data zijn o.a. numeriek, tekstueel, afbeeldingen, geluid en andere multimedia. Naast 
 data.overheid.nl zijn systemen zoals PLOOI vooral gericht op de publicatie van open documentaire data in het kader van 
 de Wet open overheid, zoals PDF-bestanden. Hierbij worden weer andere standaarden dan DCAT gebruikt om de metadata van 

@@ -1,5 +1,4 @@
 const respecConfig = {
-    group: "webapps",
     specStatus: "unofficial",
     latestVersion: "https://dataoverheid.github.io/dcat-ap-donl/",
     editors: [{

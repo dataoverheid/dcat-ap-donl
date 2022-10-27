@@ -1,10 +1,12 @@
 ---
 
 name: Public respec document
+
 on:
   push:
     branches:
       - main
+
 jobs:
   main:
     name: Publish via Github Pages

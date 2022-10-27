@@ -12,7 +12,7 @@ opgenomen in een [`dcat:DataService`](#dcat-DataService). Deze kan worden gerela
 De distributie geeft aan dat er gegevens van een dataset beschikbaar zijn. Dat kan zijn via een directe download, een API of een webpagina. Een waarde in de eigenschap [`dcat:downloadURL`](#dcat-downloadURL) geeft aan dat de gegevens in de distributie direct gedownload kunnen
 worden.
 
-In het vorige toepassingsprofiel (dus v1.1) werden zowel de download-bestanden als de webservices om de data op te 
+In het [[[DCATAPDONL_11]]] werden zowel de download-bestanden als de webservices om de data op te 
 vragen, in de vorm van een distributie beschreven. Het nieuwe toepassingsprofiel biedt mogelijkheid om webservices te 
 beschrijven in de klasse [`dcat:DataService`](#dcat-DataService). Deze heeft nu de voorkeur. Het blijft echter mogelijk 
 en toegestaan om webservices te beschrijven als distributie.

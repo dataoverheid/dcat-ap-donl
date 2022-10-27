@@ -16,7 +16,7 @@ Betreft de verwijzing naar de [`dcat:Dataset`](#dcat-Dataset), [`dcat:DataServic
 | Definitie      | Waarde                                        |
 | -------------- | --------------------------------------------- |
 | RDF Eigenschap | `foaf:primaryTopic`                           |
-| Bereik         | `dcat:Resource` (dataset, service or catalog) |
+| Bereik         | `dcat:Resource` (dataset, dataservice or catalog) |
 | Kardinaliteit  | `1..1`                                        |
 | Gebruik        | Mandatory                                     |
 

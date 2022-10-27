@@ -10,7 +10,7 @@ Dit is de Nederlandstalige definitie van de eigenschap.
 
 <b>RDF-eigenschap</b>
 
-Dit is de (technische) naam van de eigenschap die van toepassing is voor de uitwisseling van de DCAT data. Het bevat een hyperlink naar de originele webpagina die de eigenschap beschrijft. Daar is ook de oorspronkelijke Engelstalige definitie van de eigenschap te lezen.
+Dit is de (technische) naam van de eigenschap die van toepassing is voor de uitwisseling van de DCAT data.
 
 <b>Bereik</b>
 

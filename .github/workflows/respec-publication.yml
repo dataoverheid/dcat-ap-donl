@@ -1,14 +1,14 @@
 ---
 
-name: Public respec document
+name: Respec publication
 on:
   push:
     branches:
       - main
 
 jobs:
-  main:
-    name: Publish via Github Pages
+  github-pages:
+    name: Github Pages
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3

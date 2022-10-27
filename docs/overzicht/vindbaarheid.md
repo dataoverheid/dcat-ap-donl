@@ -1,3 +1,5 @@
+## Vindbaarheid
+
 Binnen grotere DCAT beschrijvingen of verzamelingen van DCAT beschrijvingen zoals [[[DONL]]] kunnen gebruikers niet meer handmatig door het aanbod zoeken. Het is dan noodzakelijk met gehulp van zoekcriteria en filters uit het aanbod de gegevens te kunnen vinden die nodig zijn. De verschillende eigenschappen waarmee de gegevens in DCAT worden beschreven kunnen allemaal als zoekcriteria gebruikt worden. Hoofdfunctie van veel eigenschappen is om de gebruiker duidelijk te maken onder welke technische, juridische en andere voorwaarden de gegevens gebruikt kunnen worden. Dat is zeer nuttig om te weten als de gebruikerde gegevensbeschrijving al gevonden heeft, maar deze waardes helpen zelden uit het grote aanbod een inhoudelijke keuze te maken. Voor dat doel
 is een andere  groep eigenschappen. Twee heel belangrijke eigenschappen zijn de [`titel`](#dct-title) en de [`beschrijving`](#dct-description) beschrijving van de DCAT klasse.  Vier andere belangrijke eigenschappen die de vindbaarheid vergroten zijn  [`keyword`](#dcat-keyword), [`theme`](#dcat-theme), `type` en [`conformsTo`](#dct-conformsTo), ieder met hun eigen kracht en zwaktes.
 

@@ -4,6 +4,6 @@ Hoe kan DCAT worden gebruikt in de volgende scenarios?
 
 #### Invullen creator en publisher
 
-#### Wat doe ik als ik een rest json wil omschrijven in DCAT?
+#### Wat doe ik als ik een REST/JSON wil omschrijven in DCAT?
 
 #### Wat doe ik als ik een Excel wil delen?

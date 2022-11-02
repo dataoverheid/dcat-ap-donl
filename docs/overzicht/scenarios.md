@@ -1,5 +1,7 @@
 Hoe kan DCAT worden gebruikt in de volgende scenarios?
 
+#### Invullen van thema-eigenschappen
+
 #### Organisaties die geen overheid zijn
 
 #### Invullen creator en publisher

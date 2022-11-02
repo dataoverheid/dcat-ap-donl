@@ -1,6 +1,8 @@
 
- <dfn>Application Profile</dfn>
-Uit [[[DCATAP_21]]] The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.
+ <dfn>Applicatieprofiel</dfn>
+Dit data.overheid.nl DCAT applicatieprofiel hanteert dezelfde definitie als die van *application profile* die in §1,2 van [[[DCATAP_21]]] is opgenomen:
+
+> The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.
  
  <dfn>DCAT beschrijving </dfn>
 

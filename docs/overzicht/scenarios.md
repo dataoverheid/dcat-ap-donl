@@ -12,6 +12,6 @@ Hoe kan DCAT worden gebruikt in de volgende scenarios?
 
 #### Wat doe ik als ik een Excel wil delen?
 
-#### DCAT beschrijving voor intern gebruik ontwikkelen
+#### [=DCAT beschrijving=] voor intern gebruik ontwikkelen
 
-#### Interne DCAT beschrijvingen uitwisselen met DONL
+#### Interne [=DCAT beschrijving=] uitwisselen met DONL

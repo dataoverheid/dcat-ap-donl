@@ -27,7 +27,7 @@ Beschrijft of een eigenschap aanwezig moet zijn, wordt aangegeven met een van de
 
 | Terminologie | Nederlands | Definitie                                                                   |
 | ------------ | ---------- | --------------------------------------------------------------------------- |
-| Mandatory    | Verplicht  | Deze eigenschap moet aanwezig zijn om aan dit applicatieprofiel te voldoen. |
+| Mandatory    | Verplicht  | Deze eigenschap moet aanwezig zijn om aan dit [=applicatieprofiel=] te voldoen. |
 | Recommended  | Aanbevolen | Deze eigenschap is erg waardevol, maar de aanwezigheid is niet verplicht, meestal omdat de eigenschap niet in alle gevallen betekenis heeft. Er wordt sterk aangeraden deze eigenschap in te vullen waar dat kan.  |
 | Optional     | Optioneel  | Deze eigenschap wordt ondersteund en kan worden ingevuld naar wens          |
 

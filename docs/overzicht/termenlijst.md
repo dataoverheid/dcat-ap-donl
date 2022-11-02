@@ -1,10 +1,13 @@
 
- <b>DCAT beschrijving </b>
+ <dfn>Application Profile</dfn>
+Uit [[[DCATAP_21]]] The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.
+ 
+ <dfn>DCAT beschrijving </dfn>
 
 Met behulp van het DCAT-AP-DONL profiel kan iedere partij de aangeboden gegevens beschrijven, zowel aangeboden als data service en als aangeboden als distributies.
 
 
-<b>DONL</b>
+<dfn>DONL</dfn>
 
 DONL is de afkorting voor http://data.overheid.nl. Deze voorziening biedt zowel met behulp van een website als via API’s een overzicht van het gegevens aanbod van de Nederlandse overheid.
 

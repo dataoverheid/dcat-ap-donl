@@ -98,7 +98,7 @@ De formele of wettelijke toestemming waaronder de gegevens in de distributie geb
 
 Licenties kunnen complex zijn, wat de uitwerking en invulling van dit veld kan bemoeilijken. De licenties die van 
 toepassing zijn op gegevensuitwisseling binnen de overheid zijn meestal vrij eenvoudig. Om die reden is gekozen voor een 
-waardelijst die een aantal eenvoudige licenties bevat die met name naar de Creative Commons licenties verwezen. Zie ook 
+waardelijst die een aantal eenvoudige licenties bevat die met name naar de Creative Commons licenties verwijzen. Zie ook 
 [creativecommons.nl/uitleg/](https://creativecommons.nl/uitleg/).
 
 Er kunnen ook licentiegegevens op het niveau van de dataset ([`dcat:Resource`](#dcat-Resource)) worden vastgelegd. Die 
@@ -121,7 +121,7 @@ Alleen van toepassing wanneer de distributie via een dataservice bereikbaar is. 
 bestand of de bestanden van deze distributie. Access service wordt niet ingevuld als de toegang tot de distributie. Dit kan in [`dcat:accessURL`](#dcat-accessURL) 
 
 Deze eigenschap is nieuw in DCAT2 en biedt aanbieders van datasets de mogelijkheid om extra informatie te verstrekken 
-over datasets die via een dataservice wordt aangeboden.
+over datasets die via een dataservice worden aangeboden.
 
 | Definitie      | Waarde               |
 | -------------- | -------------------- |
@@ -172,7 +172,7 @@ kunnen dan uitgaan van de waarde van [`dct:accrualPeriodicity`](#dct-accrualPeri
 De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubliceerd. Deze eigenschap moet een datum 
 *en* tijd bevatten conform de [[[ISO8601]]] standaard.
 
-Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er geen tijdzone wordt opgegeven wordt uitgegaan van de Nederlandse tijd.
+Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er geen tijdzone wordt opgegeven wordt er automatisch uitgegaan van de Nederlandse tijd.
 
 | Definitie      | Waarde         |
 | -------------- | -------------- |
@@ -278,7 +278,7 @@ Informatie over de bestandsindeling (of MIME-type) van de distributie, volgens d
 ### checksum {#spdx-checksum}
 
 Met een checksum of controlegetal kan een afnemer eenvoudig vaststellen of een gedownload bestand identiek is aan het 
-aangeboden bestand (en er dus geen problemen zijn geweest met het downloaden of wijzigingen zijn geweest aan de data zelf).
+aangeboden bestand (en er dus geen problemen zijn ontstaan bij het downloaden of wijzigingen zijn geweest aan de data zelf).
 
 De `spdx:Checksum` klasse bevat naast de berekende checksum-waarde ook een property die het gebruikte algoritme 
 aangeeft. Kijk [hier](https://spdx.org/rdf/terms/#ChecksumAlgorithm) voor ondersteunde algoritmes. 

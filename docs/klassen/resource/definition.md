@@ -22,7 +22,7 @@ voorkomens van [`adms:identifier`](#adms-identifier) hebben.
 ### title {#dct-title}
 
 De naam van de beschreven resource. Op [[[DONL]]] wordt deze naam geïndexeerd, zodat eindgebruikers de desbetreffende 
-dataset, dataservice of catalogus kunnen terugvinden op basis van een of meer woorden in de naam.
+dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in de naam.
 
 Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in 
 meer tekens de dataset te beschrijven, dan kan [`dct:description`](#dct-description) gebruikt worden.
@@ -177,7 +177,7 @@ Voor beide vormen geldt dat deze de vindbaarheid van de desbetreffende resource 
 mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden moeten in afzonderlijke voorkomens van deze 
 eigenschap worden aangeleverd.
 
-In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden. Zie [meertaligheid](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
+In principe bestaat een tag uit slechts één woord of een kleine combinatie van maximaal twee/drie woorden. Zie [meertaligheid](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Trefwoord      |
 | -------------- | -------------- |
@@ -201,7 +201,7 @@ over de resource. Het gaat hierbij om de originele webpagina van de data-eigenaa
 ### access rights {#dct-accessRights}
 
 Met deze eigenschap wordt het openbaarheidsniveau van de resource aangegeven. [[[DCATAP_21]]] schrijft de 
-[[[MDR_ACCESSRIGHTS]]] waardelijst voor. Bij [[[DONL]]] bestaat de behoefte om _ook_ te beschrijven waarom een bron 
+[[[MDR_ACCESSRIGHTS]]] waardelijst voor. Bij [[[DONL]]] bestaat de behoefte om _ook_ te beschrijven _waarom_ een bron 
 beperkt of niet beschikbaar is. Om deze reden is de [`donl:AccessRights`](#waardelijst-donl-AccessRights) 
 geïntroduceerd. Deze lijst bevat concepten die de openbaarheid van een bron beschrijven _en_ wat de reden is, wanneer de 
 openbaarheid niet publiek is.
@@ -217,7 +217,7 @@ openbaarheid niet publiek is.
 
 ### resource language {#dct-language}
 
-De natuurlijk taal van de data in de resource. Zie [meertaligheid](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
+De natuurlijke taal van de data in de resource. Zie [meertaligheid](#ondersteuning-voor-meertaligheid) voor het omgaan met verschillende talen.
 
 | Definitie      | Waarde                                                    |
 | -------------- | --------------------------------------------------------- |
@@ -237,7 +237,7 @@ Er is een verschil in definitie van `dct:language` (voor dataset en dataservice)
 descriptions, et cetera) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset 
 distribution. 
 
-[[[DCATAP_21]]]: This property refers to a language of the Dataset.
+[[[DCATAP_21]]]: This property refers to a language of the dataset.
 
 </aside>
 
@@ -245,7 +245,7 @@ distribution.
 
 De verplichte eigenschap [`dct:identifier`](#dct-identifier) bevat de unieke identificatie van de dataset die de 
 data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset zoals gegeven door 
-catalogi als [[[DONL]]] of andere partijen. Wanneer men de dataset van een ander een nieuwe identifier geven wil wordt aangeraden dit te doen door middel van een `other identifier`.
+catalogi als [[[DONL]]] of andere partijen. Wanneer men voor de dataset van een ander een eigen identifier gebruiken wil, wordt aangeraden dit te doen door middel van `other identifier`.
 
 In de `adms:identifier` wordt de identifier benoemd in `skos:notation` en de uitgever van de identifier in
 `dct:creator`.

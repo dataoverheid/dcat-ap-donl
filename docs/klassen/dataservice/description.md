@@ -1,6 +1,6 @@
 > Subklasse van [`dcat:Resource`](#dcat-Resource)
 
-Een gegevensdienst of Data Service is een computer service waar gegevens opgevraagd worden aan de hand van specificaties in een aanvraag. De gegevens die voldoen aan de meegegeven specificatie worden als antwoord teruggestuurd. Webservices zoals REST/JSON, WMS of XML interfaces zijn voorbeelden van [`dcat:DataService`](#dcat-DataService). Merk op dat als de specificatie slechts een deel van de gegevens beschrijft,  alleen die subset wordt opgestuurd. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit. 
+Een gegevensdienst of DataService is een computer service waar gegevens opgevraagd worden aan de hand van specificaties in een aanvraag. De gegevens die voldoen aan de meegegeven specificatie worden als antwoord teruggestuurd. Webservices zoals REST/JSON, WMS of XML interfaces zijn voorbeelden van [`dcat:DataService`](#dcat-DataService). Merk op dat als de specificatie slechts een deel van de gegevens beschrijft, alleen desbetreffende subset wordt opgestuurd. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit. 
 
 Dataservice zijn speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen, hoewel ze ook door, meestal technisch onderlegde,  mensen gebruikt kunnen worden.
 

@@ -31,6 +31,11 @@ const respecConfig = {
             href: "https://data.overheid.nl/",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
+        CLUSTERBEGRIPPEN: {
+            title: "Clusterbegrippen Stelselcatalogus Logius",
+            href: "https://www.stelselcatalogus.nl/clusterbegrippen",
+            publisher: "Logius"
+        },
         EPSG28992: {
             title: "EPSG:28992",
             href: "https://epsg.io/28992",

@@ -20,7 +20,7 @@ werkversies van deze concepten zijn voorlopig raadpleegbaar op [[[DONL_ACCESSRIG
 
 ##### Mapping naar mdr:AccessRights
 
-Elk concept bevat een `skos:broader` eigenschap met daarin een verwijzing naar het bovenliggende [[[MDR_ACCESSRIGHTS]]]
+Elk [[[DONL_ACCESSRIGHTS_CONCEPTS]]] bevat een `skos:broader` eigenschap met daarin een verwijzing naar het bovenliggende [[[MDR_ACCESSRIGHTS]]]
 concept.
 
 #### donl:Language {#waardelijst-donl-Language}
@@ -59,8 +59,7 @@ De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [
 
 #### donl:SupportingRole {#waardelijst-donl-SupportingRole}
 
-Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron. Deze waardelijst heette
-in [[[DCATAPDONL_11]]] `donl:DistributionType`. 
+Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron (het kan bijvoorbeeld aangeven dat een distributie documentatie bevat van een dataset). Deze waardelijst heette in [[[DCATAPDONL_11]]] `donl:DistributionType`. 
 
 De lijst is aanzienlijk ingekort aangezien een aantal 'types' herleidbaar zijn uit andere metadata-eigenschappen. Zo
 zijn de concepten `DOWNLOAD` en `WEBSERVICE` niet meegenomen uit de oude lijst aangezien deze informatie al geduid wordt

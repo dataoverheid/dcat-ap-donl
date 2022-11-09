@@ -18,7 +18,7 @@ Beschrijft de mogelijke waarden van de eigenschap.
 
 <b>Kardinaliteit</b>
 
-Geeft aan of de eigenschap eigenschap 0, 1 of meerdere keren mag voorkomen. Hierbij wordt gebruik gemaakt van de schrijfwijze x..y, waarbij x het minimaal aantal voorkomens aangeeft en y het maximaal aantal. Bijvoorbeeld 1..n geeft aan dat de eigenschap 1 of meer keer mag voorkomen.
+Geeft aan of de eigenschap eigenschap 0, 1 of meerdere keren mag voorkomen. Hierbij wordt gebruik gemaakt van de schrijfwijze `x..y`, waarbij x het minimaal aantal voorkomens aangeeft en y het maximaal aantal. Bijvoorbeeld `1..n` geeft aan dat de eigenschap een of meer keer mag voorkomen.
 Overigens stelt W3C specificatie van [[[DCAT_20]]] geen eisen aan de cardinaliteit van de eigenschappen, maar [[[DCATAP_21]]] wel.
 
 <b>Gebruik</b>

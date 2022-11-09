@@ -22,6 +22,8 @@ Kies ook één of meer clusterbegrippen die aangeven welke informatie in uw gege
 	
         ex:Test a dcat:DataService;
           dct:title "Example Data Service"@nl ;
+          dcat:endpointURL <https:∕∕api.examle.com> ;
+  ];
         .
 
     

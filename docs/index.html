@@ -1478,7 +1478,7 @@ webpagina's verwezen wordt.</p>
 </section><section id="license"><div class="header-wrapper"><h5 id="dct-license1"><bdi class="secno">3.2.1.5 </bdi>license</h5><a class="self-link" href="#dct-license1" aria-label="Permalink for Section 3.2.1.5"></a></div><p>De formele of wettelijke toestemming waaronder de gegevens in de distributie gebruikt mogen worden.</p>
 <p>Licenties kunnen complex zijn, wat de uitwerking en invulling van dit veld kan bemoeilijken. De licenties die van 
 toepassing zijn op gegevensuitwisseling binnen de overheid zijn meestal vrij eenvoudig. Om die reden is gekozen voor een 
-waardelijst die een aantal eenvoudige licenties bevat die met name naar de Creative Commons licenties verwezen. Zie ook 
+waardelijst die een aantal eenvoudige licenties bevat die met name naar de Creative Commons licenties verwijzen. Zie ook 
 <a href="https://creativecommons.nl/uitleg/">creativecommons.nl/uitleg/</a>.</p>
 <p>Er kunnen ook licentiegegevens op het niveau van de dataset (<a href="#dcat-Resource"><code>dcat:Resource</code></a>) worden vastgelegd. Die 
 mogen niet in tegenspraak zijn met de licentiegegevens van de onderliggende <code>dcat:Distribution</code>s.</p>
@@ -1514,7 +1514,7 @@ mogen niet in tegenspraak zijn met de licentiegegevens van de onderliggende <cod
 </section><section id="accessservice-nieuw"><div class="header-wrapper"><h5 id="dcat-accessService"><bdi class="secno">3.2.1.6 </bdi>accessService <em class="new">nieuw</em></h5><a class="self-link" href="#dcat-accessService" aria-label="Permalink for Section 3.2.1.6"></a></div><p>Alleen van toepassing wanneer de distributie via een dataservice bereikbaar is. De dataservice biedt dan toegang tot het 
 bestand of de bestanden van deze distributie. Access service wordt niet ingevuld als de toegang tot de distributie. Dit kan in <a href="#dcat-accessURL"><code>dcat:accessURL</code></a> </p>
 <p>Deze eigenschap is nieuw in DCAT2 en biedt aanbieders van datasets de mogelijkheid om extra informatie te verstrekken 
-over datasets die via een dataservice wordt aangeboden.</p>
+over datasets die via een dataservice worden aangeboden.</p>
 <table>
 <thead>
 <tr>
@@ -1606,7 +1606,7 @@ Maar zijn er bezwaren om de property verplicht te maken? Zou dat leiden tot uitv
 
 </section><section id="issued"><div class="header-wrapper"><h5 id="dct-issued1"><bdi class="secno">3.2.1.9 </bdi>issued</h5><a class="self-link" href="#dct-issued1" aria-label="Permalink for Section 3.2.1.9"></a></div><p>De datum waarop de data-eigenaar de distributie voor de eerste keer heeft gepubliceerd. Deze eigenschap moet een datum 
 <em>en</em> tijd bevatten conform de <cite><a data-matched-text="[[[ISO8601]]]" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO-8601</a></cite> standaard.</p>
-<p>Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er geen tijdzone wordt opgegeven wordt uitgegaan van de Nederlandse tijd.</p>
+<p>Als tijd niet bekend is, kan hier de tijd 00:00:00 worden ingevuld. Wanneer er geen tijdzone wordt opgegeven wordt er automatisch uitgegaan van de Nederlandse tijd.</p>
 <table>
 <thead>
 <tr>
@@ -1798,7 +1798,7 @@ gegevens in een model passen, of welke representatie of view deze gegevens van h
 <p dir="auto">Is het nodig om beide eigenschappen op te nemen?</p></div>
 
 </section><section id="checksum"><div class="header-wrapper"><h5 id="spdx-checksum"><bdi class="secno">3.2.1.15 </bdi>checksum</h5><a class="self-link" href="#spdx-checksum" aria-label="Permalink for Section 3.2.1.15"></a></div><p>Met een checksum of controlegetal kan een afnemer eenvoudig vaststellen of een gedownload bestand identiek is aan het 
-aangeboden bestand (en er dus geen problemen zijn geweest met het downloaden of wijzigingen zijn geweest aan de data zelf).</p>
+aangeboden bestand (en er dus geen problemen zijn ontstaan bij het downloaden of wijzigingen zijn geweest aan de data zelf).</p>
 <p>De <code>spdx:Checksum</code> klasse bevat naast de berekende checksum-waarde ook een property die het gebruikte algoritme 
 aangeeft. Kijk <a href="https://spdx.org/rdf/terms/#ChecksumAlgorithm">hier</a> voor ondersteunde algoritmes. </p>
 <table>
@@ -2009,7 +2009,7 @@ representatie van een <code>dcat:Distribution</code>.</p>
             <div data-format="markdown"><blockquote>
 <p>Subklasse van <a href="#dcat-Resource"><code>dcat:Resource</code></a></p>
 </blockquote>
-<p>Een gegevensdienst of Data Service is een computer service waar gegevens opgevraagd worden aan de hand van specificaties in een aanvraag. De gegevens die voldoen aan de meegegeven specificatie worden als antwoord teruggestuurd. Webservices zoals REST/JSON, WMS of XML interfaces zijn voorbeelden van <a href="#dcat-DataService"><code>dcat:DataService</code></a>. Merk op dat als de specificatie slechts een deel van de gegevens beschrijft,  alleen die subset wordt opgestuurd. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit. </p>
+<p>Een gegevensdienst of DataService is een computer service waar gegevens opgevraagd worden aan de hand van specificaties in een aanvraag. De gegevens die voldoen aan de meegegeven specificatie worden als antwoord teruggestuurd. Webservices zoals REST/JSON, WMS of XML interfaces zijn voorbeelden van <a href="#dcat-DataService"><code>dcat:DataService</code></a>. Merk op dat als de specificatie slechts een deel van de gegevens beschrijft, alleen desbetreffende subset wordt opgestuurd. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit. </p>
 <p>Dataservice zijn speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen, hoewel ze ook door, meestal technisch onderlegde,  mensen gebruikt kunnen worden.</p>
 <p>De DataService klasse is geïntroduceerd in versie 2 van DCAT. Het biedt uitgebreidere mogelijkheden om 
 geautomatiseerde toegang tot gegevens te beschrijven dan mogelijk is in de klasse <a href="#dcat-Distribution"><code>dcat:Distributie</code></a>. In deze nieuwe versie van het toepassingsprofiel is de DataService klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te beschrijven met de klasse Distributie.</p>
@@ -2354,7 +2354,7 @@ voorkomens van <a href="#adms-identifier"><code>adms:identifier</code></a> hebbe
 </tr>
 </tbody></table>
 </section><section id="title-1"><div class="header-wrapper"><h5 id="dct-title"><bdi class="secno">3.4.1.2 </bdi>title</h5><a class="self-link" href="#dct-title" aria-label="Permalink for Section 3.4.1.2"></a></div><p>De naam van de beschreven resource. Op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> wordt deze naam geïndexeerd, zodat eindgebruikers de desbetreffende 
-dataset, dataservice of catalogus kunnen terugvinden op basis van een of meer woorden in de naam.</p>
+dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in de naam.</p>
 <p>Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in 
 meer tekens de dataset te beschrijven, dan kan <a href="#dct-description"><code>dct:description</code></a> gebruikt worden.</p>
 <p>Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
@@ -2593,7 +2593,7 @@ termen uit een controlled vocabulary (of vastgesteld begrippenkader of waardelij
 <p>Voor beide vormen geldt dat deze de vindbaarheid van de desbetreffende resource kunnen verbeteren. Het is dus 
 mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden moeten in afzonderlijke voorkomens van deze 
 eigenschap worden aangeleverd.</p>
-<p>In principe bestaat een tag uit slechts een woord of een kleine combinatie van maximaal twee/drie woorden. Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
+<p>In principe bestaat een tag uit slechts één woord of een kleine combinatie van maximaal twee/drie woorden. Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
 <table>
 <thead>
 <tr>
@@ -2645,7 +2645,7 @@ over de resource. Het gaat hierbij om de originele webpagina van de data-eigenaa
 </tr>
 </tbody></table>
 </section><section id="access-rights"><div class="header-wrapper"><h5 id="dct-accessRights"><bdi class="secno">3.4.1.11 </bdi>access rights</h5><a class="self-link" href="#dct-accessRights" aria-label="Permalink for Section 3.4.1.11"></a></div><p>Met deze eigenschap wordt het openbaarheidsniveau van de resource aangegeven. <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> schrijft de 
-<cite><a data-matched-text="[[[MDR_ACCESSRIGHTS]]]" href="https://publications.europa.eu/resource/authority/access-right">mdr:AccessRights</a></cite> waardelijst voor. Bij <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> bestaat de behoefte om <em>ook</em> te beschrijven waarom een bron 
+<cite><a data-matched-text="[[[MDR_ACCESSRIGHTS]]]" href="https://publications.europa.eu/resource/authority/access-right">mdr:AccessRights</a></cite> waardelijst voor. Bij <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> bestaat de behoefte om <em>ook</em> te beschrijven <em>waarom</em> een bron 
 beperkt of niet beschikbaar is. Om deze reden is de <a href="#waardelijst-donl-AccessRights"><code>donl:AccessRights</code></a> 
 geïntroduceerd. Deze lijst bevat concepten die de openbaarheid van een bron beschrijven <em>en</em> wat de reden is, wanneer de 
 openbaarheid niet publiek is.</p>
@@ -2675,7 +2675,7 @@ openbaarheid niet publiek is.</p>
 </tbody></table>
 <div class="issue closed" id="issue-container-number-28"><div role="heading" class="issue-title marker" id="h-issue-12" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/28"><span class="issue-number">Issue 28</span></a><span class="issue-label">: Hoe ziet onze taxonomie voor dct:accessRights eruit?</span></div></div>
 
-</section><section id="resource-language"><div class="header-wrapper"><h5 id="dct-language"><bdi class="secno">3.4.1.12 </bdi>resource language</h5><a class="self-link" href="#dct-language" aria-label="Permalink for Section 3.4.1.12"></a></div><p>De natuurlijk taal van de data in de resource. Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
+</section><section id="resource-language"><div class="header-wrapper"><h5 id="dct-language"><bdi class="secno">3.4.1.12 </bdi>resource language</h5><a class="self-link" href="#dct-language" aria-label="Permalink for Section 3.4.1.12"></a></div><p>De natuurlijke taal van de data in de resource. Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
 <table>
 <thead>
 <tr>
@@ -2712,12 +2712,12 @@ openbaarheid niet publiek is.</p>
 <p><cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite>: A language of the item. This refers to the natural language used for textual metadata (i.e. titles, 
 descriptions, et cetera) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset 
 distribution. </p>
-<p><cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite>: This property refers to a language of the Dataset.</p>
+<p><cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite>: This property refers to a language of the dataset.</p>
 </aside></div>
 
 </section><section id="other-identifier"><div class="header-wrapper"><h5 id="adms-identifier"><bdi class="secno">3.4.1.13 </bdi>other identifier</h5><a class="self-link" href="#adms-identifier" aria-label="Permalink for Section 3.4.1.13"></a></div><p>De verplichte eigenschap <a href="#dct-identifier"><code>dct:identifier</code></a> bevat de unieke identificatie van de dataset die de 
 data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset zoals gegeven door 
-catalogi als <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> of andere partijen. Wanneer men de dataset van een ander een nieuwe identifier geven wil wordt aangeraden dit te doen door middel van een <code>other identifier</code>.</p>
+catalogi als <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> of andere partijen. Wanneer men voor de dataset van een ander een eigen identifier gebruiken wil, wordt aangeraden dit te doen door middel van <code>other identifier</code>.</p>
 <p>In de <code>adms:identifier</code> wordt de identifier benoemd in <code>skos:notation</code> en de uitgever van de identifier in
 <code>dct:creator</code>.</p>
 <p>Voor een voorbeeld zie <a href="#example-other-identifier">#Other identifier</a></p>

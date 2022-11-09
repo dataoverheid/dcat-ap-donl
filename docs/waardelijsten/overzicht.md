@@ -112,7 +112,7 @@ De conceptversie van deze waardelijst is als `turtle`-bestand raadpleegbaar op [
 
 #### overheid:Gemeente {#waardelijst-overheid-Gemeente}
 
-Deze taxonomie bevat concepten die de gemeentes van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+Deze taxonomie bevat concepten die de gemeenten van de Nederlandse overheid beschrijven. Alle concepten komen uit de
 [[[OWMS_GEMEENTE]]].
 
 <aside class="note">

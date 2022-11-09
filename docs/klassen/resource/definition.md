@@ -316,7 +316,7 @@ Gebruik altijd een datum _en_ tijd conform de [[[ISO8601]]] notatie, `YYYY-MM-DD
 De datum waarop de beschreven resource is gewijzigd.
 
 Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of catalogus is gewijzigd. Nieuwe versies 
-overschrijven de oude versies.
+overschrijven automatisch de oude versies.
 
 Deze eigenschap is niet/minder waardevol wanneer de data continue, of volgens een vast schema, veranderd. In dat geval 
 kan beter [`dct:accrualPeriodicity`](#dct-accrualPeriodicity) gebruikt worden.

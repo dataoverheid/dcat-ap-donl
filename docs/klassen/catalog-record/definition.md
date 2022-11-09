@@ -56,7 +56,7 @@ Deze eigenschap moet een datum *en* tijd bevatten conform de [[[ISO8601]]] stand
 
 ### conformsTo <em class="new">nieuw</em>  {#dct-conformsTo2}
 
-Een verwijzing naar het DCAT [=applicatieprofiel=] waar de metadata van de [`dcat:Resource`](#dcat-Resource) zich aan 
+Een verwijzing naar het DCAT [=applicatieprofiel=] waar de metadata van de [`dcat:Resource`](#dcat-Resource) aan 
 voldoet.
 
 | Definitie      | Waarde           |

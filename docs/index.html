@@ -2010,7 +2010,8 @@ representatie van een <code>dcat:Distribution</code>.</p>
 <p>Subklasse van <a href="#dcat-Resource"><code>dcat:Resource</code></a></p>
 </blockquote>
 <p>Een gegevensdienst of DataService is een computer service waar gegevens opgevraagd worden aan de hand van specificaties in een aanvraag. De gegevens die voldoen aan de meegegeven specificatie worden als antwoord teruggestuurd. Webservices zoals REST/JSON, WMS of XML interfaces zijn voorbeelden van <a href="#dcat-DataService"><code>dcat:DataService</code></a>. Merk op dat als de specificatie slechts een deel van de gegevens beschrijft, alleen desbetreffende subset wordt opgestuurd. Ook is het mogelijk dat een dataservice niet één, maar meerdere datasets ontsluit. </p>
-<p>Dataservice zijn speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen, hoewel ze ook door, meestal technisch onderlegde,  mensen gebruikt kunnen worden.</p>
+<p>Dataservice zijn speciaal bedoeld voor geautomatiseerde koppelingen tussen systemen, hoewel ze ook door - meestal
+technisch onderlegde - mensen gebruikt kunnen worden.</p>
 <p>De DataService klasse is geïntroduceerd in versie 2 van DCAT. Het biedt uitgebreidere mogelijkheden om 
 geautomatiseerde toegang tot gegevens te beschrijven dan mogelijk is in de klasse <a href="#dcat-Distribution"><code>dcat:Distributie</code></a>. In deze nieuwe versie van het toepassingsprofiel is de DataService klasse optioneel. Dat betekent dat het mogelijk blijft om dataservices te beschrijven met de klasse Distributie.</p>
 </div>
@@ -2844,7 +2845,7 @@ wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de <a href
 
 </section><section id="update-modification-date"><div class="header-wrapper"><h5 id="dct-modified"><bdi class="secno">3.4.1.17 </bdi>update/modification date</h5><a class="self-link" href="#dct-modified" aria-label="Permalink for Section 3.4.1.17"></a></div><p>De datum waarop de beschreven resource is gewijzigd.</p>
 <p>Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of catalogus is gewijzigd. Nieuwe versies 
-overschrijven de oude versies.</p>
+overschrijven automatisch de oude versies.</p>
 <p>Deze eigenschap is niet/minder waardevol wanneer de data continue, of volgens een vast schema, veranderd. In dat geval 
 kan beter <a href="#dct-accrualPeriodicity"><code>dct:accrualPeriodicity</code></a> gebruikt worden.</p>
 <table>
@@ -3190,7 +3191,7 @@ Naast het opdelen van complexe DCAT beschrijvingen in samenhangende delen, wordt
 van één aanbieder te groeperen. Een voorbeeld hiervan is: 
 <a href="https://data.overheid.nl/datasets?facet_catalog%5B%5D=http://opendata.arnhem.nl/">alle data van de <code>gemeente Arnhem</code></a>. dcat:Catalogue stelt geen eisen aan de indeling van een DCAT beschrijving, dus ook andere catalogs zijn mogelijk zoals
 <a href="https://data.overheid.nl/statistieken/meest-bekeken-datasets">de meest populaire data van het jaar</a>. </p>
-<p>Het laatste voorbeeld is de catalogus op basis van een gedeeld onderwerp. Hiermee kunnen gegevens waarvan door de aanbieders niet met behulp van een dcat:theme, dcat:keyword, dct:conformsTo of op een andere wijze is aangegeven dat ze een bepaald onderwerp betreffen, toch in een catalog over dat onderwerp worden opgenomen, zonder dat de oorspronkelijk aangeleverde gegevens gewijzigd hoeven te worden. Met de juiste attributen kan deze catalog zelf kan worden voorzien van dejuiste thema's, keywords etc. Een voorbeeld hiervan zou een catalog kunnen zijn waarmee de impact van de Corona pandemie zichtbaar wordt. Toen de pandemie nieuw was waren er vanzelfsprekend geen DCAT beschrijvingen waarin COVID was opgenomen. Een COVID catalogus zou gegevens kunnen bevatten met medische data en sterftecijfers, maar economische of sociale data. Eventueel kan met de hand of op basis van meerderefilters een Corona catalogus aangemaak.</p>
+<p>Het laatste voorbeeld is de catalogus op basis van een gedeeld onderwerp. Hiermee kunnen gegevens waarvan door de aanbieders niet met behulp van een dcat:theme, dcat:keyword, dct:conformsTo of op een andere wijze is aangegeven dat ze een bepaald onderwerp betreffen, toch in een catalog over dat onderwerp worden opgenomen, zonder dat de oorspronkelijk aangeleverde gegevens gewijzigd hoeven te worden. Met de juiste attributen kan deze catalog zelf worden voorzien van de juiste thema's, keywords etc. Een voorbeeld hiervan zou een catalog kunnen zijn waarmee de impact van de Corona pandemie zichtbaar wordt. Toen de pandemie uitbrak waren er vanzelfsprekend geen DCAT beschrijvingen waarin COVID was opgenomen. Een COVID catalogus zou gegevens kunnen bevatten met medische data en sterftecijfers, maar economische of sociale data. Eventueel kan met de hand of op basis van meerdere filters een Corona catalogus aangemaakt.</p>
 <div class="issue closed" id="issue-container-number-21"><div role="heading" class="issue-title marker" id="h-issue-22" aria-level="4"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/21"><span class="issue-number">Issue 21</span></a><span class="issue-label">: Wat is een catalogus in DCAT nu precies</span></div><p dir="auto">Er lijkt onduidelijkheid te zijn rondom de definitie van <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog" rel="nofollow">dcat:Catalog</a>. Wat is het precies en wanneer wordt het gebruikt?</p>
 <ul dir="auto">
 <li>Wanneer is een catalogus een <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Catalog" rel="nofollow">dcat:Catalog</a>?</li>
@@ -3680,7 +3681,7 @@ metadata moet voldoen aan een specifieke toepassingsprofielen van DCAT.</p>
 <p>Deze eigenschap moet een datum <em>en</em> tijd bevatten conform de <cite><a data-matched-text="[[[ISO8601]]]" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO-8601</a></cite> standaard, <code>YYYY-MM-DDThh:mm:ss</code>.</p>
 </aside></div>
 
-</section><section id="conformsto-nieuw-0"><div class="header-wrapper"><h5 id="dct-conformsTo2"><bdi class="secno">3.7.1.4 </bdi>conformsTo <em class="new">nieuw</em> </h5><a class="self-link" href="#dct-conformsTo2" aria-label="Permalink for Section 3.7.1.4"></a></div><p>Een verwijzing naar het DCAT <a data-link-type="dfn" href="#dfn-applicatieprofiel" class="internalDFN" id="ref-for-dfn-applicatieprofiel-3">applicatieprofiel</a> waar de metadata van de <a href="#dcat-Resource"><code>dcat:Resource</code></a> zich aan 
+</section><section id="conformsto-nieuw-0"><div class="header-wrapper"><h5 id="dct-conformsTo2"><bdi class="secno">3.7.1.4 </bdi>conformsTo <em class="new">nieuw</em> </h5><a class="self-link" href="#dct-conformsTo2" aria-label="Permalink for Section 3.7.1.4"></a></div><p>Een verwijzing naar het DCAT <a data-link-type="dfn" href="#dfn-applicatieprofiel" class="internalDFN" id="ref-for-dfn-applicatieprofiel-3">applicatieprofiel</a> waar de metadata van de <a href="#dcat-Resource"><code>dcat:Resource</code></a> aan 
 voldoet.</p>
 <table>
 <thead>
@@ -3845,7 +3846,7 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
 De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadpleegbaar op <cite><a data-matched-text="[[[MDR_FREQUENCY_TAXONOMY]]]" href="https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl">mdr:Frequency taxonomy (Github.com/dataoverheid)</a></cite></p>
 </aside></div>
 
-</section><section id="overheid-gemeente"><div class="header-wrapper"><h4 id="waardelijst-overheid-Gemeente"><bdi class="secno">4.2.9 </bdi>overheid:Gemeente</h4><a class="self-link" href="#waardelijst-overheid-Gemeente" aria-label="Permalink for Section 4.2.9"></a></div><p>Deze taxonomie bevat concepten die de gemeentes van de Nederlandse overheid beschrijven. Alle concepten komen uit de
+</section><section id="overheid-gemeente"><div class="header-wrapper"><h4 id="waardelijst-overheid-Gemeente"><bdi class="secno">4.2.9 </bdi>overheid:Gemeente</h4><a class="self-link" href="#waardelijst-overheid-Gemeente" aria-label="Permalink for Section 4.2.9"></a></div><p>Deze taxonomie bevat concepten die de gemeenten van de Nederlandse overheid beschrijven. Alle concepten komen uit de
 <cite><a data-matched-text="[[[OWMS_GEMEENTE]]]" href="https://standaarden.overheid.nl/owms/terms/Gemeente">overheid:Gemeente</a></cite>.</p>
 <div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="4"><span>Noot</span></div><aside class="">
 

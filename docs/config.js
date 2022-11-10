@@ -25,6 +25,9 @@ const respecConfig = {
     },
     xref: "web-platform",
     doJsonLd: true,
+    lint: {
+        "no-unused-dfns": false
+    },
     localBiblio: {
         DONL: {
             title: "data.overheid.nl",

@@ -1,5 +1,4 @@
 const respecConfig = {
-    specStatus: "unofficial",
     latestVersion: "https://dataoverheid.github.io/dcat-ap-donl/",
     editors: [{
         name: "Casper le Gras",

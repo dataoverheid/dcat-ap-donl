@@ -19,12 +19,12 @@ Kies ook één of meer clusterbegrippen die aangeven welke informatie in uw gege
 
 
 <aside class="example" title="Thema's kiezen">
-	
+	<pre>
         ex:Test a dcat:DataService;
           dct:title "Example Data Service"@nl ;
           dcat:endpointURL <https:∕∕api.examle.com> ;
         .
-
+    </pre>
 </aside>
 
 #### Gesloten data beschrijven met DCAT

@@ -168,6 +168,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   },
   "xref": "web-platform",
   "doJsonLd": true,
+  "lint": {
+    "no-unused-dfns": false
+  },
   "localBiblio": {
     "DONL": {
       "title": "data.overheid.nl",
@@ -178,7 +181,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "CLUSTERBEGRIPPEN": {
       "title": "Clusterbegrippen Stelselcatalogus Logius",
       "href": "https://www.stelselcatalogus.nl/clusterbegrippen",
-      "publisher": "Logius"
+      "publisher": "Logius",
+      "id": "clusterbegrippen"
     },
     "EPSG28992": {
       "title": "EPSG:28992",
@@ -437,14 +441,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "tooi"
     }
   },
-  "publishISODate": "2022-11-09T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 9 november 2022"
+  "publishISODate": "2022-11-10T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 10 november 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
 <body class="h-entry informative" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">DCAT-AP-DONL 2.0</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-11-09">9 november 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-11-10">10 november 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -731,7 +735,7 @@ bestaat een andere  groep eigenschappen. Twee belangrijke eigenschappen daarbij 
 <p>Een nadeel van thema’s is dat iedere waarde toegevoegd moet zijn aan de thema’s-taxonomie, anders is deze waarde niet beschikbaar. Dat betekent dat de juiste thema-lijsten aangeboden moeten  worden. En deze thema-lijsten moeten goed onderhouden worden zodat de juiste waardes beschikbaar zijn voor de gebruikers. Dus ook met thema's houden keywords hun waarde omdat ze nieuwe waardes kunnen bevatten die niet in een thema zijn opgenomen.</p>
 <p>Merk op dat <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> en <cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite> het mogelijk maken in een catalog een thema-taxonomie te definiëren, die daarna door alle klassen - die onder de catalog vallen - gebruikt kunnen worden. Hiemee kunnen als het ware "lokale" en gespecialiceerde thema's worden toegevoegd. Maar het toevoegen van dit soort thema's heeft ook nadelen. Omdat <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> catalogs van aanbieders niet overneemt, kan zo'n themeTaxonomy niet gedeeld worden met anderen. Maar ook buiten <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> lijkt deze eigenschap slechts beperkt nuttig. Een “lokaal” geïntroduceerde” themataxonomie zal alleen bekend zijn bij alle gebruikers als zij zich deze lokale taxonomie eigen maken, wat flinke inspanningen kan vragen. Daarmee lijkt het gebruik van  deze eigenschap alleen praktisch haalbaar als een catalog waarin deze taxonomie wordt gedefinieerd veel datasets of dataservices bevat waarbij er toegevoegde waarde is voor de gebruikers. In zijn algemeenheid lijkt het beter alleen breed gedragen thema-taxonomieën te gebruiken, omdat gebruikers anders niet begrijpen welke thema-waardes ze kunnen kiezen. Dan worden de gegevens alsnog niet gevonden.</p>
 </section><section id="verwijzingen-naar-standaarden-op-het-web"><div class="header-wrapper"><h4 id="x2-7-3-verwijzingen-naar-standaarden-op-het-web"><bdi class="secno">2.7.3 </bdi>Verwijzingen naar standaarden op het web</h4><a class="self-link" href="#verwijzingen-naar-standaarden-op-het-web" aria-label="Permalink for Section 2.7.3"></a></div>
-<p>ConformsTo wordt gebruikt om aan te geven aan welke standaard de gegevens voldoen. Onder een standaard kan hier ook een verzameling afspraken vallen, de scope is breder dan alleen technisch, inhoudelijke standaarden. Omdat gegevens aan verschillende standaarden kunnen voldoen, kan het conformsTo attribuut worden herhaald. Een aantal standaarden worden al expliciet door het DCAT profiel uitgevraagd. Denk bijvoorbeeld aan <a href="#dcat-mediaType" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document"><code>mediaType</code></a> of <a href="#dct-format"><code>format</code></a>. Er bestaan echter zeer veel standaarden op ieder niveau van het aanbod. De gegevens zelf kunnen bijvoorbeeld via een speciale methode zijn verzameld. Ook kan het zijn dat de gegevens op een bepaalde manier zijn weergegeven. Ook willen we kunnen aangeven via welke interface gegevens worden uitgewisseld. Maar ook de standaarden waaronder de gegevens zijn verzameld zouden weergegeven kunnen worden. </p>
+<p>ConformsTo wordt gebruikt om aan te geven aan welke standaard de gegevens voldoen. Onder een standaard kan hier ook een verzameling afspraken vallen, de scope is breder dan alleen technisch, inhoudelijke standaarden. Omdat gegevens aan verschillende standaarden kunnen voldoen, kan het conformsTo attribuut worden herhaald. Een aantal standaarden worden al expliciet door het DCAT profiel uitgevraagd. Denk bijvoorbeeld aan <a href="#dct-mediaType"><code>mediaType</code></a> of <a href="#dct-format"><code>format</code></a>. Er bestaan echter zeer veel standaarden op ieder niveau van het aanbod. De gegevens zelf kunnen bijvoorbeeld via een speciale methode zijn verzameld. Ook kan het zijn dat de gegevens op een bepaalde manier zijn weergegeven. Ook willen we kunnen aangeven via welke interface gegevens worden uitgewisseld. Maar ook de standaarden waaronder de gegevens zijn verzameld zouden weergegeven kunnen worden.</p>
 <p>ConformsTo is breder toepasbaar dan Thema’s maar gestructureerder dan keywords. Dat wordt bereikt door de waarde van een ConformsTo niet te beperken tot een vooraf gedefinieerde waardelijst en zelfs niet tot Linked Data. ConformsTo bevat altijd een webadres. Bij voorkeur wordt er een URI gebruikt van de standaard zoals die in het Linked Data domein is gedefinieerd, omdat een definitie in het Linked Data domein hoogwaardig is. De URI heeft heldere definites en een partij die deze URI onderhoudt. Vaak zal het gegeven ook deel uitmaken van een groter geheel, wat via de standaard Linked Data methodieken leidt tot extra semantische informatie en connecties.</p>
 <p>Maar er zijn zeer veel en zeer diverse strandaarden waaraan een gegevensverzameling kan voldoen. En lang niet altijd zal er een URI gedefineerd zijn. Een keuze is dan eigen definities te maken, maar dat brengt extra werk met zich mee en niet iedere partij wil dergelijke verplichtingen aan gaan. Daarom mag conformsTo ook een URI  bevatten buiten het Linked Data domein, zolang die URI op het internet altijd leidt naar pagina's met informatie over de standaard. Het meest gebruikte voorbeeld is een verwijzing naar een webpagina waarop de betreffende standaard wordt beschreven.</p>
 <p>Een nadeel van deze tweede waarde hebben we ook al gezien bij keywords. De waarde kan door iedere opsteller vrij gekozen worden. Daarmee wordt zoeken lastiger. Toch is de situatie hier wel beter. Ten eerste wordt de keuze van de opsteller beperkt. Voor veel standaarden zal er één specifieke website zijn waar de standaard gedefinieerd wordt, waardoor veel mensen dezelfde URI zullen gebruiken. Maar zeker bij breed gebruikte of juiste hele specifieke standaarden zullen opstellers vaak verschillende websites als meest representatief voor de standaard bestempelen.</p>
@@ -3907,8 +3911,42 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
 
     <section id="scenarios" class="appendix"><div class="header-wrapper"><h2 id="a-scenarios"><bdi class="secno">A. </bdi>Scenarios</h2><a class="self-link" href="#scenarios" aria-label="Permalink for Appendix A."></a></div>
         
-        <div class="appendix" data-format="markdown"><p>Hoe kan DCAT worden gebruikt in de volgende scenarios?</p>
+        <div data-format="markdown"><p>Hoe kan DCAT worden gebruikt in de volgende scenarios?</p>
 <div class="header-wrapper"><h4 id="invullen-van-thema-eigenschappen">Invullen van thema-eigenschappen</h4><a class="self-link" href="#invullen-van-thema-eigenschappen" aria-label="Permalink for this Appendix"></a></div>
+<p>Thema's zijn de belangrijkste inhoudelijke eigenschap waarop informatie op data.overheid.nl &lt;http: data.overheid.nl=""&gt; eenduidige doorzocht kan worden. De thema eigenschap is gedefinieerd voor <a href="#dcat:Dataset" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document">dcat:Dataset</a>, <a href="#dcat-DataService">dcat-DataService</a> en voor <a href="#dcat-Catalog">dcat:Catalog</a>. Er zijn meerdere thema waardes toegestaan per beschrijving. </p>
+<p>Zoals te lezen is in de paragraaf <a href="#thema-s-uit-een-voorgedefinieerde-lijst">Vindbaarheid</a> kunnen op <a data-link-type="dfn" href="#dfn-donl" class="internalDFN" id="ref-for-dfn-donl-1">DONL</a> alleen thema's worden  gekozen die door DONL zelf worden aangeboden. In lokale [DCAT beschrijving]en kunnen andere thema-taxonomieën worden gebruikt, zelfs per <em>dcat:catalog</em> gedefinieerd, maar omdat DONL geen catalogi inleest, kunnen er geen thema-lijsten worden toegevoegd. DONL is van plan de lijst met aangeboden thema-taxonomiën in de toekomst actief te onderhouden en indien nodig uit te breiden. </p>
+<p>Op dit moment zijn er tweede thema-lijsten waaruit waardes gekozen kunnen worden:</p>
+<table>
+<thead>
+<tr>
+<th>Naam themalijst</th>
+<th>Type</th>
+<th>Gebruik</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><cite><a data-matched-text="[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda">overheid:TaxonomieBeleidsagenda</a></cite></td>
+<td>Waardelijst</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td><cite><a data-matched-text="[[[CLUSTERBEGRIPPEN]]]" href="https://www.stelselcatalogus.nl/clusterbegrippen">Clusterbegrippen Stelselcatalogus Logius</a></cite></td>
+<td>Waardelijst</td>
+<td>Recommended</td>
+</tr>
+</tbody></table>
+<p>Uit de Taxonomiebeleidsagenda kiest u een waarde die beschrijft op welke gebied de gegevens betrekking hebben. Probeer hierbij zo specifiek mogelijk te zijn. </p>
+<p>Kies ook één of meer clusterbegrippen die aangeven welke informatie in uw gegevens belangrijk is. Het zal voorkomen dat geen van de Clusterbegrippen verwijst naar informatie in uw gegevens. In dat geval vult u geen Clusterbegrip in. Als u vindt dat er een Clusterbegrip ontbreekt in de lijst, kunt u <a href="https://www.stelselcatalogus.nl/contact">contact opnemen met Stelselcatalogus</a> om dat eventueel te laten toevoegen.</p>
+<aside class="example" id="example-thema-s-kiezen"><div class="marker">
+    <a class="self-link" href="#example-thema-s-kiezen">Voorbeeld<bdi> 14</bdi></a><span class="example-title">: Thema's kiezen</span>
+  </div>
+    <pre aria-busy="false"><code class="hljs css">    ex:Test a dcat:DataService;
+      dct:title <span class="hljs-string">"Example Data Service"</span>@nl ;
+      dcat:endpointURL  ;
+    .
+</code></pre>
+</aside>
+
 <div class="header-wrapper"><h4 id="gesloten-data-beschrijven-met-dcat">Gesloten data beschrijven met DCAT</h4><a class="self-link" href="#gesloten-data-beschrijven-met-dcat" aria-label="Permalink for this Appendix"></a></div>
 <div class="header-wrapper"><h4 id="organisaties-die-geen-overheid-zijn">Organisaties die geen overheid zijn</h4><a class="self-link" href="#organisaties-die-geen-overheid-zijn" aria-label="Permalink for this Appendix"></a></div>
 <div class="header-wrapper"><h4 id="invullen-creator-en-publisher">Invullen creator en publisher</h4><a class="self-link" href="#invullen-creator-en-publisher" aria-label="Permalink for this Appendix"></a></div>
@@ -3916,30 +3954,59 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
 <div class="header-wrapper"><h4 id="wat-doe-ik-als-ik-een-excel-wil-delen">Wat doe ik als ik een Excel wil delen?</h4><a class="self-link" href="#wat-doe-ik-als-ik-een-excel-wil-delen" aria-label="Permalink for this Appendix"></a></div>
 <div class="header-wrapper"><h4 id="dcat-beschrijving-voor-intern-gebruik-ontwikkelen"><a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-3">DCAT beschrijving</a> voor intern gebruik ontwikkelen</h4><a class="self-link" href="#dcat-beschrijving-voor-intern-gebruik-ontwikkelen" aria-label="Permalink for this Appendix"></a></div>
 <div class="header-wrapper"><h4 id="interne-dcat-beschrijving-uitwisselen-met-donl">Interne <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-4">DCAT beschrijving</a> uitwisselen met DONL</h4><a class="self-link" href="#interne-dcat-beschrijving-uitwisselen-met-donl" aria-label="Permalink for this Appendix"></a></div>
+<p></p>
 </div>
     </section>
 
     <section id="termenlijst" class="appendix"><div class="header-wrapper"><h2 id="b-termenlijst"><bdi class="secno">B. </bdi>Termenlijst</h2><a class="self-link" href="#termenlijst" aria-label="Permalink for Appendix B."></a></div>
         
-        <div class="appendix" data-format="markdown"><p> <dfn id="dfn-applicatieprofiel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Applicatieprofiel</dfn></p>
-<p>Dit data.overheid.nl DCAT applicatieprofiel hanteert dezelfde definitie als die van <em>application profile</em> die in §1,2 van <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> is opgenomen:</p>
+        <div class="appendix" data-format="markdown"><div class="header-wrapper"><h2 id="applicatieprofiel"><dfn id="dfn-applicatieprofiel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Applicatieprofiel</dfn></h2><a class="self-link" href="#applicatieprofiel" aria-label="Permalink for this Appendix"></a></div>
+
+<p>Dit data.overheid.nl DCAT-applicatieprofiel hanteert dezelfde definitie als die van <em>application profile</em> die in §1,2
+van <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> is opgenomen:</p>
 <blockquote>
-<p>The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.</p>
+<p>The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in
+this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to
+implement specific technical environments. The only requirement is that the systems can export and import data in RDF
+in conformance with this Application Profile.</p>
 </blockquote>
-<p> <dfn id="dfn-dcat-beschrijving" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DCAT beschrijving </dfn></p>
-<p>Met behulp van het DCAT-AP-DONL profiel kan iedere partij de aangeboden gegevens beschrijven, zowel aangeboden als data service en als aangeboden als distributies.</p>
-<p><dfn id="dfn-donl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DONL</dfn></p>
-<p>DONL is de afkorting voor <a href="http://data.overheid.nl">http://data.overheid.nl</a>. Deze voorziening biedt zowel met behulp van een website als via API’s een overzicht van het gegevens aanbod van de Nederlandse overheid.</p>
-<p><dfn id="dfn-gebruiker" tabindex="0" aria-haspopup="dialog" class="respec-offending-element" title="Found definition for &quot;Gebruiker&quot;, but nothing links to it. This is usually a spec bug!" data-dfn-type="dfn">Gebruiker</dfn></p>
-<p>Een gebruiker is een persoon of automatisch systeem die/dat gebruikt maakt van <a data-link-type="dfn" href="#dfn-donl" class="internalDFN" id="ref-for-dfn-donl-1">DONL</a> om gegevens te vinden. Een gebruiker gebruikt de zoekfunctionaliteit en sorteer mogelijkheden van DONL om uit het aanbod een relevante selectie te maken. Met de DCAT beschrijvingen uit die selectie kan de gebruiker daarna in detail bekijken of de beschreven gegevens voldoen.</p>
-<p><dfn id="dfn-open-data" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Open data</dfn></p>
-<p><a href="https://data.overheid.nl/en/ondersteuning/open-data/wat-is-open-data">Open data</a> is een verzamelnaam voor gegevensverzameling die gratis beschikbaar worden gesteld voor ieder gebruik, wat wordt aangegeven met een overeenkomstig licentie. Er zijn zeer veel aanbieders van Open Data. Veel overheden, waaronder de Nederlandse streven ernaar zoveel gegevens als Open Data aan te bieden. Twee drijvende gedachte achter de Open Data beweging zijn dat Open Data de transparantie bevorderd en er toepassingen mogelijk worden die niet door de eigenaren van de gegevens voorzien (kunnen) worden. Veel Open Data wordt aangeboden als Linked Data. Hiervoor wordt ook de term Linked Open Data, LOD, gebruikt.</p>
-<p><dfn id="dfn-opsteller" tabindex="0" aria-haspopup="dialog" class="respec-offending-element" title="Found definition for &quot;Opsteller&quot;, but nothing links to it. This is usually a spec bug!" data-dfn-type="dfn">Opsteller</dfn></p>
-<p>De opsteller maakt een een <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-5">DCAT beschrijving</a> van het aanbod van zijn of haar organisatie zodat die gegevens door anderen gebruikt kunnen worden. Binnen de afbakening van dit profiel zal deze beschrijving gedeeld worden met <a data-link-type="dfn" href="#dfn-donl" class="internalDFN" id="ref-for-dfn-donl-2">DONL</a> zodat geïntereseerden relatief eenvoudig van het bestaan op de hoogte gebracht kunnen worden.</p>
-<p><dfn id="dfn-dcat-resource" tabindex="0" aria-haspopup="dialog" class="respec-offending-element" title="Found definition for &quot;dcat:resource&quot;, but nothing links to it. This is usually a spec bug!" data-dfn-type="dfn">dcat:resource</dfn></p>
-<p>We gebruiken dcat:resource of resource in dit document regelmatig als een verzamelnaam voor drie veel gebruikte  klasses in een <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-6">DCAT beschrijving</a>:  <a href="#dcat-Catalog">dcat:catalog</a>, <a href="#dcat-Dataset">dcat:dataset</a> en <a href="#dcat-DataService">dcat:dataService</a>. Zij zijn alledrie afgeleid van de <a href="#dcat-Resource">dcat:resource</a> klasse en worden daarom soms met die naam aangeduid. Verder wordt uitgelegd bij de definite van <a href="#dcat-Resource">dcat:resource</a> dat in DCAT geen instanties van resource mogen voorkomen, alleen van deze drie subklasses. Merk op dat <a href="#dcat-Distribution">dcat:distributie</a> niet is afgeleid van dcat:resource en dus niet onder deze aanduiding valt.</p>
-<p><dfn id="dfn-uri" tabindex="0" aria-haspopup="dialog" class="respec-offending-element" title="Found definition for &quot;URI&quot;, but nothing links to it. This is usually a spec bug!" data-dfn-type="dfn">URI</dfn></p>
-</div>
+<div class="header-wrapper"><h3 id="dcat-beschrijving"><dfn id="dfn-dcat-beschrijving" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DCAT beschrijving</dfn></h3><a class="self-link" href="#dcat-beschrijving" aria-label="Permalink for this Appendix"></a></div>
+
+<p>Met behulp van het DCAT-AP-DONL profiel kan iedere partij de aangeboden gegevens beschrijven, zowel aangeboden als data
+service en als aangeboden als distributies.</p>
+<div class="header-wrapper"><h3 id="donl"><dfn id="dfn-donl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DONL</dfn></h3><a class="self-link" href="#donl" aria-label="Permalink for this Appendix"></a></div>
+
+<p>DONL is de afkorting voor <a href="http://data.overheid.nl">http://data.overheid.nl</a>. Deze voorziening biedt zowel met behulp van een website als via API’s
+een overzicht van het gegevens aanbod van de Nederlandse overheid.</p>
+<div class="header-wrapper"><h3 id="gebruiker"><dfn id="dfn-gebruiker" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Gebruiker</dfn></h3><a class="self-link" href="#gebruiker" aria-label="Permalink for this Appendix"></a></div>
+
+<p>Een gebruiker is een persoon of automatisch systeem die/dat gebruikt maakt van <a data-link-type="dfn" href="#dfn-donl" class="internalDFN" id="ref-for-dfn-donl-2">DONL</a> om gegevens te vinden. Een
+gebruiker gebruikt de zoekfunctionaliteit en sorteer mogelijkheden van DONL om uit het aanbod een relevante selectie te
+maken. Met de DCAT-beschrijvingen uit die selectie kan de gebruiker daarna in detail bekijken of de beschreven gegevens
+voldoen.</p>
+<div class="header-wrapper"><h3 id="open-data"><dfn id="dfn-open-data" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Open data</dfn></h3><a class="self-link" href="#open-data" aria-label="Permalink for this Appendix"></a></div>
+
+<p><a href="https://data.overheid.nl/en/ondersteuning/open-data/wat-is-open-data">Open data</a> is een verzamelnaam voor
+gegevensverzameling die gratis beschikbaar worden gesteld voor ieder gebruik, wat wordt aangegeven met een
+overeenkomstig licentie. Er zijn zeer veel aanbieders van Open Data. Veel overheden, waaronder de Nederlandse streven
+ernaar zoveel gegevens als Open Data aan te bieden. Twee drijvende gedachte achter de Open Data beweging zijn dat Open
+Data de transparantie bevorderd en er toepassingen mogelijk worden die niet door de eigenaren van de gegevens voorzien
+(kunnen) worden. Veel Open Data wordt aangeboden als Linked Data. Hiervoor wordt ook de term Linked Open Data, LOD,
+gebruikt.</p>
+<div class="header-wrapper"><h3 id="opsteller"><dfn id="dfn-opsteller" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Opsteller</dfn></h3><a class="self-link" href="#opsteller" aria-label="Permalink for this Appendix"></a></div>
+
+<p>De opsteller maakt een een <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-5">DCAT beschrijving</a> van het aanbod van zijn of haar organisatie zodat die gegevens door
+anderen gebruikt kunnen worden. Binnen de afbakening van dit profiel zal deze beschrijving gedeeld worden met <a data-link-type="dfn" href="#dfn-donl" class="internalDFN" id="ref-for-dfn-donl-3">DONL</a>
+zodat geïntereseerden relatief eenvoudig van het bestaan op de hoogte gebracht kunnen worden.</p>
+<div class="header-wrapper"><h3 id="resource"><dfn id="dfn-resource" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Resource</dfn></h3><a class="self-link" href="#resource" aria-label="Permalink for this Appendix"></a></div>
+
+<p>We gebruiken dcat:Resource of resource in dit document regelmatig als een verzamelnaam voor drie veel gebruikte klasses
+in een <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-6">DCAT beschrijving</a>:  <a href="#dcat-Catalog">dcat:catalog</a>, <a href="#dcat-Dataset">dcat:dataset</a> en
+<a href="#dcat-DataService">dcat:dataService</a>. Zij zijn alledrie afgeleid van de <a href="#dcat-Resource">dcat:resource</a> klasse en
+worden daarom soms met die naam aangeduid. Verder wordt uitgelegd bij de definite van <a href="#dcat-Resource">dcat:resource</a>
+dat in DCAT geen instanties van resource mogen voorkomen, alleen van deze drie subklasses. Merk op dat
+<a href="#dcat-Distribution">dcat:distributie</a> niet is afgeleid van dcat:resource en dus niet onder deze aanduiding valt.</p>
+<div class="header-wrapper"><h3 id="uri"><dfn id="dfn-uri" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">URI</dfn></h3><a class="self-link" href="#uri" aria-label="Permalink for this Appendix"></a></div></div>
     </section>
 
     <section class="appendix" id="contributors"><div class="header-wrapper"><h2 id="c-contributors"><bdi class="secno">C. </bdi>Contributors</h2><a class="self-link" href="#contributors" aria-label="Permalink for Appendix C."></a></div>
@@ -3962,7 +4029,9 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
 
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="f-referenties"><bdi class="secno">F. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix F."></a></div><section id="informatieve-referenties"><div class="header-wrapper"><h3 id="f-1-informatieve-referenties"><bdi class="secno">F.1 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix F.1"></a></div>
     
-    <dl class="bibliography"><dt id="bib-data_eu">[DATA_EU]</dt><dd>
+    <dl class="bibliography"><dt id="bib-clusterbegrippen">[CLUSTERBEGRIPPEN]</dt><dd>
+      <a href="https://www.stelselcatalogus.nl/clusterbegrippen"><cite>Clusterbegrippen Stelselcatalogus Logius</cite></a>.  Logius. URL: <a href="https://www.stelselcatalogus.nl/clusterbegrippen">https://www.stelselcatalogus.nl/clusterbegrippen</a>
+    </dd><dt id="bib-data_eu">[DATA_EU]</dt><dd>
       <a href="https://data.europa.eu/en"><cite>data.europa.eu</cite></a>.  The Publications Office of the European Union. URL: <a href="https://data.europa.eu/en">https://data.europa.eu/en</a>
     </dd><dt id="bib-dcat_20">[DCAT_20]</dt><dd>
       <a href="https://www.w3.org/TR/vocab-dcat-2"><cite>DCAT 2.0</cite></a>.  World Wide Web Consortium. URL: <a href="https://www.w3.org/TR/vocab-dcat-2">https://www.w3.org/TR/vocab-dcat-2</a>
@@ -4094,7 +4163,9 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-donl-1" title="§ B. Termenlijst">§ B. Termenlijst</a> <a href="#ref-for-dfn-donl-2" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-donl-1" title="§ A. Scenarios">§ A. Scenarios</a> 
+  </li><li>
+    <a href="#ref-for-dfn-donl-2" title="§ B. Termenlijst">§ B. Termenlijst</a> <a href="#ref-for-dfn-donl-3" title="Reference 2">(2)</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-gebruiker" aria-label="Links in this document to definition: Gebruiker">
@@ -4129,10 +4200,10 @@ De conceptversie van deze waardelijst is als <code>turtle</code>-bestand raadple
       <ul>
       <li>Not referenced in this document.</li>
     </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-dcat-resource" aria-label="Links in this document to definition: dcat:resource">
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-resource" aria-label="Links in this document to definition: Resource">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#dfn-dcat-resource" aria-label="Permalink for definition: dcat:resource. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#dfn-resource" aria-label="Permalink for definition: Resource. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>

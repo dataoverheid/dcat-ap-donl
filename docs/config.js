@@ -17,7 +17,7 @@ const respecConfig = {
         name: "Huub van Oers",
         company: "Dienst Uitvoering Onderwijs"
     }],
-    license: "cc0",
+    license: "document",
     github: {
         branch: "main",
         repoURL: "dataoverheid/dcat-ap-donl",

@@ -2,7 +2,7 @@ Hoe kan DCAT worden gebruikt in de volgende scenarios?
 
 #### Invullen van thema-eigenschappen
 
-Thema's zijn de belangrijkste inhoudelijke eigenschap waarop informatie op data.overheid.nl <http://data.overheid.nl> eenduidige doorzocht kan worden. De thema eigenschap is gedefinieerd voor [dcat:Dataset](#dcat:Dataset), [dcat-DataService](#dcat-DataService) en voor [dcat:Catalog](#dcat-Catalog). Er zijn meerdere thema waardes toegestaan per beschrijving. 
+Thema's zijn de belangrijkste inhoudelijke eigenschap waarop informatie op data.overheid.nl <http://data.overheid.nl> eenduidige doorzocht kan worden. De thema eigenschap is gedefinieerd voor [dcat:Dataset](#dcat-Dataset), [dcat:DataService](#dcat-DataService) en voor [dcat:Catalog](#dcat-Catalog). Er zijn meerdere thema waardes toegestaan per beschrijving. 
 
 Zoals te lezen is in de paragraaf [Vindbaarheid](#thema-s-uit-een-voorgedefinieerde-lijst) kunnen op [=DONL=] alleen thema's worden  gekozen die door DONL zelf worden aangeboden. In lokale [DCAT beschrijving]en kunnen andere thema-taxonomieën worden gebruikt, zelfs per *dcat:catalog* gedefinieerd, maar omdat DONL geen catalogi inleest, kunnen er geen thema-lijsten worden toegevoegd. DONL is van plan de lijst met aangeboden thema-taxonomiën in de toekomst actief te onderhouden en indien nodig uit te breiden. 
 

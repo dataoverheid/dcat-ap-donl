@@ -68,29 +68,9 @@ const respecConfig = {
             href: "https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/access-rights",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
-        DONL_ACCESSRIGHTS_TAXONOMY: {
-            title: "donl:AccessRights taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/access-rights.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        DONL_LANGUAGE_TAXONOMY: {
-            title: "donl:Language taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/languages.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        DONL_LICENSE_TAXONOMY: {
-            title: "donl:License taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/licenses.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
         DONL_SUPPORTINGROLE_CONCEPTS: {
             title: "donl:SupportingRole concepts (Github.com/dataoverheid)",
             href: "https://github.com/dataoverheid/dcat-ap-donl/tree/main/term/supporting-roles",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        DONL_SUPPORTINGROLE_TAXONOMY: {
-            title: "donl:SupportingRole taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/supporting-roles.ttl",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         GEONAMES: {
@@ -105,11 +85,6 @@ const respecConfig = {
         IANA_MEDIATYPES: {
             title: "IANA Mediatypes",
             href: "https://www.iana.org/assignments/media-types/media-types.xhtml",
-            publisher: "Internet Assigned Numbers Authority"
-        },
-        IANA_MEDIATYPES_TAXONOMY: {
-            title: "IANA Mediatypes taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/mediatypes.ttl",
             publisher: "Internet Assigned Numbers Authority"
         },
         ISO8601: {
@@ -132,107 +107,77 @@ const respecConfig = {
             href: "https://www.juriconnect.nl/downloadreg.asp?bestand=Juriconnect%5FStandaard%5FBWB%5F1%5F3%2Epdf&type=pdf",
         },
         MDR_ACCESSRIGHTS: {
-            title: "mdr:AccessRights",
+            title: "mdr:AccessRights (publications.europa.eu)",
             href: "https://publications.europa.eu/resource/authority/access-right",
             publisher: "The Publications Office of the European Union"
         },
         MDR_DATATHEME: {
-            title: "mdr:DataTheme",
+            title: "mdr:DataTheme (publications.europa.eu)",
             href: "https://publications.europa.eu/resource/authority/data-theme",
             publisher: "The Publications Office of the European Union"
         },
         MDR_FILETYPE: {
-            title: "mdr:Filetype",
+            title: "mdr:Filetype (publications.europa.eu)",
             href: "https://publications.europa.eu/resource/authority/file-type",
             publisher: "The Publications Office of the European Union"
         },
-        MDR_FILETYPE_TAXONOMY: {
-            title: "mdr:Filetype taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/file-types.ttl",
-            publisher: "The Publications Office of the European Union"
-        },
         MDR_FREQUENCY: {
-            title: "mdr:Frequency",
+            title: "mdr:Frequency (publications.europa.eu)",
             href: "https://publications.europa.eu/resource/authority/frequency",
             publisher: "The Publications Office of the European Union"
         },
-        MDR_FREQUENCY_TAXONOMY: {
-            title: "mdr:Frequency taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/frequencies.ttl",
-            publisher: "The Publications Office of the European Union"
-        },
         MDR_LANGUAGE: {
-            title: "mdr:Language",
+            title: "mdr:Language (publications.europa.eu)",
             href: "https://publications.europa.eu/resource/authority/language",
             publisher: "The Publications Office of the European Union"
         },
-        OVERHEID_GEMEENTES_TAXONOMY: {
-            title: "overheid:Gemeente taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/gemeentes.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        OVERHEID_KONINKRIJKSDEEL_TAXONOMY: {
-            title: "overheid:Koninkrijksdeel taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/koninkrijksdelen.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        OVERHEID_PROVINCIES_TAXONOMY: {
-            title: "overheid:Provincie taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/provincies.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        OVERHEID_TAXONOMIEBELEIDSAGENDA_TAXONOMY: {
-            title: "overheid:TaxonomieBeleidsagenda taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/themes.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
-        },
-        OVERHEID_WATERSCHAP_TAXONOMY: {
-            title: "overheid:Waterschap taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/waterschappen.ttl",
+        OWMS_40: {
+            title: "OWMS 4.0",
+            href: "https://standaarden.overheid.nl/owms/terms",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_EPSG28992: {
-            title: "overheid:EPSG28992",
+            title: "overheid:EPSG28992 (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_GEMEENTE: {
-            title: "overheid:Gemeente",
+            title: "overheid:Gemeente (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/terms/Gemeente",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_KONINKRIJKSDEEL: {
-            title: "overheid:Koninkrijksdeel",
+            title: "overheid:Koninkrijksdeel (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_ORGANISATIE: {
-            title: "overheid:Organisatie",
+            title: "overheid:Organisatie (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/terms/Organisatie",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_POSTCODEHUISNUMMER: {
-            title: "overheid:PostcodeHuisnummer",
+            title: "overheid:PostcodeHuisnummer (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_PROVINCIE: {
-            title: "overheid:Provincie",
+            title: "overheid:Provincie (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/terms/Provincie",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_SYNTAXCODEERSCHEMA: {
-            title: "overheid:SyntaxCodeerschema",
+            title: "overheid:SyntaxCodeerschema (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_TAXONOMIEBELEIDSAGENDA: {
-            title: "overheid:TaxonomieBeleidsagenda",
+            title: "overheid:TaxonomieBeleidsagenda (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         OWMS_WATERSCHAP: {
-            title: "overheid:Waterschap",
+            title: "overheid:Waterschap (standaarden.overheid.nl)",
             href: "https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap",
             publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
@@ -240,11 +185,6 @@ const respecConfig = {
             title: "spdx:ChecksumAlgorithm",
             href: "http://spdx.org/rdf/terms#ChecksumAlgorithm",
             publisher: "The Software Package Data Exchange (SPDX)"
-        },
-        SPDX_CHECKSUMALGORITHM_TAXONOMY: {
-            title: "spdx:ChecksumAlgorithm taxonomy (Github.com/dataoverheid)",
-            href: "https://github.com/dataoverheid/dcat-ap-donl/blob/main/taxonomy/algorithms.ttl",
-            publisher: "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties"
         },
         TOOI: {
             title: "TOOI - Thesaurus en Ontologie Overheidsinformatie",

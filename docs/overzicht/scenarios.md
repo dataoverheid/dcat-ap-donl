@@ -22,8 +22,8 @@ In onderstaand voorbeeld zijn zes waardes uit de taxonomie belaidsagenda en de C
 
 <aside class="example" title="Thema's kiezen">
 	<pre>
-        ex:Test a dcat:DataService;
-          dct:title "Example Data Service"@nl ;
+        ex:bouwaanbestedingen a dcat:DataService;
+          dct:title "Bouw aanbesteding"@nl ;
           dct:accessRights &lt;http://publications.europa.eu/resource/authority/access-right/PUBLIC&gt; ;
           dct:conformsTo &lt;https://jsonapi.org&gt; ;
           dct:description "Een overzicht van alle partijen betrokken bij recente aanbestedingen gerelateerd aan bouwen van de overheid" ;

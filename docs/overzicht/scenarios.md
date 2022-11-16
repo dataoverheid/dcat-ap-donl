@@ -24,16 +24,16 @@ In onderstaand voorbeeld zijn zes waardes uit de taxonomie belaidsagenda en de C
 	<pre>
         ex:Test a dcat:DataService;
           dct:title "Example Data Service"@nl ;
-          dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-          dct:conformsTo <https://jsonapi.org> ;
+          dct:accessRights &lt;http://publications.europa.eu/resource/authority/access-right/PUBLIC&gt; ;
+          dct:conformsTo &lt;https://jsonapi.org&gt; ;
           dct:description "Een overzicht van alle partijen betrokken bij recente aanbestedingen gerelateerd aan bouwen van de overheid" ;
-          dcat:theme <http://standaarden.overheid.nl/owms/terms/Bouwen_en_verbouwen> ;
-          dcat:theme <http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening> ;
-          dcat:theme <http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur> ;
-          dcat:theme <http://standaarden.overheid.nl/owms/terms/Rijksoverheid> ;
-          dcat:theme <https://opendata.stelselcatalogus.nl/doc/clusterbegrip/Organisatie> ;
-          dcat:theme <https://opendata.stelselcatalogus.nl/doc/clusterbegrip/Onroerende_zaak> ;
-          dcat:endpointURL <https:∕∕api.examle.com> ;
+          dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Bouwen_en_verbouwen&gt; ;
+          dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening&gt; ;
+          dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur&gt; ;
+          dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Rijksoverheid&gt; ;
+          dcat:theme &lt;https://opendata.stelselcatalogus.nl/doc/clusterbegrip/Organisatie&gt; ;
+          dcat:theme &lt;https://opendata.stelselcatalogus.nl/doc/clusterbegrip/Onroerende_zaak&gt; ;
+          dcat:endpointURL &lt;https:∕∕api.examle.com&gt; ;
         .
     </pre>
 </aside>

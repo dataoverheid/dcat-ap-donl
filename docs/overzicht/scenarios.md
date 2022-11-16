@@ -14,14 +14,23 @@ Hoe kan DCAT worden gebruikt in de volgende scenarios?
 
 #### [=DCAT beschrijving=] voor intern gebruik ontwikkelen
 
-Er kan een behoefte bestaan om te beschrijven welke data je organisatie heeft en aanbiedt. Dit kan gedaan worden zonder dat deze omschrijvingen buiten de organisatie beshcikbaar gesteld worden. Ook voor pure interne doeleinden kan het waardevol zijn om de data en diensten met DCAT te beschrijven. Zodat deze informatie intern beter vindbaar gemaakt kan worden.
+DCAT dient als vocabulaire om data delen makkelijker te maken. De opzet is gericht op het delen van data tussen verschillende partijen, 
+maar dat betekend niet dat het ook erg goed gebruikt kan worden om interne data te beschrijven. Binnen organisaties kunnen verschillende afdelingen
+immers als partij worden gezien. En overzicht is op elk niveau waardevol.
 
-Het gaat hier dus om interne data waarvan de omschrijvingen ook alleen intern beschikbaar zijn. Dit in tegenstelling tot interne data die wel publiek beschreven wordt. Dit is een belangrijk verschil. Elke orgsanistie zal een andere afweging maken welke DCAT omschrijvingen wel en niet naar buiten aangeboden mogen worden.
+Wanneer interne data in DCAT beschreven wordt, wordt het delen van deze zelfde informatie met de buitenwereld een stuk makkelijker. Dit heeft dezelfde 
+structuur en er is dus geen vertaalslag meer nodig.
 
-Bij interne beschrijvingen kan het waardevol zijn om met `dcat:Catalog`'s de beschrijvingen in te delen volgens domein-specifieke rubricering (voor zover dit niet kan met `dcat:theme`.
+Mocht dit DCAT profiel niet voldoen aan de interne behoeftes is DCAT makkelijk uit te breiden en aan te passen. Goede bronnen hiervoor zijn [[[DCAT_20]]] en [[[DCATAP_21]]].
+Er kan bijvoorbeeld worden gekozen om de eigenschap [`dct:license`](#dct-license) achter wege te laten. Of er kunnen ter verreiking eigenschappen worden toevoegd.
 
-Wanneer de DCAT omschrijvingen alleen intern gebruikt worden. Kan je als organisatie besluiten om eigen waardelijsten toe te passen, in plaats van de waardelijsten die vanuit DONL aangeboden worden. Ook kan er besloten worden om meer _of minder_ eigenschappen per DCAT object aan te bieden. Voor interne data beschrijvingen is het licentie veld bijvoorbeeld een stuk minder waardevol. Terwijl DONL deze verplicht wanneer je het met DONL wil uitwisselen.
+Wanneer de data niet naar buiten wordt gecommuniceerd kan men ook andere waardelijsten gebruiken. De [TaxonomieBeleidsagenda](#waardelijst-overheid-TaxonomieBeleidsagenda)
+wordt op [[[DONL]]] verplicht om consistentie te behouden, maar een eigen thema waardelijst kan voor intern gebruik veel krachtiger zijn. Of met eigen waardes voor [AccessRights](#waardelijst-donl-AccessRights)
+kan binnen een organisatie direct worden duideluijk gemaakt wie er wel en wie geen toegang heeft tot de data.
 
-Het gebruik van interne waardelijsten kan uitwisseling met DONL moeilijker maken mocht de organisatie later besluiten om alsnog met DONL uit te wisselen. Als orgniastie moet je de afweging maken hoe waarschijnlijk dit is voordat je besluit om af te stappen van het DONL stramien.
+Let er wel op dat wanneer men aangepaste beschrijvingen toch met de buitenwereld wil delen, er een oplossing moet zijn om deze aan te kunnen laten sluiten. Interne eigenschappen
+kunnen vervallen, maar voor waardelijsten zal een mapping nodig zijn.
+
+Ook kan men door middel van [`dcat:Catalog`](#dcat-Catalog) een eigen structuur of hierarchie creeren. 
 
 #### Interne [=DCAT beschrijving=] uitwisselen met DONL

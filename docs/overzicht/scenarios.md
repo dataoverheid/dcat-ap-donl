@@ -25,7 +25,8 @@ In onderstaand voorbeeld zijn zes waardes uit de taxonomie belaidsagenda en de C
         ex:bouwaanbestedingen a dcat:DataService;
           dct:title "Bouw aanbesteding"@nl ;
           dct:accessRights &lt;http://publications.europa.eu/resource/authority/access-right/PUBLIC&gt; ;
-          dct:conformsTo &lt;https://jsonapi.org&gt; ;
+          dct:conformsTo &lt;https://jsonapi.org/format/1.1/&gt; ;
+          dct:conformsTo &lt;https://docs.geostandaarden.nl/api/API-Strategie/&gt; ;
           dct:description "Een overzicht van alle partijen betrokken bij recente aanbestedingen gerelateerd aan bouwen van de overheid" ;
           dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Bouwen_en_verbouwen&gt; ;
           dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening&gt; ;

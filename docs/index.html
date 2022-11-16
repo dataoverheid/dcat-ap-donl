@@ -3985,20 +3985,19 @@ LinkedData aan.</p>
 <aside class="example" id="example-thema-s-kiezen"><div class="marker">
     <a class="self-link" href="#example-thema-s-kiezen">Voorbeeld<bdi> 14</bdi></a><span class="example-title">: Thema's kiezen</span>
   </div>
-    <pre aria-busy="false"><code class="hljs css">    ex:Test a dcat:DataService;
-      dct:title <span class="hljs-string">"Example Data Service"</span>@nl ;
-      dct:accessRights  ;
-      dct:conformsTo  ;
-      dct:description <span class="hljs-string">"Een overzicht van alle partijen betrokken bij recente aanbestedingen gerelateerd aan bouwen van de overheid"</span> ;
-      dcat:theme  ;
-      dcat:theme  ;
-      dcat:theme  ;
-      dcat:theme  ;
-      dcat:theme  ;
-      dcat:theme  ;
-      dcat:endpointURL  ;
-    .
-</code></pre>
+    <pre aria-busy="false"><code class="hljs css">ex:Test a dcat:DataService;
+  dct:title <span class="hljs-string">"Example Data Service"</span>@nl ;
+  dct:accessRights &lt;http://publications.europa.eu/resource/authority/access-right/PUBLIC&gt; ;
+  dct:conformsTo &lt;https://jsonapi.org&gt; ;
+  dct:description <span class="hljs-string">"Een overzicht van alle partijen betrokken bij recente aanbestedingen gerelateerd aan bouwen van de overheid"</span> ;
+  dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Bouwen_en_verbouwen&gt; ;
+  dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening&gt; ;
+  dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur&gt; ;
+  dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Rijksoverheid&gt; ;
+  dcat:theme &lt;https://opendata.stelselcatalogus.nl/doc/clusterbegrip/Organisatie&gt; ;
+  dcat:theme &lt;https://opendata.stelselcatalogus.nl/doc/clusterbegrip/Onroerende_zaak&gt; ;
+  dcat:endpointURL &lt;https:∕∕api.examle.com&gt; ;
+.</code></pre>
 </aside>
 
 <div class="header-wrapper"><h4 id="gesloten-data-beschrijven-met-dcat">Gesloten data beschrijven met DCAT</h4><a class="self-link" href="#gesloten-data-beschrijven-met-dcat" aria-label="Permalink for this Appendix"></a></div>

@@ -11,11 +11,93 @@ Hoe kan DCAT worden gebruikt in de volgende scenarios?
 #### Wat doe ik als ik een REST/JSON wil omschrijven in DCAT?
 
 #### Wat doe ik als ik een Excel wil delen?
+Vaak begint het delen van data met data dat al beschikbaar is. Het bevindt zich dan in een database of een apart programma, maar het makkelijkste voorbeeld is een Excel bestand. Het is een bekende en laagdrempelige manier om data te verzamelen, meestal weten hergebruikers er ook goed raad mee. Het is een goed punt om te starten met het delen van data.
 
-Vaak begint het delen van data met data dat al beschikbaar. Het bevindt zich dan in een database of een apart programma, maar het makkelijkste voorbeeld voor  is een Excel bestand. Het is een laagdrempelige manier om data te verzamelen en meestal weten hergebruikers er goed raad mee. Het is een goed punt om te starten met het delen van data.
+Bij het delen van van een Excel bestand heeft de eerste stap weinig met DCAT te maken. Het is namelijk sterk aan te raden om de data te converteren naar een csv bestand. Wanneer dit wordt gedaan blijft de ruwe data bestaan en gaat de opmaak verloren. Dat klinkt als een verlies, maar deze conversie zorgt ervoor dat de data door heel veel andere programma's (automatisch) gebruikt kan worden. Het kan worden ingeladen en binnen de context van de hergebruiker en zelf worden verwerkt of vormgegeven. Kijk bijvoorbeeld naar deze [migratieketen data](https://data.overheid.nl/dataset/immigratie-vertrek-dtenv-instroom#panel-resources). Deze data kan makkelijk uit Excel komen, maar omdat het als csv beschikbaar is gesteld kan een ander programma er automatisch een visualisatie van maken. Excel zelf kan csv ook goed importeren.
 
-Bij het delen van van een Excel bestand heeft de eerste stap weinig met DCAT te maken. Het is namelijk sterk aan te raden om de data te converteren naar een csv bestand. Wanneer dit wordt gedaan blijft de ruwe data bestaan en gaat de opmaak verloren. Dat klinkt als een verlies, maar deze conversie zorgt er wel voor dat de data door heel veel andere programma's (automatisch) gebruikt kan worden. Het kan worden ingeladen en binnen de context van de hergebruiker zelf worden vormgegeven.
+Door de simpliciteit van csv wordt de data ook minder snel verkeerd geïnterpreteerd. Goede documentatie blijft echter nodig.
 
+Vervolgens kan men kijken naar de DCAT omschrijving. Omdat niet iedereen direct de conversie naar csv zal willen doen zullen csv en Excel beiden worden behandeld.
+
+Het bovengenoemde voorbeeld [Migratieketen: Vertrek - DT&V instroom](https://data.overheid.nl/dataset/immigratie-vertrek-dtenv-instroom) bestaat volgens DCAT uit een aantal onderdelen. De `dcat:dataset`, welke de dataset als concept beschrijft. Wat hierin beschreven wordt is waar de data over gaat, hoe deze tot stand is gekomen en wat voor niet technische eigenschappen deze heeft. Denk bij deze niet technische eigenschappen aan de tijdsperiode van de data of de meetresolutie of gebruikslicentie.
+
+In de DCAT omschrijving (in de voorbeelden in [turtle formaat](https://www.w3.org/TR/2014/REC-turtle-20140225/)) wordt op elke regel eerst de eigenschap weergegeven met vervolgens de waarde van de eigenschap. In dit document is te vinden hoe de eigenschappen precies ingevuld moeten worden, maar we zullen in dit voorbeeld drie uitleggen.
+
+`dct:identifier` vraagt om een `xsd:anyURI`. Deze is voor de identifier van de dataset. Intern kan dat `5305feb3-bafc-46b5-bdba-46dd5eed6afc` zijn, maar omdat deze bij voorkeur raadpleegbaar is vullen we hier de link in die direct naar een pagina over de dataset leidt. In dit geval: https://data.overheid.nl/dataset/5305feb3-bafc-46b5-bdba-46dd5eed6afc.turtle te voldoen 
+
+`dct:title` vraagt om een `rdfs:literal`. Een literal kan worden geïnterpreteerd als vrij textveld. Hier hoeft niet worden voldaan aan enige regels (behalve turtle syntax). Denk bij dit veld wel aan de language tag!
+
+`dcat:theme` vraagt om een `waardelijst overheid:TaxonomieBeleidsagenda`. Wanneer er om een waarde uit een waardelijst wordt gevraagd dient men de gehelde URI van de waarde in te vullen. De mogelijke waardes en bijbehorende URI's zijn te vinden in hoofdstuk 4: [overheid:TaxonomieBeleidsagenda](#waardelijst-overheid-TaxonomieBeleidsagenda). De waardelijsten zijn in te zien door op de links ernaartoe te klikken, bv de RDF/XML. Hier kan worden gezocht naar de het passende thema 'Immigratie'. Vervolgens laat deze zien dat het label 'Immigratie' toebehoord aan "http://standaarden.overheid.nl/owms/terms/Immigratie_(thema)". Dit is wat er wordt ingevuld in `dcat:theme`
+
+Voor het migratieketenvoorbeeld zou deze minimale vorm van `dcat:dataset` er als volgt uitzien (Het onderstaande `dct:description` is om praktische redenen verkort):
+
+<aside class="example" title="Begin, minimale dataset">
+	<pre>
+		<code>
+			&lt;https:&#x2215;&#x2215;data.overheid.nl&#x2215;dataset&#x2215;immigratie-vertrek-dtenv-instroom&gt;
+			a dcat:Dataset;
+				dct:identifier &lt;https://data.overheid.nl/dataset/5305feb3-bafc-46b5-bdba-46dd5eed6afc&gt;;
+				dct:title "Migratieketen: Vertrek - DT&V instroom"@nl;
+				dct:description "Zie de ‘Staat van Migratie’ of ‘Rapportage Vreemdelingenketen’ (tot 2020) voor een inhoudelijke toelichting op de data in dit dataset."@nl;
+				dct:license &lt;http://creativecommons.org/publicdomain/zero/1.0/deed.nl&gt;;
+				dct:creator &lt;http://standaarden.overheid.nl/owms/terms/minjenv&gt;;
+				dct:publisher &lt;http://standaarden.overheid.nl/owms/terms/minjenv&gt;;
+				dcat:contactPoint [a vcard:Organization ;
+					vcard:fn "minjenv";
+					vcard:hasEmail "opendata@overheid.nl";
+					];
+				dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Immigratie_(thema)&gt;;
+			.
+		</code>
+	</pre>
+</aside>
+
+Er is alleen wel meer informatie dan de minimale set bekend voor deze dataset. Met de extra informatie erbij ziet het er als volgt uit:
+
+<aside class="example" title="Dataset">
+	<pre>
+		<code>
+			&lt;https:&#x2215;&#x2215;data.overheid.nl&#x2215;dataset&#x2215;immigratie-vertrek-dtenv-instroom&gt;
+			a dcat:Dataset;
+				dct:identifier &lt;https://data.overheid.nl/dataset/5305feb3-bafc-46b5-bdba-46dd5eed6afc&gt;;
+				dct:title "Migratieketen: Vertrek - DT&V instroom"@nl;
+				dct:description "Zie de ‘Staat van Migratie’ of ‘Rapportage Vreemdelingenketen’ (tot 2020) voor een inhoudelijke toelichting op de data in dit dataset."@nl;
+				dct:license &lt;http://creativecommons.org/publicdomain/zero/1.0/deed.nl&gt;;
+				dct:creator &lt;http://standaarden.overheid.nl/owms/terms/minjenv&gt;;
+				dct:publisher &lt;http://standaarden.overheid.nl/owms/terms/minjenv&gt;;
+				dcat:contactPoint [a vcard:Organization ;
+					vcard:fn "minjenv";
+					vcard:hasEmail "opendata@overheid.nl";
+					];
+				dcat:theme &lt;http://standaarden.overheid.nl/owms/terms/Immigratie_(thema)&gt;;
+                dct:accessRights
+                keyword/tag
+                resource language
+                landing page
+                conforms to
+                frequency maandelijks
+			.
+		</code>
+	</pre>
+</aside>
+
+Deze beschrijving behandeld alleen de dataset als concept. Het beschrijft nog niet hoe deze gepresenteerd wordt. De reden daarvoor is dat dit op verschillende manieren kan. Deze dataset kan bijvoorbeeld zowel als Excel als csv bestand worden gepresenteerd. Het gaat dan om dezelfde data en dus dezelfde `dcat:dataset`.
+
+Om deze verschillende presentaties te maken worden `dcat:distributions` toegevoegd.
+
+<aside class="example" title="Minimale distributie">
+	<pre>
+		<code>
+			<Vertrek-DTenVinstroom202022.csv> a dcat:Distribution ;
+				dcat:accessURL <https://data.overheid.nl/sites/default/files/dataset/5305feb3-bafc-46b5-bdba-46dd5eed6afc/resources/Vertrek%20-%20DTenV%20instroom%202022.csv> ;
+				dct:format <http:∕∕publications.europa.eu∕resource∕authority∕file-type∕CSV> ;
+				dct:title "Vertrek - DTenV Instroom 2022"@nl;
+				dct:description "Indien de databron direct downloadbaar is, kunt u dit in dit veld aangeven. De hergebruiker kan dan direct de databron downloaden."@nl;
+				dct:license <http:∕∕creativecommons.org∕publicdomain∕zero∕1.0∕deed.nl>;
+			.
+		</code>
+	</pre>
+</aside>
 
 
 
@@ -37,7 +119,6 @@ wordt op [[[DONL]]] verplicht om consistentie te behouden, maar een eigen thema 
 Let er wel op dat wanneer men aangepaste beschrijvingen toch met de buitenwereld wil delen, er een oplossing moet zijn om deze aan te kunnen laten sluiten. Interne eigenschappen kunnen vervallen, maar voor waardelijsten zal een mapping nodig zijn.
 
 Ook kan men door middel van [`dcat:Catalog`](#dcat-Catalog) een eigen structuur of hiërarchie creëren.
-
 
 #### Interne [=DCAT beschrijving=] uitwisselen met DONL
 

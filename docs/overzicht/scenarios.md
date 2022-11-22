@@ -12,6 +12,14 @@ Hoe kan DCAT worden gebruikt in de volgende scenarios?
 
 #### Wat doe ik als ik een Excel wil delen?
 
+Vaak begint het delen van data met data dat al beschikbaar. Het bevindt zich dan in een database of een apart programma, maar het makkelijkste voorbeeld voor  is een Excel bestand. Het is een laagdrempelige manier om data te verzamelen en meestal weten hergebruikers er goed raad mee. Het is een goed punt om te starten met het delen van data.
+
+Bij het delen van van een Excel bestand heeft de eerste stap weinig met DCAT te maken. Het is namelijk sterk aan te raden om de data te converteren naar een csv bestand. Wanneer dit wordt gedaan blijft de ruwe data bestaan en gaat de opmaak verloren. Dat klinkt als een verlies, maar deze conversie zorgt er wel voor dat de data door heel veel andere programma's (automatisch) gebruikt kan worden. Het kan worden ingeladen en binnen de context van de hergebruiker zelf worden vormgegeven.
+
+
+
+
+
 #### [=DCAT beschrijving=] voor intern gebruik ontwikkelen
 
 DCAT dient als vocabulaire om het delen van data tussen verschillende partijen makkelijker te maken. Maar het kan ook erg goed worden gebruikt om interne data te beschrijven. Binnen organisaties kunnen verschillende afdelingen immers als partij worden gezien. En overzicht is op elk niveau waardevol.

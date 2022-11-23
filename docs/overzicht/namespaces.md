@@ -8,7 +8,6 @@ Dit toepassingsprofiel maakt gebruik van de namespaces zoals weergegeven in de o
 | `dcat`     | http://www.w3.org/ns/dcat                 |
 | `dcatap`   | http://data.europa.eu/r5r/                |
 | `dct`      | http://purl.org/dc/terms/                 |
-| `donl`     | TODO: URI bepalen                         |
 | `foaf`     | http://xmlns.com/foaf/0.1/                |
 | `overheid` | http://standaarden.overheid.nl/owms/terms |
 | `prov`     | http://www.w3.org/ns/odrl/2/              |

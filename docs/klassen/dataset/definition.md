@@ -3,7 +3,7 @@
 In de onderstaande tabel worden de eigenschappen van de `dcat:Dataset` beschreven.
 
 | **Eigenschap**                                                                     | Kardinaliteit | Aanwezigheid | Herkomst |
-| ---------------------------------------------------------------------------------- | ------------- | ------------ | -------- |
+|------------------------------------------------------------------------------------|---------------|--------------|----------|
 | [**identifier**](#dct-identifier)                                                  | `1..1`        | Mandatory    | Resource |
 | [**title**](#dct-title)                                                            | `1..n`        | Mandatory    | Resource |
 | [**description**](#dct-description)                                                | `1..n`        | Mandatory    | Resource |
@@ -33,7 +33,7 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:Dataset` beschreve
 De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in de dataset toegankelijk is gemaakt.
 
 | Definitie      | Waarde              |
-| -------------- | ------------------- |
+|----------------|---------------------|
 | RDF Eigenschap | `dcat:distribution` |
 | Bereik         | `dcat:Distribution` |
 | Kardinaliteit  | `0..n`              |
@@ -44,7 +44,7 @@ De distributie van de dataset, waarin de data-eigenaar beschrijft hoe de data in
 Een indicatie van de frequentie waarmee de dataset wordt ververst.
 
 | Definitie      | Waarde                                                    |
-| -------------- | --------------------------------------------------------- |
+|----------------|-----------------------------------------------------------|
 | RDF Eigenschap | `dct:accrualPeriodicity`                                  |
 | Bereik         | [`waardelijst mdr:Frequency`](#waardelijst-mdr-Frequency) |
 | Kardinaliteit  | `0..1`                                                    |
@@ -52,13 +52,13 @@ Een indicatie van de frequentie waarmee de dataset wordt ververst.
 
 ### spatial/geographical coverage {#dct-spatial}
 
-Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Het veld kan worden gevuld met de benaming 
+Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Het veld kan worden gevuld met de benaming
 van een gebied in de vorm van een URI of de coördinaten ervan.
 
 Voor de invulling van deze eigenschap wordt vereist dat een van de onderstaande opties gekozen wordt:
 
 | Naam                                                                            | Type               | Gebruik     |
-| ------------------------------------------------------------------------------- | ------------------ | ----------- |
+|---------------------------------------------------------------------------------|--------------------|-------------|
 | [`waardelijst overheid:Koninkrijksdeel`](#waardelijst-overheid-Koninkrijksdeel) | Waardelijst        | Recommended |
 | [`waardelijst overheid:Provincie`](#waardelijst-overheid-Provincie)             | Waardelijst        | Recommended |
 | [`waardelijst overheid:Waterschap`](#waardelijst-overheid-Waterschap)           | Waardelijst        | Recommended |
@@ -68,18 +68,18 @@ Voor de invulling van deze eigenschap wordt vereist dat een van de onderstaande 
 | [[[OWMS_POSTCODEHUISNUMMER]]]                                                   | Syntaxcodeerschema | Optional    |
 
 De voorkeur gaat uit naar het gebruik van een van de genoemde OWMS4.0 waardelijsten. Het is echter zo dat deze lijsten
-niet altijd een oplossing bieden voor het duiden van een geografisch gebied. Voor die gevallen worden een drietal 
+niet altijd een oplossing bieden voor het duiden van een geografisch gebied. Voor die gevallen worden een drietal
 alternatieven aangeboden.
 
-- [[[GEONAMES]]] is een internationale database van locatiegegevens. Wanneer een locatie niet in de OWMS4.0 
+- [[[GEONAMES]]] is een internationale database van locatiegegevens. Wanneer een locatie niet in de OWMS4.0
   waardelijsten staat, dan kan deze database geraadpleegd worden om alsnog een locatiereferentie op te nemen.
-- [[[OWMS_EPSG28992]]] is een [[[OWMS_SYNTAXCODEERSCHEMA]]] waarmee coordinaten in het [[[EPSG28992]]] stelsel opgenomen 
+- [[[OWMS_EPSG28992]]] is een [[[OWMS_SYNTAXCODEERSCHEMA]]] waarmee coordinaten in het [[[EPSG28992]]] stelsel opgenomen
   kunnen worden. Deze optie maakt het mogelijk om bijvoorbeeld een 'bounding-box' op te nemen als locatiegegeven.
-- [[[OWMS_POSTCODEHUISNUMMER]]] is een [[[OWMS_SYNTAXCODEERSCHEMA]]] waarmee verwezen kan worden naar een (of een set 
+- [[[OWMS_POSTCODEHUISNUMMER]]] is een [[[OWMS_SYNTAXCODEERSCHEMA]]] waarmee verwezen kan worden naar een (of een set
   van) combinaties van postcodes en huisnummers.
 
 | Definitie      | Locatie                                   |
-| -------------- | ----------------------------------------- |
+|----------------|-------------------------------------------|
 | RDF Eigenschap | `dct:spatial`                             |
 | Bereik         | De naam of de coördinaten van een gebied. |
 | Kardinaliteit  | `0..n`                                    |
@@ -92,7 +92,7 @@ alternatieven aangeboden.
 De tijdsperiode waar de dataset betrekking op heeft. Zie [example-temporal-coverage](#temporal-coverage-0) voor een voorbeeld.
 
 | Definitie      | Waarde             |
-| -------------- | ------------------ |
+|----------------|--------------------|
 | RDF Eigenschap | `dct:temporal`     |
 | Bereik         | `dct:PeriodOfTime` |
 | Kardinaliteit  | `0..1`             |

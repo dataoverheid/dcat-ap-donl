@@ -48,17 +48,34 @@ profiel worden de `3.0` versies van deze licenties ook aangeboden. Dit omdat bli
 |--------------|----------------------------------------------------------------------------------------|
 | Turtle       | https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/licences.ttl |
 
-#### donl:Organization {#waardelijst-donl-Organization}
+#### donl:RelevantOrganization {#waardelijst-donl-RelevantOrganization}
+
+#### donl:Role {#waardelijst-donl-Role}
+
+Deze taxonomie bevat concepten die beschrijven in welke capaciteit een persoon of organisatie betrokken is (of is
+geweest) bij een bron.
+
+Het [[[DCATAP_21]]] beveelt de [[[ISO19115_ROLECODE]]] taxonomie aan. Deze is echter niet in linked data vorm
+beschikbaar. Om deze reden biedt dit profiel zelf een `skos:ConceptScheme` aan met daarin opgenomen de `CI_RoleCode`
+concepten.
+
+Deze lijst moet gebruikt worden bij het invullen van het `prov:hadRole` eigenschap, wat onderdeel is van het
+[`prov:qualifiedAttribution`](#prov-qualifiedAttribution) eigenschap, die vanuit [`dcat:Resource`](#dcat-Resource)
+aangeboden wordt.
+
+| Serialisatie | Adres                                                                               |
+|--------------|-------------------------------------------------------------------------------------|
+| Turtle       | https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/roles.ttl |
 
 #### donl:SupportingRole {#waardelijst-donl-SupportingRole}
 
 Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron (het kan bijvoorbeeld
 aangeven dat een distributie documentatie bevat van een dataset). Deze waardelijst heette in [[[DCATAPDONL_11]]]
-`donl:DistributionType`. 
+`donl:DistributionType`.
 
 De lijst is aanzienlijk ingekort aangezien een aantal 'types' herleidbaar zijn uit andere metadata-eigenschappen. Zo
 zijn de concepten `DOWNLOAD` en `WEBSERVICE` niet meegenomen uit de oude lijst aangezien deze informatie al geduid wordt
-door middel van de eigenschappen `dcat:downloadURL` en/of `dcat:accessService` die op `dcat:Distribution` niveau 
+door middel van de eigenschappen `dcat:downloadURL` en/of `dcat:accessService` die op `dcat:Distribution` niveau
 aanwezig zijn.
 
 <aside class="note">
@@ -82,7 +99,7 @@ Bevat concepten die de mimetype van een bron beschrijven. Deze lijst is raadplee
 
 #### mdr:Filetype {#waardelijst-mdr-Filetype}
 
-Bevat concepten die het bestandsformaat van een bron beschrijven. Dit is een Europese taxonomie raadpleegbaar via 
+Bevat concepten die het bestandsformaat van een bron beschrijven. Dit is een Europese taxonomie raadpleegbaar via
 [[[MDR_FILETYPE]]].
 
 | Serialisatie | Adres                                                       |
@@ -91,7 +108,7 @@ Bevat concepten die het bestandsformaat van een bron beschrijven. Dit is een Eur
 
 #### mdr:Frequency {#waardelijst-mdr-Frequency}
 
-Bevat concepten die beschrijven met welke frequentie een bron verwacht bijgewerkt te worden. Dit is een Europese 
+Bevat concepten die beschrijven met welke frequentie een bron verwacht bijgewerkt te worden. Dit is een Europese
 taxonomie raadpleegbaar via [[[MDR_FREQUENCY]]].
 
 | Serialisatie | Adres                                                       |
@@ -100,7 +117,7 @@ taxonomie raadpleegbaar via [[[MDR_FREQUENCY]]].
 
 #### overheid:Gemeente {#waardelijst-overheid-Gemeente}
 
-Deze taxonomie bevat concepten die de gemeenten van de Nederlandse overheid beschrijven. Deze lijst komt uit de 
+Deze taxonomie bevat concepten die de gemeenten van de Nederlandse overheid beschrijven. Deze lijst komt uit de
 [[[OWMS_40]]] en is raadpleegbaar via [[[OWMS_GEMEENTE]]].
 
 | Serialisatie | Adres                                                   |
@@ -120,9 +137,20 @@ uit de [[[OWMS_40]]] en is raadpleegbaar via [[[OWMS_KONINKRIJKSDEEL]]].
 | RDF/XML      | https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel.rdf |
 | N3           | https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel.n3  |
 
+#### overheid:Organisatie {#waardelijst-overheid-Organisatie}
+
+Deze taxonomie bevat concepten die de overheidsorganisaties van de Nederland beschrijven. Deze lijst komt uit de
+[[[OWMS_40]]] en is raadpleegbaar via [[[OWMS_ORGANISATIE]]].
+
+| Serialisatie | Adres                                                      |
+|--------------|------------------------------------------------------------|
+| XML          | https://standaarden.overheid.nl/owms/terms/Organisatie.xml |
+| RDF/XML      | https://standaarden.overheid.nl/owms/terms/Organisatie.rdf |
+| N3           | https://standaarden.overheid.nl/owms/terms/Organisatie.n3  |
+
 #### overheid:Provincie {#waardelijst-overheid-Provincie}
 
-Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Deze lijst komt uit de 
+Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Deze lijst komt uit de
 [[[OWMS_40]]] en is raadpleegbaar via [[[OWMS_PROVINCIE]]].
 
 | Serialisatie | Adres                                                    |
@@ -133,7 +161,7 @@ Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid bes
 
 #### overheid:Waterschap {#waardelijst-overheid-Waterschap}
 
-Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Deze lijst komt uit de 
+Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Deze lijst komt uit de
 [[[OWMS_40]]] en is raadpleegbaar via [[[OWMS_WATERSCHAP]]].
 
 | Serialisatie | Adres                                                     |
@@ -144,7 +172,7 @@ Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid 
 
 #### overheid:TaxonomieBeleidsagenda {#waardelijst-overheid-TaxonomieBeleidsagenda}
 
-Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Deze lijst komt uit de 
+Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Deze lijst komt uit de
 [[[OWMS_40]]] en is raadpleegbaar via [[[OWMS_TAXONOMIEBELEIDSAGENDA]]].
 
 > Er wordt nog onderzocht hoe de mapping van de [[[OWMS_TAXONOMIEBELEIDSAGENDA]]] naar de [[[MDR_DATATHEME]]] aangeboden
@@ -161,7 +189,7 @@ Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordig
 Bevat concepten die beschrijven welk algorithme gebruikt is om tot een hash te komen die als checksum dient van een
 bron. Alle concepten komen uit de [[[SPDX_CHECKSUMALGORITHM]]].
 
-`spdx:ChecksumAlgorithm` is niet als LinkedData beschikbaar. Om deze reden biedt [[[DONL]]] deze lijst zelf als 
+`spdx:ChecksumAlgorithm` is niet als LinkedData beschikbaar. Om deze reden biedt [[[DONL]]] deze lijst zelf als
 LinkedData aan.
 
 | Serialisatie | Adres                                                                         |

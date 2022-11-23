@@ -3,7 +3,7 @@
 In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` beschreven.
 
 | **Eigenschap**                                                                     | Kardinaliteit | Aanwezigheid | Herkomst    |
-| ---------------------------------------------------------------------------------- | ------------- | ------------ | ----------- |
+|------------------------------------------------------------------------------------|---------------|--------------|-------------|
 | [**identifier**](#dct-identifier)                                                  | `1..1`        | Mandatory    | Resource    |
 | [**title**](#dct-title)                                                            | `1..n`        | Mandatory    | Resource    |
 | [**description**](#dct-description)                                                | `1..n`        | Mandatory    | Resource    |
@@ -27,7 +27,7 @@ In de onderstaande tabel worden de eigenschappen van de `dcat:DataService` besch
 | [**endpoint description**](#dcat-endpointDescription) <em class="new">nieuw</em>   | `1..1`        | Mandatory    | Dataservice |
 | [**serves dataset**](#dcat-servesDataset) <em class="new">nieuw</em>               | `0..n`        | Recommended  | Dataservice |
 
-### endpoint URL <em class="new">nieuw</em> {#dcat-endpointURL} 
+### endpoint URL <em class="new">nieuw</em> {#dcat-endpointURL}
 
 De locatie of het endpoint van de service (over het algemeen een via HTTP raadpleegbaar adres).
 
@@ -41,7 +41,7 @@ De locatie of het endpoint van de service (over het algemeen een via HTTP raadpl
 ### endpoint description <em class="new">nieuw</em> {#dcat-endpointDescription}
 
 Een verwijzing naar de documentatie die de DataService beschrijft. Denk hierbij aan een verwijzing naar een Open Api
-Specification (Swagger), een `OGC:WFS` of `OGC:WMS` getCapabilities aanroep, een `SPARQL Service Description` en 
+Specification (Swagger), een `OGC:WFS` of `OGC:WMS` getCapabilities aanroep, een `SPARQL Service Description` en
 dergelijke.
 
 Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeboden service.
@@ -54,7 +54,7 @@ Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeb
 | Gebruik        | Mandatory                  |
 
 <aside class="note">
-Hoewel deze eigenschap qua naamgeving veel lijkt op <a href="#dct-description">`dct:description`</a>, heeft deze 
+Hoewel deze eigenschap qua naamgeving veel lijkt op <a href="#dct-description">`dct:description`</a>, heeft deze
 eigenschap een aanzienlijk andere definitie!
 </aside>
 

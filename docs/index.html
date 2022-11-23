@@ -368,14 +368,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "tooi"
     }
   },
-  "publishISODate": "2022-11-16T00:00:00.000Z",
-  "generatedSubtitle": "16 november 2022"
+  "publishISODate": "2022-11-23T00:00:00.000Z",
+  "generatedSubtitle": "23 november 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css"></head>
 <body class="h-entry informative" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">DCAT-AP-DONL 2.0</h1> 
-    <p id="w3c-state"> <time class="dt-published" datetime="2022-11-16">16 november 2022</time></p>
+    <p id="w3c-state"> <time class="dt-published" datetime="2022-11-23">23 november 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -425,7 +425,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
     <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2>
 <p>Dit document beschrijft de specificatie van het toepassingsprofiel van DCAT 2 voor data.overheid.nl. Het is een doorontwikkeling van <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a> dat rekening houdt met het toepassingsprofiel <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a> van de EU.</p>
-</section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">2. </bdi>Overzicht van het toepassingsprofiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#relatie-andere-profielen"><bdi class="secno">2.1 </bdi>Relatie andere profielen</a></li><li class="tocline"><a class="tocxref" href="#verschillen"><bdi class="secno">2.2 </bdi>Verschillen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie-van-klasse-dcat-dataservice"><bdi class="secno">2.2.1 </bdi>Introductie van klasse <span class="formerLink"><code>dcat:DataService</code></span></a></li><li class="tocline"><a class="tocxref" href="#nieuwe-eigenschappen"><bdi class="secno">2.2.2 </bdi>Nieuwe eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#namespaces"><bdi class="secno">2.3 </bdi>Namespaces</a></li><li class="tocline"><a class="tocxref" href="#omschrijving-eigenschappen"><bdi class="secno">2.4 </bdi>Omschrijving eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#overerving"><bdi class="secno">2.5 </bdi>Overerving</a></li><li class="tocline"><a class="tocxref" href="#ondersteuning-voor-meertaligheid"><bdi class="secno">2.6 </bdi>Ondersteuning voor meertaligheid</a></li><li class="tocline"><a class="tocxref" href="#vindbaarheid"><bdi class="secno">2.7 </bdi>Vindbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tekstuele-beschrijvingen"><bdi class="secno">2.7.1 </bdi>Tekstuele beschrijvingen</a></li><li class="tocline"><a class="tocxref" href="#thema-s-uit-een-voorgedefinieerde-lijst"><bdi class="secno">2.7.2 </bdi>Thema's uit een voorgedefinieerde lijst</a></li><li class="tocline"><a class="tocxref" href="#verwijzingen-naar-standaarden-op-het-web"><bdi class="secno">2.7.3 </bdi>Verwijzingen naar standaarden op het web</a></li><li class="tocline"><a class="tocxref" href="#eigenschap-type-wordt-niet-gebruikt"><bdi class="secno">2.7.4 </bdi>Eigenschap "Type" wordt niet gebruikt</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#Klassen"><bdi class="secno">3. </bdi>Klassen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-Dataset"><bdi class="secno">3.1 </bdi>Dataset (<code>dcat:Dataset</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">3.1.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-distribution1"><bdi class="secno">3.1.1.1 </bdi>distribution</a></li><li class="tocline"><a class="tocxref" href="#dct-accrualPeriodicity"><bdi class="secno">3.1.1.2 </bdi>frequency</a></li><li class="tocline"><a class="tocxref" href="#dct-spatial"><bdi class="secno">3.1.1.3 </bdi>spatial/geographical coverage</a></li><li class="tocline"><a class="tocxref" href="#dct-temporal"><bdi class="secno">3.1.1.4 </bdi>temporal coverage</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen"><bdi class="secno">3.1.2 </bdi>Niet overgenomen eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#voorbeelden"><bdi class="secno">3.1.3 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen"><bdi class="secno">3.1.3.1 </bdi>Minimale set van eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#niet-publieke-datasets"><bdi class="secno">3.1.3.2 </bdi>Niet publieke datasets</a></li><li class="tocline"><a class="tocxref" href="#temporal-coverage-0"><bdi class="secno">3.1.3.3 </bdi>Temporal coverage</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-Distribution"><bdi class="secno">3.2 </bdi>Distributie (<code>dcat:Distribution</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-0"><bdi class="secno">3.2.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-accessURL"><bdi class="secno">3.2.1.1 </bdi>accessURL</a></li><li class="tocline"><a class="tocxref" href="#dct-format"><bdi class="secno">3.2.1.2 </bdi>format</a></li><li class="tocline"><a class="tocxref" href="#dct-title1"><bdi class="secno">3.2.1.3 </bdi>title</a></li><li class="tocline"><a class="tocxref" href="#dct-description1"><bdi class="secno">3.2.1.4 </bdi>description</a></li><li class="tocline"><a class="tocxref" href="#dct-license1"><bdi class="secno">3.2.1.5 </bdi>license</a></li><li class="tocline"><a class="tocxref" href="#dcat-accessService"><bdi class="secno">3.2.1.6 </bdi>accessService <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dcat-downloadURL"><bdi class="secno">3.2.1.7 </bdi>downloadURL</a></li><li class="tocline"><a class="tocxref" href="#dct-modified1"><bdi class="secno">3.2.1.8 </bdi>modified</a></li><li class="tocline"><a class="tocxref" href="#dct-issued1"><bdi class="secno">3.2.1.9 </bdi>issued</a></li><li class="tocline"><a class="tocxref" href="#dct-language1"><bdi class="secno">3.2.1.10 </bdi>language</a></li><li class="tocline"><a class="tocxref" href="#dct-rights1"><bdi class="secno">3.2.1.11 </bdi>rights</a></li><li class="tocline"><a class="tocxref" href="#dcat-byteSize"><bdi class="secno">3.2.1.12 </bdi>byteSize</a></li><li class="tocline"><a class="tocxref" href="#dct-conformsTo1"><bdi class="secno">3.2.1.13 </bdi>conformsTo <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dct-mediaType"><bdi class="secno">3.2.1.14 </bdi>mediaType</a></li><li class="tocline"><a class="tocxref" href="#spdx-checksum"><bdi class="secno">3.2.1.15 </bdi>checksum</a></li><li class="tocline"><a class="tocxref" href="#foaf-page1"><bdi class="secno">3.2.1.16 </bdi>documentation</a></li><li class="tocline"><a class="tocxref" href="#donl-supportingRole"><bdi class="secno">3.2.1.17 </bdi>supportingRole</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-0"><bdi class="secno">3.2.2 </bdi>Niet overgenomen eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#voorbeelden-0"><bdi class="secno">3.2.3 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen-0"><bdi class="secno">3.2.3.1 </bdi>Minimale set van eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#distributie-van-een-collectie-van-bestanden"><bdi class="secno">3.2.3.2 </bdi>Distributie van een collectie van bestanden</a></li><li class="tocline"><a class="tocxref" href="#documentatie-als-op-zichzelf-staande-distributie"><bdi class="secno">3.2.3.3 </bdi>Documentatie als op zichzelf staande distributie</a></li><li class="tocline"><a class="tocxref" href="#checksum-0"><bdi class="secno">3.2.3.4 </bdi>Checksum</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-DataService"><bdi class="secno">3.3 </bdi>Dataservice (<code>dcat:DataService</code>) <em class="new">nieuw</em></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-1"><bdi class="secno">3.3.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-endpointURL"><bdi class="secno">3.3.1.1 </bdi>endpoint URL <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dcat-endpointDescription"><bdi class="secno">3.3.1.2 </bdi>endpoint description <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dcat-servesDataset"><bdi class="secno">3.3.1.3 </bdi>serves dataset <em class="new">nieuw</em></a></li></ol></li><li class="tocline"><a class="tocxref" href="#voorbeelden-1"><bdi class="secno">3.3.2 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen-1"><bdi class="secno">3.3.2.1 </bdi>Minimale set van eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#een-dataservice-die-datasets-ontsluit"><bdi class="secno">3.3.2.2 </bdi>Een DataService die Datasets ontsluit</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-Resource"><bdi class="secno">3.4 </bdi>Resource (<code>dcat:Resource</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-2"><bdi class="secno">3.4.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dct-identifier"><bdi class="secno">3.4.1.1 </bdi>identifier</a></li><li class="tocline"><a class="tocxref" href="#dct-title"><bdi class="secno">3.4.1.2 </bdi>title</a></li><li class="tocline"><a class="tocxref" href="#dct-description"><bdi class="secno">3.4.1.3 </bdi>description</a></li><li class="tocline"><a class="tocxref" href="#dct-license"><bdi class="secno">3.4.1.4 </bdi>license</a></li><li class="tocline"><a class="tocxref" href="#dct-creator"><bdi class="secno">3.4.1.5 </bdi>creator <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dct-publisher"><bdi class="secno">3.4.1.6 </bdi>publisher</a></li><li class="tocline"><a class="tocxref" href="#dcat-contactPoint"><bdi class="secno">3.4.1.7 </bdi>contact point</a></li><li class="tocline"><a class="tocxref" href="#dcat-theme"><bdi class="secno">3.4.1.8 </bdi>theme/category</a></li><li class="tocline"><a class="tocxref" href="#dcat-keyword"><bdi class="secno">3.4.1.9 </bdi>keyword/tag</a></li><li class="tocline"><a class="tocxref" href="#dcat-landingPage"><bdi class="secno">3.4.1.10 </bdi>landing page</a></li><li class="tocline"><a class="tocxref" href="#dct-accessRights"><bdi class="secno">3.4.1.11 </bdi>access rights</a></li><li class="tocline"><a class="tocxref" href="#dct-language"><bdi class="secno">3.4.1.12 </bdi>resource language</a></li><li class="tocline"><a class="tocxref" href="#adms-identifier"><bdi class="secno">3.4.1.13 </bdi>other identifier</a></li><li class="tocline"><a class="tocxref" href="#dct-conformsTo"><bdi class="secno">3.4.1.14 </bdi>conforms to <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#donl-grondslag"><bdi class="secno">3.4.1.15 </bdi>legal foundation</a></li><li class="tocline"><a class="tocxref" href="#dct-issued"><bdi class="secno">3.4.1.16 </bdi>release date</a></li><li class="tocline"><a class="tocxref" href="#dct-modified"><bdi class="secno">3.4.1.17 </bdi>update/modification date</a></li><li class="tocline"><a class="tocxref" href="#dct-rights"><bdi class="secno">3.4.1.18 </bdi>rights</a></li><li class="tocline"><a class="tocxref" href="#prov-qualifiedAttribution"><bdi class="secno">3.4.1.19 </bdi>qualified attribution <em class="new">nieuw</em></a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-1"><bdi class="secno">3.4.2 </bdi>Niet overgenomen eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#voorbeelden-2"><bdi class="secno">3.4.3 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#contact-point-0"><bdi class="secno">3.4.3.1 </bdi>Contact point</a></li><li class="tocline"><a class="tocxref" href="#other-identifier-0"><bdi class="secno">3.4.3.2 </bdi>Other identifier</a></li><li class="tocline"><a class="tocxref" href="#qualified-attribution"><bdi class="secno">3.4.3.3 </bdi>Qualified attribution</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#donl-LegalFoundation"><bdi class="secno">3.5 </bdi>Legal foundation (<code>donl:LegalFoundation</code>) <em class="new">nieuw</em></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-3"><bdi class="secno">3.5.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dct-title2"><bdi class="secno">3.5.1.1 </bdi>title</a></li><li class="tocline"><a class="tocxref" href="#foaf-homepage"><bdi class="secno">3.5.1.2 </bdi>legal domain</a></li><li class="tocline"><a class="tocxref" href="#donl-juriconnectCode"><bdi class="secno">3.5.1.3 </bdi>juriconnect code</a></li></ol></li><li class="tocline"><a class="tocxref" href="#voorbeelden-3"><bdi class="secno">3.5.2 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen-2"><bdi class="secno">3.5.2.1 </bdi>Minimale set van eigenschappen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-Catalog"><bdi class="secno">3.6 </bdi>Catalogus (<code>dcat:Catalog</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-4"><bdi class="secno">3.6.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#foaf-homepage1"><bdi class="secno">3.6.1.1 </bdi>homepage</a></li><li class="tocline"><a class="tocxref" href="#dcat-dataset1"><bdi class="secno">3.6.1.2 </bdi>dataset</a></li><li class="tocline"><a class="tocxref" href="#dcat-service"><bdi class="secno">3.6.1.3 </bdi>service <em class="new">nieuw</em> </a></li><li class="tocline"><a class="tocxref" href="#dcat-catalog1"><bdi class="secno">3.6.1.4 </bdi>catalog <em class="new">nieuw</em> </a></li><li class="tocline"><a class="tocxref" href="#dcat-themeTaxonomy"><bdi class="secno">3.6.1.5 </bdi>themes</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-2"><bdi class="secno">3.6.2 </bdi>Niet overgenomen eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-CatalogRecord"><bdi class="secno">3.7 </bdi>Catalogusrecord (<code>dcat:CatalogRecord</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-5"><bdi class="secno">3.7.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#foaf-primaryTopic"><bdi class="secno">3.7.1.1 </bdi>primary topic</a></li><li class="tocline"><a class="tocxref" href="#dct-modified2"><bdi class="secno">3.7.1.2 </bdi>modified</a></li><li class="tocline"><a class="tocxref" href="#dct-issued2"><bdi class="secno">3.7.1.3 </bdi>listing date</a></li><li class="tocline"><a class="tocxref" href="#dct-conformsTo2"><bdi class="secno">3.7.1.4 </bdi>conformsTo <em class="new">nieuw</em> </a></li><li class="tocline"><a class="tocxref" href="#dct-source"><bdi class="secno">3.7.1.5 </bdi>source metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-3"><bdi class="secno">3.7.2 </bdi>Niet overgenomen eigenschappen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#waardelijsten"><bdi class="secno">4. </bdi>Waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">4.1 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#overzicht-0"><bdi class="secno">4.2 </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardelijst-donl-AccessRights"><bdi class="secno">4.2.1 </bdi>donl:AccessRights</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-Language"><bdi class="secno">4.2.2 </bdi>donl:Language</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-License"><bdi class="secno">4.2.3 </bdi>donl:License</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-Organization"><bdi class="secno">4.2.4 </bdi>donl:Organization</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-SupportingRole"><bdi class="secno">4.2.5 </bdi>donl:SupportingRole</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-iana-Mediatype"><bdi class="secno">4.2.6 </bdi>iana:Mediatype</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-mdr-Filetype"><bdi class="secno">4.2.7 </bdi>mdr:Filetype</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-mdr-Frequency"><bdi class="secno">4.2.8 </bdi>mdr:Frequency</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Gemeente"><bdi class="secno">4.2.9 </bdi>overheid:Gemeente</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Koninkrijksdeel"><bdi class="secno">4.2.10 </bdi>overheid:Koninkrijksdeel</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Provincie"><bdi class="secno">4.2.11 </bdi>overheid:Provincie</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Waterschap"><bdi class="secno">4.2.12 </bdi>overheid:Waterschap</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-TaxonomieBeleidsagenda"><bdi class="secno">4.2.13 </bdi>overheid:TaxonomieBeleidsagenda</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-spdx-ChecksumAlgorithm"><bdi class="secno">4.2.14 </bdi>spdx:ChecksumAlgorithm</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#scenarios"><bdi class="secno">A. </bdi>Scenarios</a></li><li class="tocline"><a class="tocxref" href="#termenlijst"><bdi class="secno">B. </bdi>Termenlijst</a></li><li class="tocline"><a class="tocxref" href="#contributors"><bdi class="secno">C. </bdi>Contributors</a></li><li class="tocline"><a class="tocxref" href="#issue-summary"><bdi class="secno">D. </bdi>Lijst met issues</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">E. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">F. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">F.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+</section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">2. </bdi>Overzicht van het toepassingsprofiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#relatie-andere-profielen"><bdi class="secno">2.1 </bdi>Relatie andere profielen</a></li><li class="tocline"><a class="tocxref" href="#verschillen"><bdi class="secno">2.2 </bdi>Verschillen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie-van-klasse-dcat-dataservice"><bdi class="secno">2.2.1 </bdi>Introductie van klasse <span class="formerLink"><code>dcat:DataService</code></span></a></li><li class="tocline"><a class="tocxref" href="#nieuwe-eigenschappen"><bdi class="secno">2.2.2 </bdi>Nieuwe eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#namespaces"><bdi class="secno">2.3 </bdi>Namespaces</a></li><li class="tocline"><a class="tocxref" href="#omschrijving-eigenschappen"><bdi class="secno">2.4 </bdi>Omschrijving eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#overerving"><bdi class="secno">2.5 </bdi>Overerving</a></li><li class="tocline"><a class="tocxref" href="#ondersteuning-voor-meertaligheid"><bdi class="secno">2.6 </bdi>Ondersteuning voor meertaligheid</a></li><li class="tocline"><a class="tocxref" href="#vindbaarheid"><bdi class="secno">2.7 </bdi>Vindbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tekstuele-beschrijvingen"><bdi class="secno">2.7.1 </bdi>Tekstuele beschrijvingen</a></li><li class="tocline"><a class="tocxref" href="#thema-s-uit-een-voorgedefinieerde-lijst"><bdi class="secno">2.7.2 </bdi>Thema's uit een voorgedefinieerde lijst</a></li><li class="tocline"><a class="tocxref" href="#verwijzingen-naar-standaarden-op-het-web"><bdi class="secno">2.7.3 </bdi>Verwijzingen naar standaarden op het web</a></li><li class="tocline"><a class="tocxref" href="#eigenschap-type-wordt-niet-gebruikt"><bdi class="secno">2.7.4 </bdi>Eigenschap "Type" wordt niet gebruikt</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#Klassen"><bdi class="secno">3. </bdi>Klassen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-Dataset"><bdi class="secno">3.1 </bdi>Dataset (<code>dcat:Dataset</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">3.1.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-distribution1"><bdi class="secno">3.1.1.1 </bdi>distribution</a></li><li class="tocline"><a class="tocxref" href="#dct-accrualPeriodicity"><bdi class="secno">3.1.1.2 </bdi>frequency</a></li><li class="tocline"><a class="tocxref" href="#dct-spatial"><bdi class="secno">3.1.1.3 </bdi>spatial/geographical coverage</a></li><li class="tocline"><a class="tocxref" href="#dct-temporal"><bdi class="secno">3.1.1.4 </bdi>temporal coverage</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen"><bdi class="secno">3.1.2 </bdi>Niet overgenomen eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#voorbeelden"><bdi class="secno">3.1.3 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen"><bdi class="secno">3.1.3.1 </bdi>Minimale set van eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#niet-publieke-datasets"><bdi class="secno">3.1.3.2 </bdi>Niet publieke datasets</a></li><li class="tocline"><a class="tocxref" href="#temporal-coverage-0"><bdi class="secno">3.1.3.3 </bdi>Temporal coverage</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-Distribution"><bdi class="secno">3.2 </bdi>Distributie (<code>dcat:Distribution</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-0"><bdi class="secno">3.2.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-accessURL"><bdi class="secno">3.2.1.1 </bdi>accessURL</a></li><li class="tocline"><a class="tocxref" href="#dct-format"><bdi class="secno">3.2.1.2 </bdi>format</a></li><li class="tocline"><a class="tocxref" href="#dct-title1"><bdi class="secno">3.2.1.3 </bdi>title</a></li><li class="tocline"><a class="tocxref" href="#dct-description1"><bdi class="secno">3.2.1.4 </bdi>description</a></li><li class="tocline"><a class="tocxref" href="#dct-license1"><bdi class="secno">3.2.1.5 </bdi>license</a></li><li class="tocline"><a class="tocxref" href="#dcat-accessService"><bdi class="secno">3.2.1.6 </bdi>accessService <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dcat-downloadURL"><bdi class="secno">3.2.1.7 </bdi>downloadURL</a></li><li class="tocline"><a class="tocxref" href="#dct-modified1"><bdi class="secno">3.2.1.8 </bdi>modified</a></li><li class="tocline"><a class="tocxref" href="#dct-issued1"><bdi class="secno">3.2.1.9 </bdi>issued</a></li><li class="tocline"><a class="tocxref" href="#dct-language1"><bdi class="secno">3.2.1.10 </bdi>language</a></li><li class="tocline"><a class="tocxref" href="#dct-rights1"><bdi class="secno">3.2.1.11 </bdi>rights</a></li><li class="tocline"><a class="tocxref" href="#dcat-byteSize"><bdi class="secno">3.2.1.12 </bdi>byteSize</a></li><li class="tocline"><a class="tocxref" href="#dct-conformsTo1"><bdi class="secno">3.2.1.13 </bdi>conformsTo <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dct-mediaType"><bdi class="secno">3.2.1.14 </bdi>mediaType</a></li><li class="tocline"><a class="tocxref" href="#spdx-checksum"><bdi class="secno">3.2.1.15 </bdi>checksum</a></li><li class="tocline"><a class="tocxref" href="#foaf-page1"><bdi class="secno">3.2.1.16 </bdi>documentation</a></li><li class="tocline"><a class="tocxref" href="#donl-supportingRole"><bdi class="secno">3.2.1.17 </bdi>supportingRole</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-0"><bdi class="secno">3.2.2 </bdi>Niet overgenomen eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#voorbeelden-0"><bdi class="secno">3.2.3 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen-0"><bdi class="secno">3.2.3.1 </bdi>Minimale set van eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#distributie-van-een-collectie-van-bestanden"><bdi class="secno">3.2.3.2 </bdi>Distributie van een collectie van bestanden</a></li><li class="tocline"><a class="tocxref" href="#documentatie-als-op-zichzelf-staande-distributie"><bdi class="secno">3.2.3.3 </bdi>Documentatie als op zichzelf staande distributie</a></li><li class="tocline"><a class="tocxref" href="#checksum-0"><bdi class="secno">3.2.3.4 </bdi>Checksum</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-DataService"><bdi class="secno">3.3 </bdi>Dataservice (<code>dcat:DataService</code>) <em class="new">nieuw</em></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-1"><bdi class="secno">3.3.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dcat-endpointURL"><bdi class="secno">3.3.1.1 </bdi>endpoint URL <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dcat-endpointDescription"><bdi class="secno">3.3.1.2 </bdi>endpoint description <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dcat-servesDataset"><bdi class="secno">3.3.1.3 </bdi>serves dataset <em class="new">nieuw</em></a></li></ol></li><li class="tocline"><a class="tocxref" href="#voorbeelden-1"><bdi class="secno">3.3.2 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen-1"><bdi class="secno">3.3.2.1 </bdi>Minimale set van eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#een-dataservice-die-datasets-ontsluit"><bdi class="secno">3.3.2.2 </bdi>Een DataService die Datasets ontsluit</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-Resource"><bdi class="secno">3.4 </bdi>Resource (<code>dcat:Resource</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-2"><bdi class="secno">3.4.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dct-identifier"><bdi class="secno">3.4.1.1 </bdi>identifier</a></li><li class="tocline"><a class="tocxref" href="#dct-title"><bdi class="secno">3.4.1.2 </bdi>title</a></li><li class="tocline"><a class="tocxref" href="#dct-description"><bdi class="secno">3.4.1.3 </bdi>description</a></li><li class="tocline"><a class="tocxref" href="#dct-license"><bdi class="secno">3.4.1.4 </bdi>license</a></li><li class="tocline"><a class="tocxref" href="#dct-creator"><bdi class="secno">3.4.1.5 </bdi>creator <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#dct-publisher"><bdi class="secno">3.4.1.6 </bdi>publisher</a></li><li class="tocline"><a class="tocxref" href="#dcat-contactPoint"><bdi class="secno">3.4.1.7 </bdi>contact point</a></li><li class="tocline"><a class="tocxref" href="#dcat-theme"><bdi class="secno">3.4.1.8 </bdi>theme/category</a></li><li class="tocline"><a class="tocxref" href="#dcat-keyword"><bdi class="secno">3.4.1.9 </bdi>keyword/tag</a></li><li class="tocline"><a class="tocxref" href="#dcat-landingPage"><bdi class="secno">3.4.1.10 </bdi>landing page</a></li><li class="tocline"><a class="tocxref" href="#dct-accessRights"><bdi class="secno">3.4.1.11 </bdi>access rights</a></li><li class="tocline"><a class="tocxref" href="#dct-language"><bdi class="secno">3.4.1.12 </bdi>resource language</a></li><li class="tocline"><a class="tocxref" href="#adms-identifier"><bdi class="secno">3.4.1.13 </bdi>other identifier</a></li><li class="tocline"><a class="tocxref" href="#dct-conformsTo"><bdi class="secno">3.4.1.14 </bdi>conforms to <em class="new">nieuw</em></a></li><li class="tocline"><a class="tocxref" href="#donl-grondslag"><bdi class="secno">3.4.1.15 </bdi>legal foundation</a></li><li class="tocline"><a class="tocxref" href="#dct-issued"><bdi class="secno">3.4.1.16 </bdi>release date</a></li><li class="tocline"><a class="tocxref" href="#dct-modified"><bdi class="secno">3.4.1.17 </bdi>update/modification date</a></li><li class="tocline"><a class="tocxref" href="#dct-rights"><bdi class="secno">3.4.1.18 </bdi>rights</a></li><li class="tocline"><a class="tocxref" href="#prov-qualifiedAttribution"><bdi class="secno">3.4.1.19 </bdi>qualified attribution <em class="new">nieuw</em></a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-1"><bdi class="secno">3.4.2 </bdi>Niet overgenomen eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#voorbeelden-2"><bdi class="secno">3.4.3 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#contact-point-0"><bdi class="secno">3.4.3.1 </bdi>Contact point</a></li><li class="tocline"><a class="tocxref" href="#other-identifier-0"><bdi class="secno">3.4.3.2 </bdi>Other identifier</a></li><li class="tocline"><a class="tocxref" href="#qualified-attribution"><bdi class="secno">3.4.3.3 </bdi>Qualified attribution</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#donl-LegalFoundation"><bdi class="secno">3.5 </bdi>Legal foundation (<code>donl:LegalFoundation</code>) <em class="new">nieuw</em></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-3"><bdi class="secno">3.5.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#dct-title2"><bdi class="secno">3.5.1.1 </bdi>title</a></li><li class="tocline"><a class="tocxref" href="#foaf-homepage"><bdi class="secno">3.5.1.2 </bdi>legal domain</a></li><li class="tocline"><a class="tocxref" href="#donl-juriconnectCode"><bdi class="secno">3.5.1.3 </bdi>juriconnect code</a></li></ol></li><li class="tocline"><a class="tocxref" href="#voorbeelden-3"><bdi class="secno">3.5.2 </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimale-set-van-eigenschappen-2"><bdi class="secno">3.5.2.1 </bdi>Minimale set van eigenschappen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-Catalog"><bdi class="secno">3.6 </bdi>Catalogus (<code>dcat:Catalog</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-4"><bdi class="secno">3.6.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#foaf-homepage1"><bdi class="secno">3.6.1.1 </bdi>homepage</a></li><li class="tocline"><a class="tocxref" href="#dcat-dataset1"><bdi class="secno">3.6.1.2 </bdi>dataset</a></li><li class="tocline"><a class="tocxref" href="#dcat-service"><bdi class="secno">3.6.1.3 </bdi>service <em class="new">nieuw</em> </a></li><li class="tocline"><a class="tocxref" href="#dcat-catalog1"><bdi class="secno">3.6.1.4 </bdi>catalog <em class="new">nieuw</em> </a></li><li class="tocline"><a class="tocxref" href="#dcat-themeTaxonomy"><bdi class="secno">3.6.1.5 </bdi>themes</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-2"><bdi class="secno">3.6.2 </bdi>Niet overgenomen eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#dcat-CatalogRecord"><bdi class="secno">3.7 </bdi>Catalogusrecord (<code>dcat:CatalogRecord</code>)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-5"><bdi class="secno">3.7.1 </bdi>Eigenschappen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#foaf-primaryTopic"><bdi class="secno">3.7.1.1 </bdi>primary topic</a></li><li class="tocline"><a class="tocxref" href="#dct-modified2"><bdi class="secno">3.7.1.2 </bdi>modified</a></li><li class="tocline"><a class="tocxref" href="#dct-issued2"><bdi class="secno">3.7.1.3 </bdi>listing date</a></li><li class="tocline"><a class="tocxref" href="#dct-conformsTo2"><bdi class="secno">3.7.1.4 </bdi>conformsTo <em class="new">nieuw</em> </a></li><li class="tocline"><a class="tocxref" href="#dct-source"><bdi class="secno">3.7.1.5 </bdi>source metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-overgenomen-eigenschappen-3"><bdi class="secno">3.7.2 </bdi>Niet overgenomen eigenschappen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#waardelijsten"><bdi class="secno">4. </bdi>Waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">4.1 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#overzicht-0"><bdi class="secno">4.2 </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardelijst-donl-AccessRights"><bdi class="secno">4.2.1 </bdi>donl:AccessRights</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-Language"><bdi class="secno">4.2.2 </bdi>donl:Language</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-License"><bdi class="secno">4.2.3 </bdi>donl:License</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-RelevantOrganization"><bdi class="secno">4.2.4 </bdi>donl:RelevantOrganization</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-Role"><bdi class="secno">4.2.5 </bdi>donl:Role</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-donl-SupportingRole"><bdi class="secno">4.2.6 </bdi>donl:SupportingRole</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-iana-Mediatype"><bdi class="secno">4.2.7 </bdi>iana:Mediatype</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-mdr-Filetype"><bdi class="secno">4.2.8 </bdi>mdr:Filetype</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-mdr-Frequency"><bdi class="secno">4.2.9 </bdi>mdr:Frequency</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Gemeente"><bdi class="secno">4.2.10 </bdi>overheid:Gemeente</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Koninkrijksdeel"><bdi class="secno">4.2.11 </bdi>overheid:Koninkrijksdeel</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Organisatie"><bdi class="secno">4.2.12 </bdi>overheid:Organisatie</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Provincie"><bdi class="secno">4.2.13 </bdi>overheid:Provincie</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-Waterschap"><bdi class="secno">4.2.14 </bdi>overheid:Waterschap</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-overheid-TaxonomieBeleidsagenda"><bdi class="secno">4.2.15 </bdi>overheid:TaxonomieBeleidsagenda</a></li><li class="tocline"><a class="tocxref" href="#waardelijst-spdx-ChecksumAlgorithm"><bdi class="secno">4.2.16 </bdi>spdx:ChecksumAlgorithm</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#scenarios"><bdi class="secno">A. </bdi>Scenarios</a></li><li class="tocline"><a class="tocxref" href="#termenlijst"><bdi class="secno">B. </bdi>Termenlijst</a></li><li class="tocline"><a class="tocxref" href="#contributors"><bdi class="secno">C. </bdi>Contributors</a></li><li class="tocline"><a class="tocxref" href="#issue-summary"><bdi class="secno">D. </bdi>Lijst met issues</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">E. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">F. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">F.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
     <section data-format="markdown" id="introductie"><div class="header-wrapper"><h2 id="x1-introductie"><bdi class="secno">1. </bdi>Introductie</h2><a class="self-link" href="#introductie" aria-label="Permalink for Section 1."></a></div>
 <p>De Data Catalog vocabulaire (DCAT) is een standaard met als doel gepubliceerde gegevens en gegevensdiensten te beschrijven. Daardoor kunnen potentiële gebruikers beoordelen of de aangeboden gegevens voor hen relevant zijn en geschikt zijn voor hun gebruik. Dit selectieproces kan ook (gedeeltelijk) automatisch uitgevoerd worden. De geselecteerde bronnen kunnen dankzij de <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-1">DCAT beschrijving</a>en efficiënt benaderd worden voor gebruik, of na detailonderzoek alsnog worden verworpen.</p>
 <p>Daarnaast is het gebruikelijk om <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-2">DCAT beschrijving</a>en op centrale systemen te verzamelen – bekend als "harvesting" – om overzichten te maken van alle aangeboden informatie in een bepaald domein, bijvoorbeeld een land of volgens andere criteria. Deze centrale DCAT registers maken het eenvoudig voor gebruikers om door een groot aanbod te zoeken naar nuttige gegevens en data services.</p>
@@ -512,10 +512,6 @@ geautomatiseerde toegang tot gegevens te beschrijven dan mogelijk is in de klass
 <tr>
 <td><code>dct</code></td>
 <td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
-</tr>
-<tr>
-<td><code>donl</code></td>
-<td>TODO: URI bepalen</td>
 </tr>
 <tr>
 <td><code>foaf</code></td>
@@ -894,7 +890,7 @@ worden gedocumenteerd en gepubliceerd op data.overheid.nl.</p>
 <td>Recommended</td>
 </tr>
 </tbody></table>
-</section><section id="spatial-geographical-coverage"><div class="header-wrapper"><h5 id="dct-spatial"><bdi class="secno">3.1.1.3 </bdi>spatial/geographical coverage</h5><a class="self-link" href="#dct-spatial" aria-label="Permalink for Section 3.1.1.3"></a></div><p>Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Het veld kan worden gevuld met de benaming 
+</section><section id="spatial-geographical-coverage"><div class="header-wrapper"><h5 id="dct-spatial"><bdi class="secno">3.1.1.3 </bdi>spatial/geographical coverage</h5><a class="self-link" href="#dct-spatial" aria-label="Permalink for Section 3.1.1.3"></a></div><p>Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Het veld kan worden gevuld met de benaming
 van een gebied in de vorm van een URI of de coördinaten ervan.</p>
 <p>Voor de invulling van deze eigenschap wordt vereist dat een van de onderstaande opties gekozen wordt:</p>
 <table>
@@ -942,14 +938,14 @@ van een gebied in de vorm van een URI of de coördinaten ervan.</p>
 </tr>
 </tbody></table>
 <p>De voorkeur gaat uit naar het gebruik van een van de genoemde OWMS4.0 waardelijsten. Het is echter zo dat deze lijsten
-niet altijd een oplossing bieden voor het duiden van een geografisch gebied. Voor die gevallen worden een drietal 
+niet altijd een oplossing bieden voor het duiden van een geografisch gebied. Voor die gevallen worden een drietal
 alternatieven aangeboden.</p>
 <ul>
-<li><cite><a data-matched-text="[[[GEONAMES]]]" href="https://www.geonames.org/">GeoNames.org</a></cite> is een internationale database van locatiegegevens. Wanneer een locatie niet in de OWMS4.0 
+<li><cite><a data-matched-text="[[[GEONAMES]]]" href="https://www.geonames.org/">GeoNames.org</a></cite> is een internationale database van locatiegegevens. Wanneer een locatie niet in de OWMS4.0
 waardelijsten staat, dan kan deze database geraadpleegd worden om alsnog een locatiereferentie op te nemen.</li>
-<li><cite><a data-matched-text="[[[OWMS_EPSG28992]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992">overheid:EPSG28992 (standaarden.overheid.nl)</a></cite> is een <cite><a data-matched-text="[[[OWMS_SYNTAXCODEERSCHEMA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas">overheid:SyntaxCodeerschema (standaarden.overheid.nl)</a></cite> waarmee coordinaten in het <cite><a data-matched-text="[[[EPSG28992]]]" href="https://epsg.io/28992">EPSG:28992</a></cite> stelsel opgenomen 
+<li><cite><a data-matched-text="[[[OWMS_EPSG28992]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992">overheid:EPSG28992 (standaarden.overheid.nl)</a></cite> is een <cite><a data-matched-text="[[[OWMS_SYNTAXCODEERSCHEMA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas">overheid:SyntaxCodeerschema (standaarden.overheid.nl)</a></cite> waarmee coordinaten in het <cite><a data-matched-text="[[[EPSG28992]]]" href="https://epsg.io/28992">EPSG:28992</a></cite> stelsel opgenomen
 kunnen worden. Deze optie maakt het mogelijk om bijvoorbeeld een 'bounding-box' op te nemen als locatiegegeven.</li>
-<li><cite><a data-matched-text="[[[OWMS_POSTCODEHUISNUMMER]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer">overheid:PostcodeHuisnummer (standaarden.overheid.nl)</a></cite> is een <cite><a data-matched-text="[[[OWMS_SYNTAXCODEERSCHEMA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas">overheid:SyntaxCodeerschema (standaarden.overheid.nl)</a></cite> waarmee verwezen kan worden naar een (of een set 
+<li><cite><a data-matched-text="[[[OWMS_POSTCODEHUISNUMMER]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer">overheid:PostcodeHuisnummer (standaarden.overheid.nl)</a></cite> is een <cite><a data-matched-text="[[[OWMS_SYNTAXCODEERSCHEMA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas">overheid:SyntaxCodeerschema (standaarden.overheid.nl)</a></cite> waarmee verwezen kan worden naar een (of een set
 van) combinaties van postcodes en huisnummers.</li>
 </ul>
 <table>
@@ -2104,7 +2100,7 @@ geautomatiseerde toegang tot gegevens te beschrijven dan mogelijk is in de klass
 </tr>
 </tbody></table>
 </section><section id="endpoint-description-nieuw"><div class="header-wrapper"><h5 id="dcat-endpointDescription"><bdi class="secno">3.3.1.2 </bdi>endpoint description <em class="new">nieuw</em></h5><a class="self-link" href="#dcat-endpointDescription" aria-label="Permalink for Section 3.3.1.2"></a></div><p>Een verwijzing naar de documentatie die de DataService beschrijft. Denk hierbij aan een verwijzing naar een Open Api
-Specification (Swagger), een <code>OGC:WFS</code> of <code>OGC:WMS</code> getCapabilities aanroep, een <code>SPARQL Service Description</code> en 
+Specification (Swagger), een <code>OGC:WFS</code> of <code>OGC:WMS</code> getCapabilities aanroep, een <code>SPARQL Service Description</code> en
 dergelijke.</p>
 <p>Een gebruiker is gebaat bij een accurate en volledige beschrijving van de aangeboden service.</p>
 <table>
@@ -2132,7 +2128,7 @@ dergelijke.</p>
 </tr>
 </tbody></table>
 <div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Noot</span></div><aside class="">
-Hoewel deze eigenschap qua naamgeving veel lijkt op <a href="#dct-description"><code>dct:description</code></a>, heeft deze 
+Hoewel deze eigenschap qua naamgeving veel lijkt op <a href="#dct-description"><code>dct:description</code></a>, heeft deze
 eigenschap een aanzienlijk andere definitie!
 </aside></div>
 
@@ -2243,11 +2239,11 @@ eigenschappen gebruikt. Om niet al deze eigenschappen voor elke klasse opnieuw t
 </div>
             <section data-format="markdown" id="eigenschappen-2"><div class="header-wrapper"><h4 id="x3-4-1-eigenschappen"><bdi class="secno">3.4.1 </bdi>Eigenschappen</h4><a class="self-link" href="#eigenschappen-2" aria-label="Permalink for Section 3.4.1"></a></div>
 <p>In de onderstaande hoofdstukken worden de eigenschappen van de <code>dcat:Resource</code> beschreven.</p>
-<section id="identifier"><div class="header-wrapper"><h5 id="dct-identifier"><bdi class="secno">3.4.1.1 </bdi>identifier</h5><a class="self-link" href="#dct-identifier" aria-label="Permalink for Section 3.4.1.1"></a></div><p>De identifier van de resource volgens de eigenaar van de data. Dit is bij voorkeur URI die via HTTP raadpleegbaar is. Hier wordt de 
-oorspronkelijke identificatie van de resource (dataset, dataservice of catalogus) genomen zoals de data-eigenaar deze 
+<section id="identifier"><div class="header-wrapper"><h5 id="dct-identifier"><bdi class="secno">3.4.1.1 </bdi>identifier</h5><a class="self-link" href="#dct-identifier" aria-label="Permalink for Section 3.4.1.1"></a></div><p>De identifier van de resource volgens de eigenaar van de data. Dit is bij voorkeur URI die via HTTP raadpleegbaar is. Hier wordt de
+oorspronkelijke identificatie van de resource (dataset, dataservice of catalogus) genomen zoals de data-eigenaar deze
 gepubliceerd heeft.</p>
-<p>Afgezien van deze identifier kan de betreffende dataset, dataservice of catalogus - in de loop van de tijd - ook andere 
-identifiers krijgen. Deze worden overgenomen in <a href="#adms-identifier"><code>adms:identifier</code></a>. Een resource kan meerdere 
+<p>Afgezien van deze identifier kan de betreffende dataset, dataservice of catalogus - in de loop van de tijd - ook andere
+identifiers krijgen. Deze worden overgenomen in <a href="#adms-identifier"><code>adms:identifier</code></a>. Een resource kan meerdere
 voorkomens van <a href="#adms-identifier"><code>adms:identifier</code></a> hebben.</p>
 <table>
 <thead>
@@ -2273,9 +2269,9 @@ voorkomens van <a href="#adms-identifier"><code>adms:identifier</code></a> hebbe
 <td>Mandatory</td>
 </tr>
 </tbody></table>
-</section><section id="title-1"><div class="header-wrapper"><h5 id="dct-title"><bdi class="secno">3.4.1.2 </bdi>title</h5><a class="self-link" href="#dct-title" aria-label="Permalink for Section 3.4.1.2"></a></div><p>De naam van de beschreven resource. Op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> wordt deze naam geïndexeerd, zodat eindgebruikers de desbetreffende 
+</section><section id="title-1"><div class="header-wrapper"><h5 id="dct-title"><bdi class="secno">3.4.1.2 </bdi>title</h5><a class="self-link" href="#dct-title" aria-label="Permalink for Section 3.4.1.2"></a></div><p>De naam van de beschreven resource. Op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> wordt deze naam geïndexeerd, zodat eindgebruikers de desbetreffende
 dataset, dataservice of catalogus kunnen terugvinden op basis van één of meer woorden in de naam.</p>
-<p>Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in 
+<p>Een handige vuistregel is om de lengte van de titel te beperken tot ca. 100 tekens. Wanneer de behoefte bestaat om in
 meer tekens de dataset te beschrijven, dan kan <a href="#dct-description"><code>dct:description</code></a> gebruikt worden.</p>
 <p>Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
 <table>
@@ -2302,9 +2298,9 @@ meer tekens de dataset te beschrijven, dan kan <a href="#dct-description"><code>
 <td>Mandatory</td>
 </tr>
 </tbody></table>
-</section><section id="description-0"><div class="header-wrapper"><h5 id="dct-description"><bdi class="secno">3.4.1.3 </bdi>description</h5><a class="self-link" href="#dct-description" aria-label="Permalink for Section 3.4.1.3"></a></div><p>Een beschrijving de resource. <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> toont de beschrijvende tekst bij de desbetreffende resource en gebruikt deze 
-voor het opbouwen van de zoekindex. Dit betekent dus dat de vindbaarheid van de resource wordt bepaald door de kwaliteit 
-van de tekst. Om ervoor te zorgen dat eindgebruikers de datasets goed kunnen vinden is het belangrijk dat de tekst goede 
+</section><section id="description-0"><div class="header-wrapper"><h5 id="dct-description"><bdi class="secno">3.4.1.3 </bdi>description</h5><a class="self-link" href="#dct-description" aria-label="Permalink for Section 3.4.1.3"></a></div><p>Een beschrijving de resource. <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> toont de beschrijvende tekst bij de desbetreffende resource en gebruikt deze
+voor het opbouwen van de zoekindex. Dit betekent dus dat de vindbaarheid van de resource wordt bepaald door de kwaliteit
+van de tekst. Om ervoor te zorgen dat eindgebruikers de datasets goed kunnen vinden is het belangrijk dat de tekst goede
 trefwoorden bevat.</p>
 <p>Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
 <table>
@@ -2332,11 +2328,11 @@ trefwoorden bevat.</p>
 </tr>
 </tbody></table>
 </section><section id="license-0"><div class="header-wrapper"><h5 id="dct-license"><bdi class="secno">3.4.1.4 </bdi>license</h5><a class="self-link" href="#dct-license" aria-label="Permalink for Section 3.4.1.4"></a></div><p>De formele of wettelijke toestemming waaronder de gegevens in de dataset gebruikt mogen worden.</p>
-<p>Licenties kunnen complex zijn, wat de uitwerking en invulling van dit veld kan bemoeilijken. De licenties die van 
-toepassing zijn op gegevensuitwisseling binnen de overheid zijn meestal vrij eenvoudig. Om die reden is gekozen voor een 
-waardelijst die een aantal eenvoudige licenties bevat die met name naar de Creative Commons licenties verwezen. Zie ook 
+<p>Licenties kunnen complex zijn, wat de uitwerking en invulling van dit veld kan bemoeilijken. De licenties die van
+toepassing zijn op gegevensuitwisseling binnen de overheid zijn meestal vrij eenvoudig. Om die reden is gekozen voor een
+waardelijst die een aantal eenvoudige licenties bevat die met name naar de Creative Commons licenties verwezen. Zie ook
 <a href="https://creativecommons.nl/uitleg/">creativecommons.nl/uitleg/</a>.</p>
-<p>Er kunnen ook licentiegegevens op het niveau van de <a href="#dcat-Distribution"><code>dcat:Distribution</code></a> worden vastgelegd. Die 
+<p>Er kunnen ook licentiegegevens op het niveau van de <a href="#dcat-Distribution"><code>dcat:Distribution</code></a> worden vastgelegd. Die
 mogen niet in tegenspraak zijn met de licentiegegevens van de <code>dcat:Dataset</code>.</p>
 <table>
 <thead>
@@ -2364,11 +2360,45 @@ mogen niet in tegenspraak zijn met de licentiegegevens van de <code>dcat:Dataset
 </tbody></table>
 <div class="issue closed" id="issue-container-number-22-0"><div role="heading" class="issue-title marker" id="h-issue-7" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/22"><span class="issue-number">Issue 22</span></a><span class="issue-label">: Invullen van dct:license en dct:rights <a class="respec-gh-label" href="https://github.com/dataoverheid/dcat-ap-donl/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Respec%22" style="background-color: rgb(14, 138, 22); color: rgb(0, 0, 0);" aria-label="GitHub label: Respec">Respec</a></span></div><p dir="auto">dct:license en dct:rights zijn te vinden in resource én in dataservice. Wanneer moet je nu welke eigenschap invullen?</p></div>
 
-</section><section id="creator-nieuw"><div class="header-wrapper"><h5 id="dct-creator"><bdi class="secno">3.4.1.5 </bdi>creator <em class="new">nieuw</em></h5><a class="self-link" href="#dct-creator" aria-label="Permalink for Section 3.4.1.5"></a></div><p>De organisatie die verantwoordelijk is voor het creëren van de beschreven resource. Zie eigenschappen 
+</section><section id="creator-nieuw"><div class="header-wrapper"><h5 id="dct-creator"><bdi class="secno">3.4.1.5 </bdi>creator <em class="new">nieuw</em></h5><a class="self-link" href="#dct-creator" aria-label="Permalink for Section 3.4.1.5"></a></div><p>De organisatie die verantwoordelijk is voor het creëren van de beschreven bron. Zie eigenschappen
 <a href="#dct-publisher"><code>dct:publisher</code></a> en <a href="#prov-qualifiedAttribution"><code>prov:qualifiedAttribution</code></a> voor andere rollen.</p>
-<p>De gebruikte waardelijst <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a> is een verrijking van 
-<cite><a data-matched-text="[[[OWMS_ORGANISATIE]]]" href="https://standaarden.overheid.nl/owms/terms/Organisatie">overheid:Organisatie (standaarden.overheid.nl)</a></cite>. Op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> bieden ook enkele niet-overheidsorganisaties maatschappelijk relevante datasets 
-aan. De <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a> beschrijft ook die organisaties.</p>
+<p>Voor de invulling van deze eigenschap wordt vereist dat een concept uit een van de onderstaande waardelijsten gekozen
+wordt:</p>
+<table>
+<thead>
+<tr>
+<th>Naam</th>
+<th>Type</th>
+<th>Gebruik</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#waardelijst-overheid-Organisatie"><code>waardelijst overheid:Organisatie</code></a></td>
+<td>Waardelijst</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td><a href="#waardelijst-donl-RelevantOrganization"><code>waardelijst donl:RelevantOrganization</code></a></td>
+<td>Waardelijst</td>
+<td>Optional</td>
+</tr>
+</tbody></table>
+<p>Hoewel de meeste overheidsorganisaties opgenomen zijn in de
+<a href="#waardelijst-overheid-Organisatie"><code>overheid:Organisatie waardelijst</code></a>, zijn er twee argumenten om naast deze lijst nog
+een 'eigen' lijst te hanteren voor het invullen van het <code>dct:creator</code> eigenschap.</p>
+<ol>
+<li>Niet alle overheidsorganisaties zijn opgenomen in <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite>. Er moet dus een antwoord zijn voor
+(overheids)organisaties die niet in de <code>OWMS</code> taxonomie opgenomen zijn.</li>
+<li>Hoewel <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> primair een register van overheidsdata is, neemt het ook maatschappelijk relevante data op in het
+register van private partijen. Om te kunnen verwijzen naar deze private partijen moet tenminste een van de
+waardelijsten deze mogelijkheid bieden.</li>
+</ol>
+<p>Het heeft de voorkeur dat de <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> lijst gebruikt wordt voor het invullen van deze eigenschap. Wanneer deze
+lijst echter niet toereikend is, kan er gebruik gemaakt worden van de <code>donl:RelevantOrganization</code> taxonomie.</p>
+<blockquote>
+<p>Staat uw organisatie in geen van beide lijsten? Neem dan contact op met <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite>. Het team van <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> zal
+beoordelen of uw organisatie alsnog opgenomen kan worden in de <code>donl:RelevantOrganization</code> taxonomie.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -2382,7 +2412,7 @@ aan. De <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organiza
 </tr>
 <tr>
 <td>Bereik</td>
-<td><a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a></td>
+<td>De organisatie die verantwoordelijk is voor het creëren van de beschreven bron</td>
 </tr>
 <tr>
 <td>Kardinaliteit</td>
@@ -2396,16 +2426,50 @@ aan. De <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organiza
 <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Noot</span></div><aside class="">
 
 <p>In <cite><a data-matched-text="[[[DCATAPDONL_11]]]" href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a></cite> heette deze eigenschap <code>donl:authority</code>. Dit is in dit profiel recht getrokken zodat het weer
-overeenkomt met de bovenliggende DCAT profielen.</p>
+overeenkomt met de bovenliggende DCAT-profielen.</p>
 </aside></div>
 
 <div class="issue closed" id="issue-container-number-23"><div role="heading" class="issue-title marker" id="h-issue-8" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/23"><span class="issue-number">Issue 23</span></a><span class="issue-label">: Begrippenkader formuleren van eigenaar, verantwoordelijke, bronhouder, uitgever etc. <a class="respec-gh-label" href="https://github.com/dataoverheid/dcat-ap-donl/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Respec%22" style="background-color: rgb(14, 138, 22); color: rgb(0, 0, 0);" aria-label="GitHub label: Respec">Respec</a></span></div><p dir="auto">Welke organisatie past in welk veld?</p></div>
 
-</section><section id="publisher"><div class="header-wrapper"><h5 id="dct-publisher"><bdi class="secno">3.4.1.6 </bdi>publisher</h5><a class="self-link" href="#dct-publisher" aria-label="Permalink for Section 3.4.1.6"></a></div><p>De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de resource. Zie eigenschappen
+</section><section id="publisher"><div class="header-wrapper"><h5 id="dct-publisher"><bdi class="secno">3.4.1.6 </bdi>publisher</h5><a class="self-link" href="#dct-publisher" aria-label="Permalink for Section 3.4.1.6"></a></div><p>De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de bron. Zie eigenschappen
 <a href="#dct-creator"><code>dct:creator</code></a> en <a href="#prov-qualifiedAttribution"><code>prov:qualifiedAttribution</code></a> voor andere rollen.</p>
-<p>De gebruikte waardelijst <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a> is een verrijking van 
-<cite><a data-matched-text="[[[OWMS_ORGANISATIE]]]" href="https://standaarden.overheid.nl/owms/terms/Organisatie">overheid:Organisatie (standaarden.overheid.nl)</a></cite>. Op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> bieden ook enkele niet-overheidsorganisaties maatschappelijk relevante datasets 
-aan. De <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a> beschrijft ook die organisaties.</p>
+<p>Voor de invulling van deze eigenschap wordt vereist dat een concept uit een van de onderstaande waardelijsten gekozen
+wordt:</p>
+<table>
+<thead>
+<tr>
+<th>Naam</th>
+<th>Type</th>
+<th>Gebruik</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#waardelijst-overheid-Organisatie"><code>waardelijst overheid:Organisatie</code></a></td>
+<td>Waardelijst</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td><a href="#waardelijst-donl-RelevantOrganization"><code>waardelijst donl:RelevantOrganization</code></a></td>
+<td>Waardelijst</td>
+<td>Optional</td>
+</tr>
+</tbody></table>
+<p>Hoewel de meeste overheidsorganisaties opgenomen zijn in de
+<a href="#waardelijst-overheid-Organisatie"><code>overheid:Organisatie waardelijst</code></a>, zijn er twee argumenten om naast deze lijst nog
+een 'eigen' lijst te hanteren voor het invullen van het <code>dct:creator</code> eigenschap.</p>
+<ol>
+<li>Niet alle overheidsorganisaties zijn opgenomen in <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite>. Er moet dus een antwoord zijn voor
+(overheids)organisaties die niet in de <code>OWMS</code> taxonomie opgenomen zijn.</li>
+<li>Hoewel <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> primair een register van overheidsdata is, neemt het ook maatschappelijk relevante data op in het
+register van private partijen. Om te kunnen verwijzen naar deze private partijen moet tenminste een van de
+waardelijsten deze mogelijkheid bieden.</li>
+</ol>
+<p>Het heeft de voorkeur dat de <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> lijst gebruikt wordt voor het invullen van deze eigenschap. Wanneer deze
+lijst echter niet toereikend is, kan er gebruik gemaakt worden van de <code>donl:RelevantOrganization</code> taxonomie.</p>
+<blockquote>
+<p>Staat uw organisatie in geen van beide lijsten? Neem dan contact op met <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite>. Het team van <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> zal
+beoordelen of uw organisatie alsnog opgenomen kan worden in de <code>donl:RelevantOrganization</code> taxonomie.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -2419,7 +2483,7 @@ aan. De <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organiza
 </tr>
 <tr>
 <td>Bereik</td>
-<td><a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a></td>
+<td>De organisatie die verantwoordelijk is voor de uitgifte/publicatie van de beschreven bron</td>
 </tr>
 <tr>
 <td>Kardinaliteit</td>
@@ -2432,10 +2496,10 @@ aan. De <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organiza
 </tbody></table>
 <div class="issue closed" id="issue-container-number-23-0"><div role="heading" class="issue-title marker" id="h-issue-9" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/23"><span class="issue-number">Issue 23</span></a><span class="issue-label">: Begrippenkader formuleren van eigenaar, verantwoordelijke, bronhouder, uitgever etc. <a class="respec-gh-label" href="https://github.com/dataoverheid/dcat-ap-donl/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Respec%22" style="background-color: rgb(14, 138, 22); color: rgb(0, 0, 0);" aria-label="GitHub label: Respec">Respec</a></span></div><p dir="auto">Welke organisatie past in welk veld?</p></div>
 
-</section><section id="contact-point"><div class="header-wrapper"><h5 id="dcat-contactPoint"><bdi class="secno">3.4.1.7 </bdi>contact point</h5><a class="self-link" href="#dcat-contactPoint" aria-label="Permalink for Section 3.4.1.7"></a></div><p>Aan de hand van deze informatie kunnen eindgebruikers op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> contact opnemen met de eigenaar van de dataset of 
-dataservice. Bij het invullen van deze eigenschap is het belangrijk om een algemeen mailadres te gebruiken. Het is niet 
+</section><section id="contact-point"><div class="header-wrapper"><h5 id="dcat-contactPoint"><bdi class="secno">3.4.1.7 </bdi>contact point</h5><a class="self-link" href="#dcat-contactPoint" aria-label="Permalink for Section 3.4.1.7"></a></div><p>Aan de hand van deze informatie kunnen eindgebruikers op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> contact opnemen met de eigenaar van de dataset of
+dataservice. Bij het invullen van deze eigenschap is het belangrijk om een algemeen mailadres te gebruiken. Het is niet
 de bedoeling om hier gegevens van individuele personen op te nemen.</p>
-<p>Een geldig <code>dcat:contactPoint</code> bevat op zijn minst de eigenschap <code>vcard:fn</code> en een van de <code>vcard:hasEmail</code>, 
+<p>Een geldig <code>dcat:contactPoint</code> bevat op zijn minst de eigenschap <code>vcard:fn</code> en een van de <code>vcard:hasEmail</code>,
 <code>vcard:hasTelephone</code> of <code>vcard:hasURL</code> eigenschappen. Voor een voorbeeld zie <a href="#example-contact-point">#Contact Point</a></p>
 <table>
 <thead>
@@ -2465,10 +2529,10 @@ de bedoeling om hier gegevens van individuele personen op te nemen.</p>
 <p dir="auto">Het is mogelijk om voor <code class="notranslate">dcat:contactPoint</code> een waardelijst te creëeren waarin leveranciers staan tezamen met het mailadres (Vcard), maar het invullen kan ook door de gebruiker worden gedaan.</p></div>
 
 </section><section id="theme-category"><div class="header-wrapper"><h5 id="dcat-theme"><bdi class="secno">3.4.1.8 </bdi>theme/category</h5><a class="self-link" href="#dcat-theme" aria-label="Permalink for Section 3.4.1.8"></a></div><p>Een thema uit de <cite><a data-matched-text="[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda">overheid:TaxonomieBeleidsagenda (standaarden.overheid.nl)</a></cite>.</p>
-<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> gebruikt <code>dcat:theme</code> om de datasets, dataservices en catalogi naar onderwerp in te delen. Door de eigenschap 
-verplicht te stellen, kunnen eindgebruikers de betreffende resource altijd terugvinden wanneer zij via het thema zoeken 
-of navigeren. De homepage toont standaard alle beschikbare thema's. De thema-indeling is hiërarchisch georganiseerd, 
-zodat datasets ook aan meer specifieke subthema's kunnen worden gekoppeld, bijvoorbeeld subthema <code>Waterschappen</code> onder 
+<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> gebruikt <code>dcat:theme</code> om de datasets, dataservices en catalogi naar onderwerp in te delen. Door de eigenschap
+verplicht te stellen, kunnen eindgebruikers de betreffende resource altijd terugvinden wanneer zij via het thema zoeken
+of navigeren. De homepage toont standaard alle beschikbare thema's. De thema-indeling is hiërarchisch georganiseerd,
+zodat datasets ook aan meer specifieke subthema's kunnen worden gekoppeld, bijvoorbeeld subthema <code>Waterschappen</code> onder
 het thema <code>Bestuur</code>.</p>
 <table>
 <thead>
@@ -2496,22 +2560,22 @@ het thema <code>Bestuur</code>.</p>
 </tbody></table>
 <div class="note" role="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Noot</span></div><aside class="">
 
-<p>Er is voor thema geen relatie met eigenschap <a href="#dcat-themeTaxonomy"><code>dcat:themeTaxonomy</code></a> in de bijbehorende catalogus 
-(dus waarin de dataset of dataservice is opgenomen), omdat voor de thema's één vaste waardelijst wordt gebruikt, 
+<p>Er is voor thema geen relatie met eigenschap <a href="#dcat-themeTaxonomy"><code>dcat:themeTaxonomy</code></a> in de bijbehorende catalogus
+(dus waarin de dataset of dataservice is opgenomen), omdat voor de thema's één vaste waardelijst wordt gebruikt,
 namelijk de <cite><a data-matched-text="[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda">overheid:TaxonomieBeleidsagenda (standaarden.overheid.nl)</a></cite>.</p>
-<p>Het is gewenst om de resources ook te kunnen verrijken met andere begrippenkaders. We onderzoeken of hiervoor een 
-nieuwe eigenschap moet worden geïntroduceerd, of dat kan worden volstaan met deze eigenschap. Wel is het nodig om aan te 
-geven welke begrippenkaders zijn toegestaan. Mogelijk kan dit worden opgelost door ze aan te geven in 
+<p>Het is gewenst om de resources ook te kunnen verrijken met andere begrippenkaders. We onderzoeken of hiervoor een
+nieuwe eigenschap moet worden geïntroduceerd, of dat kan worden volstaan met deze eigenschap. Wel is het nodig om aan te
+geven welke begrippenkaders zijn toegestaan. Mogelijk kan dit worden opgelost door ze aan te geven in
 <a href="#dcat-themeTaxonomy"><code>dcat:themeTaxonomy</code></a> in de catalogus.</p>
 </aside></div>
 
 <div class="issue" id="issue-container-number-35"><div role="heading" class="issue-title marker" id="h-issue-11" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/35"><span class="issue-number">Issue 35</span></a><span class="issue-label">: Hoe verhouden Theme, Types en ConformsTo zich tot elkaar? <a class="respec-gh-label" href="https://github.com/dataoverheid/dcat-ap-donl/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Respec%22" style="background-color: rgb(14, 138, 22); color: rgb(0, 0, 0);" aria-label="GitHub label: Respec">Respec</a></span></div></div>
 
 </section><section id="keyword-tag"><div class="header-wrapper"><h5 id="dcat-keyword"><bdi class="secno">3.4.1.9 </bdi>keyword/tag</h5><a class="self-link" href="#dcat-keyword" aria-label="Permalink for Section 3.4.1.9"></a></div><p>Vrije keywords of termen die de resource beschrijven.</p>
-<p>Het gaat hier om vrije tekst, niet te verwarren met <a href="#dcat-theme"><code>dcat:theme</code></a>. Bij deze laatste eigenschap komen de 
-termen uit een controlled vocabulary (of vastgesteld begrippenkader of waardelijst), en hebben een meer formele status. </p>
-<p>Voor beide vormen geldt dat deze de vindbaarheid van de desbetreffende resource kunnen verbeteren. Het is dus 
-mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden moeten in afzonderlijke voorkomens van deze 
+<p>Het gaat hier om vrije tekst, niet te verwarren met <a href="#dcat-theme"><code>dcat:theme</code></a>. Bij deze laatste eigenschap komen de
+termen uit een controlled vocabulary (of vastgesteld begrippenkader of waardelijst), en hebben een meer formele status.</p>
+<p>Voor beide vormen geldt dat deze de vindbaarheid van de desbetreffende resource kunnen verbeteren. Het is dus
+mogelijk om meerdere keywords toe te kennen aan een resource. Deze waarden moeten in afzonderlijke voorkomens van deze
 eigenschap worden aangeleverd.</p>
 <p>In principe bestaat een tag uit slechts één woord of een kleine combinatie van maximaal twee/drie woorden. Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
 <table>
@@ -2538,7 +2602,7 @@ eigenschap worden aangeleverd.</p>
 <td>Recommended</td>
 </tr>
 </tbody></table>
-</section><section id="landing-page"><div class="header-wrapper"><h5 id="dcat-landingPage"><bdi class="secno">3.4.1.10 </bdi>landing page</h5><a class="self-link" href="#dcat-landingPage" aria-label="Permalink for Section 3.4.1.10"></a></div><p>De webpagina die toegang geeft tot de resource (dataset, dataservice of catalogus) en aanvullende informatie verschaft 
+</section><section id="landing-page"><div class="header-wrapper"><h5 id="dcat-landingPage"><bdi class="secno">3.4.1.10 </bdi>landing page</h5><a class="self-link" href="#dcat-landingPage" aria-label="Permalink for Section 3.4.1.10"></a></div><p>De webpagina die toegang geeft tot de resource (dataset, dataservice of catalogus) en aanvullende informatie verschaft
 over de resource. Het gaat hierbij om de originele webpagina van de data-eigenaar.</p>
 <table>
 <thead>
@@ -2564,10 +2628,10 @@ over de resource. Het gaat hierbij om de originele webpagina van de data-eigenaa
 <td>Optional</td>
 </tr>
 </tbody></table>
-</section><section id="access-rights"><div class="header-wrapper"><h5 id="dct-accessRights"><bdi class="secno">3.4.1.11 </bdi>access rights</h5><a class="self-link" href="#dct-accessRights" aria-label="Permalink for Section 3.4.1.11"></a></div><p>Met deze eigenschap wordt het openbaarheidsniveau van de resource aangegeven. <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> schrijft de 
-<cite><a data-matched-text="[[[MDR_ACCESSRIGHTS]]]" href="https://publications.europa.eu/resource/authority/access-right">mdr:AccessRights (publications.europa.eu)</a></cite> waardelijst voor. Bij <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> bestaat de behoefte om <em>ook</em> te beschrijven <em>waarom</em> een bron 
-beperkt of niet beschikbaar is. Om deze reden is de <a href="#waardelijst-donl-AccessRights"><code>donl:AccessRights</code></a> 
-geïntroduceerd. Deze lijst bevat concepten die de openbaarheid van een bron beschrijven <em>en</em> wat de reden is, wanneer de 
+</section><section id="access-rights"><div class="header-wrapper"><h5 id="dct-accessRights"><bdi class="secno">3.4.1.11 </bdi>access rights</h5><a class="self-link" href="#dct-accessRights" aria-label="Permalink for Section 3.4.1.11"></a></div><p>Met deze eigenschap wordt het openbaarheidsniveau van de resource aangegeven. <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> schrijft de
+<cite><a data-matched-text="[[[MDR_ACCESSRIGHTS]]]" href="https://publications.europa.eu/resource/authority/access-right">mdr:AccessRights (publications.europa.eu)</a></cite> waardelijst voor. Bij <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> bestaat de behoefte om <em>ook</em> te beschrijven <em>waarom</em> een bron
+beperkt of niet beschikbaar is. Om deze reden is de <a href="#waardelijst-donl-AccessRights"><code>donl:AccessRights</code></a>
+geïntroduceerd. Deze lijst bevat concepten die de openbaarheid van een bron beschrijven <em>en</em> wat de reden is, wanneer de
 openbaarheid niet publiek is.</p>
 <table>
 <thead>
@@ -2627,16 +2691,16 @@ openbaarheid niet publiek is.</p>
 
 <div class="note" role="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-6" aria-level="5"><span>Noot</span></div><aside class="">
 
-<p>Er is een verschil in definitie van <code>dct:language</code> (voor dataset en dataservice) tussen de specificaties volgens 
-<cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite> en <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite>. Dit toepassingsprofiel volgt <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> </p>
-<p><cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite>: A language of the item. This refers to the natural language used for textual metadata (i.e. titles, 
-descriptions, et cetera) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset 
-distribution. </p>
+<p>Er is een verschil in definitie van <code>dct:language</code> (voor dataset en dataservice) tussen de specificaties volgens
+<cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite> en <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite>. Dit toepassingsprofiel volgt <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite></p>
+<p><cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite>: A language of the item. This refers to the natural language used for textual metadata (i.e. titles,
+descriptions, et cetera) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset
+distribution.</p>
 <p><cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite>: This property refers to a language of the dataset.</p>
 </aside></div>
 
-</section><section id="other-identifier"><div class="header-wrapper"><h5 id="adms-identifier"><bdi class="secno">3.4.1.13 </bdi>other identifier</h5><a class="self-link" href="#adms-identifier" aria-label="Permalink for Section 3.4.1.13"></a></div><p>De verplichte eigenschap <a href="#dct-identifier"><code>dct:identifier</code></a> bevat de unieke identificatie van de dataset die de 
-data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset zoals gegeven door 
+</section><section id="other-identifier"><div class="header-wrapper"><h5 id="adms-identifier"><bdi class="secno">3.4.1.13 </bdi>other identifier</h5><a class="self-link" href="#adms-identifier" aria-label="Permalink for Section 3.4.1.13"></a></div><p>De verplichte eigenschap <a href="#dct-identifier"><code>dct:identifier</code></a> bevat de unieke identificatie van de dataset die de
+data-eigenaar heeft uitgegeven. Deze eigenschap bevat evt. andere unieke identifiers van de dataset zoals gegeven door
 catalogi als <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> of andere partijen. Wanneer men voor de dataset van een ander een eigen identifier gebruiken wil, wordt aangeraden dit te doen door middel van <code>other identifier</code>.</p>
 <p>In de <code>adms:identifier</code> wordt de identifier benoemd in <code>skos:notation</code> en de uitgever van de identifier in
 <code>dct:creator</code>.</p>
@@ -2667,8 +2731,8 @@ catalogi als <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid
 </tbody></table>
 <div class="issue closed" id="issue-container-number-24"><div role="heading" class="issue-title marker" id="h-issue-14" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/24"><span class="issue-number">Issue 24</span></a><span class="issue-label">: Gebruik ID's</span></div><p dir="auto">Dit wordt nog besproken binnen <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/event/dcat-ap-webinar-26th-april-1500-cet" rel="nofollow">Europa</a></p></div>
 
-</section><section id="conforms-to-nieuw"><div class="header-wrapper"><h5 id="dct-conformsTo"><bdi class="secno">3.4.1.14 </bdi>conforms to <em class="new">nieuw</em></h5><a class="self-link" href="#dct-conformsTo" aria-label="Permalink for Section 3.4.1.14"></a></div><p>De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, 
-schema, ontology, view of profiel. Het opnemen van bestandsformaten is belangrijker in het veld 
+</section><section id="conforms-to-nieuw"><div class="header-wrapper"><h5 id="dct-conformsTo"><bdi class="secno">3.4.1.14 </bdi>conforms to <em class="new">nieuw</em></h5><a class="self-link" href="#dct-conformsTo" aria-label="Permalink for Section 3.4.1.14"></a></div><p>De vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model,
+schema, ontology, view of profiel. Het opnemen van bestandsformaten is belangrijker in het veld
 <a href="#dct-format"><code>dct:format</code></a> en <a href="#dct-mediaType"><code>dct:mediaType</code></a> van de distributies, dan in <code>dct:conformsTo</code>.</p>
 <table>
 <thead>
@@ -2730,8 +2794,8 @@ Voor het toepassingsprofiel DCAT-AP-DONL 2.0 is er gekeken of er ondertussen aan
 In de toekomst zal van OWMS worden overgegaan naar TOOI, het veld grondslag zal daar aanwezig zijn, maar specificaties zijn nog niet bekend. Aangezien dit binnen KOOP wordt ontwikkeld is er contact over de mogelijke invullingen, deze lijken naast de huidige functionaliteit alleen maar extra mogelijkheden te krijgen. Daarnaast wordt er ook aan gebruikers (zoals DONL) om input gevraagd.</p></div>
 
 </section><section id="release-date"><div class="header-wrapper"><h5 id="dct-issued"><bdi class="secno">3.4.1.16 </bdi>release date</h5><a class="self-link" href="#dct-issued" aria-label="Permalink for Section 3.4.1.16"></a></div><p>De datum waarop de beschreven resource is gepubliceerd.</p>
-<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> registreert hier de eerste (vroegste) publicatiedatum waarop de data-leverancier deze dataset, dataservice of 
-catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de 
+<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> registreert hier de eerste (vroegste) publicatiedatum waarop de data-leverancier deze dataset, dataservice of
+catalogus heeft gepubliceerd. Het gaat hier dus niet om de publicatiedatum van de metadata. Ook niet over de
 wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de <a href="#dct-modified"><code>dct:modified</code></a> eigenschap.</p>
 <table>
 <thead>
@@ -2763,9 +2827,9 @@ wijzigingsdatum van de dataset, dataservice of catalogus, hiervoor is de <a href
 </aside></div>
 
 </section><section id="update-modification-date"><div class="header-wrapper"><h5 id="dct-modified"><bdi class="secno">3.4.1.17 </bdi>update/modification date</h5><a class="self-link" href="#dct-modified" aria-label="Permalink for Section 3.4.1.17"></a></div><p>De datum waarop de beschreven resource is gewijzigd.</p>
-<p>Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of catalogus is gewijzigd. Nieuwe versies 
+<p>Het gaat hierbij om de meest recente datum waarop de dataset, dataservice of catalogus is gewijzigd. Nieuwe versies
 overschrijven automatisch de oude versies.</p>
-<p>Deze eigenschap is niet/minder waardevol wanneer de data continue, of volgens een vast schema, veranderd. In dat geval 
+<p>Deze eigenschap is niet/minder waardevol wanneer de data continue, of volgens een vast schema, veranderd. In dat geval
 kan beter <a href="#dct-accrualPeriodicity"><code>dct:accrualPeriodicity</code></a> gebruikt worden.</p>
 <table>
 <thead>
@@ -2796,8 +2860,8 @@ kan beter <a href="#dct-accrualPeriodicity"><code>dct:accrualPeriodicity</code><
 <p>Gebruik altijd een datum <em>en</em> tijd conform de <cite><a data-matched-text="[[[ISO8601]]]" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO-8601</a></cite> notatie, <code>YYYY-MM-DDThh:mm:ss</code>.</p>
 </aside></div>
 
-</section><section id="rights-0"><div class="header-wrapper"><h5 id="dct-rights"><bdi class="secno">3.4.1.18 </bdi>rights</h5><a class="self-link" href="#dct-rights" aria-label="Permalink for Section 3.4.1.18"></a></div><p>De overige gebruiksrechten die niet worden gedekt met <a href="#dct-license"><code>dct:license</code></a>, zoals de copyright-statements. 
-Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attributie moet plaatsvinden wanneer bij 
+</section><section id="rights-0"><div class="header-wrapper"><h5 id="dct-rights"><bdi class="secno">3.4.1.18 </bdi>rights</h5><a class="self-link" href="#dct-rights" aria-label="Permalink for Section 3.4.1.18"></a></div><p>De overige gebruiksrechten die niet worden gedekt met <a href="#dct-license"><code>dct:license</code></a>, zoals de copyright-statements.
+Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attributie moet plaatsvinden wanneer bij
 <a href="#dct-license"><code>dct:license</code></a> een CC-BY licentie is gekozen.</p>
 <p>Zie <a href="#ondersteuning-voor-meertaligheid">meertaligheid</a> voor het omgaan met verschillende talen.</p>
 <table>
@@ -2826,12 +2890,13 @@ Deze eigenschap kan bijvoorbeeld gebruikt worden om aan te geven hoe de attribut
 </tbody></table>
 <div class="issue closed" id="issue-container-number-22-1"><div role="heading" class="issue-title marker" id="h-issue-18" aria-level="5"><a href="https://github.com/dataoverheid/dcat-ap-donl/issues/22"><span class="issue-number">Issue 22</span></a><span class="issue-label">: Invullen van dct:license en dct:rights <a class="respec-gh-label" href="https://github.com/dataoverheid/dcat-ap-donl/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Respec%22" style="background-color: rgb(14, 138, 22); color: rgb(0, 0, 0);" aria-label="GitHub label: Respec">Respec</a></span></div><p dir="auto">dct:license en dct:rights zijn te vinden in resource én in dataservice. Wanneer moet je nu welke eigenschap invullen?</p></div>
 
-</section><section id="qualified-attribution-nieuw"><div class="header-wrapper"><h5 id="prov-qualifiedAttribution"><bdi class="secno">3.4.1.19 </bdi>qualified attribution <em class="new">nieuw</em></h5><a class="self-link" href="#prov-qualifiedAttribution" aria-label="Permalink for Section 3.4.1.19"></a></div><p>Een organisatie, anders dan de <code>dct:creator</code> of <code>dct:publisher</code> die ook een verantwoordelijkheid draagt voor de 
+</section><section id="qualified-attribution-nieuw"><div class="header-wrapper"><h5 id="prov-qualifiedAttribution"><bdi class="secno">3.4.1.19 </bdi>qualified attribution <em class="new">nieuw</em></h5><a class="self-link" href="#prov-qualifiedAttribution" aria-label="Permalink for Section 3.4.1.19"></a></div><p>Een organisatie, anders dan de <code>dct:creator</code> of <code>dct:publisher</code> die ook een verantwoordelijkheid draagt voor de
 resource.</p>
-<p>In het bereik <code>prov:Attribution</code> wordt in de eigenschap <code>prov:hadRole</code> de rol van de organisatie benoemd. Hier kan 
+<p>In het bereik <code>prov:Attribution</code> wordt in de eigenschap <code>prov:hadRole</code> de rol van de organisatie benoemd. Hier kan
 worden gekozen uit de ISO-waardelijst <cite><a data-matched-text="[[[ISO19115_ROLECODE]]]" href="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml">ISO-19115 RoleCode</a></cite>.</p>
-<p>In <code>prov:agent</code> wordt de naam van de organisatie opgenomen. Omdat dit niet altijd overheidsorganisaties zullen zijn 
-hoeft deze waarde niet uit <a href="#waardelijst-donl-Organization"><code>waardelijst donl:Organization</code></a> te komen. </p>
+<p>In <code>prov:agent</code> wordt de naam van de organisatie opgenomen. Omdat dit niet altijd overheidsorganisaties zullen zijn
+hoeft deze waarde niet uit een de organisatie waardelijsten (<code>owms:Organisatie</code> en/of <code>donl:RelevantOrganization</code>) te
+komen.</p>
 <table>
 <thead>
 <tr>
@@ -3753,12 +3818,32 @@ profiel worden de <code>3.0</code> versies van deze licenties ook aangeboden. Di
 <td><a href="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/licences.ttl">https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/licences.ttl</a></td>
 </tr>
 </tbody></table>
-</section><section id="donl-organization"><div class="header-wrapper"><h4 id="waardelijst-donl-Organization"><bdi class="secno">4.2.4 </bdi>donl:Organization</h4><a class="self-link" href="#waardelijst-donl-Organization" aria-label="Permalink for Section 4.2.4"></a></div></section><section id="donl-supportingrole"><div class="header-wrapper"><h4 id="waardelijst-donl-SupportingRole"><bdi class="secno">4.2.5 </bdi>donl:SupportingRole</h4><a class="self-link" href="#waardelijst-donl-SupportingRole" aria-label="Permalink for Section 4.2.5"></a></div><p>Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron (het kan bijvoorbeeld
+</section><section id="donl-relevantorganization"><div class="header-wrapper"><h4 id="waardelijst-donl-RelevantOrganization"><bdi class="secno">4.2.4 </bdi>donl:RelevantOrganization</h4><a class="self-link" href="#waardelijst-donl-RelevantOrganization" aria-label="Permalink for Section 4.2.4"></a></div></section><section id="donl-role"><div class="header-wrapper"><h4 id="waardelijst-donl-Role"><bdi class="secno">4.2.5 </bdi>donl:Role</h4><a class="self-link" href="#waardelijst-donl-Role" aria-label="Permalink for Section 4.2.5"></a></div><p>Deze taxonomie bevat concepten die beschrijven in welke capaciteit een persoon of organisatie betrokken is (of is
+geweest) bij een bron.</p>
+<p>Het <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite> beveelt de <cite><a data-matched-text="[[[ISO19115_ROLECODE]]]" href="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml">ISO-19115 RoleCode</a></cite> taxonomie aan. Deze is echter niet in linked data vorm
+beschikbaar. Om deze reden biedt dit profiel zelf een <code>skos:ConceptScheme</code> aan met daarin opgenomen de <code>CI_RoleCode</code>
+concepten.</p>
+<p>Deze lijst moet gebruikt worden bij het invullen van het <code>prov:hadRole</code> eigenschap, wat onderdeel is van het
+<a href="#prov-qualifiedAttribution"><code>prov:qualifiedAttribution</code></a> eigenschap, die vanuit <a href="#dcat-Resource"><code>dcat:Resource</code></a>
+aangeboden wordt.</p>
+<table>
+<thead>
+<tr>
+<th>Serialisatie</th>
+<th>Adres</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Turtle</td>
+<td><a href="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/roles.ttl">https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/roles.ttl</a></td>
+</tr>
+</tbody></table>
+</section><section id="donl-supportingrole"><div class="header-wrapper"><h4 id="waardelijst-donl-SupportingRole"><bdi class="secno">4.2.6 </bdi>donl:SupportingRole</h4><a class="self-link" href="#waardelijst-donl-SupportingRole" aria-label="Permalink for Section 4.2.6"></a></div><p>Bevat concepten die beschrijven wat voor ondersteunende rol een bron dient voor een andere bron (het kan bijvoorbeeld
 aangeven dat een distributie documentatie bevat van een dataset). Deze waardelijst heette in <cite><a data-matched-text="[[[DCATAPDONL_11]]]" href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a></cite>
-<code>donl:DistributionType</code>. </p>
+<code>donl:DistributionType</code>.</p>
 <p>De lijst is aanzienlijk ingekort aangezien een aantal 'types' herleidbaar zijn uit andere metadata-eigenschappen. Zo
 zijn de concepten <code>DOWNLOAD</code> en <code>WEBSERVICE</code> niet meegenomen uit de oude lijst aangezien deze informatie al geduid wordt
-door middel van de eigenschappen <code>dcat:downloadURL</code> en/of <code>dcat:accessService</code> die op <code>dcat:Distribution</code> niveau 
+door middel van de eigenschappen <code>dcat:downloadURL</code> en/of <code>dcat:accessService</code> die op <code>dcat:Distribution</code> niveau
 aanwezig zijn.</p>
 <div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="4"><span>Noot</span></div><aside class="">
 
@@ -3778,7 +3863,7 @@ werkversies van deze concepten zijn voorlopig raadpleegbaar op <cite><a data-mat
 <td><a href="https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/supporting-roles.ttl">https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/supporting-roles.ttl</a></td>
 </tr>
 </tbody></table>
-</section><section id="iana-mediatype"><div class="header-wrapper"><h4 id="waardelijst-iana-Mediatype"><bdi class="secno">4.2.6 </bdi>iana:Mediatype</h4><a class="self-link" href="#waardelijst-iana-Mediatype" aria-label="Permalink for Section 4.2.6"></a></div><p>Bevat concepten die de mimetype van een bron beschrijven. Deze lijst is raadpleegbaar via <cite><a data-matched-text="[[[IANA_MEDIATYPES]]]" href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA Mediatypes</a></cite>.</p>
+</section><section id="iana-mediatype"><div class="header-wrapper"><h4 id="waardelijst-iana-Mediatype"><bdi class="secno">4.2.7 </bdi>iana:Mediatype</h4><a class="self-link" href="#waardelijst-iana-Mediatype" aria-label="Permalink for Section 4.2.7"></a></div><p>Bevat concepten die de mimetype van een bron beschrijven. Deze lijst is raadpleegbaar via <cite><a data-matched-text="[[[IANA_MEDIATYPES]]]" href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA Mediatypes</a></cite>.</p>
 <table>
 <thead>
 <tr>
@@ -3791,7 +3876,7 @@ werkversies van deze concepten zijn voorlopig raadpleegbaar op <cite><a data-mat
 <td><a href="https://www.iana.org/assignments/media-types/media-types.xml">https://www.iana.org/assignments/media-types/media-types.xml</a></td>
 </tr>
 </tbody></table>
-</section><section id="mdr-filetype"><div class="header-wrapper"><h4 id="waardelijst-mdr-Filetype"><bdi class="secno">4.2.7 </bdi>mdr:Filetype</h4><a class="self-link" href="#waardelijst-mdr-Filetype" aria-label="Permalink for Section 4.2.7"></a></div><p>Bevat concepten die het bestandsformaat van een bron beschrijven. Dit is een Europese taxonomie raadpleegbaar via 
+</section><section id="mdr-filetype"><div class="header-wrapper"><h4 id="waardelijst-mdr-Filetype"><bdi class="secno">4.2.8 </bdi>mdr:Filetype</h4><a class="self-link" href="#waardelijst-mdr-Filetype" aria-label="Permalink for Section 4.2.8"></a></div><p>Bevat concepten die het bestandsformaat van een bron beschrijven. Dit is een Europese taxonomie raadpleegbaar via
 <cite><a data-matched-text="[[[MDR_FILETYPE]]]" href="https://publications.europa.eu/resource/authority/file-type">mdr:Filetype (publications.europa.eu)</a></cite>.</p>
 <table>
 <thead>
@@ -3805,7 +3890,7 @@ werkversies van deze concepten zijn voorlopig raadpleegbaar op <cite><a data-mat
 <td><a href="https://publications.europa.eu/resource/authority/file-type">https://publications.europa.eu/resource/authority/file-type</a></td>
 </tr>
 </tbody></table>
-</section><section id="mdr-frequency"><div class="header-wrapper"><h4 id="waardelijst-mdr-Frequency"><bdi class="secno">4.2.8 </bdi>mdr:Frequency</h4><a class="self-link" href="#waardelijst-mdr-Frequency" aria-label="Permalink for Section 4.2.8"></a></div><p>Bevat concepten die beschrijven met welke frequentie een bron verwacht bijgewerkt te worden. Dit is een Europese 
+</section><section id="mdr-frequency"><div class="header-wrapper"><h4 id="waardelijst-mdr-Frequency"><bdi class="secno">4.2.9 </bdi>mdr:Frequency</h4><a class="self-link" href="#waardelijst-mdr-Frequency" aria-label="Permalink for Section 4.2.9"></a></div><p>Bevat concepten die beschrijven met welke frequentie een bron verwacht bijgewerkt te worden. Dit is een Europese
 taxonomie raadpleegbaar via <cite><a data-matched-text="[[[MDR_FREQUENCY]]]" href="https://publications.europa.eu/resource/authority/frequency">mdr:Frequency (publications.europa.eu)</a></cite>.</p>
 <table>
 <thead>
@@ -3819,7 +3904,7 @@ taxonomie raadpleegbaar via <cite><a data-matched-text="[[[MDR_FREQUENCY]]]" hre
 <td><a href="https://publications.europa.eu/resource/authority/frequency">https://publications.europa.eu/resource/authority/frequency</a></td>
 </tr>
 </tbody></table>
-</section><section id="overheid-gemeente"><div class="header-wrapper"><h4 id="waardelijst-overheid-Gemeente"><bdi class="secno">4.2.9 </bdi>overheid:Gemeente</h4><a class="self-link" href="#waardelijst-overheid-Gemeente" aria-label="Permalink for Section 4.2.9"></a></div><p>Deze taxonomie bevat concepten die de gemeenten van de Nederlandse overheid beschrijven. Deze lijst komt uit de 
+</section><section id="overheid-gemeente"><div class="header-wrapper"><h4 id="waardelijst-overheid-Gemeente"><bdi class="secno">4.2.10 </bdi>overheid:Gemeente</h4><a class="self-link" href="#waardelijst-overheid-Gemeente" aria-label="Permalink for Section 4.2.10"></a></div><p>Deze taxonomie bevat concepten die de gemeenten van de Nederlandse overheid beschrijven. Deze lijst komt uit de
 <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> en is raadpleegbaar via <cite><a data-matched-text="[[[OWMS_GEMEENTE]]]" href="https://standaarden.overheid.nl/owms/terms/Gemeente">overheid:Gemeente (standaarden.overheid.nl)</a></cite>.</p>
 <table>
 <thead>
@@ -3841,7 +3926,7 @@ taxonomie raadpleegbaar via <cite><a data-matched-text="[[[MDR_FREQUENCY]]]" hre
 <td><a href="https://standaarden.overheid.nl/owms/terms/Gemeente.n3">https://standaarden.overheid.nl/owms/terms/Gemeente.n3</a></td>
 </tr>
 </tbody></table>
-</section><section id="overheid-koninkrijksdeel"><div class="header-wrapper"><h4 id="waardelijst-overheid-Koninkrijksdeel"><bdi class="secno">4.2.10 </bdi>overheid:Koninkrijksdeel</h4><a class="self-link" href="#waardelijst-overheid-Koninkrijksdeel" aria-label="Permalink for Section 4.2.10"></a></div><p>Deze taxonomie bevat concepten die de koninkrijksdelen van het Koninkrijk der Nederlanden beschrijven. Deze lijst komt
+</section><section id="overheid-koninkrijksdeel"><div class="header-wrapper"><h4 id="waardelijst-overheid-Koninkrijksdeel"><bdi class="secno">4.2.11 </bdi>overheid:Koninkrijksdeel</h4><a class="self-link" href="#waardelijst-overheid-Koninkrijksdeel" aria-label="Permalink for Section 4.2.11"></a></div><p>Deze taxonomie bevat concepten die de koninkrijksdelen van het Koninkrijk der Nederlanden beschrijven. Deze lijst komt
 uit de <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> en is raadpleegbaar via <cite><a data-matched-text="[[[OWMS_KONINKRIJKSDEEL]]]" href="https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel">overheid:Koninkrijksdeel (standaarden.overheid.nl)</a></cite>.</p>
 <table>
 <thead>
@@ -3863,7 +3948,29 @@ uit de <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.over
 <td><a href="https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel.n3">https://standaarden.overheid.nl/owms/terms/Koninkrijksdeel.n3</a></td>
 </tr>
 </tbody></table>
-</section><section id="overheid-provincie"><div class="header-wrapper"><h4 id="waardelijst-overheid-Provincie"><bdi class="secno">4.2.11 </bdi>overheid:Provincie</h4><a class="self-link" href="#waardelijst-overheid-Provincie" aria-label="Permalink for Section 4.2.11"></a></div><p>Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Deze lijst komt uit de 
+</section><section id="overheid-organisatie"><div class="header-wrapper"><h4 id="waardelijst-overheid-Organisatie"><bdi class="secno">4.2.12 </bdi>overheid:Organisatie</h4><a class="self-link" href="#waardelijst-overheid-Organisatie" aria-label="Permalink for Section 4.2.12"></a></div><p>Deze taxonomie bevat concepten die de overheidsorganisaties van de Nederland beschrijven. Deze lijst komt uit de
+<cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> en is raadpleegbaar via <cite><a data-matched-text="[[[OWMS_ORGANISATIE]]]" href="https://standaarden.overheid.nl/owms/terms/Organisatie">overheid:Organisatie (standaarden.overheid.nl)</a></cite>.</p>
+<table>
+<thead>
+<tr>
+<th>Serialisatie</th>
+<th>Adres</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>XML</td>
+<td><a href="https://standaarden.overheid.nl/owms/terms/Organisatie.xml">https://standaarden.overheid.nl/owms/terms/Organisatie.xml</a></td>
+</tr>
+<tr>
+<td>RDF/XML</td>
+<td><a href="https://standaarden.overheid.nl/owms/terms/Organisatie.rdf">https://standaarden.overheid.nl/owms/terms/Organisatie.rdf</a></td>
+</tr>
+<tr>
+<td>N3</td>
+<td><a href="https://standaarden.overheid.nl/owms/terms/Organisatie.n3">https://standaarden.overheid.nl/owms/terms/Organisatie.n3</a></td>
+</tr>
+</tbody></table>
+</section><section id="overheid-provincie"><div class="header-wrapper"><h4 id="waardelijst-overheid-Provincie"><bdi class="secno">4.2.13 </bdi>overheid:Provincie</h4><a class="self-link" href="#waardelijst-overheid-Provincie" aria-label="Permalink for Section 4.2.13"></a></div><p>Deze taxonomie bevat concepten die de provincies van de Nederlandse overheid beschrijven. Deze lijst komt uit de
 <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> en is raadpleegbaar via <cite><a data-matched-text="[[[OWMS_PROVINCIE]]]" href="https://standaarden.overheid.nl/owms/terms/Provincie">overheid:Provincie (standaarden.overheid.nl)</a></cite>.</p>
 <table>
 <thead>
@@ -3885,7 +3992,7 @@ uit de <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.over
 <td><a href="https://standaarden.overheid.nl/owms/terms/Provincie.n3">https://standaarden.overheid.nl/owms/terms/Provincie.n3</a></td>
 </tr>
 </tbody></table>
-</section><section id="overheid-waterschap"><div class="header-wrapper"><h4 id="waardelijst-overheid-Waterschap"><bdi class="secno">4.2.12 </bdi>overheid:Waterschap</h4><a class="self-link" href="#waardelijst-overheid-Waterschap" aria-label="Permalink for Section 4.2.12"></a></div><p>Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Deze lijst komt uit de 
+</section><section id="overheid-waterschap"><div class="header-wrapper"><h4 id="waardelijst-overheid-Waterschap"><bdi class="secno">4.2.14 </bdi>overheid:Waterschap</h4><a class="self-link" href="#waardelijst-overheid-Waterschap" aria-label="Permalink for Section 4.2.14"></a></div><p>Deze taxonomie bevat concepten die de waterschappen van de Nederlandse overheid beschrijven. Deze lijst komt uit de
 <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> en is raadpleegbaar via <cite><a data-matched-text="[[[OWMS_WATERSCHAP]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap">overheid:Waterschap (standaarden.overheid.nl)</a></cite>.</p>
 <table>
 <thead>
@@ -3907,7 +4014,7 @@ uit de <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.over
 <td><a href="https://standaarden.overheid.nl/owms/terms/Waterschap.n3">https://standaarden.overheid.nl/owms/terms/Waterschap.n3</a></td>
 </tr>
 </tbody></table>
-</section><section id="overheid-taxonomiebeleidsagenda"><div class="header-wrapper"><h4 id="waardelijst-overheid-TaxonomieBeleidsagenda"><bdi class="secno">4.2.13 </bdi>overheid:TaxonomieBeleidsagenda</h4><a class="self-link" href="#waardelijst-overheid-TaxonomieBeleidsagenda" aria-label="Permalink for Section 4.2.13"></a></div><p>Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Deze lijst komt uit de 
+</section><section id="overheid-taxonomiebeleidsagenda"><div class="header-wrapper"><h4 id="waardelijst-overheid-TaxonomieBeleidsagenda"><bdi class="secno">4.2.15 </bdi>overheid:TaxonomieBeleidsagenda</h4><a class="self-link" href="#waardelijst-overheid-TaxonomieBeleidsagenda" aria-label="Permalink for Section 4.2.15"></a></div><p>Bevat concepten die de beleidsagenda van de Nederlandse overheid vertegenwoordigen. Deze lijst komt uit de
 <cite><a data-matched-text="[[[OWMS_40]]]" href="https://standaarden.overheid.nl/owms/terms">OWMS 4.0</a></cite> en is raadpleegbaar via <cite><a data-matched-text="[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda">overheid:TaxonomieBeleidsagenda (standaarden.overheid.nl)</a></cite>.</p>
 <blockquote>
 <p>Er wordt nog onderzocht hoe de mapping van de <cite><a data-matched-text="[[[OWMS_TAXONOMIEBELEIDSAGENDA]]]" href="https://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.taxonomiebeleidsagenda">overheid:TaxonomieBeleidsagenda (standaarden.overheid.nl)</a></cite> naar de <cite><a data-matched-text="[[[MDR_DATATHEME]]]" href="https://publications.europa.eu/resource/authority/data-theme">mdr:DataTheme (publications.europa.eu)</a></cite> aangeboden
@@ -3933,9 +4040,9 @@ gaat worden.</p>
 <td><a href="https://standaarden.overheid.nl/owms/terms/TaxonomieBeleidsagenda.n3">https://standaarden.overheid.nl/owms/terms/TaxonomieBeleidsagenda.n3</a></td>
 </tr>
 </tbody></table>
-</section><section id="spdx-checksumalgorithm"><div class="header-wrapper"><h4 id="waardelijst-spdx-ChecksumAlgorithm"><bdi class="secno">4.2.14 </bdi>spdx:ChecksumAlgorithm</h4><a class="self-link" href="#waardelijst-spdx-ChecksumAlgorithm" aria-label="Permalink for Section 4.2.14"></a></div><p>Bevat concepten die beschrijven welk algorithme gebruikt is om tot een hash te komen die als checksum dient van een
+</section><section id="spdx-checksumalgorithm"><div class="header-wrapper"><h4 id="waardelijst-spdx-ChecksumAlgorithm"><bdi class="secno">4.2.16 </bdi>spdx:ChecksumAlgorithm</h4><a class="self-link" href="#waardelijst-spdx-ChecksumAlgorithm" aria-label="Permalink for Section 4.2.16"></a></div><p>Bevat concepten die beschrijven welk algorithme gebruikt is om tot een hash te komen die als checksum dient van een
 bron. Alle concepten komen uit de <cite><a data-matched-text="[[[SPDX_CHECKSUMALGORITHM]]]" href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a></cite>.</p>
-<p><code>spdx:ChecksumAlgorithm</code> is niet als LinkedData beschikbaar. Om deze reden biedt <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> deze lijst zelf als 
+<p><code>spdx:ChecksumAlgorithm</code> is niet als LinkedData beschikbaar. Om deze reden biedt <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> deze lijst zelf als
 LinkedData aan.</p>
 <table>
 <thead>

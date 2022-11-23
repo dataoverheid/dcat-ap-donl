@@ -29,7 +29,7 @@ In de DCAT omschrijving (in de voorbeelden in [turtle formaat](https://www.w3.or
 
 `dcat:theme` vraagt om een `waardelijst overheid:TaxonomieBeleidsagenda`. Wanneer er om een waarde uit een waardelijst wordt gevraagd dient men de gehelde URI van de waarde in te vullen. De mogelijke waardes en bijbehorende URI's zijn te vinden in hoofdstuk 4: [overheid:TaxonomieBeleidsagenda](#waardelijst-overheid-TaxonomieBeleidsagenda). De waardelijsten zijn in te zien door op de links ernaartoe te klikken, bv de RDF/XML. Hier kan worden gezocht naar de het passende thema 'Immigratie'. Vervolgens laat deze zien dat het label 'Immigratie' toebehoord aan "http://standaarden.overheid.nl/owms/terms/Immigratie_(thema)". Dit is wat er wordt ingevuld in `dcat:theme`
 
-Voor het migratieketenvoorbeeld zou deze minimale vorm van `dcat:dataset` er als volgt uitzien (Het onderstaande `dct:description` is om praktische redenen verkort):
+Voor het migratieketenvoorbeeld zou deze minimale vorm van `dcat:dataset` er als volgt uitzien (Het onderstaande `dct:description` is om praktische redenen ingekort):
 
 <aside class="example" title="Begin, minimale dataset">
 	<pre>
@@ -81,25 +81,74 @@ Er is alleen wel meer informatie dan de minimale set bekend voor deze dataset. M
 	</pre>
 </aside>
 
-Deze beschrijving behandeld alleen de dataset als concept. Het beschrijft nog niet hoe deze gepresenteerd wordt. De reden daarvoor is dat dit op verschillende manieren kan. Deze dataset kan bijvoorbeeld zowel als Excel als csv bestand worden gepresenteerd. Het gaat dan om dezelfde data en dus dezelfde `dcat:dataset`.
+Deze beschrijving behandeld alleen de dataset als concept. Het beschrijft nog niet hoe deze aangeboden wordt. De reden daarvoor is dat dit op verschillende manieren kan. Deze dataset kan bijvoorbeeld zowel als Excel als csv bestand worden aangeboden. Het gaat dan om dezelfde data en dus dezelfde `dcat:dataset`.
 
-Om deze verschillende presentaties te maken worden `dcat:distributions` toegevoegd.
+Voor deze verschillende presentaties worden `dcat:distributions` toegevoegd. Om praktische redenen is de migratie dataset opgeknipt in verschillende jaren. Elk jaar heeft een eigen distributie. De eerste omschreven distributie beschrijft de data van 2022 dat in csv formaat wordt aangeboden.  
 
 <aside class="example" title="Minimale distributie">
 	<pre>
 		<code>
-			<Vertrek-DTenVinstroom202022.csv> a dcat:Distribution ;
-				dcat:accessURL <https://data.overheid.nl/sites/default/files/dataset/5305feb3-bafc-46b5-bdba-46dd5eed6afc/resources/Vertrek%20-%20DTenV%20instroom%202022.csv> ;
-				dct:format <http:∕∕publications.europa.eu∕resource∕authority∕file-type∕CSV> ;
+			&lt;Vertrek-DTenVinstroom202021.csv&gt; a dcat:Distribution ;
+				dcat:accessURL &lt;https:&#x2215;&#x2215;data.overheid.nl&#x2215;sites&#x2215;default&#x2215;files&#x2215;dataset&#x2215;5305feb3-bafc-46b5-bdba-46dd5eed6afc&#x2215;resources&#x2215;Vertrek%20-%20DTenV%20instroom%202022.csv&gt; ;
+				dct:format &lt;http:&#x2215;&#x2215;publications.europa.eu&#x2215;resource&#x2215;authority&#x2215;file-type&#x2215;CSV&gt; ;
 				dct:title "Vertrek - DTenV Instroom 2022"@nl;
 				dct:description "Indien de databron direct downloadbaar is, kunt u dit in dit veld aangeven. De hergebruiker kan dan direct de databron downloaden."@nl;
-				dct:license <http:∕∕creativecommons.org∕publicdomain∕zero∕1.0∕deed.nl>;
+				dct:license &lt;http:&#x2215;&#x2215;creativecommons.org&#x2215;publicdomain&#x2215;zero&#x2215;1.0&#x2215;deed.nl&gt;;
 			.
 		</code>
 	</pre>
 </aside>
 
+<aside class="example" title="Volledige distributie">
+	<pre>
+		<code>
+			&lt;Vertrek-DTenVinstroom202021.csv&gt; a dcat:Distribution ;
+				dcat:accessURL &lt;https:&#x2215;&#x2215;data.overheid.nl&#x2215;sites&#x2215;default&#x2215;files&#x2215;dataset&#x2215;5305feb3-bafc-46b5-bdba-46dd5eed6afc&#x2215;resources&#x2215;Vertrek%20-%20DTenV%20instroom%202022.csv&gt; ;
+				dct:format &lt;http:&#x2215;&#x2215;publications.europa.eu&#x2215;resource&#x2215;authority&#x2215;file-type&#x2215;CSV&gt; ;
+				dct:title "Vertrek - DTenV Instroom 2022"@nl;
+				dct:description "Indien de databron direct downloadbaar is, kunt u dit in dit veld aangeven. De hergebruiker kan dan direct de databron downloaden."@nl;
+				dct:license &lt;http:&#x2215;&#x2215;creativecommons.org&#x2215;publicdomain&#x2215;zero&#x2215;1.0&#x2215;deed.nl&gt;;
+				modified
+				language
+				byteSize
+				conformsTo
+				documentation
+			.
+		</code>
+	</pre>
+</aside>
 
+<aside class="example" title="Meerdere distributies">
+	<pre>
+		<code>
+			&lt;Vertrek-DTenVinstroom202021.csv&gt; a dcat:Distribution ;
+			&lt;Vertrek-DTenVinstroom202022.csv&gt; a dcat:Distribution ;
+			.
+		</code>
+	</pre>
+</aside>
+
+<aside class="example" title="Distributie als documentatie">
+	<pre>
+		<code>
+			&lt;documentatie&gt; a dcat:Distribution ;
+			.
+		</code>
+	</pre>
+</aside>
+
+<aside class="example" title="Gehele DCAT omschrijving">
+	<pre>
+		<code>
+		&lt;https:&#x2215;&#x2215;data.overheid.nl&#x2215;dataset&#x2215;immigratie-vertrek-dtenv-instroom&gt;
+			a dcat:Dataset;
+		&lt;Vertrek-DTenVinstroom202021.csv&gt; a dcat:Distribution ;
+		&lt;Vertrek-DTenVinstroom202022.csv&gt; a dcat:Distribution ;
+		&lt;documentatie&gt; a dcat:Distribution ;
+			.
+		</code>
+	</pre>
+</aside>
 
 
 #### [=DCAT beschrijving=] voor intern gebruik ontwikkelen

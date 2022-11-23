@@ -1,0 +1,14 @@
+# baseURI: https://dcat.overheid.nl/application-profile/donl/taxonomy/organizations
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://dcat.overheid.nl/application-profile/donl/taxonomy/organizations>
+  rdf:type skos:ConceptScheme ;
+  dcterms:identifier "https://dcat.overheid.nl/application-profile/donl/taxonomy/organizations" ;
+  dcterms:title "Relevant organizations"@en ;
+  dcterms:title "Relevante organisaties"@nl ;
+  skos:definition "Deze taxonomie bevat concepten die organisaties beschrijven die maatschappelijk relevante data uitwisselen met data.overheid.nl. Dit kunnen zowel private partijen als overheidsorganisaties zijn."@nl ;
+skos:editorialNote "Alleen overheidsorganisaties die niet in het OWMS opgenomen zijn zullen in deze lijst opgenomen worden."@nl ;
+.

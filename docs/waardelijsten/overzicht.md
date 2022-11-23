@@ -50,6 +50,12 @@ profiel worden de `3.0` versies van deze licenties ook aangeboden. Dit omdat bli
 
 #### donl:RelevantOrganization {#waardelijst-donl-RelevantOrganization}
 
+> Zie ook: [`overheid:Organisatie`](#waardelijst-overheid-Organisatie)
+
+| Serialisatie | Adres                                                                                       |
+|--------------|---------------------------------------------------------------------------------------------|
+| Turtle       | https://raw.githubusercontent.com/dataoverheid/dcat-ap-donl/main/taxonomy/organizations.ttl |
+
 #### donl:Role {#waardelijst-donl-Role}
 
 Deze taxonomie bevat concepten die beschrijven in welke capaciteit een persoon of organisatie betrokken is (of is

@@ -368,14 +368,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "tooi"
     }
   },
-  "publishISODate": "2022-11-23T00:00:00.000Z",
-  "generatedSubtitle": "23 november 2022"
+  "publishISODate": "2022-11-24T00:00:00.000Z",
+  "generatedSubtitle": "24 november 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css"></head>
 <body class="h-entry informative" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">DCAT-AP-DONL 2.0</h1> 
-    <p id="w3c-state"> <time class="dt-published" datetime="2022-11-23">23 november 2022</time></p>
+    <p id="w3c-state"> <time class="dt-published" datetime="2022-11-24">24 november 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -4126,7 +4126,20 @@ LinkedData aan.</p>
 <div class="header-wrapper"><h4 id="wat-doe-ik-als-ik-een-rest-json-wil-omschrijven-in-dcat">Wat doe ik als ik een REST/JSON wil omschrijven in DCAT?</h4><a class="self-link" href="#wat-doe-ik-als-ik-een-rest-json-wil-omschrijven-in-dcat" aria-label="Permalink for this Appendix"></a></div>
 <div class="header-wrapper"><h4 id="wat-doe-ik-als-ik-een-excel-wil-delen">Wat doe ik als ik een Excel wil delen?</h4><a class="self-link" href="#wat-doe-ik-als-ik-een-excel-wil-delen" aria-label="Permalink for this Appendix"></a></div>
 <div class="header-wrapper"><h4 id="dcat-beschrijving-voor-intern-gebruik-ontwikkelen"><a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-4">DCAT beschrijving</a> voor intern gebruik ontwikkelen</h4><a class="self-link" href="#dcat-beschrijving-voor-intern-gebruik-ontwikkelen" aria-label="Permalink for this Appendix"></a></div>
+<p>DCAT dient als vocabulaire om het delen van data tussen verschillende partijen makkelijker te maken. Maar het kan ook erg goed worden gebruikt om interne data te beschrijven. Binnen organisaties kunnen verschillende afdelingen immers als partij worden gezien. En overzicht is op elk niveau waardevol.</p>
+<p>Wanneer interne data in DCAT beschreven wordt, wordt het delen van deze zelfde informatie met de buitenwereld een stuk makkelijker. Dit heeft dezelfde structuur en er is dus geen vertaling meer nodig.</p>
+<p>Mocht DCAT-AP-DONL 2.0 niet voldoen aan de interne behoeftes is het makkelijk uit te breiden en aan te passen. Goede bronnen hiervoor zijn <cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2">DCAT 2.0</a></cite> en <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210">DCAT-AP 2.1</a></cite>.</p>
+<p>Er kan bijvoorbeeld worden gekozen om de eigenschap <a href="#dct-license"><code>dct:license</code></a> achter wege te laten. Of er kunnen ter verrijking eigenschappen worden toevoegt.</p>
+<p>Wanneer de data niet naar buiten wordt gecommuniceerd kan men ook andere waardelijsten gebruiken. De <a href="#waardelijst-overheid-TaxonomieBeleidsagenda">TaxonomieBeleidsagenda</a></p>
+<p>wordt op <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl/">data.overheid.nl</a></cite> verplicht om consistentie te behouden, maar een eigen thema waardelijst kan voor intern gebruik veel krachtiger zijn. Ook kan bijvoorbeeld met eigen waardes voor <a href="#waardelijst-donl-AccessRights">AccessRights</a> binnen een organisatie direct duidelijk worden gemaakt wie er wel en wie geen toegang heeft tot de data.</p>
+<p>Let er wel op dat wanneer men aangepaste beschrijvingen toch met de buitenwereld wil delen, er een oplossing moet zijn om deze aan te kunnen laten sluiten. Interne eigenschappen kunnen vervallen, maar voor waardelijsten zal een mapping nodig zijn.</p>
+<p>Ook kan men door middel van <a href="#dcat-Catalog"><code>dcat:Catalog</code></a> een eigen structuur of hiërarchie creëren.</p>
 <div class="header-wrapper"><h4 id="interne-dcat-beschrijving-uitwisselen-met-donl">Interne <a data-link-type="dfn" href="#dfn-dcat-beschrijving" class="internalDFN" id="ref-for-dfn-dcat-beschrijving-5">DCAT beschrijving</a> uitwisselen met DONL</h4><a class="self-link" href="#interne-dcat-beschrijving-uitwisselen-met-donl" aria-label="Permalink for this Appendix"></a></div>
+<p>Het delen van DCAT beschrijvingen van interne data kan gewenst zijn om transparantie in de organisatie en processen te verhogen. Maar ook om te delen dat je gesloten data hebt, dat in overleg misschien gedeeld kan worden.</p>
+<p>Denk in het eerste geval bijvoorbeeld aan het kenbaar maken dat je als organisatie een personeelsbestand hebt. En denk bij het tweede aan de microdata van het CBS dat niet openbaar is. Men kan een aanvraag doen om deze toch in te kunnen zien en te gebruiken.</p>
+<p>Met alleen een DCAT beschrijving is de data meestal niet direct toegankelijk. Het is wel goed mogelijk dat er toch gevoelige informatie in staat. Dit kan in de <a href="#dct-description"><code>description</code></a> zijn, of één van de (eigen toegevoegde) velden of waardelijsten. Let hier erg goed op!</p>
+<p>Denk verder aan welke informatie er gedeeld moet worden met een geïnteresseerde in de data. Naast het weghalen van de gevoelige informatie kan het waardevol zijn om voor het nieuwe publiek informatie toe te voegen. Bijvoorbeeld eigenschappen als <a href="#dct-accessRights"><code>AccessRights</code></a> en <a href="#foaf-page1"><code>documentation</code></a> zullen belangrijker worden. Ook kan het de moeite waard zijn de <a href="#dct-title">titel</a>en <a href="#dct-description"><code>description</code></a> te herschrijven. En zal het <a href="#dcat-contactPoint">contact punt</a> voor extern anders zijn dan intern.</p>
+<p>In dit toepassingsprofiel is voor elke klasse te vinden welke eigenschappen er <a href="#overzicht">verplicht</a> zijn.</p>
 </div>
     </section>
 

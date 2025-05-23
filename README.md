@@ -3,7 +3,7 @@
 Deze repository is onderdeel van [data.overheid.nl](https://data.overheid.nl). Het ondersteunt de activiteiten van de
 werkgroep bij de upgrade van het toepassingsprofiel van de uitwisselingsstandaard DCAT, van versie 1 naar versie 2.
 
-* [Laatste versie (dataoverheid.github.io/dcat-ap-donl)](https://dataoverheid.github.io/dcat-ap-donl/)
+* ~~Laatste versie (dataoverheid.github.io/dcat-ap-donl)~~
 * [Feedback (github.com/dataoverheid/dcat-ap-donl/issues)](https://github.com/dataoverheid/dcat-ap-donl/issues)
 * [Repository (github.com/dataoverheid/dcat-ap-donl)](https://github.com/dataoverheid/dcat-ap-donl)
 
